@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "status", "summary", "start_date", "end_date", "themes", "partners", "outputs", "placeholder", "owner_review_required"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "title": {"type": "string", "minLength": 8},
+    "status": {"enum": ["planned", "active", "completed", "on-hold"]},
+    "summary": {"type": "string", "minLength": 30},
+    "start_date": {"type": ["string", "null"], "format": "date"},
+    "end_date": {"type": ["string", "null"], "format": "date"},
+    "themes": {"type": "array", "minItems": 1, "items": {"type": "string"}, "uniqueItems": true},
+    "partners": {"type": "array", "items": {"type": "string"}},
+    "outputs": {"type": "array", "items": {"type": "string"}},
+    "placeholder": {"type": "boolean"},
+    "owner_review_required": {"type": "boolean"}
+  }
+}

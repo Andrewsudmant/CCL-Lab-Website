@@ -1,0 +1,14 @@
+---
+title: "Opportunities"
+description: "Opportunities to study, collaborate and work with the Cities & Climate Learning Lab."
+---
+
+<p class="page-deck">Future opportunities for students, researchers and partners will be posted here with clear scope, eligibility and closing dates.</p>
+
+```{=html}
+<div class="empty-state">
+  <p class="eyebrow">No open calls</p>
+  <h2>There are no confirmed opportunities to announce yet.</h2>
+  <p>This page is ready for owner-reviewed postings. The lab will not collect expressions of interest through the Gate 1 prototype.</p>
+</div>
+```

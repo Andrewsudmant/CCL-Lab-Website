@@ -1,0 +1,66 @@
+---
+title: "Research Watch"
+description: "A transparent, AI-assisted discovery prototype for urban climate evidence."
+page-layout: full
+---
+
+```{=html}
+<div class="watch-intro section-shell-narrow">
+  <p class="page-deck">A transparent, evolving view of research, analysis, tools and discussion relevant to how cities learn and act on climate.</p>
+  <div class="watch-principle">
+    <p class="eyebrow">Editorial principle</p>
+    <p><strong>AI is the discovery and classification layer—not the source.</strong> Every item retains source, date, identifier, retrieval and review information.</p>
+  </div>
+</div>
+```
+
+```{=html}
+<section class="section-shell" aria-labelledby="reviewed-heading">
+  <div class="section-header watch-section-header">
+    <div>
+      <p class="eyebrow">01 · Human checked</p>
+      <h2 id="reviewed-heading">Lab reviewed selections</h2>
+    </div>
+    <span class="status-badge reviewed">Reviewed</span>
+  </div>
+  <p class="section-lead">Items in this section have a recorded human review. During Gate 1, the reviewed item is still a labelled interface fixture—not a substantive lab selection.</p>
+```
+
+{{< include ../generated/research-watch-reviewed.qmd >}}
+```{=html}
+</section>
+```
+
+```{=html}
+<section class="candidate-zone" aria-labelledby="candidate-heading">
+  <div class="section-shell">
+    <div class="section-header watch-section-header">
+      <div>
+        <p class="eyebrow">02 · Automatically identified</p>
+        <h2 id="candidate-heading">Unreviewed candidates</h2>
+      </div>
+      <span class="status-badge unreviewed">Not reviewed</span>
+    </div>
+    <div class="candidate-warning" role="note">
+      <strong>These items are not endorsed by the lab.</strong>
+      <span>They are automated fixture candidates shown to test transparency, provenance and review-state design.</span>
+    </div>
+```
+
+{{< include ../generated/research-watch-candidates.qmd >}}
+```{=html}
+  </div>
+</section>
+```
+
+```{=html}
+<section class="section-shell section-shell-narrow methodology-strip" aria-labelledby="method-heading">
+  <p class="eyebrow">How it will work</p>
+  <h2 id="method-heading">Discovery, classification, review.</h2>
+  <ol class="process-list">
+    <li><strong>Discover</strong><span>Find material from allow-listed sources and retain original metadata.</span></li>
+    <li><strong>Classify</strong><span>Draft themes, summaries and relevance notes against explicit evidence.</span></li>
+    <li><strong>Review</strong><span>A person verifies the source and annotation before curated publication.</span></li>
+  </ol>
+</section>
+```

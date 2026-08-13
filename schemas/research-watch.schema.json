@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "research-watch.schema.json",
+  "title": "Research Watch record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["record_id", "title", "url", "stable_identifier", "authors_or_organisation", "source_type", "source_name", "publication_date", "retrieval_date", "lab_themes", "short_summary", "reason_for_relevance", "evidence_available", "ai_provenance", "confidence", "human_review", "reviewer_edits", "risk_flags", "correction_removal", "fixture", "owner_review_required"],
+  "properties": {
+    "record_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "title": {"type": "string", "minLength": 8},
+    "url": {"type": "string", "format": "uri", "pattern": "^https://"},
+    "stable_identifier": {
+      "oneOf": [
+        {"type": "null"},
+        {"type": "object", "additionalProperties": false, "required": ["type", "value", "url"], "properties": {"type": {"enum": ["doi", "isbn", "issn", "handle", "arxiv", "report-number", "dataset-id", "post-uri", "other"]}, "value": {"type": "string", "minLength": 2}, "url": {"type": "string", "format": "uri", "pattern": "^https://"}}}
+      ]
+    },
+    "authors_or_organisation": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 2}},
+    "source_type": {"enum": ["academic-research", "news", "institutional-analysis", "blog", "data-tool", "bluesky-discussion", "other"]},
+    "source_name": {"type": "string", "minLength": 2},
+    "publication_date": {"type": "string", "format": "date"},
+    "retrieval_date": {"type": "string", "format": "date"},
+    "lab_themes": {"type": "array", "minItems": 1, "items": {"type": "string"}, "uniqueItems": true},
+    "short_summary": {"type": "string", "minLength": 30, "maxLength": 900},
+    "reason_for_relevance": {"type": "string", "minLength": 25, "maxLength": 700},
+    "evidence_available": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["types", "description"],
+      "properties": {
+        "types": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["bibliographic-metadata", "abstract", "publisher-summary", "author-summary", "permitted-excerpt", "full-text", "dataset-documentation", "discussion-thread"]}},
+        "description": {"type": "string", "minLength": 12}
+      }
+    },
+    "ai_provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["used", "model", "prompt_version"],
+      "properties": {
+        "used": {"type": "boolean"},
+        "model": {"type": ["string", "null"]},
+        "prompt_version": {"type": ["string", "null"]}
+      }
+    },
+    "confidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["score", "label", "basis"],
+      "properties": {
+        "score": {"type": "number", "minimum": 0, "maximum": 1},
+        "label": {"enum": ["low", "medium", "high"]},
+        "basis": {"type": "string", "minLength": 12}
+      }
+    },
+    "human_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "reviewer", "reviewed_date", "notes"],
+      "properties": {
+        "status": {"enum": ["unreviewed", "in-review", "approved", "rejected", "held"]},
+        "reviewer": {"type": ["string", "null"]},
+        "reviewed_date": {"type": ["string", "null"], "format": "date"},
+        "notes": {"type": ["string", "null"]}
+      }
+    },
+    "reviewer_edits": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["field", "description"], "properties": {"field": {"type": "string"}, "description": {"type": "string", "minLength": 5}}}},
+    "risk_flags": {"type": "array", "uniqueItems": true, "items": {"enum": ["title-only", "limited-evidence", "paywalled", "copyright", "personal-data", "conflict-of-interest", "source-credibility", "possible-duplicate", "prompt-injection", "sensitive-content", "none"]}},
+    "correction_removal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "date", "note"],
+      "properties": {
+        "status": {"enum": ["active", "corrected", "removed", "under-review"]},
+        "date": {"type": ["string", "null"], "format": "date"},
+        "note": {"type": ["string", "null"]}
+      }
+    },
+    "fixture": {"type": "boolean"},
+    "owner_review_required": {"type": "boolean"}
+  }
+}

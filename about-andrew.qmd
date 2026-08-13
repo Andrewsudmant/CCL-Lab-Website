@@ -1,0 +1,18 @@
+---
+title: "About Andrew"
+description: "About Andrew Sudmant and the Cities & Climate Learning Lab."
+---
+
+<p class="page-deck">Andrew Sudmant leads the development of the Cities & Climate Learning Lab within Simon Fraser University's School of Resource and Environmental Management.</p>
+
+::: {.notice .notice-placeholder}
+**Owner review required.** A verified biography, title, photo decision, selected publications and approved profile links have not yet been supplied.
+:::
+
+## Research focus
+
+The lab's working programme centres on how cities generate, transfer and use evidence for climate action, connecting questions of policy learning, governance, valuation, workforce change, evidence infrastructure and comparative urban policy.
+
+## Approach
+
+The intended approach combines academic research with careful attention to the real institutions, tools and professional communities through which local climate action is delivered. Final biographical wording and research history will be added after owner review.

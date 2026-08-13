@@ -1,0 +1,16 @@
+---
+title: "People"
+description: "People connected with the Cities & Climate Learning Lab."
+---
+
+<p class="page-deck">A developing community of researchers, students and collaborators focused on the institutions and evidence behind urban climate action.</p>
+
+::: {.notice .notice-placeholder}
+Biographical and role information is placeholder content requiring owner confirmation.
+:::
+
+{{< include generated/people.qmd >}}
+
+## Future contributors
+
+This page is designed to include lab members, students, affiliates and project collaborators with role-specific profiles and clear consent for publication.

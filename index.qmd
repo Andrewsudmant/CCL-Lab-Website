@@ -1,0 +1,75 @@
+---
+title: ""
+description: "Research on how cities generate, transfer and use evidence for climate action."
+title-block-banner: false
+page-layout: full
+---
+
+```{=html}
+<section class="hero-shell" aria-labelledby="home-title">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Simon Fraser University · School of Resource and Environmental Management</p>
+      <h1 id="home-title">Cities <span>&</span> Climate<br>Learning Lab</h1>
+      <p class="hero-subtitle">Research on how cities generate, transfer and use evidence for climate action.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="research.html">Explore our research</a>
+        <a class="button button-quiet" href="research-watch/index.html">Visit Research Watch <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <aside class="hero-aside" aria-label="Lab focus">
+      <p class="index-number">01—06</p>
+      <p>Six connected research areas spanning evidence, governance, valuation, work, infrastructure and policy.</p>
+      <p class="small-note">Initial scope · owner review required before Gate 2</p>
+    </aside>
+  </div>
+</section>
+```
+
+```{=html}
+<section class="section-shell intro-band" aria-labelledby="question-heading">
+  <p class="eyebrow">The organising question</p>
+  <div class="split-heading">
+    <h2 id="question-heading">What helps cities turn evidence into climate action?</h2>
+    <p>We study the institutions, relationships, tools and place-based choices that shape how knowledge travels—and whether it changes what cities can deliver.</p>
+  </div>
+</section>
+```
+
+```{=html}
+<section class="section-shell" aria-labelledby="themes-heading">
+  <div class="section-header">
+    <div>
+      <p class="eyebrow">Research programme</p>
+      <h2 id="themes-heading">Six initial research areas</h2>
+    </div>
+    <a class="text-link" href="research.html">See the full scope <span aria-hidden="true">→</span></a>
+  </div>
+```
+
+{{< include generated/home-themes.qmd >}}
+```{=html}
+</section>
+```
+
+```{=html}
+<section class="section-shell watch-callout" aria-labelledby="watch-heading">
+  <div>
+    <p class="eyebrow eyebrow-light">Research Watch</p>
+    <h2 id="watch-heading">A transparent view of emerging urban climate evidence.</h2>
+  </div>
+  <div>
+    <p>Research Watch is being designed to discover and classify research, analysis, tools and public discussion while preserving the original source and a visible review trail.</p>
+    <p class="watch-rule"><strong>AI helps discover.</strong> People review. Sources remain authoritative.</p>
+    <a class="button button-on-dark" href="research-watch/index.html">View the fixture prototype</a>
+  </div>
+</section>
+```
+
+```{=html}
+<section class="section-shell status-row" aria-label="Current project status">
+  <p><span class="status-dot" aria-hidden="true"></span><strong>Gate 1 prototype</strong></p>
+  <p>No live feeds, model calls or automated publishing.</p>
+  <p>All examples require owner review.</p>
+</section>
+```

@@ -1,0 +1,50 @@
+record_id: example-bluesky-candidate
+title: "PLACEHOLDER — Bluesky discussion about local retrofit delivery"
+url: https://example.org/research-watch/bluesky-candidate
+stable_identifier:
+  type: post-uri
+  value: at://did:plc:example/app.bsky.feed.post/example
+  url: https://example.org/bluesky/post/example
+authors_or_organisation:
+  - Example Practitioner
+source_type: bluesky-discussion
+source_name: Bluesky fixture
+publication_date: 2026-07-28
+retrieval_date: 2026-08-01
+lab_themes:
+  - climate-governance-delivery
+  - just-transitions-workforce
+short_summary: >-
+  Synthetic candidate representing a practitioner discussion about retrofit
+  delivery and workforce capacity. The lab has not reviewed or endorsed it.
+reason_for_relevance: >-
+  The fixture tests discovery of practice-based discussion connected to delivery
+  and workforce themes; factual claims and context would require verification.
+evidence_available:
+  types:
+    - bibliographic-metadata
+    - discussion-thread
+  description: Synthetic post metadata and thread content used only as a fixture.
+ai_provenance:
+  used: true
+  model: fixture-model-not-called
+  prompt_version: research-watch-fixture-v0
+confidence:
+  score: 0.43
+  label: low
+  basis: Social discussion may surface leads but does not itself establish evidence.
+human_review:
+  status: unreviewed
+  reviewer: null
+  reviewed_date: null
+  notes: null
+reviewer_edits: []
+risk_flags:
+  - source-credibility
+  - personal-data
+correction_removal:
+  status: active
+  date: null
+  note: null
+fixture: true
+owner_review_required: true

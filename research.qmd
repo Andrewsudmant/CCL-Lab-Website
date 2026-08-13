@@ -1,0 +1,16 @@
+---
+title: "Research"
+description: "The six initial research areas of the Cities & Climate Learning Lab."
+---
+
+<p class="page-deck">The lab studies climate action as a problem of learning and delivery: how evidence is made, moved, interpreted and put to work in particular places.</p>
+
+::: {.notice .notice-placeholder}
+**Initial scope.** Definitions, search concepts and examples are a Gate 1 working structure. Representative examples are placeholders requiring owner review.
+:::
+
+{{< include generated/research-themes.qmd >}}
+
+## A connected programme
+
+The themes are not silos. Evidence infrastructure shapes what can be known; governance determines what can be delivered; valuation affects which outcomes count; and workforce change determines who can participate and benefit. Canadian and comparative policy research provides the institutional and place-based context connecting them.

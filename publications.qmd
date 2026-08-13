@@ -1,0 +1,12 @@
+---
+title: "Publications"
+description: "Publications from the Cities & Climate Learning Lab."
+---
+
+<p class="page-deck">Peer-reviewed research, reports, working papers and policy-facing outputs will be collected here with stable identifiers and complete citations.</p>
+
+::: {.notice .notice-placeholder}
+The record below demonstrates the publication schema only. It does not claim that the named work has been published.
+:::
+
+{{< include generated/publications.qmd >}}

@@ -1,0 +1,11 @@
+.DS_Store
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+_site/
+/.quarto/
+/.jupyter_cache/
+.env
+.env.*
+!.env.example

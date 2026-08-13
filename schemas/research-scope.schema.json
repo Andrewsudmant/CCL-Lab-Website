@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Research scope configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["scope_version", "owner_review_required", "notice", "themes"],
+  "properties": {
+    "scope_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+    "owner_review_required": {"const": true},
+    "notice": {"type": "string", "minLength": 20},
+    "themes": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {"$ref": "research-theme.schema.json"}
+    }
+  }
+}

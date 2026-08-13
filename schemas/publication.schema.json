@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Publication record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "authors", "year", "publication_type", "venue", "doi", "url", "citation", "abstract", "themes", "placeholder", "owner_review_required"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "title": {"type": "string", "minLength": 8},
+    "authors": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "year": {"type": "integer", "minimum": 1900, "maximum": 2100},
+    "publication_type": {"enum": ["article", "book", "chapter", "report", "working-paper", "brief", "dataset", "other"]},
+    "venue": {"type": "string"},
+    "doi": {"type": ["string", "null"], "pattern": "^10\\.[0-9]{4,9}/"},
+    "url": {"type": ["string", "null"], "format": "uri", "pattern": "^https://"},
+    "citation": {"type": "string", "minLength": 12},
+    "abstract": {"type": "string", "minLength": 20},
+    "themes": {"type": "array", "minItems": 1, "items": {"type": "string"}, "uniqueItems": true},
+    "placeholder": {"type": "boolean"},
+    "owner_review_required": {"type": "boolean"}
+  }
+}

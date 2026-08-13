@@ -1,0 +1,62 @@
+project:
+  type: website
+  output-dir: _site
+  pre-render: python3 scripts/generate_site.py
+  render:
+    - "*.qmd"
+    - "research-watch/index.qmd"
+    - "docs/*.md"
+    - "docs/adr/*.md"
+    - "!generated/*.qmd"
+
+website:
+  title: "Cities & Climate Learning Lab"
+  description: "Research on how cities generate, transfer and use evidence for climate action."
+  navbar:
+    background: light
+    foreground: dark
+    pinned: true
+    collapse-below: lg
+    title: "Cities & Climate Learning Lab"
+    left:
+      - href: research.qmd
+        text: Research
+      - href: projects.qmd
+        text: Projects
+      - href: people.qmd
+        text: People
+      - href: publications.qmd
+        text: Publications
+      - href: research-watch/index.qmd
+        text: Research Watch
+      - href: data-tools.qmd
+        text: Data & Tools
+      - href: opportunities.qmd
+        text: Opportunities
+      - href: about-andrew.qmd
+        text: About Andrew
+      - href: contact.qmd
+        text: Contact
+  page-footer:
+    left: |
+      **Cities & Climate Learning Lab**<br>
+      School of Resource and Environmental Management, Simon Fraser University
+    right: |
+      Gate 1 prototype · Fixture data only<br>
+      [Content governance](/docs/content-governance.html)
+  search: true
+  reader-mode: false
+  back-to-top-navigation: true
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    lang: en-CA
+    link-external-newwindow: false
+    anchor-sections: true
+    smooth-scroll: true
+
+execute:
+  freeze: auto

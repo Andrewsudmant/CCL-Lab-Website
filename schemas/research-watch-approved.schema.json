@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Approved Research Watch item",
+  "allOf": [
+    {"$ref": "research-watch.schema.json"},
+    {"type": "object", "properties": {"human_review": {"type": "object", "properties": {"status": {"const": "approved"}, "reviewer": {"type": "string", "minLength": 2}, "reviewed_date": {"type": "string", "format": "date"}}}}}
+  ]
+}

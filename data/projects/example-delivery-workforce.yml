@@ -1,0 +1,17 @@
+id: example-delivery-workforce
+title: "PLACEHOLDER — Climate delivery and workforce change"
+status: planned
+summary: >-
+  A proposed comparative project on how municipal delivery models shape skills,
+  occupations and access to good work during local climate transitions. The
+  geography, partners and methods require owner review.
+start_date: null
+end_date: null
+themes:
+  - climate-governance-delivery
+  - just-transitions-workforce
+partners: []
+outputs:
+  - "PLACEHOLDER — comparative case-study plan"
+placeholder: true
+owner_review_required: true

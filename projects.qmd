@@ -1,0 +1,12 @@
+---
+title: "Projects"
+description: "Current and planned projects of the Cities & Climate Learning Lab."
+---
+
+<p class="page-deck">Projects will connect careful comparative research with the practical questions facing municipal governments and their partners.</p>
+
+::: {.notice .notice-placeholder}
+Project records below are planning fixtures, not announcements of funded or active work. Titles, partners, dates and outputs require owner review.
+:::
+
+{{< include generated/projects.qmd >}}

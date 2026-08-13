@@ -1,0 +1,21 @@
+---
+title: "Data & Tools"
+description: "Data resources and decision-support tools from the Cities & Climate Learning Lab."
+---
+
+<p class="page-deck">Open, documented resources for studying how urban climate evidence is produced and used.</p>
+
+```{=html}
+<div class="empty-state">
+  <p class="eyebrow">In development</p>
+  <h2>Tools will be published with methods, versioning and limitations.</h2>
+  <p>Gate 1 establishes the governance and record structures. No live data products or decision-support tools are being released yet.</p>
+</div>
+```
+
+## Publication principles
+
+- Document sources, transformations, licences and known limitations.
+- Version datasets and methods so results can be reproduced.
+- Make uncertainty and appropriate uses visible.
+- Test accessibility and usability with intended users.

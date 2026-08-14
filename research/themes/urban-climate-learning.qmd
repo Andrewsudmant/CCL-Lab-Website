@@ -14,31 +14,31 @@ description: "How municipal organisations and their partners acquire, interpret,
 ## Core projects
 
 ```{=html}
-<div class="compact-list"><p><a href="/projects/urban-climate-evidence-map.html">Mapping urban climate research and learning geographies</a></p></div>
+<div class="compact-list"><p><a href="/projects/geography-urban-climate-evidence.html">Geography of urban climate evidence</a></p></div>
 ```
 
 ## Related projects
 
 ```{=html}
-<p class="empty-compact">No verified records are published in this view yet.</p>
+<div class="compact-list"><p><a href="/projects/climate-delivery-modes.html">Climate delivery modes</a></p></div>
 ```
 
 ## Core publications
 
 ```{=html}
-<div class="compact-list"><p><a href="/publications/geographies-urban-climate-learning.html">The geographies of urban climate learning</a></p><p><a href="/publications/systematic-global-stocktake-urban-climate-research.html">A systematic global stocktake of urban climate research</a></p></div>
+<div class="compact-list"><p><a href="/publications/replicate-generalize-urban-research.html">Replicate and generalize to make urban research coherent</a></p><p><a href="/publications/who-can-learn-geography-urban-climate-evidence.html">Who can learn from whom? The geography of urban climate evidence</a></p></div>
 ```
 
 ## Related publications
 
 ```{=html}
-<p class="empty-compact">No verified records are published in this view yet.</p>
+<div class="compact-list"><p><a href="/publications/integration-mitigation-adaptation-europe.html">Integration of mitigation and adaptation in urban climate change action plans in Europe: A systematic assessment</a></p></div>
 ```
 
 ## Recent evidence
 
 ```{=html}
-<div class="compact-list"><p><a href="https://www.nature.com/articles/s44284-025-00260-8">A systematic global stocktake of urban climate research</a><br><span>AI-selected and summarized · not reviewed by the lab</span></p></div>
+<div class="compact-list"><p><a href="https://www.nature.com/articles/s44284-025-00260-8">Systematic global stocktake of over 50,000 urban climate change studies</a><br><span>AI-selected and summarized · not reviewed by the lab</span></p></div>
 ```
 
 [Read the Research Watch method](/research-watch/methods.html).

@@ -8,13 +8,13 @@ description: "How urban climate action changes work, skills, occupations and lab
 <p class="page-deck">How urban climate action changes work, skills, occupations and labour-market opportunities, and how transition benefits and burdens are governed.</p>
 
 ::: {.notice}
-**Theme status: Established.** Themes overlap. Records below are canonical entries cross-listed by primary or secondary relationship.
+**Theme status: Developing.** Themes overlap. Records below are canonical entries cross-listed by primary or secondary relationship.
 :::
 
 ## Core projects
 
 ```{=html}
-<p class="empty-compact">No verified records are published in this view yet.</p>
+<div class="compact-list"><p><a href="/projects/occupational-transition-requirements.html">Occupational transition requirements and occupation switching</a></p></div>
 ```
 
 ## Related projects

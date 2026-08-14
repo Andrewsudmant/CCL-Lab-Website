@@ -14,12 +14,12 @@ description: "Contact the Cities & Climate Learning Lab."
   </div>
   <div>
     <p class="eyebrow">Contact route</p>
-    <p><strong>Email:</strong> <a href="mailto:asudmant@sfu.ca">asudmant@sfu.ca</a></p>
-    <p>This address is published on Andrew Sudmant's SFU profile. The owner must confirm it as the preferred lab contact before launch.</p>
+    <p><strong>Email:</strong> <a href="mailto:andrew_sudmant@sfu.ca">andrew_sudmant@sfu.ca</a></p>
+    <p><strong>Office:</strong> TASC1 8411<br><strong>Telephone:</strong> 1 778 782-2104</p>
   </div>
 </div>
 ```
 
 ## Corrections and removals
 
-The future public contact route will also accept Research Watch correction and removal requests. Requests will be assessed under the lab's [content-governance policy](docs/content-governance.md).
+Use the address above for Research Watch correction and removal requests. Please include the record title, URL and the correction or removal requested. The lab records the decision and, where appropriate, preserves a dated correction trail.

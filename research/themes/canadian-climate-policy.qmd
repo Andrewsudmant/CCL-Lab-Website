@@ -20,7 +20,7 @@ description: "Research on the design, politics, governance, implementation and c
 ## Related projects
 
 ```{=html}
-<p class="empty-compact">No verified records are published in this view yet.</p>
+<div class="compact-list"><p><a href="/projects/climate-delivery-modes.html">Climate delivery modes</a></p></div>
 ```
 
 ## Core publications

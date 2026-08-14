@@ -20,7 +20,7 @@ page-layout: full
     <aside class="hero-aside" aria-label="Lab focus">
       <p class="index-number">01—06</p>
       <p>Six connected research areas spanning evidence, governance, valuation, work, infrastructure and policy.</p>
-      <p class="small-note">Gate 2–3A development build · owner review required</p>
+      <p class="small-note">Research spanning institutions, evidence, place and implementation.</p>
     </aside>
   </div>
 </section>
@@ -53,6 +53,25 @@ page-layout: full
 ```
 
 ```{=html}
+<section class="section-shell" aria-labelledby="projects-heading">
+  <div class="section-header"><div><p class="eyebrow">Current research</p><h2 id="projects-heading">From evidence to implementation</h2></div><a href="projects.html">View all projects →</a></div>
+  <div class="theme-grid">
+    <article class="theme-card"><h3><a href="projects/coben-place-based-model.html">CoBen: place-based co-benefits and co-costs</a></h3><p>A conditional scenario model with explicit traceability, locality and valuation rules.</p></article>
+    <article class="theme-card"><h3><a href="projects/occupational-transition-requirements.html">Occupational transition requirements</a></h3><p>A public-evidence approach to occupation switching in the low-carbon transition.</p></article>
+    <article class="theme-card"><h3><a href="projects/climate-delivery-modes.html">Climate delivery modes</a></h3><p>Comparative research on the actors and arrangements that deliver urban climate action.</p></article>
+  </div>
+</section>
+<section class="section-shell" aria-labelledby="outputs-heading">
+  <div class="section-header"><div><p class="eyebrow">Selected outputs</p><h2 id="outputs-heading">Research and tools</h2></div><a href="outputs.html">Explore outputs →</a></div>
+  <div class="theme-grid">
+    <article class="theme-card"><h3><a href="publications/data-scaling-climate-action-governance-uk.html">Data Scaling</a></h3><p>How evidence scale affects climate assessment and governance.</p></article>
+    <article class="theme-card"><h3><a href="publications/who-can-learn-geography-urban-climate-evidence.html">Who can learn from whom?</a></h3><p>The geography of urban climate evidence.</p></article>
+    <article class="theme-card"><h3><a href="data-tools.html">UK Co-Benefits Atlas</a></h3><p>Place-based evidence across more than 46,000 UK communities.</p></article>
+  </div>
+</section>
+```
+
+```{=html}
 <section class="section-shell watch-callout" aria-labelledby="watch-heading">
   <div>
     <p class="eyebrow eyebrow-light">Research Watch</p>
@@ -69,16 +88,22 @@ page-layout: full
 ```{=html}
 <section class="section-shell" aria-labelledby="recent-watch-heading">
   <div class="section-header"><div><p class="eyebrow">Recent evidence</p><h2 id="recent-watch-heading">From Research Watch</h2></div><a href="research-watch/index.html">View all →</a></div>
-  <div class="candidate-warning" role="note"><strong>Automated discovery notice.</strong><span>AI-selected and summarized items are not normally reviewed by the lab and inclusion does not imply endorsement.</span></div>
+  <div class="candidate-warning" role="note"><strong>Automated discovery notice.</strong><span>Research Watch uses automated searches and AI-generated classification and summaries. Items have not normally been reviewed by a member of the Cities & Climate Learning Lab, and inclusion does not imply endorsement. Summaries may contain errors or omit important context. Please consult the original source.</span></div>
 </section>
 ```
 
 {{< include generated/home-watch.qmd >}}
 
 ```{=html}
-<section class="section-shell status-row" aria-label="Current project status">
-  <p><span class="status-dot" aria-hidden="true"></span><strong>Gate 2–3A development build</strong></p>
-  <p>No public deployment.</p>
-  <p>Verified records still require owner review.</p>
+<section class="section-shell" aria-labelledby="people-heading">
+  <div class="split-heading"><h2 id="people-heading">Led by Andrew Sudmant</h2><p>Assistant Professor at Simon Fraser University and Director of the Cities and Climate Learning Lab. <a href="people.html">Meet the lab →</a></p></div>
+</section>
+```
+
+```{=html}
+<section class="section-shell status-row" aria-label="Lab information">
+  <p><span class="status-dot" aria-hidden="true"></span><strong>Based at Simon Fraser University</strong></p>
+  <p>School of Resource and Environmental Management</p>
+  <p><a href="contact.html">Contact the lab →</a></p>
 </section>
 ```

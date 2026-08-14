@@ -1,0 +1,13 @@
+---
+title: "Outputs"
+description: "Publications, data and decision-support tools from the Cities & Climate Learning Lab and its foundations."
+---
+
+<p class="page-deck">The lab is newly established at Simon Fraser University. These pages distinguish current lab outputs from selected foundational work by the lab director and collaborators.</p>
+
+```{=html}
+<div class="theme-grid">
+  <article class="theme-card"><span class="theme-number">01</span><h2><a href="publications.html">Publications</a></h2><p>Verified articles and preprints with complete bibliographic metadata, stable identifiers and an explicit relationship to the lab.</p></article>
+  <article class="theme-card"><span class="theme-number">02</span><h2><a href="data-tools.html">Data and Tools</a></h2><p>Place-based data resources and decision-support tools, with their methods, provenance and limitations kept visible.</p></article>
+</div>
+```

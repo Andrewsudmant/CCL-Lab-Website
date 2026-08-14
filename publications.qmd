@@ -3,10 +3,6 @@ title: "Publications"
 description: "Publications from the Cities & Climate Learning Lab."
 ---
 
-<p class="page-deck">Selected peer-reviewed research and preprints, maintained as canonical records with stable identifiers and explicit metadata provenance.</p>
-
-::: {.notice .notice-placeholder}
-Initial records are verified against DOI, publisher or institutional sources, but incomplete author lists and year-only dates remain clearly flagged for owner review.
-:::
+<p class="page-deck">The Cities and Climate Learning Lab is newly established at Simon Fraser University. This page brings together current lab outputs and selected foundational work by the lab director and collaborators.</p>
 
 {{< include generated/publications.qmd >}}

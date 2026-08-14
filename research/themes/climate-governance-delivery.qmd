@@ -14,25 +14,25 @@ description: "How authority, capacity, finance, partnerships and implementation 
 ## Core projects
 
 ```{=html}
-<p class="empty-compact">No verified records are published in this view yet.</p>
+<div class="compact-list"><p><a href="/projects/climate-delivery-modes.html">Climate delivery modes</a></p></div>
 ```
 
 ## Related projects
 
 ```{=html}
-<div class="compact-list"><p><a href="/projects/uk-co-benefits-atlas.html">UK Co-Benefits Atlas</a></p></div>
+<div class="compact-list"><p><a href="/projects/coben-place-based-model.html">CoBen: place-based co-benefits and co-costs</a></p><p><a href="/projects/occupational-transition-requirements.html">Occupational transition requirements and occupation switching</a></p><p><a href="/projects/uk-co-benefits-atlas.html">UK Co-Benefits Atlas</a></p></div>
 ```
 
 ## Core publications
 
 ```{=html}
-<div class="compact-list"><p><a href="/publications/infrastructure-transitions-southern-cities.html">Infrastructure transitions in Southern cities</a></p></div>
+<div class="compact-list"><p><a href="/publications/infrastructure-transitions-southern-cities.html">Infrastructure Transitions in Southern Cities: Organising Urban Service Delivery for Climate and Development</a></p><p><a href="/publications/integration-mitigation-adaptation-europe.html">Integration of mitigation and adaptation in urban climate change action plans in Europe: A systematic assessment</a></p></div>
 ```
 
 ## Related publications
 
 ```{=html}
-<p class="empty-compact">No verified records are published in this view yet.</p>
+<div class="compact-list"><p><a href="/publications/climate-policy-social-policy.html">Climate policy as social policy? A comprehensive assessment of the economic impact of climate action in the UK</a></p><p><a href="/publications/data-scaling-climate-action-governance-uk.html">Data Scaling: Implications for Climate Action and Governance in the UK</a></p><p><a href="/publications/economic-case-climate-action-cities.html">Exploring the economic case for climate action in cities</a></p><p><a href="/publications/kigali-economic-appraisal.html">The scope for low-carbon development in Kigali, Rwanda: An economic appraisal</a></p><p><a href="/publications/low-carbon-cities-affordable.html">Low carbon cities: is ambitious action affordable?</a></p></div>
 ```
 
 ## Recent evidence

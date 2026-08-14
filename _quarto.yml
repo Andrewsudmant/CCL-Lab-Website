@@ -9,8 +9,6 @@ project:
     - "research/themes/*.qmd"
     - "projects/*.qmd"
     - "publications/*.qmd"
-    - "docs/*.md"
-    - "docs/adr/*.md"
     - "!generated/*.qmd"
 
 website:
@@ -29,25 +27,34 @@ website:
         text: Projects
       - href: people.qmd
         text: People
-      - href: publications.qmd
-        text: Publications
+      - text: Outputs
+        menu:
+          - href: outputs.qmd
+            text: Outputs overview
+          - href: publications.qmd
+            text: Publications
+          - href: data-tools.qmd
+            text: Data & Tools
       - href: research-watch/index.qmd
-        text: Research Watch
-      - href: data-tools.qmd
-        text: Data & Tools
+        text: Watch
       - href: opportunities.qmd
         text: Opportunities
-      - href: about-andrew.qmd
-        text: About Andrew
-      - href: contact.qmd
-        text: Contact
+      - text: About
+        menu:
+          - href: about-andrew.qmd
+            text: About Andrew
+          - href: contact.qmd
+            text: Contact
+          - href: research-watch/methods.qmd
+            text: Research Watch methods
   page-footer:
     left: |
       **Cities & Climate Learning Lab**<br>
       School of Resource and Environmental Management, Simon Fraser University
     right: |
-      Gate 2–3A development build · no public deployment<br>
-      [Research Watch method](/research-watch/methods.html) · [Content governance](/docs/content-governance.html)
+      [andrew_sudmant@sfu.ca](mailto:andrew_sudmant@sfu.ca) · [Research Watch method](/research-watch/methods.html)<br>
+      [Report a correction or broken source](/contact.html) ·
+      AI-assisted discovery; original sources remain authoritative.
   search: true
   reader-mode: false
   back-to-top-navigation: true

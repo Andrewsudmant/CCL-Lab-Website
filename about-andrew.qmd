@@ -5,16 +5,18 @@ description: "About Andrew Sudmant and the Cities & Climate Learning Lab."
 
 <p class="page-deck">Andrew Sudmant leads the development of the Cities & Climate Learning Lab within Simon Fraser University's School of Resource and Environmental Management.</p>
 
-::: {.notice .notice-placeholder}
-**Owner review required.** The title and institutional facts below are verified from public sources; final biography wording, photo decision and selected highlights still require approval.
-:::
-
 ## Research focus
 
 Andrew is an Assistant Professor in Simon Fraser University's School of Resource and Environmental Management. His research examines climate-compatible urban development, the governance and delivery of climate action, co-benefits and the evidence available to decision-makers. He is a Lead Author for Chapter 5 of the IPCC Special Report on Climate Change and Cities.
 
 ## Approach
 
-His work combines academic research with attention to the institutions, tools and professional communities through which local climate action is delivered. Before joining SFU, he worked at the Edinburgh Climate Change Institute.
+His work combines climate-policy and economic modelling, public-policy appraisal and decision-support tools with attention to the institutions through which local climate action is delivered. Before joining SFU, he worked at the Edinburgh Climate Change Institute. He is a Lead Author for Chapter 5, “Solutions by City Types and Regions,” of the IPCC Special Report on Climate Change and Cities.
 
-[SFU profile](https://www.sfu.ca/rem/about/people/sudmant.html) · [ORCID](https://orcid.org/0000-0001-8650-8419) · [University of Edinburgh research profile](https://www.research.ed.ac.uk/en/persons/andrew-sudmant/)
+## Education
+
+- BA (Honours), Economics, University of British Columbia
+- MSc, Environmental Policy and Regulation, London School of Economics and Political Science
+- PhD, Sustainability Research Institute, School of Earth and Environment, University of Leeds
+
+[SFU profile](https://www.sfu.ca/rem/about/people/sudmant.html) · [ORCID](https://orcid.org/0000-0001-8650-8419) · [University of Edinburgh research profile](https://www.research.ed.ac.uk/en/persons/andrew-sudmant/) · [LinkedIn](https://uk.linkedin.com/in/andrew-sudmant-89393a32) · [Bluesky](https://bsky.app/profile/andrewsudmant.bsky.social)

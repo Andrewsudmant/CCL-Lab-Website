@@ -9,6 +9,6 @@ description: "Opportunities to study, collaborate and work with the Cities & Cli
 <div class="empty-state">
   <p class="eyebrow">No open calls</p>
   <h2>There are no confirmed opportunities to announce yet.</h2>
-  <p>This page is ready for owner-reviewed postings. The lab will not collect expressions of interest through the Gate 1 prototype.</p>
+  <p>Confirmed opportunities will include their scope, eligibility, closing date and contact route.</p>
 </div>
 ```

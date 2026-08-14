@@ -50,7 +50,8 @@ def linked_tags(primary: str, secondary: list[str]) -> str:
 
 def record_card(record: dict[str, Any], kind: str) -> str:
     themes = [record["primary_theme"], *record["secondary_themes"]]
-    meta = " · ".join(filter(None, [record.get("status"), record.get("venue"), str(record.get("publication_date", ""))[:4]]))
+    relation = record.get("relationship_to_lab", "").replace("-", " ").title()
+    meta = " · ".join(filter(None, [relation, record.get("status"), record.get("venue"), str(record.get("publication_date", ""))[:4]]))
     href = f"/{kind}/{record['record_id']}.html"
     return f'''<article class="record-card" data-themes="{esc(' '.join(themes))}">
   <p class="record-kicker">{esc(meta.replace('-', ' ').title())}</p>
@@ -125,21 +126,28 @@ def generate_themes(projects: list[dict[str, Any]], publications: list[dict[str,
 def generate_people() -> None:
     cards = ['<div class="record-list">']
     for person in load_records("data/people"):
-        links = " · ".join(f'<a href="{esc(x["url"])}">{esc(x["label"])}</a>' for x in person["links"])
-        cards.append(f'''<article class="record-card person-card"><p class="record-kicker">{esc(person["role"])}</p><h2>{esc(person["name"])}</h2><p>{esc(person["bio"])}</p><p>{links}</p>{tags(labels(person["themes"]))}</article>''')
+        links = " · ".join(f'<a href="{esc(x["url"])}">{esc(x["label"])}</a>' for x in person["profile_links"])
+        cards.append(f'''<article class="record-card person-card"><p class="record-kicker">{esc(person["academic_title"])} · {esc(person["lab_role"])}</p><h2>{esc(person["name"])}</h2><p>{esc(person["short_bio"])}</p><p><a href="mailto:{esc(person["email"])}">{esc(person["email"])}</a></p><p>{links}</p>{tags(labels(person["themes"]))}</article>''')
     cards.append("</div>")
     write_fragment("people.qmd", "\n".join(cards))
 
 
 def generate_projects(projects: list[dict[str, Any]], publications: list[dict[str, Any]]) -> None:
-    write_fragment("projects.qmd", '<div class="record-list">' + ''.join(record_card(p, "projects") for p in projects) + '</div>')
+    groups = [("Current lab research", "current-lab-research"), ("Foundational and prior work", "foundational-prior-work"), ("Associated collaborations", "associated-collaboration")]
+    listing = []
+    for heading, key in groups:
+        items = [p for p in projects if p["relationship_to_lab"] == key]
+        if items:
+            listing.append(f'<section class="relationship-group"><h2>{heading}</h2><div class="record-list">' + ''.join(record_card(p, "projects") for p in items) + '</div></section>')
+    write_fragment("projects.qmd", ''.join(listing))
     pubs = {p["record_id"]: p for p in publications}
     for p in projects:
-        sources = "\n".join(f'- [{x["label"]}]({x["url"]}) — retrieved {x["retrieved_date"]}' for x in p["authoritative_sources"])
+        sources = "\n".join((f'- [{x["label"]}]({x["url"]})' if x.get("url") else f'- {x["label"]}') + f' — verified {x["retrieved_date"]}' for x in p["authoritative_sources"])
         connections = "\n".join(f'- [{pubs[x]["title"]}](/publications/{x}.html)' for x in p["connected_publications"]) or "No connected publication is recorded."
         body = f'''<p class="page-deck">{p["summary"]}</p>
 
 **Status:** {p["status"].replace('-', ' ').title()}  
+**Relationship to the lab:** {p["relationship_to_lab"].replace('-', ' ').title()} — {p["relationship_note"]}  
 **Primary theme:** [{theme_index()[p["primary_theme"]]["name"]}](/research/themes/{p["primary_theme"]}.html)  
 **Related themes:** {', '.join(f'[{theme_index()[x]["name"]}](/research/themes/{x}.html)' for x in p["secondary_themes"]) or 'None'}
 
@@ -163,14 +171,18 @@ def generate_projects(projects: list[dict[str, Any]], publications: list[dict[st
 
 {sources}
 
-::: {{.notice .notice-placeholder}}
-This public-source record requires owner review before production launch. It does not establish funding ownership or current lab status beyond the linked evidence.
-:::'''
+**Record verification:** {p["verification_status"].replace('-', ' ').title()} · last verified {p["last_verified_date"]}.'''
         write_page(ROOT / "projects" / f'{p["record_id"]}.qmd', p["title"], p["summary"], body)
 
 
 def generate_publications(publications: list[dict[str, Any]], projects: list[dict[str, Any]]) -> None:
-    write_fragment("publications.qmd", '<div class="record-list">' + ''.join(record_card(p, "publications") for p in publications) + '</div>')
+    groups = [("Current lab outputs", "current-lab-research"), ("Selected foundational publications", "foundational-prior-work"), ("Associated and collaborative outputs", "associated-collaboration")]
+    listing = []
+    for heading, key in groups:
+        items = [p for p in publications if p["relationship_to_lab"] == key]
+        if items:
+            listing.append(f'<section class="relationship-group"><h2>{heading}</h2><div class="record-list">' + ''.join(record_card(p, "publications") for p in items) + '</div></section>')
+    write_fragment("publications.qmd", ''.join(listing))
     project_map = {p["record_id"]: p for p in projects}
     for p in publications:
         projects_md = "\n".join(f'- [{project_map[x]["title"]}](/projects/{x}.html)' for x in p["connected_projects"]) or "No connected project is recorded."
@@ -179,6 +191,7 @@ def generate_publications(publications: list[dict[str, Any]], projects: list[dic
 
 **Authors:** {', '.join(p["authors"])}  
 **Published:** {p["publication_date"]} · {p["venue"]} · {p["publication_type"].replace('-', ' ').title()}  
+**Relationship to the lab:** {p["relationship_to_lab"].replace('-', ' ').title()} — {p["relationship_note"]}  
 {id_line}
 
 > {p["citation"]}
@@ -196,7 +209,7 @@ def generate_publications(publications: list[dict[str, Any]], projects: list[dic
 
 ## Metadata provenance
 
-Metadata source: `{p["metadata_source"]}` · last updated {p["last_metadata_update"]}. Owner review remains required where author lists or dates are incomplete.'''
+Metadata sources: {', '.join(p["metadata_sources"])} · last verified {p["last_verified_date"]} · status: {p["verification_status"].replace('-', ' ')}. Dates are displayed only to the precision supplied by the verified record.'''
         write_page(ROOT / "publications" / f'{p["record_id"]}.qmd', p["title"], p["abstract_summary"], body)
 
 
@@ -213,7 +226,7 @@ def watch_card(record: dict[str, Any]) -> str:
   <p class="record-meta">{esc(record["source_name"])} · {esc(record["publication_date"])} · {esc(record["source_type"].replace('-', ' '))}</p>
   <p>{esc(record["short_summary"])}</p><p><strong>Why it may matter</strong><br>{esc(record["reason_for_relevance"])}</p>
   {linked_tags(themes[0], themes[1:])}
-  <details><summary>Provenance and limitations</summary><dl class="provenance"><dt>Identifier</dt><dd>{esc(identifier)}</dd><dt>Retrieved</dt><dd>{esc(record["retrieval_timestamp"])}</dd><dt>Evidence used</dt><dd>{esc(record["evidence_basis"]["description"])}</dd><dt>Limitation</dt><dd>{esc(record["evidence_basis"]["limitations"])}</dd><dt>Model / prompt</dt><dd>{esc(record["ai_provenance"]["model"])} · {esc(record["ai_provenance"]["prompt_version"])}</dd><dt>Confidence</dt><dd>{esc(record["confidence"]["label"])} ({record["confidence"]["score"]:.2f})</dd></dl></details>
+  <details><summary>Provenance and limitations</summary><dl class="provenance"><dt>Identifier</dt><dd>{esc(identifier)}</dd><dt>Retrieved</dt><dd>{esc(record["retrieval_timestamp"])}</dd><dt>Evidence used</dt><dd>{esc(record["evidence_basis"]["description"])}</dd><dt>Limitation</dt><dd>{esc(record["evidence_basis"]["limitations"])}</dd><dt>Model / prompt</dt><dd>{esc(record["ai_provenance"]["model"] or "Not used")} · {esc(record["ai_provenance"]["prompt_version"])}</dd><dt>Confidence</dt><dd>{esc(record["confidence"]["label"])} ({record["confidence"]["score"]:.2f})</dd></dl></details>
 </article>'''
 
 

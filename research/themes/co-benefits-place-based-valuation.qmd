@@ -14,25 +14,25 @@ description: "How cities identify, value and distribute the multiple benefits, c
 ## Core projects
 
 ```{=html}
-<div class="compact-list"><p><a href="/projects/uk-co-benefits-atlas.html">UK Co-Benefits Atlas</a></p></div>
+<div class="compact-list"><p><a href="/projects/coben-place-based-model.html">CoBen: place-based co-benefits and co-costs</a></p><p><a href="/projects/uk-co-benefits-atlas.html">UK Co-Benefits Atlas</a></p></div>
 ```
 
 ## Related projects
 
 ```{=html}
-<div class="compact-list"><p><a href="/projects/data-methodologies-climate-impact.html">Data methodologies for local climate impact assessment</a></p></div>
+<div class="compact-list"><p><a href="/projects/data-methodologies-climate-impact.html">Data Methodologies for Climate Impact Assessment</a></p></div>
 ```
 
 ## Core publications
 
 ```{=html}
-<div class="compact-list"><p><a href="/publications/visualising-benefits-costs-uk-climate-action.html">Visualising the benefits and costs of climate action across the United Kingdom</a></p></div>
+<div class="compact-list"><p><a href="/publications/climate-policy-social-policy.html">Climate policy as social policy? A comprehensive assessment of the economic impact of climate action in the UK</a></p><p><a href="/publications/economic-case-climate-action-cities.html">Exploring the economic case for climate action in cities</a></p><p><a href="/publications/kigali-economic-appraisal.html">The scope for low-carbon development in Kigali, Rwanda: An economic appraisal</a></p><p><a href="/publications/low-carbon-cities-affordable.html">Low carbon cities: is ambitious action affordable?</a></p></div>
 ```
 
 ## Related publications
 
 ```{=html}
-<div class="compact-list"><p><a href="/publications/data-scaling-climate-impact-assessment.html">Data scaling for place-based climate impact assessment</a></p><p><a href="/publications/infrastructure-transitions-southern-cities.html">Infrastructure transitions in Southern cities</a></p></div>
+<div class="compact-list"><p><a href="/publications/data-scaling-climate-action-governance-uk.html">Data Scaling: Implications for Climate Action and Governance in the UK</a></p><p><a href="/publications/designing-visualization-atlas-uk-cobenefits.html">Designing a Visualization Atlas: Lessons &amp; Reflections from The UK Co-Benefits Atlas for Climate Mitigation</a></p><p><a href="/publications/infrastructure-transitions-southern-cities.html">Infrastructure Transitions in Southern Cities: Organising Urban Service Delivery for Climate and Development</a></p></div>
 ```
 
 ## Recent evidence

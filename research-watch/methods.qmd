@@ -30,8 +30,8 @@ AI-generated text is an annotation of the evidence available to the process. It 
 
 ## Corrections, availability and removal
 
-Corrections can amend the annotation while preserving a dated edit record. Broken links are marked rather than silently deleted. Removal requests are assessed under the [content-governance policy](/docs/content-governance.html); a tombstone may be retained where necessary for traceability.
+Corrections can amend the annotation while preserving a dated edit record. Broken links are marked rather than silently deleted. Removal requests can be sent through the [public correction route](/contact.html); a concise tombstone may be retained where necessary for traceability.
 
-## Development limitations
+## Readiness and calibration
 
-The current feed contains a captured, reproducible fixture based on a verified source. The bounded pilot reached OpenAlex and Crossref. OpenAlex's first query produced substantial off-topic results, Crossref's placeholder enrichment query was not useful for discovery, Bluesky returned a CDN-level 403 from this environment, and OpenAI was not called because no API key was configured. These findings are preserved in the pilot report and drive the next query revision.
+Before a scheduled production process is enabled, the lab will complete a labelled calibration review, approve thresholds and source policies, and verify provider credentials and costs. Until then, captured test records support private testing of the publication and correction controls and are not presented as public evidence.

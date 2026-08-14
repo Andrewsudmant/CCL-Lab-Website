@@ -1,67 +1,62 @@
-# Planned system architecture
+# System architecture
 
 ## Purpose
 
-The Cities & Climate Learning Lab website is a public, accessible Quarto site backed by reviewed structured records. A later Research Watch pipeline may discover and classify relevant material, but source material—not an AI system—remains the evidentiary authority.
+The Cities & Climate Learning Lab website is a public, accessible Quarto site backed by versioned structured records. Research Watch may publish automatically generated, normally unreviewed records, but the source—not the model—is always the evidentiary authority.
 
-## Gate 0–1 implementation
+## Control plane and content plane
 
-```mermaid
-flowchart LR
-    C["Human-edited YAML fixtures"] --> V["Python schema and policy validation"]
-    S["Research-scope configuration"] --> V
-    V --> G["Generated Quarto fragments"]
-    G --> Q["Quarto static-site build"]
-    Q --> T["Automated structural, link and accessibility checks"]
-    T --> R["Pull-request review"]
-```
+Code, schemas, prompts, query packs, source policy, disclosure wording, thresholds, governance and security controls form the **control plane**. They require human-reviewed pull requests.
 
-The repository is the system of record. YAML is used for editorial records because it is readable in code review; JSON Schema provides machine-checkable contracts. Python validates records, enforces cross-record rules, and produces deterministic listing fragments. Quarto renders those fragments into a static website.
+Automatically discovered Research Watch records form the **content plane**. They may publish without item-level human review when all machine-enforced controls pass. The separation prevents source content or a model from changing the rules governing publication.
 
-## Planned Gate 2+ flow
+## Lifecycle
 
 ```mermaid
 flowchart LR
-    A["Allow-listed source adapters"] --> B["Raw metadata and permitted evidence"]
-    B --> C["Normalization and deduplication"]
-    C --> D["AI-assisted classification and annotation"]
-    D --> E["Unreviewed candidate records"]
-    E --> F["Human review and edits"]
-    F -->|approve| G["Approved records"]
-    F -->|reject or hold| H["Audit state"]
-    G --> I["Pull request"]
-    I --> J["Static-site publication"]
+    A["Discovery adapters"] --> B["Normalization"]
+    B --> C["Deduplication and event clustering"]
+    C --> D["AI relevance classification"]
+    D --> E["Evidence sufficiency check"]
+    E --> F["AI summary and relevance note"]
+    F --> G["Deterministic validation"]
+    G -->|pass| H["Publish with disclosure"]
+    G -->|recoverable| I["Withhold"]
+    G -->|critical or suspicious| J["Quarantine"]
+    H --> K["Scheduled link and metadata recheck"]
+    K --> L["Archive, correct or remove"]
 ```
 
-Later ingestion adapters should retrieve only approved source types, preserve retrieval metadata, and save the exact evidence made available to summarisation. AI output must be treated as a proposed annotation with model and prompt provenance. It must never replace source metadata or bypass human approval.
+Human review may be recorded at any later point but is not in the required path.
 
 ## Components
 
-| Component | Responsibility | Current state |
-|---|---|---|
-| Quarto site | Navigation, accessible pages, reviewed and candidate views | Implemented with fixtures |
-| Content store | Versioned YAML records for people, projects, publications, themes and Research Watch | Implemented with examples |
-| Schemas | Required fields, enumerations, dates and URI formats | Implemented |
-| Python tooling | Validation, cross-record checks and listing generation | Implemented |
-| CI | Tests, static build, internal links and practical accessibility checks | Implemented |
-| Source adapters | Academic, institutional, news, blog, tool and Bluesky discovery | Out of scope |
-| AI annotation service | Classification, summaries and relevance rationales | Out of scope |
-| Review interface | Reviewer workflow beyond pull requests | Out of scope |
+| Component | Responsibility |
+|---|---|
+| Quarto site | Accessible pages, theme cross-listings, unified Research Watch and public disclosures |
+| Canonical YAML store | One record per person, project, publication or Research Watch item |
+| Controlled vocabularies | Small extensible lists for themes, geography, governance scale, methods, domains, sectors and source types |
+| JSON Schemas | Required provenance, relationship, processing and publication fields |
+| Source adapters | Provider-independent OpenAlex, Crossref, OpenAI web-search, Bluesky and captured-fixture discovery |
+| Processing pipeline | Normalization, stable-key generation, deduplication, event clustering, classification and publication controls |
+| Evaluation | Benchmarks and run metrics for coverage, provenance, failures, diversity and duplication |
+| Run manifests | Inputs, versions, adapter results, errors, counts, model usage and output artefacts |
+| CI/workflows | Network-independent tests plus bounded manual/scheduled discovery and static packaging |
 
-## Data lifecycle
+## Canonical relationship model
 
-1. A source is discovered and normalized into a candidate record.
-2. The source URL, stable identifier, publication date, retrieval date, evidence basis, and AI provenance are preserved.
-3. Validation runs before a candidate is proposed in a pull request.
-4. The public candidate area labels the record as automated and unreviewed. Fixture records in Gate 1 are additionally labelled as demonstrations.
-5. A human reviewer checks the source, edits the annotation, resolves risk flags, and records a decision.
-6. Only an approved record may appear as a lab-reviewed selection.
-7. Corrections and removals update status fields and retain the record history in version control.
+Projects and publications are stored once. Each has one primary theme and up to three secondary themes, plus separate geographies, methods, climate domains and sectors. Generated theme views point to the same canonical record. Unfiltered lists deduplicate by record ID.
+
+Research Watch records have one scored primary theme and up to two scored secondary themes. Geography is separate and cannot create thematic relevance by itself.
+
+## Publication transaction
+
+A discovery run writes to a temporary staging area. Only after normalization, classification, publication checks, schema validation, listing tests and a full site build succeed are passing records copied into the publishable store. A failed or partial run retains the previous public store unchanged. Run reports and withheld/quarantined audit records are written separately.
 
 ## Trust boundaries
 
-External content is untrusted. Future adapters must separate retrieved text from system instructions, use allow-lists and timeouts, and avoid executing or rendering arbitrary HTML. Secrets belong in protected runtime secret stores. The built site contains public, reviewed data only; it does not need runtime credentials.
+Retrieved metadata, HTML, documents, snippets and posts are untrusted data. Adapters have bounded network access and no publication credentials. The classifier receives only recorded evidence, cannot execute actions and cannot change repository policy. Site generation escapes public fields and renders no arbitrary source HTML.
 
 ## Deployment model
 
-The intended production artifact is a static site built by a scheduled or pull-request GitHub workflow and deployed only after tests and review pass. Production hosting, DNS, analytics, and deployment credentials are intentionally not configured in Gate 0–1.
+The output is a static site. Gate 2–3A creates production-ready packages but does not deploy them. A later authorized workflow may publish the last validated artifact from an automation branch or equivalent auditable mechanism.

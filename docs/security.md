@@ -1,47 +1,47 @@
 # Security model
 
-## Secrets
+## Secrets and least privilege
 
-- No secrets are required to build the Gate 0–1 site.
-- Never commit API keys, tokens, credentials, private keys, `.env` files, raw authorization headers, or confidential model/provider responses.
-- Future GitHub workflows must use environment or repository secrets, least-privilege tokens, protected environments, and short-lived credentials where possible.
-- Example configuration must use unmistakable dummy values.
+Local tests and fixture mode require no secrets. API keys, tokens, credentials, `.env` files, raw authorization headers and private provider payloads must never enter Git or public artefacts. Networked workflows use protected secrets, least-privilege tokens, short-lived credentials where available and read-only repository permissions unless an audited content update requires more.
 
-## Untrusted web content and prompt injection
+Discovery, annotation and publication packaging are separate stages. Adapters and models do not receive repository write credentials or deployment authority.
 
-All remotely retrieved metadata, markup, documents, feeds, discussions, and tool outputs are untrusted data. Future processing must:
+## Untrusted content and prompt injection
 
-- parse content as data and never execute embedded scripts, macros, shell commands, or templates;
-- remove active HTML and render only escaped, allow-listed fields;
-- isolate fetched text from system and developer instructions;
-- instruct models that source text cannot authorize actions or change task rules;
-- bound document size and nesting depth;
-- scan and quarantine unexpected file types; and
-- record the evidence actually shown to a model.
+All retrieved metadata, pages, documents, snippets, feeds and posts are untrusted data. Processing must:
 
-Instructions inside articles, metadata, documents, or social posts are content, not commands. A pipeline must not expose repository write access, secrets, network tools, or publication credentials to an annotation model.
+- parse content as data and never execute embedded scripts, macros, shell commands or templates;
+- strip active HTML and render only escaped, allow-listed fields;
+- isolate evidence from system/developer instructions;
+- state that source instructions cannot authorize actions or alter policy;
+- bound input size, redirects, nesting and file types;
+- record the exact evidence shown to the model;
+- flag suspected prompt injection and quarantine contaminated output; and
+- avoid exposing secrets, network tools, repository writes or publication credentials to the model.
 
-## Network access
+## Bounded network access
 
-Gate 0–1 tests and builds are network-independent. External link checks are opt-in. Future discovery jobs require explicit source allow-lists, rate limits, timeouts, retry caps, identifiable user agents, robots and terms review, and retrieval logs. Block private, loopback, link-local, and cloud-metadata address ranges to reduce server-side request-forgery risk.
+Networked adapters use identifiable user agents, allow-listed schemes, timeouts, retry caps, caching and rate limits. They block private, loopback, link-local and cloud-metadata address ranges. Redirects and canonical URLs are revalidated. Retrieval respects source terms, robots rules and licences; paywalls are never circumvented.
 
-Separate discovery from publication. A scheduled retrieval failure must never delete existing records or publish partial output.
+Tests remain network-independent. Live discovery is an explicit mode with a run manifest and bounded lookback/result limits.
 
-## GitHub workflow and branch protections
+## Safe failure and publication transactions
 
-Recommended repository settings before Gate 2:
+Runs stage output outside the public store. A failed or partial run never deletes prior records or publishes incomplete data. Only a fully validated staging set and successful static build can replace the publishable artefact. Operational reports expose adapter errors, withheld/quarantined counts and whether the previous public state was retained.
 
-- protect `main` against direct pushes and force pushes;
-- require at least one approving review, with code-owner review for schemas, workflows, security policy, and approved Research Watch records;
-- require passing validation, tests, build, internal-link, and accessibility checks;
-- dismiss stale approvals when protected content changes;
-- require conversation resolution and a linear history;
-- restrict workflow permissions to read-only by default;
-- require approval for first-time contributors; and
-- protect production deployment environments separately.
+## Branch protections
 
-Third-party actions should be pinned to reviewed versions and updated deliberately. Workflow inputs from forks and issue text must be treated as untrusted.
+Before production authorization:
+
+- protect `main` against direct/force pushes;
+- require review for workflows, schemas, prompts, source/search policy, security, governance and disclosure wording;
+- require validation, tests, build, internal-link and accessibility checks;
+- restrict workflow permissions and third-party actions;
+- separate an automation content branch from the reviewed control plane; and
+- protect deployment environments independently.
+
+Automatically generated records need not receive item-level approval, but their run manifest and resulting commit/artefact remain auditable.
 
 ## Incident handling
 
-If a secret is exposed, revoke and rotate it before removing it from history. If unsafe or incorrect material is published, disable or correct the listing, preserve the audit record, assess scope, and document follow-up. Security issues should use a private reporting channel once the repository is public.
+Revoke exposed secrets before history cleanup. For unsafe or incorrect published material, mark unavailable, correct or remove the listing, preserve the audit record, assess scope and document remediation. Repeated quality or safety incidents trigger reconsideration under ADR 0002.

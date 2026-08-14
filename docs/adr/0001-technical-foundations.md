@@ -1,6 +1,6 @@
 # ADR 0001: Technical foundations for the website and Research Watch
 
-- Status: Accepted for Gate 0–1
+- Status: Accepted, with item-level review provision superseded by ADR 0002
 - Date: 2026-08-13
 - Decision owners: Project owner and future lab maintainers
 
@@ -14,7 +14,7 @@ The lab needs an academically credible public website and an auditable path towa
 2. **Python will handle discovery and processing.** Python has mature libraries for scholarly metadata, text processing, validation, testing, and later model integrations. One processing language reduces operational complexity.
 3. **Structured records will use YAML or JSON and validate against JSON Schema.** YAML is readable in editorial pull requests; JSON is suitable for interchange. Schemas make required provenance and workflow states enforceable.
 4. **Scheduled GitHub workflows will run future discovery jobs.** Versioned workflows provide repeatable execution, logs, reviewable changes, and a natural path to opening candidate pull requests without operating a separate scheduler in the early stages.
-5. **Curated items require pull-request review before publication.** A reviewed diff creates an audit trail, separates automatic suggestions from lab decisions, and allows validation and branch protection to block incomplete records.
+5. **Gate 0–1 provision, superseded:** curated items were initially required to receive pull-request review before publication. ADR 0002 replaces this requirement for individual Research Watch items while retaining review for code, schemas, prompts, source policy, disclosure language and governance.
 
 ## Consequences
 
@@ -26,7 +26,7 @@ Scheduled workflows are not a guarantee of reliable ingestion. Jobs must fail sa
 
 - A JavaScript application framework was not selected because Gate 1 requires no runtime interactivity or server state and the lab benefits more from research-publishing features.
 - A database-first CMS was deferred because it would add operations, migrations, permissions, and export concerns before the editorial workflow is proven.
-- Direct automated publishing was rejected because classification errors, provenance gaps, copyright risks, and prompt injection require human judgment.
+- Direct automated publishing was initially rejected because classification errors, provenance gaps, copyright risks, and prompt injection required controls that Gate 0–1 had not yet implemented. ADR 0002 records the later owner decision and compensating controls.
 - Provider-native scheduled tasks were deferred to avoid coupling the workflow to a discovery or model vendor.
 
 ## Revisit triggers

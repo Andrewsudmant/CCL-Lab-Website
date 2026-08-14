@@ -1,56 +1,60 @@
 # Content governance
 
-## Core principle
+## Core principle and disclosure
 
-AI may help find, sort, and draft annotations about material. It is not the source. Every public Research Watch record must let a reader identify and reach the original source and understand whether a human reviewed the lab's annotation.
+AI may discover, classify and summarize material. It is not the source. Every public record links to the original source, describes the evidence available to the system and states whether human review occurred.
 
-## Provenance requirements
+Automatically generated material normally publishes without human review when deterministic controls pass. It must never be described as endorsed, recommended, approved, expert-selected or reviewed by the lab.
 
-Each record must preserve:
+The full public notice is:
 
-- a unique lab record ID;
-- the original title and canonical URL;
-- DOI or another stable identifier when available, or an explicit `null` when none is available;
-- authors or responsible organisation;
-- source type and source name;
-- publication date and retrieval date;
-- the lab themes assigned to the record;
-- the evidence made available to the summarisation process;
-- AI model and prompt version, or an explicit indication that no AI was used;
-- confidence, human-review status, reviewer edits, and risk flags; and
-- correction or removal status.
+> Research Watch uses automated searches and AI-generated classification and summaries. Items have not normally been reviewed by a member of the Cities & Climate Learning Lab, and inclusion does not imply endorsement. Summaries may contain errors or omit important context. Please consult the original source.
 
-Source metadata must not be overwritten by generated text. Normalization changes should be traceable in version control.
+Each unreviewed item carries: **AI-selected and summarized · not reviewed by the lab**.
 
-## AI-assisted annotations
+## Required provenance
 
-Summaries and relevance rationales are lab annotations, not quotations and not substitutes for reading the source. They must be concise, factual, and limited to evidence explicitly listed in the record. Do not infer findings from titles alone. If only metadata or an abstract was available, say so in `evidence_available` and calibrate confidence accordingly.
+Each public Research Watch record preserves:
 
-Prompts must instruct models to ignore instructions embedded in source material. Store a stable prompt version, not secrets or full provider payloads. Model identifiers must be specific enough to support later auditing.
+- unique record and discovery-run IDs;
+- canonical title, URL and stable/platform identifier where available;
+- authors or responsible organisation, source name and source type;
+- publication/posting date, retrieval timestamp and adapter;
+- query-pack/theme-query version;
+- primary and secondary theme assignments with score and rationale;
+- separate geographical tags;
+- concise summary and relevance note;
+- exact evidence types and a limitation statement;
+- model, prompt and structured-output versions;
+- confidence label and basis;
+- publication decision, deterministic checks and risk flags;
+- optional human reviewer/date/edits; and
+- correction, availability and removal status.
 
-## Human review
+Source metadata is never overwritten by generated text. Normalization and classification transformations remain traceable in the run manifest.
 
-Candidate, in-review, approved, rejected, and held states are distinct. Approval requires a named reviewer, review date, and confirmation that:
+## Evidence-constrained annotations
 
-1. source identity and date are correct;
-2. the summary is supported by the recorded evidence;
-3. the relevance rationale matches the research scope;
-4. risk flags are resolved or explained;
-5. wording is original and does not reproduce excessive source text; and
-6. any conflicts, uncertainty, or limitations are visible.
+Academic findings or methods require at least an abstract or legally accessible full text. News, blogs and institutional summaries require page-body evidence; search snippets may support only a clearly limited discovery note. Bluesky content is minimized and, when it links to an underlying paper/report, is treated as commentary around the principal source.
 
-Approved records are merged through pull request review. Unreviewed candidates may be shown for transparency, but must be visually and textually separated from reviewed selections and must never imply endorsement.
+Titles alone cannot support substantive findings. Summaries must be concise, original, factual and limited to recorded evidence. Prompts instruct models to ignore embedded instructions and return explicit evidence limitations.
 
-## Copyright and quotation
+## Automated publication
 
-Store links, bibliographic facts, short original descriptions, and only minimal quotations when editorially necessary. Do not store full articles, paywalled text, images, or substantial excerpts unless the lab has permission or a clear licence. Record licence information for data tools and reusable assets when available. A link does not grant reuse rights.
+Human review is not required. Publication requires a valid source, date, evidence basis, complete provenance and disclosure, sufficient thematic relevance, successful schema validation, no critical risk, no unresolved duplicate/event conflict and a successful site build.
 
-## Corrections and removals
+Items with unsupported claims, missing identity/date, title-only inference, inaccessible evidence, suspicious URLs, prompt-injection contamination, unexpected personal data or nonconforming output are withheld or quarantined. Failure does not create a reviewer obligation and must not alter the last valid public store.
 
-Readers should be able to report errors through the contact route. Confirmed errors are corrected promptly, with `correction_removal.status`, date, and public note updated. Material may be removed from public listings for legal, safety, privacy, source-integrity, or editorial reasons, while the tombstoned record and version-control history preserve the audit trail unless law or policy requires deletion.
+## Optional human review
 
-Removal requests are assessed by the project owner. The lab should document the request, decision, date, scope, and any replacement URL. Silent deletion is not an acceptable routine correction process.
+Human review may occur before or after publication. A factual reviewed label requires reviewer identity and review date. Reviewer edits remain recorded. Absence of those fields always renders the automated, unreviewed label.
 
-## Fixture and placeholder policy
+## Code and policy review
 
-Gate 1 examples are demonstrations, not editorial endorsements. They must use reserved `example-` identifiers and visible placeholder labels. Before Gate 2, the owner must replace or approve names, biographies, contact details, projects, publication records, representative examples, and all Research Watch fixtures.
+Changes to code, schemas, prompts, query packs, source policy, thresholds, disclosure language and governance require pull-request review. Individual records generated under those reviewed controls do not.
+
+## Copyright, corrections and removal
+
+Store bibliographic facts, minimal identifying excerpts and original annotations—not unrestricted full articles, paywalled text or raw provider payloads. A link does not grant reuse rights.
+
+Corrections record date, reason and changed fields. Removal or archival records the decision and preserves an audit trail unless legal/privacy requirements mandate erasure. Scheduled rechecks record broken or redirected sources and availability changes.

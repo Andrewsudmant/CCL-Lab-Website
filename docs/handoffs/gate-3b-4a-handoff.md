@@ -12,7 +12,7 @@ Research Watch now has a bounded private staging path: provider-specific discove
 - DataCite was attempted as an identifier-specific fallback; the sampled Crossref DOI was not in DataCite.
 - Bluesky returned HTTP 403 from this environment. It was not bypassed.
 - No OpenAI key, model or explicit cost cap was configured, so no paid call was made.
-- The 35-item calibration set is real but academic-heavy. Reports, news, tools, commentary and Bluesky need a later provider-enabled calibration supplement.
+- The 35-item calibration set is real but academic-heavy and intentionally includes plausible negatives to measure precision. Reports, news, tools, commentary and Bluesky need a later provider-enabled calibration supplement.
 - No profile photograph was used because reusable rights were not supplied.
 
 ## Transparent and traceable governance

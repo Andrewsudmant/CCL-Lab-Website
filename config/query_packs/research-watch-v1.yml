@@ -10,40 +10,40 @@ source_queries:
   openalex:
     - id: urban-learning-transfer
       themes: [urban-climate-learning]
-      query: urban climate evidence transfer policy learning
+      query: urban climate policy learning
     - id: urban-learning-geography
       themes: [urban-climate-learning, evidence-infrastructure-tools]
-      query: geography urban climate evidence cities
+      query: urban climate knowledge transfer
     - id: governance-delivery-institutions
       themes: [climate-governance-delivery]
-      query: urban climate implementation governance institutions
+      query: urban climate governance
     - id: governance-delivery-modes
       themes: [climate-governance-delivery]
-      query: city climate action delivery modes actors
+      query: city climate implementation
     - id: cobenefits-place
       themes: [co-benefits-place-based-valuation]
-      query: urban climate co-benefits place based valuation
+      query: climate co-benefits cities
     - id: cobenefits-costs
       themes: [co-benefits-place-based-valuation]
-      query: municipal climate co-costs distributional appraisal
+      query: climate action valuation
     - id: workforce-occupations
       themes: [just-transitions-workforce]
-      query: low carbon transition occupations workforce cities
+      query: green transition workforce
     - id: workforce-switching
       themes: [just-transitions-workforce]
-      query: green transition occupation switching skills
+      query: climate occupations skills
     - id: evidence-tools
       themes: [evidence-infrastructure-tools]
-      query: urban climate decision support evidence tool
+      query: urban climate decision support
     - id: evidence-mapping
       themes: [evidence-infrastructure-tools]
-      query: city climate evidence mapping data infrastructure
+      query: urban climate data tools
     - id: canadian-policy-federal
       themes: [canadian-climate-policy]
-      query: Canada municipal climate policy implementation
+      query: Canada municipal climate
     - id: canadian-policy-bc
       themes: [canadian-climate-policy]
-      query: British Columbia urban climate policy cities
+      query: British Columbia climate
   crossref:
     - id: doi-enrichment
       themes: []

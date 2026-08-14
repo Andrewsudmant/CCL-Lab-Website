@@ -31,3 +31,7 @@ Mode: OpenAlex live; Crossref/DataCite enrichment live-attempted; OpenAI and una
 ## Controls and weaknesses
 
 The run used a 30-day OpenAlex publication filter, English article/preprint filter, twelve bounded theme queries, DOI/URL deduplication, conservative event clustering, abstract sufficiency, a conservative lexical relevance gate, a 12-record maximum, and domain caps. Deterministic query-theme assignments are calibration proposals, not model judgements. No raw provider payload, full article text, secret, or private label was retained. The private transaction wrote to a temporary directory and atomically replaced staging only after its manifest and records validated; rollback is separately tested. Source-type and geographic diversity cannot be evaluated well until web and Bluesky access are configured.
+
+## Post-pilot query refinement
+
+After this complete captured run, OpenAlex discovery was changed from its broad default search to the provider-native `title_and_abstract.search` filter, with explicit publication-date, work-type and language filters, bounded retries and a polite delay. A later verification attempt encountered HTTP 429 after repeated development runs. The all-query-failure path now exits non-zero and preserves both this calibration set and last-known-good staging rather than replacing them with an empty batch.

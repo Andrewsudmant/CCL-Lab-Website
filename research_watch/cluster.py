@@ -12,11 +12,14 @@ def normalized_title(value: str) -> str:
 
 
 def event_key(item: DiscoveredItem) -> str:
+    title = normalized_title(item.title)
+    if len(title) >= 20:
+        return "exact-title:" + hashlib.sha256(title.encode()).hexdigest()[:16]
     if item.doi:
         return f"doi:{item.doi.lower()}"
     if item.platform_identifier:
         return f"platform:{item.platform_identifier}"
-    basis = normalized_title(item.title) + "|" + (item.authors[0].lower() if item.authors else item.source_name.lower())
+    basis = title + "|" + (item.authors[0].lower() if item.authors else item.source_name.lower())
     return "title-author:" + hashlib.sha256(basis.encode()).hexdigest()[:16]
 
 

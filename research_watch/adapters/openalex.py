@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 from datetime import date, timedelta
+from datetime import datetime, timezone
 from research_watch.adapters.base import DiscoveryAdapter, get_json
 from research_watch.models import DiscoveredItem
 
@@ -19,11 +20,11 @@ class OpenAlexAdapter(DiscoveryAdapter):
 
     def search(self, query: str, query_id: str, limit: int = 10, lookback_days: int = 30) -> list[DiscoveredItem]:
         parameters = {
-            "search": query,
-            "filter": f"from_publication_date:{date.today() - timedelta(days=lookback_days)},type:article|preprint,language:en",
+            "filter": f"from_publication_date:{date.today() - timedelta(days=lookback_days)},type:article|preprint,language:en,title_and_abstract.search:{query}",
             "per-page": min(limit, 25),
             "sort": "publication_date:desc",
             "select": "id,doi,title,display_name,publication_date,authorships,primary_location,abstract_inverted_index",
+            "mailto": "andrew_sudmant@sfu.ca",
         }
         payload = get_json(self.endpoint, parameters)
         items = []
@@ -39,6 +40,6 @@ class OpenAlexAdapter(DiscoveryAdapter):
                 authors=[a.get("author", {}).get("display_name", "") for a in work.get("authorships", []) if a.get("author")],
                 doi=doi, platform_identifier=(work.get("id") or "").rsplit("/", 1)[-1], abstract=abstract,
                 evidence_types=["abstract"] if abstract else ["metadata-only"], adapter=self.name,
-                query_id=query_id, raw_metadata={"provider_parameters": parameters, "openalex_id": work.get("id"), "provider_source_url": location.get("landing_page_url") or source.get("homepage_url")},
+                query_id=query_id, raw_metadata={"provider_parameters": parameters, "openalex_id": work.get("id"), "provider_source_url": location.get("landing_page_url") or source.get("homepage_url"), "retrieved_at": datetime.now(timezone.utc).isoformat(), "fallback_used": False},
             ))
         return items

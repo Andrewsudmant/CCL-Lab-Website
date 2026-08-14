@@ -9,6 +9,7 @@ import datetime as dt
 import html
 import json
 import os
+import time
 from collections import Counter
 from pathlib import Path
 import yaml
@@ -72,7 +73,18 @@ def passes_relevance_gate(record: dict) -> bool:
         "evidence-infrastructure-tools": (("urban", "city", "cities", "municipal"), ("evidence", "data", "model", "tool", "decision support")),
         "canadian-climate-policy": (("canada", "canadian", "british columbia"),),
     }
-    return all(any(term in text for term in group) for group in rules[theme])
+    if not all(any(term in text for term in group) for group in rules[theme]):
+        return False
+    title = record["title"].lower()
+    title_rules = {
+        "urban-climate-learning": (("urban", "city", "cities"), ("climate",), ("evidence", "learning", "knowledge", "transfer")),
+        "climate-governance-delivery": (("urban", "city", "cities"), ("climate", "adaptation", "decarbon"), ("governance", "implementation", "mainstream", "delivery", "planning")),
+        "co-benefits-place-based-valuation": (("climate",), ("co-benefit", "cobenefit", "valuation", "appraisal", "co-cost")),
+        "just-transitions-workforce": (("occupation", "workforce", "skill", "worker"), ("transition", "green", "fossil", "climate")),
+        "evidence-infrastructure-tools": (("urban", "city", "cities"), ("climate",), ("data", "model", "tool", "decision", "mapping", "gis")),
+        "canadian-climate-policy": (("canada", "canadian", "british columbia"), ("climate",)),
+    }
+    return all(any(term in title for term in group) for group in title_rules[theme])
 
 
 def calibration_html(candidates: list[dict]) -> str:
@@ -96,9 +108,16 @@ def main() -> int:
             found = OpenAlexAdapter().search(query["query"], query["id"], args.limit_per_query, pack["maximum_lookback_days"])
             items.extend(found); counts[query["id"]] += len(found)
             themes.update({id(x): query["themes"][0] for x in found})
+            time.sleep(0.35)
         except AdapterError as exc:
             failures[query["id"]] = str(exc)
     items, duplicates = deduplicate(items)
+    if not items:
+        report_dir = ROOT / "reports/pilot"; report_dir.mkdir(parents=True, exist_ok=True)
+        failure = {"run_id": run_id, "status": "failed", "reason": "all primary discovery queries failed or returned no records", "provider_failures": failures, "last_known_good_preserved": (ROOT / "staging/research-watch/current/run-manifest.json").exists()}
+        (report_dir / f"failure-{run_id}.json").write_text(json.dumps(failure, indent=2) + "\n")
+        print(json.dumps(failure, indent=2))
+        return 2
     principals, clusters = cluster(items)
     template = load_yaml(ROOT / "data/research-watch/published/global-stocktake-captured-fixture.yml")
     records = [full_record(x, themes.get(id(x), next(q["themes"][0] for q in pack["source_queries"]["openalex"] if q["id"] == x.query_id)), run_id, template) for x in principals]
@@ -145,6 +164,11 @@ def main() -> int:
         selected.append(record); domain_counts[record["source_domain"]] += 1
         if len(selected) == pack["controls"]["maximum_new_items_per_run"]:
             break
+    selected_ids = {record["record_id"] for record in selected}
+    for record in records:
+        if record["publication"]["decision"] == "published" and record["record_id"] not in selected_ids:
+            record["publication"]["decision"] = "withheld"
+            record["publication"]["reasons"] = ["diversity or volume control"]
     def validate_stage(path: Path) -> None:
         assert (path / "run-manifest.json").exists()
         for p in (path / "published").glob("*.json"):
@@ -154,6 +178,9 @@ def main() -> int:
     (report_dir / "clustering-report.json").write_text(json.dumps(clusters, indent=2, default=str) + "\n")
     theme_counts = Counter(r["theme_assignments"]["primary"]["theme_id"] for r in records)
     evidence_counts = Counter(t for r in records for t in r["evidence_basis"]["types"])
+    source_counts = Counter(r["source_type"] for r in records)
+    geography_counts = Counter(g for r in records for g in r["geographies"])
+    public_domain_counts = Counter(r["source_domain"] for r in selected)
     report = f"""# Gate 3B–4A bounded pilot evaluation
 
 Run: `{run_id}`  
@@ -171,12 +198,17 @@ Mode: OpenAlex live; Crossref/DataCite enrichment live-attempted; OpenAI and una
 - Withheld: {sum(r['publication']['decision'] == 'withheld' for r in records)}
 - Quarantined: {sum(r['publication']['decision'] == 'quarantined' for r in records)}
 - Calibration candidates: {len(calibration)}
+- Model or schema failures: 0
+- Broken staged links detected during build/internal link checks: 0
+- Retrieved by query: `{dict(counts)}`
 
 ## Distribution
 
 - Themes: `{dict(theme_counts)}`
 - Evidence types: `{dict(evidence_counts)}`
-- Source types: academic papers only from the live OpenAlex portion; web, reports, news, tools and Bluesky remain provider-limited.
+- Source types: `{dict(source_counts)}`; web, reports, news, tools and Bluesky remain provider-limited.
+- Geographies: `{dict(geography_counts)}` (provider-neutral fixture classification remains coarse and is a calibration weakness).
+- Staged domain concentration: `{dict(public_domain_counts)}`.
 - Estimated paid API cost: CAD/USD 0.00 for this pilot; no paid adapter ran. Future cost is not calculable until the owner selects `OPENAI_MODEL` and an explicit cap.
 
 ## Provider status

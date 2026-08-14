@@ -1,0 +1,42 @@
+./scripts/quarto.sh render
+scripts/pre-render.sh
+Generated canonical listings, detail pages, theme views and Research Watch fragments.
+
+[ 1/35] docs/architecture.md
+[ 2/35] docs/baseline-gate-2-3a.md
+[ 3/35] docs/content-governance.md
+[ 4/35] docs/gate-0-1-scope.md
+[ 5/35] docs/gate-2-3a-scope.md
+[ 6/35] docs/publication-metadata-workflow.md
+[ 7/35] docs/security.md
+[ 8/35] docs/theme-content-audit.md
+[ 9/35] docs/adr/0001-technical-foundations.md
+[10/35] docs/adr/0002-automated-research-watch-publication.md
+[11/35] about-andrew.qmd
+[12/35] projects/data-methodologies-climate-impact.qmd
+[13/35] projects/uk-co-benefits-atlas.qmd
+[14/35] projects/urban-climate-evidence-map.qmd
+[15/35] publications/data-scaling-climate-impact-assessment.qmd
+[16/35] publications/geographies-urban-climate-learning.qmd
+[17/35] publications/infrastructure-transitions-southern-cities.qmd
+[18/35] publications/systematic-global-stocktake-urban-climate-research.qmd
+[19/35] publications/visualising-benefits-costs-uk-climate-action.qmd
+[20/35] research-watch/methods.qmd
+[21/35] contact.qmd
+[22/35] data-tools.qmd
+[23/35] opportunities.qmd
+[24/35] people.qmd
+[25/35] projects.qmd
+[26/35] publications.qmd
+[27/35] research.qmd
+[28/35] research/themes/canadian-climate-policy.qmd
+[29/35] research/themes/climate-governance-delivery.qmd
+[30/35] research/themes/co-benefits-place-based-valuation.qmd
+[31/35] research/themes/evidence-infrastructure-tools.qmd
+[32/35] research/themes/just-transitions-workforce.qmd
+[33/35] research/themes/urban-climate-learning.qmd
+[34/35] research-watch/index.qmd
+[35/35] index.qmd
+
+Output created: _site/index.html
+

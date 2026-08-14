@@ -2,7 +2,7 @@
 
 Public website and automated Research Watch prototype for the Cities & Climate Learning Lab (CCLL), based in the School of Resource and Environmental Management at Simon Fraser University.
 
-Gate 2–3A adds bounded discovery, canonical cross-theme content and automated publication controls. Research Watch records may publish without routine human review only when provenance, evidence, risk, deduplication, disclosure and build controls pass. No production deployment is configured.
+Gate 3B–4A is a private launch candidate with fact-checked structured content and a transactional Research Watch staging pipeline. Research Watch records may publish without routine human review only when provenance, evidence, risk, deduplication, disclosure and build controls pass. No production deployment is configured.
 
 ## Local setup
 
@@ -27,6 +27,9 @@ The built site is written to `_site/`. Run `make preview` for a local preview. O
 - Add or edit structured records under `data/`.
 - Update theme definitions and search concepts in `config/research_scope.yml`.
 - Run offline discovery with `PYTHONPATH=. .venv/bin/python -m research_watch.run --adapter fixture`; live adapters are opt-in.
+- Run the explicit 30-day private pilot with `make research-watch-pilot`; it performs network calls to public providers but never runs during a normal build.
+- Refresh the proposed ORCID inventory with `make publications-refresh`.
+- Create the one-time calibration ZIP with `make calibration-pack` after the pilot.
 - Run `make validate` to check schemas and cross-record rules.
 - Run `make generate` to refresh generated Quarto fragments.
 - Run `make check` before opening a pull request.
@@ -41,8 +44,8 @@ Themes are maintained only in `config/research_scope.yml`. Controlled geography,
 
 ## Gate boundaries
 
-Historical scope is preserved in [docs/gate-0-1-scope.md](docs/gate-0-1-scope.md); current scope is in [docs/gate-2-3a-scope.md](docs/gate-2-3a-scope.md). No production deployment is configured.
+Historical scope is preserved in the gate-scope records. Gate 3B–4A does not authorize production deployment, a merge to `main`, DNS changes or scheduled public writes.
 
 ## Shareable handoff packages
 
-Handoff summaries are versioned under `docs/handoffs/`. `make handoff` packages the selected summary together with the current governance and architecture documents. ZIP output is placed in the ignored `deliverables/` directory so binary handoff artifacts do not become repository history.
+Handoff summaries are versioned under `docs/handoffs/`. `make handoff` creates the compact context ZIP; `make owner-review` packages the private site and QA; `make calibration-pack` creates the one-time owner-labelling package. ZIP output is ignored so binary artifacts do not become repository history.

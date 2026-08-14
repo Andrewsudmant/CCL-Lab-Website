@@ -58,3 +58,6 @@ Changes to code, schemas, prompts, query packs, source policy, thresholds, discl
 Store bibliographic facts, minimal identifying excerpts and original annotations—not unrestricted full articles, paywalled text or raw provider payloads. A link does not grant reuse rights.
 
 Corrections record date, reason and changed fields. Removal or archival records the decision and preserves an audit trail unless legal/privacy requirements mandate erasure. Scheduled rechecks record broken or redirected sources and availability changes.
+# Gate 3B–4A content relationships
+
+Every public project and publication now declares whether it is current lab research, foundational prior work or an associated collaboration. This relationship is separate from primary/secondary themes. Publication identity is provider-derived and never AI-rewritten. The owner calibration exercise evaluates discovery relevance; it is not item-level approval and does not create a routine human-review prerequisite.

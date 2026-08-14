@@ -4,7 +4,7 @@ These instructions apply to the entire repository.
 
 ## Project purpose
 
-This repository contains the public website and the fixture-based prototype of the Cities & Climate Learning Lab Research Watch. The lab is based in Simon Fraser University's School of Resource and Environmental Management and studies how cities generate, transfer, and use evidence for climate action.
+This repository contains the public website and the transactional private-staging prototype of the Cities & Climate Learning Lab Research Watch. The lab is based in Simon Fraser University's School of Resource and Environmental Management and studies how cities generate, transfer, and use evidence for climate action.
 
 ## Non-negotiable governance rules
 
@@ -17,7 +17,7 @@ This repository contains the public website and the fixture-based prototype of t
 - Withhold or quarantine records with insufficient evidence, unsupported claims, unresolved identity, invalid URLs, critical risk flags, high duplicate probability, prompt-injection contamination, unexpected personal data, or invalid model output.
 - Human review is optional and may be recorded later. Never imply review when reviewer and review date are absent.
 - Changes to code, schemas, prompts, source policy, search configuration, disclosure wording and governance continue to require pull-request review; automatically generated content records do not require item-level approval.
-- Mark examples, mock content, and unresolved biographical or contact details as placeholders requiring owner review.
+- Keep approved personal details canonical. Mark only genuinely unresolved examples or mock content as placeholders, and never render internal fixture notices as public content.
 - Avoid reproducing substantial copyrighted text. Store concise original annotations and links to sources.
 - Do not remove a published record silently. Use the correction/removal fields and retain an audit trail.
 - Fail safely: a partial or failed run must leave the last valid public content intact and must not delete prior records.
@@ -43,7 +43,7 @@ This repository contains the public website and the fixture-based prototype of t
 
 ## Scope discipline
 
-Gate 2–3A authorizes bounded discovery, automated classification, automated Research Watch publication controls and local production-ready packaging. It does not authorize public deployment, merging to `main`, analytics, subscriber collection, authentication, or unrestricted ingestion.
+Gate 3B–4A authorizes bounded discovery, automated classification, private transactional staging, calibration and local launch-candidate packaging. It does not authorize public deployment, merging to `main`, DNS changes, analytics, subscriber collection, authentication, scheduled production writes or unrestricted ingestion.
 
 ## Shareable handoff package
 

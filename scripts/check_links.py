@@ -62,8 +62,12 @@ def check_internal() -> list[str]:
     return errors
 
 
-def check_external() -> list[str]:
+AUTOMATION_LIMITED_DOMAINS = {"doi.org", "www.doi.org", "bsky.app", "www.linkedin.com", "uk.linkedin.com"}
+
+
+def check_external() -> tuple[list[str], list[str]]:
     errors: list[str] = []
+    warnings: list[str] = []
     urls: set[str] = set()
     for path in SITE.rglob("*.html"):
         for link in parsed(path).links:
@@ -75,9 +79,22 @@ def check_external() -> list[str]:
             with urllib.request.urlopen(request, timeout=10) as response:
                 if response.status >= 400:
                     errors.append(f"{url}: HTTP {response.status}")
+        except urllib.error.HTTPError as exc:
+            # Some canonical providers reject HEAD or automated clients. Retry a
+            # minimal GET before recording an environment-limited warning.
+            try:
+                retry = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 CCLL-link-check/0.2", "Range": "bytes=0-1023"})
+                with urllib.request.urlopen(retry, timeout=10) as response:
+                    if response.status >= 400:
+                        raise urllib.error.HTTPError(url, response.status, "GET failed", response.headers, None)
+            except (urllib.error.URLError, TimeoutError) as retry_exc:
+                if urlparse(url).netloc.lower() in AUTOMATION_LIMITED_DOMAINS and getattr(retry_exc, "code", None) in {403, 404, 405, 429, 999}:
+                    warnings.append(f"{url}: provider blocked automated verification ({retry_exc})")
+                else:
+                    errors.append(f"{url}: {retry_exc}")
         except (urllib.error.URLError, TimeoutError) as exc:
             errors.append(f"{url}: {exc}")
-    return errors
+    return errors, warnings
 
 
 def main() -> int:
@@ -88,13 +105,17 @@ def main() -> int:
         print("_site does not exist; run a build first.")
         return 1
     errors = check_internal()
+    warnings: list[str] = []
     if args.external:
-        errors.extend(check_external())
+        external_errors, warnings = check_external()
+        errors.extend(external_errors)
     if errors:
         print("Link checks failed:")
         for error in errors:
             print(f"- {error}")
         return 1
+    for warning in warnings:
+        print(f"External-link warning: {warning}")
     mode = "internal and external" if args.external else "internal (external checks skipped)"
     print(f"Link checks passed: {mode}.")
     return 0

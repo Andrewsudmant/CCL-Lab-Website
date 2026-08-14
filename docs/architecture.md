@@ -60,3 +60,6 @@ Retrieved metadata, HTML, documents, snippets and posts are untrusted data. Adap
 ## Deployment model
 
 The output is a static site. Gate 2–3A creates production-ready packages but does not deploy them. A later authorized workflow may publish the last validated artifact from an automation branch or equivalent auditable mechanism.
+# Gate 3B–4A implementation note
+
+The private Research Watch control flow is now discovery → normalization → identifier deduplication → conservative event clustering → evidence sufficiency → deterministic publication and diversity controls → temporary staging → validation → atomic last-known-good replacement. Normal website builds never invoke network discovery. Private staged records, withheld records and run manifests remain separate from curated public YAML.

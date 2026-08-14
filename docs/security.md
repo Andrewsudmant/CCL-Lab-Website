@@ -45,3 +45,6 @@ Automatically generated records need not receive item-level approval, but their 
 ## Incident handling
 
 Revoke exposed secrets before history cleanup. For unsafe or incorrect published material, mark unavailable, correct or remove the listing, preserve the audit record, assess scope and document remediation. Repeated quality or safety incidents trigger reconsideration under ADR 0002.
+# Gate 3B–4A operational controls
+
+Paid OpenAI requests require all four environment variables: `OPENAI_API_KEY`, `OPENAI_MODEL`, `OPENAI_MAX_COST_PER_RUN` and `OPENAI_MAX_ITEMS_PER_RUN`. Absence fails before network access. Research Watch writes first to a temporary directory and replaces private staging only after validation; a rollback test proves failure preserves last-known-good content. Provider payloads, source bodies, cookies, browser profiles and model reasoning traces are not committed.

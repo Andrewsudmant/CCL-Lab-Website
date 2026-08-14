@@ -1,0 +1,52 @@
+.venv/bin/python scripts/validate_content.py
+Validated 19 records and 10 schemas.
+.venv/bin/python scripts/generate_site.py
+Generated canonical listings, detail pages, theme views and Research Watch fragments.
+.venv/bin/python -m pytest
+......................................................                   [100%]
+54 passed in 2.01s
+./scripts/quarto.sh render
+scripts/pre-render.sh
+Generated canonical listings, detail pages, theme views and Research Watch fragments.
+
+[ 1/34] about-andrew.qmd
+[ 2/34] projects/climate-delivery-modes.qmd
+[ 3/34] projects/coben-place-based-model.qmd
+[ 4/34] projects/data-methodologies-climate-impact.qmd
+[ 5/34] projects/geography-urban-climate-evidence.qmd
+[ 6/34] projects/occupational-transition-requirements.qmd
+[ 7/34] projects/uk-co-benefits-atlas.qmd
+[ 8/34] publications/climate-policy-social-policy.qmd
+[ 9/34] publications/data-scaling-climate-action-governance-uk.qmd
+[10/34] publications/designing-visualization-atlas-uk-cobenefits.qmd
+[11/34] publications/economic-case-climate-action-cities.qmd
+[12/34] publications/infrastructure-transitions-southern-cities.qmd
+[13/34] publications/integration-mitigation-adaptation-europe.qmd
+[14/34] publications/kigali-economic-appraisal.qmd
+[15/34] publications/low-carbon-cities-affordable.qmd
+[16/34] publications/replicate-generalize-urban-research.qmd
+[17/34] publications/who-can-learn-geography-urban-climate-evidence.qmd
+[18/34] research-watch/methods.qmd
+[19/34] contact.qmd
+[20/34] data-tools.qmd
+[21/34] opportunities.qmd
+[22/34] outputs.qmd
+[23/34] people.qmd
+[24/34] projects.qmd
+[25/34] publications.qmd
+[26/34] research.qmd
+[27/34] research/themes/canadian-climate-policy.qmd
+[28/34] research/themes/climate-governance-delivery.qmd
+[29/34] research/themes/co-benefits-place-based-valuation.qmd
+[30/34] research/themes/evidence-infrastructure-tools.qmd
+[31/34] research/themes/just-transitions-workforce.qmd
+[32/34] research/themes/urban-climate-learning.qmd
+[33/34] research-watch/index.qmd
+[34/34] index.qmd
+
+Output created: _site/index.html
+
+.venv/bin/python scripts/check_links.py
+Link checks passed: internal (external checks skipped).
+.venv/bin/python scripts/check_accessibility.py
+Static accessibility checks passed for 34 HTML pages.

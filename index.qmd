@@ -20,7 +20,7 @@ page-layout: full
     <aside class="hero-aside" aria-label="Lab focus">
       <p class="index-number">01—06</p>
       <p>Six connected research areas spanning evidence, governance, valuation, work, infrastructure and policy.</p>
-      <p class="small-note">Initial scope · owner review required before Gate 2</p>
+      <p class="small-note">Gate 2–3A development build · owner review required</p>
     </aside>
   </div>
 </section>
@@ -59,17 +59,26 @@ page-layout: full
     <h2 id="watch-heading">A transparent view of emerging urban climate evidence.</h2>
   </div>
   <div>
-    <p>Research Watch is being designed to discover and classify research, analysis, tools and public discussion while preserving the original source and a visible review trail.</p>
-    <p class="watch-rule"><strong>AI helps discover.</strong> People review. Sources remain authoritative.</p>
-    <a class="button button-on-dark" href="research-watch/index.html">View the fixture prototype</a>
+    <p>Research Watch discovers and classifies research, analysis, tools and public discussion while preserving the original source and a visible provenance trail.</p>
+    <p class="watch-rule"><strong>AI helps discover and annotate.</strong> Original sources remain authoritative.</p>
+    <a class="button button-on-dark" href="research-watch/index.html">View Research Watch</a>
   </div>
 </section>
 ```
 
 ```{=html}
+<section class="section-shell" aria-labelledby="recent-watch-heading">
+  <div class="section-header"><div><p class="eyebrow">Recent evidence</p><h2 id="recent-watch-heading">From Research Watch</h2></div><a href="research-watch/index.html">View all →</a></div>
+  <div class="candidate-warning" role="note"><strong>Automated discovery notice.</strong><span>AI-selected and summarized items are not normally reviewed by the lab and inclusion does not imply endorsement.</span></div>
+</section>
+```
+
+{{< include generated/home-watch.qmd >}}
+
+```{=html}
 <section class="section-shell status-row" aria-label="Current project status">
-  <p><span class="status-dot" aria-hidden="true"></span><strong>Gate 1 prototype</strong></p>
-  <p>No live feeds, model calls or automated publishing.</p>
-  <p>All examples require owner review.</p>
+  <p><span class="status-dot" aria-hidden="true"></span><strong>Gate 2–3A development build</strong></p>
+  <p>No public deployment.</p>
+  <p>Verified records still require owner review.</p>
 </section>
 ```

@@ -20,13 +20,13 @@ make check
 make build
 ```
 
-The built site is written to `_site/`. Run `make preview` for a local preview. On macOS, `scripts/quarto.sh` also looks for the Quarto installation bundled with RStudio.
+The built site is written to `_site/`. Run `make preview` for a local preview. On macOS, `scripts/quarto.sh` also looks for the Quarto installation bundled with RStudio. Live discovery never runs as part of a build.
 
 ## Common maintenance tasks
 
 - Add or edit structured records under `data/`.
 - Update theme definitions and search concepts in `config/research_scope.yml`.
-- Run bounded mock discovery with `make pilot-mock`; live adapters are opt-in.
+- Run offline discovery with `PYTHONPATH=. .venv/bin/python -m research_watch.run --adapter fixture`; live adapters are opt-in.
 - Run `make validate` to check schemas and cross-record rules.
 - Run `make generate` to refresh generated Quarto fragments.
 - Run `make check` before opening a pull request.
@@ -34,6 +34,10 @@ The built site is written to `_site/`. Run `make preview` for a local preview. O
 - After substantive work, update the relevant file in `docs/handoffs/` and run `make handoff HANDOFF_SUMMARY=docs/handoffs/<file>.md` to create a shareable ChatGPT context package.
 
 Generated files under `generated/` are reproducible and should not be edited by hand. See [content governance](docs/content-governance.md) and [architecture](docs/architecture.md) before changing the Research Watch workflow.
+
+Live adapters are selected explicitly with `--adapter openalex`, `crossref`, `bluesky` or `openai_web_search`. The OpenAI adapter requires `OPENAI_API_KEY`; never place it in YAML, source files, reports or command output. See [Research Watch methods](research-watch/methods.qmd), the [pilot evaluation](reports/pilot/evaluation.md), and the [publication metadata workflow](docs/publication-metadata-workflow.md).
+
+Themes are maintained only in `config/research_scope.yml`. Controlled geography, governance, method, climate-domain and sector terms live in `config/vocabularies.yml`. Query changes are versioned under `config/query_packs/` and require control-plane review. Publication metadata follows ORCID → Crossref → publisher priority, with documented owner overrides taking precedence.
 
 ## Gate boundaries
 

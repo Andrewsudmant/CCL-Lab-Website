@@ -11,21 +11,33 @@ def test_generated_listing_counts_match_records() -> None:
     projects = (ROOT / "generated/projects.qmd").read_text(encoding="utf-8")
     publications = (ROOT / "generated/publications.qmd").read_text(encoding="utf-8")
     reviewed = (ROOT / "generated/research-watch-reviewed.qmd").read_text(encoding="utf-8")
-    candidates = (ROOT / "generated/research-watch-candidates.qmd").read_text(encoding="utf-8")
+    automated = (ROOT / "generated/research-watch-automated.qmd").read_text(encoding="utf-8")
 
     assert themes.count('<article class="theme-card">') == len(research_scope()["themes"])
-    assert people.count('<article class="record-card">') == len(load_records("data/people"))
-    assert projects.count('<article class="record-card">') == len(load_records("data/projects"))
-    assert publications.count('<article class="record-card">') == len(load_records("data/publications"))
-    assert reviewed.count('<article class="watch-card reviewed">') == len(load_records("data/research-watch/approved"))
-    assert candidates.count('<article class="watch-card candidate">') == len(load_records("data/research-watch/candidates"))
+    assert people.count('<article class="record-card') == len(load_records("data/people"))
+    assert projects.count('<article class="record-card') == len(load_records("data/projects"))
+    assert publications.count('<article class="record-card') == len(load_records("data/publications"))
+    watch = load_records("data/research-watch/published")
+    assert reviewed.count('<article class="watch-card') == len([x for x in watch if x["review"]["status"] == "reviewed"])
+    assert automated.count('<article class="watch-card') == len([x for x in watch if x["review"]["status"] == "not_reviewed"])
 
 
-def test_candidate_listing_has_non_endorsement_language() -> None:
+def test_automated_listing_has_full_non_endorsement_language() -> None:
     generate_all()
     page = (ROOT / "research-watch/index.qmd").read_text(encoding="utf-8")
-    assert "not endorsed by the lab" in page
-    assert "Automatically identified" in page
+    assert "inclusion does not imply endorsement" in page
+    assert "Summaries may contain errors" in page
+    assert "AI-selected evidence" in page
+
+
+def test_canonical_detail_pages_and_theme_views_exist() -> None:
+    generate_all()
+    for record in load_records("data/projects"):
+        assert (ROOT / "projects" / f'{record["record_id"]}.qmd').exists()
+    for record in load_records("data/publications"):
+        assert (ROOT / "publications" / f'{record["record_id"]}.qmd').exists()
+    for theme in research_scope()["themes"]:
+        assert (ROOT / "research/themes" / f'{theme["id"]}.qmd').exists()
 
 
 def test_generated_fragments_are_marked() -> None:

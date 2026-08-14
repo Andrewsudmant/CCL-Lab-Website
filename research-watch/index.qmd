@@ -1,66 +1,41 @@
 ---
 title: "Research Watch"
-description: "A transparent, AI-assisted discovery prototype for urban climate evidence."
+description: "A transparent, AI-assisted discovery view of urban climate evidence."
 page-layout: full
 ---
 
 ```{=html}
 <div class="watch-intro section-shell-narrow">
-  <p class="page-deck">A transparent, evolving view of research, analysis, tools and discussion relevant to how cities learn and act on climate.</p>
-  <div class="watch-principle">
-    <p class="eyebrow">Editorial principle</p>
-    <p><strong>AI is the discovery and classification layer—not the source.</strong> Every item retains source, date, identifier, retrieval and review information.</p>
+  <p class="page-deck">An evolving view of research, analysis, tools and discussion relevant to how cities learn and act on climate.</p>
+  <div class="research-watch-disclosure" role="note" aria-label="Automated discovery notice">
+    <p class="eyebrow">How to read this page</p>
+    <p><strong>Research Watch uses automated searches and AI-generated classification and summaries.</strong> Items have not normally been reviewed by a member of the Cities & Climate Learning Lab, and inclusion does not imply endorsement. Summaries may contain errors or omit important context. Please consult the original source.</p>
   </div>
+  <p><a href="methods.html">Read the method, publication controls and correction process →</a></p>
 </div>
 ```
 
 ```{=html}
-<section class="section-shell" aria-labelledby="reviewed-heading">
-  <div class="section-header watch-section-header">
-    <div>
-      <p class="eyebrow">01 · Human checked</p>
-      <h2 id="reviewed-heading">Lab reviewed selections</h2>
-    </div>
-    <span class="status-badge reviewed">Reviewed</span>
-  </div>
-  <p class="section-lead">Items in this section have a recorded human review. During Gate 1, the reviewed item is still a labelled interface fixture—not a substantive lab selection.</p>
+<section class="section-shell" aria-labelledby="automated-heading">
+  <div class="section-header"><div><p class="eyebrow">Automatically published</p><h2 id="automated-heading">AI-selected evidence</h2></div><span class="status-badge unreviewed">Not reviewed</span></div>
+  <form class="watch-filters" data-watch-filters aria-label="Filter Research Watch">
+    <label>Search <input type="search" name="query" autocomplete="off"></label>
+    <label>Theme <select name="theme"><option value="">All themes</option><option value="urban-climate-learning">Urban climate learning</option><option value="climate-governance-delivery">Governance and delivery</option><option value="co-benefits-place-based-valuation">Co-benefits and valuation</option><option value="just-transitions-workforce">Just transitions and workforce</option><option value="evidence-infrastructure-tools">Evidence infrastructure</option><option value="canadian-climate-policy">Canadian climate policy</option></select></label>
+    <label>Source <select name="source"><option value="">All sources</option><option value="academic-paper">Academic paper</option><option value="policy-report">Policy report</option><option value="news-analysis">News / analysis</option><option value="blog-commentary">Blog / commentary</option><option value="data-tool">Data tool</option><option value="bluesky">Bluesky</option></select></label>
+    <button type="reset">Clear</button><output data-watch-count aria-live="polite"></output>
+  </form>
+```
+
+{{< include ../generated/research-watch-automated.qmd >}}
+
+```{=html}
+</section>
+<section class="candidate-zone" aria-labelledby="reviewed-heading"><div class="section-shell">
+  <div class="section-header"><div><p class="eyebrow">Optional editorial layer</p><h2 id="reviewed-heading">Lab reviewed selections</h2></div><span class="status-badge reviewed">Reviewed</span></div>
 ```
 
 {{< include ../generated/research-watch-reviewed.qmd >}}
-```{=html}
-</section>
-```
 
 ```{=html}
-<section class="candidate-zone" aria-labelledby="candidate-heading">
-  <div class="section-shell">
-    <div class="section-header watch-section-header">
-      <div>
-        <p class="eyebrow">02 · Automatically identified</p>
-        <h2 id="candidate-heading">Unreviewed candidates</h2>
-      </div>
-      <span class="status-badge unreviewed">Not reviewed</span>
-    </div>
-    <div class="candidate-warning" role="note">
-      <strong>These items are not endorsed by the lab.</strong>
-      <span>They are automated fixture candidates shown to test transparency, provenance and review-state design.</span>
-    </div>
-```
-
-{{< include ../generated/research-watch-candidates.qmd >}}
-```{=html}
-  </div>
-</section>
-```
-
-```{=html}
-<section class="section-shell section-shell-narrow methodology-strip" aria-labelledby="method-heading">
-  <p class="eyebrow">How it will work</p>
-  <h2 id="method-heading">Discovery, classification, review.</h2>
-  <ol class="process-list">
-    <li><strong>Discover</strong><span>Find material from allow-listed sources and retain original metadata.</span></li>
-    <li><strong>Classify</strong><span>Draft themes, summaries and relevance notes against explicit evidence.</span></li>
-    <li><strong>Review</strong><span>A person verifies the source and annotation before curated publication.</span></li>
-  </ol>
-</section>
+</div></section>
 ```

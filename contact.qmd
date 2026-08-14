@@ -14,8 +14,8 @@ description: "Contact the Cities & Climate Learning Lab."
   </div>
   <div>
     <p class="eyebrow">Contact route</p>
-    <p><strong>An approved public email address has not yet been supplied.</strong></p>
-    <p>This placeholder prevents the site from inventing or exposing contact information. The owner must provide the preferred address before launch.</p>
+    <p><strong>Email:</strong> <a href="mailto:asudmant@sfu.ca">asudmant@sfu.ca</a></p>
+    <p>This address is published on Andrew Sudmant's SFU profile. The owner must confirm it as the preferred lab contact before launch.</p>
   </div>
 </div>
 ```

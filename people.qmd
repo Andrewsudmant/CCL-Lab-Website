@@ -3,10 +3,10 @@ title: "People"
 description: "People connected with the Cities & Climate Learning Lab."
 ---
 
-<p class="page-deck">A developing community of researchers, students and collaborators focused on the institutions and evidence behind urban climate action.</p>
+<p class="page-deck">Researchers and collaborators focused on the institutions and evidence behind urban climate action.</p>
 
 ::: {.notice .notice-placeholder}
-Biographical and role information is placeholder content requiring owner confirmation.
+Andrew's title and contact details are drawn from his public SFU profile. Biography wording and the future people roster require owner confirmation.
 :::
 
 {{< include generated/people.qmd >}}

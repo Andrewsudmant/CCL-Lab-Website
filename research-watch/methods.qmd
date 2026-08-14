@@ -1,0 +1,37 @@
+---
+title: "Research Watch methods"
+description: "How Research Watch discovers, annotates, checks and publishes records."
+---
+
+<p class="page-deck">A transparent account of what automation does, what it cannot establish, and why some records are withheld.</p>
+
+## Workflow
+
+1. **Discover.** Bounded, versioned queries search OpenAlex, Crossref, OpenAI web search and public Bluesky data.
+2. **Normalize.** URLs, DOIs, dates and provider fields are converted to a shared record.
+3. **Deduplicate and cluster.** DOI and canonical URL matches are collapsed; related coverage may be grouped around an original source.
+4. **Classify.** Evidence is matched to one primary and up to two secondary lab themes, with scores and rationales. Geography is assigned separately.
+5. **Summarize.** A summary is allowed only when the evidence record is sufficient. Title-only candidates do not receive a substantive summary.
+6. **Check.** Schema, URL safety, duplicate, evidence, risk, disclosure and diversity controls run deterministically.
+7. **Publish, withhold or quarantine.** Passing records may publish without human review. Failed records remain private for reconsideration or investigation.
+8. **Recheck.** Availability, corrections, removals and age are maintained over time.
+
+## Publication rules
+
+Automatic publication does not mean endorsement. A record is withheld when evidence is insufficient, the primary-theme score is below threshold, or a critical risk flag is present. Suspicious URLs or prompt-injection signals are quarantined. No model can override these gates.
+
+The homepage shows at most six items, with caps per domain. The full feed caps domains, themes and event clusters so a single publisher or news event cannot dominate.
+
+## Provenance
+
+Every record retains its original and canonical URL, stable or platform identifier, authors or organisation, source type and name, publication date, retrieval timestamp, query and adapter version, evidence used, model and prompt version, confidence, review state, edits, risk flags and correction status.
+
+AI-generated text is an annotation of the evidence available to the process. It is never presented as the source, and the original source link remains primary.
+
+## Corrections, availability and removal
+
+Corrections can amend the annotation while preserving a dated edit record. Broken links are marked rather than silently deleted. Removal requests are assessed under the [content-governance policy](/docs/content-governance.html); a tombstone may be retained where necessary for traceability.
+
+## Development limitations
+
+The current feed contains a captured, reproducible fixture based on a verified source. The bounded pilot reached OpenAlex and Crossref. OpenAlex's first query produced substantial off-topic results, Crossref's placeholder enrichment query was not useful for discovery, Bluesky returned a CDN-level 403 from this environment, and OpenAI was not called because no API key was configured. These findings are preserved in the pilot report and drive the next query revision.

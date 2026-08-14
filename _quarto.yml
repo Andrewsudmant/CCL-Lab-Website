@@ -1,10 +1,14 @@
 project:
   type: website
   output-dir: _site
-  pre-render: python3 scripts/generate_site.py
+  pre-render: scripts/pre-render.sh
   render:
     - "*.qmd"
     - "research-watch/index.qmd"
+    - "research-watch/methods.qmd"
+    - "research/themes/*.qmd"
+    - "projects/*.qmd"
+    - "publications/*.qmd"
     - "docs/*.md"
     - "docs/adr/*.md"
     - "!generated/*.qmd"
@@ -42,8 +46,8 @@ website:
       **Cities & Climate Learning Lab**<br>
       School of Resource and Environmental Management, Simon Fraser University
     right: |
-      Gate 1 prototype · Fixture data only<br>
-      [Content governance](/docs/content-governance.html)
+      Gate 2–3A development build · no public deployment<br>
+      [Research Watch method](/research-watch/methods.html) · [Content governance](/docs/content-governance.html)
   search: true
   reader-mode: false
   back-to-top-navigation: true
@@ -57,6 +61,7 @@ format:
     link-external-newwindow: false
     anchor-sections: true
     smooth-scroll: true
+    include-after-body: assets/site-scripts.html
 
 execute:
   freeze: auto

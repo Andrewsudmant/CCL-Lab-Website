@@ -3,10 +3,10 @@ title: "Publications"
 description: "Publications from the Cities & Climate Learning Lab."
 ---
 
-<p class="page-deck">Peer-reviewed research, reports, working papers and policy-facing outputs will be collected here with stable identifiers and complete citations.</p>
+<p class="page-deck">Selected peer-reviewed research and preprints, maintained as canonical records with stable identifiers and explicit metadata provenance.</p>
 
 ::: {.notice .notice-placeholder}
-The record below demonstrates the publication schema only. It does not claim that the named work has been published.
+Initial records are verified against DOI, publisher or institutional sources, but incomplete author lists and year-only dates remain clearly flagged for owner review.
 :::
 
 {{< include generated/publications.qmd >}}

@@ -22,8 +22,14 @@ CONTEXT_FILES = [
     Path("docs/content-governance.md"),
     Path("docs/security.md"),
     Path("docs/gate-0-1-scope.md"),
+    Path("docs/gate-2-3a-scope.md"),
     Path("docs/adr/0001-technical-foundations.md"),
+    Path("docs/adr/0002-automated-research-watch-publication.md"),
+    Path("docs/theme-content-audit.md"),
+    Path("docs/publication-metadata-workflow.md"),
     Path("config/research_scope.yml"),
+    Path("config/vocabularies.yml"),
+    Path("config/query_packs/research-watch-v1.yml"),
 ]
 
 

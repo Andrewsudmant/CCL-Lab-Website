@@ -3,13 +3,13 @@ title: "Data & Tools"
 description: "Data resources and decision-support tools from the Cities & Climate Learning Lab."
 ---
 
-<p class="page-deck">Open, documented resources for studying how urban climate evidence is produced and used.</p>
+<p class="page-deck">Documented resources for studying how climate evidence is produced, valued and used in places.</p>
 
 ```{=html}
 <div class="empty-state">
-  <p class="eyebrow">In development</p>
-  <h2>Tools will be published with methods, versioning and limitations.</h2>
-  <p>Gate 1 establishes the governance and record structures. No live data products or decision-support tools are being released yet.</p>
+  <p class="eyebrow">Featured external tool</p>
+  <h2><a href="https://ukcobenefitsatlas.net/">UK Co-Benefits Atlas</a></h2>
+  <p>An interactive place-based atlas developed by a team including Andrew Sudmant. It estimates eleven categories of benefits and costs across more than 46,000 UK communities. Consult the tool's own methods and limitations.</p>
 </div>
 ```
 

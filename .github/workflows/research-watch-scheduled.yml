@@ -1,5 +1,9 @@
 name: Research Watch scheduled candidate run
 
+concurrency:
+  group: research-watch-private-staging
+  cancel-in-progress: false
+
 on:
   schedule:
     - cron: "17 14 * * 2,5"
@@ -26,25 +30,28 @@ jobs:
       - run: python -m pip install -r requirements-dev.txt
       - name: Validate control plane
         run: make validate test
-      - name: Run bounded public adapters into a private workflow artifact
-        shell: bash
-        run: |
-          mkdir -p reports/scheduled
-          PYTHONPATH=. python -m research_watch.run --adapter openalex --limit 5 --output reports/scheduled/openalex.json || true
-          PYTHONPATH=. python -m research_watch.run --adapter crossref --limit 5 --output reports/scheduled/crossref.json || true
-          PYTHONPATH=. python -m research_watch.run --adapter bluesky --limit 5 --output reports/scheduled/bluesky.json || true
+      - name: Run transactional private pilot
+        env:
+          RESEARCH_WATCH_AUTOPUBLISH_ENABLED: ${{ vars.RESEARCH_WATCH_AUTOPUBLISH_ENABLED }}
+        run: PYTHONPATH=. python scripts/run_research_watch_pilot.py --limit-per-query 4
       - name: Optional OpenAI web search
         if: ${{ inputs.use_openai == true }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
-        run: PYTHONPATH=. python -m research_watch.run --adapter openai_web_search --limit 5 --output reports/scheduled/openai-web.json
+          OPENAI_MAX_COST_PER_RUN: ${{ vars.OPENAI_MAX_COST_PER_RUN }}
+          OPENAI_MAX_ITEMS_PER_RUN: ${{ vars.OPENAI_MAX_ITEMS_PER_RUN }}
+        run: PYTHONPATH=. python -m research_watch.run --adapter openai_web_search --limit 5 --output reports/pilot/openai-web.json
       - uses: actions/upload-artifact@v4
         with:
           name: research-watch-candidates-${{ github.run_id }}
-          path: reports/scheduled
+          path: |
+            reports/pilot
+            staging/research-watch/current
+            calibration/research-watch
           if-no-files-found: error
           retention-days: 14
 
-# This Gate 3A workflow discovers candidates only. It cannot mutate public content.
-# Automatic record assembly and staged publication remain a documented Gate 3B decision.
+# Private artefacts only. This workflow has read-only repository permission, cannot
+# write to main, and does not deploy. RESEARCH_WATCH_AUTOPUBLISH_ENABLED remains a
+# future control and must default to false.

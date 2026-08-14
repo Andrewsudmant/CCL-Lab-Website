@@ -1,0 +1,95 @@
+{
+  "record_id": "pilot-journal-of-gis-based-historical-studies",
+  "title": "Journal of GIS based Historical Studies",
+  "url": "https://doi.org/10.5281/zenodo.7368979",
+  "canonical_url": "https://doi.org/10.5281/zenodo.7368979",
+  "stable_identifier": {
+    "type": "doi",
+    "value": "10.5281/zenodo.7368979",
+    "url": "https://doi.org/10.5281/zenodo.7368979"
+  },
+  "platform_identifier": "W4310005602",
+  "authors_or_organisation": [
+    "JANGIS"
+  ],
+  "source_type": "academic-paper",
+  "source_name": "Zenodo (CERN European Organization for Nuclear Research)",
+  "source_domain": "zenodo.org",
+  "publication_date": "2029-05-06",
+  "retrieval_timestamp": "2026-08-14T19:11:00.967816+00:00",
+  "discovery": {
+    "run_id": "gate-3b-4a-20260814T121055",
+    "adapter": "openalex",
+    "query_id": "canadian-policy-bc",
+    "query_version": "2.0.0"
+  },
+  "theme_assignments": {
+    "primary": {
+      "theme_id": "canadian-climate-policy",
+      "score": 0.72,
+      "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+    },
+    "secondary": []
+  },
+  "geographies": [
+    "global"
+  ],
+  "short_summary": "This is a journal of the Asian Network of GIS based Historical Studies, Tokyo, Japan",
+  "reason_for_relevance": "The source was retrieved by the bounded query for canadian climate policy and requires calibration against the lab scope.",
+  "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+  "evidence_basis": {
+    "types": [
+      "abstract"
+    ],
+    "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+    "sufficient_for_summary": true,
+    "limitations": "Provider metadata was not a substitute for independent full-text review."
+  },
+  "ai_provenance": {
+    "used": false,
+    "model": null,
+    "prompt_version": "research-watch-classification-v2-fixture",
+    "run_id": "gate-3b-4a-20260814T121055",
+    "structured_output_version": "2.0",
+    "deterministic_transformations": [
+      "query-theme calibration assignment",
+      "abstract truncation"
+    ]
+  },
+  "confidence": {
+    "score": 0.72,
+    "label": "medium",
+    "basis": "Confidence reflects evidence availability and deterministic query assignment."
+  },
+  "review": {
+    "status": "not_reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "notes": null
+  },
+  "publication": {
+    "decision": "published",
+    "reasons": [
+      "passed automatic publication controls"
+    ],
+    "checks_passed": [
+      "source-url",
+      "identifier",
+      "disclosure",
+      "bounded-run"
+    ],
+    "disclosure_version": "research-watch-disclosure-v1"
+  },
+  "reviewer_edits": [],
+  "risk_flags": [
+    "none"
+  ],
+  "correction_availability": {
+    "status": "available",
+    "date": null,
+    "note": "Contact the lab to request a correction or removal review."
+  },
+  "event_cluster_id": "doi:10.5281/zenodo.7368979",
+  "linked_sources": [],
+  "captured_fixture": false
+}

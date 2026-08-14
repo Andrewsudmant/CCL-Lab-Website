@@ -1,0 +1,3460 @@
+[
+  {
+    "record_id": "pilot-impacts-of-land-system-change-driven-urban-heat-islands-on-surface-wat",
+    "title": "Impacts of land system change\u2212\u2009driven urban heat islands on surface water dynamics and moisture conditions in Gauteng Province, South Africa",
+    "url": "https://doi.org/10.1007/s43762-026-00290-5",
+    "canonical_url": "https://doi.org/10.1007/s43762-026-00290-5",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1007/s43762-026-00290-5",
+      "url": "https://doi.org/10.1007/s43762-026-00290-5"
+    },
+    "platform_identifier": "W7202266542",
+    "authors_or_organisation": [
+      "Tamiranashe Kuwaza",
+      "Paidamwoyo Mhangara",
+      "Eskinder Gidey"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Computational Urban Science",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-13",
+    "retrieval_timestamp": "2026-08-14T19:11:00.966858+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "urban-learning-transfer",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "urban-climate-learning",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Abstract Surface water is a scarce resource in Gauteng, South Africa. This study analysed the impacts of urban heat islands on surface water dynamics and moisture conditions from 1984 to 2024 using vegetation and water indices in the Google Earth Engine. The results indicate that Gauteng has experienced a slight increase in land surface temperature (LST), ranging from 62\u00b0C to 63.2\u00b0C, and low LST decreased from 24.8\u00b0C to 10.32\u00b0C. The mean high LST was approximately 63.04\u00b0C, whereas the low LST value was 11.31\u00b0C. A higher vegetation cover, ranging from 0.66 in 1984 to 0.86 in 2014, and a lower v",
+    "reason_for_relevance": "The source was retrieved by the bounded query for urban climate learning and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1007/s43762-026-00290-5",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-multi-hazard-risk-assessment-through-geospatial-analysis-and-machine-l",
+    "title": "Multi hazard risk assessment through geospatial analysis and machine learning",
+    "url": "https://doi.org/10.1007/s44282-026-00540-1",
+    "canonical_url": "https://doi.org/10.1007/s44282-026-00540-1",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1007/s44282-026-00540-1",
+      "url": "https://doi.org/10.1007/s44282-026-00540-1"
+    },
+    "platform_identifier": "W7202269991",
+    "authors_or_organisation": [
+      "Payal Pidurkar",
+      "Roshni.S. Khedgaonkar",
+      "Sundeep Reddy Mallu",
+      "Nikhil Mangrulkar",
+      "Shreyas Rajendra Hole",
+      "Sagarkumar S. Badhiye"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Discover Global Society",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-12",
+    "retrieval_timestamp": "2026-08-14T19:11:00.966901+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "urban-learning-transfer",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "urban-climate-learning",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Climate change, increased frequency of natural hazards and growing urban populations all have created a greater necessity for conducting comprehensive multi-hazard assessments using Geographical Information Systems (GIS). Therefore, this research paper proposes developing a machine learning and GIS based methodology to identify and map zones of multi-hazard risk through use of integrated geospatial and environmental variables. The framework incorporates multiple types of geospatial data sets that can be drawn from various sources which include; hydrology, topography, environment, climate and a",
+    "reason_for_relevance": "The source was retrieved by the bounded query for urban climate learning and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1007/s44282-026-00540-1",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-exploring-the-feasibility-and-acceptability-of-an-educational-interven",
+    "title": "Exploring the feasibility and acceptability of an educational intervention on air pollution for healthcare professionals",
+    "url": "https://doi.org/10.3389/fpubh.2026.1862924",
+    "canonical_url": "https://doi.org/10.3389/fpubh.2026.1862924",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.3389/fpubh.2026.1862924",
+      "url": "https://doi.org/10.3389/fpubh.2026.1862924"
+    },
+    "platform_identifier": "W7168111533",
+    "authors_or_organisation": [
+      "Diana Varaden",
+      "Ben Hudson",
+      "Malcolm White",
+      "Camilla Allwood",
+      "L Anderson"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Frontiers in Public Health",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-12",
+    "retrieval_timestamp": "2026-08-14T19:11:00.966935+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "urban-learning-transfer",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "urban-climate-learning",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Background Air pollution is the greatest environmental health risk in the UK, contributing to a range of chronic conditions and preventable deaths each year. General Practitioners and wider healthcare professionals (HCPs) are trusted messengers who regularly advise on modifiable risk factors, yet air pollution is largely absent from medical education and patient-facing communications. To address this gap, an online training intervention was developed to equip HCPs with knowledge and confidence to discuss air pollution with patients and act as \u201cchampions\u201d cascading their air quality knowledge t",
+    "reason_for_relevance": "The source was retrieved by the bounded query for urban climate learning and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.3389/fpubh.2026.1862924",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-motivation-to-learn-and-teach-home-economics-in-higher-education-predi",
+    "title": "Motivation to learn and teach home economics in higher education: Predictors and comparative analysis",
+    "url": "https://doi.org/10.1016/j.ssaho.2026.103414",
+    "canonical_url": "https://doi.org/10.1016/j.ssaho.2026.103414",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1016/j.ssaho.2026.103414",
+      "url": "https://doi.org/10.1016/j.ssaho.2026.103414"
+    },
+    "platform_identifier": "W7202272361",
+    "authors_or_organisation": [
+      "Shaira Vita Mae G. Adviento",
+      "Realyn Q. Salvador",
+      "Chariza Mae B. Basamot",
+      "Marc Laurence Q. Tamayo",
+      "Shareen Kate A. Gamiao",
+      "Daisy L. Franco",
+      "Manelyn D. Salvador",
+      "John Ryane A. Laureta",
+      "Mark Raguindin Limon"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Social Sciences & Humanities Open",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-12",
+    "retrieval_timestamp": "2026-08-14T19:11:00.966965+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "urban-learning-transfer",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "urban-climate-learning",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Motivation, influenced by key personal and professional factors, plays a crucial role in the performance of both students and teachers. This study examined the motivational factors of higher education students and teachers in learning and teaching Home Economics (HE) in a state university. A total of 344 participants\u2014294 students and 50 teachers\u2014were surveyed using researcher-developed and adapted instruments. Data were analyzed using descriptive and inferential statistics at a 95% confidence level. HE students reported an overall motivation mean of 3.46, interpreted as \u201cfrequently motivated.\u201d",
+    "reason_for_relevance": "The source was retrieved by the bounded query for urban climate learning and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1016/j.ssaho.2026.103414",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-the-effects-of-immigration-on-agricultural-development-brazil-in-the-a",
+    "title": "The Effects of Immigration on Agricultural Development: Brazil in the Age of Mass Migration",
+    "url": "https://openalex.org/W7166491035",
+    "canonical_url": "https://openalex.org/W7166491035",
+    "stable_identifier": {
+      "type": "openalex",
+      "value": "W7166491035",
+      "url": "https://openalex.org/W7166491035"
+    },
+    "platform_identifier": "W7166491035",
+    "authors_or_organisation": [
+      "Andrea Papadia",
+      "David Escamilla\u2010Guerrero",
+      "Ariell Zimran"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "White Rose Research Online (University of Leeds, The University of Sheffield, University of York)",
+    "source_domain": "eprints.whiterose.ac.uk",
+    "publication_date": "2026-09-01",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967001+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "urban-learning-geography",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "urban-climate-learning",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "We study the e\ufb00ects of immigration during the Age of Mass Migration (1855\u20131920) on Brazil\u2019s agricultural development in 1920. Instrumenting for a municipality\u2019s immigrant share using the interaction of aggregate immigrant inflows and the expansion of Brazil\u2019s railway network, we find that a greater share of European immigrants in a municipality led to an increase in farm values. The bulk of the effect was the product of more intense cultivation of land. We also find that it is unlikely that immigration slowed Brazil\u2019s structural transformation. Our results imply that immigration into an emergi",
+    "reason_for_relevance": "The source was retrieved by the bounded query for urban climate learning and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "platform:W7166491035",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-platform-ecosystem-governance-and-its-influence-on-the-process-of-form",
+    "title": "Platform ecosystem governance and its influence on the process of formation and institutionalization of new practices for development",
+    "url": "https://doi.org/10.1016/j.infoandorg.2026.100640",
+    "canonical_url": "https://doi.org/10.1016/j.infoandorg.2026.100640",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1016/j.infoandorg.2026.100640",
+      "url": "https://doi.org/10.1016/j.infoandorg.2026.100640"
+    },
+    "platform_identifier": "W7202242303",
+    "authors_or_organisation": [
+      "Cameron McRae",
+      "Mar\u00eda Carmela Annosi",
+      "Alain Pinsonneault",
+      "Laurette Dub\u00e9"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Information and Organization",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-13",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967032+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "urban-learning-geography",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "urban-climate-learning",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "This study examined how platform ecosystem governance mechanisms, as enacted through human intermediaries, influenced the formation and institutionalization of new practices among smallholder farmers in an ICT4D context. We conceptualize platform ecosystems as socio-technical systems comprising platform owners, complementors, intermediaries, and end-users whose interactions shape governance through digital and physical interactions. Drawing on a mixed-methods design, we investigated eKutir, a platform-based social enterprise in India that employed local micro-entrepreneurs to mediate interacti",
+    "reason_for_relevance": "The source was retrieved by the bounded query for urban climate learning and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1016/j.infoandorg.2026.100640",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-widening-climate-adaptation-gaps-in-the-chinese-expressway-network-und",
+    "title": "Widening climate adaptation gaps in the Chinese expressway network under climate change",
+    "url": "https://doi.org/10.1038/s43247-026-03913-1",
+    "canonical_url": "https://doi.org/10.1038/s43247-026-03913-1",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1038/s43247-026-03913-1",
+      "url": "https://doi.org/10.1038/s43247-026-03913-1"
+    },
+    "platform_identifier": "W7202384503",
+    "authors_or_organisation": [
+      "Hongjing Huang",
+      "Wenbin Liu",
+      "Delong Li",
+      "Ziwei Li",
+      "Yao Feng",
+      "Hong Wang",
+      "T. Wang",
+      "Liang Chen",
+      "Yang Li",
+      "Fubao Sun"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Communications Earth & Environment",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-13",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967061+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "urban-learning-geography",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "urban-climate-learning",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "China\u2019s expressway network, the world\u2019s largest, relies on engineering codes calibrated under climatic stationarity, yet the extent to which climate change has reduced the protection provided by these static design margins remains unclear. We link non-stationary precipitation extremes to expressway design thresholds, evaluate network consequences, and project future risk. Here we show that for 71.4% of expressway segments, precipitation thresholds originally set for once-in-a-century events are now exceeded more frequently, revealing a systemic adaptation gap. This gap spans all construction p",
+    "reason_for_relevance": "The source was retrieved by the bounded query for urban climate learning and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1038/s43247-026-03913-1",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-public-institutions-for-cleantech-commercialization-in-the-united-stat",
+    "title": "Public institutions for cleantech commercialization in the United States",
+    "url": "https://doi.org/10.1038/s41467-026-76484-6",
+    "canonical_url": "https://doi.org/10.1038/s41467-026-76484-6",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1038/s41467-026-76484-6",
+      "url": "https://doi.org/10.1038/s41467-026-76484-6"
+    },
+    "platform_identifier": "W7202379699",
+    "authors_or_organisation": [
+      "Em Finkelstine",
+      "Laura D\u00edaz Anad\u00f3n",
+      "Jonas Meckling"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Nature Communications",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-13",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967091+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "governance-delivery-institutions",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "climate-governance-delivery",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Abstract The United States has been building public institutions to promote cleantech commercialization since the 1970s oil crisis. The ascent of new industrial policy has accelerated this process substantially since 2020, resulting in a doubling of the total number of institutions by 2024. Introducing a dataset of 122 institutions, we show how institutions perform five functions: goal setting, coordination, derisking, imposing discipline, and external engagement. Further, we demonstrate how post-2020 institutions extend and diverge from historical trends, highlighting the recent buildout of p",
+    "reason_for_relevance": "The source was retrieved by the bounded query for climate governance delivery and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1038/s41467-026-76484-6",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-unpacking-pension-climate-governance-the-finance-climate-governance-ne",
+    "title": "Unpacking pension-climate governance: the finance-climate governance nexus and its implications for pension fund climate action and fossil fuel phaseout",
+    "url": "https://doi.org/10.1007/s10784-026-09732-1",
+    "canonical_url": "https://doi.org/10.1007/s10784-026-09732-1",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1007/s10784-026-09732-1",
+      "url": "https://doi.org/10.1007/s10784-026-09732-1"
+    },
+    "platform_identifier": "W7202341784",
+    "authors_or_organisation": [
+      "Clara McDonnell"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "International Environmental Agreements Politics Law and Economics",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-13",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967121+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "governance-delivery-institutions",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "climate-governance-delivery",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Abstract Through the Paris Agreement\u2019s commitment to making financial flows consistent with emissions reduction pathways, large institutional investors, including pension funds, have been implicitly conscripted into efforts to leave fossil fuels underground. Yet despite the attention to finance from international climate agreements, finance continues to fund fossil fuel expansion. Drawing on the emergent literature on finance-climate governance interactions, I explore how the intersection of these governance regimes impacts a specific actor (pension funds) and a specific issue area (management",
+    "reason_for_relevance": "The source was retrieved by the bounded query for climate governance delivery and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1007/s10784-026-09732-1",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-multilevel-governance-and-the-decarbonisation-of-transportation-toward",
+    "title": "Multilevel governance and the decarbonisation of transportation: towards a research agenda",
+    "url": "https://doi.org/10.1080/21622671.2026.2702944",
+    "canonical_url": "https://doi.org/10.1080/21622671.2026.2702944",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1080/21622671.2026.2702944",
+      "url": "https://doi.org/10.1080/21622671.2026.2702944"
+    },
+    "platform_identifier": "W7202248191",
+    "authors_or_organisation": [
+      "J\u00f6rg Broschek"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Territory Politics Governance",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-12",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967149+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "governance-delivery-modes",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "climate-governance-delivery",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Comparative research from political scientists on how multilevel governance affects the decarbonisation of transportation is rare. Transportation policy has gained new strategic importance in a changing geoeconomic context, but the transport sector has been particularly resistant to change. Considering that transportation markets and infrastructures that shape mobility patterns cut across territorial jurisdictions, the mobility transition constitutes a profound challenge for multilevel governance. Using illustrative evidence from Canada and Germany, this article develops a research agenda inte",
+    "reason_for_relevance": "The source was retrieved by the bounded query for climate governance delivery and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1080/21622671.2026.2702944",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-escaping-the-heat-urban-heat-resilience-and-public-cool-spaces",
+    "title": "Escaping the heat: urban heat resilience and public cool spaces",
+    "url": "https://doi.org/10.1007/s10113-026-02652-5",
+    "canonical_url": "https://doi.org/10.1007/s10113-026-02652-5",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1007/s10113-026-02652-5",
+      "url": "https://doi.org/10.1007/s10113-026-02652-5"
+    },
+    "platform_identifier": "W7202272252",
+    "authors_or_organisation": [
+      "Freya Connor",
+      "Anna E. Goodden",
+      "James J. Porter"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Regional Environmental Change",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-12",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967178+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "governance-delivery-modes",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "climate-governance-delivery",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Abstract With heatwaves set to increase in frequency, intensity and duration, a policy shift is needed to build climate resilience on national and local levels. In London, a new strategy has been introduced to build urban heat resilience with the \u2018Cool Spaces\u2019 scheme. Cool spaces are free, public, indoor areas where people can escape hot weather and reduce heat-related health risks. Despite the scheme\u2019s potential, it is unclear what type of resilience is built, by whom and how. Drawing on interviews ( n = 16) with practitioners and policy officials responsible for extreme heat management, our ",
+    "reason_for_relevance": "The source was retrieved by the bounded query for climate governance delivery and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1007/s10113-026-02652-5",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-from-equity-to-solidarity-how-care-and-relationality-transform-the-deb",
+    "title": "From equity to solidarity: how care and relationality transform the debate on justice in genomics",
+    "url": "https://doi.org/10.1007/s12687-026-00932-5",
+    "canonical_url": "https://doi.org/10.1007/s12687-026-00932-5",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1007/s12687-026-00932-5",
+      "url": "https://doi.org/10.1007/s12687-026-00932-5"
+    },
+    "platform_identifier": "W7202159220",
+    "authors_or_organisation": [
+      "Barbara Prainsack"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Journal of Community Genetics",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-11",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967206+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "governance-delivery-modes",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "climate-governance-delivery",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Equity has become central to genomics, yet dominant approaches - focused on fair representation and distribution - often overlook the relational and structural conditions through which genomic practices are produced and experienced. This paper reframes genomic justice by adding care and solidarity to the conversation. Care highlights lived experience, interdependence, and the relational work required to make genomic knowledge meaningful, while solidarity can help to create institutional arrangements grounded in shared vulnerability, indirect reciprocity, and non-humiliation. The paper applies ",
+    "reason_for_relevance": "The source was retrieved by the bounded query for climate governance delivery and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1007/s12687-026-00932-5",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-valuing-the-subterranean-the-tunnels-of-gibraltar-in-war-and-in-peace",
+    "title": "Valuing the Subterranean: The tunnels of Gibraltar in war and in peace",
+    "url": "https://openalex.org/W7124372249",
+    "canonical_url": "https://openalex.org/W7124372249",
+    "stable_identifier": {
+      "type": "openalex",
+      "value": "W7124372249",
+      "url": "https://openalex.org/W7124372249"
+    },
+    "platform_identifier": "W7124372249",
+    "authors_or_organisation": [
+      "Jason Dittmer"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "UCL Discovery (University College London)",
+    "source_domain": "discovery.ucl.ac.uk",
+    "publication_date": "2026-09-01",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967237+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "cobenefits-place",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "co-benefits-place-based-valuation",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "No substantive summary was generated because only bibliographic metadata was available.",
+    "reason_for_relevance": "The source was retrieved by the bounded query for co benefits place based valuation and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "metadata-only"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": false,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.35,
+      "label": "low",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "withheld",
+      "reasons": [
+        "evidence insufficient for summary"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "title-only"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "platform:W7124372249",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-the-fiscal-and-socioeconomic-impact-of-the-energy-transition-in-the-tr",
+    "title": "The fiscal and socioeconomic impact of the energy transition in the transport sector: The case of the Basque Country",
+    "url": "https://doi.org/10.1016/j.enpol.2026.115534",
+    "canonical_url": "https://doi.org/10.1016/j.enpol.2026.115534",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1016/j.enpol.2026.115534",
+      "url": "https://doi.org/10.1016/j.enpol.2026.115534"
+    },
+    "platform_identifier": "W7202203534",
+    "authors_or_organisation": [
+      "I\u00f1aki Arto",
+      "Mikel Erkoreka",
+      "Cristina Pizarro-Irizar",
+      "Nerea Urrutia"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Energy Policy",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-11",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967267+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "cobenefits-place",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "co-benefits-place-based-valuation",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "This paper analyses the fiscal challenges of the climate-neutral economy transition by 2050 in line with the European Green Deal's goals. It focuses on the regional level and examines the Basque Country, one of the sub-state entities with the greatest fiscal power in the European Union, and aims to quantify the implications of decarbonising the transport sector for public finances. To this end, it applies DERIO, a dynamic econometric New Keynesian Input-Output model, designed to evaluate the economic effects of scenarios and policies at regional level, particularly those related to energy and ",
+    "reason_for_relevance": "The source was retrieved by the bounded query for co benefits place based valuation and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1016/j.enpol.2026.115534",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-don-t-know-what-you-ve-got-til-it-s-gone-loss-of-landscape-activities-",
+    "title": "\u201cDon\u2019t Know What You\u2019ve Got \u2018Til it\u2019s Gone\u201d: Loss of Landscape Activities After Dramatic Landscape Change",
+    "url": "https://doi.org/10.1080/08941920.2026.2711047",
+    "canonical_url": "https://doi.org/10.1080/08941920.2026.2711047",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1080/08941920.2026.2711047",
+      "url": "https://doi.org/10.1080/08941920.2026.2711047"
+    },
+    "platform_identifier": "W7202166560",
+    "authors_or_organisation": [
+      "Andrew Butler"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Society & Natural Resources",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-11",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967297+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "cobenefits-place",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "co-benefits-place-based-valuation",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "The value of everyday landscapes often remains implicit until the norm is disrupted, revealing the significance of practices previously taken for granted. This paper examines how sudden landscape loss shapes perceptions of importance and attachment, drawing on two studies in Sweden: one conducted after a wildfire and another on everyday landscapes across rural municipalities. Findings indicate that while many recreational activities are transferable treating the landscape as a backdrop, others, are deeply place-specific and relational. After the wildfire, respondents reported heightened recogn",
+    "reason_for_relevance": "The source was retrieved by the bounded query for co benefits place based valuation and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1080/08941920.2026.2711047",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-artificial-intelligence-for-urban-ecosystem-restoration-reshaping-soci",
+    "title": "Artificial intelligence for urban ecosystem restoration: reshaping social\u2013ecological\u2013technological interactions",
+    "url": "https://doi.org/10.1038/s42949-026-00453-7",
+    "canonical_url": "https://doi.org/10.1038/s42949-026-00453-7",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1038/s42949-026-00453-7",
+      "url": "https://doi.org/10.1038/s42949-026-00453-7"
+    },
+    "platform_identifier": "W7202087314",
+    "authors_or_organisation": [
+      "Xuezhu Zhai",
+      "Peter Marcus Bach",
+      "Jaboury Ghazoul",
+      "Joan Casanelles-Abella",
+      "Matthias Buchecker",
+      "Anne Giger Dray",
+      "Jiugeng Sun",
+      "Fritz Kleinschroth"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "npj Urban Sustainability",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-10",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967328+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "cobenefits-place",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "co-benefits-place-based-valuation",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Abstract Ecosystem functioning enabled by urban ecosystem restoration (UER) contributes to sustainable cities. We examine how artificial intelligence (AI) supports integrated UER approaches by linking monitoring, simulation, and participatory processes within a social\u2013ecological\u2013technological systems framework, forming an AI-integrated UER feedback cycle. AI can contribute to social-ecological monitoring, multisource data integration, landscape simulation, citizen understanding, co-design, and adaptive management in UER under expert oversight and with attention to associated risks.",
+    "reason_for_relevance": "The source was retrieved by the bounded query for co benefits place based valuation and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1038/s42949-026-00453-7",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-feasibility-assessment-of-an-integrated-green-urban-transportation-sys",
+    "title": "Feasibility assessment of an integrated green urban transportation system for Kathmandu Valley",
+    "url": "https://doi.org/10.1007/s44465-026-00036-x",
+    "canonical_url": "https://doi.org/10.1007/s44465-026-00036-x",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1007/s44465-026-00036-x",
+      "url": "https://doi.org/10.1007/s44465-026-00036-x"
+    },
+    "platform_identifier": "W7202260282",
+    "authors_or_organisation": [
+      "Surakshya Basnet",
+      "Namaraj Lamichhane",
+      "Nishma Rajan Magar",
+      "Shreya Sharma"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Discover Vehicles",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-12",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967356+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "cobenefits-costs",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "co-benefits-place-based-valuation",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Kathmandu Valley faces acute urban mobility challenges, including severe traffic congestion, a disproportionately high share of fossil fuel dependent private vehicles, severely degraded pedestrian and cycling infrastructure, and decades of unplanned urban expansion that has consumed road reserves and public space. These conditions impose measurable costs on public health, economic productivity, and environmental sustainability, and they require a structured, evidence informed response grounded in local spatial conditions rather than generic policy templates. This study presents a planning leve",
+    "reason_for_relevance": "The source was retrieved by the bounded query for co benefits place based valuation and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1007/s44465-026-00036-x",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-compressed-natural-gas-for-road-transport-in-nigeria-a-strategic-low-c",
+    "title": "Compressed Natural Gas for Road Transport in Nigeria: A Strategic Low-Carbon Transition Framework",
+    "url": "https://doi.org/10.30939/ijastech..1882053",
+    "canonical_url": "https://doi.org/10.30939/ijastech..1882053",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.30939/ijastech..1882053",
+      "url": "https://doi.org/10.30939/ijastech..1882053"
+    },
+    "platform_identifier": "W7202194176",
+    "authors_or_organisation": [
+      "Omojola Awogbemi",
+      "S. A. Aasa",
+      "Oluwaseun O. Martins",
+      "Anthony O. Onokwai"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "International Journal of Automotive Science And Technology",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-11",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967385+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "cobenefits-costs",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "co-benefits-place-based-valuation",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Abstract The worrisome economic, environmental, and energy security implications of the continuous use of fossil-based sources as road transport fuel have made Nigeria consider sustainable alternatives. With the country\u2019s abundant natural gas reserves and growing climate commitments, compressed natural gas (CNG) presents a viable pathway for decarbonizing road transport, curbing urban air pollution, and ensuring energy security. The current study examines the adoption, deployment, and integration of CNG into Nigeria\u2019s road transport ecosystem. The study reviews the CNG resources and infrastruc",
+    "reason_for_relevance": "The source was retrieved by the bounded query for co benefits place based valuation and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.30939/ijastech..1882053",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-assessment-of-vulnerability-to-groundwater-contamination-in-the-santa-",
+    "title": "Assessment of vulnerability to groundwater contamination in the Santa Rosa River basin, Ecuador",
+    "url": "https://doi.org/10.1007/s12665-026-13072-3",
+    "canonical_url": "https://doi.org/10.1007/s12665-026-13072-3",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1007/s12665-026-13072-3",
+      "url": "https://doi.org/10.1007/s12665-026-13072-3"
+    },
+    "platform_identifier": "W7202074239",
+    "authors_or_organisation": [
+      "Luis Aguilar-Salas",
+      "Bryan Salgado-Almeida",
+      "Karla Villamar-Marazita",
+      "Samantha Jim\u00e9nez-Oyola",
+      "Paola Romero-Crespo"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Environmental Earth Sciences",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-10",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967413+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "cobenefits-costs",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "co-benefits-place-based-valuation",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Groundwater is a vital resource that supplies nearly half of the world\u2019s population and sustains ecosystem integrity. In the Santa Rosa River basin (SW Ecuador), groundwater plays an essential role due to the variable quality of surface water resources. This study assessed groundwater contamination risk based on the premise that floodplain sectors with shallow water tables and high permeability are more susceptible to contamination, with the aim of supporting environmental management priorities. Cartographic and secondary data were integrated with field investigations. Intrinsic vulnerability ",
+    "reason_for_relevance": "The source was retrieved by the bounded query for co benefits place based valuation and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1007/s12665-026-13072-3",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-hydrochemical-evolution-and-corrosion-scaling-potential-of-groundwater",
+    "title": "Hydrochemical evolution and corrosion-scaling potential of groundwater resources in a semi-arid region: A multi-index assessment",
+    "url": "https://doi.org/10.1016/j.dwt.2026.101887",
+    "canonical_url": "https://doi.org/10.1016/j.dwt.2026.101887",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1016/j.dwt.2026.101887",
+      "url": "https://doi.org/10.1016/j.dwt.2026.101887"
+    },
+    "platform_identifier": "W7201857893",
+    "authors_or_organisation": [
+      "Abdolmajid Gholizadeh",
+      "Fahimeh Teimouri",
+      "Ali Asghar Neshat",
+      "Sama Yektay"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Desalination and Water Treatment",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-07",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967442+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "cobenefits-costs",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "co-benefits-place-based-valuation",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "ABSTRACT Groundwater resources in semi-arid regions are increasingly subjected to qualitative pressures from both natural and anthropogenic sources. This study presents a multi-index assessment of hydrochemical evolution and corrosion-scaling potential in Torbat Heydariyeh, Zaveh, and Mahvelat (Iran), based on 828 groundwater samples collected during 2018-2022. Major ions and physicochemical parameters were analyzed, hydrochemical facies were identified using Piper diagrams, and corrosion-scaling tendencies were evaluated using the Langelier Saturation Index (LSI), Ryznar Stability Index (RSI)",
+    "reason_for_relevance": "The source was retrieved by the bounded query for co benefits place based valuation and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1016/j.dwt.2026.101887",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-the-northern-ethiopia-war-and-the-persistence-of-internal-displacement",
+    "title": "The Northern Ethiopia War and the persistence of internal displacement: subnational evidence from a difference-in-differences analysis",
+    "url": "https://doi.org/10.1080/10242694.2026.2714097",
+    "canonical_url": "https://doi.org/10.1080/10242694.2026.2714097",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1080/10242694.2026.2714097",
+      "url": "https://doi.org/10.1080/10242694.2026.2714097"
+    },
+    "platform_identifier": "W7202127186",
+    "authors_or_organisation": [
+      "Seyoum Teffera Mengesha"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Defence and Peace Economics",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-10",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967471+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "workforce-occupations",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "just-transitions-workforce",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Ethiopia faces one of Africa\u2019s most severe internal displacement crises, with over 3.7 million people displaced as of 2023. While the Northern Ethiopia War is widely recognized as the principal driver of displacement in affected regions, whether those regions experienced higher displacement than unaffected regions, and whether this gap persisted after the ceasefire, remains underexamined. This study estimates the effect of war exposure on displacement from April 2020 to March 2025 using a difference-in-differences design, with the November 2022 Pretoria Agreement as the intervention point. The",
+    "reason_for_relevance": "The source was retrieved by the bounded query for just transitions workforce and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1080/10242694.2026.2714097",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-analysis-on-the-choice-of-travel-modes-of-residents-of-a-small-sized-t",
+    "title": "Analysis on the Choice of Travel Modes of Residents of a Small-Sized Town",
+    "url": "https://doi.org/10.3390/su18168048",
+    "canonical_url": "https://doi.org/10.3390/su18168048",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.3390/su18168048",
+      "url": "https://doi.org/10.3390/su18168048"
+    },
+    "platform_identifier": "W7201887654",
+    "authors_or_organisation": [
+      "Sorin Mih\u0103ilescu",
+      "Daniela Tinca",
+      "Andrei Alexandru Boroiu"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Sustainability",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-07",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967499+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "workforce-occupations",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "just-transitions-workforce",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Mobility is an essential condition for ensuring the functionality of urban areas. This study analyses the transportation preferences of the inhabitants of Petro\u0219ani, a small city integrated into a conurbation with former mining functions (the Petro\u0219ani Basin). Data were collected based on household surveys and interviews regarding mobility behaviour. To evaluate travel patterns, the study applies three statistical methods: descriptive analysis, the \u03c72 (Chi-square) test and Multiple Correspondence Analysis (MCA). The results indicate significant variations according to gender and the demographi",
+    "reason_for_relevance": "The source was retrieved by the bounded query for just transitions workforce and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.3390/su18168048",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-regional-foresight-and-scenario-modeling-of-socio-economic-transformat",
+    "title": "Regional foresight and scenario modeling of socio-economic transformation: The case of the Kostanay Region, Kazakhstan",
+    "url": "https://doi.org/10.18335/region.v13i2.645",
+    "canonical_url": "https://doi.org/10.18335/region.v13i2.645",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.18335/region.v13i2.645",
+      "url": "https://doi.org/10.18335/region.v13i2.645"
+    },
+    "platform_identifier": "W7196992376",
+    "authors_or_organisation": [
+      "Aigul Sergeyeva",
+      "Murat Makhambetov",
+      "Gaukhar Keubasova",
+      "Saule Mendaliyeva",
+      "Raibek Sagadatov",
+      "Anatoly Stepanov",
+      "Miroslava Omirzakova"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "REGION",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-06",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967528+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "workforce-occupations",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "just-transitions-workforce",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "This study investigates the spatial and socio-economic transformation of the labour market in the Kostanay Region of Kazakhstan through the application of foresight and scenario modelling. The research aims to construct a conceptual and predictive framework of regional employment transformation that integrates statistical indicators, expert judgments, and technological trajectories within a spatial foresight perspective. A mixed quantitative\u2013qualitative design was employed, combining regression modelling, SWOT analysis, and expert foresight sessions. Empirical data were derived from official s",
+    "reason_for_relevance": "The source was retrieved by the bounded query for just transitions workforce and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.18335/region.v13i2.645",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-trade-environment-and-economic-history",
+    "title": "Trade, environment and economic history",
+    "url": "https://doi.org/10.5282/edoc.37485",
+    "canonical_url": "https://doi.org/10.5282/edoc.37485",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.5282/edoc.37485",
+      "url": "https://doi.org/10.5282/edoc.37485"
+    },
+    "platform_identifier": "W7196945009",
+    "authors_or_organisation": [
+      "Hiroshi Kumanomido"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Electronic Theses of LMU Munich (Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen)",
+    "source_domain": "nbn-resolving.de",
+    "publication_date": "2026-08-06",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967558+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "workforce-occupations",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "just-transitions-workforce",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "This dissertation consists of three empirical papers in applied microeconomics.Although the topics differ, firms' adjustment to macro shock, environmental effects of trade, and historical elite persistence, the common methodological approach is to exploit plausibly exogenous variation to study long-run adjustment at the firm, regional, and family levels.Each chapter examines how economic agents respond to external shocks that are largely outside their immediate control, allowing for causal inference on structural transformation, air quality change, and intergenerational correlation.Large excha",
+    "reason_for_relevance": "The source was retrieved by the bounded query for just transitions workforce and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.5282/edoc.37485",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-the-impact-of-covid-19-on-children-and-young-people-with-special-educa",
+    "title": "The impact of COVID-19 on children and young people with Special Educational Needs: a qualitative study",
+    "url": "https://doi.org/10.1080/13632752.2026.2696179",
+    "canonical_url": "https://doi.org/10.1080/13632752.2026.2696179",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1080/13632752.2026.2696179",
+      "url": "https://doi.org/10.1080/13632752.2026.2696179"
+    },
+    "platform_identifier": "W7202185053",
+    "authors_or_organisation": [
+      "Aslihan Baser",
+      "Matthew Severyn",
+      "Ginny Russell",
+      "Tamsin Ford",
+      "Tamsin Newlove\u2010Delgado",
+      "Lauren Cross",
+      "Anne\u2010Marie Burn"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Emotional and Behavioural Difficulties",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-11",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967586+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "workforce-switching",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "just-transitions-workforce",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Research studying the impact of COVID-19 on children and young people\u2019s mental health has largely overlooked children with Special Educational Needs (SEN). To explore the impact of the pandemic on this vulnerable group, we conducted 14 interviews, involving nine parents and five Children and Young People (CYP: aged 8\u201314 years) recruited from the English National Mental Health of Children and Young People (MHCYP) survey. Semi-structured interviews explored how participants adapted to the changes brought about by the pandemic, particularly in relation to accessing education and mental health sup",
+    "reason_for_relevance": "The source was retrieved by the bounded query for just transitions workforce and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1080/13632752.2026.2696179",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-encryption-is-not-authorization-session-bound-reasoning-trace-certific",
+    "title": "Encryption Is Not Authorization: Session-Bound Reasoning Trace Certification as the Correct Security Primitive for Chain-of-Thought Governance",
+    "url": "https://doi.org/10.48550/arxiv.2608.09867",
+    "canonical_url": "https://doi.org/10.48550/arxiv.2608.09867",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.48550/arxiv.2608.09867",
+      "url": "https://doi.org/10.48550/arxiv.2608.09867"
+    },
+    "platform_identifier": "W7202180676",
+    "authors_or_organisation": [
+      "Alexander Panfilov",
+      "David Schmotz",
+      "Ilia Shumailov",
+      "Luca Beurer-Kellner",
+      "Joachim Schaeffer",
+      "Ameya Prabhu",
+      "Jonas Geiping",
+      "Maksym Andriushchenko"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "arXiv (Cornell University)",
+    "source_domain": "arxiv.org",
+    "publication_date": "2026-08-10",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967617+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "workforce-switching",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "just-transitions-workforce",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Leading large language model providers now conceal their models' step-by-step reasoning, or chain-of-thought, to protect intellectual property and limit information leakage. Rather than storing these traces server-side, providers return them to the client as blocks of encrypted text, which the client passes back with each subsequent request. Building on prior research, we identify an architectural vulnerability: these encrypted blocks are fully compatible and interchangeable across different sessions, users, and models within a provider's ecosystem. We exploit this compatibility to develop a s",
+    "reason_for_relevance": "The source was retrieved by the bounded query for just transitions workforce and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.48550/arxiv.2608.09867",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-from-mismatch-to-smart-match-artificial-intelligence-and-land-resource",
+    "title": "From Mismatch to Smart Match: Artificial Intelligence and Land Resource Misallocation",
+    "url": "https://doi.org/10.3390/land15081415",
+    "canonical_url": "https://doi.org/10.3390/land15081415",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.3390/land15081415",
+      "url": "https://doi.org/10.3390/land15081415"
+    },
+    "platform_identifier": "W7197038620",
+    "authors_or_organisation": [
+      "Long Xin",
+      "Yidan Liu",
+      "Yuyao Wang",
+      "Chanyuan Liu"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Land",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-06",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967645+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "workforce-switching",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "just-transitions-workforce",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Optimizing the allocation of national land resources is a crucial measure for safeguarding food security and ecological security, as well as a key pathway for achieving urbanrural integration and coordinated regional development. Against the backdrop of the global digital transformation, artificial intelligence offers new opportunities for intelligent and refined land resource management. However, existing research has not sufficiently explored the impact of AI on land resource allocation. Using panel data of 265 Chinese cities from 2010 to 2023, this study investigates the effect of artificia",
+    "reason_for_relevance": "The source was retrieved by the bounded query for just transitions workforce and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.3390/land15081415",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-fossil-fuel-occupations-show-high-transferability-across-the-wider-eco",
+    "title": "Fossil fuel occupations show high transferability across the wider economy",
+    "url": "https://doi.org/10.1038/s44458-026-00131-w",
+    "canonical_url": "https://doi.org/10.1038/s44458-026-00131-w",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1038/s44458-026-00131-w",
+      "url": "https://doi.org/10.1038/s44458-026-00131-w"
+    },
+    "platform_identifier": "W7196958530",
+    "authors_or_organisation": [
+      "Qing Huang",
+      "Chenglin Li",
+      "Yangsiyu Lu"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Communications Sustainability",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-06",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967673+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "workforce-switching",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "just-transitions-workforce",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Abstract The global decarbonization transition puts approximately 13 million fossil fuel jobs at risk under the International Energy Agency\u2019s Net Zero Emissions scenario. Existing research has predominantly focused on transition pathways for routine manual workers moving into green sectors, leaving economy-wide transition prospects across all fossil fuel occupation types poorly understood. Here we show, using employment and skills data from the U.S. Bureau of Labor Statistics and Department of Labor, that 77.4% of fossil fuel occupations exhibit high transferability to non-fossil fuel roles, w",
+    "reason_for_relevance": "The source was retrieved by the bounded query for just transitions workforce and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1038/s44458-026-00131-w",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-combining-implementation-and-data-sciences-to-accelerate-evidence-inte",
+    "title": "Combining implementation and data sciences to accelerate evidence integration into healthcare \u2013 ImpleMATE",
+    "url": "https://doi.org/10.12688/f1000research.169999.2",
+    "canonical_url": "https://doi.org/10.12688/f1000research.169999.2",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.12688/f1000research.169999.2",
+      "url": "https://doi.org/10.12688/f1000research.169999.2"
+    },
+    "platform_identifier": "W4412131342",
+    "authors_or_organisation": [
+      "J. Chan",
+      "Janna Hastings",
+      "Gabriella Tiernan",
+      "Jeannie Paterson",
+      "Nigel H. Lovell",
+      "Luc Betbeder-Matibet",
+      "Patrick Kin Man Tung",
+      "Sarah Pink",
+      "D\u00e9bora Lanzeni",
+      "Thomasina Donovan",
+      "Andrew Milat",
+      "Louisa Jorm",
+      "Carolyn Mazariego",
+      "Chi Zhang",
+      "Guillaume Fontaine",
+      "Stephanie Best",
+      "Georgina Kennedy",
+      "Susan Michie",
+      "Frank Lin",
+      "The ImpleMATE Network",
+      "Natalie Taylor"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "F1000Research",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-12",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967702+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "evidence-mapping",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "evidence-infrastructure-tools",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "<ns5:p>Background The translation of research evidence into routine healthcare practice is often slow and inconsistent, even timely implementation can significantly improve patient outcomes. While implementation science offers strategies to close this gap, current approaches are frequently manual, fragmented, and poorly integrated within healthcare systems. To address these challenges, we propose ImpleMATE \u2013 an AI-assisted implementation science platform designed to streamline implementation efforts. Grounded in the Learning Health System (LHS) model, ImpleMATE aims to establish a continuous, ",
+    "reason_for_relevance": "The source was retrieved by the bounded query for evidence infrastructure tools and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.12688/f1000research.169999.2",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-bridging-local-decisions-and-regional-forest-strategies-under-climate-",
+    "title": "Bridging local decisions and regional forest strategies under climate risks: a flexibility-based optimization framework",
+    "url": "https://doi.org/10.1186/s13595-026-01355-5",
+    "canonical_url": "https://doi.org/10.1186/s13595-026-01355-5",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1186/s13595-026-01355-5",
+      "url": "https://doi.org/10.1186/s13595-026-01355-5"
+    },
+    "platform_identifier": "W4417479257",
+    "authors_or_organisation": [
+      "Cl\u00e9mence Labarre",
+      "Babooshka Shavazipour",
+      "Denis Loustau",
+      "Jean\u2010Christophe Domec"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Annals of Forest Science",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-13",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967730+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "canadian-policy-federal",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "canadian-climate-policy",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "<title>Abstract</title> Context: While the management of forests at a regional level takes into account different forest types and management objectives, the potential effects of projected climate impacts at a sub-regional scale remain largely unexplored. Aims: To better support the strategic planning of management, we address the critical challenge of reconciling regional strategies with site specific constraints. Methods: We considered two climate scenarios and various levels of timber-damage risk to evaluate sub-regional management alternatives, their robustness, and the impact on economic ",
+    "reason_for_relevance": "The source was retrieved by the bounded query for canadian climate policy and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1186/s13595-026-01355-5",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-model-development-for-sustainable-construction-material-selection-in-t",
+    "title": "Model development for sustainable construction material selection in the Middle East",
+    "url": "https://doi.org/10.1007/s43621-026-04124-6",
+    "canonical_url": "https://doi.org/10.1007/s43621-026-04124-6",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1007/s43621-026-04124-6",
+      "url": "https://doi.org/10.1007/s43621-026-04124-6"
+    },
+    "platform_identifier": "W7202267871",
+    "authors_or_organisation": [
+      "Taha Madu",
+      "Mohamed AbouZeid"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Discover Sustainability",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-12",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967758+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "canadian-policy-federal",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "canadian-climate-policy",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Abstract The construction industry in the Middle East is a major driver of economic growth but also a significant contributor to carbon emissions and resource depletion. This study develops a comprehensive decision-making model for sustainable material selection tailored to the Middle Eastern context using a hybrid AHP\u2013TOPSIS approach. Ten sustainability factors and 24 sub-factors were identified and weighted based on pairwise comparisons by 60 regional experts. The results indicate that Human Health &amp; Safety, Pollution, and Climate Change are the most influential criteria in the region, w",
+    "reason_for_relevance": "The source was retrieved by the bounded query for canadian climate policy and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1007/s43621-026-04124-6",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-non-native-land-planarians-platyhelminthes-tricladida-geoplanidae-in-b",
+    "title": "Non-native land planarians (Platyhelminthes, Tricladida, Geoplanidae) in Belgium: A review and risk assessment",
+    "url": "https://doi.org/10.3897/neobiota.108.190976",
+    "canonical_url": "https://doi.org/10.3897/neobiota.108.190976",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.3897/neobiota.108.190976",
+      "url": "https://doi.org/10.3897/neobiota.108.190976"
+    },
+    "platform_identifier": "W7202278535",
+    "authors_or_organisation": [
+      "Tom Van den Neucker",
+      "Jan Soors",
+      "Arnaud Jacobs",
+      "Jane Reniers",
+      "Soria Delva",
+      "Nikol Kmentov\u00e1",
+      "Maarten P. M. Vanhove",
+      "Bram D\u2019hondt",
+      "Kevin Scheers",
+      "Louis Bronne",
+      "Christine Ewers",
+      "Laura Abraham",
+      "Quentin Groom",
+      "David Halfmaerten",
+      "Sabrina Neyrinck",
+      "Karin Breugelmans",
+      "Thierry Backeljau",
+      "Jean-Lou Justine",
+      "Romain Gastineau",
+      "Leigh Winsor",
+      "Tim Adriaens"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "NeoBiota",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-12",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967788+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "canadian-policy-federal",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "canadian-climate-policy",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Multiple species of land planarians have become established outside their natural ranges. Some are considered invasive because of their rapid spread and adverse effects on ecosystems. Once established, land planarians are difficult to manage. Therefore, it is crucial to document their presence and spread and assess their risk. This study provides an annotated checklist and distribution maps of all non-native land planarians recorded in Belgium, as well as a climate-matching analysis and a Harmonia + risk assessment for each species. A climate-matching analysis and a risk assessment were also c",
+    "reason_for_relevance": "The source was retrieved by the bounded query for canadian climate policy and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.3897/neobiota.108.190976",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-journal-of-gis-based-historical-studies",
+    "title": "Journal of GIS based Historical Studies",
+    "url": "https://doi.org/10.5281/zenodo.7368979",
+    "canonical_url": "https://doi.org/10.5281/zenodo.7368979",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.5281/zenodo.7368979",
+      "url": "https://doi.org/10.5281/zenodo.7368979"
+    },
+    "platform_identifier": "W4310005602",
+    "authors_or_organisation": [
+      "JANGIS"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Zenodo (CERN European Organization for Nuclear Research)",
+    "source_domain": "zenodo.org",
+    "publication_date": "2029-05-06",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967816+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "canadian-policy-bc",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "canadian-climate-policy",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "This is a journal of the Asian Network of GIS based Historical Studies, Tokyo, Japan",
+    "reason_for_relevance": "The source was retrieved by the bounded query for canadian climate policy and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.5281/zenodo.7368979",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-introduction-charting-the-evolution-of-english-and-anglophone-writing-",
+    "title": "Introduction: Charting the Evolution of English and Anglophone Writing in Asia",
+    "url": "https://doi.org/10.1111/weng.70053",
+    "canonical_url": "https://doi.org/10.1111/weng.70053",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.1111/weng.70053",
+      "url": "https://doi.org/10.1111/weng.70053"
+    },
+    "platform_identifier": "W7202189019",
+    "authors_or_organisation": [
+      "Mohammad A. Quayum"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "World Englishes",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-11",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967844+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "canadian-policy-bc",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "canadian-climate-policy",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "ABSTRACT This introductory article explores the history of the English language and literatures in the Asian \u2018Outer Circle\u2019 countries, or English in its \u2018second diaspora\u2019, focusing primarily on literature from its beginnings to the present. Due to space limitations, the scope is further narrowed to poetry and the novel \u2013 the two genres that, arguably, have come to dominate the tradition. It examines achievements in these two genres across eight countries covered in this special issue, highlighting how the tradition has evolved from the colonial period through postcolonial times to the current ",
+    "reason_for_relevance": "The source was retrieved by the bounded query for canadian climate policy and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.1111/weng.70053",
+    "linked_sources": [],
+    "captured_fixture": false
+  },
+  {
+    "record_id": "pilot-leveraging-tensions-of-the-triple-transition-for-future-fit-energy-pat",
+    "title": "Leveraging tensions of the triple transition for future-fit energy pathways: Interdisciplinary analysis and response strategies",
+    "url": "https://doi.org/10.3389/fsuep.2026.1686783",
+    "canonical_url": "https://doi.org/10.3389/fsuep.2026.1686783",
+    "stable_identifier": {
+      "type": "doi",
+      "value": "10.3389/fsuep.2026.1686783",
+      "url": "https://doi.org/10.3389/fsuep.2026.1686783"
+    },
+    "platform_identifier": "W7202213633",
+    "authors_or_organisation": [
+      "Vitaliy Soloviy",
+      "Gudrun Haindlmaier",
+      "Klaus Kubeczko",
+      "Surya Kn\u00f6bel",
+      "Michael J. Bernstein",
+      "Michael Dinges"
+    ],
+    "source_type": "academic-paper",
+    "source_name": "Frontiers in Sustainable Energy Policy",
+    "source_domain": "doi.org",
+    "publication_date": "2026-08-11",
+    "retrieval_timestamp": "2026-08-14T19:11:00.967873+00:00",
+    "discovery": {
+      "run_id": "gate-3b-4a-20260814T121055",
+      "adapter": "openalex",
+      "query_id": "canadian-policy-bc",
+      "query_version": "2.0.0"
+    },
+    "theme_assignments": {
+      "primary": {
+        "theme_id": "canadian-climate-policy",
+        "score": 0.72,
+        "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+      },
+      "secondary": []
+    },
+    "geographies": [
+      "global"
+    ],
+    "short_summary": "Energy transitions operate at the intersection of multiple policy priorities, such as green, digital, and just transitions. While the policy discourse treats those priorities as synergetic, the real-world transition processes may feature tensions among different ideas, demands, or outcomes. Understandings of tensions and ways to address them differ across research fields. Yet, such differences are seldom considered in science-policy interfaces that tend to prioritize a relatively narrow set of methods and vocabularies. This study argues that different assumptions, theories, and methods provide",
+    "reason_for_relevance": "The source was retrieved by the bounded query for canadian climate policy and requires calibration against the lab scope.",
+    "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+    "evidence_basis": {
+      "types": [
+        "abstract"
+      ],
+      "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+      "sufficient_for_summary": true,
+      "limitations": "Provider metadata was not a substitute for independent full-text review."
+    },
+    "ai_provenance": {
+      "used": false,
+      "model": null,
+      "prompt_version": "research-watch-classification-v2-fixture",
+      "run_id": "gate-3b-4a-20260814T121055",
+      "structured_output_version": "2.0",
+      "deterministic_transformations": [
+        "query-theme calibration assignment",
+        "abstract truncation"
+      ]
+    },
+    "confidence": {
+      "score": 0.72,
+      "label": "medium",
+      "basis": "Confidence reflects evidence availability and deterministic query assignment."
+    },
+    "review": {
+      "status": "not_reviewed",
+      "reviewer": null,
+      "reviewed_date": null,
+      "notes": null
+    },
+    "publication": {
+      "decision": "published",
+      "reasons": [
+        "passed automatic publication controls"
+      ],
+      "checks_passed": [
+        "source-url",
+        "identifier",
+        "disclosure",
+        "bounded-run"
+      ],
+      "disclosure_version": "research-watch-disclosure-v1"
+    },
+    "reviewer_edits": [],
+    "risk_flags": [
+      "none"
+    ],
+    "correction_availability": {
+      "status": "available",
+      "date": null,
+      "note": "Contact the lab to request a correction or removal review."
+    },
+    "event_cluster_id": "doi:10.3389/fsuep.2026.1686783",
+    "linked_sources": [],
+    "captured_fixture": false
+  }
+]

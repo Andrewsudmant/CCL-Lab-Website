@@ -1,6 +1,7 @@
 """Bounded OpenAlex works search."""
 
 from __future__ import annotations
+from datetime import date, timedelta
 from research_watch.adapters.base import DiscoveryAdapter, get_json
 from research_watch.models import DiscoveredItem
 
@@ -16,8 +17,15 @@ class OpenAlexAdapter(DiscoveryAdapter):
     name = "openalex"
     endpoint = "https://api.openalex.org/works"
 
-    def search(self, query: str, query_id: str, limit: int = 10) -> list[DiscoveredItem]:
-        payload = get_json(self.endpoint, {"search": query, "per-page": min(limit, 25), "select": "id,doi,title,display_name,publication_date,authorships,primary_location,abstract_inverted_index"})
+    def search(self, query: str, query_id: str, limit: int = 10, lookback_days: int = 30) -> list[DiscoveredItem]:
+        parameters = {
+            "search": query,
+            "filter": f"from_publication_date:{date.today() - timedelta(days=lookback_days)},type:article|preprint,language:en",
+            "per-page": min(limit, 25),
+            "sort": "publication_date:desc",
+            "select": "id,doi,title,display_name,publication_date,authorships,primary_location,abstract_inverted_index",
+        }
+        payload = get_json(self.endpoint, parameters)
         items = []
         for work in payload.get("results", []):
             location = work.get("primary_location") or {}
@@ -31,6 +39,6 @@ class OpenAlexAdapter(DiscoveryAdapter):
                 authors=[a.get("author", {}).get("display_name", "") for a in work.get("authorships", []) if a.get("author")],
                 doi=doi, platform_identifier=(work.get("id") or "").rsplit("/", 1)[-1], abstract=abstract,
                 evidence_types=["abstract"] if abstract else ["metadata-only"], adapter=self.name,
-                query_id=query_id, raw_metadata=work,
+                query_id=query_id, raw_metadata={"provider_parameters": parameters, "openalex_id": work.get("id"), "provider_source_url": location.get("landing_page_url") or source.get("homepage_url")},
             ))
         return items

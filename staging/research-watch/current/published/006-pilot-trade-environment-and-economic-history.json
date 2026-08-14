@@ -1,0 +1,95 @@
+{
+  "record_id": "pilot-trade-environment-and-economic-history",
+  "title": "Trade, environment and economic history",
+  "url": "https://doi.org/10.5282/edoc.37485",
+  "canonical_url": "https://doi.org/10.5282/edoc.37485",
+  "stable_identifier": {
+    "type": "doi",
+    "value": "10.5282/edoc.37485",
+    "url": "https://doi.org/10.5282/edoc.37485"
+  },
+  "platform_identifier": "W7196945009",
+  "authors_or_organisation": [
+    "Hiroshi Kumanomido"
+  ],
+  "source_type": "academic-paper",
+  "source_name": "Electronic Theses of LMU Munich (Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen)",
+  "source_domain": "nbn-resolving.de",
+  "publication_date": "2026-08-06",
+  "retrieval_timestamp": "2026-08-14T19:11:00.967558+00:00",
+  "discovery": {
+    "run_id": "gate-3b-4a-20260814T121055",
+    "adapter": "openalex",
+    "query_id": "workforce-occupations",
+    "query_version": "2.0.0"
+  },
+  "theme_assignments": {
+    "primary": {
+      "theme_id": "just-transitions-workforce",
+      "score": 0.72,
+      "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+    },
+    "secondary": []
+  },
+  "geographies": [
+    "global"
+  ],
+  "short_summary": "This dissertation consists of three empirical papers in applied microeconomics.Although the topics differ, firms' adjustment to macro shock, environmental effects of trade, and historical elite persistence, the common methodological approach is to exploit plausibly exogenous variation to study long-run adjustment at the firm, regional, and family levels.Each chapter examines how economic agents respond to external shocks that are largely outside their immediate control, allowing for causal inference on structural transformation, air quality change, and intergenerational correlation.Large excha",
+  "reason_for_relevance": "The source was retrieved by the bounded query for just transitions workforce and requires calibration against the lab scope.",
+  "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+  "evidence_basis": {
+    "types": [
+      "abstract"
+    ],
+    "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+    "sufficient_for_summary": true,
+    "limitations": "Provider metadata was not a substitute for independent full-text review."
+  },
+  "ai_provenance": {
+    "used": false,
+    "model": null,
+    "prompt_version": "research-watch-classification-v2-fixture",
+    "run_id": "gate-3b-4a-20260814T121055",
+    "structured_output_version": "2.0",
+    "deterministic_transformations": [
+      "query-theme calibration assignment",
+      "abstract truncation"
+    ]
+  },
+  "confidence": {
+    "score": 0.72,
+    "label": "medium",
+    "basis": "Confidence reflects evidence availability and deterministic query assignment."
+  },
+  "review": {
+    "status": "not_reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "notes": null
+  },
+  "publication": {
+    "decision": "published",
+    "reasons": [
+      "passed automatic publication controls"
+    ],
+    "checks_passed": [
+      "source-url",
+      "identifier",
+      "disclosure",
+      "bounded-run"
+    ],
+    "disclosure_version": "research-watch-disclosure-v1"
+  },
+  "reviewer_edits": [],
+  "risk_flags": [
+    "none"
+  ],
+  "correction_availability": {
+    "status": "available",
+    "date": null,
+    "note": "Contact the lab to request a correction or removal review."
+  },
+  "event_cluster_id": "doi:10.5282/edoc.37485",
+  "linked_sources": [],
+  "captured_fixture": false
+}

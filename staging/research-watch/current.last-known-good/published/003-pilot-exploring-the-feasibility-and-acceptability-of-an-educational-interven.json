@@ -1,0 +1,99 @@
+{
+  "record_id": "pilot-exploring-the-feasibility-and-acceptability-of-an-educational-interven",
+  "title": "Exploring the feasibility and acceptability of an educational intervention on air pollution for healthcare professionals",
+  "url": "https://doi.org/10.3389/fpubh.2026.1862924",
+  "canonical_url": "https://doi.org/10.3389/fpubh.2026.1862924",
+  "stable_identifier": {
+    "type": "doi",
+    "value": "10.3389/fpubh.2026.1862924",
+    "url": "https://doi.org/10.3389/fpubh.2026.1862924"
+  },
+  "platform_identifier": "W7168111533",
+  "authors_or_organisation": [
+    "Diana Varaden",
+    "Ben Hudson",
+    "Malcolm White",
+    "Camilla Allwood",
+    "L Anderson"
+  ],
+  "source_type": "academic-paper",
+  "source_name": "Frontiers in Public Health",
+  "source_domain": "doi.org",
+  "publication_date": "2026-08-12",
+  "retrieval_timestamp": "2026-08-14T19:07:34.493604+00:00",
+  "discovery": {
+    "run_id": "gate-3b-4a-20260814T120728",
+    "adapter": "openalex",
+    "query_id": "urban-learning-transfer",
+    "query_version": "2.0.0"
+  },
+  "theme_assignments": {
+    "primary": {
+      "theme_id": "urban-climate-learning",
+      "score": 0.72,
+      "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+    },
+    "secondary": []
+  },
+  "geographies": [
+    "global"
+  ],
+  "short_summary": "Background Air pollution is the greatest environmental health risk in the UK, contributing to a range of chronic conditions and preventable deaths each year. General Practitioners and wider healthcare professionals (HCPs) are trusted messengers who regularly advise on modifiable risk factors, yet air pollution is largely absent from medical education and patient-facing communications. To address this gap, an online training intervention was developed to equip HCPs with knowledge and confidence to discuss air pollution with patients and act as \u201cchampions\u201d cascading their air quality knowledge t",
+  "reason_for_relevance": "The source was retrieved by the bounded query for urban climate learning and requires calibration against the lab scope.",
+  "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+  "evidence_basis": {
+    "types": [
+      "abstract"
+    ],
+    "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+    "sufficient_for_summary": true,
+    "limitations": "Provider metadata was not a substitute for independent full-text review."
+  },
+  "ai_provenance": {
+    "used": false,
+    "model": null,
+    "prompt_version": "research-watch-classification-v2-fixture",
+    "run_id": "gate-3b-4a-20260814T120728",
+    "structured_output_version": "2.0",
+    "deterministic_transformations": [
+      "query-theme calibration assignment",
+      "abstract truncation"
+    ]
+  },
+  "confidence": {
+    "score": 0.72,
+    "label": "medium",
+    "basis": "Confidence reflects evidence availability and deterministic query assignment."
+  },
+  "review": {
+    "status": "not_reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "notes": null
+  },
+  "publication": {
+    "decision": "published",
+    "reasons": [
+      "passed automatic publication controls"
+    ],
+    "checks_passed": [
+      "source-url",
+      "identifier",
+      "disclosure",
+      "bounded-run"
+    ],
+    "disclosure_version": "research-watch-disclosure-v1"
+  },
+  "reviewer_edits": [],
+  "risk_flags": [
+    "none"
+  ],
+  "correction_availability": {
+    "status": "available",
+    "date": null,
+    "note": "Contact the lab to request a correction or removal review."
+  },
+  "event_cluster_id": "doi:10.3389/fpubh.2026.1862924",
+  "linked_sources": [],
+  "captured_fixture": false
+}

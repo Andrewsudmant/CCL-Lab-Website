@@ -1,0 +1,102 @@
+{
+  "record_id": "pilot-encryption-is-not-authorization-session-bound-reasoning-trace-certific",
+  "title": "Encryption Is Not Authorization: Session-Bound Reasoning Trace Certification as the Correct Security Primitive for Chain-of-Thought Governance",
+  "url": "https://doi.org/10.48550/arxiv.2608.09867",
+  "canonical_url": "https://doi.org/10.48550/arxiv.2608.09867",
+  "stable_identifier": {
+    "type": "doi",
+    "value": "10.48550/arxiv.2608.09867",
+    "url": "https://doi.org/10.48550/arxiv.2608.09867"
+  },
+  "platform_identifier": "W7202180676",
+  "authors_or_organisation": [
+    "Alexander Panfilov",
+    "David Schmotz",
+    "Ilia Shumailov",
+    "Luca Beurer-Kellner",
+    "Joachim Schaeffer",
+    "Ameya Prabhu",
+    "Jonas Geiping",
+    "Maksym Andriushchenko"
+  ],
+  "source_type": "academic-paper",
+  "source_name": "arXiv (Cornell University)",
+  "source_domain": "arxiv.org",
+  "publication_date": "2026-08-10",
+  "retrieval_timestamp": "2026-08-14T19:11:00.967617+00:00",
+  "discovery": {
+    "run_id": "gate-3b-4a-20260814T121055",
+    "adapter": "openalex",
+    "query_id": "workforce-switching",
+    "query_version": "2.0.0"
+  },
+  "theme_assignments": {
+    "primary": {
+      "theme_id": "just-transitions-workforce",
+      "score": 0.72,
+      "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+    },
+    "secondary": []
+  },
+  "geographies": [
+    "global"
+  ],
+  "short_summary": "Leading large language model providers now conceal their models' step-by-step reasoning, or chain-of-thought, to protect intellectual property and limit information leakage. Rather than storing these traces server-side, providers return them to the client as blocks of encrypted text, which the client passes back with each subsequent request. Building on prior research, we identify an architectural vulnerability: these encrypted blocks are fully compatible and interchangeable across different sessions, users, and models within a provider's ecosystem. We exploit this compatibility to develop a s",
+  "reason_for_relevance": "The source was retrieved by the bounded query for just transitions workforce and requires calibration against the lab scope.",
+  "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+  "evidence_basis": {
+    "types": [
+      "abstract"
+    ],
+    "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+    "sufficient_for_summary": true,
+    "limitations": "Provider metadata was not a substitute for independent full-text review."
+  },
+  "ai_provenance": {
+    "used": false,
+    "model": null,
+    "prompt_version": "research-watch-classification-v2-fixture",
+    "run_id": "gate-3b-4a-20260814T121055",
+    "structured_output_version": "2.0",
+    "deterministic_transformations": [
+      "query-theme calibration assignment",
+      "abstract truncation"
+    ]
+  },
+  "confidence": {
+    "score": 0.72,
+    "label": "medium",
+    "basis": "Confidence reflects evidence availability and deterministic query assignment."
+  },
+  "review": {
+    "status": "not_reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "notes": null
+  },
+  "publication": {
+    "decision": "published",
+    "reasons": [
+      "passed automatic publication controls"
+    ],
+    "checks_passed": [
+      "source-url",
+      "identifier",
+      "disclosure",
+      "bounded-run"
+    ],
+    "disclosure_version": "research-watch-disclosure-v1"
+  },
+  "reviewer_edits": [],
+  "risk_flags": [
+    "none"
+  ],
+  "correction_availability": {
+    "status": "available",
+    "date": null,
+    "note": "Contact the lab to request a correction or removal review."
+  },
+  "event_cluster_id": "doi:10.48550/arxiv.2608.09867",
+  "linked_sources": [],
+  "captured_fixture": false
+}

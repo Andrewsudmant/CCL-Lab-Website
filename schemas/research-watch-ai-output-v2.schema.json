@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Research Watch AI annotation v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["source_type", "primary_theme", "secondary_themes", "geographies", "short_summary", "reason_for_relevance", "novelty_significance", "evidence_limitations", "confidence", "risk_flags", "recommendation", "model_response_status"],
+  "properties": {
+    "source_type": {"enum": ["academic-paper", "policy-report", "news-analysis", "blog-commentary", "data-tool", "bluesky"]},
+    "primary_theme": {"$ref": "#/$defs/theme"},
+    "secondary_themes": {"type": "array", "maxItems": 2, "items": {"$ref": "#/$defs/theme"}},
+    "geographies": {"type": "array", "items": {"type": "string"}},
+    "short_summary": {"type": "string"},
+    "reason_for_relevance": {"type": "string"},
+    "novelty_significance": {"type": "string"},
+    "evidence_limitations": {"type": "string"},
+    "confidence": {"type": "object", "required": ["score", "basis"], "properties": {"score": {"type": "number", "minimum": 0, "maximum": 1}, "basis": {"type": "string"}}},
+    "risk_flags": {"type": "array", "items": {"type": "string"}},
+    "recommendation": {"enum": ["publish", "withhold", "quarantine"]},
+    "model_response_status": {"enum": ["complete", "refused", "invalid", "fixture"]}
+  },
+  "$defs": {"theme": {"type": "object", "required": ["theme_id", "score", "rationale"], "properties": {"theme_id": {"type": "string"}, "score": {"type": "number", "minimum": 0, "maximum": 1}, "rationale": {"type": "string"}}}}
+}

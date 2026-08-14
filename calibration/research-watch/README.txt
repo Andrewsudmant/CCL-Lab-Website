@@ -1,0 +1,1 @@
+Open owner-labelling.html in a browser, review each original source, choose a relevance label, then use Download structured labels. CSV and empty JSON fallbacks are included. Labels calibrate discovery and are not publication approvals.

@@ -1,0 +1,97 @@
+{
+  "record_id": "pilot-the-effects-of-immigration-on-agricultural-development-brazil-in-the-a",
+  "title": "The Effects of Immigration on Agricultural Development: Brazil in the Age of Mass Migration",
+  "url": "https://openalex.org/W7166491035",
+  "canonical_url": "https://openalex.org/W7166491035",
+  "stable_identifier": {
+    "type": "openalex",
+    "value": "W7166491035",
+    "url": "https://openalex.org/W7166491035"
+  },
+  "platform_identifier": "W7166491035",
+  "authors_or_organisation": [
+    "Andrea Papadia",
+    "David Escamilla\u2010Guerrero",
+    "Ariell Zimran"
+  ],
+  "source_type": "academic-paper",
+  "source_name": "White Rose Research Online (University of Leeds, The University of Sheffield, University of York)",
+  "source_domain": "eprints.whiterose.ac.uk",
+  "publication_date": "2026-09-01",
+  "retrieval_timestamp": "2026-08-14T19:11:00.967001+00:00",
+  "discovery": {
+    "run_id": "gate-3b-4a-20260814T121055",
+    "adapter": "openalex",
+    "query_id": "urban-learning-geography",
+    "query_version": "2.0.0"
+  },
+  "theme_assignments": {
+    "primary": {
+      "theme_id": "urban-climate-learning",
+      "score": 0.72,
+      "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
+    },
+    "secondary": []
+  },
+  "geographies": [
+    "global"
+  ],
+  "short_summary": "We study the e\ufb00ects of immigration during the Age of Mass Migration (1855\u20131920) on Brazil\u2019s agricultural development in 1920. Instrumenting for a municipality\u2019s immigrant share using the interaction of aggregate immigrant inflows and the expansion of Brazil\u2019s railway network, we find that a greater share of European immigrants in a municipality led to an increase in farm values. The bulk of the effect was the product of more intense cultivation of land. We also find that it is unlikely that immigration slowed Brazil\u2019s structural transformation. Our results imply that immigration into an emergi",
+  "reason_for_relevance": "The source was retrieved by the bounded query for urban climate learning and requires calibration against the lab scope.",
+  "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+  "evidence_basis": {
+    "types": [
+      "abstract"
+    ],
+    "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.",
+    "sufficient_for_summary": true,
+    "limitations": "Provider metadata was not a substitute for independent full-text review."
+  },
+  "ai_provenance": {
+    "used": false,
+    "model": null,
+    "prompt_version": "research-watch-classification-v2-fixture",
+    "run_id": "gate-3b-4a-20260814T121055",
+    "structured_output_version": "2.0",
+    "deterministic_transformations": [
+      "query-theme calibration assignment",
+      "abstract truncation"
+    ]
+  },
+  "confidence": {
+    "score": 0.72,
+    "label": "medium",
+    "basis": "Confidence reflects evidence availability and deterministic query assignment."
+  },
+  "review": {
+    "status": "not_reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "notes": null
+  },
+  "publication": {
+    "decision": "published",
+    "reasons": [
+      "passed automatic publication controls"
+    ],
+    "checks_passed": [
+      "source-url",
+      "identifier",
+      "disclosure",
+      "bounded-run"
+    ],
+    "disclosure_version": "research-watch-disclosure-v1"
+  },
+  "reviewer_edits": [],
+  "risk_flags": [
+    "none"
+  ],
+  "correction_availability": {
+    "status": "available",
+    "date": null,
+    "note": "Contact the lab to request a correction or removal review."
+  },
+  "event_cluster_id": "platform:W7166491035",
+  "linked_sources": [],
+  "captured_fixture": false
+}

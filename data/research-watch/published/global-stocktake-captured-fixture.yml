@@ -1,5 +1,5 @@
 record_id: global-stocktake-captured-fixture
-title: A systematic global stocktake of urban climate research
+title: Systematic global stocktake of over 50,000 urban climate change studies
 url: https://www.nature.com/articles/s44284-025-00260-8
 canonical_url: https://doi.org/10.1038/s44284-025-00260-8
 stable_identifier:
@@ -7,11 +7,11 @@ stable_identifier:
   value: 10.1038/s44284-025-00260-8
   url: https://doi.org/10.1038/s44284-025-00260-8
 platform_identifier: W4408049167
-authors_or_organisation: [Andrew Sudmant, Felix Creutzig, and collaborators]
+authors_or_organisation: [Simon Montfort, Max Callaghan, Felix Creutzig, William F. Lamb, Chenxi Lu, Tim Repke, Ke Ge, Jan Minx]
 source_type: academic-paper
 source_name: Nature Cities
 source_domain: nature.com
-publication_date: 2025-01-01
+publication_date: 2025-06-24
 retrieval_timestamp: 2026-08-14T12:00:00-07:00
 discovery:
   run_id: captured-pilot-2026-08-14
@@ -42,8 +42,8 @@ evidence_basis:
   limitations: The automated annotation did not independently reproduce the paper's analysis.
 ai_provenance:
   used: true
-  model: captured-fixture-model-not-called
-  prompt_version: research-watch-classifier-v1
+  model: No model used
+  prompt_version: deterministic-captured-source-v1
   run_id: captured-pilot-2026-08-14
   structured_output_version: research-watch-record-v1
   deterministic_transformations: [DOI normalization, canonical URL normalization]
@@ -62,7 +62,7 @@ publication:
   checks_passed: [schema-valid, url-safe, deduplicated, evidence-sufficient, disclosure-present]
   disclosure_version: research-watch-disclosure-v1
 reviewer_edits: []
-risk_flags: [conflict-of-interest]
+risk_flags: [none]
 correction_availability:
   status: available
   date: null

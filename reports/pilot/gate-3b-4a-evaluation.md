@@ -1,6 +1,6 @@
 # Gate 3B–4A bounded pilot evaluation
 
-Run: `gate-3b-4a-20260814T121055`  
+Run: `gate-3b-4a-20260814T121957`  
 Date: 2026-08-14  
 Mode: OpenAlex live; Crossref/DataCite enrichment live-attempted; OpenAI and unavailable Bluesky paths use no paid or bypass access.
 
@@ -11,8 +11,8 @@ Mode: OpenAlex live; Crossref/DataCite enrichment live-attempted; OpenAI and una
 - Duplicates consolidated: 13
 - Event clusters: 35
 - Evidence-sufficient: 34
-- Published to private staging: 8
-- Withheld: 1
+- Published to private staging: 1
+- Withheld: 34
 - Quarantined: 0
 - Calibration candidates: 35
 
@@ -30,4 +30,4 @@ Mode: OpenAlex live; Crossref/DataCite enrichment live-attempted; OpenAI and una
 
 ## Controls and weaknesses
 
-The run used a 30-day OpenAlex publication filter, English article/preprint filter, twelve bounded theme queries, DOI/URL deduplication, conservative event clustering, abstract sufficiency, a 12-record maximum, and domain caps. Deterministic query-theme assignments are calibration proposals, not model judgements. No raw provider payload, full article text, secret, or private label was retained. The private transaction wrote to a temporary directory and atomically replaced staging only after its manifest and records validated; rollback is separately tested. Source-type and geographic diversity cannot be evaluated well until web and Bluesky access are configured.
+The run used a 30-day OpenAlex publication filter, English article/preprint filter, twelve bounded theme queries, DOI/URL deduplication, conservative event clustering, abstract sufficiency, a conservative lexical relevance gate, a 12-record maximum, and domain caps. Deterministic query-theme assignments are calibration proposals, not model judgements. No raw provider payload, full article text, secret, or private label was retained. The private transaction wrote to a temporary directory and atomically replaced staging only after its manifest and records validated; rollback is separately tested. Source-type and geographic diversity cannot be evaluated well until web and Bluesky access are configured.

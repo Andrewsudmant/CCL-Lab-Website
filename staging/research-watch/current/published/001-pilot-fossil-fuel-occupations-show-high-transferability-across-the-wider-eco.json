@@ -1,33 +1,33 @@
 {
-  "record_id": "pilot-the-effects-of-immigration-on-agricultural-development-brazil-in-the-a",
-  "title": "The Effects of Immigration on Agricultural Development: Brazil in the Age of Mass Migration",
-  "url": "https://openalex.org/W7166491035",
-  "canonical_url": "https://openalex.org/W7166491035",
+  "record_id": "pilot-fossil-fuel-occupations-show-high-transferability-across-the-wider-eco",
+  "title": "Fossil fuel occupations show high transferability across the wider economy",
+  "url": "https://doi.org/10.1038/s44458-026-00131-w",
+  "canonical_url": "https://doi.org/10.1038/s44458-026-00131-w",
   "stable_identifier": {
-    "type": "openalex",
-    "value": "W7166491035",
-    "url": "https://openalex.org/W7166491035"
+    "type": "doi",
+    "value": "10.1038/s44458-026-00131-w",
+    "url": "https://doi.org/10.1038/s44458-026-00131-w"
   },
-  "platform_identifier": "W7166491035",
+  "platform_identifier": "W7196958530",
   "authors_or_organisation": [
-    "Andrea Papadia",
-    "David Escamilla\u2010Guerrero",
-    "Ariell Zimran"
+    "Qing Huang",
+    "Chenglin Li",
+    "Yangsiyu Lu"
   ],
   "source_type": "academic-paper",
-  "source_name": "White Rose Research Online (University of Leeds, The University of Sheffield, University of York)",
-  "source_domain": "eprints.whiterose.ac.uk",
-  "publication_date": "2026-09-01",
-  "retrieval_timestamp": "2026-08-14T19:11:00.967001+00:00",
+  "source_name": "Communications Sustainability",
+  "source_domain": "doi.org",
+  "publication_date": "2026-08-06",
+  "retrieval_timestamp": "2026-08-14T19:20:01.571459+00:00",
   "discovery": {
-    "run_id": "gate-3b-4a-20260814T121055",
+    "run_id": "gate-3b-4a-20260814T121957",
     "adapter": "openalex",
-    "query_id": "urban-learning-geography",
+    "query_id": "workforce-switching",
     "query_version": "2.0.0"
   },
   "theme_assignments": {
     "primary": {
-      "theme_id": "urban-climate-learning",
+      "theme_id": "just-transitions-workforce",
       "score": 0.72,
       "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
     },
@@ -36,8 +36,8 @@
   "geographies": [
     "global"
   ],
-  "short_summary": "We study the e\ufb00ects of immigration during the Age of Mass Migration (1855\u20131920) on Brazil\u2019s agricultural development in 1920. Instrumenting for a municipality\u2019s immigrant share using the interaction of aggregate immigrant inflows and the expansion of Brazil\u2019s railway network, we find that a greater share of European immigrants in a municipality led to an increase in farm values. The bulk of the effect was the product of more intense cultivation of land. We also find that it is unlikely that immigration slowed Brazil\u2019s structural transformation. Our results imply that immigration into an emergi",
-  "reason_for_relevance": "The source was retrieved by the bounded query for urban climate learning and requires calibration against the lab scope.",
+  "short_summary": "Abstract The global decarbonization transition puts approximately 13 million fossil fuel jobs at risk under the International Energy Agency\u2019s Net Zero Emissions scenario. Existing research has predominantly focused on transition pathways for routine manual workers moving into green sectors, leaving economy-wide transition prospects across all fossil fuel occupation types poorly understood. Here we show, using employment and skills data from the U.S. Bureau of Labor Statistics and Department of Labor, that 77.4% of fossil fuel occupations exhibit high transferability to non-fossil fuel roles, w",
+  "reason_for_relevance": "The source was retrieved by the bounded query for just transitions workforce and requires calibration against the lab scope.",
   "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
   "evidence_basis": {
     "types": [
@@ -51,7 +51,7 @@
     "used": false,
     "model": null,
     "prompt_version": "research-watch-classification-v2-fixture",
-    "run_id": "gate-3b-4a-20260814T121055",
+    "run_id": "gate-3b-4a-20260814T121957",
     "structured_output_version": "2.0",
     "deterministic_transformations": [
       "query-theme calibration assignment",
@@ -91,7 +91,7 @@
     "date": null,
     "note": "Contact the lab to request a correction or removal review."
   },
-  "event_cluster_id": "platform:W7166491035",
+  "event_cluster_id": "doi:10.1038/s44458-026-00131-w",
   "linked_sources": [],
   "captured_fixture": false
 }

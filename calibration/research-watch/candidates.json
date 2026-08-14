@@ -19,9 +19,9 @@
     "source_name": "Computational Urban Science",
     "source_domain": "doi.org",
     "publication_date": "2026-08-13",
-    "retrieval_timestamp": "2026-08-14T19:11:00.966858+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.569902+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "urban-learning-transfer",
       "query_version": "2.0.0"
@@ -52,7 +52,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -71,9 +71,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -85,7 +85,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -119,9 +119,9 @@
     "source_name": "Discover Global Society",
     "source_domain": "doi.org",
     "publication_date": "2026-08-12",
-    "retrieval_timestamp": "2026-08-14T19:11:00.966901+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.569982+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "urban-learning-transfer",
       "query_version": "2.0.0"
@@ -152,7 +152,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -171,9 +171,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -185,7 +185,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -218,9 +218,9 @@
     "source_name": "Frontiers in Public Health",
     "source_domain": "doi.org",
     "publication_date": "2026-08-12",
-    "retrieval_timestamp": "2026-08-14T19:11:00.966935+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.570044+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "urban-learning-transfer",
       "query_version": "2.0.0"
@@ -251,7 +251,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -270,9 +270,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -284,7 +284,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -321,9 +321,9 @@
     "source_name": "Social Sciences & Humanities Open",
     "source_domain": "doi.org",
     "publication_date": "2026-08-12",
-    "retrieval_timestamp": "2026-08-14T19:11:00.966965+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.570095+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "urban-learning-transfer",
       "query_version": "2.0.0"
@@ -354,7 +354,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -373,9 +373,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -387,7 +387,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -418,9 +418,9 @@
     "source_name": "White Rose Research Online (University of Leeds, The University of Sheffield, University of York)",
     "source_domain": "eprints.whiterose.ac.uk",
     "publication_date": "2026-09-01",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967001+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.570156+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "urban-learning-geography",
       "query_version": "2.0.0"
@@ -451,7 +451,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -470,9 +470,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -484,7 +484,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -516,9 +516,9 @@
     "source_name": "Information and Organization",
     "source_domain": "doi.org",
     "publication_date": "2026-08-13",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967032+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.570209+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "urban-learning-geography",
       "query_version": "2.0.0"
@@ -549,7 +549,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -568,9 +568,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -582,7 +582,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -620,9 +620,9 @@
     "source_name": "Communications Earth & Environment",
     "source_domain": "doi.org",
     "publication_date": "2026-08-13",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967061+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.570257+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "urban-learning-geography",
       "query_version": "2.0.0"
@@ -653,7 +653,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -672,9 +672,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -686,7 +686,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -717,9 +717,9 @@
     "source_name": "Nature Communications",
     "source_domain": "doi.org",
     "publication_date": "2026-08-13",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967091+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.570306+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "governance-delivery-institutions",
       "query_version": "2.0.0"
@@ -750,7 +750,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -769,9 +769,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -783,7 +783,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -812,9 +812,9 @@
     "source_name": "International Environmental Agreements Politics Law and Economics",
     "source_domain": "doi.org",
     "publication_date": "2026-08-13",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967121+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.570354+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "governance-delivery-institutions",
       "query_version": "2.0.0"
@@ -845,7 +845,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -864,9 +864,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -878,7 +878,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -907,9 +907,9 @@
     "source_name": "Territory Politics Governance",
     "source_domain": "doi.org",
     "publication_date": "2026-08-12",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967149+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.570404+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "governance-delivery-modes",
       "query_version": "2.0.0"
@@ -940,7 +940,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -959,9 +959,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -973,7 +973,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -1004,9 +1004,9 @@
     "source_name": "Regional Environmental Change",
     "source_domain": "doi.org",
     "publication_date": "2026-08-12",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967178+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.570452+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "governance-delivery-modes",
       "query_version": "2.0.0"
@@ -1037,7 +1037,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -1056,9 +1056,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -1070,7 +1070,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -1099,9 +1099,9 @@
     "source_name": "Journal of Community Genetics",
     "source_domain": "doi.org",
     "publication_date": "2026-08-11",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967206+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.570501+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "governance-delivery-modes",
       "query_version": "2.0.0"
@@ -1132,7 +1132,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -1151,9 +1151,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -1165,7 +1165,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -1194,9 +1194,9 @@
     "source_name": "UCL Discovery (University College London)",
     "source_domain": "discovery.ucl.ac.uk",
     "publication_date": "2026-09-01",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967237+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.570553+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "cobenefits-place",
       "query_version": "2.0.0"
@@ -1227,7 +1227,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -1290,9 +1290,9 @@
     "source_name": "Energy Policy",
     "source_domain": "doi.org",
     "publication_date": "2026-08-11",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967267+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.570604+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "cobenefits-place",
       "query_version": "2.0.0"
@@ -1323,7 +1323,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -1342,9 +1342,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -1356,7 +1356,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -1385,9 +1385,9 @@
     "source_name": "Society & Natural Resources",
     "source_domain": "doi.org",
     "publication_date": "2026-08-11",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967297+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.570655+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "cobenefits-place",
       "query_version": "2.0.0"
@@ -1418,7 +1418,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -1437,9 +1437,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -1451,7 +1451,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -1487,9 +1487,9 @@
     "source_name": "npj Urban Sustainability",
     "source_domain": "doi.org",
     "publication_date": "2026-08-10",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967328+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.570704+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "cobenefits-place",
       "query_version": "2.0.0"
@@ -1520,7 +1520,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -1539,9 +1539,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -1553,7 +1553,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -1585,9 +1585,9 @@
     "source_name": "Discover Vehicles",
     "source_domain": "doi.org",
     "publication_date": "2026-08-12",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967356+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.570753+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "cobenefits-costs",
       "query_version": "2.0.0"
@@ -1618,7 +1618,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -1637,9 +1637,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -1651,7 +1651,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -1683,9 +1683,9 @@
     "source_name": "International Journal of Automotive Science And Technology",
     "source_domain": "doi.org",
     "publication_date": "2026-08-11",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967385+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.570891+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "cobenefits-costs",
       "query_version": "2.0.0"
@@ -1716,7 +1716,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -1735,9 +1735,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -1749,7 +1749,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -1782,9 +1782,9 @@
     "source_name": "Environmental Earth Sciences",
     "source_domain": "doi.org",
     "publication_date": "2026-08-10",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967413+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.570954+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "cobenefits-costs",
       "query_version": "2.0.0"
@@ -1815,7 +1815,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -1834,9 +1834,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -1848,7 +1848,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -1880,9 +1880,9 @@
     "source_name": "Desalination and Water Treatment",
     "source_domain": "doi.org",
     "publication_date": "2026-08-07",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967442+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.571007+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "cobenefits-costs",
       "query_version": "2.0.0"
@@ -1913,7 +1913,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -1932,9 +1932,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -1946,7 +1946,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -1975,9 +1975,9 @@
     "source_name": "Defence and Peace Economics",
     "source_domain": "doi.org",
     "publication_date": "2026-08-10",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967471+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.571058+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "workforce-occupations",
       "query_version": "2.0.0"
@@ -2008,7 +2008,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -2027,9 +2027,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -2041,7 +2041,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -2072,9 +2072,9 @@
     "source_name": "Sustainability",
     "source_domain": "doi.org",
     "publication_date": "2026-08-07",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967499+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.571107+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "workforce-occupations",
       "query_version": "2.0.0"
@@ -2105,7 +2105,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -2124,9 +2124,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -2138,7 +2138,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -2173,9 +2173,9 @@
     "source_name": "REGION",
     "source_domain": "doi.org",
     "publication_date": "2026-08-06",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967528+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.571156+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "workforce-occupations",
       "query_version": "2.0.0"
@@ -2206,7 +2206,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -2225,9 +2225,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -2239,7 +2239,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -2268,9 +2268,9 @@
     "source_name": "Electronic Theses of LMU Munich (Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen)",
     "source_domain": "nbn-resolving.de",
     "publication_date": "2026-08-06",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967558+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.571213+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "workforce-occupations",
       "query_version": "2.0.0"
@@ -2301,7 +2301,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -2320,9 +2320,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -2334,7 +2334,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -2369,9 +2369,9 @@
     "source_name": "Emotional and Behavioural Difficulties",
     "source_domain": "doi.org",
     "publication_date": "2026-08-11",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967586+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.571264+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "workforce-switching",
       "query_version": "2.0.0"
@@ -2402,7 +2402,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -2421,9 +2421,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -2435,7 +2435,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -2471,9 +2471,9 @@
     "source_name": "arXiv (Cornell University)",
     "source_domain": "arxiv.org",
     "publication_date": "2026-08-10",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967617+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.571325+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "workforce-switching",
       "query_version": "2.0.0"
@@ -2504,7 +2504,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -2523,9 +2523,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -2537,7 +2537,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -2569,9 +2569,9 @@
     "source_name": "Land",
     "source_domain": "doi.org",
     "publication_date": "2026-08-06",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967645+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.571393+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "workforce-switching",
       "query_version": "2.0.0"
@@ -2602,7 +2602,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -2621,9 +2621,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -2635,7 +2635,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -2666,9 +2666,9 @@
     "source_name": "Communications Sustainability",
     "source_domain": "doi.org",
     "publication_date": "2026-08-06",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967673+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.571459+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "workforce-switching",
       "query_version": "2.0.0"
@@ -2699,7 +2699,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -2781,9 +2781,9 @@
     "source_name": "F1000Research",
     "source_domain": "doi.org",
     "publication_date": "2026-08-12",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967702+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.571527+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "evidence-mapping",
       "query_version": "2.0.0"
@@ -2814,7 +2814,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -2833,9 +2833,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -2847,7 +2847,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -2879,9 +2879,9 @@
     "source_name": "Annals of Forest Science",
     "source_domain": "doi.org",
     "publication_date": "2026-08-13",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967730+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.571593+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "canadian-policy-federal",
       "query_version": "2.0.0"
@@ -2912,7 +2912,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -2931,9 +2931,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -2945,7 +2945,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -2975,9 +2975,9 @@
     "source_name": "Discover Sustainability",
     "source_domain": "doi.org",
     "publication_date": "2026-08-12",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967758+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.571653+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "canadian-policy-federal",
       "query_version": "2.0.0"
@@ -3008,7 +3008,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -3027,9 +3027,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -3041,7 +3041,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -3090,9 +3090,9 @@
     "source_name": "NeoBiota",
     "source_domain": "doi.org",
     "publication_date": "2026-08-12",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967788+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.571703+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "canadian-policy-federal",
       "query_version": "2.0.0"
@@ -3123,7 +3123,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -3142,9 +3142,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -3156,7 +3156,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -3185,9 +3185,9 @@
     "source_name": "Zenodo (CERN European Organization for Nuclear Research)",
     "source_domain": "zenodo.org",
     "publication_date": "2029-05-06",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967816+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.571758+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "canadian-policy-bc",
       "query_version": "2.0.0"
@@ -3218,7 +3218,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -3237,9 +3237,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -3251,7 +3251,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -3280,9 +3280,9 @@
     "source_name": "World Englishes",
     "source_domain": "doi.org",
     "publication_date": "2026-08-11",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967844+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.571807+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "canadian-policy-bc",
       "query_version": "2.0.0"
@@ -3313,7 +3313,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -3332,9 +3332,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -3346,7 +3346,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",
@@ -3380,9 +3380,9 @@
     "source_name": "Frontiers in Sustainable Energy Policy",
     "source_domain": "doi.org",
     "publication_date": "2026-08-11",
-    "retrieval_timestamp": "2026-08-14T19:11:00.967873+00:00",
+    "retrieval_timestamp": "2026-08-14T19:20:01.571858+00:00",
     "discovery": {
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "adapter": "openalex",
       "query_id": "canadian-policy-bc",
       "query_version": "2.0.0"
@@ -3413,7 +3413,7 @@
       "used": false,
       "model": null,
       "prompt_version": "research-watch-classification-v2-fixture",
-      "run_id": "gate-3b-4a-20260814T121055",
+      "run_id": "gate-3b-4a-20260814T121957",
       "structured_output_version": "2.0",
       "deterministic_transformations": [
         "query-theme calibration assignment",
@@ -3432,9 +3432,9 @@
       "notes": null
     },
     "publication": {
-      "decision": "published",
+      "decision": "withheld",
       "reasons": [
-        "passed automatic publication controls"
+        "deterministic relevance gate not satisfied"
       ],
       "checks_passed": [
         "source-url",
@@ -3446,7 +3446,7 @@
     },
     "reviewer_edits": [],
     "risk_flags": [
-      "none"
+      "scope-ambiguity"
     ],
     "correction_availability": {
       "status": "available",

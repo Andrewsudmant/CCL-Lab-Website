@@ -57,6 +57,24 @@ def full_record(item, theme: str, run_id: str, template: dict) -> dict:
     return record
 
 
+def passes_relevance_gate(record: dict) -> bool:
+    """Conservative lexical gate used only when no classification model ran."""
+    text = (record["title"] + " " + record["short_summary"]).lower()
+    climate = any(term in text for term in ("climate", "decarbon", "net zero", "low-carbon", "low carbon", "green transition"))
+    if not climate:
+        return False
+    theme = record["theme_assignments"]["primary"]["theme_id"]
+    rules = {
+        "urban-climate-learning": (("urban", "city", "cities", "municipal"), ("evidence transfer", "policy learning", "knowledge exchange", "knowledge transfer", "evidence use")),
+        "climate-governance-delivery": (("urban", "city", "cities", "municipal"), ("governance", "deliver", "implementation", "institution")),
+        "co-benefits-place-based-valuation": (("co-benefit", "cobenefit", "valuation", "appraisal", "co-cost"),),
+        "just-transitions-workforce": (("occupation", "workforce", "skill", "labour", "labor", "worker"),),
+        "evidence-infrastructure-tools": (("urban", "city", "cities", "municipal"), ("evidence", "data", "model", "tool", "decision support")),
+        "canadian-climate-policy": (("canada", "canadian", "british columbia"),),
+    }
+    return all(any(term in text for term in group) for group in rules[theme])
+
+
 def calibration_html(candidates: list[dict]) -> str:
     cards = []
     for c in candidates:
@@ -85,6 +103,11 @@ def main() -> int:
     template = load_yaml(ROOT / "data/research-watch/published/global-stocktake-captured-fixture.yml")
     records = [full_record(x, themes.get(id(x), next(q["themes"][0] for q in pack["source_queries"]["openalex"] if q["id"] == x.query_id)), run_id, template) for x in principals]
     records = [r for r in records if "mdpi.com" not in r["source_domain"]]
+    for record in records:
+        if record["publication"]["decision"] == "published" and not passes_relevance_gate(record):
+            record["publication"]["decision"] = "withheld"
+            record["publication"]["reasons"] = ["deterministic relevance gate not satisfied"]
+            record["risk_flags"] = ["scope-ambiguity"]
 
     enrichment = {"crossref": "not-run", "datacite": "not-run"}
     for item in principals:
@@ -163,7 +186,7 @@ Mode: OpenAlex live; Crossref/DataCite enrichment live-attempted; OpenAI and una
 
 ## Controls and weaknesses
 
-The run used a 30-day OpenAlex publication filter, English article/preprint filter, twelve bounded theme queries, DOI/URL deduplication, conservative event clustering, abstract sufficiency, a 12-record maximum, and domain caps. Deterministic query-theme assignments are calibration proposals, not model judgements. No raw provider payload, full article text, secret, or private label was retained. The private transaction wrote to a temporary directory and atomically replaced staging only after its manifest and records validated; rollback is separately tested. Source-type and geographic diversity cannot be evaluated well until web and Bluesky access are configured.
+The run used a 30-day OpenAlex publication filter, English article/preprint filter, twelve bounded theme queries, DOI/URL deduplication, conservative event clustering, abstract sufficiency, a conservative lexical relevance gate, a 12-record maximum, and domain caps. Deterministic query-theme assignments are calibration proposals, not model judgements. No raw provider payload, full article text, secret, or private label was retained. The private transaction wrote to a temporary directory and atomically replaced staging only after its manifest and records validated; rollback is separately tested. Source-type and geographic diversity cannot be evaluated well until web and Bluesky access are configured.
 """
     (report_dir / "gate-3b-4a-evaluation.md").write_text(report)
     print(report)

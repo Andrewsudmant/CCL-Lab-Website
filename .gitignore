@@ -9,3 +9,4 @@ _site/
 .env
 .env.*
 !.env.example
+/deliverables/*.zip

@@ -39,3 +39,17 @@ This repository contains the public website and the fixture-based prototype of t
 ## Scope discipline
 
 Gate 0 and Gate 1 are static, fixture-only foundations. Do not add live discovery, model API calls, automated publishing, authentication, databases, analytics, email collection, or production deployment unless a later task explicitly authorizes Gate 2+ work.
+
+## Shareable handoff package
+
+After every substantive completed task, provide a fresh ZIP package that the owner can upload to a new ChatGPT conversation. The package must:
+
+- begin with a plain-language Markdown handoff summarising what changed and why;
+- describe material challenges, trade-offs and how they were resolved;
+- explain how provenance, review state, decision history and corrections remain transparent and traceable;
+- identify unresolved warnings and distinguish confirmed content from placeholders;
+- suggest concrete questions and owner decisions for the next project gate;
+- include the current architecture, content-governance, security, scope and ADR documents; and
+- contain no secrets, private data, build caches, raw provider responses or generated site output.
+
+Update the relevant file under `docs/handoffs/`, then run `make handoff HANDOFF_SUMMARY=docs/handoffs/<summary-file>.md`. Deliverable ZIP files are written to `deliverables/` and intentionally ignored by Git. Report the absolute ZIP path in the final response.

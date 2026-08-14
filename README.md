@@ -30,9 +30,14 @@ The built site is written to `_site/`. Run `make preview` for a local preview. O
 - Run `make generate` to refresh generated Quarto fragments.
 - Run `make check` before opening a pull request.
 - Run `make linkcheck-external` only when explicit network access has been approved.
+- After substantive work, update the relevant file in `docs/handoffs/` and run `make handoff HANDOFF_SUMMARY=docs/handoffs/<file>.md` to create a shareable ChatGPT context package.
 
 Generated files under `generated/` are reproducible and should not be edited by hand. See [content governance](docs/content-governance.md) and [architecture](docs/architecture.md) before changing the Research Watch workflow.
 
 ## Gate boundaries
 
 Current scope and exclusions are recorded in [docs/gate-0-1-scope.md](docs/gate-0-1-scope.md). No production deployment is configured.
+
+## Shareable handoff packages
+
+Handoff summaries are versioned under `docs/handoffs/`. `make handoff` packages the selected summary together with the current governance and architecture documents. ZIP output is placed in the ignored `deliverables/` directory so binary handoff artifacts do not become repository history.

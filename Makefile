@@ -1,4 +1,6 @@
-.PHONY: install validate generate test build linkcheck linkcheck-external accessibility check preview clean
+.PHONY: install validate generate test build linkcheck linkcheck-external accessibility check handoff preview clean
+
+HANDOFF_SUMMARY ?= docs/handoffs/gate-0-1-handoff.md
 
 install:
 	python3 -m pip install -r requirements-dev.txt
@@ -27,6 +29,9 @@ accessibility: build
 check: validate test build
 	python3 scripts/check_links.py
 	python3 scripts/check_accessibility.py
+
+handoff:
+	python3 scripts/package_handoff.py --summary "$(HANDOFF_SUMMARY)"
 
 preview: generate
 	./scripts/quarto.sh preview

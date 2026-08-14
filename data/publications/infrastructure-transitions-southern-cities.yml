@@ -1,16 +1,27 @@
 record_id: infrastructure-transitions-southern-cities
-title: Infrastructure transitions in Southern cities
+title: "Infrastructure Transitions in Southern Cities: Organising Urban Service Delivery for Climate and Development"
 authors: [Lucy Oates, Andrew Sudmant]
-publication_date: 2024-01-01
+publication_date: 2024-08-29
+date_precision: exact
 publication_type: article
+peer_review_status: peer-reviewed
 venue: Urban Planning
+volume: "9"
+issue: null
+pages: null
+article_number: "8302"
 doi: 10.17645/up.8302
 other_identifiers: []
+version: null
+original_submission_date: null
+current_version_date: null
 url: https://doi.org/10.17645/up.8302
-citation: "Oates, L. and Sudmant, A. (2024). Infrastructure transitions in Southern cities. Urban Planning."
+citation: "Oates, L., & Sudmant, A. (2024). Infrastructure Transitions in Southern Cities: Organising Urban Service Delivery for Climate and Development. Urban Planning, 9, Article 8302."
 abstract_summary: >-
-  The article examines the governance and delivery of infrastructure transitions
-  in cities of the Global South, focusing on institutions and implementation.
+  The article examines how institutions organise urban service delivery and
+  infrastructure transitions in Southern cities in relation to climate and development.
+relationship_to_lab: foundational-prior-work
+relationship_note: Published before the lab was established and foundational to its delivery-modes research.
 primary_theme: climate-governance-delivery
 secondary_themes: [co-benefits-place-based-valuation]
 geographies: [global]
@@ -19,8 +30,11 @@ methods: [institutional-analysis, comparative-case-study]
 climate_domains: [mitigation, resilience]
 sectors: [urban-infrastructure]
 connected_projects: []
-featured: false
-metadata_source: crossref
-last_metadata_update: 2026-08-14
-placeholder: false
-owner_review_required: true
+featured: true
+metadata_sources: [orcid, crossref, publisher]
+last_verified_date: 2026-08-14
+authoritative_sources:
+  - label: Crossref DOI record
+    url: https://api.crossref.org/works/10.17645/up.8302
+    retrieved_date: 2026-08-14
+verification_status: verified

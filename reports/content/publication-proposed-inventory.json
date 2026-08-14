@@ -1,0 +1,1503 @@
+{
+  "retrieved_at": "2026-08-14T19:16:52.144986+00:00",
+  "orcid": "0000-0001-8650-8419",
+  "records": [
+    {
+      "put_code": 193217638,
+      "orcid_title": "Machine learning for air quality forecasting: Insights from five provinces of Rwanda",
+      "orcid_year": "2025",
+      "dois": [
+        "10.1016/j.sciaf.2025.e02959"
+      ],
+      "external_identifiers": [
+        "doi:10.1016/j.sciaf.2025.e02959",
+        "issn:2468-2276"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1016/j.sciaf.2025.e02959",
+      "title": "Machine learning for air quality forecasting: Insights from five provinces of Rwanda",
+      "authors": [
+        "Dioumacor Faye",
+        "Redouane Lguensat",
+        "François Kaly",
+        "Andrew Sudmant",
+        "Amadou T. Gaye",
+        "Egide Kalisa"
+      ],
+      "publication_date": "2025-12",
+      "date_precision": "month",
+      "venue": "Scientific African",
+      "volume": "30",
+      "issue": null,
+      "pages": "e02959",
+      "article_number": "e02959",
+      "type": "journal-article",
+      "url": "https://doi.org/10.1016/j.sciaf.2025.e02959"
+    },
+    {
+      "put_code": 163013390,
+      "orcid_title": "Climate policy as social policy? A comprehensive assessment of the economic impact of climate action in the UK",
+      "orcid_year": "2025",
+      "dois": [
+        "10.1007/s13412-024-00955-9"
+      ],
+      "external_identifiers": [
+        "doi:10.1007/s13412-024-00955-9"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [
+        {
+          "field": "year",
+          "orcid": "2025",
+          "provider": "2024-07-05"
+        }
+      ],
+      "doi": "10.1007/s13412-024-00955-9",
+      "title": "Climate policy as social policy? A comprehensive assessment of the economic impact of climate action in the UK",
+      "authors": [
+        "Andrew Sudmant",
+        "Dom Boyle",
+        "Ruaidhri Higgins‐Lavery",
+        "Andy Gouldson",
+        "Andy Boyle",
+        "James Fulker",
+        "Jamie Brogan"
+      ],
+      "publication_date": "2024-07-05",
+      "date_precision": "exact",
+      "venue": "Journal of Environmental Studies and Sciences",
+      "volume": "15",
+      "issue": "3",
+      "pages": "476-490",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1007/s13412-024-00955-9"
+    },
+    {
+      "put_code": 193217998,
+      "orcid_title": "Heatwaves amplify air pollution risks in Sub-Saharan Africa",
+      "orcid_year": "2025",
+      "dois": [
+        "10.1038/s41598-025-12210-4"
+      ],
+      "external_identifiers": [
+        "doi:10.1038/s41598-025-12210-4",
+        "issn:2045-2322"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1038/s41598-025-12210-4",
+      "title": "Heatwaves amplify air pollution risks in Sub-Saharan Africa",
+      "authors": [
+        "Egide Kalisa",
+        "Andrew Sudmant"
+      ],
+      "publication_date": "2025-07-21",
+      "date_precision": "exact",
+      "venue": "Scientific Reports",
+      "volume": "15",
+      "issue": "1",
+      "pages": null,
+      "article_number": "26448",
+      "type": "journal-article",
+      "url": "https://doi.org/10.1038/s41598-025-12210-4"
+    },
+    {
+      "put_code": 165092382,
+      "orcid_title": "Replicate and generalize to make urban research coherent",
+      "orcid_year": "2025",
+      "dois": [
+        "10.1080/12265934.2024.2382706"
+      ],
+      "external_identifiers": [
+        "doi:10.1080/12265934.2024.2382706"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [
+        {
+          "field": "year",
+          "orcid": "2025",
+          "provider": "2024-08-07"
+        }
+      ],
+      "doi": "10.1080/12265934.2024.2382706",
+      "title": "Replicate and generalize to make urban research coherent",
+      "authors": [
+        "Andrew Sudmant",
+        "Felix Creutzig",
+        "Zhifu Mi"
+      ],
+      "publication_date": "2024-08-07",
+      "date_precision": "exact",
+      "venue": "International Journal of Urban Sciences",
+      "volume": "29",
+      "issue": "3",
+      "pages": "582-603",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1080/12265934.2024.2382706"
+    },
+    {
+      "put_code": 179441840,
+      "orcid_title": "Natural experiments in urban air quality: lessons from car-free days and COVID-19 lockdowns in Kigali, Rwanda",
+      "orcid_year": "2025",
+      "dois": [
+        "10.1080/23748834.2025.2468017"
+      ],
+      "external_identifiers": [
+        "doi:10.1080/23748834.2025.2468017"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1080/23748834.2025.2468017",
+      "title": "Natural experiments in urban air quality: lessons from car-free days and COVID-19 lockdowns in Kigali, Rwanda",
+      "authors": [
+        "Egide Kalisa",
+        "Andrew Sudmant",
+        "Remy Ruberambuga",
+        "Jonathan Bower"
+      ],
+      "publication_date": "2025-03-05",
+      "date_precision": "exact",
+      "venue": "Cities &amp; Health",
+      "volume": null,
+      "issue": null,
+      "pages": "1-12",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1080/23748834.2025.2468017"
+    },
+    {
+      "put_code": 160540970,
+      "orcid_title": "Data Scaling: Implications for Climate Action and Governance in the UK",
+      "orcid_year": "2024",
+      "dois": [
+        "10.1007/s00267-024-01991-5"
+      ],
+      "external_identifiers": [
+        "doi:10.1007/s00267-024-01991-5"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1007/s00267-024-01991-5",
+      "title": "Data Scaling: Implications for Climate Action and Governance in the UK",
+      "authors": [
+        "Andrew Sudmant"
+      ],
+      "publication_date": "2024-05-29",
+      "date_precision": "exact",
+      "venue": "Environmental Management",
+      "volume": "74",
+      "issue": "3",
+      "pages": "414-424",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1007/s00267-024-01991-5"
+    },
+    {
+      "put_code": 166297390,
+      "orcid_title": "Infrastructure Transitions in Southern Cities: Organising Urban Service Delivery for Climate and Development",
+      "orcid_year": "2024",
+      "dois": [
+        "10.17645/up.8302"
+      ],
+      "external_identifiers": [
+        "doi:10.17645/up.8302"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.17645/up.8302",
+      "title": "Infrastructure Transitions in Southern Cities: Organising Urban Service Delivery for Climate and Development",
+      "authors": [
+        "Lucy Oates",
+        "Andrew Sudmant"
+      ],
+      "publication_date": "2024-08-29",
+      "date_precision": "exact",
+      "venue": "Urban Planning",
+      "volume": "9",
+      "issue": null,
+      "pages": null,
+      "article_number": "8302",
+      "type": "journal-article",
+      "url": "https://doi.org/10.17645/up.8302"
+    },
+    {
+      "put_code": 163494453,
+      "orcid_title": "Towards a public policy of cities and human settlements in the 21st century",
+      "orcid_year": "2024",
+      "dois": [
+        "10.1038/s42949-024-00168-7"
+      ],
+      "external_identifiers": [
+        "doi:10.1038/s42949-024-00168-7",
+        "issn:2661-8001"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1038/s42949-024-00168-7",
+      "title": "Towards a public policy of cities and human settlements in the 21st century",
+      "authors": [
+        "Felix Creutzig",
+        "Sophia Becker",
+        "Peter Berrill",
+        "Constanze Bongs",
+        "Alexandra Bussler",
+        "Ben Cave",
+        "Sara M. Constantino",
+        "Marcus Grant",
+        "Niko Heeren",
+        "Eva Heinen",
+        "Marie Josefine Hintz",
+        "Timothee Ingen-Housz",
+        "Eric Johnson",
+        "Nina Kolleck",
+        "Charlotte Liotta",
+        "Sylvia Lorek",
+        "Giulio Mattioli",
+        "Leila Niamir",
+        "Timon McPhearson",
+        "Nikola Milojevic-Dupont",
+        "Florian Nachtigall",
+        "Kai Nagel",
+        "Henriette Närger",
+        "Minal Pathak",
+        "Paola Perrin de Brichambaut",
+        "Diana Reckien",
+        "Lucia A. Reisch",
+        "Aromar Revi",
+        "Fabian Schuppert",
+        "Andrew Sudmant",
+        "Felix Wagner",
+        "Janina Walkenhorst",
+        "Elke Weber",
+        "Michael Wilmes",
+        "Charlie Wilson",
+        "Aicha Zekar"
+      ],
+      "publication_date": "2024-06-24",
+      "date_precision": "exact",
+      "venue": "npj Urban Sustainability",
+      "volume": "4",
+      "issue": "1",
+      "pages": null,
+      "article_number": "29",
+      "type": "journal-article",
+      "url": "https://doi.org/10.1038/s42949-024-00168-7"
+    },
+    {
+      "put_code": 159269007,
+      "orcid_title": "Community Participation in Urban Land and Housing Delivery: Evidence from Kerala (India) and Dar es Salaam (Tanzania)",
+      "orcid_year": "2024",
+      "dois": [
+        "10.3390/land13050641"
+      ],
+      "external_identifiers": [
+        "doi:10.3390/land13050641"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.3390/land13050641",
+      "title": "Community Participation in Urban Land and Housing Delivery: Evidence from Kerala (India) and Dar es Salaam (Tanzania)",
+      "authors": [
+        "Lucy Oates",
+        "Abhijit Datey",
+        "Andrew Sudmant",
+        "Ross Gillard",
+        "Andy Gouldson"
+      ],
+      "publication_date": "2024-05-09",
+      "date_precision": "exact",
+      "venue": "Land",
+      "volume": "13",
+      "issue": "5",
+      "pages": "641",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.3390/land13050641",
+      "exclude_from_public_inventory": true,
+      "reason": "Owner decision excludes MDPI journal literature from featured public outputs.",
+      "reviewed_date": "2026-08-14",
+      "override_applied": true
+    },
+    {
+      "put_code": 155252697,
+      "orcid_title": "Beyond Domain-Led Conceptualisations of Urban Zero-Carbon Transitions",
+      "orcid_year": "2023",
+      "dois": [
+        "10.20935/acadenvsci6141"
+      ],
+      "external_identifiers": [
+        "doi:10.20935/acadenvsci6141"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [
+        {
+          "field": "title",
+          "orcid": "Beyond Domain-Led Conceptualisations of Urban Zero-Carbon Transitions",
+          "provider": "Beyond domain-led conceptualizations of urban zero-carbon transitions"
+        }
+      ],
+      "doi": "10.20935/acadenvsci6141",
+      "title": "Beyond domain-led conceptualizations of urban zero-carbon transitions",
+      "authors": [
+        "Andrew Sudmant",
+        "Matt Tierney",
+        "Andy Gouldson",
+        "Joule Bergerson"
+      ],
+      "publication_date": "2023-12-06",
+      "date_precision": "exact",
+      "venue": "Academia Environmental Sciences and Sustainability",
+      "volume": "1",
+      "issue": "1",
+      "pages": null,
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.20935/acadenvsci6141"
+    },
+    {
+      "put_code": 141535520,
+      "orcid_title": "Pluralizing the urban waste economy: insights from community-based enterprises in Ahmedabad (India) and Kampala (Uganda)",
+      "orcid_year": "2023",
+      "dois": [
+        "10.1177/09562478231190475"
+      ],
+      "external_identifiers": [
+        "doi:10.1177/09562478231190475"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1177/09562478231190475",
+      "title": "Pluralizing the urban waste economy: insights from community-based enterprises in Ahmedabad (India) and Kampala (Uganda)",
+      "authors": [
+        "Lucy Oates",
+        "Peter Kasaija",
+        "Hakimu Sseviiri",
+        "Andrew Sudmant",
+        "Aksel Ersoy",
+        "Ellen Van Bueren"
+      ],
+      "publication_date": "2023-08-31",
+      "date_precision": "exact",
+      "venue": "Environment and Urbanization",
+      "volume": "35",
+      "issue": "2",
+      "pages": "411-432",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1177/09562478231190475"
+    },
+    {
+      "put_code": 137422157,
+      "orcid_title": "An Analysis of Net-Zero Carbon Options for the Belfast Region",
+      "orcid_year": "2023",
+      "dois": [
+        "10.5281/zenodo.8075492"
+      ],
+      "external_identifiers": [
+        "doi:10.5281/zenodo.8075492"
+      ],
+      "provider": "datacite",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.5281/zenodo.8075492",
+      "title": "An Analysis of Net-Zero Carbon Options for the Belfast Region",
+      "authors": [
+        "Andrew Sudmant",
+        "Andy Gouldson",
+        "Ruaidhri Higgins-Lavery"
+      ],
+      "publication_date": "2023-06-23",
+      "date_precision": "exact",
+      "venue": "Zenodo",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "type": "Report",
+      "url": "https://zenodo.org/record/8075492"
+    },
+    {
+      "put_code": 155252772,
+      "orcid_title": "Using crowdsourced data to estimate the carbon footprints of global cities",
+      "orcid_year": "2022",
+      "dois": [
+        "10.1016/j.adapen.2022.100111"
+      ],
+      "external_identifiers": [
+        "doi:10.1016/j.adapen.2022.100111",
+        "issn:2666-7924"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1016/j.adapen.2022.100111",
+      "title": "Using crowdsourced data to estimate the carbon footprints of global cities",
+      "authors": [
+        "Xinlu Sun",
+        "Zhifu Mi",
+        "Andrew Sudmant",
+        "D'Maris Coffman",
+        "Pu Yang",
+        "Richard Wood"
+      ],
+      "publication_date": "2022-12",
+      "date_precision": "month",
+      "venue": "Advances in Applied Energy",
+      "volume": "8",
+      "issue": null,
+      "pages": "100111",
+      "article_number": "100111",
+      "type": "journal-article",
+      "url": "https://doi.org/10.1016/j.adapen.2022.100111"
+    },
+    {
+      "put_code": 113352531,
+      "orcid_title": "Missing the target: Are local climate targets aligned with national net zero ambitions?",
+      "orcid_year": "2022",
+      "dois": [
+        "10.21203/rs.3.rs-1676382/v1"
+      ],
+      "external_identifiers": [
+        "doi:10.21203/rs.3.rs-1676382/v1"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.21203/rs.3.rs-1676382/v1",
+      "title": "Missing the target: Are local climate targets aligned with national net zero ambitions?",
+      "authors": [
+        "Andrew Sudmant",
+        "Candice Howarth",
+        "Matt Lane"
+      ],
+      "publication_date": "2022-05-20",
+      "date_precision": "exact",
+      "venue": "",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "type": "posted-content",
+      "url": "https://doi.org/10.21203/rs.3.rs-1676382/v1"
+    },
+    {
+      "put_code": 108170958,
+      "orcid_title": "Workers’ perceptions of climate change and the green transition in Yorkshire and the Humber: Building the evidence base for the just transition in the region",
+      "orcid_year": "2021",
+      "dois": [],
+      "external_identifiers": [
+        "source-work-id:579153"
+      ],
+      "provider": "orcid",
+      "retrieval_status": "orcid-only",
+      "conflicts": []
+    },
+    {
+      "put_code": 103440225,
+      "orcid_title": "Yorkshire and Humber Climate Action Plan",
+      "orcid_year": "2021",
+      "dois": [],
+      "external_identifiers": [
+        "source-work-id:573108"
+      ],
+      "provider": "orcid",
+      "retrieval_status": "orcid-only",
+      "conflicts": []
+    },
+    {
+      "put_code": 95682816,
+      "orcid_title": "Fair weather forecasting? The shortcomings of big data for sustainable development, a case study from Hubballi‐Dharwad, India",
+      "orcid_year": "2021",
+      "dois": [
+        "10.1002/sd.2221"
+      ],
+      "external_identifiers": [
+        "doi:10.1002/sd.2221"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [
+        {
+          "field": "title",
+          "orcid": "Fair weather forecasting? The shortcomings of big data for sustainable development, a case study from Hubballi‐Dharwad, India",
+          "provider": "Fair weather forecasting? The shortcomings of big data for sustainable development, a case study from <scp>Hubballi‐Dharwad</scp>, India"
+        }
+      ],
+      "doi": "10.1002/sd.2221",
+      "title": "Fair weather forecasting? The shortcomings of big data for sustainable development, a case study from <scp>Hubballi‐Dharwad</scp>, India",
+      "authors": [
+        "Andrew Sudmant",
+        "Vincent Viguié",
+        "Quentin Lepetit",
+        "Lucy Oates",
+        "Abhijit Datey",
+        "Andy Gouldson",
+        "David Watling"
+      ],
+      "publication_date": "2021-06-18",
+      "date_precision": "exact",
+      "venue": "Sustainable Development",
+      "volume": "29",
+      "issue": "6",
+      "pages": "1237-1248",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1002/sd.2221"
+    },
+    {
+      "put_code": 103489161,
+      "orcid_title": "From car-free days to pollution-free cities: Reflections on clean urban transport in Rwanda",
+      "orcid_year": "2021",
+      "dois": [],
+      "external_identifiers": [
+        "source-work-id:573151"
+      ],
+      "provider": "orcid",
+      "retrieval_status": "orcid-only",
+      "conflicts": []
+    },
+    {
+      "put_code": 103144347,
+      "orcid_title": "A Net Zero Carbon Roadmap for Edinburgh",
+      "orcid_year": "2020",
+      "dois": [],
+      "external_identifiers": [
+        "source-work-id:549005"
+      ],
+      "provider": "orcid",
+      "retrieval_status": "orcid-only",
+      "conflicts": []
+    },
+    {
+      "put_code": 103144349,
+      "orcid_title": "A Net Zero Carbon Roadmap for Belfast",
+      "orcid_year": "2020",
+      "dois": [],
+      "external_identifiers": [
+        "source-work-id:549006"
+      ],
+      "provider": "orcid",
+      "retrieval_status": "orcid-only",
+      "conflicts": []
+    },
+    {
+      "put_code": 103144348,
+      "orcid_title": "A Net-Zero Carbon Roadmap for Leeds",
+      "orcid_year": "2020",
+      "dois": [],
+      "external_identifiers": [
+        "source-work-id:549004"
+      ],
+      "provider": "orcid",
+      "retrieval_status": "orcid-only",
+      "conflicts": []
+    },
+    {
+      "put_code": 103144376,
+      "orcid_title": "The social, environmental, health, and economic impacts of low carbon transport policy: A review of the evidence",
+      "orcid_year": "2020",
+      "dois": [
+        "10.1016/b978-0-12-818122-5.00019-3"
+      ],
+      "external_identifiers": [
+        "doi:10.1016/B978-0-12-818122-5.00019-3",
+        "isbn:9780128181225",
+        "source-work-id:538320"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1016/b978-0-12-818122-5.00019-3",
+      "title": "The social, environmental, health, and economic impacts of low carbon transport policy: A review of the evidence",
+      "authors": [
+        "Andrew Sudmant",
+        "Ersilia Verlinghieri",
+        "Haneen Khreis",
+        "Andrew Gouldson"
+      ],
+      "publication_date": "2020",
+      "date_precision": "year",
+      "venue": "Traffic-Related Air Pollution",
+      "volume": null,
+      "issue": null,
+      "pages": "471-493",
+      "article_number": null,
+      "type": "book-chapter",
+      "url": "https://doi.org/10.1016/b978-0-12-818122-5.00019-3"
+    },
+    {
+      "put_code": 103144373,
+      "orcid_title": "Financing climate action with positive social impact: How banking can support a just transition in the UK",
+      "orcid_year": "2020",
+      "dois": [],
+      "external_identifiers": [
+        "source-work-id:533537"
+      ],
+      "provider": "orcid",
+      "retrieval_status": "orcid-only",
+      "conflicts": []
+    },
+    {
+      "put_code": 103144306,
+      "orcid_title": "Integration of mitigation and adaptation in urban climate change action plans in Europe: A systematic assessment",
+      "orcid_year": "2020",
+      "dois": [
+        "10.1016/j.rser.2019.109623"
+      ],
+      "external_identifiers": [
+        "doi:10.1016/j.rser.2019.109623",
+        "issn:1364-0321",
+        "wosuid:WOS:000512410200002",
+        "source-work-id:517723"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1016/j.rser.2019.109623",
+      "title": "Integration of mitigation and adaptation in urban climate change action plans in Europe: A systematic assessment",
+      "authors": [
+        "S. Grafakos",
+        "G. Viero",
+        "D. Reckien",
+        "K. Trigg",
+        "V. Viguie",
+        "A. Sudmant",
+        "C. Graves",
+        "A. Foley",
+        "O. Heidrich",
+        "J.M. Mirailles",
+        "J. Carter",
+        "L.H. Chang",
+        "C. Nador",
+        "M. Liseri",
+        "L. Chelleri",
+        "H. Orru",
+        "K. Orru",
+        "R. Aelenei",
+        "A. Bilska",
+        "B. Pfeiffer",
+        "Q. Lepetit",
+        "J.M. Church",
+        "M. Landauer",
+        "A. Gouldson",
+        "R. Dawson"
+      ],
+      "publication_date": "2020-04",
+      "date_precision": "month",
+      "venue": "Renewable and Sustainable Energy Reviews",
+      "volume": "121",
+      "issue": null,
+      "pages": "109623",
+      "article_number": "109623",
+      "type": "journal-article",
+      "url": "https://doi.org/10.1016/j.rser.2019.109623"
+    },
+    {
+      "put_code": 103144369,
+      "orcid_title": "Building Climate Resilience and Water Security in Cities: Lessons from the sponge city of Wuhan, China",
+      "orcid_year": "2020",
+      "dois": [],
+      "external_identifiers": [
+        "source-work-id:521702"
+      ],
+      "provider": "orcid",
+      "retrieval_status": "orcid-only",
+      "conflicts": []
+    },
+    {
+      "put_code": 103144370,
+      "orcid_title": "Towards Sustainable Mobility and Improved Public Health: Lessons from bike sharing in Shanghai, China",
+      "orcid_year": "2020",
+      "dois": [],
+      "external_identifiers": [
+        "source-work-id:521704"
+      ],
+      "provider": "orcid",
+      "retrieval_status": "orcid-only",
+      "conflicts": []
+    },
+    {
+      "put_code": 103144364,
+      "orcid_title": "Secure and equal access to land for all: Lessons on land governance and climate resilience from Dar es Salaam, Tanzania",
+      "orcid_year": "2020",
+      "dois": [],
+      "external_identifiers": [
+        "source-work-id:517588"
+      ],
+      "provider": "orcid",
+      "retrieval_status": "orcid-only",
+      "conflicts": []
+    },
+    {
+      "put_code": 103144372,
+      "orcid_title": "Banking the just transition in the UK",
+      "orcid_year": "2019",
+      "dois": [],
+      "external_identifiers": [
+        "source-work-id:523488"
+      ],
+      "provider": "orcid",
+      "retrieval_status": "orcid-only",
+      "conflicts": []
+    },
+    {
+      "put_code": 103144318,
+      "orcid_title": "The scope for low‐carbon development in Kigali, Rwanda: An economic appraisal",
+      "orcid_year": "2019",
+      "dois": [
+        "10.1002/sd.1906"
+      ],
+      "external_identifiers": [
+        "doi:10.1002/sd.1906",
+        "issn:0968-0802",
+        "wosuid:WOS:000472585500010",
+        "source-work-id:486493"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [
+        {
+          "field": "year",
+          "orcid": "2019",
+          "provider": "2018-11-28"
+        }
+      ],
+      "doi": "10.1002/sd.1906",
+      "title": "The scope for low‐carbon development in Kigali, Rwanda: An economic appraisal",
+      "authors": [
+        "Sarah Colenbrander",
+        "Andrew Sudmant",
+        "Natasha Chilundika",
+        "Andy Gouldson"
+      ],
+      "publication_date": "2018-11-28",
+      "date_precision": "exact",
+      "venue": "Sustainable Development",
+      "volume": "27",
+      "issue": "3",
+      "pages": "349-365",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1002/sd.1906"
+    },
+    {
+      "put_code": 103144355,
+      "orcid_title": "Supporting decent livelihoods through sustainable service provision: Lessons on solid waste management from Kampala, Uganda",
+      "orcid_year": "2019",
+      "dois": [],
+      "external_identifiers": [
+        "source-work-id:496835"
+      ],
+      "provider": "orcid",
+      "retrieval_status": "orcid-only",
+      "conflicts": []
+    },
+    {
+      "put_code": 103144357,
+      "orcid_title": "Sustainable urban infrastructure for all: Lessons on solar-powered street lights from Kampala and Jinja, Uganda",
+      "orcid_year": "2019",
+      "dois": [],
+      "external_identifiers": [
+        "source-work-id:496241"
+      ],
+      "provider": "orcid",
+      "retrieval_status": "orcid-only",
+      "conflicts": []
+    },
+    {
+      "put_code": 103144368,
+      "orcid_title": "Investing in a just transition in the UK: How investors can integrate social impact and place-based financing into climate strategies",
+      "orcid_year": "2019",
+      "dois": [],
+      "external_identifiers": [
+        "source-work-id:518868"
+      ],
+      "provider": "orcid",
+      "retrieval_status": "orcid-only",
+      "conflicts": []
+    },
+    {
+      "put_code": 155252826,
+      "orcid_title": "Transport Policy Measures for Climate Change as Drivers for Health in Cities",
+      "orcid_year": "2019",
+      "dois": [
+        "10.1007/978-3-319-74983-9_28",
+        "10.1016/j.jth.2018.05.035"
+      ],
+      "external_identifiers": [
+        "doi:10.1007/978-3-319-74983-9_28",
+        "isbn:9783319749822",
+        "source-work-id:495500",
+        "isbn:9783319749839",
+        "doi:10.1016/j.jth.2018.05.035",
+        "issn:2214-1413",
+        "wosuid:WOS:000437099600067",
+        "source-work-id:471912"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [
+        {
+          "field": "year",
+          "orcid": "2019",
+          "provider": "2018-07-14"
+        }
+      ],
+      "doi": "10.1007/978-3-319-74983-9_28",
+      "title": "Transport Policy Measures for Climate Change as Drivers for Health in Cities",
+      "authors": [
+        "Haneen Khreis",
+        "Andrew Sudmant",
+        "Andy Gouldson",
+        "Mark Nieuwenhuijsen"
+      ],
+      "publication_date": "2018-07-14",
+      "date_precision": "exact",
+      "venue": "Integrating Human Health into Urban and Transport Planning",
+      "volume": null,
+      "issue": null,
+      "pages": "583-608",
+      "article_number": null,
+      "type": "book-chapter",
+      "url": "https://doi.org/10.1007/978-3-319-74983-9_28"
+    },
+    {
+      "put_code": 103144362,
+      "orcid_title": "Reduced waste and improved livelihoods for all: Lessons on waste management from Ahmedabad, India",
+      "orcid_year": "2018",
+      "dois": [],
+      "external_identifiers": [
+        "source-work-id:491032"
+      ],
+      "provider": "orcid",
+      "retrieval_status": "orcid-only",
+      "conflicts": []
+    },
+    {
+      "put_code": 103144303,
+      "orcid_title": "Producer Cities and Consumer Cities: Using Production- and Consumption-Based Carbon Accounts to Guide Climate Action in China, the UK, and the US",
+      "orcid_year": "2018",
+      "dois": [
+        "10.1016/j.jclepro.2017.12.139"
+      ],
+      "external_identifiers": [
+        "doi:10.1016/j.jclepro.2017.12.139",
+        "issn:0959-6526",
+        "wosuid:WOS:000423648000058",
+        "source-work-id:454390"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1016/j.jclepro.2017.12.139",
+      "title": "Producer cities and consumer cities: Using production- and consumption-based carbon accounts to guide climate action in China, the UK, and the US",
+      "authors": [
+        "Andrew Sudmant",
+        "Andy Gouldson",
+        "Joel Millward-Hopkins",
+        "Kate Scott",
+        "John Barrett"
+      ],
+      "publication_date": "2018-03",
+      "date_precision": "month",
+      "venue": "Journal of Cleaner Production",
+      "volume": "176",
+      "issue": null,
+      "pages": "654-662",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1016/j.jclepro.2017.12.139"
+    },
+    {
+      "put_code": 103144361,
+      "orcid_title": "Affordable and clean energy for all: Lessons on rooftop solar from Delhi, India",
+      "orcid_year": "2018",
+      "dois": [],
+      "external_identifiers": [
+        "source-work-id:491034"
+      ],
+      "provider": "orcid",
+      "retrieval_status": "orcid-only",
+      "conflicts": []
+    },
+    {
+      "put_code": 103144363,
+      "orcid_title": "Resilient and affordable housing for all: Lessons on house building from Kochi and Trivandrum, India",
+      "orcid_year": "2018",
+      "dois": [],
+      "external_identifiers": [
+        "source-work-id:491031"
+      ],
+      "provider": "orcid",
+      "retrieval_status": "orcid-only",
+      "conflicts": []
+    },
+    {
+      "put_code": 31003248,
+      "orcid_title": "Private opportunities, public benefits? The scope for private finance to deliver low-carbon transport systems in Kigali, Rwanda",
+      "orcid_year": "2017",
+      "dois": [
+        "10.1016/j.uclim.2017.02.011"
+      ],
+      "external_identifiers": [
+        "doi:10.1016/j.uclim.2017.02.011"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1016/j.uclim.2017.02.011",
+      "title": "Private opportunities, public benefits? The scope for private finance to deliver low-carbon transport systems in Kigali, Rwanda",
+      "authors": [
+        "Andrew Sudmant",
+        "Sarah Colenbrander",
+        "Andy Gouldson",
+        "Natasha Chilundika"
+      ],
+      "publication_date": "2017-06",
+      "date_precision": "month",
+      "venue": "Urban Climate",
+      "volume": "20",
+      "issue": null,
+      "pages": "59-74",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1016/j.uclim.2017.02.011"
+    },
+    {
+      "put_code": 103144304,
+      "orcid_title": "Uncovering Blind Spots in Urban Carbon Management: The Role of Consumption-Based Carbon Accounting in Bristol, UK",
+      "orcid_year": "2017",
+      "dois": [
+        "10.1007/s10113-017-1112-x"
+      ],
+      "external_identifiers": [
+        "pmid:32055235",
+        "pmc:PMC6991983",
+        "doi:10.1007/s10113-017-1112-x",
+        "issn:1436-3798",
+        "wosuid:WOS:000402137900019",
+        "source-work-id:374564"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1007/s10113-017-1112-x",
+      "title": "Uncovering blind spots in urban carbon management: the role of consumption-based carbon accounting in Bristol, UK",
+      "authors": [
+        "Joel Millward-Hopkins",
+        "Andrew Gouldson",
+        "Kate Scott",
+        "John Barrett",
+        "Andrew Sudmant"
+      ],
+      "publication_date": "2017-02-03",
+      "date_precision": "exact",
+      "venue": "Regional Environmental Change",
+      "volume": "17",
+      "issue": "5",
+      "pages": "1467-1478",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1007/s10113-017-1112-x"
+    },
+    {
+      "put_code": 103144359,
+      "orcid_title": "The Economics of Climate Mitigation: Exploring the Relative Significance of the Incentives for and Barriers to Low-carbon Investment in Urban Areas",
+      "orcid_year": "2017",
+      "dois": [
+        "10.1177/2455747117708929"
+      ],
+      "external_identifiers": [
+        "doi:10.1177/2455747117708929",
+        "issn:2455-7471",
+        "source-work-id:434920"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1177/2455747117708929",
+      "title": "The Economics of Climate Mitigation: Exploring the Relative Significance of the Incentives for and Barriers to Low-carbon Investment in Urban Areas",
+      "authors": [
+        "Sarah Colenbrander",
+        "Andrew H. Sudmant",
+        "Andy Gouldson",
+        "Igor Reis de Albuquerque",
+        "Faye McAnulla",
+        "Ynara Oliviera de Sousa"
+      ],
+      "publication_date": "2017-06-21",
+      "date_precision": "exact",
+      "venue": "Urbanisation",
+      "volume": "2",
+      "issue": "1",
+      "pages": "38-58",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1177/2455747117708929"
+    },
+    {
+      "put_code": 103144312,
+      "orcid_title": "Can low-carbon urban development be pro-poor? The case of Kolkata, India",
+      "orcid_year": "2017",
+      "dois": [
+        "10.1177/0956247816677775"
+      ],
+      "external_identifiers": [
+        "doi:10.1177/0956247816677775",
+        "issn:0956-2478",
+        "wosuid:WOS:000400086300009",
+        "source-work-id:366095"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [
+        {
+          "field": "year",
+          "orcid": "2017",
+          "provider": "2016-12-16"
+        }
+      ],
+      "doi": "10.1177/0956247816677775",
+      "title": "Can low-carbon urban development be pro-poor? The case of Kolkata, India",
+      "authors": [
+        "Sarah Colenbrander",
+        "Andy Gouldson",
+        "Joyashree Roy",
+        "Niall Kerr",
+        "Sayantan Sarkar",
+        "Stephen Hall",
+        "Andrew Sudmant",
+        "Amrita Ghatak",
+        "Debalina Chakravarty",
+        "Diya Ganguly",
+        "Faye Mcanulla"
+      ],
+      "publication_date": "2016-12-16",
+      "date_precision": "exact",
+      "venue": "Environment and Urbanization",
+      "volume": "29",
+      "issue": "1",
+      "pages": "139-158",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1177/0956247816677775"
+    },
+    {
+      "put_code": 26055818,
+      "orcid_title": "Low carbon cities: is ambitious action affordable?",
+      "orcid_year": "2016",
+      "dois": [
+        "10.1007/s10584-016-1751-9"
+      ],
+      "external_identifiers": [
+        "doi:10.1007/s10584-016-1751-9"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1007/s10584-016-1751-9",
+      "title": "Low carbon cities: is ambitious action affordable?",
+      "authors": [
+        "Andrew Sudmant",
+        "Joel Millward-Hopkins",
+        "Sarah Colenbrander",
+        "Andy Gouldson"
+      ],
+      "publication_date": "2016-08-15",
+      "date_precision": "exact",
+      "venue": "Climatic Change",
+      "volume": "138",
+      "issue": "3-4",
+      "pages": "681-688",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1007/s10584-016-1751-9"
+    },
+    {
+      "put_code": 103144358,
+      "orcid_title": "Accelerating Low Carbon Development in the World’s Cities",
+      "orcid_year": "2015",
+      "dois": [],
+      "external_identifiers": [
+        "source-work-id:333645"
+      ],
+      "provider": "orcid",
+      "retrieval_status": "orcid-only",
+      "conflicts": []
+    },
+    {
+      "put_code": 28159751,
+      "orcid_title": "Exploring the economic case for climate action in cities",
+      "orcid_year": "2015",
+      "dois": [
+        "10.1016/j.gloenvcha.2015.07.009"
+      ],
+      "external_identifiers": [
+        "doi:10.1016/j.gloenvcha.2015.07.009",
+        "eid:2-s2.0-84940824920"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1016/j.gloenvcha.2015.07.009",
+      "title": "Exploring the economic case for climate action in cities",
+      "authors": [
+        "Andy Gouldson",
+        "Sarah Colenbrander",
+        "Andrew Sudmant",
+        "Faye McAnulla",
+        "Niall Kerr",
+        "Paola Sakai",
+        "Stephen Hall",
+        "Effie Papargyropoulou",
+        "Johan Kuylenstierna"
+      ],
+      "publication_date": "2015-11",
+      "date_precision": "month",
+      "venue": "Global Environmental Change",
+      "volume": "35",
+      "issue": null,
+      "pages": "93-105",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1016/j.gloenvcha.2015.07.009"
+    },
+    {
+      "put_code": 107839869,
+      "orcid_title": "Bigger cities better climate? Results from an analysis of urban areas in China",
+      "orcid_year": null,
+      "dois": [
+        "10.1016/j.eneco.2022.105872"
+      ],
+      "external_identifiers": [
+        "doi:10.1016/j.eneco.2022.105872",
+        "issn:0140-9883",
+        "wosuid:WOS:000759016800008",
+        "source-work-id:579114"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1016/j.eneco.2022.105872",
+      "title": "Bigger cities better climate? Results from an analysis of urban areas in China",
+      "authors": [
+        "Lu Cheng",
+        "Zhifu Mi",
+        "Andrew Sudmant",
+        "D'Maris Coffman"
+      ],
+      "publication_date": "2022-03",
+      "date_precision": "month",
+      "venue": "Energy Economics",
+      "volume": "107",
+      "issue": null,
+      "pages": "105872",
+      "article_number": "105872",
+      "type": "journal-article",
+      "url": "https://doi.org/10.1016/j.eneco.2022.105872"
+    },
+    {
+      "put_code": 26055880,
+      "orcid_title": "Cities and climate change mitigation: Economic opportunities and governance challenges in Asia",
+      "orcid_year": null,
+      "dois": [
+        "10.1016/j.cities.2015.10.010",
+        "10.60692/xnqrk-f5581",
+        "10.60692/471za-j6592"
+      ],
+      "external_identifiers": [
+        "doi:10.1016/j.cities.2015.10.010",
+        "eid:2-s2.0-84962339314",
+        "issn:0264-2751",
+        "wosuid:WOS:000375629900003",
+        "source-work-id:346797",
+        "doi:10.60692/xnqrk-f5581",
+        "doi:10.60692/471za-j6592"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1016/j.cities.2015.10.010",
+      "title": "Cities and climate change mitigation: Economic opportunities and governance challenges in Asia",
+      "authors": [
+        "Andy Gouldson",
+        "Sarah Colenbrander",
+        "Andrew Sudmant",
+        "Effie Papargyropoulou",
+        "Niall Kerr",
+        "Faye McAnulla",
+        "Stephen Hall"
+      ],
+      "publication_date": "2016-05",
+      "date_precision": "month",
+      "venue": "Cities",
+      "volume": "54",
+      "issue": null,
+      "pages": "11-19",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1016/j.cities.2015.10.010"
+    },
+    {
+      "put_code": 26055899,
+      "orcid_title": "Climate change mitigation in Chinese megacities: A measures-based analysis of opportunities in the residential sector",
+      "orcid_year": null,
+      "dois": [
+        "10.1016/j.apenergy.2016.07.112"
+      ],
+      "external_identifiers": [
+        "doi:10.1016/j.apenergy.2016.07.112",
+        "issn:0306-2619",
+        "wosuid:WOS:000389785200063",
+        "source-work-id:362976"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1016/j.apenergy.2016.07.112",
+      "title": "Climate change mitigation in Chinese megacities: A measures-based analysis of opportunities in the residential sector",
+      "authors": [
+        "Qi He",
+        "Xujia Jiang",
+        "Andy Gouldson",
+        "Andrew Sudmant",
+        "Dabo Guan",
+        "Sarah Colenbrander",
+        "Tao Xue",
+        "Bo Zheng",
+        "Qiang Zhang"
+      ],
+      "publication_date": "2016-12",
+      "date_precision": "month",
+      "venue": "Applied Energy",
+      "volume": "184",
+      "issue": null,
+      "pages": "769-778",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1016/j.apenergy.2016.07.112"
+    },
+    {
+      "put_code": 26055868,
+      "orcid_title": "Exploring the economic case for early investment in climate change mitigation in middle-income countries: a case study of Johor Bahru, Malaysia",
+      "orcid_year": null,
+      "dois": [
+        "10.1080/17565529.2015.1040367"
+      ],
+      "external_identifiers": [
+        "doi:10.1080/17565529.2015.1040367",
+        "issn:1756-5529",
+        "wosuid:WOS:000380276700005",
+        "source-work-id:327421",
+        "eid:2-s2.0-84930331055"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1080/17565529.2015.1040367",
+      "title": "Exploring the economic case for early investment in climate change mitigation in middle-income countries: a case study of Johor Bahru, Malaysia",
+      "authors": [
+        "Sarah Colenbrander",
+        "Andy Gouldson",
+        "Andrew Heshedahl Sudmant",
+        "Effie Papargyropoulou",
+        "Loon Wai Chau",
+        "Chin Siong Ho"
+      ],
+      "publication_date": "2015-06-02",
+      "date_precision": "exact",
+      "venue": "Climate and Development",
+      "volume": "8",
+      "issue": "4",
+      "pages": "351-364",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1080/17565529.2015.1040367"
+    },
+    {
+      "put_code": 103144371,
+      "orcid_title": "Improving Energy Efficiency for All: Lessons on Sustainable Building Retrofits from Shanghai, China",
+      "orcid_year": null,
+      "dois": [],
+      "external_identifiers": [
+        "source-work-id:523020"
+      ],
+      "provider": "orcid",
+      "retrieval_status": "orcid-only",
+      "conflicts": []
+    },
+    {
+      "put_code": 103144320,
+      "orcid_title": "Supportive governance for city-scale low carbon building retrofits: a case study from Shanghai",
+      "orcid_year": null,
+      "dois": [
+        "10.1080/14693062.2021.1948383"
+      ],
+      "external_identifiers": [
+        "doi:10.1080/14693062.2021.1948383",
+        "issn:1469-3062",
+        "wosuid:WOS:000670804300001",
+        "source-work-id:562637"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1080/14693062.2021.1948383",
+      "title": "Supportive governance for city-scale low carbon building retrofits: a case study from Shanghai",
+      "authors": [
+        "Zhongjue Yu",
+        "Yong Geng",
+        "Qi He",
+        "Lucy Oates",
+        "Andrew Sudmant",
+        "Andy Gouldson",
+        "Raimund Bleischwitz"
+      ],
+      "publication_date": "2021-07-08",
+      "date_precision": "exact",
+      "venue": "Climate Policy",
+      "volume": "21",
+      "issue": "7",
+      "pages": "884-896",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1080/14693062.2021.1948383"
+    },
+    {
+      "put_code": 103144377,
+      "orcid_title": "The Economics of Low Carbon Development: Calgary, Canada",
+      "orcid_year": null,
+      "dois": [],
+      "external_identifiers": [
+        "source-work-id:546258"
+      ],
+      "provider": "orcid",
+      "retrieval_status": "orcid-only",
+      "conflicts": []
+    },
+    {
+      "put_code": 26055849,
+      "orcid_title": "The economic case for low carbon waste management in rapidly growing cities in the developing world: The case of Palembang, Indonesia",
+      "orcid_year": null,
+      "dois": [
+        "10.1016/j.jenvman.2015.08.001"
+      ],
+      "external_identifiers": [
+        "doi:10.1016/j.jenvman.2015.08.001",
+        "eid:2-s2.0-84939444738",
+        "pmid:26280124",
+        "issn:0301-4797",
+        "wosuid:WOS:000362306600003",
+        "source-work-id:333240"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1016/j.jenvman.2015.08.001",
+      "title": "The economic case for low carbon waste management in rapidly growing cities in the developing world: The case of Palembang, Indonesia",
+      "authors": [
+        "Effie Papargyropoulou",
+        "Sarah Colenbrander",
+        "Andrew Heshedahl Sudmant",
+        "Andy Gouldson",
+        "Lee Chew Tin"
+      ],
+      "publication_date": "2015-11",
+      "date_precision": "month",
+      "venue": "Journal of Environmental Management",
+      "volume": "163",
+      "issue": null,
+      "pages": "11-19",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1016/j.jenvman.2015.08.001"
+    },
+    {
+      "put_code": 26055840,
+      "orcid_title": "The economic case for low-carbon development in rapidly growing developing world cities: A case study of Palembang, Indonesia",
+      "orcid_year": null,
+      "dois": [
+        "10.1016/j.enpol.2015.01.020"
+      ],
+      "external_identifiers": [
+        "doi:10.1016/j.enpol.2015.01.020",
+        "issn:0301-4215",
+        "wosuid:WOS:000351978000003",
+        "source-work-id:317996",
+        "eid:2-s2.0-84924275576"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1016/j.enpol.2015.01.020",
+      "title": "The economic case for low-carbon development in rapidly growing developing world cities: A case study of Palembang, Indonesia",
+      "authors": [
+        "Sarah Colenbrander",
+        "Andy Gouldson",
+        "Andrew Heshedahl Sudmant",
+        "Effie Papargyropoulou"
+      ],
+      "publication_date": "2015-05",
+      "date_precision": "month",
+      "venue": "Energy Policy",
+      "volume": "80",
+      "issue": null,
+      "pages": "24-35",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1016/j.enpol.2015.01.020"
+    },
+    {
+      "put_code": 26055872,
+      "orcid_title": "Understanding the case for low-carbon investment through bottom-up assessments of city-scale opportunities",
+      "orcid_year": null,
+      "dois": [
+        "10.1080/14693062.2015.1104498"
+      ],
+      "external_identifiers": [
+        "doi:10.1080/14693062.2015.1104498",
+        "issn:1469-3062",
+        "wosuid:WOS:000399487800003",
+        "source-work-id:337828",
+        "eid:2-s2.0-84946887393"
+      ],
+      "provider": "crossref",
+      "retrieval_status": "enriched",
+      "conflicts": [],
+      "doi": "10.1080/14693062.2015.1104498",
+      "title": "Understanding the case for low-carbon investment through bottom-up assessments of city-scale opportunities",
+      "authors": [
+        "Andrew Heshedahl Sudmant",
+        "Andy Gouldson",
+        "Sarah Colenbrander",
+        "Rory Sullivan",
+        "Faye McAnulla",
+        "Niall Kerr"
+      ],
+      "publication_date": "2015-11-13",
+      "date_precision": "exact",
+      "venue": "Climate Policy",
+      "volume": "17",
+      "issue": "3",
+      "pages": "299-313",
+      "article_number": null,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1080/14693062.2015.1104498"
+    }
+  ],
+  "raw_provider_payloads_retained": false
+}

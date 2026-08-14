@@ -3,15 +3,17 @@
   "title": "Canonical project record",
   "type": "object",
   "additionalProperties": false,
-  "required": ["record_id", "title", "status", "summary", "research_questions", "start_date", "end_date", "primary_theme", "secondary_themes", "geographies", "governance_scales", "methods", "climate_domains", "sectors", "collaborators", "connected_publications", "outputs", "data_tools", "authoritative_sources", "placeholder", "owner_review_required"],
+  "required": ["record_id", "title", "status", "relationship_to_lab", "relationship_note", "summary", "research_questions", "start_date", "end_date", "primary_theme", "secondary_themes", "geographies", "governance_scales", "methods", "climate_domains", "sectors", "collaborators", "connected_publications", "outputs", "data_tools", "last_verified_date", "authoritative_sources", "verification_status"],
   "properties": {
     "record_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
     "title": {"type": "string", "minLength": 8},
-    "status": {"enum": ["planned", "active", "completed", "on-hold", "status-unconfirmed"]},
+    "status": {"enum": ["in-development", "active", "completed", "on-hold", "status-unconfirmed"]},
+    "relationship_to_lab": {"enum": ["current-lab-research", "foundational-prior-work", "associated-collaboration"]},
+    "relationship_note": {"type": "string", "minLength": 20},
     "summary": {"type": "string", "minLength": 40},
     "research_questions": {"type": "array", "items": {"type": "string", "minLength": 12}, "maxItems": 6},
-    "start_date": {"type": ["string", "null"], "format": "date"},
-    "end_date": {"type": ["string", "null"], "format": "date"},
+    "start_date": {"type": ["string", "null"], "pattern": "^[0-9]{4}(?:-[0-9]{2}(?:-[0-9]{2})?)?$"},
+    "end_date": {"type": ["string", "null"], "pattern": "^[0-9]{4}(?:-[0-9]{2}(?:-[0-9]{2})?)?$"},
     "primary_theme": {"type": "string"},
     "secondary_themes": {"type": "array", "maxItems": 3, "uniqueItems": true, "items": {"type": "string"}},
     "geographies": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
@@ -21,10 +23,32 @@
     "sectors": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
     "collaborators": {"type": "array", "items": {"type": "string"}},
     "connected_publications": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
-    "outputs": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["title", "url"], "properties": {"title": {"type": "string"}, "url": {"type": ["string", "null"], "format": "uri"}}}},
-    "data_tools": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["title", "url"], "properties": {"title": {"type": "string"}, "url": {"type": "string", "format": "uri", "pattern": "^https://"}}}},
-    "authoritative_sources": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false, "required": ["label", "url", "retrieved_date"], "properties": {"label": {"type": "string"}, "url": {"type": "string", "format": "uri", "pattern": "^https://"}, "retrieved_date": {"type": "string", "format": "date"}}}},
-    "placeholder": {"type": "boolean"},
-    "owner_review_required": {"type": "boolean"}
+    "outputs": {"type": "array", "items": {"$ref": "#/$defs/link"}},
+    "data_tools": {"type": "array", "items": {"$ref": "#/$defs/link"}},
+    "last_verified_date": {"type": "string", "format": "date"},
+    "authoritative_sources": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/source"}},
+    "verification_status": {"enum": ["owner-approved", "verified", "partially-verified"]}
+  },
+  "$defs": {
+    "link": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "url"],
+      "properties": {
+        "title": {"type": "string"},
+        "url": {"type": ["string", "null"], "format": "uri"}
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "url", "retrieved_date", "source_type"],
+      "properties": {
+        "label": {"type": "string"},
+        "url": {"type": ["string", "null"], "format": "uri"},
+        "retrieved_date": {"type": "string", "format": "date"},
+        "source_type": {"enum": ["public-web", "owner-approved-programme"]}
+      }
+    }
   }
 }

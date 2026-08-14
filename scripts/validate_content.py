@@ -75,6 +75,10 @@ def validate_all() -> list[str]:
             errors.extend(schema_errors(record, schema, label))
             errors.extend(content_policy_errors(record, label, vocab))
 
+    people = records["people"]
+    if not people or people[0].get("email") != "andrew_sudmant@sfu.ca":
+        errors.append("data/people: public email must be andrew_sudmant@sfu.ca")
+
     errors.extend(unique_and_crosslink_errors(records))
 
     watch_schema = load_schema("research-watch.schema.json")
@@ -117,6 +121,17 @@ def content_policy_errors(record: dict[str, Any], label: str, vocab: dict[str, A
                 errors.append(f"{label}: invalid {field}: {', '.join(invalid)}")
     else:
         errors.extend(theme_reference_errors(record.get("themes", []), label, CANONICAL_THEMES))
+    if "authors" in record:
+        authors = record.get("authors", [])
+        if any("collaborator" in author.casefold() for author in authors):
+            errors.append(f"{label}: canonical author lists cannot use 'and collaborators'")
+        date = record.get("publication_date", "")
+        precision = record.get("date_precision")
+        expected_length = {"exact": 10, "month": 7, "year": 4}.get(precision)
+        if expected_length and len(date) != expected_length:
+            errors.append(f"{label}: publication_date does not match date_precision {precision}")
+        if precision == "year" and date.endswith("-01-01"):
+            errors.append(f"{label}: year-only evidence cannot use a synthetic January 1 date")
     return errors
 
 
@@ -134,6 +149,9 @@ def unique_and_crosslink_errors(records: dict[str, list[dict[str, Any]]]) -> lis
         errors.append("data/publications: DOI values must be unique")
     if len(urls) != len(set(urls)):
         errors.append("data/publications: canonical URLs must be unique")
+    for publication in records["publications"]:
+        if publication.get("doi", "").lower() == "10.1038/s44284-025-00260-8":
+            errors.append("data/publications: Nature Cities global stocktake is not an Andrew Sudmant publication")
     for project in records["projects"]:
         missing = set(project.get("connected_publications", [])) - publication_ids
         if missing:
@@ -169,6 +187,8 @@ def watch_policy_errors(record: dict[str, Any], label: str, state: str, vocab: d
             errors.append(f"{label}: critical risk flags require withholding or quarantine")
         if not {"schema-valid", "url-safe", "deduplicated", "evidence-sufficient", "disclosure-present"} <= checks:
             errors.append(f"{label}: published records are missing mandatory checks")
+        if record.get("source_type") == "academic-paper" and ("mdpi" in record.get("source_domain", "").casefold() or "mdpi" in record.get("source_name", "").casefold()):
+            errors.append(f"{label}: MDPI academic records are excluded from public Research Watch")
     review = record.get("review", {})
     if review.get("status") == "reviewed" and (not review.get("reviewer") or not review.get("reviewed_date")):
         errors.append(f"{label}: reviewed records require reviewer and date")

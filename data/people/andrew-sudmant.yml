@@ -1,26 +1,87 @@
 id: andrew-sudmant
 name: Andrew Sudmant
-role: Assistant Professor
-affiliation: School of Resource and Environmental Management, Simon Fraser University
-bio: >-
-  Andrew Sudmant researches how urban climate action is governed, delivered and
-  valued, including the co-benefits of low-carbon development and the evidence
-  systems cities use. He is an Assistant Professor in Simon Fraser University's
-  School of Resource and Environmental Management and a Lead Author for Chapter 5
-  of the IPCC Special Report on Climate Change and Cities.
-email: asudmant@sfu.ca
-links:
-  - label: SFU profile
+academic_title: Assistant Professor
+institutional_affiliation: School of Resource and Environmental Management, Simon Fraser University
+lab_role: Director, Cities and Climate Learning Lab
+display_lines:
+  - Andrew Sudmant
+  - Assistant Professor, Simon Fraser University
+  - Director, Cities and Climate Learning Lab
+short_bio: >-
+  Andrew Sudmant is an Assistant Professor in Simon Fraser University’s School of
+  Resource and Environmental Management and Director of the Cities and Climate
+  Learning Lab. His research examines how cities and governments design, evaluate
+  and deliver climate action, with particular interests in urban climate policy,
+  co-benefits, policy appraisal, evidence transfer and decision-support tools. He is
+  a Lead Author for Chapter 5 of the IPCC Special Report on Climate Change and Cities.
+full_bio: >-
+  Andrew Sudmant is an Assistant Professor in the School of Resource and
+  Environmental Management at Simon Fraser University, where he directs the Cities
+  and Climate Learning Lab. Trained as an economist, he studies how cities and
+  governments can move from climate commitments to practical implementation.
+
+  His research combines climate-policy and economic modelling, public-policy
+  appraisal and the development of decision-support tools. He is particularly
+  interested in how climate action across housing, transport, energy and urban
+  infrastructure affects affordability, mobility, health, resilience and access to
+  opportunity. Across this work, he examines how analytical choices about behaviour,
+  value, time, geography and distribution shape which policies appear desirable and
+  whose costs and benefits become visible.
+
+  Before joining Simon Fraser University, Andrew worked at the Edinburgh Climate
+  Change Institute at the University of Edinburgh, where he led and contributed to
+  research on place-based climate action, the wider social and economic consequences
+  of net zero, and evidence tools for local and national decision-makers. He is a Lead
+  Author for Chapter 5, “Solutions by City Types and Regions,” of the IPCC Special
+  Report on Climate Change and Cities.
+email: andrew_sudmant@sfu.ca
+office: TASC1 8411
+telephone: 1 778 782-2104
+orcid: 0000-0001-8650-8419
+ipcc_role: Lead Author, Chapter 5, Special Report on Climate Change and Cities
+ipcc_chapter_title: Solutions by City Types and Regions
+education:
+  - degree: BA (Honours)
+    field: Economics
+    institution: University of British Columbia
+  - degree: MSc
+    field: Environmental Policy and Regulation
+    institution: London School of Economics and Political Science
+  - degree: PhD
+    field: Sustainability Research Institute, School of Earth and Environment
+    institution: University of Leeds
+previous_affiliation: Edinburgh Climate Change Institute, University of Edinburgh
+profile_links:
+  - label: SFU faculty profile
     url: https://www.sfu.ca/rem/about/people/sudmant.html
+    verified_date: 2026-08-14
   - label: ORCID
     url: https://orcid.org/0000-0001-8650-8419
-  - label: University of Edinburgh research profile
+    verified_date: 2026-08-14
+  - label: University of Edinburgh Research Explorer
     url: https://www.research.ed.ac.uk/en/persons/andrew-sudmant/
+    verified_date: 2026-08-14
+  - label: LinkedIn
+    url: https://uk.linkedin.com/in/andrew-sudmant-89393a32
+    verified_date: 2026-08-14
+  - label: Bluesky
+    url: https://bsky.app/profile/andrewsudmant.bsky.social
+    verified_date: 2026-08-14
+image: null
+image_rights_status: not-supplied
 themes:
   - urban-climate-learning
   - climate-governance-delivery
   - co-benefits-place-based-valuation
+  - just-transitions-workforce
   - evidence-infrastructure-tools
   - canadian-climate-policy
-placeholder: false
-owner_review_required: true
+last_verified_date: 2026-08-14
+authoritative_sources:
+  - label: SFU faculty profile
+    url: https://www.sfu.ca/rem/about/people/sudmant.html
+    retrieved_date: 2026-08-14
+  - label: Owner-approved Gate 3B–4A profile fields
+    url: https://www.sfu.ca/rem/about/people/sudmant.html
+    retrieved_date: 2026-08-14
+verification_status: owner-approved

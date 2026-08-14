@@ -1,12 +1,15 @@
 record_id: data-methodologies-climate-impact
-title: Data methodologies for local climate impact assessment
+title: Data Methodologies for Climate Impact Assessment
 status: completed
+relationship_to_lab: foundational-prior-work
+relationship_note: >-
+  Work completed at the University of Edinburgh before the lab was established;
+  it provides a methodological foundation for the lab's evidence-tools programme.
 summary: >-
-  Research on scaling and combining data for place-based climate impact assessment,
+  Research on scaling and combining data for place-based climate-impact assessment,
   including methods that connect national evidence with local decision contexts.
-  The public institutional record dates the project from October 2023 to April 2025.
 research_questions:
-  - How can national evidence be scaled for local climate impact assessment?
+  - How can national evidence be scaled for local climate-impact assessment?
 start_date: 2023-10-03
 end_date: 2025-04-02
 primary_theme: evidence-infrastructure-tools
@@ -17,12 +20,13 @@ methods: [place-based-modelling, spatial-analysis, economic-appraisal]
 climate_domains: [mitigation]
 sectors: [cross-sectoral]
 collaborators: [University of Edinburgh]
-connected_publications: [data-scaling-climate-impact-assessment]
+connected_publications: [data-scaling-climate-action-governance-uk]
 outputs: []
 data_tools: []
+last_verified_date: 2026-08-14
 authoritative_sources:
   - label: University of Edinburgh project record
     url: https://www.research.ed.ac.uk/en/projects/data-methodologies-for-climate-impact-assessment/
     retrieved_date: 2026-08-14
-placeholder: false
-owner_review_required: true
+    source_type: public-web
+verification_status: verified

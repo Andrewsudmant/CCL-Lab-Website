@@ -1,0 +1,43 @@
+record_id: data-scaling-climate-action-governance-uk
+title: "Data Scaling: Implications for Climate Action and Governance in the UK"
+authors: [Andrew Sudmant]
+publication_date: 2024-05-29
+date_precision: exact
+publication_type: article
+peer_review_status: peer-reviewed
+venue: Environmental Management
+volume: "74"
+issue: "3"
+pages: 414–424
+article_number: null
+doi: 10.1007/s00267-024-01991-5
+other_identifiers: []
+version: null
+original_submission_date: null
+current_version_date: null
+url: https://doi.org/10.1007/s00267-024-01991-5
+citation: "Sudmant, A. (2024). Data Scaling: Implications for Climate Action and Governance in the UK. Environmental Management, 74(3), 414–424."
+abstract_summary: >-
+  The article examines how changing the spatial scale of climate evidence affects
+  assessment, governance and the interpretation of local climate action in the UK.
+relationship_to_lab: foundational-prior-work
+relationship_note: Published before the lab was established and foundational to its evidence-infrastructure programme.
+primary_theme: evidence-infrastructure-tools
+secondary_themes: [co-benefits-place-based-valuation, climate-governance-delivery]
+geographies: [united-kingdom]
+governance_scales: [federal-national, municipal, neighbourhood]
+methods: [place-based-modelling, spatial-analysis, economic-appraisal]
+climate_domains: [mitigation]
+sectors: [cross-sectoral]
+connected_projects: [data-methodologies-climate-impact]
+featured: true
+metadata_sources: [orcid, crossref, publisher]
+last_verified_date: 2026-08-14
+authoritative_sources:
+  - label: Crossref DOI record
+    url: https://api.crossref.org/works/10.1007/s00267-024-01991-5
+    retrieved_date: 2026-08-14
+  - label: Publisher record
+    url: https://doi.org/10.1007/s00267-024-01991-5
+    retrieved_date: 2026-08-14
+verification_status: verified

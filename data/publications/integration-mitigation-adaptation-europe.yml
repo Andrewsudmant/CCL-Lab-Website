@@ -1,0 +1,40 @@
+record_id: integration-mitigation-adaptation-europe
+title: "Integration of mitigation and adaptation in urban climate change action plans in Europe: A systematic assessment"
+authors: [S. Grafakos, G. Viero, D. Reckien, K. Trigg, V. Viguie, A. Sudmant, C. Graves, A. Foley, O. Heidrich, J.M. Mirailles, J. Carter, L.H. Chang, C. Nador, M. Liseri, L. Chelleri, H. Orru, K. Orru, R. Aelenei, A. Bilska, B. Pfeiffer, Q. Lepetit, J.M. Church, M. Landauer, A. Gouldson, R. Dawson]
+publication_date: 2020-04
+date_precision: month
+publication_type: article
+peer_review_status: peer-reviewed
+venue: Renewable and Sustainable Energy Reviews
+volume: "121"
+issue: null
+pages: null
+article_number: "109623"
+doi: 10.1016/j.rser.2019.109623
+other_identifiers: []
+version: null
+original_submission_date: null
+current_version_date: null
+url: https://doi.org/10.1016/j.rser.2019.109623
+citation: "Grafakos, S. et al. (2020). Integration of mitigation and adaptation in urban climate change action plans in Europe: A systematic assessment. Renewable and Sustainable Energy Reviews, 121, 109623."
+abstract_summary: >-
+  A systematic assessment of how European urban climate action plans integrate
+  mitigation and adaptation objectives and measures.
+relationship_to_lab: foundational-prior-work
+relationship_note: Prior collaborative work included for its direct relevance to urban climate governance and delivery.
+primary_theme: climate-governance-delivery
+secondary_themes: [urban-climate-learning]
+geographies: [europe]
+governance_scales: [municipal]
+methods: [literature-review, policy-analysis]
+climate_domains: [mitigation, adaptation]
+sectors: [cross-sectoral]
+connected_projects: []
+featured: true
+metadata_sources: [orcid, crossref, publisher]
+last_verified_date: 2026-08-14
+authoritative_sources:
+  - label: Crossref DOI record
+    url: https://api.crossref.org/works/10.1016/j.rser.2019.109623
+    retrieved_date: 2026-08-14
+verification_status: verified

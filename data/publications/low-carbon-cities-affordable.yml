@@ -1,0 +1,40 @@
+record_id: low-carbon-cities-affordable
+title: "Low carbon cities: is ambitious action affordable?"
+authors: [Andrew Sudmant, Joel Millward-Hopkins, Sarah Colenbrander, Andy Gouldson]
+publication_date: 2016-08-15
+date_precision: exact
+publication_type: article
+peer_review_status: peer-reviewed
+venue: Climatic Change
+volume: "138"
+issue: 3–4
+pages: 681–688
+article_number: null
+doi: 10.1007/s10584-016-1751-9
+other_identifiers: []
+version: null
+original_submission_date: null
+current_version_date: null
+url: https://doi.org/10.1007/s10584-016-1751-9
+citation: "Sudmant, A., Millward-Hopkins, J., Colenbrander, S., & Gouldson, A. (2016). Low carbon cities: is ambitious action affordable? Climatic Change, 138(3–4), 681–688."
+abstract_summary: >-
+  The article considers the affordability and economic case for ambitious low-carbon
+  action in cities.
+relationship_to_lab: foundational-prior-work
+relationship_note: Prior research included as a foundation for the lab's urban climate appraisal programme.
+primary_theme: co-benefits-place-based-valuation
+secondary_themes: [climate-governance-delivery]
+geographies: [global]
+governance_scales: [municipal]
+methods: [economic-appraisal]
+climate_domains: [mitigation]
+sectors: [cross-sectoral]
+connected_projects: []
+featured: true
+metadata_sources: [orcid, crossref, publisher]
+last_verified_date: 2026-08-14
+authoritative_sources:
+  - label: Crossref DOI record
+    url: https://api.crossref.org/works/10.1007/s10584-016-1751-9
+    retrieved_date: 2026-08-14
+verification_status: verified

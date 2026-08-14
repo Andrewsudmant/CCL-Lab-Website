@@ -1,0 +1,43 @@
+record_id: designing-visualization-atlas-uk-cobenefits
+title: "Designing a Visualization Atlas: Lessons & Reflections from The UK Co-Benefits Atlas for Climate Mitigation"
+authors: [Jinrui Wang, Alexis Pister, Sian Phillips, Sarah Bissett, Ruaidhri Higgins-Lavery, Clare Wharmby, Andrew Sudmant, Uta Hinrichs, Benjamin Bach]
+publication_date: 2026-04-22
+date_precision: exact
+publication_type: preprint
+peer_review_status: preprint
+venue: arXiv
+volume: null
+issue: null
+pages: null
+article_number: null
+doi: 10.48550/arXiv.2604.20781
+other_identifiers: [arXiv:2604.20781]
+version: v2
+original_submission_date: 2026-04-22
+current_version_date: 2026-07-28
+url: https://arxiv.org/abs/2604.20781v2
+citation: "Wang, J., Pister, A., Phillips, S., Bissett, S., Higgins-Lavery, R., Wharmby, C., Sudmant, A., Hinrichs, U., & Bach, B. (2026). Designing a Visualization Atlas: Lessons & Reflections from The UK Co-Benefits Atlas for Climate Mitigation. arXiv:2604.20781v2."
+abstract_summary: >-
+  The preprint reflects on the design process for the UK Co-Benefits Atlas and
+  identifies considerations for building large, interactive visualization atlases.
+relationship_to_lab: foundational-prior-work
+relationship_note: Produced through the UK Atlas collaboration before the lab was established at SFU.
+primary_theme: evidence-infrastructure-tools
+secondary_themes: [co-benefits-place-based-valuation]
+geographies: [united-kingdom]
+governance_scales: [municipal, neighbourhood]
+methods: [data-visualization, co-design]
+climate_domains: [mitigation, evidence-and-learning]
+sectors: [cross-sectoral]
+connected_projects: [uk-co-benefits-atlas]
+featured: true
+metadata_sources: [datacite, repository]
+last_verified_date: 2026-08-14
+authoritative_sources:
+  - label: arXiv current version
+    url: https://arxiv.org/abs/2604.20781v2
+    retrieved_date: 2026-08-14
+  - label: DataCite DOI record
+    url: https://api.datacite.org/dois/10.48550/arXiv.2604.20781
+    retrieved_date: 2026-08-14
+verification_status: verified

@@ -31,6 +31,10 @@ methods:
   co-design: Co-design
   data-visualization: Data visualization
   occupational-analysis: Occupational analysis
+  evidence-synthesis: Evidence synthesis
+  taxonomy-development: Taxonomy development
+  network-analysis: Network analysis
+  calibration: Calibration
 climate_domains:
   mitigation: Mitigation
   adaptation: Adaptation
@@ -54,4 +58,3 @@ source_types:
   blog-commentary: Blog or commentary
   data-tool: Data or decision-support tool
   bluesky: Bluesky post or discussion
-

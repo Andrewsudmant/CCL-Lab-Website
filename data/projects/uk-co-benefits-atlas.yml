@@ -1,10 +1,13 @@
 record_id: uk-co-benefits-atlas
 title: UK Co-Benefits Atlas
 status: active
+relationship_to_lab: foundational-prior-work
+relationship_note: >-
+  Developed through the University of Edinburgh and collaborators before the lab
+  was established at SFU; it is foundational rather than an SFU lab output.
 summary: >-
-  An interactive place-based atlas estimating the benefits and costs of climate
-  action for more than 46,000 UK communities. The public tool reports eleven
-  benefit and cost categories and is intended to support local climate planning.
+  An interactive place-based atlas estimating benefits and costs of climate action
+  for more than 46,000 UK communities across eleven benefit and cost categories.
 research_questions:
   - How do the benefits and costs of climate action vary between UK communities?
   - How can place-based evidence make local climate choices more transparent?
@@ -18,16 +21,17 @@ methods: [place-based-modelling, spatial-analysis, data-visualization]
 climate_domains: [mitigation]
 sectors: [cross-sectoral]
 collaborators: [University of Edinburgh, University of Strathclyde]
-connected_publications: [visualising-benefits-costs-uk-climate-action]
+connected_publications: [designing-visualization-atlas-uk-cobenefits]
 outputs:
   - title: UK Co-Benefits Atlas
     url: https://ukcobenefitsatlas.net/
 data_tools:
   - title: Interactive UK Co-Benefits Atlas
     url: https://ukcobenefitsatlas.net/
+last_verified_date: 2026-08-14
 authoritative_sources:
   - label: Atlas team and methods page
     url: https://ukcobenefitsatlas.net/about
     retrieved_date: 2026-08-14
-placeholder: false
-owner_review_required: true
+    source_type: public-web
+verification_status: verified

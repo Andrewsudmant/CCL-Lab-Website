@@ -1,0 +1,40 @@
+record_id: climate-policy-social-policy
+title: Climate policy as social policy? A comprehensive assessment of the economic impact of climate action in the UK
+authors: [Andrew Sudmant, Dom Boyle, Ruaidhri Higgins-Lavery, Andy Gouldson, Andy Boyle, James Fulker, Jamie Brogan]
+publication_date: 2024-07-05
+date_precision: exact
+publication_type: article
+peer_review_status: peer-reviewed
+venue: Journal of Environmental Studies and Sciences
+volume: "15"
+issue: "3"
+pages: 476–490
+article_number: null
+doi: 10.1007/s13412-024-00955-9
+other_identifiers: []
+version: null
+original_submission_date: null
+current_version_date: null
+url: https://doi.org/10.1007/s13412-024-00955-9
+citation: "Sudmant, A., Boyle, D., Higgins-Lavery, R., Gouldson, A., Boyle, A., Fulker, J., & Brogan, J. (2024). Climate policy as social policy? A comprehensive assessment of the economic impact of climate action in the UK. Journal of Environmental Studies and Sciences."
+abstract_summary: >-
+  The article assesses the wider economic and social consequences of UK climate
+  action and considers how those consequences alter policy appraisal.
+relationship_to_lab: foundational-prior-work
+relationship_note: Published before the lab was established and foundational to its co-benefits and policy-appraisal programme.
+primary_theme: co-benefits-place-based-valuation
+secondary_themes: [climate-governance-delivery]
+geographies: [united-kingdom]
+governance_scales: [federal-national, regional, municipal]
+methods: [economic-appraisal, distributional-analysis]
+climate_domains: [mitigation]
+sectors: [cross-sectoral]
+connected_projects: []
+featured: true
+metadata_sources: [orcid, crossref, publisher]
+last_verified_date: 2026-08-14
+authoritative_sources:
+  - label: Crossref DOI record
+    url: https://api.crossref.org/works/10.1007/s13412-024-00955-9
+    retrieved_date: 2026-08-14
+verification_status: verified

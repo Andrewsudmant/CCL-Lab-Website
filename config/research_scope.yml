@@ -110,7 +110,7 @@ themes:
 
   - id: just-transitions-workforce
     name: Just transitions, occupations and workforce change
-    status: established
+    status: developing
     definition: >-
       How urban climate action changes work, skills, occupations and labour-market
       opportunities, and how transition benefits and burdens are governed.
@@ -145,7 +145,7 @@ themes:
 
   - id: evidence-infrastructure-tools
     name: Urban climate evidence infrastructure and decision-support tools
-    status: developing
+    status: established
     definition: >-
       The data systems, indicators, models, standards and decision-support tools
       that shape what urban climate evidence is produced, trusted and used.

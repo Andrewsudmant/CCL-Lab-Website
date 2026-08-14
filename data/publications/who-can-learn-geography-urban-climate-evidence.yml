@@ -1,0 +1,40 @@
+record_id: who-can-learn-geography-urban-climate-evidence
+title: Who can learn from whom? The geography of urban climate evidence
+authors: [Andrew Sudmant, Egide Kalisa, Simon Montfort, Wenjia Cai, Shaurya Patel, Felix Creutzig]
+publication_date: 2026-03-31
+date_precision: exact
+publication_type: preprint
+peer_review_status: preprint
+venue: Research Square
+volume: null
+issue: null
+pages: null
+article_number: null
+doi: 10.21203/rs.3.rs-9268986/v1
+other_identifiers: []
+version: v1
+original_submission_date: 2026-03-31
+current_version_date: 2026-03-31
+url: https://doi.org/10.21203/rs.3.rs-9268986/v1
+citation: "Sudmant, A., Kalisa, E., Montfort, S., Cai, W., Patel, S., & Creutzig, F. (2026). Who can learn from whom? The geography of urban climate evidence. Research Square preprint."
+abstract_summary: >-
+  The preprint examines the uneven geography of urban climate evidence and asks
+  which cities can readily learn from knowledge produced in other places.
+relationship_to_lab: foundational-prior-work
+relationship_note: Posted before the lab was established; it directly anchors the lab's current evidence-transfer programme.
+primary_theme: urban-climate-learning
+secondary_themes: [evidence-infrastructure-tools]
+geographies: [global, sub-saharan-africa, rwanda]
+governance_scales: [international, municipal]
+methods: [evidence-mapping, spatial-analysis, literature-review]
+climate_domains: [evidence-and-learning]
+sectors: [cross-sectoral]
+connected_projects: [geography-urban-climate-evidence]
+featured: true
+metadata_sources: [crossref, repository]
+last_verified_date: 2026-08-14
+authoritative_sources:
+  - label: Crossref preprint record
+    url: https://api.crossref.org/works/10.21203/rs.3.rs-9268986/v1
+    retrieved_date: 2026-08-14
+verification_status: verified

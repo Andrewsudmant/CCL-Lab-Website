@@ -1,0 +1,33 @@
+record_id: occupational-transition-requirements
+title: Occupational transition requirements and occupation switching
+status: in-development
+relationship_to_lab: current-lab-research
+relationship_note: Owner-approved current programme of the Cities and Climate Learning Lab.
+summary: >-
+  A public-evidence methodology for understanding occupation switching in the United
+  Kingdom's low-carbon transition. It distinguishes same-occupation sector changes
+  from occupation transitions and develops transparent approaches to occupational
+  relatedness, transition requirements, calibration and evidence governance.
+research_questions:
+  - Which requirements distinguish sector changes from transitions between occupations?
+  - How can occupational relatedness and transition requirements be calibrated from public evidence?
+start_date: null
+end_date: null
+primary_theme: just-transitions-workforce
+secondary_themes: [evidence-infrastructure-tools, climate-governance-delivery]
+geographies: [united-kingdom]
+governance_scales: [federal-national, regional]
+methods: [occupational-analysis, evidence-synthesis, taxonomy-development, network-analysis, calibration]
+climate_domains: [just-transition]
+sectors: [labour-workforce]
+collaborators: []
+connected_publications: []
+outputs: []
+data_tools: []
+last_verified_date: 2026-08-14
+authoritative_sources:
+  - label: Owner-approved Gate 3B–4A programme description
+    url: null
+    retrieved_date: 2026-08-14
+    source_type: owner-approved-programme
+verification_status: owner-approved

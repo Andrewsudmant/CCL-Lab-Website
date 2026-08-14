@@ -1,0 +1,40 @@
+record_id: economic-case-climate-action-cities
+title: Exploring the economic case for climate action in cities
+authors: [Andy Gouldson, Sarah Colenbrander, Andrew Sudmant, Faye McAnulla, Niall Kerr, Paola Sakai, Stephen Hall, Effie Papargyropoulou, Johan Kuylenstierna]
+publication_date: 2015-11
+date_precision: month
+publication_type: article
+peer_review_status: peer-reviewed
+venue: Global Environmental Change
+volume: "35"
+issue: null
+pages: 93–105
+article_number: null
+doi: 10.1016/j.gloenvcha.2015.07.009
+other_identifiers: []
+version: null
+original_submission_date: null
+current_version_date: null
+url: https://doi.org/10.1016/j.gloenvcha.2015.07.009
+citation: "Gouldson, A., Colenbrander, S., Sudmant, A., McAnulla, F., Kerr, N., Sakai, P., Hall, S., Papargyropoulou, E., & Kuylenstierna, J. (2015). Exploring the economic case for climate action in cities. Global Environmental Change, 35, 93–105."
+abstract_summary: >-
+  The article examines the economic rationale for city-level climate action and
+  assesses how investment costs and wider benefits shape the case for action.
+relationship_to_lab: foundational-prior-work
+relationship_note: Prior collaborative research included as an intellectual foundation for climate appraisal and delivery.
+primary_theme: co-benefits-place-based-valuation
+secondary_themes: [climate-governance-delivery]
+geographies: [global]
+governance_scales: [municipal]
+methods: [economic-appraisal, comparative-case-study]
+climate_domains: [mitigation]
+sectors: [cross-sectoral]
+connected_projects: []
+featured: true
+metadata_sources: [orcid, crossref, publisher]
+last_verified_date: 2026-08-14
+authoritative_sources:
+  - label: Crossref DOI record
+    url: https://api.crossref.org/works/10.1016/j.gloenvcha.2015.07.009
+    retrieved_date: 2026-08-14
+verification_status: verified

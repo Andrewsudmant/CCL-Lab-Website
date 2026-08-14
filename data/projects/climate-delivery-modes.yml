@@ -1,0 +1,33 @@
+record_id: climate-delivery-modes
+title: Climate delivery modes
+status: in-development
+relationship_to_lab: current-lab-research
+relationship_note: Owner-approved current programme of the Cities and Climate Learning Lab.
+summary: >-
+  A comparative programme examining how public authorities, infrastructure providers,
+  businesses, civil-society organisations, communities and financial actors combine
+  to deliver urban climate action, and how those arrangements vary across city types,
+  sectors and regions.
+research_questions:
+  - Which combinations of actors and institutions enable urban climate implementation?
+  - How do delivery arrangements vary across city types, sectors and regions?
+start_date: null
+end_date: null
+primary_theme: climate-governance-delivery
+secondary_themes: [urban-climate-learning, canadian-climate-policy]
+geographies: [canada, global]
+governance_scales: [international, federal-national, provincial-territorial, regional, municipal]
+methods: [comparative-case-study, institutional-analysis, policy-analysis]
+climate_domains: [mitigation, adaptation]
+sectors: [cross-sectoral, urban-infrastructure]
+collaborators: []
+connected_publications: []
+outputs: []
+data_tools: []
+last_verified_date: 2026-08-14
+authoritative_sources:
+  - label: Owner-approved Gate 3B–4A programme description
+    url: null
+    retrieved_date: 2026-08-14
+    source_type: owner-approved-programme
+verification_status: owner-approved

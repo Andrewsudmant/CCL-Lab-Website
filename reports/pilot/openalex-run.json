@@ -1,0 +1,81 @@
+{
+  "mode": "live-bounded",
+  "adapter": "openalex",
+  "items": [
+    {
+      "title": "Updated world map of the Köppen-Geiger climate classification",
+      "url": "https://doi.org/10.5194/hess-11-1633-2007",
+      "source_name": "Hydrology and earth system sciences",
+      "source_type": "academic-paper",
+      "publication_date": "2007-10-11",
+      "authors": [
+        "Murray Peel",
+        "Brian Finlayson",
+        "Thomas A. McMahon"
+      ],
+      "doi": "10.5194/hess-11-1633-2007",
+      "platform_identifier": "W2101108516",
+      "abstract": "Abstract. Although now over 100 years old, the classification of climate originally formulated by Wladimir Köppen and modified by his collaborators and successors, is still in widespread use. It is widely used in teaching school and undergraduate courses on climate. It is also still in regular use by researchers across a range of disciplines as a basis for climatic regionalisation of variables and for assessing the output of global climate models. Here we have produced a new global map of climate using the Köppen-Geiger system based on a large global data set of long-term monthly precipitation and temperature station time series. Climatic variables used in the Köppen-Geiger system were calculated at each station and interpolated between stations using a two-dimensional (latitude and longitude) thin-plate spline with tension onto a 0.1°×0.1° grid for each continent. We discuss some problems in dealing with sites that are not uniquely classified into one climate type by the Köppen-Geiger system and assess the outcomes on a continent by continent basis. Globally the most common climate type by land area is BWh (14.2%, Hot desert) followed by Aw (11.5%, Tropical savannah). The updated world Köppen-Geiger climate map is freely available electronically in the Supplementary Material Section.",
+      "evidence_types": [
+        "abstract"
+      ],
+      "adapter": "openalex",
+      "query_id": "urban-learning-openalex"
+    },
+    {
+      "title": "The global distribution and burden of dengue",
+      "url": "https://doi.org/10.1038/nature12060",
+      "source_name": "Nature",
+      "source_type": "academic-paper",
+      "publication_date": "2013-04-01",
+      "authors": [
+        "Samir Bhatt",
+        "Peter W. Gething",
+        "Oliver J. Brady",
+        "Jane P. Messina",
+        "Andrew Farlow",
+        "Catherine L. Moyes",
+        "John M. Drake",
+        "John S. Brownstein",
+        "Anne G. Hoen",
+        "Osman Sankoh",
+        "Monica F. Myers",
+        "Dylan B. George",
+        "Thomas Jaenisch",
+        "William Wint",
+        "Cameron P. Simmons",
+        "Thomas W. Scott",
+        "Jeremy Farrar",
+        "Simon I Hay"
+      ],
+      "doi": "10.1038/nature12060",
+      "platform_identifier": "W2131222241",
+      "abstract": null,
+      "evidence_types": [
+        "metadata-only"
+      ],
+      "adapter": "openalex",
+      "query_id": "urban-learning-openalex"
+    },
+    {
+      "title": "Climate change, adaptation, and phenotypic plasticity: the problem and the evidence",
+      "url": "https://doi.org/10.1111/eva.12137",
+      "source_name": "Evolutionary Applications",
+      "source_type": "academic-paper",
+      "publication_date": "2014-01-01",
+      "authors": [
+        "Juha Merilä",
+        "Andrew P. Hendry"
+      ],
+      "doi": "10.1111/eva.12137",
+      "platform_identifier": "W2007545512",
+      "abstract": "Many studies have recorded phenotypic changes in natural populations and attributed them to climate change. However, controversy and uncertainty has arisen around three levels of inference in such studies. First, it has proven difficult to conclusively distinguish whether phenotypic changes are genetically based or the result of phenotypic plasticity. Second, whether or not the change is adaptive is usually assumed rather than tested. Third, inferences that climate change is the specific causal agent have rarely involved the testing - and exclusion - of other potential drivers. We here review the various ways in which the above inferences have been attempted, and evaluate the strength of support that each approach can provide. This methodological assessment sets the stage for 11 accompanying review articles that attempt comprehensive syntheses of what is currently known - and not known - about responses to climate change in a variety of taxa and in theory. Summarizing and relying on the results of these reviews, we arrive at the conclusion that evidence for genetic adaptation to climate change has been found in some systems, but is still relatively scarce. Most importantly, it is clear that more studies are needed - and these must employ better inferential methods - before general conclusions can be drawn. Overall, we hope that the present paper and special issue provide inspiration for future research and guidelines on best practices for its execution.",
+      "evidence_types": [
+        "abstract"
+      ],
+      "adapter": "openalex",
+      "query_id": "urban-learning-openalex"
+    }
+  ],
+  "duplicates": []
+}

@@ -1,0 +1,50 @@
+name: Research Watch scheduled candidate run
+
+on:
+  schedule:
+    - cron: "17 14 * * 2,5"
+  workflow_dispatch:
+    inputs:
+      use_openai:
+        description: "Run the OpenAI web-search adapter when its secret is configured"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  bounded-discovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: python -m pip install -r requirements-dev.txt
+      - name: Validate control plane
+        run: make validate test
+      - name: Run bounded public adapters into a private workflow artifact
+        shell: bash
+        run: |
+          mkdir -p reports/scheduled
+          PYTHONPATH=. python -m research_watch.run --adapter openalex --limit 5 --output reports/scheduled/openalex.json || true
+          PYTHONPATH=. python -m research_watch.run --adapter crossref --limit 5 --output reports/scheduled/crossref.json || true
+          PYTHONPATH=. python -m research_watch.run --adapter bluesky --limit 5 --output reports/scheduled/bluesky.json || true
+      - name: Optional OpenAI web search
+        if: ${{ inputs.use_openai == true }}
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+        run: PYTHONPATH=. python -m research_watch.run --adapter openai_web_search --limit 5 --output reports/scheduled/openai-web.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: research-watch-candidates-${{ github.run_id }}
+          path: reports/scheduled
+          if-no-files-found: error
+          retention-days: 14
+
+# This Gate 3A workflow discovers candidates only. It cannot mutate public content.
+# Automatic record assembly and staged publication remain a documented Gate 3B decision.

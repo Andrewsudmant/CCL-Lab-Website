@@ -1,0 +1,1 @@
+Adapter unavailable: OPENAI_API_KEY is not configured; no OpenAI request was made

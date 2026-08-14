@@ -1,0 +1,57 @@
+{
+  "mode": "live-bounded",
+  "adapter": "crossref",
+  "items": [
+    {
+      "title": "Extracting DOI References and Importing Them into Thoth Metadata Records",
+      "url": "https://doi.org/10.21428/ae6a44a6.223e847b",
+      "source_name": "punctum books",
+      "source_type": "academic-paper",
+      "publication_date": "2025-02-04",
+      "authors": [
+        "Vincent W.J. van Gerven Oei"
+      ],
+      "doi": "10.21428/ae6a44a6.223e847b",
+      "platform_identifier": null,
+      "abstract": null,
+      "evidence_types": [
+        "metadata-only"
+      ],
+      "adapter": "crossref",
+      "query_id": "doi-enrichment"
+    },
+    {
+      "title": "Information and documentation. Records management process. Metadata for records",
+      "url": "https://doi.org/10.3403/ddisots23081",
+      "source_name": "BSI British Standards",
+      "source_type": "academic-paper",
+      "publication_date": "",
+      "authors": [],
+      "doi": "10.3403/ddisots23081",
+      "platform_identifier": null,
+      "abstract": null,
+      "evidence_types": [
+        "metadata-only"
+      ],
+      "adapter": "crossref",
+      "query_id": "doi-enrichment"
+    },
+    {
+      "title": "Information and documentation. Records management processes. Metadata for records",
+      "url": "https://doi.org/10.3403/bsiso23081",
+      "source_name": "BSI British Standards",
+      "source_type": "academic-paper",
+      "publication_date": "",
+      "authors": [],
+      "doi": "10.3403/bsiso23081",
+      "platform_identifier": null,
+      "abstract": null,
+      "evidence_types": [
+        "metadata-only"
+      ],
+      "adapter": "crossref",
+      "query_id": "doi-enrichment"
+    }
+  ],
+  "duplicates": []
+}

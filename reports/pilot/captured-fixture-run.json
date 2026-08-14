@@ -1,0 +1,116 @@
+{
+  "mode": "captured-fixture",
+  "items": [
+    {
+      "record_id": "global-stocktake-captured-fixture",
+      "title": "A systematic global stocktake of urban climate research",
+      "url": "https://www.nature.com/articles/s44284-025-00260-8",
+      "canonical_url": "https://doi.org/10.1038/s44284-025-00260-8",
+      "stable_identifier": {
+        "type": "doi",
+        "value": "10.1038/s44284-025-00260-8",
+        "url": "https://doi.org/10.1038/s44284-025-00260-8"
+      },
+      "platform_identifier": "W4408049167",
+      "authors_or_organisation": [
+        "Andrew Sudmant",
+        "Felix Creutzig",
+        "and collaborators"
+      ],
+      "source_type": "academic-paper",
+      "source_name": "Nature Cities",
+      "source_domain": "nature.com",
+      "publication_date": "2025-01-01",
+      "retrieval_timestamp": "2026-08-14T12:00:00-07:00",
+      "discovery": {
+        "run_id": "captured-pilot-2026-08-14",
+        "adapter": "captured-fixture",
+        "query_id": "urban-learning-openalex",
+        "query_version": "research-watch-v1.0.0"
+      },
+      "theme_assignments": {
+        "primary": {
+          "theme_id": "urban-climate-learning",
+          "score": 0.94,
+          "rationale": "The paper maps how urban climate knowledge is produced and where evidence gaps remain."
+        },
+        "secondary": [
+          {
+            "theme_id": "evidence-infrastructure-tools",
+            "score": 0.88,
+            "rationale": "It builds an AI-assisted evidence map from a large bibliographic corpus."
+          }
+        ]
+      },
+      "geographies": [
+        "global"
+      ],
+      "short_summary": "This article maps 53,295 urban climate research papers using machine-learning-assisted classification and identifies geographic and topical patterns in the evidence base.",
+      "reason_for_relevance": "It directly examines the infrastructure and geography of evidence available to cities, closely matching the lab's work on urban climate learning and evidence systems.",
+      "novelty_significance": "The scale of the mapped literature provides a broad baseline for tracking gaps and change.",
+      "evidence_basis": {
+        "types": [
+          "abstract",
+          "webpage-body"
+        ],
+        "description": "Publisher metadata, abstract and article landing-page text.",
+        "sufficient_for_summary": true,
+        "limitations": "The automated annotation did not independently reproduce the paper's analysis."
+      },
+      "ai_provenance": {
+        "used": true,
+        "model": "captured-fixture-model-not-called",
+        "prompt_version": "research-watch-classifier-v1",
+        "run_id": "captured-pilot-2026-08-14",
+        "structured_output_version": "research-watch-record-v1",
+        "deterministic_transformations": [
+          "DOI normalization",
+          "canonical URL normalization"
+        ]
+      },
+      "confidence": {
+        "score": 0.91,
+        "label": "high",
+        "basis": "Title, abstract and publisher page strongly match two configured themes."
+      },
+      "review": {
+        "status": "not_reviewed",
+        "reviewer": null,
+        "reviewed_date": null,
+        "notes": null
+      },
+      "publication": {
+        "decision": "published",
+        "reasons": [
+          "passed automatic publication controls"
+        ],
+        "checks_passed": [
+          "schema-valid",
+          "url-safe",
+          "deduplicated",
+          "evidence-sufficient",
+          "disclosure-present"
+        ],
+        "disclosure_version": "research-watch-disclosure-v1"
+      },
+      "reviewer_edits": [],
+      "risk_flags": [
+        "conflict-of-interest"
+      ],
+      "correction_availability": {
+        "status": "available",
+        "date": null,
+        "note": "Contact the lab to request a correction or removal review."
+      },
+      "event_cluster_id": null,
+      "linked_sources": [
+        {
+          "relationship": "original-source",
+          "url": "https://www.nature.com/articles/s44284-025-00260-8"
+        }
+      ],
+      "captured_fixture": true
+    }
+  ],
+  "network_calls": 0
+}

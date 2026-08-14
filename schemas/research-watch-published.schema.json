@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Published Research Watch record",
+  "allOf": [
+    {"$ref": "research-watch.schema.json"},
+    {"type": "object", "properties": {"publication": {"type": "object", "properties": {"decision": {"const": "published"}}}}}
+  ]
+}

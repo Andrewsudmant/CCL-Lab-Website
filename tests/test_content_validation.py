@@ -18,9 +18,15 @@ def test_all_schema_documents_are_valid() -> None:
         Draft202012Validator.check_schema(schema)
 
 
-def test_candidate_and_approved_directories_are_separate() -> None:
-    candidates = {path.name for path in (ROOT / "data/research-watch/candidates").glob("*.yml")}
-    approved = {path.name for path in (ROOT / "data/research-watch/approved").glob("*.yml")}
-    assert candidates
-    assert approved
-    assert candidates.isdisjoint(approved)
+def test_published_withheld_and_quarantine_states_are_separate() -> None:
+    states = [{path.name for path in (ROOT / "data/research-watch" / state).glob("*.yml")} for state in ("published", "withheld", "quarantine")]
+    assert states[0]
+    assert states[1]
+    assert not (states[0] & states[1] or states[0] & states[2] or states[1] & states[2])
+
+
+def test_retired_theme_id_is_absent() -> None:
+    for base in (ROOT / "config", ROOT / "data", ROOT / "schemas"):
+        for path in base.rglob("*"):
+            if path.is_file():
+                assert "canadian-comparative-policy" not in path.read_text(encoding="utf-8", errors="ignore")

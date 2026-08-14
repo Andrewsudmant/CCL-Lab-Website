@@ -1,0 +1,26 @@
+record_id: data-scaling-climate-impact-assessment
+title: Data scaling for place-based climate impact assessment
+authors: [Andrew Sudmant, and collaborators]
+publication_date: 2024-01-01
+publication_type: article
+venue: Environmental Management
+doi: 10.1007/s00267-024-01991-5
+other_identifiers: []
+url: https://doi.org/10.1007/s00267-024-01991-5
+citation: "Sudmant, A. and collaborators (2024). Data scaling for place-based climate impact assessment. Environmental Management."
+abstract_summary: >-
+  The article develops methods for translating larger-scale evidence into local
+  climate impact assessment while making assumptions and uncertainty visible.
+primary_theme: evidence-infrastructure-tools
+secondary_themes: [co-benefits-place-based-valuation]
+geographies: [united-kingdom]
+governance_scales: [federal-national, municipal, neighbourhood]
+methods: [place-based-modelling, spatial-analysis, economic-appraisal]
+climate_domains: [mitigation]
+sectors: [cross-sectoral]
+connected_projects: [data-methodologies-climate-impact]
+featured: true
+metadata_source: crossref
+last_metadata_update: 2026-08-14
+placeholder: false
+owner_review_required: true

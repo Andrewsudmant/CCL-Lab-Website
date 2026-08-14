@@ -1,0 +1,26 @@
+record_id: systematic-global-stocktake-urban-climate-research
+title: A systematic global stocktake of urban climate research
+authors: [Andrew Sudmant, Felix Creutzig, and collaborators]
+publication_date: 2025-01-01
+publication_type: article
+venue: Nature Cities
+doi: 10.1038/s44284-025-00260-8
+other_identifiers: []
+url: https://www.nature.com/articles/s44284-025-00260-8
+citation: "Sudmant, A. and collaborators (2025). A systematic global stocktake of urban climate research. Nature Cities."
+abstract_summary: >-
+  A machine-learning-assisted evidence map of 53,295 urban climate papers that
+  characterises the global literature and identifies geographic and topical gaps.
+primary_theme: urban-climate-learning
+secondary_themes: [evidence-infrastructure-tools]
+geographies: [global]
+governance_scales: [international, municipal]
+methods: [evidence-mapping, literature-review, machine-learning]
+climate_domains: [evidence-and-learning]
+sectors: [cross-sectoral]
+connected_projects: [urban-climate-evidence-map]
+featured: true
+metadata_source: publisher
+last_metadata_update: 2026-08-14
+placeholder: false
+owner_review_required: true

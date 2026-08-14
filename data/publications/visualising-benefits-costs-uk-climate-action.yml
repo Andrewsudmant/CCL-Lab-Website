@@ -1,0 +1,26 @@
+record_id: visualising-benefits-costs-uk-climate-action
+title: Visualising the benefits and costs of climate action across the United Kingdom
+authors: [Andrew Sudmant, and collaborators]
+publication_date: 2026-04-01
+publication_type: preprint
+venue: arXiv
+doi: null
+other_identifiers: [arXiv:2604.20781]
+url: https://arxiv.org/abs/2604.20781
+citation: "Sudmant, A. and collaborators (2026). Visualising the benefits and costs of climate action across the United Kingdom. arXiv:2604.20781."
+abstract_summary: >-
+  A technical description of the modelling and visualisation behind the UK
+  Co-Benefits Atlas, with place-based estimates across thousands of communities.
+primary_theme: co-benefits-place-based-valuation
+secondary_themes: [evidence-infrastructure-tools]
+geographies: [united-kingdom]
+governance_scales: [municipal, neighbourhood]
+methods: [place-based-modelling, spatial-analysis, data-visualization]
+climate_domains: [mitigation]
+sectors: [cross-sectoral]
+connected_projects: [uk-co-benefits-atlas]
+featured: true
+metadata_source: publisher
+last_metadata_update: 2026-08-14
+placeholder: false
+owner_review_required: true

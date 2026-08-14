@@ -1,0 +1,48 @@
+query_pack_id: research-watch-v1
+version: "1.0.0"
+maximum_lookback_days: 30
+result_limit_per_query: 12
+global_exclusions:
+  - generic corporate sustainability promotion without methods or evidence
+  - climate content without an urban, governance, valuation, workforce, evidence-system or Canadian-policy contribution
+  - duplicate press-release syndication
+source_queries:
+  openalex:
+    - id: urban-learning-openalex
+      themes: [urban-climate-learning, evidence-infrastructure-tools]
+      query: '(urban OR municipal OR city) AND (climate) AND (evidence transfer OR policy learning OR evidence map)'
+    - id: governance-delivery-openalex
+      themes: [climate-governance-delivery]
+      query: '(urban OR municipal OR city) AND climate AND (implementation OR delivery OR governance)'
+    - id: cobenefits-openalex
+      themes: [co-benefits-place-based-valuation]
+      query: 'climate AND (co-benefits OR co-costs OR place-based valuation)'
+    - id: workforce-openalex
+      themes: [just-transitions-workforce]
+      query: 'climate AND (just transition OR occupations OR workforce change)'
+    - id: canadian-policy-openalex
+      themes: [canadian-climate-policy]
+      query: 'Canada AND climate policy AND (federal OR provincial OR territorial OR Indigenous OR municipal OR implementation)'
+  crossref:
+    - id: doi-enrichment
+      themes: []
+      query: metadata enrichment by DOI for records found by other adapters
+  openai_web_search:
+    - id: reports-news-tools
+      themes: [urban-climate-learning, climate-governance-delivery, co-benefits-place-based-valuation, just-transitions-workforce, evidence-infrastructure-tools, canadian-climate-policy]
+      query: recent credible reports, news, commentary and decision tools matching the versioned research scope
+  bluesky:
+    - id: bounded-practitioner-search
+      themes: [urban-climate-learning, climate-governance-delivery, evidence-infrastructure-tools, canadian-climate-policy]
+      query: '(urban climate OR municipal climate OR Canadian climate policy)'
+controls:
+  maximum_new_items_per_run: 24
+  maximum_items_per_source_domain: 4
+  maximum_items_per_event_cluster: 1
+  maximum_items_per_theme: 8
+  minimum_source_types_when_available: 3
+  homepage_display_count: 6
+  homepage_maximum_per_domain: 2
+  archive_age_days: 365
+  minimum_primary_theme_score: 0.65
+  minimum_secondary_theme_score: 0.55

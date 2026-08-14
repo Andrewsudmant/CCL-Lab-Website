@@ -1,0 +1,62 @@
+record_id: title-only-captured-fixture
+title: Municipal climate evidence dashboard announcement
+url: https://example.org/captured-fixture/dashboard-announcement
+canonical_url: https://example.org/captured-fixture/dashboard-announcement
+stable_identifier: null
+platform_identifier: null
+authors_or_organisation: [Captured fixture organisation]
+source_type: data-tool
+source_name: Captured fixture
+source_domain: example.org
+publication_date: 2026-08-10
+retrieval_timestamp: 2026-08-14T12:00:00-07:00
+discovery:
+  run_id: captured-pilot-2026-08-14
+  adapter: captured-fixture
+  query_id: reports-news-tools
+  query_version: research-watch-v1.0.0
+theme_assignments:
+  primary:
+    theme_id: evidence-infrastructure-tools
+    score: 0.69
+    rationale: The title appears to describe a municipal decision-support tool.
+  secondary: []
+geographies: [canada]
+short_summary: No public evidence beyond the title was available, so no substantive summary was produced.
+reason_for_relevance: The title appears within scope, but there is not enough evidence to assess the tool.
+novelty_significance: Significance cannot be assessed from title metadata alone.
+evidence_basis:
+  types: [metadata-only]
+  description: Captured title and URL metadata only.
+  sufficient_for_summary: false
+  limitations: No abstract, documentation or usable page body was available.
+ai_provenance:
+  used: true
+  model: captured-fixture-model-not-called
+  prompt_version: research-watch-classifier-v1
+  run_id: captured-pilot-2026-08-14
+  structured_output_version: research-watch-record-v1
+  deterministic_transformations: [canonical URL normalization]
+confidence:
+  score: 0.35
+  label: low
+  basis: Classification relies on a title and cannot support publication.
+review:
+  status: not_reviewed
+  reviewer: null
+  reviewed_date: null
+  notes: null
+publication:
+  decision: withheld
+  reasons: [title-only evidence, evidence insufficient for summary]
+  checks_passed: [schema-valid, url-safe, disclosure-present]
+  disclosure_version: research-watch-disclosure-v1
+reviewer_edits: []
+risk_flags: [title-only, limited-evidence]
+correction_availability:
+  status: available
+  date: null
+  note: This fixture is retained only to test automatic withholding.
+event_cluster_id: null
+linked_sources: []
+captured_fixture: true

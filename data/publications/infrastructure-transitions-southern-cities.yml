@@ -1,0 +1,26 @@
+record_id: infrastructure-transitions-southern-cities
+title: Infrastructure transitions in Southern cities
+authors: [Lucy Oates, Andrew Sudmant]
+publication_date: 2024-01-01
+publication_type: article
+venue: Urban Planning
+doi: 10.17645/up.8302
+other_identifiers: []
+url: https://doi.org/10.17645/up.8302
+citation: "Oates, L. and Sudmant, A. (2024). Infrastructure transitions in Southern cities. Urban Planning."
+abstract_summary: >-
+  The article examines the governance and delivery of infrastructure transitions
+  in cities of the Global South, focusing on institutions and implementation.
+primary_theme: climate-governance-delivery
+secondary_themes: [co-benefits-place-based-valuation]
+geographies: [global]
+governance_scales: [municipal]
+methods: [institutional-analysis, comparative-case-study]
+climate_domains: [mitigation, resilience]
+sectors: [urban-infrastructure]
+connected_projects: []
+featured: false
+metadata_source: crossref
+last_metadata_update: 2026-08-14
+placeholder: false
+owner_review_required: true

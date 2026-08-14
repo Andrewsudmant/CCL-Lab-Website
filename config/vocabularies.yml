@@ -1,0 +1,57 @@
+vocabulary_version: "1.0.0"
+geographies:
+  global: Global
+  canada: Canada
+  british-columbia: British Columbia
+  united-kingdom: United Kingdom
+  scotland: Scotland
+  europe: Europe
+  sub-saharan-africa: Sub-Saharan Africa
+  rwanda: Rwanda
+  india: India
+governance_scales:
+  international: International
+  federal-national: Federal or national
+  provincial-territorial: Provincial or territorial
+  indigenous: Indigenous government or governance
+  regional: Regional
+  municipal: Municipal or local
+  neighbourhood: Neighbourhood or community
+methods:
+  evidence-mapping: Evidence mapping
+  literature-review: Literature review
+  machine-learning: Machine learning
+  spatial-analysis: Spatial analysis
+  place-based-modelling: Place-based modelling
+  economic-appraisal: Economic appraisal
+  distributional-analysis: Distributional analysis
+  comparative-case-study: Comparative case study
+  policy-analysis: Policy analysis
+  institutional-analysis: Institutional analysis
+  co-design: Co-design
+  data-visualization: Data visualization
+  occupational-analysis: Occupational analysis
+climate_domains:
+  mitigation: Mitigation
+  adaptation: Adaptation
+  climate-impacts: Climate impacts
+  resilience: Resilience
+  just-transition: Just transition
+  evidence-and-learning: Evidence and learning
+sectors:
+  cross-sectoral: Cross-sectoral
+  buildings: Buildings and housing
+  transport: Transport and mobility
+  energy: Energy
+  urban-infrastructure: Urban infrastructure
+  land-use: Land use and planning
+  labour-workforce: Labour and workforce
+  health: Health
+source_types:
+  academic-paper: Academic paper or preprint
+  policy-report: Policy or institutional report
+  news-analysis: News and institutional analysis
+  blog-commentary: Blog or commentary
+  data-tool: Data or decision-support tool
+  bluesky: Bluesky post or discussion
+

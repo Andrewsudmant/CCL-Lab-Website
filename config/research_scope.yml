@@ -1,9 +1,10 @@
-scope_version: "0.1.0"
+scope_version: "0.2.0"
 owner_review_required: true
-notice: "All representative examples are placeholders requiring owner review before Gate 2."
+notice: "Theme definitions are owner-directed; representative examples remain placeholders unless an authoritative source is linked."
 themes:
   - id: urban-climate-learning
     name: Urban climate learning and evidence transfer
+    status: established
     definition: >-
       How municipal organisations and their partners acquire, interpret, adapt,
       share and institutionalise evidence about climate action across places and
@@ -39,6 +40,7 @@ themes:
 
   - id: climate-governance-delivery
     name: Climate governance and delivery modes
+    status: established
     definition: >-
       How authority, capacity, finance, partnerships and implementation
       arrangements shape the delivery of urban mitigation and adaptation.
@@ -73,6 +75,7 @@ themes:
 
   - id: co-benefits-place-based-valuation
     name: Co-benefits, co-costs and place-based valuation
+    status: established
     definition: >-
       How cities identify, value and distribute the multiple benefits, costs and
       trade-offs of climate action in specific social and spatial contexts.
@@ -107,6 +110,7 @@ themes:
 
   - id: just-transitions-workforce
     name: Just transitions, occupations and workforce change
+    status: established
     definition: >-
       How urban climate action changes work, skills, occupations and labour-market
       opportunities, and how transition benefits and burdens are governed.
@@ -141,6 +145,7 @@ themes:
 
   - id: evidence-infrastructure-tools
     name: Urban climate evidence infrastructure and decision-support tools
+    status: developing
     definition: >-
       The data systems, indicators, models, standards and decision-support tools
       that shape what urban climate evidence is produced, trusted and used.
@@ -173,36 +178,50 @@ themes:
       - title: "PLACEHOLDER — Governance of shared urban climate indicators"
         placeholder: true
 
-  - id: canadian-comparative-policy
-    name: Canadian, British Columbian and comparative urban climate policy
+  - id: canadian-climate-policy
+    name: Canadian climate policy
+    status: developing
     definition: >-
-      The design, implementation and outcomes of urban climate policy in Canada
-      and British Columbia, interpreted through comparison with other places.
+      Research on the design, politics, governance, implementation and consequences
+      of Canadian climate policy across federal, provincial, territorial, Indigenous,
+      regional and municipal institutions, with particular attention to British
+      Columbia and to implications for cities and communities.
     included_questions:
-      - How do provincial and federal arrangements shape municipal climate action?
-      - Which policy instruments are being implemented by Canadian cities and with what results?
-      - What can careful comparison reveal about transferability and context?
+      - How do federal, provincial and territorial policy choices shape climate action and outcomes?
+      - How do Canadian intergovernmental arrangements affect municipal and community implementation?
+      - How do Indigenous governments and governance systems shape climate policy where sources support inclusion?
+      - What consequences do national and provincial policies have for cities, communities and households?
+      - What can careful comparison reveal about Canadian policy design or implementation?
     exclusions:
-      - Non-urban policy with no municipal consequence.
-      - City rankings that lack transparent methods or substantive policy analysis.
+      - Research located in Canada where Canadian policy, institutions or outcomes are not substantively analysed.
+      - Generic city rankings or inventories without transparent policy analysis.
+      - Comparative work in which Canada is incidental rather than analytically important.
     initial_search_concepts:
-      - Canadian municipal climate policy
-      - British Columbia local government climate
-      - urban climate policy comparison
-      - municipal adaptation Canada
-      - local government decarbonisation BC
+      - Canadian climate policy
+      - federal climate policy Canada
+      - provincial and territorial climate policy
+      - British Columbia climate policy
+      - municipal climate policy Canada
+      - intergovernmental climate governance Canada
+      - implementation of Canadian climate policy
+      - climate policy evaluation Canada
+      - Indigenous climate governance Canada
+      - consequences of federal and provincial climate policy for cities and communities
     geographical_priorities:
-      - British Columbia
       - Canada
-      - Carefully selected international comparators
+      - British Columbia
+      - Other provinces and territories
+      - Indigenous governments and communities where terminology and sources support inclusion
+      - International comparators where analytically relevant
     methodological_interests:
-      - Comparative policy analysis
       - Legal and institutional analysis
-      - Program evaluation
+      - Policy design and implementation research
+      - Programme evaluation
       - Longitudinal policy tracking
-      - Subnational comparison
+      - Federalism and intergovernmental analysis
+      - Comparative policy analysis
     representative_placeholder_examples:
-      - title: "PLACEHOLDER — Comparison of Canadian municipal building policies"
+      - title: "PLACEHOLDER — Implementation of Canadian building decarbonisation policy across governments"
         placeholder: true
-      - title: "PLACEHOLDER — British Columbia local adaptation policy inventory"
+      - title: "PLACEHOLDER — Consequences of British Columbia climate policy for municipalities and communities"
         placeholder: true

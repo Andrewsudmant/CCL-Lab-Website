@@ -1,0 +1,26 @@
+record_id: geographies-urban-climate-learning
+title: The geographies of urban climate learning
+authors: [Andrew Sudmant, Egide Kalisa, Simon Montfort, Wenjia Cai, Shaurya Patel, Felix Creutzig]
+publication_date: 2026-03-31
+publication_type: preprint
+venue: Research Square
+doi: 10.21203/rs.3.rs-9268986/v1
+other_identifiers: []
+url: https://doi.org/10.21203/rs.3.rs-9268986/v1
+citation: "Sudmant, A. et al. (2026). The geographies of urban climate learning. Research Square preprint."
+abstract_summary: >-
+  This preprint examines the uneven geography of urban climate knowledge production
+  and the implications for how cities encounter and learn from climate evidence.
+primary_theme: urban-climate-learning
+secondary_themes: [evidence-infrastructure-tools]
+geographies: [global, sub-saharan-africa, rwanda]
+governance_scales: [international, municipal]
+methods: [evidence-mapping, spatial-analysis, literature-review]
+climate_domains: [evidence-and-learning]
+sectors: [cross-sectoral]
+connected_projects: [urban-climate-evidence-map]
+featured: true
+metadata_source: publisher
+last_metadata_update: 2026-08-14
+placeholder: false
+owner_review_required: true

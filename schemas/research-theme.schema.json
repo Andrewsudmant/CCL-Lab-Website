@@ -4,10 +4,11 @@
   "title": "Research theme",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "name", "definition", "included_questions", "exclusions", "initial_search_concepts", "geographical_priorities", "methodological_interests", "representative_placeholder_examples"],
+  "required": ["id", "name", "status", "definition", "included_questions", "exclusions", "initial_search_concepts", "geographical_priorities", "methodological_interests", "representative_placeholder_examples"],
   "properties": {
     "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
     "name": {"type": "string", "minLength": 8},
+    "status": {"enum": ["established", "developing"]},
     "definition": {"type": "string", "minLength": 40},
     "included_questions": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 12}},
     "exclusions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 12}},

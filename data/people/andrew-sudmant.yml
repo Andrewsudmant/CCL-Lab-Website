@@ -1,0 +1,26 @@
+id: andrew-sudmant
+name: Andrew Sudmant
+role: Assistant Professor
+affiliation: School of Resource and Environmental Management, Simon Fraser University
+bio: >-
+  Andrew Sudmant researches how urban climate action is governed, delivered and
+  valued, including the co-benefits of low-carbon development and the evidence
+  systems cities use. He is an Assistant Professor in Simon Fraser University's
+  School of Resource and Environmental Management and a Lead Author for Chapter 5
+  of the IPCC Special Report on Climate Change and Cities.
+email: asudmant@sfu.ca
+links:
+  - label: SFU profile
+    url: https://www.sfu.ca/rem/about/people/sudmant.html
+  - label: ORCID
+    url: https://orcid.org/0000-0001-8650-8419
+  - label: University of Edinburgh research profile
+    url: https://www.research.ed.ac.uk/en/persons/andrew-sudmant/
+themes:
+  - urban-climate-learning
+  - climate-governance-delivery
+  - co-benefits-place-based-valuation
+  - evidence-infrastructure-tools
+  - canadian-climate-policy
+placeholder: false
+owner_review_required: true

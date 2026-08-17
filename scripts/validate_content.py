@@ -22,7 +22,6 @@ CANONICAL_THEMES = {
     "evidence-infrastructure-tools", "canadian-climate-policy",
 }
 RETIRED_THEME = "canadian-comparative-policy"
-WATCH_STATES = ("published", "withheld", "quarantine")
 CRITICAL_FLAGS = {"title-only", "prompt-injection", "suspicious-url", "unsupported-claim"}
 
 
@@ -58,11 +57,11 @@ def validate_all() -> list[str]:
 
     vocab = load_yaml(ROOT / "config/vocabularies.yml")
     errors.extend(schema_errors(vocab, load_schema("vocabularies.schema.json"), "config/vocabularies.yml"))
-    query_pack = load_yaml(ROOT / "config/query_packs/research-watch-v1.yml")
-    errors.extend(schema_errors(query_pack, load_schema("query-pack.schema.json"), "config/query_packs/research-watch-v1.yml"))
-    for adapter_queries in query_pack.get("source_queries", {}).values():
-        for query in adapter_queries:
-            errors.extend(theme_reference_errors(query.get("themes", []), "query pack", CANONICAL_THEMES))
+    query_pack = load_yaml(ROOT / "config/query_packs/current-conversations-v1.yml")
+    errors.extend(schema_errors(query_pack, load_schema("current-conversations-query-pack.schema.json"), "config/query_packs/current-conversations-v1.yml"))
+    for query_group in query_pack.get("queries", {}).values():
+        for query in query_group:
+            errors.extend(theme_reference_errors([query.get("theme")], "query pack", CANONICAL_THEMES))
 
     records: dict[str, list[dict[str, Any]]] = {}
     for kind, schema_name in (("people", "person.schema.json"), ("projects", "project.schema.json"), ("publications", "publication.schema.json")):
@@ -81,18 +80,56 @@ def validate_all() -> list[str]:
 
     errors.extend(unique_and_crosslink_errors(records))
 
-    watch_schema = load_schema("research-watch.schema.json")
-    seen_watch_ids: set[str] = set()
-    for state in WATCH_STATES:
-        for path in sorted((ROOT / "data/research-watch" / state).glob("*.yml")):
-            record = load_yaml(path)
-            label = str(path.relative_to(ROOT))
-            errors.extend(schema_errors(record, watch_schema, label))
-            errors.extend(watch_policy_errors(record, label, state, vocab))
-            record_id = record.get("record_id")
-            if record_id in seen_watch_ids:
-                errors.append(f"{label}: duplicate Research Watch record_id {record_id}")
-            seen_watch_ids.add(record_id)
+    complete_path = ROOT / "reports/content/publication-complete-inventory.json"
+    if complete_path.exists():
+        complete = json.loads(complete_path.read_text(encoding="utf-8")).get("records", [])
+        publication_schema = load_schema("publication.schema.json")
+        complete_dois: list[str] = []
+        for index, record in enumerate(complete):
+            label = f"reports/content/publication-complete-inventory.json[{index}]"
+            errors.extend(schema_errors(record, publication_schema, label))
+            if record.get("doi"):
+                complete_dois.append(record["doi"].lower())
+            if record.get("mdpi_excluded") and (record.get("featured") or record.get("current_conversations_eligible")):
+                errors.append(f"{label}: MDPI records cannot be featured or Current Conversations eligible")
+        if len(complete_dois) != len(set(complete_dois)):
+            errors.append("complete publication inventory: duplicate DOI")
+        if sum(bool(record.get("featured")) for record in complete) > 12:
+            errors.append("complete publication inventory: selected set exceeds 12")
+
+    source_schema = load_schema("current-conversation-source.schema.json")
+    cluster_schema = load_schema("current-conversation-cluster.schema.json")
+    sources: dict[str, dict[str, Any]] = {}
+    for path in sorted((ROOT / "data/current-conversations/generated/sources").glob("*.json")):
+        record = json.loads(path.read_text(encoding="utf-8"))
+        label = str(path.relative_to(ROOT))
+        errors.extend(schema_errors(record, source_schema, label))
+        source_id = record.get("source_id")
+        if source_id in sources:
+            errors.append(f"{label}: duplicate source_id {source_id}")
+        sources[source_id] = record
+        if record.get("mdpi_excluded") and record.get("source_environment") == "academic-research":
+            errors.append(f"{label}: MDPI academic source cannot enter Current Conversations")
+
+    cluster_ids: set[str] = set()
+    for path in sorted((ROOT / "data/current-conversations/generated/clusters").glob("*.json")):
+        record = json.loads(path.read_text(encoding="utf-8"))
+        label = str(path.relative_to(ROOT))
+        errors.extend(schema_errors(record, cluster_schema, label))
+        cluster_id = record.get("cluster_id")
+        if cluster_id in cluster_ids:
+            errors.append(f"{label}: duplicate cluster_id {cluster_id}")
+        cluster_ids.add(cluster_id)
+        principal = record.get("principal_source_id")
+        linked = record.get("linked_source_ids", [])
+        if principal not in sources:
+            errors.append(f"{label}: principal source does not exist: {principal}")
+        missing = set(linked) - set(sources)
+        if missing:
+            errors.append(f"{label}: missing linked sources: {', '.join(sorted(missing))}")
+        if principal in linked or len(linked) != len(set(linked)):
+            errors.append(f"{label}: principal/linked source IDs must be unique")
+        errors.extend(theme_reference_errors([record.get("primary_theme"), *record.get("secondary_themes", [])], label, CANONICAL_THEMES))
 
     # Retired IDs must not survive in controlled content or site source.
     for base in (ROOT / "config", ROOT / "data", ROOT / "schemas"):
@@ -209,7 +246,7 @@ def main() -> int:
         for error in errors:
             print(f"- {error}")
         return 1
-    count = sum(1 for _ in (ROOT / "data").rglob("*.yml"))
+    count = sum(1 for _ in (ROOT / "data").rglob("*.yml")) + sum(1 for _ in (ROOT / "data/current-conversations/generated").rglob("*.json"))
     print(f"Validated {count} records and {len(list((ROOT / 'schemas').glob('*.json')))} schemas.")
     return 0
 

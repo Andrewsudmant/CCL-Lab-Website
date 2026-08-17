@@ -16,15 +16,6 @@ description: "The article argues for more coherent replication and generalizatio
 
 [Open the original source](https://doi.org/10.1080/12265934.2024.2382706)
 
-## Research relationships
-
-**Primary theme:** [Urban climate learning and evidence transfer](/research/themes/urban-climate-learning.html)  
-**Related themes:** [Urban climate evidence infrastructure and decision-support tools](/research/themes/evidence-infrastructure-tools.html)
-
-## Connected projects
-
-- [Geography of urban climate evidence](/projects/geography-urban-climate-evidence.html)
-
 ## Metadata provenance
 
-Metadata sources: orcid, crossref, publisher · last verified 2026-08-14 · status: verified. Dates are displayed only to the precision supplied by the verified record.
+Metadata sources: orcid, crossref, publisher · last verified 2026-08-14 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.

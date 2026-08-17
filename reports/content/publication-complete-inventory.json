@@ -1,0 +1,2450 @@
+{
+  "verified_at": "2026-08-17",
+  "orcid": "0000-0001-8650-8419",
+  "records": [
+    {
+      "record_id": "designing-visualization-atlas-uk-cobenefits",
+      "title": "Designing a Visualization Atlas: Lessons & Reflections from The UK Co-Benefits Atlas for Climate Mitigation",
+      "authors": [
+        "Jinrui Wang",
+        "Alexis Pister",
+        "Sian Phillips",
+        "Sarah Bissett",
+        "Ruaidhri Higgins-Lavery",
+        "Clare Wharmby",
+        "Andrew Sudmant",
+        "Uta Hinrichs",
+        "Benjamin Bach"
+      ],
+      "publication_date": "2026-04-22",
+      "date_precision": "exact",
+      "publication_type": "preprint",
+      "peer_review_status": "preprint",
+      "venue": "arXiv",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": "10.48550/arXiv.2604.20781",
+      "other_identifiers": [
+        "arXiv:2604.20781"
+      ],
+      "version": "v2",
+      "original_submission_date": "2026-04-22",
+      "current_version_date": "2026-07-28",
+      "url": "https://arxiv.org/abs/2604.20781v2",
+      "citation": "Wang, J., Pister, A., Phillips, S., Bissett, S., Higgins-Lavery, R., Wharmby, C., Sudmant, A., Hinrichs, U., & Bach, B. (2026). Designing a Visualization Atlas: Lessons & Reflections from The UK Co-Benefits Atlas for Climate Mitigation. arXiv:2604.20781v2.",
+      "abstract_summary": "The preprint reflects on the design process for the UK Co-Benefits Atlas and identifies considerations for building large, interactive visualization atlases.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Produced through the UK Atlas collaboration before the lab was established at SFU.",
+      "primary_theme": "evidence-infrastructure-tools",
+      "secondary_themes": [
+        "co-benefits-place-based-valuation"
+      ],
+      "geographies": [
+        "united-kingdom"
+      ],
+      "governance_scales": [
+        "municipal",
+        "neighbourhood"
+      ],
+      "methods": [
+        "data-visualization",
+        "co-design"
+      ],
+      "climate_domains": [
+        "mitigation",
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [
+        "uk-co-benefits-atlas"
+      ],
+      "featured": true,
+      "metadata_sources": [
+        "datacite",
+        "repository"
+      ],
+      "last_verified_date": "2026-08-14",
+      "authoritative_sources": [
+        {
+          "label": "arXiv current version",
+          "url": "https://arxiv.org/abs/2604.20781v2",
+          "retrieved_date": "2026-08-14"
+        },
+        {
+          "label": "DataCite DOI record",
+          "url": "https://api.datacite.org/dois/10.48550/arXiv.2604.20781",
+          "retrieved_date": "2026-08-14"
+        }
+      ],
+      "verification_status": "verified",
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false
+    },
+    {
+      "record_id": "who-can-learn-geography-urban-climate-evidence",
+      "title": "Who can learn from whom? The geography of urban climate evidence",
+      "authors": [
+        "Andrew Sudmant",
+        "Egide Kalisa",
+        "Simon Montfort",
+        "Wenjia Cai",
+        "Shaurya Patel",
+        "Felix Creutzig"
+      ],
+      "publication_date": "2026-03-31",
+      "date_precision": "exact",
+      "publication_type": "preprint",
+      "peer_review_status": "preprint",
+      "venue": "Research Square",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": "10.21203/rs.3.rs-9268986/v1",
+      "other_identifiers": [],
+      "version": "v1",
+      "original_submission_date": "2026-03-31",
+      "current_version_date": "2026-03-31",
+      "url": "https://doi.org/10.21203/rs.3.rs-9268986/v1",
+      "citation": "Sudmant, A., Kalisa, E., Montfort, S., Cai, W., Patel, S., & Creutzig, F. (2026). Who can learn from whom? The geography of urban climate evidence. Research Square preprint.",
+      "abstract_summary": "The preprint examines the uneven geography of urban climate evidence and asks which cities can readily learn from knowledge produced in other places.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Posted before the lab was established; it directly anchors the lab's current evidence-transfer programme.",
+      "primary_theme": "urban-climate-learning",
+      "secondary_themes": [
+        "evidence-infrastructure-tools"
+      ],
+      "geographies": [
+        "global",
+        "sub-saharan-africa",
+        "rwanda"
+      ],
+      "governance_scales": [
+        "international",
+        "municipal"
+      ],
+      "methods": [
+        "evidence-mapping",
+        "spatial-analysis",
+        "literature-review"
+      ],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [
+        "geography-urban-climate-evidence"
+      ],
+      "featured": true,
+      "metadata_sources": [
+        "crossref",
+        "repository"
+      ],
+      "last_verified_date": "2026-08-14",
+      "authoritative_sources": [
+        {
+          "label": "Crossref preprint record",
+          "url": "https://api.crossref.org/works/10.21203/rs.3.rs-9268986/v1",
+          "retrieved_date": "2026-08-14"
+        }
+      ],
+      "verification_status": "verified",
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false
+    },
+    {
+      "record_id": "machine-learning-for-air-quality-forecasting-insights-from-five-provinces-of-rwanda",
+      "title": "Machine learning for air quality forecasting: Insights from five provinces of Rwanda",
+      "authors": [
+        "Dioumacor Faye",
+        "Redouane Lguensat",
+        "François Kaly",
+        "Andrew Sudmant",
+        "Amadou T. Gaye",
+        "Egide Kalisa"
+      ],
+      "publication_date": "2025-12",
+      "date_precision": "month",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Scientific African",
+      "volume": "30",
+      "issue": null,
+      "pages": "e02959",
+      "article_number": "e02959",
+      "doi": "10.1016/j.sciaf.2025.e02959",
+      "other_identifiers": [
+        "doi:10.1016/j.sciaf.2025.e02959",
+        "issn:2468-2276"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1016/j.sciaf.2025.e02959",
+      "citation": "Dioumacor Faye, Redouane Lguensat, François Kaly, Andrew Sudmant, Amadou T. Gaye, Egide Kalisa. (2025). Machine learning for air quality forecasting: Insights from five provinces of Rwanda. Scientific African. https://doi.org/10.1016/j.sciaf.2025.e02959",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "evidence-infrastructure-tools",
+      "secondary_themes": [],
+      "geographies": [
+        "rwanda"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1016/j.sciaf.2025.e02959",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "heatwaves-amplify-air-pollution-risks-in-sub-saharan-africa",
+      "title": "Heatwaves amplify air pollution risks in Sub-Saharan Africa",
+      "authors": [
+        "Egide Kalisa",
+        "Andrew Sudmant"
+      ],
+      "publication_date": "2025-07-21",
+      "date_precision": "exact",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Scientific Reports",
+      "volume": "15",
+      "issue": "1",
+      "pages": null,
+      "article_number": "26448",
+      "doi": "10.1038/s41598-025-12210-4",
+      "other_identifiers": [
+        "doi:10.1038/s41598-025-12210-4",
+        "issn:2045-2322"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1038/s41598-025-12210-4",
+      "citation": "Egide Kalisa, Andrew Sudmant. (2025). Heatwaves amplify air pollution risks in Sub-Saharan Africa. Scientific Reports. https://doi.org/10.1038/s41598-025-12210-4",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "urban-climate-learning",
+      "secondary_themes": [],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1038/s41598-025-12210-4",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "natural-experiments-in-urban-air-quality-lessons-from-car-free-days-and-covid-19-lockdowns",
+      "title": "Natural experiments in urban air quality: lessons from car-free days and COVID-19 lockdowns in Kigali, Rwanda",
+      "authors": [
+        "Egide Kalisa",
+        "Andrew Sudmant",
+        "Remy Ruberambuga",
+        "Jonathan Bower"
+      ],
+      "publication_date": "2025-03-05",
+      "date_precision": "exact",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Cities &amp; Health",
+      "volume": null,
+      "issue": null,
+      "pages": "1-12",
+      "article_number": null,
+      "doi": "10.1080/23748834.2025.2468017",
+      "other_identifiers": [
+        "doi:10.1080/23748834.2025.2468017"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1080/23748834.2025.2468017",
+      "citation": "Egide Kalisa, Andrew Sudmant, Remy Ruberambuga, Jonathan Bower. (2025). Natural experiments in urban air quality: lessons from car-free days and COVID-19 lockdowns in Kigali, Rwanda. Cities &amp; Health. https://doi.org/10.1080/23748834.2025.2468017",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "evidence-infrastructure-tools",
+      "secondary_themes": [],
+      "geographies": [
+        "rwanda"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1080/23748834.2025.2468017",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "infrastructure-transitions-southern-cities",
+      "title": "Infrastructure Transitions in Southern Cities: Organising Urban Service Delivery for Climate and Development",
+      "authors": [
+        "Lucy Oates",
+        "Andrew Sudmant"
+      ],
+      "publication_date": "2024-08-29",
+      "date_precision": "exact",
+      "publication_type": "article",
+      "peer_review_status": "peer-reviewed",
+      "venue": "Urban Planning",
+      "volume": "9",
+      "issue": null,
+      "pages": null,
+      "article_number": "8302",
+      "doi": "10.17645/up.8302",
+      "other_identifiers": [],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.17645/up.8302",
+      "citation": "Oates, L., & Sudmant, A. (2024). Infrastructure Transitions in Southern Cities: Organising Urban Service Delivery for Climate and Development. Urban Planning, 9, Article 8302.",
+      "abstract_summary": "The article examines how institutions organise urban service delivery and infrastructure transitions in Southern cities in relation to climate and development.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Published before the lab was established and foundational to its delivery-modes research.",
+      "primary_theme": "climate-governance-delivery",
+      "secondary_themes": [
+        "co-benefits-place-based-valuation"
+      ],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [
+        "municipal"
+      ],
+      "methods": [
+        "institutional-analysis",
+        "comparative-case-study"
+      ],
+      "climate_domains": [
+        "mitigation",
+        "resilience"
+      ],
+      "sectors": [
+        "urban-infrastructure"
+      ],
+      "connected_projects": [],
+      "featured": true,
+      "metadata_sources": [
+        "orcid",
+        "crossref",
+        "publisher"
+      ],
+      "last_verified_date": "2026-08-14",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.17645/up.8302",
+          "retrieved_date": "2026-08-14"
+        }
+      ],
+      "verification_status": "verified",
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false
+    },
+    {
+      "record_id": "replicate-generalize-urban-research",
+      "title": "Replicate and generalize to make urban research coherent",
+      "authors": [
+        "Andrew Sudmant",
+        "Felix Creutzig",
+        "Zhifu Mi"
+      ],
+      "publication_date": "2024-08-07",
+      "date_precision": "exact",
+      "publication_type": "article",
+      "peer_review_status": "peer-reviewed",
+      "venue": "International Journal of Urban Sciences",
+      "volume": "29",
+      "issue": "3",
+      "pages": "582–603",
+      "article_number": null,
+      "doi": "10.1080/12265934.2024.2382706",
+      "other_identifiers": [],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1080/12265934.2024.2382706",
+      "citation": "Sudmant, A., Creutzig, F., & Mi, Z. (2024). Replicate and generalize to make urban research coherent. International Journal of Urban Sciences.",
+      "abstract_summary": "The article argues for more coherent replication and generalization practices in urban research so findings can accumulate across places and studies.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Published before the lab was established and foundational to its urban-learning programme.",
+      "primary_theme": "urban-climate-learning",
+      "secondary_themes": [
+        "evidence-infrastructure-tools"
+      ],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [
+        "international",
+        "municipal"
+      ],
+      "methods": [
+        "evidence-synthesis",
+        "comparative-case-study"
+      ],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [
+        "geography-urban-climate-evidence"
+      ],
+      "featured": true,
+      "metadata_sources": [
+        "orcid",
+        "crossref",
+        "publisher"
+      ],
+      "last_verified_date": "2026-08-14",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1080/12265934.2024.2382706",
+          "retrieved_date": "2026-08-14"
+        }
+      ],
+      "verification_status": "verified",
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false
+    },
+    {
+      "record_id": "climate-policy-social-policy",
+      "title": "Climate policy as social policy? A comprehensive assessment of the economic impact of climate action in the UK",
+      "authors": [
+        "Andrew Sudmant",
+        "Dom Boyle",
+        "Ruaidhri Higgins-Lavery",
+        "Andy Gouldson",
+        "Andy Boyle",
+        "James Fulker",
+        "Jamie Brogan"
+      ],
+      "publication_date": "2024-07-05",
+      "date_precision": "exact",
+      "publication_type": "article",
+      "peer_review_status": "peer-reviewed",
+      "venue": "Journal of Environmental Studies and Sciences",
+      "volume": "15",
+      "issue": "3",
+      "pages": "476–490",
+      "article_number": null,
+      "doi": "10.1007/s13412-024-00955-9",
+      "other_identifiers": [],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1007/s13412-024-00955-9",
+      "citation": "Sudmant, A., Boyle, D., Higgins-Lavery, R., Gouldson, A., Boyle, A., Fulker, J., & Brogan, J. (2024). Climate policy as social policy? A comprehensive assessment of the economic impact of climate action in the UK. Journal of Environmental Studies and Sciences.",
+      "abstract_summary": "The article assesses the wider economic and social consequences of UK climate action and considers how those consequences alter policy appraisal.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Published before the lab was established and foundational to its co-benefits and policy-appraisal programme.",
+      "primary_theme": "co-benefits-place-based-valuation",
+      "secondary_themes": [
+        "climate-governance-delivery"
+      ],
+      "geographies": [
+        "united-kingdom"
+      ],
+      "governance_scales": [
+        "federal-national",
+        "regional",
+        "municipal"
+      ],
+      "methods": [
+        "economic-appraisal",
+        "distributional-analysis"
+      ],
+      "climate_domains": [
+        "mitigation"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": true,
+      "metadata_sources": [
+        "orcid",
+        "crossref",
+        "publisher"
+      ],
+      "last_verified_date": "2026-08-14",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1007/s13412-024-00955-9",
+          "retrieved_date": "2026-08-14"
+        }
+      ],
+      "verification_status": "verified",
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false
+    },
+    {
+      "record_id": "towards-a-public-policy-of-cities-and-human-settlements-in-the-21st-century",
+      "title": "Towards a public policy of cities and human settlements in the 21st century",
+      "authors": [
+        "Felix Creutzig",
+        "Sophia Becker",
+        "Peter Berrill",
+        "Constanze Bongs",
+        "Alexandra Bussler",
+        "Ben Cave",
+        "Sara M. Constantino",
+        "Marcus Grant",
+        "Niko Heeren",
+        "Eva Heinen",
+        "Marie Josefine Hintz",
+        "Timothee Ingen-Housz",
+        "Eric Johnson",
+        "Nina Kolleck",
+        "Charlotte Liotta",
+        "Sylvia Lorek",
+        "Giulio Mattioli",
+        "Leila Niamir",
+        "Timon McPhearson",
+        "Nikola Milojevic-Dupont",
+        "Florian Nachtigall",
+        "Kai Nagel",
+        "Henriette Närger",
+        "Minal Pathak",
+        "Paola Perrin de Brichambaut",
+        "Diana Reckien",
+        "Lucia A. Reisch",
+        "Aromar Revi",
+        "Fabian Schuppert",
+        "Andrew Sudmant",
+        "Felix Wagner",
+        "Janina Walkenhorst",
+        "Elke Weber",
+        "Michael Wilmes",
+        "Charlie Wilson",
+        "Aicha Zekar"
+      ],
+      "publication_date": "2024-06-24",
+      "date_precision": "exact",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "npj Urban Sustainability",
+      "volume": "4",
+      "issue": "1",
+      "pages": null,
+      "article_number": "29",
+      "doi": "10.1038/s42949-024-00168-7",
+      "other_identifiers": [
+        "doi:10.1038/s42949-024-00168-7",
+        "issn:2661-8001"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1038/s42949-024-00168-7",
+      "citation": "Felix Creutzig, Sophia Becker, Peter Berrill, Constanze Bongs, Alexandra Bussler, Ben Cave, Sara M. Constantino, Marcus Grant, Niko Heeren, Eva Heinen, Marie Josefine Hintz, Timothee Ingen-Housz, Eric Johnson, Nina Kolleck, Charlotte Liotta, Sylvia Lorek, Giulio Mattioli, Leila Niamir, Timon McPhearson, Nikola Milojevic-Dupont, Florian Nachtigall, Kai Nagel, Henriette Närger, Minal Pathak, Paola Perrin de Brichambaut, Diana Reckien, Lucia A. Reisch, Aromar Revi, Fabian Schuppert, Andrew Sudmant, Felix Wagner, Janina Walkenhorst, Elke Weber, Michael Wilmes, Charlie Wilson, Aicha Zekar. (2024). Towards a public policy of cities and human settlements in the 21st century. npj Urban Sustainability. https://doi.org/10.1038/s42949-024-00168-7",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "climate-governance-delivery",
+      "secondary_themes": [],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1038/s42949-024-00168-7",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "data-scaling-climate-action-governance-uk",
+      "title": "Data Scaling: Implications for Climate Action and Governance in the UK",
+      "authors": [
+        "Andrew Sudmant"
+      ],
+      "publication_date": "2024-05-29",
+      "date_precision": "exact",
+      "publication_type": "article",
+      "peer_review_status": "peer-reviewed",
+      "venue": "Environmental Management",
+      "volume": "74",
+      "issue": "3",
+      "pages": "414–424",
+      "article_number": null,
+      "doi": "10.1007/s00267-024-01991-5",
+      "other_identifiers": [],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1007/s00267-024-01991-5",
+      "citation": "Sudmant, A. (2024). Data Scaling: Implications for Climate Action and Governance in the UK. Environmental Management, 74(3), 414–424.",
+      "abstract_summary": "The article examines how changing the spatial scale of climate evidence affects assessment, governance and the interpretation of local climate action in the UK.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Published before the lab was established and foundational to its evidence-infrastructure programme.",
+      "primary_theme": "evidence-infrastructure-tools",
+      "secondary_themes": [
+        "co-benefits-place-based-valuation",
+        "climate-governance-delivery"
+      ],
+      "geographies": [
+        "united-kingdom"
+      ],
+      "governance_scales": [
+        "federal-national",
+        "municipal",
+        "neighbourhood"
+      ],
+      "methods": [
+        "place-based-modelling",
+        "spatial-analysis",
+        "economic-appraisal"
+      ],
+      "climate_domains": [
+        "mitigation"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [
+        "data-methodologies-climate-impact"
+      ],
+      "featured": true,
+      "metadata_sources": [
+        "orcid",
+        "crossref",
+        "publisher"
+      ],
+      "last_verified_date": "2026-08-14",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1007/s00267-024-01991-5",
+          "retrieved_date": "2026-08-14"
+        },
+        {
+          "label": "Publisher record",
+          "url": "https://doi.org/10.1007/s00267-024-01991-5",
+          "retrieved_date": "2026-08-14"
+        }
+      ],
+      "verification_status": "verified",
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false
+    },
+    {
+      "record_id": "community-participation-in-urban-land-and-housing-delivery-evidence-from-kerala-india-and",
+      "title": "Community Participation in Urban Land and Housing Delivery: Evidence from Kerala (India) and Dar es Salaam (Tanzania)",
+      "authors": [
+        "Lucy Oates",
+        "Abhijit Datey",
+        "Andrew Sudmant",
+        "Ross Gillard",
+        "Andy Gouldson"
+      ],
+      "publication_date": "2024-05-09",
+      "date_precision": "exact",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Land",
+      "volume": "13",
+      "issue": "5",
+      "pages": "641",
+      "article_number": null,
+      "doi": "10.3390/land13050641",
+      "other_identifiers": [
+        "doi:10.3390/land13050641"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.3390/land13050641",
+      "citation": "Lucy Oates, Abhijit Datey, Andrew Sudmant, Ross Gillard, Andy Gouldson. (2024). Community Participation in Urban Land and Housing Delivery: Evidence from Kerala (India) and Dar es Salaam (Tanzania). Land. https://doi.org/10.3390/land13050641",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "climate-governance-delivery",
+      "secondary_themes": [],
+      "geographies": [
+        "india"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": false,
+      "mdpi_excluded": true,
+      "metadata_sources": [
+        "orcid",
+        "crossref",
+        "owner-override"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.3390/land13050641",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "beyond-domain-led-conceptualizations-of-urban-zero-carbon-transitions",
+      "title": "Beyond domain-led conceptualizations of urban zero-carbon transitions",
+      "authors": [
+        "Andrew Sudmant",
+        "Matt Tierney",
+        "Andy Gouldson",
+        "Joule Bergerson"
+      ],
+      "publication_date": "2023-12-06",
+      "date_precision": "exact",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Academia Environmental Sciences and Sustainability",
+      "volume": "1",
+      "issue": "1",
+      "pages": null,
+      "article_number": null,
+      "doi": "10.20935/acadenvsci6141",
+      "other_identifiers": [
+        "doi:10.20935/acadenvsci6141"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.20935/acadenvsci6141",
+      "citation": "Andrew Sudmant, Matt Tierney, Andy Gouldson, Joule Bergerson. (2023). Beyond domain-led conceptualizations of urban zero-carbon transitions. Academia Environmental Sciences and Sustainability. https://doi.org/10.20935/acadenvsci6141",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "urban-climate-learning",
+      "secondary_themes": [],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.20935/acadenvsci6141",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "pluralizing-the-urban-waste-economy-insights-from-community-based-enterprises-in-ahmedabad",
+      "title": "Pluralizing the urban waste economy: insights from community-based enterprises in Ahmedabad (India) and Kampala (Uganda)",
+      "authors": [
+        "Lucy Oates",
+        "Peter Kasaija",
+        "Hakimu Sseviiri",
+        "Andrew Sudmant",
+        "Aksel Ersoy",
+        "Ellen Van Bueren"
+      ],
+      "publication_date": "2023-08-31",
+      "date_precision": "exact",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Environment and Urbanization",
+      "volume": "35",
+      "issue": "2",
+      "pages": "411-432",
+      "article_number": null,
+      "doi": "10.1177/09562478231190475",
+      "other_identifiers": [
+        "doi:10.1177/09562478231190475"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1177/09562478231190475",
+      "citation": "Lucy Oates, Peter Kasaija, Hakimu Sseviiri, Andrew Sudmant, Aksel Ersoy, Ellen Van Bueren. (2023). Pluralizing the urban waste economy: insights from community-based enterprises in Ahmedabad (India) and Kampala (Uganda). Environment and Urbanization. https://doi.org/10.1177/09562478231190475",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "urban-climate-learning",
+      "secondary_themes": [],
+      "geographies": [
+        "india"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1177/09562478231190475",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "an-analysis-of-net-zero-carbon-options-for-the-belfast-region",
+      "title": "An Analysis of Net-Zero Carbon Options for the Belfast Region",
+      "authors": [
+        "Andrew Sudmant",
+        "Andy Gouldson",
+        "Ruaidhri Higgins-Lavery"
+      ],
+      "publication_date": "2023-06-23",
+      "date_precision": "exact",
+      "publication_type": "other",
+      "peer_review_status": "unknown",
+      "venue": "Zenodo",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": "10.5281/zenodo.8075492",
+      "other_identifiers": [
+        "doi:10.5281/zenodo.8075492"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://zenodo.org/record/8075492",
+      "citation": "Andrew Sudmant, Andy Gouldson, Ruaidhri Higgins-Lavery. (2023). An Analysis of Net-Zero Carbon Options for the Belfast Region. Zenodo. https://doi.org/10.5281/zenodo.8075492",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "urban-climate-learning",
+      "secondary_themes": [],
+      "geographies": [
+        "united-kingdom"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "datacite"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Datacite DOI record",
+          "url": "https://api.datacite.org/dois/10.5281/zenodo.8075492",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "using-crowdsourced-data-to-estimate-the-carbon-footprints-of-global-cities",
+      "title": "Using crowdsourced data to estimate the carbon footprints of global cities",
+      "authors": [
+        "Xinlu Sun",
+        "Zhifu Mi",
+        "Andrew Sudmant",
+        "D'Maris Coffman",
+        "Pu Yang",
+        "Richard Wood"
+      ],
+      "publication_date": "2022-12",
+      "date_precision": "month",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Advances in Applied Energy",
+      "volume": "8",
+      "issue": null,
+      "pages": "100111",
+      "article_number": "100111",
+      "doi": "10.1016/j.adapen.2022.100111",
+      "other_identifiers": [
+        "doi:10.1016/j.adapen.2022.100111",
+        "issn:2666-7924"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1016/j.adapen.2022.100111",
+      "citation": "Xinlu Sun, Zhifu Mi, Andrew Sudmant, D'Maris Coffman, Pu Yang, Richard Wood. (2022). Using crowdsourced data to estimate the carbon footprints of global cities. Advances in Applied Energy. https://doi.org/10.1016/j.adapen.2022.100111",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "evidence-infrastructure-tools",
+      "secondary_themes": [],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1016/j.adapen.2022.100111",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "missing-the-target-are-local-climate-targets-aligned-with-national-net-zero-ambitions",
+      "title": "Missing the target: Are local climate targets aligned with national net zero ambitions?",
+      "authors": [
+        "Andrew Sudmant",
+        "Candice Howarth",
+        "Matt Lane"
+      ],
+      "publication_date": "2022-05-20",
+      "date_precision": "exact",
+      "publication_type": "preprint",
+      "peer_review_status": "unknown",
+      "venue": "Authoritative repository record",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": "10.21203/rs.3.rs-1676382/v1",
+      "other_identifiers": [
+        "doi:10.21203/rs.3.rs-1676382/v1"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.21203/rs.3.rs-1676382/v1",
+      "citation": "Andrew Sudmant, Candice Howarth, Matt Lane. (2022). Missing the target: Are local climate targets aligned with national net zero ambitions?. Authoritative repository record. https://doi.org/10.21203/rs.3.rs-1676382/v1",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "urban-climate-learning",
+      "secondary_themes": [],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.21203/rs.3.rs-1676382/v1",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "bigger-cities-better-climate-results-from-an-analysis-of-urban-areas-in-china",
+      "title": "Bigger cities better climate? Results from an analysis of urban areas in China",
+      "authors": [
+        "Lu Cheng",
+        "Zhifu Mi",
+        "Andrew Sudmant",
+        "D'Maris Coffman"
+      ],
+      "publication_date": "2022-03",
+      "date_precision": "month",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Energy Economics",
+      "volume": "107",
+      "issue": null,
+      "pages": "105872",
+      "article_number": "105872",
+      "doi": "10.1016/j.eneco.2022.105872",
+      "other_identifiers": [
+        "doi:10.1016/j.eneco.2022.105872",
+        "issn:0140-9883",
+        "wosuid:WOS:000759016800008",
+        "source-work-id:579114"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1016/j.eneco.2022.105872",
+      "citation": "Lu Cheng, Zhifu Mi, Andrew Sudmant, D'Maris Coffman. (2022). Bigger cities better climate? Results from an analysis of urban areas in China. Energy Economics. https://doi.org/10.1016/j.eneco.2022.105872",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "urban-climate-learning",
+      "secondary_themes": [],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1016/j.eneco.2022.105872",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "supportive-governance-for-city-scale-low-carbon-building-retrofits-a-case-study-from-shang",
+      "title": "Supportive governance for city-scale low carbon building retrofits: a case study from Shanghai",
+      "authors": [
+        "Zhongjue Yu",
+        "Yong Geng",
+        "Qi He",
+        "Lucy Oates",
+        "Andrew Sudmant",
+        "Andy Gouldson",
+        "Raimund Bleischwitz"
+      ],
+      "publication_date": "2021-07-08",
+      "date_precision": "exact",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Climate Policy",
+      "volume": "21",
+      "issue": "7",
+      "pages": "884-896",
+      "article_number": null,
+      "doi": "10.1080/14693062.2021.1948383",
+      "other_identifiers": [
+        "doi:10.1080/14693062.2021.1948383",
+        "issn:1469-3062",
+        "wosuid:WOS:000670804300001",
+        "source-work-id:562637"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1080/14693062.2021.1948383",
+      "citation": "Zhongjue Yu, Yong Geng, Qi He, Lucy Oates, Andrew Sudmant, Andy Gouldson, Raimund Bleischwitz. (2021). Supportive governance for city-scale low carbon building retrofits: a case study from Shanghai. Climate Policy. https://doi.org/10.1080/14693062.2021.1948383",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "climate-governance-delivery",
+      "secondary_themes": [],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1080/14693062.2021.1948383",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "fair-weather-forecasting-the-shortcomings-of-big-data-for-sustainable-development-a-case-s",
+      "title": "Fair weather forecasting? The shortcomings of big data for sustainable development, a case study from Hubballi‐Dharwad, India",
+      "authors": [
+        "Andrew Sudmant",
+        "Vincent Viguié",
+        "Quentin Lepetit",
+        "Lucy Oates",
+        "Abhijit Datey",
+        "Andy Gouldson",
+        "David Watling"
+      ],
+      "publication_date": "2021-06-18",
+      "date_precision": "exact",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Sustainable Development",
+      "volume": "29",
+      "issue": "6",
+      "pages": "1237-1248",
+      "article_number": null,
+      "doi": "10.1002/sd.2221",
+      "other_identifiers": [
+        "doi:10.1002/sd.2221"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1002/sd.2221",
+      "citation": "Andrew Sudmant, Vincent Viguié, Quentin Lepetit, Lucy Oates, Abhijit Datey, Andy Gouldson, David Watling. (2021). Fair weather forecasting? The shortcomings of big data for sustainable development, a case study from Hubballi‐Dharwad, India. Sustainable Development. https://doi.org/10.1002/sd.2221",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "evidence-infrastructure-tools",
+      "secondary_themes": [],
+      "geographies": [
+        "india"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1002/sd.2221",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "integration-mitigation-adaptation-europe",
+      "title": "Integration of mitigation and adaptation in urban climate change action plans in Europe: A systematic assessment",
+      "authors": [
+        "S. Grafakos",
+        "G. Viero",
+        "D. Reckien",
+        "K. Trigg",
+        "V. Viguie",
+        "A. Sudmant",
+        "C. Graves",
+        "A. Foley",
+        "O. Heidrich",
+        "J.M. Mirailles",
+        "J. Carter",
+        "L.H. Chang",
+        "C. Nador",
+        "M. Liseri",
+        "L. Chelleri",
+        "H. Orru",
+        "K. Orru",
+        "R. Aelenei",
+        "A. Bilska",
+        "B. Pfeiffer",
+        "Q. Lepetit",
+        "J.M. Church",
+        "M. Landauer",
+        "A. Gouldson",
+        "R. Dawson"
+      ],
+      "publication_date": "2020-04",
+      "date_precision": "month",
+      "publication_type": "article",
+      "peer_review_status": "peer-reviewed",
+      "venue": "Renewable and Sustainable Energy Reviews",
+      "volume": "121",
+      "issue": null,
+      "pages": null,
+      "article_number": "109623",
+      "doi": "10.1016/j.rser.2019.109623",
+      "other_identifiers": [],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1016/j.rser.2019.109623",
+      "citation": "Grafakos, S. et al. (2020). Integration of mitigation and adaptation in urban climate change action plans in Europe: A systematic assessment. Renewable and Sustainable Energy Reviews, 121, 109623.",
+      "abstract_summary": "A systematic assessment of how European urban climate action plans integrate mitigation and adaptation objectives and measures.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Prior collaborative work included for its direct relevance to urban climate governance and delivery.",
+      "primary_theme": "climate-governance-delivery",
+      "secondary_themes": [
+        "urban-climate-learning"
+      ],
+      "geographies": [
+        "europe"
+      ],
+      "governance_scales": [
+        "municipal"
+      ],
+      "methods": [
+        "literature-review",
+        "policy-analysis"
+      ],
+      "climate_domains": [
+        "mitigation",
+        "adaptation"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": true,
+      "metadata_sources": [
+        "orcid",
+        "crossref",
+        "publisher"
+      ],
+      "last_verified_date": "2026-08-14",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1016/j.rser.2019.109623",
+          "retrieved_date": "2026-08-14"
+        }
+      ],
+      "verification_status": "verified",
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false
+    },
+    {
+      "record_id": "the-social-environmental-health-and-economic-impacts-of-low-carbon-transport-policy-a-revi",
+      "title": "The social, environmental, health, and economic impacts of low carbon transport policy: A review of the evidence",
+      "authors": [
+        "Andrew Sudmant",
+        "Ersilia Verlinghieri",
+        "Haneen Khreis",
+        "Andrew Gouldson"
+      ],
+      "publication_date": "2020",
+      "date_precision": "year",
+      "publication_type": "chapter",
+      "peer_review_status": "unknown",
+      "venue": "Traffic-Related Air Pollution",
+      "volume": null,
+      "issue": null,
+      "pages": "471-493",
+      "article_number": null,
+      "doi": "10.1016/b978-0-12-818122-5.00019-3",
+      "other_identifiers": [
+        "doi:10.1016/B978-0-12-818122-5.00019-3",
+        "isbn:9780128181225",
+        "source-work-id:538320"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1016/b978-0-12-818122-5.00019-3",
+      "citation": "Andrew Sudmant, Ersilia Verlinghieri, Haneen Khreis, Andrew Gouldson. (2020). The social, environmental, health, and economic impacts of low carbon transport policy: A review of the evidence. Traffic-Related Air Pollution. https://doi.org/10.1016/b978-0-12-818122-5.00019-3",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "climate-governance-delivery",
+      "secondary_themes": [],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1016/b978-0-12-818122-5.00019-3",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "kigali-economic-appraisal",
+      "title": "The scope for low-carbon development in Kigali, Rwanda: An economic appraisal",
+      "authors": [
+        "Sarah Colenbrander",
+        "Andrew Sudmant",
+        "Natasha Chilundika",
+        "Andy Gouldson"
+      ],
+      "publication_date": "2018-11-28",
+      "date_precision": "exact",
+      "publication_type": "article",
+      "peer_review_status": "peer-reviewed",
+      "venue": "Sustainable Development",
+      "volume": "27",
+      "issue": "3",
+      "pages": "349–365",
+      "article_number": null,
+      "doi": "10.1002/sd.1906",
+      "other_identifiers": [],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1002/sd.1906",
+      "citation": "Colenbrander, S., Sudmant, A., Chilundika, N., & Gouldson, A. (2019). The scope for low-carbon development in Kigali, Rwanda: An economic appraisal. Sustainable Development, 27(3), 349–365.",
+      "abstract_summary": "The article evaluates the economic case for low-carbon development options in Kigali and considers implications for urban investment and governance.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Prior collaborative research included as an intellectual foundation for place-based appraisal.",
+      "primary_theme": "co-benefits-place-based-valuation",
+      "secondary_themes": [
+        "climate-governance-delivery"
+      ],
+      "geographies": [
+        "rwanda",
+        "sub-saharan-africa"
+      ],
+      "governance_scales": [
+        "municipal"
+      ],
+      "methods": [
+        "economic-appraisal",
+        "place-based-modelling"
+      ],
+      "climate_domains": [
+        "mitigation"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": true,
+      "metadata_sources": [
+        "orcid",
+        "crossref",
+        "publisher"
+      ],
+      "last_verified_date": "2026-08-14",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1002/sd.1906",
+          "retrieved_date": "2026-08-14"
+        }
+      ],
+      "verification_status": "verified",
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false
+    },
+    {
+      "record_id": "transport-policy-measures-for-climate-change-as-drivers-for-health-in-cities",
+      "title": "Transport Policy Measures for Climate Change as Drivers for Health in Cities",
+      "authors": [
+        "Haneen Khreis",
+        "Andrew Sudmant",
+        "Andy Gouldson",
+        "Mark Nieuwenhuijsen"
+      ],
+      "publication_date": "2018-07-14",
+      "date_precision": "exact",
+      "publication_type": "chapter",
+      "peer_review_status": "unknown",
+      "venue": "Integrating Human Health into Urban and Transport Planning",
+      "volume": null,
+      "issue": null,
+      "pages": "583-608",
+      "article_number": null,
+      "doi": "10.1007/978-3-319-74983-9_28",
+      "other_identifiers": [
+        "doi:10.1007/978-3-319-74983-9_28",
+        "isbn:9783319749822",
+        "source-work-id:495500",
+        "isbn:9783319749839",
+        "doi:10.1016/j.jth.2018.05.035",
+        "issn:2214-1413",
+        "wosuid:WOS:000437099600067",
+        "source-work-id:471912"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1007/978-3-319-74983-9_28",
+      "citation": "Haneen Khreis, Andrew Sudmant, Andy Gouldson, Mark Nieuwenhuijsen. (2018). Transport Policy Measures for Climate Change as Drivers for Health in Cities. Integrating Human Health into Urban and Transport Planning. https://doi.org/10.1007/978-3-319-74983-9_28",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "climate-governance-delivery",
+      "secondary_themes": [],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1007/978-3-319-74983-9_28",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "producer-cities-and-consumer-cities-using-production-and-consumption-based-carbon-accounts",
+      "title": "Producer cities and consumer cities: Using production- and consumption-based carbon accounts to guide climate action in China, the UK, and the US",
+      "authors": [
+        "Andrew Sudmant",
+        "Andy Gouldson",
+        "Joel Millward-Hopkins",
+        "Kate Scott",
+        "John Barrett"
+      ],
+      "publication_date": "2018-03",
+      "date_precision": "month",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Journal of Cleaner Production",
+      "volume": "176",
+      "issue": null,
+      "pages": "654-662",
+      "article_number": null,
+      "doi": "10.1016/j.jclepro.2017.12.139",
+      "other_identifiers": [
+        "doi:10.1016/j.jclepro.2017.12.139",
+        "issn:0959-6526",
+        "wosuid:WOS:000423648000058",
+        "source-work-id:454390"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1016/j.jclepro.2017.12.139",
+      "citation": "Andrew Sudmant, Andy Gouldson, Joel Millward-Hopkins, Kate Scott, John Barrett. (2018). Producer cities and consumer cities: Using production- and consumption-based carbon accounts to guide climate action in China, the UK, and the US. Journal of Cleaner Production. https://doi.org/10.1016/j.jclepro.2017.12.139",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "evidence-infrastructure-tools",
+      "secondary_themes": [],
+      "geographies": [
+        "united-kingdom",
+        "global"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1016/j.jclepro.2017.12.139",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "the-economics-of-climate-mitigation-exploring-the-relative-significance-of-the-incentives",
+      "title": "The Economics of Climate Mitigation: Exploring the Relative Significance of the Incentives for and Barriers to Low-carbon Investment in Urban Areas",
+      "authors": [
+        "Sarah Colenbrander",
+        "Andrew H. Sudmant",
+        "Andy Gouldson",
+        "Igor Reis de Albuquerque",
+        "Faye McAnulla",
+        "Ynara Oliviera de Sousa"
+      ],
+      "publication_date": "2017-06-21",
+      "date_precision": "exact",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Urbanisation",
+      "volume": "2",
+      "issue": "1",
+      "pages": "38-58",
+      "article_number": null,
+      "doi": "10.1177/2455747117708929",
+      "other_identifiers": [
+        "doi:10.1177/2455747117708929",
+        "issn:2455-7471",
+        "source-work-id:434920"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1177/2455747117708929",
+      "citation": "Sarah Colenbrander, Andrew H. Sudmant, Andy Gouldson, Igor Reis de Albuquerque, Faye McAnulla, Ynara Oliviera de Sousa. (2017). The Economics of Climate Mitigation: Exploring the Relative Significance of the Incentives for and Barriers to Low-carbon Investment in Urban Areas. Urbanisation. https://doi.org/10.1177/2455747117708929",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "co-benefits-place-based-valuation",
+      "secondary_themes": [],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1177/2455747117708929",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "private-opportunities-public-benefits-the-scope-for-private-finance-to-deliver-low-carbon",
+      "title": "Private opportunities, public benefits? The scope for private finance to deliver low-carbon transport systems in Kigali, Rwanda",
+      "authors": [
+        "Andrew Sudmant",
+        "Sarah Colenbrander",
+        "Andy Gouldson",
+        "Natasha Chilundika"
+      ],
+      "publication_date": "2017-06",
+      "date_precision": "month",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Urban Climate",
+      "volume": "20",
+      "issue": null,
+      "pages": "59-74",
+      "article_number": null,
+      "doi": "10.1016/j.uclim.2017.02.011",
+      "other_identifiers": [
+        "doi:10.1016/j.uclim.2017.02.011"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1016/j.uclim.2017.02.011",
+      "citation": "Andrew Sudmant, Sarah Colenbrander, Andy Gouldson, Natasha Chilundika. (2017). Private opportunities, public benefits? The scope for private finance to deliver low-carbon transport systems in Kigali, Rwanda. Urban Climate. https://doi.org/10.1016/j.uclim.2017.02.011",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "co-benefits-place-based-valuation",
+      "secondary_themes": [],
+      "geographies": [
+        "rwanda"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1016/j.uclim.2017.02.011",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "uncovering-blind-spots-in-urban-carbon-management-the-role-of-consumption-based-carbon-acc",
+      "title": "Uncovering blind spots in urban carbon management: the role of consumption-based carbon accounting in Bristol, UK",
+      "authors": [
+        "Joel Millward-Hopkins",
+        "Andrew Gouldson",
+        "Kate Scott",
+        "John Barrett",
+        "Andrew Sudmant"
+      ],
+      "publication_date": "2017-02-03",
+      "date_precision": "exact",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Regional Environmental Change",
+      "volume": "17",
+      "issue": "5",
+      "pages": "1467-1478",
+      "article_number": null,
+      "doi": "10.1007/s10113-017-1112-x",
+      "other_identifiers": [
+        "pmid:32055235",
+        "pmc:PMC6991983",
+        "doi:10.1007/s10113-017-1112-x",
+        "issn:1436-3798",
+        "wosuid:WOS:000402137900019",
+        "source-work-id:374564"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1007/s10113-017-1112-x",
+      "citation": "Joel Millward-Hopkins, Andrew Gouldson, Kate Scott, John Barrett, Andrew Sudmant. (2017). Uncovering blind spots in urban carbon management: the role of consumption-based carbon accounting in Bristol, UK. Regional Environmental Change. https://doi.org/10.1007/s10113-017-1112-x",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "evidence-infrastructure-tools",
+      "secondary_themes": [],
+      "geographies": [
+        "united-kingdom"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1007/s10113-017-1112-x",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "can-low-carbon-urban-development-be-pro-poor-the-case-of-kolkata-india",
+      "title": "Can low-carbon urban development be pro-poor? The case of Kolkata, India",
+      "authors": [
+        "Sarah Colenbrander",
+        "Andy Gouldson",
+        "Joyashree Roy",
+        "Niall Kerr",
+        "Sayantan Sarkar",
+        "Stephen Hall",
+        "Andrew Sudmant",
+        "Amrita Ghatak",
+        "Debalina Chakravarty",
+        "Diya Ganguly",
+        "Faye Mcanulla"
+      ],
+      "publication_date": "2016-12-16",
+      "date_precision": "exact",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Environment and Urbanization",
+      "volume": "29",
+      "issue": "1",
+      "pages": "139-158",
+      "article_number": null,
+      "doi": "10.1177/0956247816677775",
+      "other_identifiers": [
+        "doi:10.1177/0956247816677775",
+        "issn:0956-2478",
+        "wosuid:WOS:000400086300009",
+        "source-work-id:366095"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1177/0956247816677775",
+      "citation": "Sarah Colenbrander, Andy Gouldson, Joyashree Roy, Niall Kerr, Sayantan Sarkar, Stephen Hall, Andrew Sudmant, Amrita Ghatak, Debalina Chakravarty, Diya Ganguly, Faye Mcanulla. (2016). Can low-carbon urban development be pro-poor? The case of Kolkata, India. Environment and Urbanization. https://doi.org/10.1177/0956247816677775",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "co-benefits-place-based-valuation",
+      "secondary_themes": [],
+      "geographies": [
+        "india"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1177/0956247816677775",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "climate-change-mitigation-in-chinese-megacities-a-measures-based-analysis-of-opportunities",
+      "title": "Climate change mitigation in Chinese megacities: A measures-based analysis of opportunities in the residential sector",
+      "authors": [
+        "Qi He",
+        "Xujia Jiang",
+        "Andy Gouldson",
+        "Andrew Sudmant",
+        "Dabo Guan",
+        "Sarah Colenbrander",
+        "Tao Xue",
+        "Bo Zheng",
+        "Qiang Zhang"
+      ],
+      "publication_date": "2016-12",
+      "date_precision": "month",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Applied Energy",
+      "volume": "184",
+      "issue": null,
+      "pages": "769-778",
+      "article_number": null,
+      "doi": "10.1016/j.apenergy.2016.07.112",
+      "other_identifiers": [
+        "doi:10.1016/j.apenergy.2016.07.112",
+        "issn:0306-2619",
+        "wosuid:WOS:000389785200063",
+        "source-work-id:362976"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1016/j.apenergy.2016.07.112",
+      "citation": "Qi He, Xujia Jiang, Andy Gouldson, Andrew Sudmant, Dabo Guan, Sarah Colenbrander, Tao Xue, Bo Zheng, Qiang Zhang. (2016). Climate change mitigation in Chinese megacities: A measures-based analysis of opportunities in the residential sector. Applied Energy. https://doi.org/10.1016/j.apenergy.2016.07.112",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "urban-climate-learning",
+      "secondary_themes": [],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1016/j.apenergy.2016.07.112",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "low-carbon-cities-affordable",
+      "title": "Low carbon cities: is ambitious action affordable?",
+      "authors": [
+        "Andrew Sudmant",
+        "Joel Millward-Hopkins",
+        "Sarah Colenbrander",
+        "Andy Gouldson"
+      ],
+      "publication_date": "2016-08-15",
+      "date_precision": "exact",
+      "publication_type": "article",
+      "peer_review_status": "peer-reviewed",
+      "venue": "Climatic Change",
+      "volume": "138",
+      "issue": "3–4",
+      "pages": "681–688",
+      "article_number": null,
+      "doi": "10.1007/s10584-016-1751-9",
+      "other_identifiers": [],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1007/s10584-016-1751-9",
+      "citation": "Sudmant, A., Millward-Hopkins, J., Colenbrander, S., & Gouldson, A. (2016). Low carbon cities: is ambitious action affordable? Climatic Change, 138(3–4), 681–688.",
+      "abstract_summary": "The article considers the affordability and economic case for ambitious low-carbon action in cities.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Prior research included as a foundation for the lab's urban climate appraisal programme.",
+      "primary_theme": "co-benefits-place-based-valuation",
+      "secondary_themes": [
+        "climate-governance-delivery"
+      ],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [
+        "municipal"
+      ],
+      "methods": [
+        "economic-appraisal"
+      ],
+      "climate_domains": [
+        "mitigation"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": true,
+      "metadata_sources": [
+        "orcid",
+        "crossref",
+        "publisher"
+      ],
+      "last_verified_date": "2026-08-14",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1007/s10584-016-1751-9",
+          "retrieved_date": "2026-08-14"
+        }
+      ],
+      "verification_status": "verified",
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false
+    },
+    {
+      "record_id": "cities-and-climate-change-mitigation-economic-opportunities-and-governance-challenges-in-a",
+      "title": "Cities and climate change mitigation: Economic opportunities and governance challenges in Asia",
+      "authors": [
+        "Andy Gouldson",
+        "Sarah Colenbrander",
+        "Andrew Sudmant",
+        "Effie Papargyropoulou",
+        "Niall Kerr",
+        "Faye McAnulla",
+        "Stephen Hall"
+      ],
+      "publication_date": "2016-05",
+      "date_precision": "month",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Cities",
+      "volume": "54",
+      "issue": null,
+      "pages": "11-19",
+      "article_number": null,
+      "doi": "10.1016/j.cities.2015.10.010",
+      "other_identifiers": [
+        "doi:10.1016/j.cities.2015.10.010",
+        "eid:2-s2.0-84962339314",
+        "issn:0264-2751",
+        "wosuid:WOS:000375629900003",
+        "source-work-id:346797",
+        "doi:10.60692/xnqrk-f5581",
+        "doi:10.60692/471za-j6592"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1016/j.cities.2015.10.010",
+      "citation": "Andy Gouldson, Sarah Colenbrander, Andrew Sudmant, Effie Papargyropoulou, Niall Kerr, Faye McAnulla, Stephen Hall. (2016). Cities and climate change mitigation: Economic opportunities and governance challenges in Asia. Cities. https://doi.org/10.1016/j.cities.2015.10.010",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "climate-governance-delivery",
+      "secondary_themes": [],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1016/j.cities.2015.10.010",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "understanding-the-case-for-low-carbon-investment-through-bottom-up-assessments-of-city-sca",
+      "title": "Understanding the case for low-carbon investment through bottom-up assessments of city-scale opportunities",
+      "authors": [
+        "Andrew Heshedahl Sudmant",
+        "Andy Gouldson",
+        "Sarah Colenbrander",
+        "Rory Sullivan",
+        "Faye McAnulla",
+        "Niall Kerr"
+      ],
+      "publication_date": "2015-11-13",
+      "date_precision": "exact",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Climate Policy",
+      "volume": "17",
+      "issue": "3",
+      "pages": "299-313",
+      "article_number": null,
+      "doi": "10.1080/14693062.2015.1104498",
+      "other_identifiers": [
+        "doi:10.1080/14693062.2015.1104498",
+        "issn:1469-3062",
+        "wosuid:WOS:000399487800003",
+        "source-work-id:337828",
+        "eid:2-s2.0-84946887393"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1080/14693062.2015.1104498",
+      "citation": "Andrew Heshedahl Sudmant, Andy Gouldson, Sarah Colenbrander, Rory Sullivan, Faye McAnulla, Niall Kerr. (2015). Understanding the case for low-carbon investment through bottom-up assessments of city-scale opportunities. Climate Policy. https://doi.org/10.1080/14693062.2015.1104498",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "urban-climate-learning",
+      "secondary_themes": [],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1080/14693062.2015.1104498",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "the-economic-case-for-low-carbon-waste-management-in-rapidly-growing-cities-in-the-develop",
+      "title": "The economic case for low carbon waste management in rapidly growing cities in the developing world: The case of Palembang, Indonesia",
+      "authors": [
+        "Effie Papargyropoulou",
+        "Sarah Colenbrander",
+        "Andrew Heshedahl Sudmant",
+        "Andy Gouldson",
+        "Lee Chew Tin"
+      ],
+      "publication_date": "2015-11",
+      "date_precision": "month",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Journal of Environmental Management",
+      "volume": "163",
+      "issue": null,
+      "pages": "11-19",
+      "article_number": null,
+      "doi": "10.1016/j.jenvman.2015.08.001",
+      "other_identifiers": [
+        "doi:10.1016/j.jenvman.2015.08.001",
+        "eid:2-s2.0-84939444738",
+        "pmid:26280124",
+        "issn:0301-4797",
+        "wosuid:WOS:000362306600003",
+        "source-work-id:333240"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1016/j.jenvman.2015.08.001",
+      "citation": "Effie Papargyropoulou, Sarah Colenbrander, Andrew Heshedahl Sudmant, Andy Gouldson, Lee Chew Tin. (2015). The economic case for low carbon waste management in rapidly growing cities in the developing world: The case of Palembang, Indonesia. Journal of Environmental Management. https://doi.org/10.1016/j.jenvman.2015.08.001",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "co-benefits-place-based-valuation",
+      "secondary_themes": [],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1016/j.jenvman.2015.08.001",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "economic-case-climate-action-cities",
+      "title": "Exploring the economic case for climate action in cities",
+      "authors": [
+        "Andy Gouldson",
+        "Sarah Colenbrander",
+        "Andrew Sudmant",
+        "Faye McAnulla",
+        "Niall Kerr",
+        "Paola Sakai",
+        "Stephen Hall",
+        "Effie Papargyropoulou",
+        "Johan Kuylenstierna"
+      ],
+      "publication_date": "2015-11",
+      "date_precision": "month",
+      "publication_type": "article",
+      "peer_review_status": "peer-reviewed",
+      "venue": "Global Environmental Change",
+      "volume": "35",
+      "issue": null,
+      "pages": "93–105",
+      "article_number": null,
+      "doi": "10.1016/j.gloenvcha.2015.07.009",
+      "other_identifiers": [],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1016/j.gloenvcha.2015.07.009",
+      "citation": "Gouldson, A., Colenbrander, S., Sudmant, A., McAnulla, F., Kerr, N., Sakai, P., Hall, S., Papargyropoulou, E., & Kuylenstierna, J. (2015). Exploring the economic case for climate action in cities. Global Environmental Change, 35, 93–105.",
+      "abstract_summary": "The article examines the economic rationale for city-level climate action and assesses how investment costs and wider benefits shape the case for action.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Prior collaborative research included as an intellectual foundation for climate appraisal and delivery.",
+      "primary_theme": "co-benefits-place-based-valuation",
+      "secondary_themes": [
+        "climate-governance-delivery"
+      ],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [
+        "municipal"
+      ],
+      "methods": [
+        "economic-appraisal",
+        "comparative-case-study"
+      ],
+      "climate_domains": [
+        "mitigation"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": true,
+      "metadata_sources": [
+        "orcid",
+        "crossref",
+        "publisher"
+      ],
+      "last_verified_date": "2026-08-14",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1016/j.gloenvcha.2015.07.009",
+          "retrieved_date": "2026-08-14"
+        }
+      ],
+      "verification_status": "verified",
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false
+    },
+    {
+      "record_id": "exploring-the-economic-case-for-early-investment-in-climate-change-mitigation-in-middle-in",
+      "title": "Exploring the economic case for early investment in climate change mitigation in middle-income countries: a case study of Johor Bahru, Malaysia",
+      "authors": [
+        "Sarah Colenbrander",
+        "Andy Gouldson",
+        "Andrew Heshedahl Sudmant",
+        "Effie Papargyropoulou",
+        "Loon Wai Chau",
+        "Chin Siong Ho"
+      ],
+      "publication_date": "2015-06-02",
+      "date_precision": "exact",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Climate and Development",
+      "volume": "8",
+      "issue": "4",
+      "pages": "351-364",
+      "article_number": null,
+      "doi": "10.1080/17565529.2015.1040367",
+      "other_identifiers": [
+        "doi:10.1080/17565529.2015.1040367",
+        "issn:1756-5529",
+        "wosuid:WOS:000380276700005",
+        "source-work-id:327421",
+        "eid:2-s2.0-84930331055"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1080/17565529.2015.1040367",
+      "citation": "Sarah Colenbrander, Andy Gouldson, Andrew Heshedahl Sudmant, Effie Papargyropoulou, Loon Wai Chau, Chin Siong Ho. (2015). Exploring the economic case for early investment in climate change mitigation in middle-income countries: a case study of Johor Bahru, Malaysia. Climate and Development. https://doi.org/10.1080/17565529.2015.1040367",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "co-benefits-place-based-valuation",
+      "secondary_themes": [],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1080/17565529.2015.1040367",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "the-economic-case-for-low-carbon-development-in-rapidly-growing-developing-world-cities-a",
+      "title": "The economic case for low-carbon development in rapidly growing developing world cities: A case study of Palembang, Indonesia",
+      "authors": [
+        "Sarah Colenbrander",
+        "Andy Gouldson",
+        "Andrew Heshedahl Sudmant",
+        "Effie Papargyropoulou"
+      ],
+      "publication_date": "2015-05",
+      "date_precision": "month",
+      "publication_type": "article",
+      "peer_review_status": "unknown",
+      "venue": "Energy Policy",
+      "volume": "80",
+      "issue": null,
+      "pages": "24-35",
+      "article_number": null,
+      "doi": "10.1016/j.enpol.2015.01.020",
+      "other_identifiers": [
+        "doi:10.1016/j.enpol.2015.01.020",
+        "issn:0301-4215",
+        "wosuid:WOS:000351978000003",
+        "source-work-id:317996",
+        "eid:2-s2.0-84924275576"
+      ],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://doi.org/10.1016/j.enpol.2015.01.020",
+      "citation": "Sarah Colenbrander, Andy Gouldson, Andrew Heshedahl Sudmant, Effie Papargyropoulou. (2015). The economic case for low-carbon development in rapidly growing developing world cities: A case study of Palembang, Indonesia. Energy Policy. https://doi.org/10.1016/j.enpol.2015.01.020",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
+      "primary_theme": "co-benefits-place-based-valuation",
+      "secondary_themes": [],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "crossref"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Crossref DOI record",
+          "url": "https://api.crossref.org/works/10.1016/j.enpol.2015.01.020",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    }
+  ]
+}

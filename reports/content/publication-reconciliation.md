@@ -1,6 +1,6 @@
 # Publication reconciliation
 
-Retrieved: 2026-08-14T19:16:52.144986+00:00
+Retrieved: 2026-08-17T18:19:41.167319+00:00
 Identity source: ORCID `0000-0001-8650-8419`
 
 ## Summary
@@ -23,7 +23,7 @@ Identity source: ORCID `0000-0001-8650-8419`
 | Data Scaling: Implications for Climate Action and Governance in the UK | 2024-05-29 | 10.1007/s00267-024-01991-5 | crossref | included |
 | Infrastructure Transitions in Southern Cities: Organising Urban Service Delivery for Climate and Development | 2024-08-29 | 10.17645/up.8302 | crossref | included |
 | Towards a public policy of cities and human settlements in the 21st century | 2024-06-24 | 10.1038/s42949-024-00168-7 | crossref | candidate |
-| Community Participation in Urban Land and Housing Delivery: Evidence from Kerala (India) and Dar es Salaam (Tanzania) | 2024-05-09 | 10.3390/land13050641 | crossref | excluded by owner override |
+| Community Participation in Urban Land and Housing Delivery: Evidence from Kerala (India) and Dar es Salaam (Tanzania) | 2024-05-09 | 10.3390/land13050641 | crossref | candidate |
 | Beyond domain-led conceptualizations of urban zero-carbon transitions | 2023-12-06 | 10.20935/acadenvsci6141 | crossref | candidate |
 | Pluralizing the urban waste economy: insights from community-based enterprises in Ahmedabad (India) and Kampala (Uganda) | 2023-08-31 | 10.1177/09562478231190475 | crossref | candidate |
 | An Analysis of Net-Zero Carbon Options for the Belfast Region | 2023-06-23 | 10.5281/zenodo.8075492 | datacite | candidate |

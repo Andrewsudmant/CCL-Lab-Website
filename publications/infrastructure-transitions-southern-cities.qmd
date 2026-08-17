@@ -16,15 +16,6 @@ description: "The article examines how institutions organise urban service deliv
 
 [Open the original source](https://doi.org/10.17645/up.8302)
 
-## Research relationships
-
-**Primary theme:** [Climate governance and delivery modes](/research/themes/climate-governance-delivery.html)  
-**Related themes:** [Co-benefits, co-costs and place-based valuation](/research/themes/co-benefits-place-based-valuation.html)
-
-## Connected projects
-
-No connected project is recorded.
-
 ## Metadata provenance
 
-Metadata sources: orcid, crossref, publisher · last verified 2026-08-14 · status: verified. Dates are displayed only to the precision supplied by the verified record.
+Metadata sources: orcid, crossref, publisher · last verified 2026-08-14 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.

@@ -2,6 +2,8 @@ override_version: "1.0.0"
 person_orcid: "0000-0001-8650-8419"
 overrides:
   10.3390/land13050641:
-    exclude_from_public_inventory: true
-    reason: Owner decision excludes MDPI journal literature from featured public outputs.
-    reviewed_date: 2026-08-14
+    featured: false
+    current_conversations_eligible: false
+    mdpi_excluded: true
+    reason: Owner decision includes verified MDPI authorship in the complete record but excludes it from selected outputs and Current Conversations.
+    reviewed_date: 2026-08-17

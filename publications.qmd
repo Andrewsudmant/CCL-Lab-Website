@@ -1,8 +1,12 @@
 ---
-title: "Publications"
-description: "Publications from the Cities & Climate Learning Lab."
+title: "Selected publications and outputs"
+description: "Selected publications and outputs most relevant to the Cities & Climate Learning Lab."
 ---
 
-<p class="page-deck">The Cities and Climate Learning Lab is newly established at Simon Fraser University. This page brings together current lab outputs and selected foundational work by the lab director and collaborators.</p>
+<p class="page-deck">Ten verified outputs selected for their relevance to the lab's themes, alongside a separate complete scholarly record.</p>
 
-{{< include generated/publications.qmd >}}
+The Cities and Climate Learning Lab is newly established at Simon Fraser University. Most selected outputs are foundational prior work by Andrew Sudmant and collaborators, not outputs produced by the new lab.
+
+[Browse the complete verified publication record →](/publications/complete.html)
+
+{{< include generated/publications-selected.qmd >}}

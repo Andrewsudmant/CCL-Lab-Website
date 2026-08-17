@@ -16,15 +16,6 @@ description: "The preprint examines the uneven geography of urban climate eviden
 
 [Open the original source](https://doi.org/10.21203/rs.3.rs-9268986/v1)
 
-## Research relationships
-
-**Primary theme:** [Urban climate learning and evidence transfer](/research/themes/urban-climate-learning.html)  
-**Related themes:** [Urban climate evidence infrastructure and decision-support tools](/research/themes/evidence-infrastructure-tools.html)
-
-## Connected projects
-
-- [Geography of urban climate evidence](/projects/geography-urban-climate-evidence.html)
-
 ## Metadata provenance
 
-Metadata sources: crossref, repository · last verified 2026-08-14 · status: verified. Dates are displayed only to the precision supplied by the verified record.
+Metadata sources: crossref, repository · last verified 2026-08-14 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.

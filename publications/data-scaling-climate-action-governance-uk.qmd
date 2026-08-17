@@ -16,15 +16,6 @@ description: "The article examines how changing the spatial scale of climate evi
 
 [Open the original source](https://doi.org/10.1007/s00267-024-01991-5)
 
-## Research relationships
-
-**Primary theme:** [Urban climate evidence infrastructure and decision-support tools](/research/themes/evidence-infrastructure-tools.html)  
-**Related themes:** [Co-benefits, co-costs and place-based valuation](/research/themes/co-benefits-place-based-valuation.html), [Climate governance and delivery modes](/research/themes/climate-governance-delivery.html)
-
-## Connected projects
-
-- [Data Methodologies for Climate Impact Assessment](/projects/data-methodologies-climate-impact.html)
-
 ## Metadata provenance
 
-Metadata sources: orcid, crossref, publisher · last verified 2026-08-14 · status: verified. Dates are displayed only to the precision supplied by the verified record.
+Metadata sources: orcid, crossref, publisher · last verified 2026-08-14 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.

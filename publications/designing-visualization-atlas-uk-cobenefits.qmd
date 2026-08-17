@@ -16,15 +16,6 @@ description: "The preprint reflects on the design process for the UK Co-Benefits
 
 [Open the original source](https://arxiv.org/abs/2604.20781v2)
 
-## Research relationships
-
-**Primary theme:** [Urban climate evidence infrastructure and decision-support tools](/research/themes/evidence-infrastructure-tools.html)  
-**Related themes:** [Co-benefits, co-costs and place-based valuation](/research/themes/co-benefits-place-based-valuation.html)
-
-## Connected projects
-
-- [UK Co-Benefits Atlas](/projects/uk-co-benefits-atlas.html)
-
 ## Metadata provenance
 
-Metadata sources: datacite, repository · last verified 2026-08-14 · status: verified. Dates are displayed only to the precision supplied by the verified record.
+Metadata sources: datacite, repository · last verified 2026-08-14 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.

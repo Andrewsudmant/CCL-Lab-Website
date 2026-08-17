@@ -16,15 +16,6 @@ description: "A systematic assessment of how European urban climate action plans
 
 [Open the original source](https://doi.org/10.1016/j.rser.2019.109623)
 
-## Research relationships
-
-**Primary theme:** [Climate governance and delivery modes](/research/themes/climate-governance-delivery.html)  
-**Related themes:** [Urban climate learning and evidence transfer](/research/themes/urban-climate-learning.html)
-
-## Connected projects
-
-No connected project is recorded.
-
 ## Metadata provenance
 
-Metadata sources: orcid, crossref, publisher · last verified 2026-08-14 · status: verified. Dates are displayed only to the precision supplied by the verified record.
+Metadata sources: orcid, crossref, publisher · last verified 2026-08-14 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.

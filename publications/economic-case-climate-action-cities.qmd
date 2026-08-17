@@ -16,15 +16,6 @@ description: "The article examines the economic rationale for city-level climate
 
 [Open the original source](https://doi.org/10.1016/j.gloenvcha.2015.07.009)
 
-## Research relationships
-
-**Primary theme:** [Co-benefits, co-costs and place-based valuation](/research/themes/co-benefits-place-based-valuation.html)  
-**Related themes:** [Climate governance and delivery modes](/research/themes/climate-governance-delivery.html)
-
-## Connected projects
-
-No connected project is recorded.
-
 ## Metadata provenance
 
-Metadata sources: orcid, crossref, publisher · last verified 2026-08-14 · status: verified. Dates are displayed only to the precision supplied by the verified record.
+Metadata sources: orcid, crossref, publisher · last verified 2026-08-14 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.

@@ -36,6 +36,8 @@
     "sectors": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
     "connected_projects": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
     "featured": {"type": "boolean"},
+    "current_conversations_eligible": {"type": "boolean"},
+    "mdpi_excluded": {"type": "boolean"},
     "metadata_sources": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["orcid", "crossref", "datacite", "publisher", "repository", "institutional-profile", "owner-override"]}},
     "last_verified_date": {"type": "string", "format": "date"},
     "authoritative_sources": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/source"}},

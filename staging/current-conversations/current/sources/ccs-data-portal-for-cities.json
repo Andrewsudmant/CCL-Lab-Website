@@ -1,0 +1,51 @@
+{
+  "source_id": "ccs-data-portal-for-cities",
+  "title": "Data Portal for Cities",
+  "original_url": "https://dataportalforcities.org/",
+  "canonical_url": "https://dataportalforcities.org/",
+  "stable_identifier": null,
+  "authors_or_organisation": [
+    "Data Portal for Cities"
+  ],
+  "publication_date": "2026-08-01",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "data-and-tools",
+  "source_type": "data-tool",
+  "source_role": "dataset-or-tool",
+  "publisher_or_platform": "Data Portal for Cities",
+  "source_domain": "dataportalforcities.org",
+  "language": "en",
+  "geographies": [
+    "global"
+  ],
+  "evidence_basis": [
+    "data-or-tool-description"
+  ],
+  "evidence_limitations": "The page describes intended capabilities; coverage, uncertainty and decision impact were not independently assessed.",
+  "content_access_status": "substantive",
+  "content_hash": "b247ab05dc0f28e5a5038ac1a3219847647e89082d709708647316a4c254353a",
+  "discovery": {
+    "adapter": "captured-web-fixture",
+    "query_id": "cc-fixture-evidence-infrastructure-tools",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "The platform provides preliminary city emissions data and export functions intended to help local governments build inventories and set priorities.",
+    "reason_for_relevance": "It is an example of shared evidence infrastructure intended to fill local data gaps and support municipal reporting."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": true
+}

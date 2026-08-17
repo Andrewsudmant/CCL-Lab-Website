@@ -1,0 +1,51 @@
+{
+  "source_id": "ccs-climate-central-local-records",
+  "title": "Local Records Data Viewer",
+  "original_url": "https://app.climatecentral.org/dataviz/local-records/data-viewer",
+  "canonical_url": "https://app.climatecentral.org/dataviz/local-records/data-viewer",
+  "stable_identifier": null,
+  "authors_or_organisation": [
+    "Climate Central"
+  ],
+  "publication_date": "2026-07-27",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "data-and-tools",
+  "source_type": "data-tool",
+  "source_role": "dataset-or-tool",
+  "publisher_or_platform": "Climate Central",
+  "source_domain": "app.climatecentral.org",
+  "language": "en",
+  "geographies": [
+    "global"
+  ],
+  "evidence_basis": [
+    "data-or-tool-description"
+  ],
+  "evidence_limitations": "Coverage is US-specific and the private pilot did not test usability or reproduce the underlying calculations.",
+  "content_access_status": "substantive",
+  "content_hash": "9e208131dce8fd56596f4e0d35deee85bba36c932ad52875ba29a6eaf5a796fd",
+  "discovery": {
+    "adapter": "captured-web-fixture",
+    "query_id": "cc-fixture-evidence-infrastructure-tools",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "The viewer provides filterable daily temperature records for US cities using open data from NOAA regional climate centres.",
+    "reason_for_relevance": "It is a concrete example of an urban-facing data interface whose design and provenance shape evidence use."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": true
+}

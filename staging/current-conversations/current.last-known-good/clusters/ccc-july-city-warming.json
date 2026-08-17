@@ -1,0 +1,52 @@
+{
+  "cluster_id": "ccc-july-city-warming",
+  "slug": "july-city-warming",
+  "public_title": "July 4th: The Hottest Month Is Getting Hotter After 250 Years of Climate Change",
+  "discussion_statement": "Climate Central presents city-level July temperature trends, downloadable data and methodology for more than 240 US cities.",
+  "date_first_observed": "2026-07-01",
+  "date_most_recently_observed": "2026-07-01",
+  "principal_source_id": "ccs-climate-central-july-warming",
+  "linked_source_ids": [],
+  "primary_theme": "evidence-infrastructure-tools",
+  "secondary_themes": [],
+  "geographies": [
+    "global"
+  ],
+  "source_environments": [
+    "blogs-and-commentary"
+  ],
+  "principal_source_role": "research-commentary",
+  "summary": "Climate Central presents city-level July temperature trends, downloadable data and methodology for more than 240 US cities.",
+  "reason_for_relevance": "The item demonstrates how analysis, local data and communication products are assembled for urban evidence use.",
+  "limitations": "The analysis is outside the 30-day pilot window and is geographically limited to US cities.",
+  "agreement_disagreement_uncertainty": "No source disagreement was established by the captured evidence.",
+  "clustering": {
+    "confidence": 1.0,
+    "rationale": "Single-source cluster.",
+    "method": "stable-link-and-event-identity",
+    "version": "1.0.0",
+    "supporting_identifiers": [
+      "https://www.climatecentral.org/climate-matters/250-years-of-climate-change"
+    ],
+    "principal_source_rationale": "The original evidence or official source is principal; reporting, analysis and commentary remain separately attributed."
+  },
+  "ai_provenance": {
+    "used": false,
+    "model": null,
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "publication_decision": "published",
+  "correction_status": "none",
+  "availability_status": "available",
+  "history": [
+    {
+      "date": "2026-08-17",
+      "action": "created",
+      "note": "Created for private mixed-source calibration; identifiers remain stable."
+    }
+  ],
+  "homepage_eligible": true,
+  "archive_date": null,
+  "captured_fixture": true
+}

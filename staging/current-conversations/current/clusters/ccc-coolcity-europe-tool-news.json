@@ -1,0 +1,52 @@
+{
+  "cluster_id": "ccc-coolcity-europe-tool-news",
+  "slug": "coolcity-europe-tool-news",
+  "public_title": "Planning data-driven climate adaptation actions",
+  "discussion_statement": "The Covenant of Mayors describes a platform offering comparable Earth-observation data intended to support adaptation planning across European cities.",
+  "date_first_observed": "2026-07-29",
+  "date_most_recently_observed": "2026-07-29",
+  "principal_source_id": "ccs-coolcity-europe-tool-news",
+  "linked_source_ids": [],
+  "primary_theme": "evidence-infrastructure-tools",
+  "secondary_themes": [],
+  "geographies": [
+    "europe"
+  ],
+  "source_environments": [
+    "policy-and-institutions"
+  ],
+  "principal_source_role": "official-announcement",
+  "summary": "The Covenant of Mayors describes a platform offering comparable Earth-observation data intended to support adaptation planning across European cities.",
+  "reason_for_relevance": "It is a live example of urban evidence infrastructure and the claims made about its decision-support use.",
+  "limitations": "The announcement describes intended use; independent usability and impact evidence were not accessed.",
+  "agreement_disagreement_uncertainty": "No source disagreement was established by the captured evidence.",
+  "clustering": {
+    "confidence": 1.0,
+    "rationale": "Single-source cluster.",
+    "method": "stable-link-and-event-identity",
+    "version": "1.0.0",
+    "supporting_identifiers": [
+      "https://eu-mayors.ec.europa.eu/en/news/planning-data-driven-climate-adaptation-actions"
+    ],
+    "principal_source_rationale": "The original evidence or official source is principal; reporting, analysis and commentary remain separately attributed."
+  },
+  "ai_provenance": {
+    "used": false,
+    "model": null,
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "publication_decision": "published",
+  "correction_status": "none",
+  "availability_status": "available",
+  "history": [
+    {
+      "date": "2026-08-17",
+      "action": "created",
+      "note": "Created for private mixed-source calibration; identifiers remain stable."
+    }
+  ],
+  "homepage_eligible": true,
+  "archive_date": null,
+  "captured_fixture": true
+}

@@ -1,0 +1,51 @@
+{
+  "source_id": "ccs-axios-austin-tree-canopy",
+  "title": "How Austin uses AI to address tree canopies",
+  "original_url": "https://www.axios.com/local/austin/2026/06/04/austin-google-ai-tree-canopies",
+  "canonical_url": "https://www.axios.com/local/austin/2026/06/04/austin-google-ai-tree-canopies",
+  "stable_identifier": null,
+  "authors_or_organisation": [
+    "Axios Austin"
+  ],
+  "publication_date": "2026-06-04",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "news-and-analysis",
+  "source_type": "news-reporting",
+  "source_role": "news-reporting",
+  "publisher_or_platform": "Axios Austin",
+  "source_domain": "www.axios.com",
+  "language": "en",
+  "geographies": [
+    "global"
+  ],
+  "evidence_basis": [
+    "permitted-excerpt"
+  ],
+  "evidence_limitations": "This item is older than the pilot window and the reporting does not independently validate the tool's estimates.",
+  "content_access_status": "substantive",
+  "content_hash": "c21f331a7949cd05692b335c16ab0ad3b9f5faf52c20d6bbbddec775373ce579",
+  "discovery": {
+    "adapter": "captured-web-fixture",
+    "query_id": "cc-fixture-evidence-infrastructure-tools",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "Axios reports on Austin's use of aerial, weather and socioeconomic data to examine tree-canopy and shade disparities.",
+    "reason_for_relevance": "The example links decision-support infrastructure with place-based heat exposure and distributional choices."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": true
+}

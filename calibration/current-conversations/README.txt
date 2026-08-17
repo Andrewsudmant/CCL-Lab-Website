@@ -1,0 +1,1 @@
+Open owner-labelling.html locally. Review each principal source, assign Clearly relevant, Potentially relevant, or Not relevant, assess grouping, add comments, and download the JSON. Labels calibrate discovery and clustering; they are not publication approvals. All examples are captured fixtures requiring owner review.

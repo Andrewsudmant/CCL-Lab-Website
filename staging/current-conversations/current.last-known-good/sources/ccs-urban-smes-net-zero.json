@@ -1,0 +1,54 @@
+{
+  "source_id": "ccs-urban-smes-net-zero",
+  "title": "Engaging urban SMEs in net-zero transitions to mitigate climate change: Navigating multi-level governance challenges",
+  "original_url": "https://doi.org/10.1177/02662426261464140",
+  "canonical_url": "https://doi.org/10.1177/02662426261464140",
+  "stable_identifier": {
+    "type": "doi",
+    "value": "10.1177/02662426261464140"
+  },
+  "authors_or_organisation": [
+    "Chamila Weerathunghe Arachchige and co-authors"
+  ],
+  "publication_date": "2026-08-15",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "academic-research",
+  "source_type": "peer-reviewed-article",
+  "source_role": "primary-research",
+  "publisher_or_platform": "Chamila Weerathunghe Arachchige and co-authors",
+  "source_domain": "doi.org",
+  "language": "en",
+  "geographies": [
+    "global"
+  ],
+  "evidence_basis": [
+    "abstract"
+  ],
+  "evidence_limitations": "The summary is constrained to provider-supplied abstract evidence.",
+  "content_access_status": "substantive",
+  "content_hash": "d785df2960a2795cb68078414cb4cd4690b337706d4bdaa9171f1910fcd46403",
+  "discovery": {
+    "adapter": "openalex",
+    "query_id": "cc-fixture-climate-governance-delivery",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "Drawing on interviews and policy documents, the study considers how multi-level governance arrangements influence climate action among small and medium-sized enterprises in Melbourne.",
+    "reason_for_relevance": "It examines how governance frameworks and delivery relationships affect implementation beyond municipal government itself."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": false
+}

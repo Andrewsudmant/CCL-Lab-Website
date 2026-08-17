@@ -1,57 +1,78 @@
-name: Research Watch scheduled candidate run
-
-concurrency:
-  group: research-watch-private-staging
-  cancel-in-progress: false
+name: Current Conversations bounded discovery
 
 on:
   schedule:
     - cron: "17 14 * * 2,5"
   workflow_dispatch:
     inputs:
-      use_openai:
-        description: "Run the OpenAI web-search adapter when its secret is configured"
-        type: boolean
-        default: false
+      mode:
+        description: "Explicit discovery mode"
+        type: choice
+        options: [fixture-only, live-academic, live-web, bluesky, staging-write]
+        default: fixture-only
+
+concurrency:
+  group: current-conversations-private-staging
+  cancel-in-progress: false
 
 permissions:
   contents: read
 
 jobs:
-  bounded-discovery:
+  discover-and-test:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 15
+    env:
+      RUN_MODE: ${{ inputs.mode || 'fixture-only' }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+      CURRENT_CONVERSATIONS_MAX_COST_CAD_PER_RUN: ${{ vars.CURRENT_CONVERSATIONS_MAX_COST_CAD_PER_RUN }}
+      CURRENT_CONVERSATIONS_MAX_COST_CAD_PER_MONTH: ${{ vars.CURRENT_CONVERSATIONS_MAX_COST_CAD_PER_MONTH }}
+      CURRENT_CONVERSATIONS_USD_PER_CAD: ${{ vars.CURRENT_CONVERSATIONS_USD_PER_CAD }}
+      CURRENT_CONVERSATIONS_USD_PER_CAD_DATE: ${{ vars.CURRENT_CONVERSATIONS_USD_PER_CAD_DATE }}
+      CURRENT_CONVERSATIONS_MAX_WEB_SEARCH_CALLS: ${{ vars.CURRENT_CONVERSATIONS_MAX_WEB_SEARCH_CALLS }}
+      CURRENT_CONVERSATIONS_MAX_WEB_ITEMS: ${{ vars.CURRENT_CONVERSATIONS_MAX_WEB_ITEMS }}
+      CURRENT_CONVERSATIONS_ESTIMATED_USD_PER_WEB_CALL: ${{ vars.CURRENT_CONVERSATIONS_ESTIMATED_USD_PER_WEB_CALL }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-          cache: pip
+        with: {python-version: "3.12", cache: pip}
       - run: python -m pip install -r requirements-dev.txt
-      - name: Validate control plane
-        run: make validate test
-      - name: Run transactional private pilot
-        env:
-          RESEARCH_WATCH_AUTOPUBLISH_ENABLED: ${{ vars.RESEARCH_WATCH_AUTOPUBLISH_ENABLED }}
-        run: PYTHONPATH=. python scripts/run_research_watch_pilot.py --limit-per-query 4
-      - name: Optional OpenAI web search
-        if: ${{ inputs.use_openai == true }}
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
-          OPENAI_MAX_COST_PER_RUN: ${{ vars.OPENAI_MAX_COST_PER_RUN }}
-          OPENAI_MAX_ITEMS_PER_RUN: ${{ vars.OPENAI_MAX_ITEMS_PER_RUN }}
-        run: PYTHONPATH=. python -m research_watch.run --adapter openai_web_search --limit 5 --output reports/pilot/openai-web.json
+      - run: make validate test
+      - name: Run explicit bounded mode
+        run: PYTHONPATH=. python scripts/run_current_conversations_pilot.py --mode "$RUN_MODE" --limit 2
       - uses: actions/upload-artifact@v4
         with:
-          name: research-watch-candidates-${{ github.run_id }}
+          name: current-conversations-${{ github.run_id }}
           path: |
-            reports/pilot
-            staging/research-watch/current
-            calibration/research-watch
+            reports/current-conversations
+            staging/current-conversations/current
+            calibration/current-conversations
           if-no-files-found: error
           retention-days: 14
 
-# Private artefacts only. This workflow has read-only repository permission, cannot
-# write to main, and does not deploy. RESEARCH_WATCH_AUTOPUBLISH_ENABLED remains a
-# future control and must default to false.
+  write-private-staging-branch:
+    needs: discover-and-test
+    if: ${{ (inputs.mode || 'fixture-only') == 'staging-write' && vars.CURRENT_CONVERSATIONS_STAGING_WRITE_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: automation/current-conversations-staging}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: python -m pip install -r requirements-dev.txt
+      - run: PYTHONPATH=. python scripts/run_current_conversations_pilot.py --mode staging-write
+      - run: python scripts/stage_current_conversations.py --verify-only
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/current-conversations/generated staging/current-conversations reports/current-conversations/runs state/current-conversations/budget current-conversations/feed.json current-conversations/feed.xml
+          git diff --cached --quiet || git commit -m "Update private Current Conversations staging"
+          git push origin HEAD:automation/current-conversations-staging
+
+# The write job is disabled unless the repository variable is exactly true, targets
+# only automation/current-conversations-staging, verifies an allowlist, and never
+# deploys or writes to main. Paid discovery fails closed unless all controls exist.

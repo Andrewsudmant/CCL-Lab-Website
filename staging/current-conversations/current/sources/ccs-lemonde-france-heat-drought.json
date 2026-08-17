@@ -1,0 +1,51 @@
+{
+  "source_id": "ccs-lemonde-france-heat-drought",
+  "title": "July breaks drought and heat records in France: The issue of water is becoming absolutely critical",
+  "original_url": "https://www.lemonde.fr/en/environment/article/2026/08/05/july-breaks-drought-and-heat-records-the-issue-of-water-is-becoming-absolutely-critical_6756164_114.html",
+  "canonical_url": "https://www.lemonde.fr/en/environment/article/2026/08/05/july-breaks-drought-and-heat-records-the-issue-of-water-is-becoming-absolutely-critical_6756164_114.html",
+  "stable_identifier": null,
+  "authors_or_organisation": [
+    "Le Monde"
+  ],
+  "publication_date": "2026-08-05",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "news-and-analysis",
+  "source_type": "news-reporting",
+  "source_role": "news-reporting",
+  "publisher_or_platform": "Le Monde",
+  "source_domain": "www.lemonde.fr",
+  "language": "en",
+  "geographies": [
+    "europe"
+  ],
+  "evidence_basis": [
+    "permitted-excerpt"
+  ],
+  "evidence_limitations": "The article is reporting rather than an official dataset; source claims remain attributed to the named institutions.",
+  "content_access_status": "substantive",
+  "content_hash": "9389bb016b20ee49e509bd3abae94052d8cfe34f6f734ad8fe0fa92d2f630758",
+  "discovery": {
+    "adapter": "captured-web-fixture",
+    "query_id": "cc-fixture-climate-governance-delivery",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "Le Monde reports on French heat and drought records and the resulting pressure on water systems, communities and public authorities.",
+    "reason_for_relevance": "The coverage highlights the delivery challenge of adapting services and urban systems under concurrent climate risks."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": true
+}

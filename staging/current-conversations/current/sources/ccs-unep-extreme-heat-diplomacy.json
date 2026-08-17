@@ -1,0 +1,51 @@
+{
+  "source_id": "ccs-unep-extreme-heat-diplomacy",
+  "title": "Beating the Heat Together: City Diplomacy and the Global Mobilization against Extreme Heat",
+  "original_url": "https://www.unep.org/events/unep-event/beating-heat-together-city-diplomacy-and-global-mobilization-against-extreme-heat",
+  "canonical_url": "https://www.unep.org/events/unep-event/beating-heat-together-city-diplomacy-and-global-mobilization-against-extreme-heat",
+  "stable_identifier": null,
+  "authors_or_organisation": [
+    "United Nations Environment Programme"
+  ],
+  "publication_date": "2026-08-03",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "policy-and-institutions",
+  "source_type": "institutional-event",
+  "source_role": "official-announcement",
+  "publisher_or_platform": "United Nations Environment Programme",
+  "source_domain": "www.unep.org",
+  "language": "en",
+  "geographies": [
+    "global"
+  ],
+  "evidence_basis": [
+    "official-webpage-body"
+  ],
+  "evidence_limitations": "An event page establishes the discussion agenda, not evidence of resulting policy change.",
+  "content_access_status": "substantive",
+  "content_hash": "95d8d95f8e89c129a6a785d45267731ed8bc2d86cd7d7865a006e664a5603283",
+  "discovery": {
+    "adapter": "captured-web-fixture",
+    "query_id": "cc-fixture-urban-climate-learning",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "UNEP's event page frames extreme heat as a topic for city diplomacy and shared urban learning among municipal and international actors.",
+    "reason_for_relevance": "It illustrates how cities exchange approaches and mobilize collective attention around climate risk."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": true
+}

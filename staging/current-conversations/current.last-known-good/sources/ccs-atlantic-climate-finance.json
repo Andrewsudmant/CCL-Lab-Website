@@ -1,0 +1,54 @@
+{
+  "source_id": "ccs-atlantic-climate-finance",
+  "title": "Assessing intersectional inequities in climate finance across Atlantic Canada",
+  "original_url": "https://doi.org/10.1007/s44274-026-00957-0",
+  "canonical_url": "https://doi.org/10.1007/s44274-026-00957-0",
+  "stable_identifier": {
+    "type": "doi",
+    "value": "10.1007/s44274-026-00957-0"
+  },
+  "authors_or_organisation": [
+    "Edmund Yirenkyi and Amanda Asiamah"
+  ],
+  "publication_date": "2026-08-13",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "academic-research",
+  "source_type": "peer-reviewed-article",
+  "source_role": "primary-research",
+  "publisher_or_platform": "Edmund Yirenkyi and Amanda Asiamah",
+  "source_domain": "doi.org",
+  "language": "en",
+  "geographies": [
+    "canada"
+  ],
+  "evidence_basis": [
+    "abstract"
+  ],
+  "evidence_limitations": "The captured abstract supports the topic and approach but not independent verification of findings.",
+  "content_access_status": "substantive",
+  "content_hash": "5fdc03d8cb83cf06b7a10e1a31ea61d0f9a69be559b21572ad467c1d6676f053",
+  "discovery": {
+    "adapter": "openalex",
+    "query_id": "cc-fixture-canadian-climate-policy",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "The study examines uneven access to government and philanthropic climate finance in Atlantic Canada, with a primary case study in Nova Scotia.",
+    "reason_for_relevance": "It addresses distributional consequences and institutional access within Canadian climate policy delivery."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": false
+}

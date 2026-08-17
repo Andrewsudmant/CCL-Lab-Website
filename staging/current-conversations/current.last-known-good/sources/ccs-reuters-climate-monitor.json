@@ -1,0 +1,51 @@
+{
+  "source_id": "ccs-reuters-climate-monitor",
+  "title": "Reuters Climate Monitor",
+  "original_url": "https://climate.copernicus.eu/reuters-launches-climate-monitor-tool-powered-copernicus-climate-change-service-data",
+  "canonical_url": "https://climate.copernicus.eu/reuters-launches-climate-monitor-tool-powered-copernicus-climate-change-service-data",
+  "stable_identifier": null,
+  "authors_or_organisation": [
+    "Reuters and Copernicus Climate Change Service"
+  ],
+  "publication_date": "2026-07-02",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "data-and-tools",
+  "source_type": "data-tool",
+  "source_role": "dataset-or-tool",
+  "publisher_or_platform": "Reuters and Copernicus Climate Change Service",
+  "source_domain": "climate.copernicus.eu",
+  "language": "en",
+  "geographies": [
+    "global"
+  ],
+  "evidence_basis": [
+    "data-or-tool-description"
+  ],
+  "evidence_limitations": "The announcement predates the pilot window and the interface was not independently evaluated.",
+  "content_access_status": "substantive",
+  "content_hash": "1b03b621ed342d65dd8680cba8e663d7f1eb59eac0f991d38c728f39f640a82d",
+  "discovery": {
+    "adapter": "captured-web-fixture",
+    "query_id": "cc-fixture-evidence-infrastructure-tools",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "Copernicus describes a Reuters interactive that compares current temperatures with historical averages and includes city-oriented views.",
+    "reason_for_relevance": "The tool shows how authoritative climate data are translated into a public decision and communication interface."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": true
+}

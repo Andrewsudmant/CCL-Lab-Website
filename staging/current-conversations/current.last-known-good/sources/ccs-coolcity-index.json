@@ -1,0 +1,51 @@
+{
+  "source_id": "ccs-coolcity-index",
+  "title": "COOLCITY Index.eu",
+  "original_url": "https://coolcityindex.eu/",
+  "canonical_url": "https://coolcityindex.eu/",
+  "stable_identifier": null,
+  "authors_or_organisation": [
+    "COOLCITY project"
+  ],
+  "publication_date": "2026-07-29",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "data-and-tools",
+  "source_type": "decision-support-tool",
+  "source_role": "dataset-or-tool",
+  "publisher_or_platform": "COOLCITY project",
+  "source_domain": "coolcityindex.eu",
+  "language": "en",
+  "geographies": [
+    "europe"
+  ],
+  "evidence_basis": [
+    "data-or-tool-description"
+  ],
+  "evidence_limitations": "The source was identified through an institutional announcement; direct tool evaluation remains outstanding.",
+  "content_access_status": "substantive",
+  "content_hash": "8ac36d580701d67efd473aa60e2e5939fdd6598e8b15e2bf76d0caa97cb4ebbc",
+  "discovery": {
+    "adapter": "captured-web-fixture",
+    "query_id": "cc-fixture-evidence-infrastructure-tools",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "The platform offers comparable urban climate and environmental indicators intended to support adaptation prioritisation across European cities.",
+    "reason_for_relevance": "It is directly relevant to the design and governance of municipal climate decision-support infrastructure."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": true
+}

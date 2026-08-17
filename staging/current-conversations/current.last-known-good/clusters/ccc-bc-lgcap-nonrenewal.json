@@ -1,0 +1,55 @@
+{
+  "cluster_id": "ccc-bc-lgcap-nonrenewal",
+  "slug": "bc-lgcap-nonrenewal",
+  "public_title": "Local Government Climate Action Program has not been renewed",
+  "discussion_statement": "UBCM reports that a provincial programme used by local governments for climate staffing, planning and implementation was not renewed in the 2026/27 service plan.",
+  "date_first_observed": "2026-04-15",
+  "date_most_recently_observed": "2026-04-15",
+  "principal_source_id": "ccs-bc-lgcap-nonrenewal",
+  "linked_source_ids": [],
+  "primary_theme": "canadian-climate-policy",
+  "secondary_themes": [
+    "climate-governance-delivery"
+  ],
+  "geographies": [
+    "canada",
+    "british-columbia"
+  ],
+  "source_environments": [
+    "policy-and-institutions"
+  ],
+  "principal_source_role": "practitioner-commentary",
+  "summary": "UBCM reports that a provincial programme used by local governments for climate staffing, planning and implementation was not renewed in the 2026/27 service plan.",
+  "reason_for_relevance": "The item concerns the stability of intergovernmental funding and municipal delivery capacity in British Columbia.",
+  "limitations": "The item predates the 30-day pilot window and is included only as a captured calibration fixture.",
+  "agreement_disagreement_uncertainty": "No source disagreement was established by the captured evidence.",
+  "clustering": {
+    "confidence": 1.0,
+    "rationale": "Single-source cluster.",
+    "method": "stable-link-and-event-identity",
+    "version": "1.0.0",
+    "supporting_identifiers": [
+      "https://www.ubcm.ca/about-ubcm/latest-news/local-government-climate-action-program-has-not-been-renewed"
+    ],
+    "principal_source_rationale": "The original evidence or official source is principal; reporting, analysis and commentary remain separately attributed."
+  },
+  "ai_provenance": {
+    "used": false,
+    "model": null,
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "publication_decision": "published",
+  "correction_status": "none",
+  "availability_status": "available",
+  "history": [
+    {
+      "date": "2026-08-17",
+      "action": "created",
+      "note": "Created for private mixed-source calibration; identifiers remain stable."
+    }
+  ],
+  "homepage_eligible": true,
+  "archive_date": null,
+  "captured_fixture": true
+}

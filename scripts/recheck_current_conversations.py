@@ -3,14 +3,14 @@
 from __future__ import annotations
 import argparse, datetime as dt, json, urllib.error, urllib.request
 from pathlib import Path
-from research_watch.transaction import recheck_status
+from current_conversations.transaction import recheck_status
 from scripts.content import ROOT
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(); parser.add_argument("--network", action="store_true"); parser.add_argument("--limit", type=int, default=12); args = parser.parse_args()
     rows = []
-    for path in sorted((ROOT / "staging/research-watch/current/published").glob("*.json"))[:args.limit]:
+    for path in sorted((ROOT / "staging/current-conversations/current/published").glob("*.json"))[:args.limit]:
         record = json.loads(path.read_text()); status = None; final = record["url"]
         if args.network:
             try:

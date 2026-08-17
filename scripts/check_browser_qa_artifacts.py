@@ -5,8 +5,16 @@ try:
 except ImportError:
     from content import ROOT
 
-root = ROOT / "reports/screenshots/gate-3b-4a"
-required = [root / "desktop/home.jpg", root / "mobile/home.jpg", root / "zoom/home-200-percent.jpg", ROOT / "reports/browser-qa-gate-3b-4a.md"]
-missing = [str(p.relative_to(ROOT)) for p in required if not p.is_file()]
-if missing: raise SystemExit("Missing browser QA artefacts: " + ", ".join(missing))
-print("Browser QA artefact set is present.")
+required = [
+    ROOT / "reports/screenshots/gate-4b-5a-current-conversations-desktop.png",
+    ROOT / "reports/screenshots/gate-4b-5a-current-conversations-mobile.png",
+    ROOT / "reports/screenshots/gate-4b-5a-current-conversations-200-percent.png",
+    ROOT / "reports/screenshots/gate-4b-5a-publications-complete-desktop.png",
+    ROOT / "reports/screenshots/gate-4b-5a-publications-complete-mobile.png",
+    ROOT / "reports/screenshots/gate-4b-5a-multi-source-detail-desktop.png",
+    ROOT / "reports/browser-qa-gate-4b-5a.md",
+]
+missing = [str(path.relative_to(ROOT)) for path in required if not path.is_file()]
+if missing:
+    raise SystemExit("Missing browser QA artefacts: " + ", ".join(missing))
+print("Gate 4B–5A browser QA artefact set is present.")

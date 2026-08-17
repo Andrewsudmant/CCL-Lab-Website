@@ -18,11 +18,10 @@ def test_all_schema_documents_are_valid() -> None:
         Draft202012Validator.check_schema(schema)
 
 
-def test_published_withheld_and_quarantine_states_are_separate() -> None:
-    states = [{path.name for path in (ROOT / "data/research-watch" / state).glob("*.yml")} for state in ("published", "withheld", "quarantine")]
-    assert states[0]
-    assert states[1]
-    assert not (states[0] & states[1] or states[0] & states[2] or states[1] & states[2])
+def test_current_conversation_source_and_cluster_ids_are_separate() -> None:
+    sources = {json.loads(path.read_text())["source_id"] for path in (ROOT / "data/current-conversations/generated/sources").glob("*.json")}
+    clusters = {json.loads(path.read_text())["cluster_id"] for path in (ROOT / "data/current-conversations/generated/clusters").glob("*.json")}
+    assert sources and clusters and not (sources & clusters)
 
 
 def test_retired_theme_id_is_absent() -> None:

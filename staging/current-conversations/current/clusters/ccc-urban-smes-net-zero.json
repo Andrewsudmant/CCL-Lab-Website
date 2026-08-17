@@ -1,0 +1,52 @@
+{
+  "cluster_id": "ccc-urban-smes-net-zero",
+  "slug": "urban-smes-net-zero",
+  "public_title": "Engaging urban SMEs in net-zero transitions to mitigate climate change: Navigating multi-level governance challenges",
+  "discussion_statement": "Drawing on interviews and policy documents, the study considers how multi-level governance arrangements influence climate action among small and medium-sized enterprises in Melbourne.",
+  "date_first_observed": "2026-08-15",
+  "date_most_recently_observed": "2026-08-15",
+  "principal_source_id": "ccs-urban-smes-net-zero",
+  "linked_source_ids": [],
+  "primary_theme": "climate-governance-delivery",
+  "secondary_themes": [],
+  "geographies": [
+    "global"
+  ],
+  "source_environments": [
+    "academic-research"
+  ],
+  "principal_source_role": "primary-research",
+  "summary": "Drawing on interviews and policy documents, the study considers how multi-level governance arrangements influence climate action among small and medium-sized enterprises in Melbourne.",
+  "reason_for_relevance": "It examines how governance frameworks and delivery relationships affect implementation beyond municipal government itself.",
+  "limitations": "The summary is constrained to provider-supplied abstract evidence.",
+  "agreement_disagreement_uncertainty": "No source disagreement was established by the captured evidence.",
+  "clustering": {
+    "confidence": 1.0,
+    "rationale": "Single-source cluster.",
+    "method": "stable-link-and-event-identity",
+    "version": "1.0.0",
+    "supporting_identifiers": [
+      "https://doi.org/10.1177/02662426261464140"
+    ],
+    "principal_source_rationale": "The original evidence or official source is principal; reporting, analysis and commentary remain separately attributed."
+  },
+  "ai_provenance": {
+    "used": false,
+    "model": null,
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "publication_decision": "published",
+  "correction_status": "none",
+  "availability_status": "available",
+  "history": [
+    {
+      "date": "2026-08-17",
+      "action": "created",
+      "note": "Created for private mixed-source calibration; identifiers remain stable."
+    }
+  ],
+  "homepage_eligible": true,
+  "archive_date": null,
+  "captured_fixture": false
+}

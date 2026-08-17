@@ -1,0 +1,52 @@
+{
+  "cluster_id": "ccc-reuters-climate-monitor",
+  "slug": "reuters-climate-monitor",
+  "public_title": "Reuters Climate Monitor",
+  "discussion_statement": "Copernicus describes a Reuters interactive that compares current temperatures with historical averages and includes city-oriented views.",
+  "date_first_observed": "2026-07-02",
+  "date_most_recently_observed": "2026-07-02",
+  "principal_source_id": "ccs-reuters-climate-monitor",
+  "linked_source_ids": [],
+  "primary_theme": "evidence-infrastructure-tools",
+  "secondary_themes": [],
+  "geographies": [
+    "global"
+  ],
+  "source_environments": [
+    "data-and-tools"
+  ],
+  "principal_source_role": "dataset-or-tool",
+  "summary": "Copernicus describes a Reuters interactive that compares current temperatures with historical averages and includes city-oriented views.",
+  "reason_for_relevance": "The tool shows how authoritative climate data are translated into a public decision and communication interface.",
+  "limitations": "The announcement predates the pilot window and the interface was not independently evaluated.",
+  "agreement_disagreement_uncertainty": "No source disagreement was established by the captured evidence.",
+  "clustering": {
+    "confidence": 1.0,
+    "rationale": "Single-source cluster.",
+    "method": "stable-link-and-event-identity",
+    "version": "1.0.0",
+    "supporting_identifiers": [
+      "https://climate.copernicus.eu/reuters-launches-climate-monitor-tool-powered-copernicus-climate-change-service-data"
+    ],
+    "principal_source_rationale": "The original evidence or official source is principal; reporting, analysis and commentary remain separately attributed."
+  },
+  "ai_provenance": {
+    "used": false,
+    "model": null,
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "publication_decision": "published",
+  "correction_status": "none",
+  "availability_status": "available",
+  "history": [
+    {
+      "date": "2026-08-17",
+      "action": "created",
+      "note": "Created for private mixed-source calibration; identifiers remain stable."
+    }
+  ],
+  "homepage_eligible": true,
+  "archive_date": null,
+  "captured_fixture": true
+}

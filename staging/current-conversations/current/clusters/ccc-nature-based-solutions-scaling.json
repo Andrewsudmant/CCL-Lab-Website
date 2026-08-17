@@ -1,0 +1,54 @@
+{
+  "cluster_id": "ccc-nature-based-solutions-scaling",
+  "slug": "nature-based-solutions-scaling",
+  "public_title": "From pilot to paradigm: a call for entrepreneurial strategies to scale up the implementation of nature-based solutions",
+  "discussion_statement": "The article asks how cities can move nature-based solutions beyond isolated pilots and discusses more proactive implementation strategies and their potential co-benefits.",
+  "date_first_observed": "2026-08-13",
+  "date_most_recently_observed": "2026-08-13",
+  "principal_source_id": "ccs-nature-based-solutions-scaling",
+  "linked_source_ids": [],
+  "primary_theme": "climate-governance-delivery",
+  "secondary_themes": [
+    "co-benefits-place-based-valuation"
+  ],
+  "geographies": [
+    "global"
+  ],
+  "source_environments": [
+    "academic-research"
+  ],
+  "principal_source_role": "primary-research",
+  "summary": "The article asks how cities can move nature-based solutions beyond isolated pilots and discusses more proactive implementation strategies and their potential co-benefits.",
+  "reason_for_relevance": "Moving from pilots to city-wide delivery is central to the lab's interest in implementation arrangements and learning.",
+  "limitations": "Only the abstract was available to the captured discovery process.",
+  "agreement_disagreement_uncertainty": "No source disagreement was established by the captured evidence.",
+  "clustering": {
+    "confidence": 1.0,
+    "rationale": "Single-source cluster.",
+    "method": "stable-link-and-event-identity",
+    "version": "1.0.0",
+    "supporting_identifiers": [
+      "https://doi.org/10.1080/09654313.2026.2714960"
+    ],
+    "principal_source_rationale": "The original evidence or official source is principal; reporting, analysis and commentary remain separately attributed."
+  },
+  "ai_provenance": {
+    "used": false,
+    "model": null,
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "publication_decision": "published",
+  "correction_status": "none",
+  "availability_status": "available",
+  "history": [
+    {
+      "date": "2026-08-17",
+      "action": "created",
+      "note": "Created for private mixed-source calibration; identifiers remain stable."
+    }
+  ],
+  "homepage_eligible": true,
+  "archive_date": null,
+  "captured_fixture": false
+}

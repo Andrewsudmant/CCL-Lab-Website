@@ -1,0 +1,51 @@
+{
+  "source_id": "ccs-berkeley-synthesis-launch",
+  "title": "From Observation to Decision: An Introduction to Synthesis by Berkeley Earth",
+  "original_url": "https://berkeleyearth.org/from-observation-to-decision-an-introduction-to-synthesis-by-berkeley-earth/",
+  "canonical_url": "https://berkeleyearth.org/from-observation-to-decision-an-introduction-to-synthesis-by-berkeley-earth/",
+  "stable_identifier": null,
+  "authors_or_organisation": [
+    "Berkeley Earth"
+  ],
+  "publication_date": "2026-07-08",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "blogs-and-commentary",
+  "source_type": "research-blog",
+  "source_role": "research-commentary",
+  "publisher_or_platform": "Berkeley Earth",
+  "source_domain": "berkeleyearth.org",
+  "language": "en",
+  "geographies": [
+    "global"
+  ],
+  "evidence_basis": [
+    "official-webpage-body"
+  ],
+  "evidence_limitations": "This is the developer's own description, outside the 30-day window, and not an independent evaluation.",
+  "content_access_status": "substantive",
+  "content_hash": "70e39eb1ca3837488111d541a89101943430be2d636d7836ceff11f7d2323031",
+  "discovery": {
+    "adapter": "captured-web-fixture",
+    "query_id": "cc-fixture-evidence-infrastructure-tools",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "Berkeley Earth introduces a platform connecting historical observations with bias-corrected climate projections at local scale for cities and countries.",
+    "reason_for_relevance": "The source makes explicit claims about moving from observation to decision, directly engaging the lab's interest in usable evidence infrastructure."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": true
+}

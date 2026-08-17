@@ -1,0 +1,54 @@
+{
+  "cluster_id": "ccc-housing-climate-rights",
+  "slug": "housing-climate-rights",
+  "public_title": "Why the Right to Housing is the Key to Climate Survival",
+  "discussion_statement": "C40 commentary links housing rights, construction, affordability and climate resilience and points to a related white paper developed with The Shift.",
+  "date_first_observed": "2026-06-11",
+  "date_most_recently_observed": "2026-06-11",
+  "principal_source_id": "ccs-c40-housing-climate",
+  "linked_source_ids": [],
+  "primary_theme": "co-benefits-place-based-valuation",
+  "secondary_themes": [
+    "climate-governance-delivery"
+  ],
+  "geographies": [
+    "global"
+  ],
+  "source_environments": [
+    "blogs-and-commentary"
+  ],
+  "principal_source_role": "practitioner-commentary",
+  "summary": "C40 commentary links housing rights, construction, affordability and climate resilience and points to a related white paper developed with The Shift.",
+  "reason_for_relevance": "It frames climate action through place-based distribution, housing governance and co-costs rather than emissions alone.",
+  "limitations": "The commentary predates the pilot window and advances an argument rather than independently testing outcomes.",
+  "agreement_disagreement_uncertainty": "No source disagreement was established by the captured evidence.",
+  "clustering": {
+    "confidence": 1.0,
+    "rationale": "Single-source cluster.",
+    "method": "stable-link-and-event-identity",
+    "version": "1.0.0",
+    "supporting_identifiers": [
+      "https://www.c40.org/news/why-the-right-to-housing-is-the-key-to-climate-survival/"
+    ],
+    "principal_source_rationale": "The original evidence or official source is principal; reporting, analysis and commentary remain separately attributed."
+  },
+  "ai_provenance": {
+    "used": false,
+    "model": null,
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "publication_decision": "published",
+  "correction_status": "none",
+  "availability_status": "available",
+  "history": [
+    {
+      "date": "2026-08-17",
+      "action": "created",
+      "note": "Created for private mixed-source calibration; identifiers remain stable."
+    }
+  ],
+  "homepage_eligible": true,
+  "archive_date": null,
+  "captured_fixture": true
+}

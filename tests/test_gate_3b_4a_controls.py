@@ -122,7 +122,7 @@ def test_transaction_commit_and_rollback(tmp_path: Path) -> None:
     assert manifest["record_count"] == 1 and manifest["status"] == "validated"
 
 
-@pytest.mark.parametrize(("status", "redirected", "expected"), [(404, False, "link-unavailable"), (200, True, "corrected"), (200, False, "available"), (None, False, "under-review")])
+@pytest.mark.parametrize(("status", "redirected", "expected"), [(404, False, "unavailable"), (200, True, "redirected"), (200, False, "available"), (None, False, "under-review")])
 def test_recheck_states(status, redirected, expected) -> None:
     assert recheck_status(status, redirected) == expected
 
@@ -135,11 +135,11 @@ def test_raw_provider_payloads_and_secrets_are_not_tracked() -> None:
 
 def test_pipeline_is_not_a_build_side_effect() -> None:
     makefile = (ROOT / "Makefile").read_text()
-    build_block = makefile.split("build:", 1)[1].split("\n\n", 1)[0]
-    assert "research-watch-pilot" not in build_block and "run_research_watch_pilot" not in build_block
+    build_recipe = makefile.split("build: generate", 1)[1].split("linkcheck:", 1)[0]
+    assert "pilot" not in build_recipe and "discover" not in build_recipe
 
 
-@pytest.mark.parametrize("route", ["index.qmd", "research.qmd", "projects.qmd", "people.qmd", "outputs.qmd", "publications.qmd", "data-tools.qmd", "opportunities.qmd", "about-andrew.qmd", "contact.qmd", "research-watch/index.qmd", "research-watch/methods.qmd"])
+@pytest.mark.parametrize("route", ["index.qmd", "research.qmd", "projects.qmd", "people.qmd", "outputs.qmd", "publications.qmd", "data-tools.qmd", "opportunities.qmd", "about-andrew.qmd", "contact.qmd", "current-conversations/index.qmd", "current-conversations/how-it-works.qmd", "research-watch/index.qmd", "research-watch/methods.qmd"])
 def test_important_public_routes_remain(route: str) -> None:
     assert (ROOT / route).is_file()
 

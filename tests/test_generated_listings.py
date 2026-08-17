@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from scripts.content import ROOT, load_records, research_scope
 from scripts.generate_site import generate_all
 
@@ -10,24 +11,22 @@ def test_generated_listing_counts_match_records() -> None:
     people = (ROOT / "generated/people.qmd").read_text(encoding="utf-8")
     projects = (ROOT / "generated/projects.qmd").read_text(encoding="utf-8")
     publications = (ROOT / "generated/publications.qmd").read_text(encoding="utf-8")
-    reviewed = (ROOT / "generated/research-watch-reviewed.qmd").read_text(encoding="utf-8")
-    automated = (ROOT / "generated/research-watch-automated.qmd").read_text(encoding="utf-8")
+    conversations = (ROOT / "generated/current-conversations-feed.qmd").read_text(encoding="utf-8")
 
     assert themes.count('<article class="theme-card">') == len(research_scope()["themes"])
     assert people.count('<article class="record-card') == len(load_records("data/people"))
     assert projects.count('<article class="record-card') == len(load_records("data/projects"))
     assert publications.count('<article class="record-card') == len(load_records("data/publications"))
-    watch = load_records("data/research-watch/published")
-    assert reviewed.count('<article class="watch-card') == len([x for x in watch if x["review"]["status"] == "reviewed"])
-    assert automated.count('<article class="watch-card') == len([x for x in watch if x["review"]["status"] == "not_reviewed"])
+    clusters = [json.loads(path.read_text()) for path in (ROOT / "data/current-conversations/generated/clusters").glob("*.json")]
+    assert conversations.count('<article class="conversation-card') == len([x for x in clusters if x["publication_decision"] == "published"])
 
 
 def test_automated_listing_has_full_non_endorsement_language() -> None:
     generate_all()
-    page = (ROOT / "research-watch/index.qmd").read_text(encoding="utf-8")
+    page = (ROOT / "current-conversations/index.qmd").read_text(encoding="utf-8")
     assert "inclusion does not imply endorsement" in page
-    assert "Summaries may contain errors" in page
-    assert "AI-selected evidence" in page
+    assert "summaries may contain errors" in page
+    assert "Identified and summarized using AI" in (ROOT / "generated/current-conversations-feed.qmd").read_text()
 
 
 def test_canonical_detail_pages_and_theme_views_exist() -> None:

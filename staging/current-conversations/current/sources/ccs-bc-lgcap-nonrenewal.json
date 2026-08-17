@@ -1,0 +1,52 @@
+{
+  "source_id": "ccs-bc-lgcap-nonrenewal",
+  "title": "Local Government Climate Action Program has not been renewed",
+  "original_url": "https://www.ubcm.ca/about-ubcm/latest-news/local-government-climate-action-program-has-not-been-renewed",
+  "canonical_url": "https://www.ubcm.ca/about-ubcm/latest-news/local-government-climate-action-program-has-not-been-renewed",
+  "stable_identifier": null,
+  "authors_or_organisation": [
+    "Union of BC Municipalities"
+  ],
+  "publication_date": "2026-04-15",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "policy-and-institutions",
+  "source_type": "institutional-analysis",
+  "source_role": "practitioner-commentary",
+  "publisher_or_platform": "Union of BC Municipalities",
+  "source_domain": "www.ubcm.ca",
+  "language": "en",
+  "geographies": [
+    "canada",
+    "british-columbia"
+  ],
+  "evidence_basis": [
+    "official-webpage-body"
+  ],
+  "evidence_limitations": "The item predates the 30-day pilot window and is included only as a captured calibration fixture.",
+  "content_access_status": "substantive",
+  "content_hash": "fa960a6d827d054c23e2b4b3fab1cfc0347f9f59b41ecd37d349bbd9c4a47f8a",
+  "discovery": {
+    "adapter": "captured-web-fixture",
+    "query_id": "cc-fixture-canadian-climate-policy",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "UBCM reports that a provincial programme used by local governments for climate staffing, planning and implementation was not renewed in the 2026/27 service plan.",
+    "reason_for_relevance": "The item concerns the stability of intergovernmental funding and municipal delivery capacity in British Columbia."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": true
+}

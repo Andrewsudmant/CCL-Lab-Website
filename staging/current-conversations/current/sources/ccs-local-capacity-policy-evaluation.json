@@ -1,0 +1,54 @@
+{
+  "source_id": "ccs-local-capacity-policy-evaluation",
+  "title": "Local capacity building and policy evaluation in climate and environmental governance",
+  "original_url": "https://doi.org/10.1007/s44327-026-00345-6",
+  "canonical_url": "https://doi.org/10.1007/s44327-026-00345-6",
+  "stable_identifier": {
+    "type": "doi",
+    "value": "10.1007/s44327-026-00345-6"
+  },
+  "authors_or_organisation": [
+    "Gian Carlo Delgado Ramos"
+  ],
+  "publication_date": "2026-08-14",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "academic-research",
+  "source_type": "peer-reviewed-article",
+  "source_role": "primary-research",
+  "publisher_or_platform": "Gian Carlo Delgado Ramos",
+  "source_domain": "doi.org",
+  "language": "en",
+  "geographies": [
+    "global"
+  ],
+  "evidence_basis": [
+    "abstract"
+  ],
+  "evidence_limitations": "The captured OpenAlex abstract was available; the full analysis was not independently reproduced.",
+  "content_access_status": "substantive",
+  "content_hash": "428af93f4db8055c6bbb91228994b3111c142b42379e38e3c48bbbd0b140db37",
+  "discovery": {
+    "adapter": "openalex",
+    "query_id": "cc-fixture-urban-climate-learning",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "The paper examines how local capacity building and policy evaluation shape climate and environmental governance, using Mexico City as a case through which to discuss urban transformation.",
+    "reason_for_relevance": "It connects directly to how cities build the institutional capacity needed to interpret evidence and sustain climate action."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": false
+}

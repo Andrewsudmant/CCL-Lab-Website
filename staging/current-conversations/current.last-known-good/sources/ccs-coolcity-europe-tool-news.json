@@ -1,0 +1,51 @@
+{
+  "source_id": "ccs-coolcity-europe-tool-news",
+  "title": "Planning data-driven climate adaptation actions",
+  "original_url": "https://eu-mayors.ec.europa.eu/en/news/planning-data-driven-climate-adaptation-actions",
+  "canonical_url": "https://eu-mayors.ec.europa.eu/en/news/planning-data-driven-climate-adaptation-actions",
+  "stable_identifier": null,
+  "authors_or_organisation": [
+    "EU Covenant of Mayors"
+  ],
+  "publication_date": "2026-07-29",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "policy-and-institutions",
+  "source_type": "institutional-announcement",
+  "source_role": "official-announcement",
+  "publisher_or_platform": "EU Covenant of Mayors",
+  "source_domain": "eu-mayors.ec.europa.eu",
+  "language": "en",
+  "geographies": [
+    "europe"
+  ],
+  "evidence_basis": [
+    "official-webpage-body"
+  ],
+  "evidence_limitations": "The announcement describes intended use; independent usability and impact evidence were not accessed.",
+  "content_access_status": "substantive",
+  "content_hash": "dee9cbcfb89d2f0f2720d3177bdfc7235213aa82f06d68f2c3b4085d0d9bcc39",
+  "discovery": {
+    "adapter": "captured-web-fixture",
+    "query_id": "cc-fixture-evidence-infrastructure-tools",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "The Covenant of Mayors describes a platform offering comparable Earth-observation data intended to support adaptation planning across European cities.",
+    "reason_for_relevance": "It is a live example of urban evidence infrastructure and the claims made about its decision-support use."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": true
+}

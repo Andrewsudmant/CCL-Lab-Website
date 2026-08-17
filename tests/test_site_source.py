@@ -15,7 +15,7 @@ def test_required_navigation_pages_exist() -> None:
         "projects.qmd",
         "people.qmd",
         "publications.qmd",
-        "research-watch/index.qmd",
+        "current-conversations/index.qmd",
         "data-tools.qmd",
         "opportunities.qmd",
         "about-andrew.qmd",

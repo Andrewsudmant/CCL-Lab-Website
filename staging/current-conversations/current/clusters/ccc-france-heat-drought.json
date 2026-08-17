@@ -1,0 +1,52 @@
+{
+  "cluster_id": "ccc-france-heat-drought",
+  "slug": "france-heat-drought",
+  "public_title": "July breaks drought and heat records in France: The issue of water is becoming absolutely critical",
+  "discussion_statement": "Le Monde reports on French heat and drought records and the resulting pressure on water systems, communities and public authorities.",
+  "date_first_observed": "2026-08-05",
+  "date_most_recently_observed": "2026-08-05",
+  "principal_source_id": "ccs-lemonde-france-heat-drought",
+  "linked_source_ids": [],
+  "primary_theme": "climate-governance-delivery",
+  "secondary_themes": [],
+  "geographies": [
+    "europe"
+  ],
+  "source_environments": [
+    "news-and-analysis"
+  ],
+  "principal_source_role": "news-reporting",
+  "summary": "Le Monde reports on French heat and drought records and the resulting pressure on water systems, communities and public authorities.",
+  "reason_for_relevance": "The coverage highlights the delivery challenge of adapting services and urban systems under concurrent climate risks.",
+  "limitations": "The article is reporting rather than an official dataset; source claims remain attributed to the named institutions.",
+  "agreement_disagreement_uncertainty": "No source disagreement was established by the captured evidence.",
+  "clustering": {
+    "confidence": 1.0,
+    "rationale": "Single-source cluster.",
+    "method": "stable-link-and-event-identity",
+    "version": "1.0.0",
+    "supporting_identifiers": [
+      "https://www.lemonde.fr/en/environment/article/2026/08/05/july-breaks-drought-and-heat-records-the-issue-of-water-is-becoming-absolutely-critical_6756164_114.html"
+    ],
+    "principal_source_rationale": "The original evidence or official source is principal; reporting, analysis and commentary remain separately attributed."
+  },
+  "ai_provenance": {
+    "used": false,
+    "model": null,
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "publication_decision": "published",
+  "correction_status": "none",
+  "availability_status": "available",
+  "history": [
+    {
+      "date": "2026-08-17",
+      "action": "created",
+      "note": "Created for private mixed-source calibration; identifiers remain stable."
+    }
+  ],
+  "homepage_eligible": true,
+  "archive_date": null,
+  "captured_fixture": true
+}

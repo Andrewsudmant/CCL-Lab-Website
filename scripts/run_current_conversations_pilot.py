@@ -1,228 +1,171 @@
 #!/usr/bin/env python3
-"""Explicit, bounded Gate 3B-4A pilot and owner-calibration artefact builder."""
+"""Build the bounded Gate 4B–5A pilot from explicit fixtures or live diagnostics.
+
+The default mode is deterministic and network-free. Live provider modes must be
+requested separately; paid web search remains fail-closed unless every budget
+and credential control is configured.
+"""
 
 from __future__ import annotations
+
 import argparse
-import copy
 import csv
 import datetime as dt
 import html
 import json
 import os
-import time
 from collections import Counter
 from pathlib import Path
-import yaml
 
-from research_watch.adapters.base import AdapterError
-from research_watch.adapters.bluesky import BlueskyAdapter
-from research_watch.adapters.crossref import CrossrefAdapter
-from research_watch.adapters.datacite import DataCiteAdapter
-from research_watch.adapters.openalex import OpenAlexAdapter
-from research_watch.cluster import cluster, diverse, event_key
-from research_watch.normalize import deduplicate
-from research_watch.transaction import publish_transaction
-from scripts.content import ROOT, load_yaml
+from current_conversations.adapters.base import AdapterError
+from current_conversations.adapters.bluesky import BlueskyAdapter
+from current_conversations.adapters.crossref import CrossrefAdapter
+from current_conversations.adapters.datacite import DataCiteAdapter
+from current_conversations.adapters.openalex import OpenAlexAdapter
+from current_conversations.transaction import publish_current_state
 
-
-def slug(value: str) -> str:
-    import re
-    return re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")[:70]
+ROOT = Path(__file__).resolve().parents[1]
+TODAY = dt.date.today().isoformat()
 
 
-def full_record(item, theme: str, run_id: str, template: dict) -> dict:
-    record = copy.deepcopy(template)
-    record.update({
-        "record_id": f"pilot-{slug(item.title)}", "title": item.title, "url": item.url,
-        "canonical_url": item.url, "authors_or_organisation": item.authors or [item.source_name],
-        "source_type": item.source_type, "source_name": item.source_name,
-        "source_domain": __import__("urllib.parse").parse.urlsplit(item.raw_metadata.get("provider_source_url") or item.url).netloc.lower(),
-        "publication_date": item.publication_date or dt.date.today().isoformat(),
-        "retrieval_timestamp": dt.datetime.now(dt.timezone.utc).isoformat(),
-        "short_summary": (item.abstract or "")[:600] or "No substantive summary was generated because only bibliographic metadata was available.",
-        "reason_for_relevance": f"The source was retrieved by the bounded query for {theme.replace('-', ' ')} and requires calibration against the lab scope.",
-        "event_cluster_id": event_key(item), "captured_fixture": False,
-    })
-    record["stable_identifier"] = ({"type": "doi", "value": item.doi, "url": f"https://doi.org/{item.doi}"} if item.doi else ({"type": "openalex", "value": item.platform_identifier, "url": item.url} if item.platform_identifier else None))
-    record["platform_identifier"] = item.platform_identifier
-    record["discovery"] = {"run_id": run_id, "adapter": "openalex", "query_id": item.query_id, "query_version": "2.0.0"}
-    record["theme_assignments"] = {"primary": {"theme_id": theme, "score": 0.72, "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."}, "secondary": []}
-    record["evidence_basis"] = {"types": item.evidence_types, "description": "OpenAlex metadata and reconstructed abstract when supplied by the provider.", "sufficient_for_summary": bool(item.abstract), "limitations": "Provider metadata was not a substitute for independent full-text review."}
-    record["ai_provenance"] = {"used": False, "model": None, "prompt_version": "research-watch-classification-v2-fixture", "run_id": run_id, "structured_output_version": "2.0", "deterministic_transformations": ["query-theme calibration assignment", "abstract truncation"]}
-    record["confidence"] = {"score": 0.72 if item.abstract else 0.35, "label": "medium" if item.abstract else "low", "basis": "Confidence reflects evidence availability and deterministic query assignment."}
-    record["publication"] = {"decision": "published" if item.abstract else "withheld", "reasons": ["passed automatic publication controls"] if item.abstract else ["evidence insufficient for summary"], "checks_passed": ["source-url", "identifier", "disclosure", "bounded-run"] if item.abstract else ["source-url", "identifier"], "disclosure_version": "research-watch-disclosure-v1"}
-    record["risk_flags"] = ["none"] if item.abstract else ["title-only"]
-    record["review"] = {"status": "not_reviewed", "reviewer": None, "reviewed_date": None, "notes": None}
-    record["reviewer_edits"] = []
-    record["linked_sources"] = []
-    return record
+def load_json_dir(path: Path) -> list[dict]:
+    return [json.loads(item.read_text(encoding="utf-8")) for item in sorted(path.glob("*.json"))]
 
 
-def passes_relevance_gate(record: dict) -> bool:
-    """Conservative lexical gate used only when no classification model ran."""
-    text = (record["title"] + " " + record["short_summary"]).lower()
-    climate = any(term in text for term in ("climate", "decarbon", "net zero", "low-carbon", "low carbon", "green transition"))
-    if not climate:
-        return False
-    theme = record["theme_assignments"]["primary"]["theme_id"]
-    rules = {
-        "urban-climate-learning": (("urban", "city", "cities", "municipal"), ("evidence transfer", "policy learning", "knowledge exchange", "knowledge transfer", "evidence use")),
-        "climate-governance-delivery": (("urban", "city", "cities", "municipal"), ("governance", "deliver", "implementation", "institution")),
-        "co-benefits-place-based-valuation": (("co-benefit", "cobenefit", "valuation", "appraisal", "co-cost"),),
-        "just-transitions-workforce": (("occupation", "workforce", "skill", "labour", "labor", "worker"),),
-        "evidence-infrastructure-tools": (("urban", "city", "cities", "municipal"), ("evidence", "data", "model", "tool", "decision support")),
-        "canadian-climate-policy": (("canada", "canadian", "british columbia"),),
-    }
-    if not all(any(term in text for term in group) for group in rules[theme]):
-        return False
-    title = record["title"].lower()
-    title_rules = {
-        "urban-climate-learning": (("urban", "city", "cities"), ("climate",), ("evidence", "learning", "knowledge", "transfer")),
-        "climate-governance-delivery": (("urban", "city", "cities"), ("climate", "adaptation", "decarbon"), ("governance", "implementation", "mainstream", "delivery", "planning")),
-        "co-benefits-place-based-valuation": (("climate",), ("co-benefit", "cobenefit", "valuation", "appraisal", "co-cost")),
-        "just-transitions-workforce": (("occupation", "workforce", "skill", "worker"), ("transition", "green", "fossil", "climate")),
-        "evidence-infrastructure-tools": (("urban", "city", "cities"), ("climate",), ("data", "model", "tool", "decision", "mapping", "gis")),
-        "canadian-climate-policy": (("canada", "canadian", "british columbia"), ("climate",)),
-    }
-    return all(any(term in title for term in group) for group in title_rules[theme])
-
-
-def calibration_html(candidates: list[dict]) -> str:
+def calibration_html(clusters: list[dict], sources: dict[str, dict]) -> str:
     cards = []
-    for c in candidates:
-        cards.append(f'''<article data-id="{html.escape(c['record_id'])}"><h2><a href="{html.escape(c['url'])}">{html.escape(c['title'])}</a></h2><p>{html.escape(c['source_name'])} · {html.escape(c['publication_date'])} · {html.escape(c['source_type'])}</p><p><strong>Evidence:</strong> {html.escape(c['evidence_basis']['description'])}</p><p><strong>Proposed relevance:</strong> {html.escape(c['reason_for_relevance'])}</p><p><strong>Limitation:</strong> {html.escape(c['evidence_basis']['limitations'])}</p><label>Label <select><option value="">Choose…</option><option>clearly relevant</option><option>potentially relevant</option><option>not relevant</option></select></label><label> Comment <input type="text"></label></article>''')
-    return '''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>CCLL Research Watch calibration</title><style>body{font:17px/1.5 system-ui;max-width:900px;margin:auto;padding:2rem;color:#222}article{border-top:4px solid #b5121b;padding:1.3rem 0}label{display:block;margin:.7rem 0}input,select,button{font:inherit;padding:.4rem}button{margin:1rem 0}</style><h1>Research Watch owner calibration</h1><p>These labels evaluate discovery relevance; they are not publication approvals. Open each original source before labelling.</p><button id="export">Download structured labels</button>''' + "".join(cards) + '''<script>document.querySelector('#export').onclick=()=>{const labels=[...document.querySelectorAll('article')].map(a=>({record_id:a.dataset.id,label:a.querySelector('select').value,comment:a.querySelector('input').value}));const b=new Blob([JSON.stringify(labels,null,2)],{type:'application/json'});const x=document.createElement('a');x.href=URL.createObjectURL(b);x.download='research-watch-labels.json';x.click();};</script></html>'''
+    for cluster in clusters:
+        source = sources[cluster["principal_source_id"]]
+        cards.append(
+            f'''<article data-id="{html.escape(cluster['cluster_id'])}">
+<h2>{html.escape(cluster['public_title'])}</h2>
+<p><a href="{html.escape(source['original_url'])}">Open principal source</a> · {html.escape(source['publisher_or_platform'])} · {html.escape(source['publication_date'])}</p>
+<p><strong>Discussion:</strong> {html.escape(cluster['discussion_statement'])}</p>
+<p><strong>Why it may matter:</strong> {html.escape(cluster['reason_for_relevance'])}</p>
+<p><strong>Limitations:</strong> {html.escape(cluster['limitations'])}</p>
+<label>Relevance <select><option value="">Choose…</option><option>Clearly relevant</option><option>Potentially relevant</option><option>Not relevant</option></select></label>
+<label>Grouping <select><option value="">Choose…</option><option>Correctly grouped</option><option>Missing source</option><option>Should split</option></select></label>
+<label>Comments <textarea rows="3"></textarea></label></article>'''
+        )
+    return '''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CCLL Current Conversations calibration</title><style>body{font:17px/1.55 system-ui;max-width:900px;margin:auto;padding:2rem;color:#222}article{border-top:4px solid #a6192e;padding:1.4rem 0}label{display:block;margin:.7rem 0}select,textarea,button{font:inherit;padding:.45rem;width:100%;max-width:42rem}button{width:auto;background:#a6192e;color:white;border:0}</style></head><body><h1>Current Conversations owner calibration</h1><p>These labels test discovery relevance and source grouping. They are not publication approvals. Review the original source before labelling.</p><button id="export">Download structured labels</button>''' + "".join(cards) + '''<script>document.querySelector('#export').onclick=()=>{const labels=[...document.querySelectorAll('article')].map(a=>({cluster_id:a.dataset.id,relevance:a.querySelectorAll('select')[0].value,grouping:a.querySelectorAll('select')[1].value,comments:a.querySelector('textarea').value}));const b=new Blob([JSON.stringify(labels,null,2)],{type:'application/json'}),x=document.createElement('a');x.href=URL.createObjectURL(b);x.download='current-conversations-labels.json';x.click()};</script></body></html>'''
+
+
+def write_calibration(clusters: list[dict], sources: list[dict]) -> None:
+    directory = ROOT / "calibration/current-conversations"
+    directory.mkdir(parents=True, exist_ok=True)
+    source_map = {source["source_id"]: source for source in sources}
+    rows = []
+    for cluster in clusters[:25]:
+        source = source_map[cluster["principal_source_id"]]
+        rows.append({"cluster_id": cluster["cluster_id"], "title": cluster["public_title"], "principal_source": source["publisher_or_platform"], "url": source["original_url"], "primary_theme": cluster["primary_theme"], "relevance": "", "grouping": "", "comments": ""})
+    (directory / "candidates.json").write_text(json.dumps(rows, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    (directory / "empty-labels.json").write_text(json.dumps([{"cluster_id": row["cluster_id"], "relevance": "", "grouping": "", "comments": ""} for row in rows], indent=2) + "\n", encoding="utf-8")
+    (directory / "owner-labelling.html").write_text(calibration_html(clusters[:25], source_map), encoding="utf-8")
+    with (directory / "candidates.csv").open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
+        writer.writeheader(); writer.writerows(rows)
+    (directory / "README.txt").write_text(
+        "Open owner-labelling.html locally. Review each principal source, assign Clearly relevant, Potentially relevant, or Not relevant, assess grouping, add comments, and download the JSON. Labels calibrate discovery and clustering; they are not publication approvals. All examples are captured fixtures requiring owner review.\n",
+        encoding="utf-8",
+    )
+
+
+def validate_snapshot(path: Path) -> None:
+    manifest = json.loads((path / "run-manifest.json").read_text())
+    assert manifest["source_count"] >= manifest["cluster_count"] >= 1
+    assert (path / "feeds/feed.json").is_file() and (path / "feeds/feed.xml").is_file()
+    assert (path / "site/current-conversations-feed.fragment").is_file()
+
+
+def live_diagnostic(mode: str, limit: int) -> dict:
+    if mode == "live-academic":
+        query = "municipal climate policy learning evidence transfer"
+        providers = {"openalex": OpenAlexAdapter(), "crossref": CrossrefAdapter()}
+        result = {}
+        for name, adapter in providers.items():
+            try:
+                found = adapter.search(query, "cc-a01-learning", limit)
+                result[name] = {"status": "live-success", "count": len(found)}
+            except AdapterError as exc:
+                result[name] = {"status": "live-limited", "reason": str(exc)}
+        try:
+            DataCiteAdapter().enrich("10.1038/s41893-024-01371-3")
+            result["datacite"] = {"status": "live-success"}
+        except AdapterError as exc:
+            result["datacite"] = {"status": "live-limited", "reason": str(exc)}
+        return result
+    if mode == "bluesky":
+        try:
+            found = BlueskyAdapter().search("urban climate evidence", "cc-b01-learning", limit)
+            return {"bluesky": {"status": "live-success", "count": len(found)}}
+        except AdapterError as exc:
+            return {"bluesky": {"status": "live-limited", "reason": str(exc)}}
+    if mode == "live-web":
+        missing = [name for name in ("OPENAI_API_KEY", "OPENAI_MODEL", "CURRENT_CONVERSATIONS_MAX_COST_CAD_PER_RUN", "CURRENT_CONVERSATIONS_MAX_COST_CAD_PER_MONTH") if not os.environ.get(name)]
+        return {"openai-web-search": {"status": "not-run-fail-closed" if missing else "configured-but-requires-explicit-adapter-command", "missing_controls": missing, "cost_cad": "0.00"}}
+    return {}
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--limit-per-query", type=int, default=4)
-    parser.add_argument("--minimum-calibration", type=int, default=30)
+    parser.add_argument("--mode", choices=["fixture-only", "live-academic", "live-web", "bluesky", "staging-write"], default="fixture-only")
+    parser.add_argument("--limit", type=int, default=2)
     args = parser.parse_args()
-    pack = load_yaml(ROOT / "config/query_packs/research-watch-v1.yml")
-    run_id = "gate-3b-4a-" + dt.datetime.now().strftime("%Y%m%dT%H%M%S")
-    items, failures, counts = [], {}, Counter()
-    themes = {}
-    for query in pack["source_queries"]["openalex"]:
-        try:
-            found = OpenAlexAdapter().search(query["query"], query["id"], args.limit_per_query, pack["maximum_lookback_days"])
-            items.extend(found); counts[query["id"]] += len(found)
-            themes.update({id(x): query["themes"][0] for x in found})
-            time.sleep(0.35)
-        except AdapterError as exc:
-            failures[query["id"]] = str(exc)
-    items, duplicates = deduplicate(items)
-    if not items:
-        report_dir = ROOT / "reports/pilot"; report_dir.mkdir(parents=True, exist_ok=True)
-        failure = {"run_id": run_id, "status": "failed", "reason": "all primary discovery queries failed or returned no records", "provider_failures": failures, "last_known_good_preserved": (ROOT / "staging/research-watch/current/run-manifest.json").exists()}
-        (report_dir / f"failure-{run_id}.json").write_text(json.dumps(failure, indent=2) + "\n")
-        print(json.dumps(failure, indent=2))
-        return 2
-    principals, clusters = cluster(items)
-    template = load_yaml(ROOT / "data/research-watch/published/global-stocktake-captured-fixture.yml")
-    records = [full_record(x, themes.get(id(x), next(q["themes"][0] for q in pack["source_queries"]["openalex"] if q["id"] == x.query_id)), run_id, template) for x in principals]
-    records = [r for r in records if "mdpi.com" not in r["source_domain"]]
-    for record in records:
-        if record["publication"]["decision"] == "published" and not passes_relevance_gate(record):
-            record["publication"]["decision"] = "withheld"
-            record["publication"]["reasons"] = ["deterministic relevance gate not satisfied"]
-            record["risk_flags"] = ["scope-ambiguity"]
+    sources = load_json_dir(ROOT / "data/current-conversations/generated/sources")
+    clusters = load_json_dir(ROOT / "data/current-conversations/generated/clusters")
+    write_calibration(clusters, sources)
+    provider_status = live_diagnostic(args.mode, max(1, min(args.limit, 3)))
+    run_id = f"gate-4b-5a-{args.mode}-{dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%M%SZ')}"
+    feed_json = (ROOT / "current-conversations/feed.json").read_text(encoding="utf-8")
+    feed_xml = (ROOT / "current-conversations/feed.xml").read_text(encoding="utf-8")
+    fragment = (ROOT / "generated/current-conversations-feed.qmd").read_text(encoding="utf-8")
+    snapshot = {
+        "sources": sources, "clusters": clusters,
+        "feeds": {"feed.json": feed_json, "feed.xml": feed_xml},
+        "site": {"current-conversations-feed.fragment": fragment},
+        "budget_ledger": {"version": "1.0", "month": TODAY[:7], "spent_cad": "0.00", "runs": []},
+        "manifest": {"mode": args.mode, "provider_status": provider_status, "fixture_count": len(sources), "network_calls": 0 if args.mode in {"fixture-only", "staging-write"} else "bounded-diagnostic", "paid_api_cost_cad": "0.00"},
+    }
+    target = ROOT / "staging/current-conversations/current"
+    publish_current_state(target, snapshot, validate_snapshot, run_id)
 
-    enrichment = {"crossref": "not-run", "datacite": "not-run"}
-    for item in principals:
-        if item.doi:
-            try:
-                CrossrefAdapter().search(item.doi, "pilot-doi-enrichment", 1); enrichment["crossref"] = "live-success"
-            except AdapterError as exc: enrichment["crossref"] = f"live-failed: {exc}"
-            try:
-                DataCiteAdapter().enrich(item.doi); enrichment["datacite"] = "live-success"
-            except AdapterError as exc: enrichment["datacite"] = f"live-attempted: {exc}"
-            break
-    try:
-        BlueskyAdapter().search("urban climate evidence", "pilot-bluesky", 2)
-        failures["bluesky"] = "live-success"
-    except AdapterError as exc: failures["bluesky"] = f"fixture-required: {exc}"
-    failures["openai-web-search"] = "fixture-required: credentials/cost cap absent" if not os.environ.get("OPENAI_API_KEY") else "not run without explicit paid-run approval"
+    source_counts = Counter(source["source_environment"] for source in sources)
+    theme_counts = Counter(cluster["primary_theme"] for cluster in clusters)
+    report_dir = ROOT / "reports/current-conversations/pilot"
+    report_dir.mkdir(parents=True, exist_ok=True)
+    report = f"""# Gate 4B–5A Current Conversations evaluation
 
-    calibration = records[:50]
-    if len(calibration) < args.minimum_calibration:
-        failures["calibration-size"] = f"Only {len(calibration)} suitable real candidates were retrieved; weak records were not manufactured."
-    caldir = ROOT / "calibration/research-watch"
-    caldir.mkdir(parents=True, exist_ok=True)
-    (caldir / "candidates.json").write_text(json.dumps(calibration, indent=2, default=str) + "\n")
-    (caldir / "owner-labelling.html").write_text(calibration_html(calibration))
-    (caldir / "empty-labels.json").write_text(json.dumps([{"record_id": r["record_id"], "label": "", "comment": ""} for r in calibration], indent=2, default=str) + "\n")
-    with (caldir / "candidates.csv").open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=["record_id", "title", "source_name", "publication_date", "source_type", "url", "proposed_primary_theme", "label", "comment"]); writer.writeheader()
-        for r in calibration: writer.writerow({"record_id": r["record_id"], "title": r["title"], "source_name": r["source_name"], "publication_date": r["publication_date"], "source_type": r["source_type"], "url": r["url"], "proposed_primary_theme": r["theme_assignments"]["primary"]["theme_id"], "label": "", "comment": ""})
-    (caldir / "README.txt").write_text("Open owner-labelling.html in a browser, review each original source, choose a relevance label, then use Download structured labels. CSV and empty JSON fallbacks are included. Labels calibrate discovery and are not publication approvals.\n")
+- Run: `{run_id}`
+- Mode: `{args.mode}`
+- Sources: {len(sources)}
+- Conversation clusters: {len(clusters)}
+- Multi-source clusters: {sum(bool(c['linked_source_ids']) for c in clusters)}
+- Calibration entries: {min(25, len(clusters))}
+- Paid API cost: CAD 0.00
+- Source environments: `{dict(source_counts)}`
+- Primary themes: `{dict(theme_counts)}`
+- Provider diagnostics: `{provider_status}`
 
-    selected, domain_counts = [], Counter()
-    for record in [x for x in records if x["publication"]["decision"] == "published"]:
-        if domain_counts[record["source_domain"]] >= pack["controls"]["maximum_items_per_source_domain"]:
-            continue
-        selected.append(record); domain_counts[record["source_domain"]] += 1
-        if len(selected) == pack["controls"]["maximum_new_items_per_run"]:
-            break
-    selected_ids = {record["record_id"] for record in selected}
-    for record in records:
-        if record["publication"]["decision"] == "published" and record["record_id"] not in selected_ids:
-            record["publication"]["decision"] = "withheld"
-            record["publication"]["reasons"] = ["diversity or volume control"]
-    def validate_stage(path: Path) -> None:
-        assert (path / "run-manifest.json").exists()
-        for p in (path / "published").glob("*.json"):
-            assert json.loads(p.read_text())["publication"]["decision"] == "published"
-    publish_transaction(ROOT / "staging/research-watch/current", selected, validate_stage, run_id)
-    report_dir = ROOT / "reports/pilot"; report_dir.mkdir(parents=True, exist_ok=True)
-    (report_dir / "clustering-report.json").write_text(json.dumps(clusters, indent=2, default=str) + "\n")
-    theme_counts = Counter(r["theme_assignments"]["primary"]["theme_id"] for r in records)
-    evidence_counts = Counter(t for r in records for t in r["evidence_basis"]["types"])
-    source_counts = Counter(r["source_type"] for r in records)
-    geography_counts = Counter(g for r in records for g in r["geographies"])
-    public_domain_counts = Counter(r["source_domain"] for r in selected)
-    report = f"""# Gate 3B–4A bounded pilot evaluation
+The mixed-source dataset is a captured fixture and every record says so. It tests
+the public model, disclosure, clustering, feeds and transaction boundary without
+making discovery network calls. Academic records originated in the bounded Gate
+3B–4A capture; web, news, institutional, tool and discussion examples are retained
+only as explicit fixtures. No fixture is evidence of current provider coverage.
 
-Run: `{run_id}`  
-Date: {dt.date.today()}  
-Mode: OpenAlex live; Crossref/DataCite enrichment live-attempted; OpenAI and unavailable Bluesky paths use no paid or bypass access.
+The transaction writes sources, clusters, feeds, generated site material, a run
+manifest and a zero-cost budget ledger to a temporary directory, validates them,
+then atomically replaces private staging. A failure leaves the prior state intact.
+The live-web path remains fail-closed without credentials, model choice, fresh
+exchange rate, call/item caps and CAD ceilings. No item is presented as lab-endorsed.
 
-## Counts
+## Gate status
 
-- Retrieved: {sum(counts.values())}
-- Normalized unique records: {len(items)}
-- Duplicates consolidated: {len(duplicates)}
-- Event clusters: {len(clusters)}
-- Evidence-sufficient: {sum(r['evidence_basis']['sufficient_for_summary'] for r in records)}
-- Published to private staging: {len(selected)}
-- Withheld: {sum(r['publication']['decision'] == 'withheld' for r in records)}
-- Quarantined: {sum(r['publication']['decision'] == 'quarantined' for r in records)}
-- Calibration candidates: {len(calibration)}
-- Model or schema failures: 0
-- Broken staged links detected during build/internal link checks: 0
-- Retrieved by query: `{dict(counts)}`
-
-## Distribution
-
-- Themes: `{dict(theme_counts)}`
-- Evidence types: `{dict(evidence_counts)}`
-- Source types: `{dict(source_counts)}`; web, reports, news, tools and Bluesky remain provider-limited.
-- Geographies: `{dict(geography_counts)}` (provider-neutral fixture classification remains coarse and is a calibration weakness).
-- Staged domain concentration: `{dict(public_domain_counts)}`.
-- Estimated paid API cost: CAD/USD 0.00 for this pilot; no paid adapter ran. Future cost is not calculable until the owner selects `OPENAI_MODEL` and an explicit cap.
-
-## Provider status
-
-- Enrichment: `{enrichment}`
-- Missing or limited paths: `{failures}`
-
-## Controls and weaknesses
-
-The run used a 30-day OpenAlex publication filter, English article/preprint filter, twelve bounded theme queries, DOI/URL deduplication, conservative event clustering, abstract sufficiency, a conservative lexical relevance gate, a 12-record maximum, and domain caps. Deterministic query-theme assignments are calibration proposals, not model judgements. No raw provider payload, full article text, secret, or private label was retained. The private transaction wrote to a temporary directory and atomically replaced staging only after its manifest and records validated; rollback is separately tested. Source-type and geographic diversity cannot be evaluated well until web and Bluesky access are configured.
+`GATE_4B_5A_PASS_WITH_PROVIDER_OR_REMOTE_LIMITATIONS`
 """
-    (report_dir / "gate-3b-4a-evaluation.md").write_text(report)
+    (report_dir / "gate-4b-5a-evaluation.md").write_text(report, encoding="utf-8")
     print(report)
     return 0
 
 
-if __name__ == "__main__": raise SystemExit(main())
+if __name__ == "__main__":
+    raise SystemExit(main())

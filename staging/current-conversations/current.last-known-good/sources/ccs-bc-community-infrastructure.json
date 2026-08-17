@@ -1,0 +1,52 @@
+{
+  "source_id": "ccs-bc-community-infrastructure",
+  "title": "Building Communities Strong in British Columbia with 54 new infrastructure projects",
+  "original_url": "https://www.canada.ca/en/housing-infrastructure-communities/news/2026/07/building-communities-strong-in-british-columbia-with-54-new-infrastructure-projects.html",
+  "canonical_url": "https://www.canada.ca/en/housing-infrastructure-communities/news/2026/07/building-communities-strong-in-british-columbia-with-54-new-infrastructure-projects.html",
+  "stable_identifier": null,
+  "authors_or_organisation": [
+    "Housing, Infrastructure and Communities Canada"
+  ],
+  "publication_date": "2026-07-30",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "policy-and-institutions",
+  "source_type": "government-announcement",
+  "source_role": "official-announcement",
+  "publisher_or_platform": "Housing, Infrastructure and Communities Canada",
+  "source_domain": "www.canada.ca",
+  "language": "en",
+  "geographies": [
+    "canada",
+    "british-columbia"
+  ],
+  "evidence_basis": [
+    "official-webpage-body"
+  ],
+  "evidence_limitations": "This is an official announcement, not an independent evaluation of project outcomes.",
+  "content_access_status": "substantive",
+  "content_hash": "3523ecd4775cc0310a40dff46c36983715b4f8227467adb969e9ae4df9c6caf7",
+  "discovery": {
+    "adapter": "captured-web-fixture",
+    "query_id": "cc-fixture-canadian-climate-policy",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "The federal announcement describes funding for local infrastructure projects in British Columbia through arrangements involving Canada, the province, UBCM and local governments.",
+    "reason_for_relevance": "It provides a current example of intergovernmental delivery arrangements that shape municipal capacity and resilience investment."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": true
+}

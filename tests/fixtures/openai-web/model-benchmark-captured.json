@@ -1,0 +1,30 @@
+{
+  "cases": [
+    {
+      "case_id": "schema-and-link-retention",
+      "source_url": "https://example.org/original-policy-source",
+      "retained_urls": ["https://example.org/original-policy-source"],
+      "output": {
+        "source_environment": "policy-and-institutions",
+        "source_role": "official-policy-source",
+        "primary_theme": "climate-governance-delivery",
+        "secondary_themes": [],
+        "theme_scores": {"climate-governance-delivery": 0.84},
+        "theme_rationales": {"climate-governance-delivery": "The fixture concerns municipal implementation arrangements."},
+        "geographies": ["canada"],
+        "source_summary": "Captured response used only to exercise strict schema handling.",
+        "discussion_statement": "The fixture tests whether a policy source remains linked and separately classified.",
+        "reason_for_relevance": "It exercises governance and delivery classification.",
+        "novelty_or_significance": "Test fixture only.",
+        "evidence_limitations": "No live model was called and no substantive claim is published.",
+        "confidence": 0.8,
+        "confidence_basis": "Captured valid output.",
+        "proposed_underlying_source": "https://example.org/original-policy-source",
+        "proposed_cluster_relationship": null,
+        "clustering_rationale": "No grouping proposed.",
+        "risk_flags": [],
+        "recommendation": "withhold"
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "source_id": "ccs-c40-data-centres-pact",
+  "title": "Mayors from around the world unite in call for sustainable urban data centres",
+  "original_url": "https://www.c40.org/news/mayors-from-around-the-world-unite-in-call-for-sustainable-urban-data-centres/",
+  "canonical_url": "https://www.c40.org/news/mayors-from-around-the-world-unite-in-call-for-sustainable-urban-data-centres/",
+  "stable_identifier": null,
+  "authors_or_organisation": [
+    "C40 Cities"
+  ],
+  "publication_date": "2026-06-23",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "policy-and-institutions",
+  "source_type": "institutional-announcement",
+  "source_role": "official-announcement",
+  "publisher_or_platform": "C40 Cities",
+  "source_domain": "www.c40.org",
+  "language": "en",
+  "geographies": [
+    "global"
+  ],
+  "evidence_basis": [
+    "official-webpage-body"
+  ],
+  "evidence_limitations": "This official announcement predates the 30-day window and does not verify implementation by signatory cities.",
+  "content_access_status": "substantive",
+  "content_hash": "da1df8174335aa9221f02810e59c990dd5d9e2ce26ce3e3b54169939b0c8ff81",
+  "discovery": {
+    "adapter": "captured-web-fixture",
+    "query_id": "cc-fixture-climate-governance-delivery",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "C40 describes a pact through which participating mayors seek to shape urban data-centre growth around energy, water, land, cost and community concerns.",
+    "reason_for_relevance": "The pact illustrates collective city governance of a fast-growing infrastructure challenge with climate and distributional implications."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": true
+}

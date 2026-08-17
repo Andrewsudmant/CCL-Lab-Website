@@ -1,0 +1,54 @@
+{
+  "cluster_id": "ccc-atlantic-climate-finance",
+  "slug": "atlantic-climate-finance",
+  "public_title": "Assessing intersectional inequities in climate finance across Atlantic Canada",
+  "discussion_statement": "The study examines uneven access to government and philanthropic climate finance in Atlantic Canada, with a primary case study in Nova Scotia.",
+  "date_first_observed": "2026-08-13",
+  "date_most_recently_observed": "2026-08-13",
+  "principal_source_id": "ccs-atlantic-climate-finance",
+  "linked_source_ids": [],
+  "primary_theme": "canadian-climate-policy",
+  "secondary_themes": [
+    "co-benefits-place-based-valuation"
+  ],
+  "geographies": [
+    "canada"
+  ],
+  "source_environments": [
+    "academic-research"
+  ],
+  "principal_source_role": "primary-research",
+  "summary": "The study examines uneven access to government and philanthropic climate finance in Atlantic Canada, with a primary case study in Nova Scotia.",
+  "reason_for_relevance": "It addresses distributional consequences and institutional access within Canadian climate policy delivery.",
+  "limitations": "The captured abstract supports the topic and approach but not independent verification of findings.",
+  "agreement_disagreement_uncertainty": "No source disagreement was established by the captured evidence.",
+  "clustering": {
+    "confidence": 1.0,
+    "rationale": "Single-source cluster.",
+    "method": "stable-link-and-event-identity",
+    "version": "1.0.0",
+    "supporting_identifiers": [
+      "https://doi.org/10.1007/s44274-026-00957-0"
+    ],
+    "principal_source_rationale": "The original evidence or official source is principal; reporting, analysis and commentary remain separately attributed."
+  },
+  "ai_provenance": {
+    "used": false,
+    "model": null,
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "publication_decision": "published",
+  "correction_status": "none",
+  "availability_status": "available",
+  "history": [
+    {
+      "date": "2026-08-17",
+      "action": "created",
+      "note": "Created for private mixed-source calibration; identifiers remain stable."
+    }
+  ],
+  "homepage_eligible": true,
+  "archive_date": null,
+  "captured_fixture": false
+}

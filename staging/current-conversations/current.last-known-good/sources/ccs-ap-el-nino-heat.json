@@ -1,0 +1,51 @@
+{
+  "source_id": "ccs-ap-el-nino-heat",
+  "title": "This summer isn't breaking heat records yet. Wait until El Nino kicks in, scientists say",
+  "original_url": "https://apnews.com/article/ffd31dd358a894667c63f4c0a21cd677",
+  "canonical_url": "https://apnews.com/article/ffd31dd358a894667c63f4c0a21cd677",
+  "stable_identifier": null,
+  "authors_or_organisation": [
+    "Associated Press"
+  ],
+  "publication_date": "2026-08-04",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "news-and-analysis",
+  "source_type": "news-reporting",
+  "source_role": "news-reporting",
+  "publisher_or_platform": "Associated Press",
+  "source_domain": "apnews.com",
+  "language": "en",
+  "geographies": [
+    "global"
+  ],
+  "evidence_basis": [
+    "permitted-excerpt"
+  ],
+  "evidence_limitations": "The source is journalistic synthesis; scientific claims should be checked against the cited primary institutions.",
+  "content_access_status": "substantive",
+  "content_hash": "f89adc53328daaa5eb753b2ef2cd987802e3281043b3b944fc6e0c1cf56d3bb0",
+  "discovery": {
+    "adapter": "captured-web-fixture",
+    "query_id": "cc-fixture-climate-governance-delivery",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "Associated Press reports scientists' assessment of the interaction between long-term warming, a strengthening El Nino and extreme heat affecting cities and regions.",
+    "reason_for_relevance": "The reporting provides context for near-term urban adaptation and service-delivery pressures without substituting for primary climate data."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": true
+}

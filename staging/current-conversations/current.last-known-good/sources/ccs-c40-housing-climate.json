@@ -1,0 +1,51 @@
+{
+  "source_id": "ccs-c40-housing-climate",
+  "title": "Why the Right to Housing is the Key to Climate Survival",
+  "original_url": "https://www.c40.org/news/why-the-right-to-housing-is-the-key-to-climate-survival/",
+  "canonical_url": "https://www.c40.org/news/why-the-right-to-housing-is-the-key-to-climate-survival/",
+  "stable_identifier": null,
+  "authors_or_organisation": [
+    "C40 Cities"
+  ],
+  "publication_date": "2026-06-11",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "blogs-and-commentary",
+  "source_type": "practitioner-commentary",
+  "source_role": "practitioner-commentary",
+  "publisher_or_platform": "C40 Cities",
+  "source_domain": "www.c40.org",
+  "language": "en",
+  "geographies": [
+    "global"
+  ],
+  "evidence_basis": [
+    "official-webpage-body"
+  ],
+  "evidence_limitations": "The commentary predates the pilot window and advances an argument rather than independently testing outcomes.",
+  "content_access_status": "substantive",
+  "content_hash": "f87b17f4598c9cbd6b20a61fca2e70ade705b3e515b83387a9db50eebcc47783",
+  "discovery": {
+    "adapter": "captured-web-fixture",
+    "query_id": "cc-fixture-co-benefits-place-based-valuation",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "C40 commentary links housing rights, construction, affordability and climate resilience and points to a related white paper developed with The Shift.",
+    "reason_for_relevance": "It frames climate action through place-based distribution, housing governance and co-costs rather than emissions alone."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": true
+}

@@ -1,0 +1,52 @@
+{
+  "cluster_id": "ccc-el-nino-urban-heat",
+  "slug": "el-nino-urban-heat",
+  "public_title": "This summer isn't breaking heat records yet. Wait until El Nino kicks in, scientists say",
+  "discussion_statement": "Associated Press reports scientists' assessment of the interaction between long-term warming, a strengthening El Nino and extreme heat affecting cities and regions.",
+  "date_first_observed": "2026-08-04",
+  "date_most_recently_observed": "2026-08-04",
+  "principal_source_id": "ccs-ap-el-nino-heat",
+  "linked_source_ids": [],
+  "primary_theme": "climate-governance-delivery",
+  "secondary_themes": [],
+  "geographies": [
+    "global"
+  ],
+  "source_environments": [
+    "news-and-analysis"
+  ],
+  "principal_source_role": "news-reporting",
+  "summary": "Associated Press reports scientists' assessment of the interaction between long-term warming, a strengthening El Nino and extreme heat affecting cities and regions.",
+  "reason_for_relevance": "The reporting provides context for near-term urban adaptation and service-delivery pressures without substituting for primary climate data.",
+  "limitations": "The source is journalistic synthesis; scientific claims should be checked against the cited primary institutions.",
+  "agreement_disagreement_uncertainty": "No source disagreement was established by the captured evidence.",
+  "clustering": {
+    "confidence": 1.0,
+    "rationale": "Single-source cluster.",
+    "method": "stable-link-and-event-identity",
+    "version": "1.0.0",
+    "supporting_identifiers": [
+      "https://apnews.com/article/ffd31dd358a894667c63f4c0a21cd677"
+    ],
+    "principal_source_rationale": "The original evidence or official source is principal; reporting, analysis and commentary remain separately attributed."
+  },
+  "ai_provenance": {
+    "used": false,
+    "model": null,
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "publication_decision": "published",
+  "correction_status": "none",
+  "availability_status": "available",
+  "history": [
+    {
+      "date": "2026-08-17",
+      "action": "created",
+      "note": "Created for private mixed-source calibration; identifiers remain stable."
+    }
+  ],
+  "homepage_eligible": true,
+  "archive_date": null,
+  "captured_fixture": true
+}

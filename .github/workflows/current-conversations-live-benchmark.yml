@@ -1,0 +1,86 @@
+name: Current Conversations live benchmark
+
+on:
+  workflow_dispatch:
+    inputs:
+      query_id:
+        description: "Reviewed bounded web query"
+        required: true
+        type: choice
+        options:
+          - cc-w01-learning
+          - cc-w02-governance
+          - cc-w03-cobenefits
+          - cc-w04-workforce
+          - cc-w05-tools
+          - cc-w06-canada
+        default: cc-w02-governance
+      result_limit:
+        description: "Maximum structured candidates"
+        required: true
+        type: choice
+        options: ["1", "2", "3"]
+        default: "2"
+      artifacts_only:
+        description: "Confirm this run writes artifacts only and never stages or deploys"
+        required: true
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: current-conversations-live-benchmark
+  cancel-in-progress: false
+
+jobs:
+  benchmark:
+    if: ${{ inputs.artifacts_only == true }}
+    environment: live-benchmark
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      CURRENT_CONVERSATIONS_OPENAI_MODEL: ${{ vars.CURRENT_CONVERSATIONS_OPENAI_MODEL }}
+      CURRENT_CONVERSATIONS_MAX_COST_CAD_PER_RUN: ${{ vars.CURRENT_CONVERSATIONS_MAX_COST_CAD_PER_RUN }}
+      CURRENT_CONVERSATIONS_MAX_COST_CAD_PER_MONTH: ${{ vars.CURRENT_CONVERSATIONS_MAX_COST_CAD_PER_MONTH }}
+      CURRENT_CONVERSATIONS_USD_PER_CAD: ${{ vars.CURRENT_CONVERSATIONS_USD_PER_CAD }}
+      CURRENT_CONVERSATIONS_USD_PER_CAD_DATE: ${{ vars.CURRENT_CONVERSATIONS_USD_PER_CAD_DATE }}
+      CURRENT_CONVERSATIONS_MAX_WEB_SEARCH_CALLS: ${{ vars.CURRENT_CONVERSATIONS_MAX_WEB_SEARCH_CALLS }}
+      CURRENT_CONVERSATIONS_MAX_WEB_ITEMS: ${{ vars.CURRENT_CONVERSATIONS_MAX_WEB_ITEMS }}
+      CURRENT_CONVERSATIONS_ESTIMATED_USD_PER_WEB_CALL: ${{ vars.CURRENT_CONVERSATIONS_ESTIMATED_USD_PER_WEB_CALL }}
+      CURRENT_CONVERSATIONS_BUDGET_LEDGER: reports/current-conversations/live-benchmark/budget-ledger.json
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12", cache: pip}
+      - run: python -m pip install -r requirements-dev.txt
+      - name: Verify artifact-only and fail-closed configuration
+        run: |
+          test "${{ inputs.artifacts_only }}" = "true"
+          test -n "$OPENAI_API_KEY"
+          test -n "$CURRENT_CONVERSATIONS_OPENAI_MODEL"
+      - name: Run network-free mocked benchmark first
+        run: PYTHONPATH=. python scripts/benchmark_current_conversations_models.py --output reports/current-conversations/live-benchmark/mocked-preflight.md
+      - name: Run one bounded live benchmark
+        run: >-
+          PYTHONPATH=. python -m current_conversations.run
+          --adapter openai_web_search
+          --query-id "${{ inputs.query_id }}"
+          --limit "${{ inputs.result_limit }}"
+          --output reports/current-conversations/live-benchmark/candidates.json
+      - name: Assert no staging or site data changed
+        run: |
+          test -z "$(git status --porcelain -- data/current-conversations staging/current-conversations current-conversations _site)"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: current-conversations-live-benchmark-${{ github.run_id }}
+          path: reports/current-conversations/live-benchmark
+          if-no-files-found: error
+          retention-days: 14
+
+# This workflow has no write permission, staging step or deployment step. The API
+# key is expected only from the protected live-benchmark environment.

@@ -8,7 +8,7 @@ canonical-url: "/current-conversations/berkeley-synthesis-launch.html"
 
 <p class="page-deck">Berkeley Earth introduces a platform connecting historical observations with bias-corrected climate projections at local scale for cities and countries.</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">Captured fixture · no AI generation recorded · not reviewed by the lab</p>
 
 
 ## What is being discussed

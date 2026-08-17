@@ -8,7 +8,7 @@ canonical-url: "/current-conversations/local-capacity-policy-evaluation.html"
 
 <p class="page-deck">The paper examines how local capacity building and policy evaluation shape climate and environmental governance, using Mexico City as a case through which to discuss urban transformation.</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">Automatically identified · no AI generation recorded · not reviewed by the lab</p>
 
 
 ## What is being discussed

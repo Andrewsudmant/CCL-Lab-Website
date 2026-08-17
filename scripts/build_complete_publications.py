@@ -5,14 +5,15 @@ from __future__ import annotations
 
 import csv
 import datetime as dt
+import html
 import json
 import re
 from pathlib import Path
 
 try:
-    from scripts.content import ROOT, load_records
+    from scripts.content import ROOT, load_records, load_yaml
 except ModuleNotFoundError:
-    from content import ROOT, load_records
+    from content import ROOT, load_records, load_yaml
 
 
 def slug(value: str) -> str:
@@ -59,8 +60,8 @@ def build_record(item: dict, selected: dict[str, dict], verified_date: str) -> d
         record["mdpi_excluded"] = False
         return record
     mdpi = doi.startswith("10.3390/")
-    title = re.sub(r"<[^>]+>", "", item["title"])
-    authors = [re.sub(r"<[^>]+>", "", author) for author in item["authors"]]
+    title = html.unescape(re.sub(r"<[^>]+>", "", item["title"]))
+    authors = [html.unescape(re.sub(r"<[^>]+>", "", author)) for author in item["authors"]]
     venue = item.get("venue") or "Authoritative repository record"
     date = item["publication_date"]
     author_text = ", ".join(authors)
@@ -89,9 +90,40 @@ def build_record(item: dict, selected: dict[str, dict], verified_date: str) -> d
     }
 
 
+def authoritative_record(item: dict, verified_date: str) -> dict:
+    title = html.unescape(item["title"])
+    authors = [html.unescape(author) for author in item["authors"]]
+    date = str(item["publication_date"])
+    doi = item.get("doi")
+    return {
+        "record_id": item.get("record_id") or slug(title), "title": title, "authors": authors,
+        "publication_date": date, "date_precision": item["date_precision"],
+        "publication_type": item["publication_type"], "peer_review_status": item.get("peer_review_status", "not-applicable"),
+        "venue": item["venue"], "volume": item.get("volume"), "issue": item.get("issue"),
+        "pages": item.get("pages"), "article_number": item.get("article_number"),
+        "doi": doi, "other_identifiers": item.get("other_identifiers", []), "version": item.get("version"),
+        "original_submission_date": item.get("original_submission_date"), "current_version_date": item.get("current_version_date"),
+        "url": item["url"],
+        "citation": item.get("citation") or f"{', '.join(authors)}. ({date[:4]}). {title}. {item['venue']}.",
+        "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+        "relationship_to_lab": "foundational-prior-work",
+        "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
+        "primary_theme": theme_for(title), "secondary_themes": [], "geographies": geographies_for(title),
+        "governance_scales": [], "methods": [], "climate_domains": ["evidence-and-learning"], "sectors": ["cross-sectoral"],
+        "connected_projects": [], "featured": False, "current_conversations_eligible": True, "mdpi_excluded": False,
+        "metadata_sources": ["orcid", "repository"] if item.get("put_code") else ["publisher"],
+        "last_verified_date": verified_date,
+        "authoritative_sources": [
+            {**source, "retrieved_date": str(source["retrieved_date"])} for source in item["authoritative_sources"]
+        ],
+        "verification_status": "verified",
+    }
+
+
 def main() -> int:
     source = ROOT / "reports/content/publication-proposed-inventory.json"
     proposed = json.loads(source.read_text(encoding="utf-8"))["records"]
+    authority = load_yaml(ROOT / "config/publication_authoritative_overrides.yml")
     selected_records = load_records("data/publications")
     selected = {item["doi"].lower(): item for item in selected_records if item.get("doi")}
     verified_date = dt.date.today().isoformat()
@@ -105,6 +137,21 @@ def main() -> int:
         record = build_record(item, selected, verified_date)
         if record["doi"] not in seen:
             records.append(record); seen.add(record["doi"])
+    by_put_code = {str(item.get("put_code")): item for item in proposed}
+    excluded_put_codes = set(authority.get("excluded_orcid_records", {}))
+    resolved_put_codes: set[str] = set()
+    for put_code, override in authority.get("orcid_records", {}).items():
+        if put_code not in by_put_code:
+            continue
+        record = authoritative_record({**by_put_code[put_code], **override, "put_code": put_code, "title": by_put_code[put_code]["orcid_title"]}, verified_date)
+        key = record.get("doi") or f"orcid-put:{put_code}"
+        if key not in seen:
+            records.append(record); seen.add(key); resolved_put_codes.add(put_code)
+    for item in authority.get("new_records", []):
+        record = authoritative_record(item, verified_date)
+        key = record.get("doi") or record["url"]
+        if key not in seen:
+            records.append(record); seen.add(key)
     for doi, record in selected.items():
         if doi not in seen:
             value = dict(record); value["current_conversations_eligible"] = True; value["mdpi_excluded"] = False
@@ -113,7 +160,7 @@ def main() -> int:
     output_dir = ROOT / "reports/content"
     (output_dir / "publication-complete-inventory.json").write_text(json.dumps({"verified_at": verified_date, "orcid": "0000-0001-8650-8419", "records": records}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
-    unresolved = [item for item in proposed if item.get("retrieval_status") != "enriched"]
+    unresolved = [item for item in proposed if item.get("retrieval_status") != "enriched" and str(item.get("put_code")) not in resolved_put_codes | excluded_put_codes]
     with (output_dir / "publication-unresolved.csv").open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=["put_code", "title", "orcid_year", "external_identifiers", "reason"]); writer.writeheader()
         for item in unresolved:
@@ -121,9 +168,9 @@ def main() -> int:
     selected_diff = "# Selected-publications diff\n\nThe ten Gate 3B–4A selected records were retained provisionally. No authoritative verification disproved them, and no record was automatically promoted.\n\n- Added to selected set: 0\n- Removed from selected set: 0\n- Selected count: 10\n- MDPI selected records: 0\n"
     (output_dir / "publication-selected-diff.md").write_text(selected_diff, encoding="utf-8")
     mdpi_count = sum(record["mdpi_excluded"] for record in records)
-    report = f"""# Publication reconciliation — Gate 4B–5A
+    report = f"""# Publication reconciliation — Gate 5B
 
-Verified: {verified_date}  
+Verified: {verified_date}
 Identity: ORCID `0000-0001-8650-8419`
 
 ## Outcome
@@ -131,6 +178,8 @@ Identity: ORCID `0000-0001-8650-8419`
 - ORCID groups: {len(proposed)}
 - Complete verified public records: {len(records)}
 - Selected publications and outputs: {sum(record['featured'] for record in records)}
+- ORCID-only records resolved through authoritative sources: {len(resolved_put_codes)}
+- ORCID records excluded after authoritative authorship check: {len(excluded_put_codes)}
 - Unresolved ORCID-only records withheld: {len(unresolved)}
 - Duplicate DOI records: 0 after normalization
 - Provider conflicts: retained in `publication-proposed-inventory.json` and never silently resolved
@@ -154,7 +203,7 @@ The unresolved CSV retains {len(unresolved)} ORCID-only groups without inventing
 metadata. They do not require owner-by-owner adjudication unless a genuine authorship
 conflict later emerges.
 """
-    (output_dir / "publication-reconciliation-gate-4b-5a.md").write_text(report, encoding="utf-8")
+    (output_dir / "publication-reconciliation-gate-5b.md").write_text(report, encoding="utf-8")
     print(f"Built {len(records)} verified complete records; {len(unresolved)} unresolved.")
     return 0
 

@@ -26,7 +26,9 @@ def test_automated_listing_has_full_non_endorsement_language() -> None:
     page = (ROOT / "current-conversations/index.qmd").read_text(encoding="utf-8")
     assert "inclusion does not imply endorsement" in page
     assert "summaries may contain errors" in page
-    assert "Identified and summarized using AI" in (ROOT / "generated/current-conversations-feed.qmd").read_text()
+    generated = (ROOT / "generated/current-conversations-feed.qmd").read_text()
+    assert "Captured fixture · no AI generation recorded" in generated
+    assert "Identified and summarized using AI" not in generated
 
 
 def test_canonical_detail_pages_and_theme_views_exist() -> None:

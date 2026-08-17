@@ -8,7 +8,7 @@ canonical-url: "/current-conversations/syracuse-climate-plan.html"
 
 <p class="page-deck">The City of Syracuse announced adoption of its first community and municipal climate action plan, covering resilience, energy, mobility, education, heat and flooding.</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">Captured fixture · no AI generation recorded · not reviewed by the lab</p>
 
 
 ## What is being discussed

@@ -30,17 +30,8 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Validate records and run tests
-        run: make validate test
-
-      - name: Build site
-        run: make build
-
-      - name: Check internal links
-        run: python scripts/check_links.py
-
-      - name: Run static accessibility checks
-        run: python scripts/check_accessibility.py
+      - name: Deterministically build, test and inspect site
+        run: make check
 
       - name: Upload built site for review
         uses: actions/upload-artifact@v4

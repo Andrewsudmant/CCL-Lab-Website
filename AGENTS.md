@@ -10,8 +10,8 @@ This repository contains the public website and the transactional private-stagin
 
 - Treat AI as a discovery, classification, and drafting layer—not as a source.
 - Preserve source and cluster IDs, the original URL, publication and retrieval dates, stable identifiers when they exist, evidence basis, discovery run, adapter/query version, prompt/model provenance, review state and correction history.
-- Automatically generated Research Watch items may publish without routine human review only when deterministic publication controls pass.
-- Every automatically published item must carry the full public disclosure where required and the compact label `Identified and summarized using AI · not reviewed by the lab`.
+- Automatically generated Current Conversations items may publish without routine human review only when deterministic publication controls pass.
+- Public disclosure must follow actual provenance. Use `Identified and summarized using AI · not reviewed by the lab` only when `ai_provenance.used=true`; non-AI fixtures must say that no AI generation was recorded and must never imply a live retrieval.
 - Never present automatically identified material as endorsed, recommended, approved, expert-selected, or reviewed by the lab.
 - Do not invent citations, quotations, authors, dates, identifiers, review decisions, or evidence access.
 - Withhold or quarantine records with insufficient evidence, unsupported claims, unresolved identity, invalid URLs, critical risk flags, high duplicate probability, prompt-injection contamination, unexpected personal data, or invalid model output.
@@ -43,7 +43,7 @@ This repository contains the public website and the transactional private-stagin
 
 ## Scope discipline
 
-Gate 4B–5A authorizes the Current Conversations migration, mixed-source fixture prototype, complete-publication inventory, bounded provider diagnostics, private transactional staging, calibration and local review packaging. It does not authorize public deployment, merging to `main`, DNS changes, analytics, subscriber collection, authentication, scheduled production writes or unrestricted ingestion.
+Gate 5B authorizes credential-independent live-benchmark preparation, authoritative publication reconciliation, bounded no-key diagnostics, mocked Responses testing, calibration-generator preparation and local review packaging. It does not authorize a paid call, public deployment, merging to `main`, DNS changes, analytics, subscriber collection, authentication, production publication, scheduled paid discovery or unrestricted ingestion. The first owner-approved live benchmark writes artifacts only.
 
 ## Shareable handoff package
 

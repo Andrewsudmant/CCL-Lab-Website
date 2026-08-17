@@ -5,7 +5,7 @@ description: "How Current Conversations discovers, groups, summarizes and publis
 
 <p class="page-deck">A selective, automatically generated view—not a systematic review, recommendation system or comprehensive map of public discussion.</p>
 
-> Current Conversations uses automated searches and AI-generated classification, grouping and summaries to identify recent material connected to the lab's research themes. Sources may include academic papers, policy reports, news, blogs, data tools and public posts. Items have not normally been reviewed by a member of the Cities and Climate Learning Lab, and inclusion does not imply endorsement. Coverage is selective and uneven, and summaries may contain errors or omit important context. Please consult the original sources.
+> When live discovery is enabled, Current Conversations may use automated searches and AI-assisted classification, grouping and summaries. Public disclosure follows each record's actual provenance. The current captured fixtures record `ai_provenance.used=false`, do not claim AI generation or live retrieval, have not been reviewed by the lab and are not endorsements.
 
 ## Discovery and source environments
 
@@ -23,7 +23,7 @@ Redirects, broken links, corrections, retractions and material page changes can 
 
 Source content is untrusted data. Embedded instructions cannot change the prompt, policy, budget, repository or publication decision. AI may propose themes, summaries, relevance and grouping, but strict schemas and deterministic controls make the final decision.
 
-Grouping proceeds from stable identifiers, canonical and underlying-source links, platform identifiers, normalized titles and organisations, then conservative semantic proposals. Broad topic words are never sufficient. A principal source is normally the most original evidence or official source; reporting, analysis, commentary and public discussion remain separately attributed. Disagreement is stated rather than averaged.
+Grouping proceeds from DOI and other stable identifiers, canonical URLs, underlying-source links, explicit citation relationships, platform identifiers, and corroborated normalized titles plus organisations. A bounded model may propose a pair, but deterministic evidence must independently accept it. Broad topic words and model similarity alone are never sufficient. A principal source is normally the most original evidence or official source; reporting, analysis, commentary and public discussion remain separately attributed. Disagreement is stated rather than averaged.
 
 ## Ranking and automated publication
 

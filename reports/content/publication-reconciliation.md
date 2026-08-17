@@ -1,6 +1,6 @@
 # Publication reconciliation
 
-Retrieved: 2026-08-17T18:19:41.167319+00:00
+Retrieved: 2026-08-17T20:23:42.346877+00:00
 Identity source: ORCID `0000-0001-8650-8419`
 
 ## Summary

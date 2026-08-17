@@ -8,7 +8,7 @@ canonical-url: "/current-conversations/urban-smes-net-zero.html"
 
 <p class="page-deck">Drawing on interviews and policy documents, the study considers how multi-level governance arrangements influence climate action among small and medium-sized enterprises in Melbourne.</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">Automatically identified · no AI generation recorded · not reviewed by the lab</p>
 
 
 ## What is being discussed

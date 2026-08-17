@@ -1,6 +1,6 @@
-.PHONY: install validate generate test build linkcheck linkcheck-external accessibility check publications-refresh current-conversations-fixture current-conversations-discover current-conversations-pilot current-conversations-recheck current-conversations-stage current-conversations-rollback-test model-benchmark calibration-pack browser-qa handoff owner-review owner-package research-watch-fixture research-watch-pilot research-watch-recheck preview clean
+.PHONY: install validate generate test build linkcheck linkcheck-external accessibility check publications-refresh current-conversations-fixture current-conversations-discover openalex-diagnostics current-conversations-pilot current-conversations-recheck current-conversations-stage current-conversations-rollback-test model-benchmark calibration-pack browser-qa handoff owner-review owner-package research-watch-fixture research-watch-pilot research-watch-recheck preview clean
 
-HANDOFF_SUMMARY ?= docs/handoffs/gate-4b-5a-handoff.md
+HANDOFF_SUMMARY ?= docs/handoffs/gate-5b-handoff.md
 PYTHON ?= $(if $(wildcard .venv/bin/python),.venv/bin/python,python3)
 
 install:
@@ -19,7 +19,8 @@ linkcheck-external: build
 	$(PYTHON) scripts/check_links.py --external
 accessibility: build
 	$(PYTHON) scripts/check_accessibility.py
-check: validate test build
+check: validate build
+	$(PYTHON) -m pytest
 	$(PYTHON) scripts/check_links.py
 	$(PYTHON) scripts/check_accessibility.py
 publications-refresh:
@@ -29,6 +30,8 @@ current-conversations-fixture:
 	PYTHONPATH=. $(PYTHON) -m current_conversations.run --adapter fixture
 current-conversations-discover:
 	PYTHONPATH=. $(PYTHON) -m current_conversations.run --adapter openalex --limit 2
+openalex-diagnostics:
+	PYTHONPATH=. $(PYTHON) scripts/diagnose_openalex.py
 current-conversations-pilot:
 	PYTHONPATH=. $(PYTHON) scripts/run_current_conversations_pilot.py --mode fixture-only
 current-conversations-recheck:

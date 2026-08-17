@@ -34,7 +34,7 @@ description: "Research on the design, politics, governance, implementation and c
 Current Conversations remains secondary to the lab's own work. These recent entries have this theme as a primary or related assignment.
 
 ```{=html}
-<div class="compact-list"><p><a href="/current-conversations/atlantic-climate-finance.html">Assessing intersectional inequities in climate finance across Atlantic Canada</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p><p><a href="/current-conversations/bc-community-infrastructure.html">Building Communities Strong in British Columbia with 54 new infrastructure projects</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p><p><a href="/current-conversations/bc-lgcap-nonrenewal.html">Local Government Climate Action Program has not been renewed</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p></div>
+<div class="compact-list"><p><a href="/current-conversations/atlantic-climate-finance.html">Assessing intersectional inequities in climate finance across Atlantic Canada</a><br><span>Automatically identified · no AI generation recorded · not reviewed by the lab</span></p><p><a href="/current-conversations/bc-community-infrastructure.html">Building Communities Strong in British Columbia with 54 new infrastructure projects</a><br><span>Captured fixture · no AI generation recorded · not reviewed by the lab</span></p><p><a href="/current-conversations/bc-lgcap-nonrenewal.html">Local Government Climate Action Program has not been renewed</a><br><span>Captured fixture · no AI generation recorded · not reviewed by the lab</span></p></div>
 ```
 
 [How Current Conversations works](/current-conversations/how-it-works.html).

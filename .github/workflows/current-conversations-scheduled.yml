@@ -8,7 +8,7 @@ on:
       mode:
         description: "Explicit discovery mode"
         type: choice
-        options: [fixture-only, live-academic, live-web, bluesky, staging-write]
+        options: [fixture-only, live-academic, bluesky, staging-write]
         default: fixture-only
 
 concurrency:
@@ -24,21 +24,13 @@ jobs:
     timeout-minutes: 15
     env:
       RUN_MODE: ${{ inputs.mode || 'fixture-only' }}
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
-      CURRENT_CONVERSATIONS_MAX_COST_CAD_PER_RUN: ${{ vars.CURRENT_CONVERSATIONS_MAX_COST_CAD_PER_RUN }}
-      CURRENT_CONVERSATIONS_MAX_COST_CAD_PER_MONTH: ${{ vars.CURRENT_CONVERSATIONS_MAX_COST_CAD_PER_MONTH }}
-      CURRENT_CONVERSATIONS_USD_PER_CAD: ${{ vars.CURRENT_CONVERSATIONS_USD_PER_CAD }}
-      CURRENT_CONVERSATIONS_USD_PER_CAD_DATE: ${{ vars.CURRENT_CONVERSATIONS_USD_PER_CAD_DATE }}
-      CURRENT_CONVERSATIONS_MAX_WEB_SEARCH_CALLS: ${{ vars.CURRENT_CONVERSATIONS_MAX_WEB_SEARCH_CALLS }}
-      CURRENT_CONVERSATIONS_MAX_WEB_ITEMS: ${{ vars.CURRENT_CONVERSATIONS_MAX_WEB_ITEMS }}
-      CURRENT_CONVERSATIONS_ESTIMATED_USD_PER_WEB_CALL: ${{ vars.CURRENT_CONVERSATIONS_ESTIMATED_USD_PER_WEB_CALL }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: "3.12", cache: pip}
+      - uses: quarto-dev/quarto-actions/setup@v2
       - run: python -m pip install -r requirements-dev.txt
-      - run: make validate test
+      - run: make check
       - name: Run explicit bounded mode
         run: PYTHONPATH=. python scripts/run_current_conversations_pilot.py --mode "$RUN_MODE" --limit 2
       - uses: actions/upload-artifact@v4
@@ -47,7 +39,7 @@ jobs:
           path: |
             reports/current-conversations
             staging/current-conversations/current
-            calibration/current-conversations
+            calibration/current-conversations-generator
           if-no-files-found: error
           retention-days: 14
 
@@ -65,11 +57,12 @@ jobs:
         with: {python-version: "3.12"}
       - run: python -m pip install -r requirements-dev.txt
       - run: PYTHONPATH=. python scripts/run_current_conversations_pilot.py --mode staging-write
-      - run: python scripts/stage_current_conversations.py --verify-only
+      - run: python scripts/stage_current_conversations.py --verify-only --branch automation/current-conversations-staging
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/current-conversations/generated staging/current-conversations reports/current-conversations/runs state/current-conversations/budget current-conversations/feed.json current-conversations/feed.xml
+          python scripts/stage_current_conversations.py --verify-only --branch automation/current-conversations-staging --paths $(git diff --cached --name-only)
           git diff --cached --quiet || git commit -m "Update private Current Conversations staging"
           git push origin HEAD:automation/current-conversations-staging
 

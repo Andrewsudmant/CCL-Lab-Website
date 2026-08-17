@@ -10,10 +10,10 @@ page-layout: full
   <p>Current Conversations offers an automatically generated view of where the lab's research themes are being discussed across research, policy, media and public commentary.</p>
   <div class="research-watch-disclosure" role="note" aria-label="Current Conversations automated discovery and non-endorsement disclosure">
     <p class="eyebrow">How to read this page</p>
-    <p><strong>Current Conversations uses automated searches and AI-generated classification, grouping and summaries to identify recent material connected to the lab's research themes.</strong> Sources may include academic papers, policy reports, news, blogs, data tools and public posts. Items have not normally been reviewed by a member of the Cities and Climate Learning Lab, and inclusion does not imply endorsement. Coverage is selective and uneven, and summaries may contain errors or omit important context. Please consult the original sources.</p>
+    <p><strong>When live discovery is enabled, Current Conversations may use automated searches and AI-assisted classification, grouping and summaries.</strong> The entries currently shown are captured interface fixtures with <code>ai_provenance.used=false</code>; no AI generation is claimed for them and they are not evidence of a live retrieval. Sources may eventually include academic papers, policy reports, news, blogs, data tools and public posts. Items have not been reviewed by the Cities and Climate Learning Lab, inclusion does not imply endorsement, and summaries may contain errors or omit context. Please consult the original sources.</p>
   </div>
   <p><a href="how-it-works.html">How Current Conversations works, including methods and limitations →</a></p>
-  <p class="record-meta"><strong>Last successful update:</strong> 17 August 2026 · <strong>Latest run coverage:</strong> OpenAlex live-captured; Crossref and DataCite enrichment attempted; web sources captured as fixtures because paid discovery was unavailable; Bluesky unavailable (HTTP 403).</p>
+  <p class="record-meta"><strong>Prototype fixture date:</strong> 17 August 2026 · <strong>Coverage:</strong> captured mixed-source examples for testing presentation and governance. These are not current discovery results or lab endorsements.</p>
   <p><a href="feed.xml">RSS feed</a> · <a href="feed.json">JSON feed</a> · <a href="/contact.html">Request a correction or report a broken source</a></p>
 </div>
 ```

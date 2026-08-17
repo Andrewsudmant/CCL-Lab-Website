@@ -8,7 +8,7 @@ canonical-url: "/current-conversations/sustainable-urban-data-centres.html"
 
 <p class="page-deck">C40 describes a pact through which participating mayors seek to shape urban data-centre growth around energy, water, land, cost and community concerns.</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">Captured fixture · no AI generation recorded · not reviewed by the lab</p>
 <p class="grouped-label">Related sources grouped automatically</p>
 
 ## What is being discussed

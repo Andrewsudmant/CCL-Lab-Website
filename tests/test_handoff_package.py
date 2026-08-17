@@ -30,6 +30,6 @@ def test_owner_review_package_contains_site_screenshots_and_manifest(tmp_path) -
         assert "00_READ_ME_FIRST.md" in names
         assert "MANIFEST.txt" in names
         assert "rendered-site/index.html" in names
-        assert any(name.endswith("desktop/home.jpg") for name in names)
-        assert any(name.endswith("mobile/home.jpg") for name in names)
-        assert "source/docs/handoffs/gate-3b-4a-handoff.md" in names
+        assert "review/screenshots/gate-5b/desktop/home.png" in names
+        assert "review/screenshots/gate-5b/mobile/home.png" in names
+        assert "source/docs/handoffs/gate-5b-handoff.md" in names

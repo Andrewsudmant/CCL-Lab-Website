@@ -2,7 +2,7 @@
 
 ## Purpose and boundary
 
-The Cities & Climate Learning Lab website is a static, accessible Quarto site backed by versioned records. Current Conversations groups timely source records into public conversation clusters. AI may help discover, classify and summarize; the original source—not a model—is the evidentiary authority. Gate 4B–5A produces local/private artefacts only.
+The Cities & Climate Learning Lab website is a static, accessible Quarto site backed by versioned records. Current Conversations groups timely source records into public conversation clusters. AI may help discover, classify and summarize; the original source—not a model—is the evidentiary authority. Gate 5B prepares a protected, artifact-only live benchmark but makes no paid call and performs no public deployment.
 
 ## Control plane and content plane
 
@@ -12,7 +12,7 @@ Code, schemas, prompts, query packs, source policy, disclosure, budgets, thresho
 flowchart LR
   A["Bounded source adapters"] --> B["Normalize source records"]
   B --> C["Identifier and URL deduplication"]
-  C --> D["Conservative clustering"]
+  C --> D["Cross-source evidence graph"]
   D --> E["Evidence-constrained annotation"]
   E --> F["Schema, risk, diversity and budget checks"]
   F -->|pass| G["Atomic private staging"]
@@ -34,10 +34,10 @@ flowchart LR
 |---|---|
 | Quarto and generated fragments | Responsive semantic pages, archive, filters, feeds and stable moved-page links |
 | Python package | Provider adapters, normalization, clustering, budgets and atomic transactions |
-| JSON Schema | Source, cluster, AI output, query pack and publication constraints |
+| JSON Schema | Source, cluster, strict Responses output, query pack and publication constraints |
 | Query/source configuration | Six themes, bounded concepts, exclusions, source roles and diversity caps |
 | Private staging | Complete validated snapshot: sources, clusters, feeds, site fragment, manifest and budget ledger |
-| CI | Offline checks by default; explicit bounded modes; optional isolated automation-branch write |
+| CI | Build before site-inspection tests; offline checks by default; protected manual benchmark; optional isolated automation-branch write |
 
 ## Publication transaction and safe failure
 
@@ -45,4 +45,4 @@ A run writes a complete candidate snapshot to a temporary sibling directory. Aft
 
 ## Deployment model
 
-The build output is static. The scheduled workflow has repository read permission by default. A separate write job is disabled unless explicitly enabled, verifies an allowlist and targets only `automation/current-conversations-staging`. It cannot deploy and never targets `main`. Production deployment, hosting and DNS are later owner decisions.
+The build output is static. Discovery and benchmark jobs have repository read permission. `Current Conversations live benchmark` is manual, uses the protected `live-benchmark` environment and produces artifacts only. A separate staging job is disabled unless explicitly enabled, validates an allowed-path diff and targets only `automation/current-conversations-staging` with write permission. It cannot deploy and never targets `main`. Production deployment, hosting and DNS are later owner decisions.

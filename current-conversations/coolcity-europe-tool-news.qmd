@@ -8,7 +8,7 @@ canonical-url: "/current-conversations/coolcity-europe-tool-news.html"
 
 <p class="page-deck">The Covenant of Mayors describes a platform offering comparable Earth-observation data intended to support adaptation planning across European cities.</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">Captured fixture · no AI generation recorded · not reviewed by the lab</p>
 
 
 ## What is being discussed

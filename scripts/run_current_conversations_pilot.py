@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the bounded Gate 4B–5A pilot from explicit fixtures or live diagnostics.
+"""Build the bounded Gate 5B pilot from explicit fixtures or live diagnostics.
 
 The default mode is deterministic and network-free. Live provider modes must be
 requested separately; paid web search remains fail-closed unless every budget
@@ -53,11 +53,11 @@ def calibration_html(clusters: list[dict], sources: dict[str, dict]) -> str:
 <label>Grouping <select><option value="">Choose…</option><option>Correctly grouped</option><option>Missing source</option><option>Should split</option></select></label>
 <label>Comments <textarea rows="3"></textarea></label></article>'''
         )
-    return '''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CCLL Current Conversations calibration</title><style>body{font:17px/1.55 system-ui;max-width:900px;margin:auto;padding:2rem;color:#222}article{border-top:4px solid #a6192e;padding:1.4rem 0}label{display:block;margin:.7rem 0}select,textarea,button{font:inherit;padding:.45rem;width:100%;max-width:42rem}button{width:auto;background:#a6192e;color:white;border:0}</style></head><body><h1>Current Conversations owner calibration</h1><p>These labels test discovery relevance and source grouping. They are not publication approvals. Review the original source before labelling.</p><button id="export">Download structured labels</button>''' + "".join(cards) + '''<script>document.querySelector('#export').onclick=()=>{const labels=[...document.querySelectorAll('article')].map(a=>({cluster_id:a.dataset.id,relevance:a.querySelectorAll('select')[0].value,grouping:a.querySelectorAll('select')[1].value,comments:a.querySelector('textarea').value}));const b=new Blob([JSON.stringify(labels,null,2)],{type:'application/json'}),x=document.createElement('a');x.href=URL.createObjectURL(b);x.download='current-conversations-labels.json';x.click()};</script></body></html>'''
+    return '''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CCLL Current Conversations calibration generator preview</title><style>body{font:17px/1.55 system-ui;max-width:900px;margin:auto;padding:2rem;color:#222}article{border-top:4px solid #a6192e;padding:1.4rem 0}label{display:block;margin:.7rem 0}select,textarea,button{font:inherit;padding:.45rem;width:100%;max-width:42rem}button{width:auto;background:#a6192e;color:white;border:0}</style></head><body><h1>Calibration generator preview — not the owner calibration set</h1><p>These captured fixtures demonstrate the labelling interface only. After a reviewed mixed-source live benchmark, regenerate this package with real candidate provenance before owner calibration. These labels are not publication approvals.</p><button id="export">Download preview labels</button>''' + "".join(cards) + '''<script>document.querySelector('#export').onclick=()=>{const labels=[...document.querySelectorAll('article')].map(a=>({cluster_id:a.dataset.id,relevance:a.querySelectorAll('select')[0].value,grouping:a.querySelectorAll('select')[1].value,comments:a.querySelector('textarea').value}));const b=new Blob([JSON.stringify(labels,null,2)],{type:'application/json'}),x=document.createElement('a');x.href=URL.createObjectURL(b);x.download='current-conversations-preview-labels.json';x.click()};</script></body></html>'''
 
 
 def write_calibration(clusters: list[dict], sources: list[dict]) -> None:
-    directory = ROOT / "calibration/current-conversations"
+    directory = ROOT / "calibration/current-conversations-generator"
     directory.mkdir(parents=True, exist_ok=True)
     source_map = {source["source_id"]: source for source in sources}
     rows = []
@@ -85,7 +85,7 @@ def write_calibration(clusters: list[dict], sources: list[dict]) -> None:
         for row in rows:
             writer.writerow({key: "; ".join(row[key]) if isinstance(row[key], list) else row[key] for key in fieldnames})
     (directory / "README.txt").write_text(
-        "Open owner-labelling.html locally. Review each principal source, assign Clearly relevant, Potentially relevant, or Not relevant, assess grouping, add comments, and download the JSON. Labels calibrate discovery and clustering; they are not publication approvals. All examples are captured fixtures requiring owner review.\n",
+        "GENERATOR PREVIEW ONLY — NOT THE FINAL OWNER CALIBRATION SET. The included examples are captured fixtures used to test the interface. Regenerate from a reviewed mixed-source live-benchmark artifact before owner labelling. Labels calibrate discovery and clustering; they are not publication approvals.\n",
         encoding="utf-8",
     )
 
@@ -135,7 +135,7 @@ def main() -> int:
     clusters = load_json_dir(ROOT / "data/current-conversations/generated/clusters")
     write_calibration(clusters, sources)
     provider_status = live_diagnostic(args.mode, max(1, min(args.limit, 3)))
-    run_id = f"gate-4b-5a-{args.mode}-{dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%M%SZ')}"
+    run_id = f"gate-5b-{args.mode}-{dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%M%SZ')}"
     feed_json = (ROOT / "current-conversations/feed.json").read_text(encoding="utf-8")
     feed_xml = (ROOT / "current-conversations/feed.xml").read_text(encoding="utf-8")
     fragment = (ROOT / "generated/current-conversations-feed.qmd").read_text(encoding="utf-8")
@@ -156,7 +156,7 @@ def main() -> int:
     principal_domain_counts = Counter(source_map[cluster["principal_source_id"]]["source_domain"] for cluster in clusters)
     report_dir = ROOT / "reports/current-conversations/pilot"
     report_dir.mkdir(parents=True, exist_ok=True)
-    report = f"""# Gate 4B–5A Current Conversations evaluation
+    report = f"""# Gate 5B Current Conversations fixture evaluation
 
 - Run: `{run_id}`
 - Mode: `{args.mode}`
@@ -199,9 +199,9 @@ exchange rate, call/item caps and CAD ceilings. No item is presented as lab-endo
 
 ## Gate status
 
-`GATE_4B_5A_PASS_WITH_PROVIDER_OR_REMOTE_LIMITATIONS`
+`GATE_5B_FIXTURE_CONTROLS_PASS_WITH_LIVE_BENCHMARK_NOT_RUN`
 """
-    (report_dir / "gate-4b-5a-evaluation.md").write_text(report, encoding="utf-8")
+    (report_dir / "gate-5b-fixture-evaluation.md").write_text(report, encoding="utf-8")
     print(report)
     return 0
 

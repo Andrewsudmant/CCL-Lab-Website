@@ -8,7 +8,7 @@ canonical-url: "/current-conversations/green-transition-justice.html"
 
 <p class="page-deck">Using six case studies, the article considers prospective environmental injustice associated with decarbonisation, critical minerals, regional strategies and gaps between workforce and socio-ecological policy.</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">Automatically identified · no AI generation recorded · not reviewed by the lab</p>
 
 
 ## What is being discussed

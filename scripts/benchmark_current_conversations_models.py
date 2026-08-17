@@ -11,6 +11,7 @@ from pathlib import Path
 
 from jsonschema import Draft202012Validator
 
+from current_conversations.adapters.openai_web import OpenAIWebSearchAdapter
 from scripts.content import ROOT
 
 
@@ -28,8 +29,12 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--captured", type=Path, default=ROOT / "tests/fixtures/openai-web/model-benchmark-captured.json")
     parser.add_argument("--output", type=Path, default=ROOT / "reports/current-conversations/model-benchmark.md")
+    parser.add_argument("--mock-response", type=Path, default=ROOT / "tests/fixtures/openai-web/responses-api-mock.json")
     args = parser.parse_args()
     result = evaluate_captured(args.captured)
+    mock = json.loads(args.mock_response.read_text(encoding="utf-8"))
+    mock_items = OpenAIWebSearchAdapter.parse_result(mock, limit=2)
+    request = OpenAIWebSearchAdapter.request_body("urban climate delivery", "mock-model", 2)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     credential_state = "available" if os.environ.get("OPENAI_API_KEY") else "absent"
     report = f"""# Current Conversations model benchmark
@@ -43,6 +48,10 @@ quality or actual cost.
 
 - Captured cases: {len(result['cases'])}
 - All captured outputs schema-valid: {result['all_schema_valid']}
+- Mocked Responses payloads parsed: {len(mock_items)}
+- Mocked source URLs retained: {mock_items[0]['original_url'] == 'https://example.org/original'}
+- Responses tool type: {request['tools'][0]['type']}
+- Strict structured output enabled: {request['text']['format']['strict']}
 - Live models tested: 0
 - Selected model: operationally unverified
 - Paid cost: CAD 0.00

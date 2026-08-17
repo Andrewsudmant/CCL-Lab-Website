@@ -20,10 +20,13 @@ class OpenAlexAdapter(DiscoveryAdapter):
 
     def search(self, query: str, query_id: str, limit: int = 10, lookback_days: int = 30) -> list[DiscoveredItem]:
         parameters = {
-            "filter": f"from_publication_date:{date.today() - timedelta(days=lookback_days)},type:article|preprint,language:en,title_and_abstract.search:{query}",
+            # OpenAlex's provider-native full-text search ranks title, abstract
+            # and full-text signals. Filters remain structural and auditable.
+            "search": query,
+            "filter": f"from_publication_date:{date.today() - timedelta(days=lookback_days)},type:article|preprint,language:en",
             "per-page": min(limit, 25),
             "sort": "publication_date:desc",
-            "select": "id,doi,title,display_name,publication_date,authorships,primary_location,abstract_inverted_index",
+            "select": "id,doi,title,display_name,publication_date,authorships,primary_location,locations,abstract_inverted_index,cited_by_api_url",
             "mailto": "andrew_sudmant@sfu.ca",
         }
         payload = get_json(self.endpoint, parameters)
@@ -40,6 +43,12 @@ class OpenAlexAdapter(DiscoveryAdapter):
                 authors=[a.get("author", {}).get("display_name", "") for a in work.get("authorships", []) if a.get("author")],
                 doi=doi, platform_identifier=(work.get("id") or "").rsplit("/", 1)[-1], abstract=abstract,
                 evidence_types=["abstract"] if abstract else ["metadata-only"], adapter=self.name,
-                query_id=query_id, raw_metadata={"provider_parameters": parameters, "openalex_id": work.get("id"), "provider_source_url": location.get("landing_page_url") or source.get("homepage_url"), "retrieved_at": datetime.now(timezone.utc).isoformat(), "fallback_used": False},
+                query_id=query_id, raw_metadata={
+                    "provider_parameters": parameters, "openalex_id": work.get("id"),
+                    "provider_source_url": location.get("landing_page_url") or source.get("homepage_url"),
+                    "alternate_landing_pages": sorted({candidate.get("landing_page_url") for candidate in work.get("locations", []) if candidate.get("landing_page_url")}),
+                    "cited_by_api_url": work.get("cited_by_api_url"),
+                    "retrieved_at": datetime.now(timezone.utc).isoformat(), "fallback_used": False,
+                },
             ))
         return items

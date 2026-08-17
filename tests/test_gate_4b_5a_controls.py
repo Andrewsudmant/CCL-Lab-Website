@@ -28,7 +28,7 @@ def test_public_disclosure_and_moved_routes() -> None:
     page = (ROOT / "current-conversations/index.qmd").read_text()
     generated = (ROOT / "generated/current-conversations-feed.qmd").read_text()
     assert "inclusion does not imply endorsement" in page
-    assert "Identified and summarized using AI · not reviewed by the lab" in generated
+    assert "Captured fixture · no AI generation recorded · not reviewed by the lab" in generated
     assert "Continue to Current Conversations" in (ROOT / "research-watch/index.qmd").read_text()
     detail = (ROOT / "current-conversations/sustainable-urban-data-centres.qmd").read_text()
     assert "\n\n### Also discussed in:" in detail
@@ -45,7 +45,7 @@ def test_feeds_preserve_original_source_links() -> None:
 def test_complete_and_selected_publication_controls() -> None:
     complete = json.loads((ROOT / "reports/content/publication-complete-inventory.json").read_text())["records"]
     selected = [record for record in complete if record["featured"]]
-    assert len(complete) == 36 and len(selected) == 10
+    assert len(complete) == 46 and len(selected) == 10
     mdpi = [record for record in complete if record.get("mdpi_excluded")]
     assert len(mdpi) == 1 and not mdpi[0]["featured"] and not mdpi[0]["current_conversations_eligible"]
 

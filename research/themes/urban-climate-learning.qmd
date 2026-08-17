@@ -34,7 +34,7 @@ description: "How municipal organisations and their partners acquire, interpret,
 Current Conversations remains secondary to the lab's own work. These recent entries have this theme as a primary or related assignment.
 
 ```{=html}
-<div class="compact-list"><p><a href="/current-conversations/local-capacity-policy-evaluation.html">Local capacity building and policy evaluation in climate and environmental governance</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p><p><a href="/current-conversations/unep-extreme-heat-diplomacy.html">Beating the Heat Together: City Diplomacy and the Global Mobilization against Extreme Heat</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p></div>
+<div class="compact-list"><p><a href="/current-conversations/local-capacity-policy-evaluation.html">Local capacity building and policy evaluation in climate and environmental governance</a><br><span>Automatically identified · no AI generation recorded · not reviewed by the lab</span></p><p><a href="/current-conversations/unep-extreme-heat-diplomacy.html">Beating the Heat Together: City Diplomacy and the Global Mobilization against Extreme Heat</a><br><span>Captured fixture · no AI generation recorded · not reviewed by the lab</span></p></div>
 ```
 
 [How Current Conversations works](/current-conversations/how-it-works.html).

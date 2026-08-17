@@ -8,7 +8,7 @@ canonical-url: "/current-conversations/urbclim-model.html"
 
 <p class="page-deck">The UrbClim site describes a city-scale climate model offering high-resolution outputs for heat and related variables across historical and future periods.</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">Captured fixture · no AI generation recorded · not reviewed by the lab</p>
 
 
 ## What is being discussed

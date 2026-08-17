@@ -8,7 +8,7 @@ canonical-url: "/current-conversations/austin-tree-canopy.html"
 
 <p class="page-deck">Axios reports on Austin's use of aerial, weather and socioeconomic data to examine tree-canopy and shade disparities.</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">Captured fixture · no AI generation recorded · not reviewed by the lab</p>
 
 
 ## What is being discussed

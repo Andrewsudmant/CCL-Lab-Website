@@ -7,6 +7,6 @@ description: "Selected publications and outputs most relevant to the Cities & Cl
 
 The Cities and Climate Learning Lab is newly established at Simon Fraser University. Most selected outputs are foundational prior work by Andrew Sudmant and collaborators, not outputs produced by the new lab.
 
-[Browse the complete verified publication record →](/publications/complete.html)
+[Browse verified publications and outputs →](/publications/complete.html)
 
 {{< include generated/publications-selected.qmd >}}

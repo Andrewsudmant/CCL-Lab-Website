@@ -1,0 +1,1 @@
+GENERATOR PREVIEW ONLY — NOT THE FINAL OWNER CALIBRATION SET. The included examples are captured fixtures used to test the interface. Regenerate from a reviewed mixed-source live-benchmark artifact before owner labelling. Labels calibrate discovery and clustering; they are not publication approvals.

@@ -8,7 +8,7 @@ canonical-url: "/current-conversations/multilayered-urban-forests.html"
 
 <p class="page-deck">The paper discusses how urban density and layered urban forest design can be considered together rather than treated as mutually exclusive planning goals.</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">Automatically identified · no AI generation recorded · not reviewed by the lab</p>
 
 
 ## What is being discussed

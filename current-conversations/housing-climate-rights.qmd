@@ -8,7 +8,7 @@ canonical-url: "/current-conversations/housing-climate-rights.html"
 
 <p class="page-deck">C40 commentary links housing rights, construction, affordability and climate resilience and points to a related white paper developed with The Shift.</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">Captured fixture · no AI generation recorded · not reviewed by the lab</p>
 
 
 ## What is being discussed

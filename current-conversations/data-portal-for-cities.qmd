@@ -8,7 +8,7 @@ canonical-url: "/current-conversations/data-portal-for-cities.html"
 
 <p class="page-deck">The platform provides preliminary city emissions data and export functions intended to help local governments build inventories and set priorities.</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">Captured fixture · no AI generation recorded · not reviewed by the lab</p>
 
 
 ## What is being discussed

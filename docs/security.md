@@ -4,9 +4,11 @@
 
 Fixture tests/builds require no secrets. Never commit API keys, tokens, `.env` files, authorization headers, provider payloads, browser profiles or model reasoning traces. Paid web discovery fails closed unless the API key, model, fresh USD/CAD rate and date, maximum calls/items, estimated per-call cost, CAD 2/run ceiling and CAD 20/month ceiling are all valid. A corrupt or inconsistent ledger disables paid access.
 
+The `OPENAI_API_KEY` is expected only as an environment secret in the protected GitHub environment `live-benchmark`. It must not be requested in a task, placed in a prompt, copied to a repository/environment file, printed, uploaded as an artifact or shared with staging jobs. The manually dispatched live benchmark has `contents: read`; its first run produces artifacts only.
+
 ## Untrusted web content and prompt injection
 
-All fetched metadata, HTML, documents, snippets and posts are untrusted data. Parse rather than execute; strip active content; escape output; limit schemes, redirects, size and file types; block private/link-local/cloud-metadata networks; and never let source instructions alter prompts, policy, tools, budgets or publication decisions. Record the exact evidence class shown to a model. Suspected injection, unexpected personal data or invalid structured output is quarantined.
+All fetched metadata, HTML, documents, snippets and posts are untrusted data. Parse rather than execute; strip active content; escape output; limit schemes, redirects, size and file types; block private/link-local/cloud-metadata networks; and never let source instructions alter prompts, policy, tools, budgets or publication decisions. The Responses request explicitly treats retrieved instructions as evidence rather than commands, local tests flag common injection language, and strict structured output rejects unknown fields. Record the exact evidence class shown to a model. Suspected injection, unexpected personal data or invalid structured output is quarantined.
 
 ## Network and role separation
 
@@ -25,4 +27,4 @@ Staging is transactional and complete: sources, clusters, feeds, site fragment, 
 - protect and monitor the automation branch independently; and
 - require incident response for credential exposure or repeated quality failures.
 
-Gate 4B–5A does not configure hosting, production secrets, deployment credentials or public scheduled writes.
+Gate 5B does not configure hosting, production secrets, deployment credentials or public scheduled writes. Repository write permission exists only in the separately guarded private-staging job, after validation and an allowed-path diff check, and remains disabled unless `CURRENT_CONVERSATIONS_STAGING_WRITE_ENABLED` is exactly `true`.

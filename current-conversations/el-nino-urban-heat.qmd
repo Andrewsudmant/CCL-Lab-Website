@@ -8,7 +8,7 @@ canonical-url: "/current-conversations/el-nino-urban-heat.html"
 
 <p class="page-deck">Associated Press reports scientists' assessment of the interaction between long-term warming, a strengthening El Nino and extreme heat affecting cities and regions.</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">Captured fixture · no AI generation recorded · not reviewed by the lab</p>
 
 
 ## What is being discussed

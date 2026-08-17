@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "current-conversations-web-discovery-v1.schema.json",
+  "title": "Current Conversations strict web discovery response v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["items"],
+  "properties": {
+    "items": {
+      "type": "array",
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title", "original_url", "canonical_url", "stable_identifier",
+          "authors_or_organisation", "publication_date", "source_environment",
+          "source_type", "source_role", "publisher_or_platform",
+          "evidence_access_status", "evidence_notes", "underlying_source_urls"
+        ],
+        "properties": {
+          "title": {"type": "string", "minLength": 1, "maxLength": 500},
+          "original_url": {"type": "string", "format": "uri", "pattern": "^https://"},
+          "canonical_url": {"type": "string", "format": "uri", "pattern": "^https://"},
+          "stable_identifier": {"type": ["string", "null"], "maxLength": 300},
+          "authors_or_organisation": {"type": "array", "maxItems": 30, "items": {"type": "string", "minLength": 1}},
+          "publication_date": {"type": "string", "pattern": "^[0-9]{4}(?:-[0-9]{2}(?:-[0-9]{2})?)?$"},
+          "source_environment": {"enum": ["policy-and-institutions", "news-and-analysis", "blogs-and-commentary", "data-and-tools", "bluesky"]},
+          "source_type": {"type": "string", "minLength": 1, "maxLength": 100},
+          "source_role": {"type": "string", "minLength": 1, "maxLength": 100},
+          "publisher_or_platform": {"type": "string", "minLength": 1, "maxLength": 300},
+          "evidence_access_status": {"enum": ["substantive", "limited", "metadata-only", "inaccessible"]},
+          "evidence_notes": {"type": "string", "maxLength": 3000},
+          "underlying_source_urls": {"type": "array", "maxItems": 12, "uniqueItems": true, "items": {"type": "string", "format": "uri", "pattern": "^https://"}}
+        }
+      }
+    }
+  }
+}

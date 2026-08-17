@@ -8,7 +8,7 @@ canonical-url: "/current-conversations/bc-lgcap-nonrenewal.html"
 
 <p class="page-deck">UBCM reports that a provincial programme used by local governments for climate staffing, planning and implementation was not renewed in the 2026/27 service plan.</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">Captured fixture · no AI generation recorded · not reviewed by the lab</p>
 
 
 ## What is being discussed

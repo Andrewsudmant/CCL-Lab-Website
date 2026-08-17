@@ -20,6 +20,7 @@ except ImportError:
 
 OUT = ROOT / "generated"
 FULL_DISCLOSURE = "Current Conversations uses automated searches and AI-generated classification, grouping and summaries to identify recent material connected to the lab's research themes. Sources may include academic papers, policy reports, news, blogs, data tools and public posts. Items have not normally been reviewed by a member of the Cities and Climate Learning Lab, and inclusion does not imply endorsement. Coverage is selective and uneven, and summaries may contain errors or omit important context. Please consult the original sources."
+FIXTURE_DISCLOSURE = "This captured fixture was assembled without AI generation to test presentation and governance controls. It has not been reviewed by the lab, is not endorsed, and is not evidence of a live retrieval. Consult the original source."
 ENV_LABELS = {
     "academic-research": "Academic research", "policy-and-institutions": "Policy and institutions",
     "news-and-analysis": "News and analysis", "blogs-and-commentary": "Blogs and commentary",
@@ -69,6 +70,18 @@ def linked_tags(primary: str, secondary: list[str]) -> str:
     return '<ul class="tag-list">' + "".join(f'<li><a href="/research/themes/{esc(item)}.html">{esc(themes[item]["name"])}</a><span class="sr-only"> ({kind})</span></li>' for item, kind in values) + "</ul>"
 
 
+def provenance_label(cluster: dict[str, Any]) -> str:
+    if cluster.get("ai_provenance", {}).get("used") is True:
+        return "Identified and summarized using AI · not reviewed by the lab"
+    if cluster.get("captured_fixture"):
+        return "Captured fixture · no AI generation recorded · not reviewed by the lab"
+    return "Automatically identified · no AI generation recorded · not reviewed by the lab"
+
+
+def provenance_disclosure(cluster: dict[str, Any]) -> str:
+    return FULL_DISCLOSURE if cluster.get("ai_provenance", {}).get("used") is True else FIXTURE_DISCLOSURE
+
+
 def record_card(record: dict[str, Any], kind: str) -> str:
     relation = record.get("relationship_to_lab", "").replace("-", " ").title()
     meta = " · ".join(filter(None, [relation, record.get("status"), record.get("venue"), str(record.get("publication_date", ""))[:4]]))
@@ -86,7 +99,7 @@ def conversation_card(cluster: dict[str, Any], sources: dict[str, dict[str, Any]
     all_sources = [principal, *linked]
     source_links = "".join(f'<li><span class="source-role">{esc(ROLE_LABELS.get(source["source_role"], source["source_role"]))}</span> <a href="{esc(source["original_url"])}">{esc(source["title"])}</a> <span>— {esc(source["publisher_or_platform"])}</span></li>' for source in all_sources)
     grouped = '<span class="grouped-label">Related sources grouped automatically</span>' if linked else '<span class="entry-kind">Standalone conversation entry</span>'
-    compact = "Identified and summarized using AI · not reviewed by the lab"
+    compact = provenance_label(cluster)
     fixture = '<span class="fixture-label">Captured fixture</span>' if cluster["captured_fixture"] else ""
     environments = " ".join(cluster["source_environments"])
     return f'''<article class="conversation-card" data-theme="{esc(' '.join([cluster['primary_theme'], *cluster['secondary_themes']]))}" data-environment="{esc(environments)}" data-geography="{esc(' '.join(cluster['geographies']))}" data-date="{esc(cluster['date_most_recently_observed'])}" data-kind="{'cluster' if linked else 'standalone'}">
@@ -98,7 +111,7 @@ def conversation_card(cluster: dict[str, Any], sources: dict[str, dict[str, Any]
   <p class="evidence-limitation"><strong>Evidence and interpretation limitation:</strong> {esc(cluster['limitations'])}</p>
   {linked_tags(cluster['primary_theme'], cluster['secondary_themes'])}
   <details><summary>Original sources and roles</summary><ul class="source-list">{source_links}</ul><p>{esc(cluster['agreement_disagreement_uncertainty'])}</p></details>
-  <span class="sr-only">{esc(FULL_DISCLOSURE)}</span>
+  <span class="sr-only">{esc(provenance_disclosure(cluster))}</span>
 </article>'''
 
 
@@ -134,7 +147,7 @@ def generate_themes(projects: list[dict[str, Any]], publications: list[dict[str,
         recent = [record for record in clusters if record["publication_decision"] == "published" and (record["primary_theme"] == theme["id"] or theme["id"] in record["secondary_themes"])][:3]
         def links(items: list[dict[str, Any]], kind: str) -> str:
             return '<div class="compact-list">' + ''.join(f'<p><a href="/{kind}/{esc(item["record_id"])}.html">{esc(item["title"])}</a></p>' for item in items) + '</div>' if items else '<p class="empty-compact">No verified records are published in this view yet.</p>'
-        recent_html = '<div class="compact-list">' + ''.join(f'<p><a href="/current-conversations/{esc(item["slug"])}.html">{esc(item["public_title"])}</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p>' for item in recent) + '</div>' if recent else '<p class="empty-compact">No recent Current Conversations entry is assigned here.</p>'
+        recent_html = '<div class="compact-list">' + ''.join(f'<p><a href="/current-conversations/{esc(item["slug"])}.html">{esc(item["public_title"])}</a><br><span>{esc(provenance_label(item))}</span></p>' for item in recent) + '</div>' if recent else '<p class="empty-compact">No recent Current Conversations entry is assigned here.</p>'
         body = f'''<p class="page-deck">{esc(theme['definition'])}</p>
 
 ::: {{.notice}}
@@ -232,7 +245,7 @@ def generate_publications(publications: list[dict[str, Any]]) -> None:
 Records are grouped by year. Historic outputs are labelled as foundational or prior work and are not presented as products of the new lab. Bibliographic metadata comes from authoritative identifier records, not AI generation.
 
 ```{=html}
-<form class="publication-filters" data-publication-filters aria-label="Filter complete publication record">
+<form class="publication-filters" data-publication-filters aria-label="Filter verified publications and outputs">
   <label>Keyword <input type="search" name="query" autocomplete="off"></label>
   <label>Type <select name="type"><option value="">All output types</option><option value="article">Articles</option><option value="preprint">Preprints</option><option value="chapter">Chapters</option><option value="report">Reports</option><option value="dataset">Datasets</option><option value="other">Other</option></select></label>
   <button type="reset">Clear</button><output data-publication-count aria-live="polite"></output>
@@ -242,9 +255,9 @@ Records are grouped by year. Historic outputs are labelled as foundational or pr
 {{< include ../generated/publications-complete.qmd >}}
 
 [Return to selected publications](/publications.html).'''
-    write_page(ROOT / "publications/complete.qmd", "Complete publication record", "The complete verified publication and output record for Andrew Sudmant.", complete_body)
+    write_page(ROOT / "publications/complete.qmd", "Verified publications and outputs", "Verified publications and outputs by Andrew Sudmant, with authoritative-source provenance.", complete_body)
     for record in publications:
-        identifier = f'**DOI:** [{record["doi"]}](https://doi.org/{record["doi"]})' if record.get("doi") else f'**Identifier:** {", ".join(record["other_identifiers"])}'
+        identifier = f'**DOI:** [{record["doi"]}](https://doi.org/{record["doi"]})' if record.get("doi") else f'**Other identifier:** {", ".join(record["other_identifiers"])}' if record.get("other_identifiers") else '**Stable identifier:** none assigned by the authoritative source; use the original-source URL.'
         mdpi_note = "\n\n::: {.notice}\nThis verified MDPI-authored work is retained in the complete scholarly record. By owner policy it is not selected, featured or eligible for Current Conversations.\n:::" if record.get("mdpi_excluded") else ""
         body = f'''<p class="page-deck">{record['abstract_summary']}</p>
 
@@ -288,7 +301,7 @@ def generate_conversations(clusters: list[dict[str, Any]], source_list: list[dic
         fixture_notice = "\n\n::: {.notice}\n**Private calibration fixture.** One or more sources were captured to test mixed-source presentation because the paid web adapter was unavailable. This entry is not evidence of a live automated retrieval.\n:::" if cluster["captured_fixture"] else ""
         body = f'''<p class="page-deck">{cluster['discussion_statement']}</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">{provenance_label(cluster)}</p>
 {'<p class="grouped-label">Related sources grouped automatically</p>' if linked else ''}
 
 ## What is being discussed

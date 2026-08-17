@@ -3,6 +3,68 @@
   "orcid": "0000-0001-8650-8419",
   "records": [
     {
+      "record_id": "from-urban-climate-ambition-to-delivery",
+      "title": "From urban climate ambition to delivery: a framework of climate delivery modes",
+      "authors": [
+        "Andrew Sudmant",
+        "Géraldine Pflieger",
+        "Samantha Sharpe",
+        "Harriet Bulkeley",
+        "Sarah Burch",
+        "Minal Pathak",
+        "Debra C. Roberts",
+        "William Solecki"
+      ],
+      "publication_date": "2026-08-03",
+      "date_precision": "exact",
+      "publication_type": "article",
+      "peer_review_status": "peer-reviewed",
+      "venue": "npj Climate Action",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": "408",
+      "doi": "10.1038/s44168-026-00408-9",
+      "other_identifiers": [],
+      "version": "version-of-record-early-access",
+      "original_submission_date": "2026-03-29",
+      "current_version_date": "2026-08-03",
+      "url": "https://doi.org/10.1038/s44168-026-00408-9",
+      "citation": "Sudmant, A., Pflieger, G., Sharpe, S., Bulkeley, H., Burch, S., Pathak, M., Roberts, D. C., & Solecki, W. (2026). From urban climate ambition to delivery: a framework of climate delivery modes. npj Climate Action. https://doi.org/10.1038/s44168-026-00408-9",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
+      "primary_theme": "climate-governance-delivery",
+      "secondary_themes": [],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "publisher"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Nature publisher record",
+          "url": "https://www.nature.com/articles/s44168-026-00408-9",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
       "record_id": "designing-visualization-atlas-uk-cobenefits",
       "title": "Designing a Visualization Atlas: Lessons & Reflections from The UK Co-Benefits Atlas for Climate Mitigation",
       "authors": [
@@ -1155,6 +1217,126 @@
       "verification_status": "verified"
     },
     {
+      "record_id": "workers-perceptions-of-climate-change-and-the-green-transition-in-yorkshire-and-the-humber",
+      "title": "Workers’ perceptions of climate change and the green transition in Yorkshire and the Humber: Building the evidence base for the just transition in the region",
+      "authors": [
+        "Jo Cutter",
+        "Vera Trappmann",
+        "Ursula Balderson",
+        "Andrew Sudmant",
+        "Helen Norman"
+      ],
+      "publication_date": "2021-12",
+      "date_precision": "month",
+      "publication_type": "report",
+      "peer_review_status": "not-applicable",
+      "venue": "Centre for Employment Relations Innovation and Change, University of Leeds",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": null,
+      "other_identifiers": [],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://eprints.whiterose.ac.uk/183447/",
+      "citation": "Jo Cutter, Vera Trappmann, Ursula Balderson, Andrew Sudmant, Helen Norman. (2021). Workers’ perceptions of climate change and the green transition in Yorkshire and the Humber: Building the evidence base for the just transition in the region. Centre for Employment Relations Innovation and Change, University of Leeds.",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
+      "primary_theme": "just-transitions-workforce",
+      "secondary_themes": [],
+      "geographies": [
+        "united-kingdom"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "repository"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "White Rose Research Online institutional record",
+          "url": "https://eprints.whiterose.ac.uk/183447/",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "yorkshire-and-humber-climate-action-plan",
+      "title": "Yorkshire and Humber Climate Action Plan",
+      "authors": [
+        "Andy Gouldson",
+        "Rachel Harcourt",
+        "Katy Lock",
+        "Andrew Duncan",
+        "Andrew Sudmant"
+      ],
+      "publication_date": "2021-11-10",
+      "date_precision": "exact",
+      "publication_type": "report",
+      "peer_review_status": "not-applicable",
+      "venue": "Yorkshire and Humber Climate Commission and Place-Based Climate Action Network",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": null,
+      "other_identifiers": [],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://edemocracy.northyorks.gov.uk/documents/s10308/Yorkshire%20and%20Humber%20Climate%20Action%20Plan.pdf",
+      "citation": "Andy Gouldson, Rachel Harcourt, Katy Lock, Andrew Duncan, Andrew Sudmant. (2021). Yorkshire and Humber Climate Action Plan. Yorkshire and Humber Climate Commission and Place-Based Climate Action Network.",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
+      "primary_theme": "urban-climate-learning",
+      "secondary_themes": [],
+      "geographies": [
+        "united-kingdom"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "repository"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "North Yorkshire Council public document repository",
+          "url": "https://edemocracy.northyorks.gov.uk/documents/s10308/Yorkshire%20and%20Humber%20Climate%20Action%20Plan.pdf",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
       "record_id": "supportive-governance-for-city-scale-low-carbon-building-retrofits-a-case-study-from-shang",
       "title": "Supportive governance for city-scale low carbon building retrofits: a case study from Shanghai",
       "authors": [
@@ -1280,6 +1462,249 @@
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1002/sd.2221",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "from-car-free-days-to-pollution-free-cities-reflections-on-clean-urban-transport-in-rwanda",
+      "title": "From car-free days to pollution-free cities: Reflections on clean urban transport in Rwanda",
+      "authors": [
+        "Egide Kalisa",
+        "Andrew Sudmant",
+        "Robert Ruberambuga",
+        "John Bower"
+      ],
+      "publication_date": "2021",
+      "date_precision": "year",
+      "publication_type": "report",
+      "peer_review_status": "not-applicable",
+      "venue": "International Growth Centre",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": null,
+      "other_identifiers": [],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://www.theigc.org/publications/car-free-days-pollution-free-cities-reflections-clean-urban-transport-rwanda",
+      "citation": "Egide Kalisa, Andrew Sudmant, Robert Ruberambuga, John Bower. (2021). From car-free days to pollution-free cities: Reflections on clean urban transport in Rwanda. International Growth Centre.",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
+      "primary_theme": "urban-climate-learning",
+      "secondary_themes": [],
+      "geographies": [
+        "rwanda"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "repository"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "International Growth Centre publication record",
+          "url": "https://www.theigc.org/publications/car-free-days-pollution-free-cities-reflections-clean-urban-transport-rwanda",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "a-net-zero-carbon-roadmap-for-belfast",
+      "title": "A Net Zero Carbon Roadmap for Belfast",
+      "authors": [
+        "Andy Gouldson",
+        "Andrew Sudmant",
+        "Jessica Boyd",
+        "Robert Fraser Williamson",
+        "John Barry",
+        "Amanda Slevin"
+      ],
+      "publication_date": "2020-12-10",
+      "date_precision": "exact",
+      "publication_type": "report",
+      "peer_review_status": "not-applicable",
+      "venue": "Place-Based Climate Action Network",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": null,
+      "other_identifiers": [],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://www.research.ed.ac.uk/en/publications/a-net-zero-carbon-roadmap-for-belfast",
+      "citation": "Andy Gouldson, Andrew Sudmant, Jessica Boyd, Robert Fraser Williamson, John Barry, Amanda Slevin. (2020). A Net Zero Carbon Roadmap for Belfast. Place-Based Climate Action Network.",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
+      "primary_theme": "urban-climate-learning",
+      "secondary_themes": [],
+      "geographies": [
+        "united-kingdom"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "repository"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "University of Edinburgh Research Explorer",
+          "url": "https://www.research.ed.ac.uk/en/publications/a-net-zero-carbon-roadmap-for-belfast",
+          "retrieved_date": "2026-08-17"
+        },
+        {
+          "label": "Queen's University Belfast Research Portal",
+          "url": "https://pure.qub.ac.uk/en/publications/a-net-zero-carbon-roadmap-for-belfast/",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "a-net-zero-carbon-roadmap-for-leeds",
+      "title": "A Net-Zero Carbon Roadmap for Leeds",
+      "authors": [
+        "Andy Gouldson",
+        "Andrew Sudmant",
+        "Amelia Duncan",
+        "Robert Fraser Williamson"
+      ],
+      "publication_date": "2020-11",
+      "date_precision": "month",
+      "publication_type": "report",
+      "peer_review_status": "not-applicable",
+      "venue": "Place-Based Climate Action Network",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": null,
+      "other_identifiers": [],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://www.research.ed.ac.uk/en/publications/a-net-zero-carbon-roadmap-for-leeds",
+      "citation": "Andy Gouldson, Andrew Sudmant, Amelia Duncan, Robert Fraser Williamson. (2020). A Net-Zero Carbon Roadmap for Leeds. Place-Based Climate Action Network.",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
+      "primary_theme": "urban-climate-learning",
+      "secondary_themes": [],
+      "geographies": [
+        "united-kingdom"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "repository"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "University of Edinburgh Research Explorer",
+          "url": "https://www.research.ed.ac.uk/en/publications/a-net-zero-carbon-roadmap-for-leeds",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transi",
+      "title": "Financing climate action with positive social impact: How banking can support a just transition in the UK",
+      "authors": [
+        "Nick Robins",
+        "Sophia Tickell",
+        "William Irwin",
+        "Andrew Sudmant"
+      ],
+      "publication_date": "2020-07-14",
+      "date_precision": "exact",
+      "publication_type": "report",
+      "peer_review_status": "not-applicable",
+      "venue": "Grantham Research Institute on Climate Change and the Environment",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": null,
+      "other_identifiers": [],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://www.lse.ac.uk/granthaminstitute/publication/financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transition-in-the-uk/",
+      "citation": "Nick Robins, Sophia Tickell, William Irwin, Andrew Sudmant. (2020). Financing climate action with positive social impact: How banking can support a just transition in the UK. Grantham Research Institute on Climate Change and the Environment.",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
+      "primary_theme": "just-transitions-workforce",
+      "secondary_themes": [],
+      "geographies": [
+        "united-kingdom"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "repository"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "LSE Grantham Research Institute publication record",
+          "url": "https://www.lse.ac.uk/granthaminstitute/publication/financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transition-in-the-uk/",
           "retrieved_date": "2026-08-17"
         }
       ],
@@ -1432,6 +1857,183 @@
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1016/b978-0-12-818122-5.00019-3",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "building-climate-resilience-and-water-security-in-cities-lessons-from-the-sponge-city-of-w",
+      "title": "Building Climate Resilience and Water Security in Cities: Lessons from the sponge city of Wuhan, China",
+      "authors": [
+        "Lucy Oates",
+        "Liping Dai",
+        "Andrew Sudmant",
+        "Andy Gouldson"
+      ],
+      "publication_date": "2020",
+      "date_precision": "year",
+      "publication_type": "brief",
+      "peer_review_status": "not-applicable",
+      "venue": "Coalition for Urban Transitions",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": null,
+      "other_identifiers": [],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://coalitionforurbantransitions.org/wp-content/uploads/2020/03/Building-climate-resilience-and-water-security-in-cities-lessons-from-the-Sponge-City-of-Wuhan-China-final.pdf",
+      "citation": "Lucy Oates, Liping Dai, Andrew Sudmant, Andy Gouldson. (2020). Building Climate Resilience and Water Security in Cities: Lessons from the sponge city of Wuhan, China. Coalition for Urban Transitions.",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
+      "primary_theme": "urban-climate-learning",
+      "secondary_themes": [],
+      "geographies": [
+        "global"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "repository"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "Coalition for Urban Transitions report",
+          "url": "https://coalitionforurbantransitions.org/wp-content/uploads/2020/03/Building-climate-resilience-and-water-security-in-cities-lessons-from-the-Sponge-City-of-Wuhan-China-final.pdf",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "a-net-zero-carbon-roadmap-for-edinburgh",
+      "title": "A Net Zero Carbon Roadmap for Edinburgh",
+      "authors": [
+        "Robert Williamson",
+        "Andrew Sudmant",
+        "Andy Gouldson",
+        "Jamie Brogan"
+      ],
+      "publication_date": "2020",
+      "date_precision": "year",
+      "publication_type": "report",
+      "peer_review_status": "not-applicable",
+      "venue": "Place-Based Climate Action Network",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": null,
+      "other_identifiers": [],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://www.research.ed.ac.uk/en/publications/a-net-zero-carbon-roadmap-for-edinburgh",
+      "citation": "Robert Williamson, Andrew Sudmant, Andy Gouldson, Jamie Brogan. (2020). A Net Zero Carbon Roadmap for Edinburgh. Place-Based Climate Action Network.",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
+      "primary_theme": "urban-climate-learning",
+      "secondary_themes": [],
+      "geographies": [
+        "united-kingdom"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "repository"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "University of Edinburgh Research Explorer",
+          "url": "https://www.research.ed.ac.uk/en/publications/a-net-zero-carbon-roadmap-for-edinburgh",
+          "retrieved_date": "2026-08-17"
+        }
+      ],
+      "verification_status": "verified"
+    },
+    {
+      "record_id": "investing-in-a-just-transition-in-the-uk-how-investors-can-integrate-social-impact-and-pla",
+      "title": "Investing in a just transition in the UK: How investors can integrate social impact and place-based financing into climate strategies",
+      "authors": [
+        "Nick Robins",
+        "Andy Gouldson",
+        "William Irwin",
+        "Andrew Sudmant"
+      ],
+      "publication_date": "2019-02-04",
+      "date_precision": "exact",
+      "publication_type": "report",
+      "peer_review_status": "not-applicable",
+      "venue": "Grantham Research Institute on Climate Change and the Environment",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "article_number": null,
+      "doi": null,
+      "other_identifiers": [],
+      "version": null,
+      "original_submission_date": null,
+      "current_version_date": null,
+      "url": "https://www.lse.ac.uk/granthaminstitute/publication/investing-in-a-just-transition-in-the-uk/",
+      "citation": "Nick Robins, Andy Gouldson, William Irwin, Andrew Sudmant. (2019). Investing in a just transition in the UK: How investors can integrate social impact and place-based financing into climate strategies. Grantham Research Institute on Climate Change and the Environment.",
+      "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
+      "relationship_to_lab": "foundational-prior-work",
+      "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
+      "primary_theme": "just-transitions-workforce",
+      "secondary_themes": [],
+      "geographies": [
+        "united-kingdom"
+      ],
+      "governance_scales": [],
+      "methods": [],
+      "climate_domains": [
+        "evidence-and-learning"
+      ],
+      "sectors": [
+        "cross-sectoral"
+      ],
+      "connected_projects": [],
+      "featured": false,
+      "current_conversations_eligible": true,
+      "mdpi_excluded": false,
+      "metadata_sources": [
+        "orcid",
+        "repository"
+      ],
+      "last_verified_date": "2026-08-17",
+      "authoritative_sources": [
+        {
+          "label": "LSE Grantham Research Institute publication record",
+          "url": "https://www.lse.ac.uk/granthaminstitute/publication/investing-in-a-just-transition-in-the-uk/",
           "retrieved_date": "2026-08-17"
         }
       ],

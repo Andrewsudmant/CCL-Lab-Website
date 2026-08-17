@@ -1,0 +1,15 @@
+{
+  "id": "resp_mock_gate_5b",
+  "usage": {"input_tokens": 420, "output_tokens": 180, "total_tokens": 600},
+  "output": [
+    {
+      "type": "message",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "{\"items\":[{\"title\":\"Municipal climate delivery evidence\",\"original_url\":\"https://example.org/original\",\"canonical_url\":\"https://example.org/original\",\"stable_identifier\":\"doi:10.1234/example\",\"authors_or_organisation\":[\"Example Institution\"],\"publication_date\":\"2026-08-01\",\"source_environment\":\"policy-and-institutions\",\"source_type\":\"institutional-analysis\",\"source_role\":\"official-policy-source\",\"publisher_or_platform\":\"Example Institution\",\"evidence_access_status\":\"substantive\",\"evidence_notes\":\"Mocked evidence for schema and provenance testing only.\",\"underlying_source_urls\":[\"https://example.org/data\"]}]}"
+        }
+      ]
+    }
+  ]
+}

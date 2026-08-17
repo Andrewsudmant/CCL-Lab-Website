@@ -8,7 +8,7 @@ canonical-url: "/current-conversations/reuters-climate-monitor.html"
 
 <p class="page-deck">Copernicus describes a Reuters interactive that compares current temperatures with historical averages and includes city-oriented views.</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">Captured fixture · no AI generation recorded · not reviewed by the lab</p>
 
 
 ## What is being discussed

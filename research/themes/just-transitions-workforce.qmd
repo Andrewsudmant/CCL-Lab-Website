@@ -34,7 +34,7 @@ description: "How urban climate action changes work, skills, occupations and lab
 Current Conversations remains secondary to the lab's own work. These recent entries have this theme as a primary or related assignment.
 
 ```{=html}
-<div class="compact-list"><p><a href="/current-conversations/green-transition-justice.html">Social Impacts of the Green Transition: Prospective Environmental (In)Justice in Europe&#x27;s Peripheries</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p><p><a href="/current-conversations/maritime-workforce-skills.html">Preparing the maritime workforce for the twin transition: skill priorities and educational needs</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p></div>
+<div class="compact-list"><p><a href="/current-conversations/green-transition-justice.html">Social Impacts of the Green Transition: Prospective Environmental (In)Justice in Europe&#x27;s Peripheries</a><br><span>Automatically identified · no AI generation recorded · not reviewed by the lab</span></p><p><a href="/current-conversations/maritime-workforce-skills.html">Preparing the maritime workforce for the twin transition: skill priorities and educational needs</a><br><span>Automatically identified · no AI generation recorded · not reviewed by the lab</span></p></div>
 ```
 
 [How Current Conversations works](/current-conversations/how-it-works.html).

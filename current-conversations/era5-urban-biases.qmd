@@ -8,7 +8,7 @@ canonical-url: "/current-conversations/era5-urban-biases.html"
 
 <p class="page-deck">The study evaluates temperature and dew-point biases in ERA5-Land data across built-up UK environments and considers how those biases propagate into urban climate applications.</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">Automatically identified · no AI generation recorded · not reviewed by the lab</p>
 
 
 ## What is being discussed

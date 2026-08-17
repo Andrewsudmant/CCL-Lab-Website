@@ -8,7 +8,7 @@ canonical-url: "/current-conversations/bc-community-infrastructure.html"
 
 <p class="page-deck">The federal announcement describes funding for local infrastructure projects in British Columbia through arrangements involving Canada, the province, UBCM and local governments.</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">Captured fixture · no AI generation recorded · not reviewed by the lab</p>
 
 
 ## What is being discussed

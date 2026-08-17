@@ -4,13 +4,13 @@
 
 Current Conversations uses automated discovery and AI-assisted annotation to surface material across research, policy, news, commentary and tools. AI is never treated as a source. Readers receive the original link, source identity/date, evidence limitation and review state. Inclusion does not imply endorsement.
 
-The compact unreviewed label is: **Identified and summarized using AI · not reviewed by the lab**. The landing page also warns that summaries may contain errors or omit context and asks readers to consult original sources.
+The compact unreviewed label follows the record, not the system's potential capabilities. Use **Identified and summarized using AI · not reviewed by the lab** only when `ai_provenance.used=true`. Captured fixtures with `used=false` say **Captured fixture · no AI generation recorded · not reviewed by the lab**. The landing page also warns that summaries may contain errors or omit context and asks readers to consult original sources.
 
 ## Required provenance
 
-Every source retains its source/run ID, original and canonical URL, stable identifier where available, authors or organisation, publisher/platform, source environment and role, publication and retrieval dates, exact evidence basis and limitation, query/adapter version, AI model/prompt when used, risk flags, availability, review and correction state. Every cluster retains its principal and linked source IDs, clustering method/confidence/rationale, themes, dates, summary, uncertainty, decision and history.
+Every source retains its source/run ID, original and canonical URL, stable identifier where available, authors or organisation, publisher/platform, source environment and role, publication and retrieval dates, exact evidence basis and limitation, query/adapter version, AI model/prompt when used, risk flags, availability, review and correction state. Every cluster retains its principal and linked source IDs, clustering method/confidence/rationale, themes, dates, summary, uncertainty, decision and history. Cross-source grouping accepts DOI, canonical URL, underlying-source/citation links, platform identifiers, or corroborated organisation-plus-title evidence; a model proposal alone can never merge records.
 
-Bibliographic identity is provider- or owner-derived, never rewritten by AI. Captured fixtures are labelled in their records and reports. Public fixture examples are demonstrations, not evidence of present-day provider coverage.
+Bibliographic identity is provider-, repository- or owner-derived, never rewritten by AI. ORCID-only entries remain withheld until an institutional, publisher or commissioning source verifies the record. Explicit overrides retain their authoritative URLs and retrieval date. Captured fixtures are labelled in their records and reports. Public fixture examples are demonstrations, not evidence of present-day provider coverage.
 
 ## Evidence-constrained annotation
 

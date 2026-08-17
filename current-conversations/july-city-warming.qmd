@@ -8,7 +8,7 @@ canonical-url: "/current-conversations/july-city-warming.html"
 
 <p class="page-deck">Climate Central presents city-level July temperature trends, downloadable data and methodology for more than 240 US cities.</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">Captured fixture · no AI generation recorded · not reviewed by the lab</p>
 
 
 ## What is being discussed

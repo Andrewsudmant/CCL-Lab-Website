@@ -88,7 +88,7 @@ class BudgetLedger:
             raise AdapterError("paid discovery disabled: maximum possible cost exceeds monthly CAD allowance")
         return maximum_cad, self.policy.per_month_cad - spent
 
-    def record(self, run_id: str, actual_or_estimated_usd: Decimal, usage_basis: str) -> dict:
+    def record(self, run_id: str, actual_or_estimated_usd: Decimal, usage_basis: str, usage: dict | None = None) -> dict:
         ledger = self.load()
         cad = self.policy.maximum_cad(actual_or_estimated_usd)
         spent = Decimal(ledger["spent_cad"]) + cad
@@ -96,7 +96,15 @@ class BudgetLedger:
             raise AdapterError("budget reconciliation would exceed an approved CAD ceiling")
         ledger["spent_cad"] = str(spent.quantize(Decimal("0.01")))
         ledger["conversion"] = {"usd_per_cad": str(self.policy.usd_per_cad), "rate_date": self.policy.rate_date.isoformat(), "safety_margin": str(self.policy.safety_margin)}
-        ledger["runs"].append({"run_id": run_id, "recorded_at": self.now.isoformat(), "cost_cad": str(cad.quantize(Decimal("0.01"))), "usage_basis": usage_basis})
+        ledger["runs"].append({
+            "run_id": run_id, "recorded_at": self.now.isoformat(),
+            "cost_cad": str(cad.quantize(Decimal("0.01"))), "usage_basis": usage_basis,
+            "provider_usage": {
+                "input_tokens": int((usage or {}).get("input_tokens", 0)),
+                "output_tokens": int((usage or {}).get("output_tokens", 0)),
+                "total_tokens": int((usage or {}).get("total_tokens", 0)),
+            },
+        })
         self.path.parent.mkdir(parents=True, exist_ok=True)
         self.path.write_text(json.dumps(ledger, indent=2) + "\n", encoding="utf-8")
         return ledger

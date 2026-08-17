@@ -34,7 +34,7 @@ description: "How cities identify, value and distribute the multiple benefits, c
 Current Conversations remains secondary to the lab's own work. These recent entries have this theme as a primary or related assignment.
 
 ```{=html}
-<div class="compact-list"><p><a href="/current-conversations/atlantic-climate-finance.html">Assessing intersectional inequities in climate finance across Atlantic Canada</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p><p><a href="/current-conversations/austin-tree-canopy.html">How Austin uses AI to address tree canopies</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p><p><a href="/current-conversations/housing-climate-rights.html">Why the Right to Housing is the Key to Climate Survival</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p></div>
+<div class="compact-list"><p><a href="/current-conversations/atlantic-climate-finance.html">Assessing intersectional inequities in climate finance across Atlantic Canada</a><br><span>Automatically identified · no AI generation recorded · not reviewed by the lab</span></p><p><a href="/current-conversations/austin-tree-canopy.html">How Austin uses AI to address tree canopies</a><br><span>Captured fixture · no AI generation recorded · not reviewed by the lab</span></p><p><a href="/current-conversations/housing-climate-rights.html">Why the Right to Housing is the Key to Climate Survival</a><br><span>Captured fixture · no AI generation recorded · not reviewed by the lab</span></p></div>
 ```
 
 [How Current Conversations works](/current-conversations/how-it-works.html).

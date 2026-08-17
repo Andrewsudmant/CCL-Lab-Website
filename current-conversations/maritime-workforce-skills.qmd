@@ -8,7 +8,7 @@ canonical-url: "/current-conversations/maritime-workforce-skills.html"
 
 <p class="page-deck">The study investigates skill priorities and education needs created by the maritime sector's linked decarbonisation and digital transitions.</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">Automatically identified · no AI generation recorded · not reviewed by the lab</p>
 
 
 ## What is being discussed

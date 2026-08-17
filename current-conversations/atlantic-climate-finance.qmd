@@ -8,7 +8,7 @@ canonical-url: "/current-conversations/atlantic-climate-finance.html"
 
 <p class="page-deck">The study examines uneven access to government and philanthropic climate finance in Atlantic Canada, with a primary case study in Nova Scotia.</p>
 
-<p class="status-badge unreviewed">Identified and summarized using AI · not reviewed by the lab</p>
+<p class="status-badge unreviewed">Automatically identified · no AI generation recorded · not reviewed by the lab</p>
 
 
 ## What is being discussed

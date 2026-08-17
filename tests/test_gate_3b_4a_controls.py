@@ -94,8 +94,8 @@ def test_canonical_cross_listing_does_not_duplicate_records() -> None:
 
 
 def test_identifier_clustering_and_diversity() -> None:
-    a = DiscoveredItem("Same work", "https://doi.org/10.1/x", "A", "academic-paper", "2026-08-01", ["A"], "10.1/x", abstract="evidence", evidence_types=["abstract"])
-    b = DiscoveredItem("Coverage", "https://news.test/x", "B", "news-analysis", "2026-08-02", ["B"], "10.1/x", abstract="coverage")
+    a = DiscoveredItem("Same work", "https://doi.org/10.1234/x", "A", "academic-paper", "2026-08-01", ["A"], "10.1234/x", abstract="evidence", evidence_types=["abstract"])
+    b = DiscoveredItem("Coverage", "https://news.test/x", "B", "news-analysis", "2026-08-02", ["B"], "10.1234/x", abstract="coverage")
     principals, report = cluster([a, b])
     assert len(principals) == 1 and len(report[0]["members"]) == 2
     items = [DiscoveredItem(str(i), f"https://one.test/{i}", "A", "academic-paper", "2026-08-01") for i in range(3)]

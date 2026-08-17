@@ -1,0 +1,11 @@
+---
+title: "Research Watch has moved"
+description: "Research Watch is now Current Conversations."
+canonical-url: "/current-conversations/"
+---
+
+<p class="page-deck">Research Watch is now <strong>Current Conversations</strong>.</p>
+
+The feature has a broader multi-source purpose and a conversation-centred design. This page contains no duplicate feed content and does not require JavaScript.
+
+[Continue to Current Conversations →](/current-conversations/)

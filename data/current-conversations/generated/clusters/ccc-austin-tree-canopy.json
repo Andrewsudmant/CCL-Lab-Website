@@ -1,0 +1,54 @@
+{
+  "cluster_id": "ccc-austin-tree-canopy",
+  "slug": "austin-tree-canopy",
+  "public_title": "How Austin uses AI to address tree canopies",
+  "discussion_statement": "Axios reports on Austin's use of aerial, weather and socioeconomic data to examine tree-canopy and shade disparities.",
+  "date_first_observed": "2026-06-04",
+  "date_most_recently_observed": "2026-06-04",
+  "principal_source_id": "ccs-axios-austin-tree-canopy",
+  "linked_source_ids": [],
+  "primary_theme": "evidence-infrastructure-tools",
+  "secondary_themes": [
+    "co-benefits-place-based-valuation"
+  ],
+  "geographies": [
+    "global"
+  ],
+  "source_environments": [
+    "news-and-analysis"
+  ],
+  "principal_source_role": "news-reporting",
+  "summary": "Axios reports on Austin's use of aerial, weather and socioeconomic data to examine tree-canopy and shade disparities.",
+  "reason_for_relevance": "The example links decision-support infrastructure with place-based heat exposure and distributional choices.",
+  "limitations": "This item is older than the pilot window and the reporting does not independently validate the tool's estimates.",
+  "agreement_disagreement_uncertainty": "No source disagreement was established by the captured evidence.",
+  "clustering": {
+    "confidence": 1.0,
+    "rationale": "Single-source cluster.",
+    "method": "stable-link-and-event-identity",
+    "version": "1.0.0",
+    "supporting_identifiers": [
+      "https://www.axios.com/local/austin/2026/06/04/austin-google-ai-tree-canopies"
+    ],
+    "principal_source_rationale": "The original evidence or official source is principal; reporting, analysis and commentary remain separately attributed."
+  },
+  "ai_provenance": {
+    "used": false,
+    "model": null,
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "publication_decision": "published",
+  "correction_status": "none",
+  "availability_status": "available",
+  "history": [
+    {
+      "date": "2026-08-17",
+      "action": "created",
+      "note": "Created for private mixed-source calibration; identifiers remain stable."
+    }
+  ],
+  "homepage_eligible": true,
+  "archive_date": null,
+  "captured_fixture": true
+}

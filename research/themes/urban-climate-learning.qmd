@@ -23,22 +23,18 @@ description: "How municipal organisations and their partners acquire, interpret,
 <div class="compact-list"><p><a href="/projects/climate-delivery-modes.html">Climate delivery modes</a></p></div>
 ```
 
-## Core publications
+## Selected publications
 
 ```{=html}
-<div class="compact-list"><p><a href="/publications/replicate-generalize-urban-research.html">Replicate and generalize to make urban research coherent</a></p><p><a href="/publications/who-can-learn-geography-urban-climate-evidence.html">Who can learn from whom? The geography of urban climate evidence</a></p></div>
+<div class="compact-list"><p><a href="/publications/who-can-learn-geography-urban-climate-evidence.html">Who can learn from whom? The geography of urban climate evidence</a></p><p><a href="/publications/replicate-generalize-urban-research.html">Replicate and generalize to make urban research coherent</a></p><p><a href="/publications/integration-mitigation-adaptation-europe.html">Integration of mitigation and adaptation in urban climate change action plans in Europe: A systematic assessment</a></p></div>
 ```
 
-## Related publications
+## Current Conversations
+
+Current Conversations remains secondary to the lab's own work. These recent entries have this theme as a primary or related assignment.
 
 ```{=html}
-<div class="compact-list"><p><a href="/publications/integration-mitigation-adaptation-europe.html">Integration of mitigation and adaptation in urban climate change action plans in Europe: A systematic assessment</a></p></div>
+<div class="compact-list"><p><a href="/current-conversations/local-capacity-policy-evaluation.html">Local capacity building and policy evaluation in climate and environmental governance</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p><p><a href="/current-conversations/unep-extreme-heat-diplomacy.html">Beating the Heat Together: City Diplomacy and the Global Mobilization against Extreme Heat</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p></div>
 ```
 
-## Recent evidence
-
-```{=html}
-<div class="compact-list"><p><a href="https://www.nature.com/articles/s44284-025-00260-8">Systematic global stocktake of over 50,000 urban climate change studies</a><br><span>AI-selected and summarized · not reviewed by the lab</span></p></div>
-```
-
-[Read the Research Watch method](/research-watch/methods.html).
+[How Current Conversations works](/current-conversations/how-it-works.html).

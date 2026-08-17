@@ -1,0 +1,54 @@
+{
+  "source_id": "ccs-nature-based-solutions-scaling",
+  "title": "From pilot to paradigm: a call for entrepreneurial strategies to scale up the implementation of nature-based solutions",
+  "original_url": "https://doi.org/10.1080/09654313.2026.2714960",
+  "canonical_url": "https://doi.org/10.1080/09654313.2026.2714960",
+  "stable_identifier": {
+    "type": "doi",
+    "value": "10.1080/09654313.2026.2714960"
+  },
+  "authors_or_organisation": [
+    "Tara Op de Beeck and Tom Coppens"
+  ],
+  "publication_date": "2026-08-13",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "academic-research",
+  "source_type": "peer-reviewed-article",
+  "source_role": "primary-research",
+  "publisher_or_platform": "Tara Op de Beeck and Tom Coppens",
+  "source_domain": "doi.org",
+  "language": "en",
+  "geographies": [
+    "global"
+  ],
+  "evidence_basis": [
+    "abstract"
+  ],
+  "evidence_limitations": "Only the abstract was available to the captured discovery process.",
+  "content_access_status": "substantive",
+  "content_hash": "59ce608d4619418ae874bcfd0c8533679d5232a276106cbf60b235023041ca33",
+  "discovery": {
+    "adapter": "openalex",
+    "query_id": "cc-fixture-climate-governance-delivery",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "The article asks how cities can move nature-based solutions beyond isolated pilots and discusses more proactive implementation strategies and their potential co-benefits.",
+    "reason_for_relevance": "Moving from pilots to city-wide delivery is central to the lab's interest in implementation arrangements and learning."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": false
+}

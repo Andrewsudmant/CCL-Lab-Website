@@ -14,7 +14,7 @@ page-layout: full
       <p class="hero-subtitle">Research on how cities generate, transfer and use evidence for climate action.</p>
       <div class="hero-actions">
         <a class="button button-primary" href="research.html">Explore our research</a>
-        <a class="button button-quiet" href="research-watch/index.html">Visit Research Watch <span aria-hidden="true">→</span></a>
+        <a class="button button-quiet" href="current-conversations/index.html">Explore Current Conversations <span aria-hidden="true">→</span></a>
       </div>
     </div>
     <aside class="hero-aside" aria-label="Lab focus">
@@ -74,25 +74,25 @@ page-layout: full
 ```{=html}
 <section class="section-shell watch-callout" aria-labelledby="watch-heading">
   <div>
-    <p class="eyebrow eyebrow-light">Research Watch</p>
-    <h2 id="watch-heading">A transparent view of emerging urban climate evidence.</h2>
+    <p class="eyebrow eyebrow-light">Current Conversations</p>
+    <h2 id="watch-heading">Where the themes we work on are being discussed.</h2>
   </div>
   <div>
-    <p>Research Watch discovers and classifies research, analysis, tools and public discussion while preserving the original source and a visible provenance trail.</p>
+    <p>Recent research, policy analysis, reporting, tools and public discussion connected to the lab's research themes. Items are identified, grouped and summarized using AI and have not normally been reviewed by the lab.</p>
     <p class="watch-rule"><strong>AI helps discover and annotate.</strong> Original sources remain authoritative.</p>
-    <a class="button button-on-dark" href="research-watch/index.html">View Research Watch</a>
+    <a class="button button-on-dark" href="current-conversations/index.html">View Current Conversations</a>
   </div>
 </section>
 ```
 
 ```{=html}
 <section class="section-shell" aria-labelledby="recent-watch-heading">
-  <div class="section-header"><div><p class="eyebrow">Recent evidence</p><h2 id="recent-watch-heading">From Research Watch</h2></div><a href="research-watch/index.html">View all →</a></div>
-  <div class="candidate-warning" role="note"><strong>Automated discovery notice.</strong><span>Research Watch uses automated searches and AI-generated classification and summaries. Items have not normally been reviewed by a member of the Cities & Climate Learning Lab, and inclusion does not imply endorsement. Summaries may contain errors or omit important context. Please consult the original source.</span></div>
+  <div class="section-header"><div><p class="eyebrow">Recent discussion</p><h2 id="recent-watch-heading">Current Conversations</h2></div><a href="current-conversations/index.html">View all →</a></div>
+  <div class="candidate-warning" role="note" aria-label="Current Conversations automated discovery and non-endorsement disclosure"><strong>Automated discovery notice.</strong><span>Current Conversations uses automated searches and AI-generated classification, grouping and summaries to identify recent material connected to the lab's research themes. Sources may include academic papers, policy reports, news, blogs, data tools and public posts. Items have not normally been reviewed by a member of the Cities and Climate Learning Lab, and inclusion does not imply endorsement. Coverage is selective and uneven, and summaries may contain errors or omit important context. Please consult the original sources.</span></div>
 </section>
 ```
 
-{{< include generated/home-watch.qmd >}}
+{{< include generated/home-current-conversations.qmd >}}
 
 ```{=html}
 <section class="section-shell" aria-labelledby="people-heading">

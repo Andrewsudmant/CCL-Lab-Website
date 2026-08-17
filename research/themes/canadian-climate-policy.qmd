@@ -23,22 +23,18 @@ description: "Research on the design, politics, governance, implementation and c
 <div class="compact-list"><p><a href="/projects/climate-delivery-modes.html">Climate delivery modes</a></p></div>
 ```
 
-## Core publications
+## Selected publications
 
 ```{=html}
 <p class="empty-compact">No verified records are published in this view yet.</p>
 ```
 
-## Related publications
+## Current Conversations
+
+Current Conversations remains secondary to the lab's own work. These recent entries have this theme as a primary or related assignment.
 
 ```{=html}
-<p class="empty-compact">No verified records are published in this view yet.</p>
+<div class="compact-list"><p><a href="/current-conversations/atlantic-climate-finance.html">Assessing intersectional inequities in climate finance across Atlantic Canada</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p><p><a href="/current-conversations/bc-community-infrastructure.html">Building Communities Strong in British Columbia with 54 new infrastructure projects</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p><p><a href="/current-conversations/bc-lgcap-nonrenewal.html">Local Government Climate Action Program has not been renewed</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p></div>
 ```
 
-## Recent evidence
-
-```{=html}
-<p class="empty-compact">No recent Research Watch item is assigned here.</p>
-```
-
-[Read the Research Watch method](/research-watch/methods.html).
+[How Current Conversations works](/current-conversations/how-it-works.html).

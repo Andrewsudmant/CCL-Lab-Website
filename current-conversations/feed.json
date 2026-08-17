@@ -1,0 +1,317 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Cities & Climate Learning Lab — Current Conversations",
+  "home_page_url": "/current-conversations/",
+  "feed_url": "/current-conversations/feed.json",
+  "items": [
+    {
+      "id": "ccc-urban-smes-net-zero",
+      "url": "/current-conversations/urban-smes-net-zero.html",
+      "title": "Engaging urban SMEs in net-zero transitions to mitigate climate change: Navigating multi-level governance challenges",
+      "content_text": "Drawing on interviews and policy documents, the study considers how multi-level governance arrangements influence climate action among small and medium-sized enterprises in Melbourne.",
+      "date_published": "2026-08-15",
+      "date_modified": "2026-08-15",
+      "external_url": "https://doi.org/10.1177/02662426261464140",
+      "tags": [
+        "climate-governance-delivery"
+      ]
+    },
+    {
+      "id": "ccc-local-capacity-policy-evaluation",
+      "url": "/current-conversations/local-capacity-policy-evaluation.html",
+      "title": "Local capacity building and policy evaluation in climate and environmental governance",
+      "content_text": "The paper examines how local capacity building and policy evaluation shape climate and environmental governance, using Mexico City as a case through which to discuss urban transformation.",
+      "date_published": "2026-08-14",
+      "date_modified": "2026-08-14",
+      "external_url": "https://doi.org/10.1007/s44327-026-00345-6",
+      "tags": [
+        "urban-climate-learning"
+      ]
+    },
+    {
+      "id": "ccc-atlantic-climate-finance",
+      "url": "/current-conversations/atlantic-climate-finance.html",
+      "title": "Assessing intersectional inequities in climate finance across Atlantic Canada",
+      "content_text": "The study examines uneven access to government and philanthropic climate finance in Atlantic Canada, with a primary case study in Nova Scotia.",
+      "date_published": "2026-08-13",
+      "date_modified": "2026-08-13",
+      "external_url": "https://doi.org/10.1007/s44274-026-00957-0",
+      "tags": [
+        "canadian-climate-policy",
+        "co-benefits-place-based-valuation"
+      ]
+    },
+    {
+      "id": "ccc-era5-urban-biases",
+      "url": "/current-conversations/era5-urban-biases.html",
+      "title": "Evaluating ERA5-Land air temperature and dew point biases in built-up environments in the UK",
+      "content_text": "The study evaluates temperature and dew-point biases in ERA5-Land data across built-up UK environments and considers how those biases propagate into urban climate applications.",
+      "date_published": "2026-08-13",
+      "date_modified": "2026-08-13",
+      "external_url": "https://doi.org/10.1016/j.uclim.2026.103088",
+      "tags": [
+        "evidence-infrastructure-tools"
+      ]
+    },
+    {
+      "id": "ccc-green-transition-justice",
+      "url": "/current-conversations/green-transition-justice.html",
+      "title": "Social Impacts of the Green Transition: Prospective Environmental (In)Justice in Europe's Peripheries",
+      "content_text": "Using six case studies, the article considers prospective environmental injustice associated with decarbonisation, critical minerals, regional strategies and gaps between workforce and socio-ecological policy.",
+      "date_published": "2026-08-13",
+      "date_modified": "2026-08-13",
+      "external_url": "https://doi.org/10.17645/pag.12268",
+      "tags": [
+        "just-transitions-workforce"
+      ]
+    },
+    {
+      "id": "ccc-nature-based-solutions-scaling",
+      "url": "/current-conversations/nature-based-solutions-scaling.html",
+      "title": "From pilot to paradigm: a call for entrepreneurial strategies to scale up the implementation of nature-based solutions",
+      "content_text": "The article asks how cities can move nature-based solutions beyond isolated pilots and discusses more proactive implementation strategies and their potential co-benefits.",
+      "date_published": "2026-08-13",
+      "date_modified": "2026-08-13",
+      "external_url": "https://doi.org/10.1080/09654313.2026.2714960",
+      "tags": [
+        "climate-governance-delivery",
+        "co-benefits-place-based-valuation"
+      ]
+    },
+    {
+      "id": "ccc-multilayered-urban-forests",
+      "url": "/current-conversations/multilayered-urban-forests.html",
+      "title": "Multi-layered Urban Forests: can a City be dense and green?",
+      "content_text": "The paper discusses how urban density and layered urban forest design can be considered together rather than treated as mutually exclusive planning goals.",
+      "date_published": "2026-08-10",
+      "date_modified": "2026-08-10",
+      "external_url": "https://doi.org/10.3389/frsc.2026.1842594",
+      "tags": [
+        "co-benefits-place-based-valuation"
+      ]
+    },
+    {
+      "id": "ccc-france-heat-drought",
+      "url": "/current-conversations/france-heat-drought.html",
+      "title": "July breaks drought and heat records in France: The issue of water is becoming absolutely critical",
+      "content_text": "Le Monde reports on French heat and drought records and the resulting pressure on water systems, communities and public authorities.",
+      "date_published": "2026-08-05",
+      "date_modified": "2026-08-05",
+      "external_url": "https://www.lemonde.fr/en/environment/article/2026/08/05/july-breaks-drought-and-heat-records-the-issue-of-water-is-becoming-absolutely-critical_6756164_114.html",
+      "tags": [
+        "climate-governance-delivery"
+      ]
+    },
+    {
+      "id": "ccc-el-nino-urban-heat",
+      "url": "/current-conversations/el-nino-urban-heat.html",
+      "title": "This summer isn't breaking heat records yet. Wait until El Nino kicks in, scientists say",
+      "content_text": "Associated Press reports scientists' assessment of the interaction between long-term warming, a strengthening El Nino and extreme heat affecting cities and regions.",
+      "date_published": "2026-08-04",
+      "date_modified": "2026-08-04",
+      "external_url": "https://apnews.com/article/ffd31dd358a894667c63f4c0a21cd677",
+      "tags": [
+        "climate-governance-delivery"
+      ]
+    },
+    {
+      "id": "ccc-unep-extreme-heat-diplomacy",
+      "url": "/current-conversations/unep-extreme-heat-diplomacy.html",
+      "title": "Beating the Heat Together: City Diplomacy and the Global Mobilization against Extreme Heat",
+      "content_text": "UNEP's event page frames extreme heat as a topic for city diplomacy and shared urban learning among municipal and international actors.",
+      "date_published": "2026-08-03",
+      "date_modified": "2026-08-03",
+      "external_url": "https://www.unep.org/events/unep-event/beating-heat-together-city-diplomacy-and-global-mobilization-against-extreme-heat",
+      "tags": [
+        "urban-climate-learning",
+        "climate-governance-delivery"
+      ]
+    },
+    {
+      "id": "ccc-data-portal-for-cities",
+      "url": "/current-conversations/data-portal-for-cities.html",
+      "title": "Data Portal for Cities",
+      "content_text": "The platform provides preliminary city emissions data and export functions intended to help local governments build inventories and set priorities.",
+      "date_published": "2026-08-01",
+      "date_modified": "2026-08-01",
+      "external_url": "https://dataportalforcities.org/",
+      "tags": [
+        "evidence-infrastructure-tools",
+        "climate-governance-delivery"
+      ]
+    },
+    {
+      "id": "ccc-bc-community-infrastructure",
+      "url": "/current-conversations/bc-community-infrastructure.html",
+      "title": "Building Communities Strong in British Columbia with 54 new infrastructure projects",
+      "content_text": "The federal announcement describes funding for local infrastructure projects in British Columbia through arrangements involving Canada, the province, UBCM and local governments.",
+      "date_published": "2026-07-30",
+      "date_modified": "2026-07-30",
+      "external_url": "https://www.canada.ca/en/housing-infrastructure-communities/news/2026/07/building-communities-strong-in-british-columbia-with-54-new-infrastructure-projects.html",
+      "tags": [
+        "canadian-climate-policy",
+        "climate-governance-delivery"
+      ]
+    },
+    {
+      "id": "ccc-coolcity-europe-tool-news",
+      "url": "/current-conversations/coolcity-europe-tool-news.html",
+      "title": "Planning data-driven climate adaptation actions",
+      "content_text": "The Covenant of Mayors describes a platform offering comparable Earth-observation data intended to support adaptation planning across European cities.",
+      "date_published": "2026-07-29",
+      "date_modified": "2026-07-29",
+      "external_url": "https://eu-mayors.ec.europa.eu/en/news/planning-data-driven-climate-adaptation-actions",
+      "tags": [
+        "evidence-infrastructure-tools"
+      ]
+    },
+    {
+      "id": "ccc-coolcity-index",
+      "url": "/current-conversations/coolcity-index.html",
+      "title": "COOLCITY Index.eu",
+      "content_text": "The platform offers comparable urban climate and environmental indicators intended to support adaptation prioritisation across European cities.",
+      "date_published": "2026-07-29",
+      "date_modified": "2026-07-29",
+      "external_url": "https://coolcityindex.eu/",
+      "tags": [
+        "evidence-infrastructure-tools"
+      ]
+    },
+    {
+      "id": "ccc-local-temperature-records-tool",
+      "url": "/current-conversations/local-temperature-records-tool.html",
+      "title": "Local Records Data Viewer",
+      "content_text": "The viewer provides filterable daily temperature records for US cities using open data from NOAA regional climate centres.",
+      "date_published": "2026-07-27",
+      "date_modified": "2026-07-27",
+      "external_url": "https://app.climatecentral.org/dataviz/local-records/data-viewer",
+      "tags": [
+        "evidence-infrastructure-tools"
+      ]
+    },
+    {
+      "id": "ccc-maritime-workforce-skills",
+      "url": "/current-conversations/maritime-workforce-skills.html",
+      "title": "Preparing the maritime workforce for the twin transition: skill priorities and educational needs",
+      "content_text": "The study investigates skill priorities and education needs created by the maritime sector's linked decarbonisation and digital transitions.",
+      "date_published": "2026-07-24",
+      "date_modified": "2026-07-24",
+      "external_url": "https://doi.org/10.3389/frevc.2026.1887750",
+      "tags": [
+        "just-transitions-workforce"
+      ]
+    },
+    {
+      "id": "ccc-syracuse-climate-plan",
+      "url": "/current-conversations/syracuse-climate-plan.html",
+      "title": "Mayor Owens Announces Adoption of Inaugural Climate Action Plan",
+      "content_text": "The City of Syracuse announced adoption of its first community and municipal climate action plan, covering resilience, energy, mobility, education, heat and flooding.",
+      "date_published": "2026-07-14",
+      "date_modified": "2026-07-14",
+      "external_url": "https://www.syr.gov/News/City-News/City-2026/2026-07-14-Mayors-Office-News-1130AM",
+      "tags": [
+        "climate-governance-delivery"
+      ]
+    },
+    {
+      "id": "ccc-berkeley-synthesis-launch",
+      "url": "/current-conversations/berkeley-synthesis-launch.html",
+      "title": "From Observation to Decision: An Introduction to Synthesis by Berkeley Earth",
+      "content_text": "Berkeley Earth introduces a platform connecting historical observations with bias-corrected climate projections at local scale for cities and countries.",
+      "date_published": "2026-07-08",
+      "date_modified": "2026-07-08",
+      "external_url": "https://berkeleyearth.org/from-observation-to-decision-an-introduction-to-synthesis-by-berkeley-earth/",
+      "tags": [
+        "evidence-infrastructure-tools"
+      ]
+    },
+    {
+      "id": "ccc-reuters-climate-monitor",
+      "url": "/current-conversations/reuters-climate-monitor.html",
+      "title": "Reuters Climate Monitor",
+      "content_text": "Copernicus describes a Reuters interactive that compares current temperatures with historical averages and includes city-oriented views.",
+      "date_published": "2026-07-02",
+      "date_modified": "2026-07-02",
+      "external_url": "https://climate.copernicus.eu/reuters-launches-climate-monitor-tool-powered-copernicus-climate-change-service-data",
+      "tags": [
+        "evidence-infrastructure-tools"
+      ]
+    },
+    {
+      "id": "ccc-july-city-warming",
+      "url": "/current-conversations/july-city-warming.html",
+      "title": "July 4th: The Hottest Month Is Getting Hotter After 250 Years of Climate Change",
+      "content_text": "Climate Central presents city-level July temperature trends, downloadable data and methodology for more than 240 US cities.",
+      "date_published": "2026-07-01",
+      "date_modified": "2026-07-01",
+      "external_url": "https://www.climatecentral.org/climate-matters/250-years-of-climate-change",
+      "tags": [
+        "evidence-infrastructure-tools"
+      ]
+    },
+    {
+      "id": "ccc-sustainable-urban-data-centres",
+      "url": "/current-conversations/sustainable-urban-data-centres.html",
+      "title": "Mayors from around the world unite in call for sustainable urban data centres",
+      "content_text": "C40 describes a pact through which participating mayors seek to shape urban data-centre growth around energy, water, land, cost and community concerns.",
+      "date_published": "2026-06-23",
+      "date_modified": "2026-06-23",
+      "external_url": "https://www.c40.org/news/mayors-from-around-the-world-unite-in-call-for-sustainable-urban-data-centres/",
+      "tags": [
+        "climate-governance-delivery",
+        "co-benefits-place-based-valuation"
+      ]
+    },
+    {
+      "id": "ccc-urbclim-model",
+      "url": "/current-conversations/urbclim-model.html",
+      "title": "The UrbClim model",
+      "content_text": "The UrbClim site describes a city-scale climate model offering high-resolution outputs for heat and related variables across historical and future periods.",
+      "date_published": "2026-06-23",
+      "date_modified": "2026-06-23",
+      "external_url": "https://www.urban-climate.eu/model",
+      "tags": [
+        "evidence-infrastructure-tools"
+      ]
+    },
+    {
+      "id": "ccc-housing-climate-rights",
+      "url": "/current-conversations/housing-climate-rights.html",
+      "title": "Why the Right to Housing is the Key to Climate Survival",
+      "content_text": "C40 commentary links housing rights, construction, affordability and climate resilience and points to a related white paper developed with The Shift.",
+      "date_published": "2026-06-11",
+      "date_modified": "2026-06-11",
+      "external_url": "https://www.c40.org/news/why-the-right-to-housing-is-the-key-to-climate-survival/",
+      "tags": [
+        "co-benefits-place-based-valuation",
+        "climate-governance-delivery"
+      ]
+    },
+    {
+      "id": "ccc-austin-tree-canopy",
+      "url": "/current-conversations/austin-tree-canopy.html",
+      "title": "How Austin uses AI to address tree canopies",
+      "content_text": "Axios reports on Austin's use of aerial, weather and socioeconomic data to examine tree-canopy and shade disparities.",
+      "date_published": "2026-06-04",
+      "date_modified": "2026-06-04",
+      "external_url": "https://www.axios.com/local/austin/2026/06/04/austin-google-ai-tree-canopies",
+      "tags": [
+        "evidence-infrastructure-tools",
+        "co-benefits-place-based-valuation"
+      ]
+    },
+    {
+      "id": "ccc-bc-lgcap-nonrenewal",
+      "url": "/current-conversations/bc-lgcap-nonrenewal.html",
+      "title": "Local Government Climate Action Program has not been renewed",
+      "content_text": "UBCM reports that a provincial programme used by local governments for climate staffing, planning and implementation was not renewed in the 2026/27 service plan.",
+      "date_published": "2026-04-15",
+      "date_modified": "2026-04-15",
+      "external_url": "https://www.ubcm.ca/about-ubcm/latest-news/local-government-climate-action-program-has-not-been-renewed",
+      "tags": [
+        "canadian-climate-policy",
+        "climate-governance-delivery"
+      ]
+    }
+  ]
+}

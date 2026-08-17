@@ -1,0 +1,54 @@
+{
+  "source_id": "ccs-multilayered-urban-forests",
+  "title": "Multi-layered Urban Forests: can a City be dense and green?",
+  "original_url": "https://doi.org/10.3389/frsc.2026.1842594",
+  "canonical_url": "https://doi.org/10.3389/frsc.2026.1842594",
+  "stable_identifier": {
+    "type": "doi",
+    "value": "10.3389/frsc.2026.1842594"
+  },
+  "authors_or_organisation": [
+    "Mohammad A. Rahman and co-authors"
+  ],
+  "publication_date": "2026-08-10",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "academic-research",
+  "source_type": "peer-reviewed-article",
+  "source_role": "primary-research",
+  "publisher_or_platform": "Mohammad A. Rahman and co-authors",
+  "source_domain": "doi.org",
+  "language": "en",
+  "geographies": [
+    "global"
+  ],
+  "evidence_basis": [
+    "abstract"
+  ],
+  "evidence_limitations": "The annotation uses abstract evidence and does not independently evaluate the design proposals.",
+  "content_access_status": "substantive",
+  "content_hash": "0e3a0b1c941638d660e02550fea92d15d8d8d265c28ff341140915ce3b6c711c",
+  "discovery": {
+    "adapter": "openalex",
+    "query_id": "cc-fixture-co-benefits-place-based-valuation",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "The paper discusses how urban density and layered urban forest design can be considered together rather than treated as mutually exclusive planning goals.",
+    "reason_for_relevance": "It illustrates place-based trade-offs among urban form, greenery, biodiversity and heat-related benefits."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": false
+}

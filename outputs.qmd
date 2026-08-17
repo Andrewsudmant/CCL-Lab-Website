@@ -7,7 +7,7 @@ description: "Publications, data and decision-support tools from the Cities & Cl
 
 ```{=html}
 <div class="theme-grid">
-  <article class="theme-card"><span class="theme-number">01</span><h2><a href="publications.html">Publications</a></h2><p>Verified articles and preprints with complete bibliographic metadata, stable identifiers and an explicit relationship to the lab.</p></article>
+  <article class="theme-card"><span class="theme-number">01</span><h2><a href="publications.html">Selected publications</a></h2><p>Ten verified outputs chosen for their relevance to the lab's themes, with stable identifiers and an explicit relationship to the lab.</p><p><a href="publications/complete.html">Browse the complete publication record →</a></p></article>
   <article class="theme-card"><span class="theme-number">02</span><h2><a href="data-tools.html">Data and Tools</a></h2><p>Place-based data resources and decision-support tools, with their methods, provenance and limitations kept visible.</p></article>
 </div>
 ```

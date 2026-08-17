@@ -9,21 +9,12 @@ description: "A public-evidence methodology for understanding occupation switchi
 
 **Status:** In Development  
 **Relationship to the lab:** Current Lab Research — Owner-approved current programme of the Cities and Climate Learning Lab.  
-**Primary theme:** [Just transitions, occupations and workforce change](/research/themes/just-transitions-workforce.html)  
-**Related themes:** [Urban climate evidence infrastructure and decision-support tools](/research/themes/evidence-infrastructure-tools.html), [Climate governance and delivery modes](/research/themes/climate-governance-delivery.html)
+**Primary theme:** [Just transitions, occupations and workforce change](/research/themes/just-transitions-workforce.html)
 
 ## Research questions
 
 - Which requirements distinguish sector changes from transitions between occupations?
 - How can occupational relatedness and transition requirements be calibrated from public evidence?
-
-## Scope
-
-- **Geography:** united-kingdom
-- **Governance scales:** federal-national, regional
-- **Methods:** occupational-analysis, evidence-synthesis, taxonomy-development, network-analysis, calibration
-- **Climate domains:** just-transition
-- **Sectors:** labour-workforce
 
 ## Connected publications
 
@@ -32,5 +23,3 @@ No connected publication is recorded.
 ## Authoritative sources
 
 - Owner-approved Gate 3B–4A programme description — verified 2026-08-14
-
-**Record verification:** Owner Approved · last verified 2026-08-14.

@@ -1,41 +1,39 @@
 ---
-title: "Research Watch"
-description: "A transparent, AI-assisted discovery view of urban climate evidence."
+title: "Current Conversations"
+description: "Where the themes we work on are being discussed across research, policy, media and public commentary."
 page-layout: full
 ---
 
 ```{=html}
 <div class="watch-intro section-shell-narrow">
-  <p class="page-deck">An evolving view of research, analysis, tools and discussion relevant to how cities learn and act on climate.</p>
-  <div class="research-watch-disclosure" role="note" aria-label="Automated discovery notice">
+  <p class="page-deck">Where the themes we work on are being discussed across research, policy, media and public commentary.</p>
+  <p>Current Conversations offers an automatically generated view of where the lab's research themes are being discussed across research, policy, media and public commentary.</p>
+  <div class="research-watch-disclosure" role="note" aria-label="Current Conversations automated discovery and non-endorsement disclosure">
     <p class="eyebrow">How to read this page</p>
-    <p><strong>Research Watch uses automated searches and AI-generated classification and summaries.</strong> Items have not normally been reviewed by a member of the Cities & Climate Learning Lab, and inclusion does not imply endorsement. Summaries may contain errors or omit important context. Please consult the original source.</p>
+    <p><strong>Current Conversations uses automated searches and AI-generated classification, grouping and summaries to identify recent material connected to the lab's research themes.</strong> Sources may include academic papers, policy reports, news, blogs, data tools and public posts. Items have not normally been reviewed by a member of the Cities and Climate Learning Lab, and inclusion does not imply endorsement. Coverage is selective and uneven, and summaries may contain errors or omit important context. Please consult the original sources.</p>
   </div>
-  <p><a href="methods.html">Read the method, publication controls and correction process →</a></p>
+  <p><a href="how-it-works.html">How Current Conversations works, including methods and limitations →</a></p>
+  <p class="record-meta"><strong>Last successful update:</strong> 17 August 2026 · <strong>Latest run coverage:</strong> OpenAlex live-captured; Crossref and DataCite enrichment attempted; web sources captured as fixtures because paid discovery was unavailable; Bluesky unavailable (HTTP 403).</p>
+  <p><a href="feed.xml">RSS feed</a> · <a href="feed.json">JSON feed</a> · <a href="/contact.html">Request a correction or report a broken source</a></p>
 </div>
 ```
 
 ```{=html}
-<section class="section-shell" aria-labelledby="automated-heading">
-  <div class="section-header"><div><p class="eyebrow">Automatically published</p><h2 id="automated-heading">AI-selected evidence</h2></div><span class="status-badge unreviewed">Not reviewed</span></div>
-  <form class="watch-filters" data-watch-filters aria-label="Filter Research Watch">
-    <label>Search <input type="search" name="query" autocomplete="off"></label>
+<section class="section-shell" aria-labelledby="conversations-heading">
+  <div class="section-header"><div><p class="eyebrow">Recent discussion</p><h2 id="conversations-heading">Conversation clusters and standalone entries</h2></div><span class="status-badge unreviewed">Normally unreviewed</span></div>
+  <form class="watch-filters" data-conversation-filters aria-label="Filter Current Conversations">
+    <label>Keyword <input type="search" name="query" autocomplete="off"></label>
     <label>Theme <select name="theme"><option value="">All themes</option><option value="urban-climate-learning">Urban climate learning</option><option value="climate-governance-delivery">Governance and delivery</option><option value="co-benefits-place-based-valuation">Co-benefits and valuation</option><option value="just-transitions-workforce">Just transitions and workforce</option><option value="evidence-infrastructure-tools">Evidence infrastructure</option><option value="canadian-climate-policy">Canadian climate policy</option></select></label>
-    <label>Source <select name="source"><option value="">All sources</option><option value="academic-paper">Academic paper</option><option value="policy-report">Policy report</option><option value="news-analysis">News / analysis</option><option value="blog-commentary">Blog / commentary</option><option value="data-tool">Data tool</option><option value="bluesky">Bluesky</option></select></label>
-    <button type="reset">Clear</button><output data-watch-count aria-live="polite"></output>
+    <label>Source environment <select name="environment"><option value="">All environments</option><option value="academic-research">Academic research</option><option value="policy-and-institutions">Policy and institutions</option><option value="news-and-analysis">News and analysis</option><option value="blogs-and-commentary">Blogs and commentary</option><option value="data-and-tools">Data and tools</option><option value="bluesky">Bluesky</option></select></label>
+    <label>Geography <select name="geography"><option value="">All geographies</option><option value="global">Global</option><option value="canada">Canada</option><option value="british-columbia">British Columbia</option><option value="europe">Europe</option><option value="united-kingdom">United Kingdom</option></select></label>
+    <label>Entry type <select name="kind"><option value="">Clusters and standalone</option><option value="cluster">Grouped clusters</option><option value="standalone">Standalone entries</option></select></label>
+    <label>Published since <input type="date" name="since"></label>
+    <button type="reset">Clear</button><output data-conversation-count aria-live="polite"></output>
   </form>
 ```
 
-{{< include ../generated/research-watch-automated.qmd >}}
+{{< include ../generated/current-conversations-feed.qmd >}}
 
 ```{=html}
 </section>
-<section class="candidate-zone" aria-labelledby="reviewed-heading"><div class="section-shell">
-  <div class="section-header"><div><p class="eyebrow">Optional editorial layer</p><h2 id="reviewed-heading">Lab reviewed selections</h2></div><span class="status-badge reviewed">Reviewed</span></div>
-```
-
-{{< include ../generated/research-watch-reviewed.qmd >}}
-
-```{=html}
-</div></section>
 ```

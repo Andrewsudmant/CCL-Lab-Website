@@ -1,0 +1,7 @@
+---
+title: "Research Watch methods have moved"
+description: "The method is now How Current Conversations works."
+canonical-url: "/current-conversations/how-it-works.html"
+---
+
+The former Research Watch methods page is now [How Current Conversations works](/current-conversations/how-it-works.html).

@@ -1,0 +1,51 @@
+{
+  "source_id": "ccs-ap-data-centres-reporting",
+  "title": "40 mayors worldwide endorse a pact to shape data center development",
+  "original_url": "https://apnews.com/article/37df5184ad4f28ea084082563182e1ea",
+  "canonical_url": "https://apnews.com/article/37df5184ad4f28ea084082563182e1ea",
+  "stable_identifier": null,
+  "authors_or_organisation": [
+    "Associated Press"
+  ],
+  "publication_date": "2026-06-23",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "news-and-analysis",
+  "source_type": "news-reporting",
+  "source_role": "news-reporting",
+  "publisher_or_platform": "Associated Press",
+  "source_domain": "apnews.com",
+  "language": "en",
+  "geographies": [
+    "global"
+  ],
+  "evidence_basis": [
+    "permitted-excerpt"
+  ],
+  "evidence_limitations": "Only the available article text was used; the reporting and official announcement make different contributions.",
+  "content_access_status": "substantive",
+  "content_hash": "63251f01386a790a8a97229ec3a5b6d583b51b8f9dbc280ea46a19f592747470",
+  "discovery": {
+    "adapter": "captured-web-fixture",
+    "query_id": "cc-fixture-climate-governance-delivery",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "Associated Press reports on the city pact and situates it in concerns about electricity, water, land, heat and local development pressures.",
+    "reason_for_relevance": "The reporting adds independent context to the official pact announcement while retaining the original source as principal."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": true
+}

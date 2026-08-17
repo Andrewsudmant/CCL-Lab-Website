@@ -9,21 +9,12 @@ description: "A comparative programme examining how public authorities, infrastr
 
 **Status:** In Development  
 **Relationship to the lab:** Current Lab Research — Owner-approved current programme of the Cities and Climate Learning Lab.  
-**Primary theme:** [Climate governance and delivery modes](/research/themes/climate-governance-delivery.html)  
-**Related themes:** [Urban climate learning and evidence transfer](/research/themes/urban-climate-learning.html), [Canadian climate policy](/research/themes/canadian-climate-policy.html)
+**Primary theme:** [Climate governance and delivery modes](/research/themes/climate-governance-delivery.html)
 
 ## Research questions
 
 - Which combinations of actors and institutions enable urban climate implementation?
 - How do delivery arrangements vary across city types, sectors and regions?
-
-## Scope
-
-- **Geography:** canada, global
-- **Governance scales:** international, federal-national, provincial-territorial, regional, municipal
-- **Methods:** comparative-case-study, institutional-analysis, policy-analysis
-- **Climate domains:** mitigation, adaptation
-- **Sectors:** cross-sectoral, urban-infrastructure
 
 ## Connected publications
 
@@ -32,5 +23,3 @@ No connected publication is recorded.
 ## Authoritative sources
 
 - Owner-approved Gate 3B–4A programme description — verified 2026-08-14
-
-**Record verification:** Owner Approved · last verified 2026-08-14.

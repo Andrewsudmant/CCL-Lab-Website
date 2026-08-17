@@ -23,22 +23,18 @@ description: "The data systems, indicators, models, standards and decision-suppo
 <div class="compact-list"><p><a href="/projects/coben-place-based-model.html">CoBen: place-based co-benefits and co-costs</a></p><p><a href="/projects/geography-urban-climate-evidence.html">Geography of urban climate evidence</a></p><p><a href="/projects/occupational-transition-requirements.html">Occupational transition requirements and occupation switching</a></p><p><a href="/projects/uk-co-benefits-atlas.html">UK Co-Benefits Atlas</a></p></div>
 ```
 
-## Core publications
+## Selected publications
 
 ```{=html}
-<div class="compact-list"><p><a href="/publications/data-scaling-climate-action-governance-uk.html">Data Scaling: Implications for Climate Action and Governance in the UK</a></p><p><a href="/publications/designing-visualization-atlas-uk-cobenefits.html">Designing a Visualization Atlas: Lessons &amp; Reflections from The UK Co-Benefits Atlas for Climate Mitigation</a></p></div>
+<div class="compact-list"><p><a href="/publications/designing-visualization-atlas-uk-cobenefits.html">Designing a Visualization Atlas: Lessons &amp; Reflections from The UK Co-Benefits Atlas for Climate Mitigation</a></p><p><a href="/publications/data-scaling-climate-action-governance-uk.html">Data Scaling: Implications for Climate Action and Governance in the UK</a></p><p><a href="/publications/who-can-learn-geography-urban-climate-evidence.html">Who can learn from whom? The geography of urban climate evidence</a></p><p><a href="/publications/replicate-generalize-urban-research.html">Replicate and generalize to make urban research coherent</a></p></div>
 ```
 
-## Related publications
+## Current Conversations
+
+Current Conversations remains secondary to the lab's own work. These recent entries have this theme as a primary or related assignment.
 
 ```{=html}
-<div class="compact-list"><p><a href="/publications/replicate-generalize-urban-research.html">Replicate and generalize to make urban research coherent</a></p><p><a href="/publications/who-can-learn-geography-urban-climate-evidence.html">Who can learn from whom? The geography of urban climate evidence</a></p></div>
+<div class="compact-list"><p><a href="/current-conversations/austin-tree-canopy.html">How Austin uses AI to address tree canopies</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p><p><a href="/current-conversations/berkeley-synthesis-launch.html">From Observation to Decision: An Introduction to Synthesis by Berkeley Earth</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p><p><a href="/current-conversations/coolcity-europe-tool-news.html">Planning data-driven climate adaptation actions</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p></div>
 ```
 
-## Recent evidence
-
-```{=html}
-<div class="compact-list"><p><a href="https://www.nature.com/articles/s44284-025-00260-8">Systematic global stocktake of over 50,000 urban climate change studies</a><br><span>AI-selected and summarized · not reviewed by the lab</span></p></div>
-```
-
-[Read the Research Watch method](/research-watch/methods.html).
+[How Current Conversations works](/current-conversations/how-it-works.html).

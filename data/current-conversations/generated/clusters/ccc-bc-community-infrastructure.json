@@ -1,0 +1,55 @@
+{
+  "cluster_id": "ccc-bc-community-infrastructure",
+  "slug": "bc-community-infrastructure",
+  "public_title": "Building Communities Strong in British Columbia with 54 new infrastructure projects",
+  "discussion_statement": "The federal announcement describes funding for local infrastructure projects in British Columbia through arrangements involving Canada, the province, UBCM and local governments.",
+  "date_first_observed": "2026-07-30",
+  "date_most_recently_observed": "2026-07-30",
+  "principal_source_id": "ccs-bc-community-infrastructure",
+  "linked_source_ids": [],
+  "primary_theme": "canadian-climate-policy",
+  "secondary_themes": [
+    "climate-governance-delivery"
+  ],
+  "geographies": [
+    "canada",
+    "british-columbia"
+  ],
+  "source_environments": [
+    "policy-and-institutions"
+  ],
+  "principal_source_role": "official-announcement",
+  "summary": "The federal announcement describes funding for local infrastructure projects in British Columbia through arrangements involving Canada, the province, UBCM and local governments.",
+  "reason_for_relevance": "It provides a current example of intergovernmental delivery arrangements that shape municipal capacity and resilience investment.",
+  "limitations": "This is an official announcement, not an independent evaluation of project outcomes.",
+  "agreement_disagreement_uncertainty": "No source disagreement was established by the captured evidence.",
+  "clustering": {
+    "confidence": 1.0,
+    "rationale": "Single-source cluster.",
+    "method": "stable-link-and-event-identity",
+    "version": "1.0.0",
+    "supporting_identifiers": [
+      "https://www.canada.ca/en/housing-infrastructure-communities/news/2026/07/building-communities-strong-in-british-columbia-with-54-new-infrastructure-projects.html"
+    ],
+    "principal_source_rationale": "The original evidence or official source is principal; reporting, analysis and commentary remain separately attributed."
+  },
+  "ai_provenance": {
+    "used": false,
+    "model": null,
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "publication_decision": "published",
+  "correction_status": "none",
+  "availability_status": "available",
+  "history": [
+    {
+      "date": "2026-08-17",
+      "action": "created",
+      "note": "Created for private mixed-source calibration; identifiers remain stable."
+    }
+  ],
+  "homepage_eligible": true,
+  "archive_date": null,
+  "captured_fixture": true
+}

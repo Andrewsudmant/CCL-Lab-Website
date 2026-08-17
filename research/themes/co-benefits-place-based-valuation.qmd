@@ -23,22 +23,18 @@ description: "How cities identify, value and distribute the multiple benefits, c
 <div class="compact-list"><p><a href="/projects/data-methodologies-climate-impact.html">Data Methodologies for Climate Impact Assessment</a></p></div>
 ```
 
-## Core publications
+## Selected publications
 
 ```{=html}
-<div class="compact-list"><p><a href="/publications/climate-policy-social-policy.html">Climate policy as social policy? A comprehensive assessment of the economic impact of climate action in the UK</a></p><p><a href="/publications/economic-case-climate-action-cities.html">Exploring the economic case for climate action in cities</a></p><p><a href="/publications/kigali-economic-appraisal.html">The scope for low-carbon development in Kigali, Rwanda: An economic appraisal</a></p><p><a href="/publications/low-carbon-cities-affordable.html">Low carbon cities: is ambitious action affordable?</a></p></div>
+<div class="compact-list"><p><a href="/publications/climate-policy-social-policy.html">Climate policy as social policy? A comprehensive assessment of the economic impact of climate action in the UK</a></p><p><a href="/publications/kigali-economic-appraisal.html">The scope for low-carbon development in Kigali, Rwanda: An economic appraisal</a></p><p><a href="/publications/low-carbon-cities-affordable.html">Low carbon cities: is ambitious action affordable?</a></p><p><a href="/publications/economic-case-climate-action-cities.html">Exploring the economic case for climate action in cities</a></p><p><a href="/publications/designing-visualization-atlas-uk-cobenefits.html">Designing a Visualization Atlas: Lessons &amp; Reflections from The UK Co-Benefits Atlas for Climate Mitigation</a></p><p><a href="/publications/infrastructure-transitions-southern-cities.html">Infrastructure Transitions in Southern Cities: Organising Urban Service Delivery for Climate and Development</a></p><p><a href="/publications/data-scaling-climate-action-governance-uk.html">Data Scaling: Implications for Climate Action and Governance in the UK</a></p></div>
 ```
 
-## Related publications
+## Current Conversations
+
+Current Conversations remains secondary to the lab's own work. These recent entries have this theme as a primary or related assignment.
 
 ```{=html}
-<div class="compact-list"><p><a href="/publications/data-scaling-climate-action-governance-uk.html">Data Scaling: Implications for Climate Action and Governance in the UK</a></p><p><a href="/publications/designing-visualization-atlas-uk-cobenefits.html">Designing a Visualization Atlas: Lessons &amp; Reflections from The UK Co-Benefits Atlas for Climate Mitigation</a></p><p><a href="/publications/infrastructure-transitions-southern-cities.html">Infrastructure Transitions in Southern Cities: Organising Urban Service Delivery for Climate and Development</a></p></div>
+<div class="compact-list"><p><a href="/current-conversations/atlantic-climate-finance.html">Assessing intersectional inequities in climate finance across Atlantic Canada</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p><p><a href="/current-conversations/austin-tree-canopy.html">How Austin uses AI to address tree canopies</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p><p><a href="/current-conversations/housing-climate-rights.html">Why the Right to Housing is the Key to Climate Survival</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p></div>
 ```
 
-## Recent evidence
-
-```{=html}
-<p class="empty-compact">No recent Research Watch item is assigned here.</p>
-```
-
-[Read the Research Watch method](/research-watch/methods.html).
+[How Current Conversations works](/current-conversations/how-it-works.html).

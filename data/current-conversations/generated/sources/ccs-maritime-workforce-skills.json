@@ -1,0 +1,54 @@
+{
+  "source_id": "ccs-maritime-workforce-skills",
+  "title": "Preparing the maritime workforce for the twin transition: skill priorities and educational needs",
+  "original_url": "https://doi.org/10.3389/frevc.2026.1887750",
+  "canonical_url": "https://doi.org/10.3389/frevc.2026.1887750",
+  "stable_identifier": {
+    "type": "doi",
+    "value": "10.3389/frevc.2026.1887750"
+  },
+  "authors_or_organisation": [
+    "Phoebe Koundouri and co-authors"
+  ],
+  "publication_date": "2026-07-24",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "academic-research",
+  "source_type": "peer-reviewed-article",
+  "source_role": "primary-research",
+  "publisher_or_platform": "Phoebe Koundouri and co-authors",
+  "source_domain": "doi.org",
+  "language": "en",
+  "geographies": [
+    "global"
+  ],
+  "evidence_basis": [
+    "abstract"
+  ],
+  "evidence_limitations": "Urban implications are indirect and should be assessed during owner calibration.",
+  "content_access_status": "substantive",
+  "content_hash": "c3c8e410a421e310078551932cd2fc1dd7b77f21e6380c56540f9aa156eb8ed6",
+  "discovery": {
+    "adapter": "openalex",
+    "query_id": "cc-fixture-just-transitions-workforce",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "The study investigates skill priorities and education needs created by the maritime sector's linked decarbonisation and digital transitions.",
+    "reason_for_relevance": "It offers a sectoral example of how climate delivery changes occupational requirements and training needs."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": false
+}

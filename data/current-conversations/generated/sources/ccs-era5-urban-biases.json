@@ -1,0 +1,54 @@
+{
+  "source_id": "ccs-era5-urban-biases",
+  "title": "Evaluating ERA5-Land air temperature and dew point biases in built-up environments in the UK",
+  "original_url": "https://doi.org/10.1016/j.uclim.2026.103088",
+  "canonical_url": "https://doi.org/10.1016/j.uclim.2026.103088",
+  "stable_identifier": {
+    "type": "doi",
+    "value": "10.1016/j.uclim.2026.103088"
+  },
+  "authors_or_organisation": [
+    "Junjie Yu and co-authors"
+  ],
+  "publication_date": "2026-08-13",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "academic-research",
+  "source_type": "peer-reviewed-article",
+  "source_role": "primary-research",
+  "publisher_or_platform": "Junjie Yu and co-authors",
+  "source_domain": "doi.org",
+  "language": "en",
+  "geographies": [
+    "united-kingdom"
+  ],
+  "evidence_basis": [
+    "abstract"
+  ],
+  "evidence_limitations": "The summary uses the provider abstract and does not independently reproduce the validation.",
+  "content_access_status": "substantive",
+  "content_hash": "16210ff1e5b9a527805745499777028ec49afeb6bee9d26dedd9d1149cb4c123",
+  "discovery": {
+    "adapter": "openalex",
+    "query_id": "cc-fixture-evidence-infrastructure-tools",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "The study evaluates temperature and dew-point biases in ERA5-Land data across built-up UK environments and considers how those biases propagate into urban climate applications.",
+    "reason_for_relevance": "It shows how infrastructure-level data limitations can affect downstream urban climate decisions."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": false
+}

@@ -4,15 +4,17 @@ project:
   pre-render: scripts/pre-render.sh
   render:
     - "*.qmd"
-    - "research-watch/index.qmd"
-    - "research-watch/methods.qmd"
+    - "current-conversations/*.qmd"
+    - "research-watch/*.qmd"
     - "research/themes/*.qmd"
     - "projects/*.qmd"
     - "publications/*.qmd"
     - "!generated/*.qmd"
+    - "!staging/**/*.qmd"
 
 website:
   title: "Cities & Climate Learning Lab"
+  favicon: assets/favicon.svg
   description: "Research on how cities generate, transfer and use evidence for climate action."
   navbar:
     background: light
@@ -35,8 +37,8 @@ website:
             text: Publications
           - href: data-tools.qmd
             text: Data & Tools
-      - href: research-watch/index.qmd
-        text: Watch
+      - href: current-conversations/index.qmd
+        text: Conversations
       - href: opportunities.qmd
         text: Opportunities
       - text: About
@@ -45,14 +47,14 @@ website:
             text: About Andrew
           - href: contact.qmd
             text: Contact
-          - href: research-watch/methods.qmd
-            text: Research Watch methods
+          - href: current-conversations/how-it-works.qmd
+            text: How Current Conversations works
   page-footer:
     left: |
       **Cities & Climate Learning Lab**<br>
       School of Resource and Environmental Management, Simon Fraser University
     right: |
-      [andrew_sudmant@sfu.ca](mailto:andrew_sudmant@sfu.ca) · [Research Watch method](/research-watch/methods.html)<br>
+      [andrew_sudmant@sfu.ca](mailto:andrew_sudmant@sfu.ca) · [Current Conversations method](/current-conversations/how-it-works.html)<br>
       [Report a correction or broken source](/contact.html) ·
       AI-assisted discovery; original sources remain authoritative.
   search: true
@@ -69,6 +71,10 @@ format:
     anchor-sections: true
     smooth-scroll: true
     include-after-body: assets/site-scripts.html
+
+resources:
+  - current-conversations/feed.json
+  - current-conversations/feed.xml
 
 execute:
   freeze: auto

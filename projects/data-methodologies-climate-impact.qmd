@@ -9,20 +9,11 @@ description: "Research on scaling and combining data for place-based climate-imp
 
 **Status:** Completed  
 **Relationship to the lab:** Foundational Prior Work — Work completed at the University of Edinburgh before the lab was established; it provides a methodological foundation for the lab's evidence-tools programme.  
-**Primary theme:** [Urban climate evidence infrastructure and decision-support tools](/research/themes/evidence-infrastructure-tools.html)  
-**Related themes:** [Co-benefits, co-costs and place-based valuation](/research/themes/co-benefits-place-based-valuation.html)
+**Primary theme:** [Urban climate evidence infrastructure and decision-support tools](/research/themes/evidence-infrastructure-tools.html)
 
 ## Research questions
 
 - How can national evidence be scaled for local climate-impact assessment?
-
-## Scope
-
-- **Geography:** united-kingdom
-- **Governance scales:** federal-national, municipal, neighbourhood
-- **Methods:** place-based-modelling, spatial-analysis, economic-appraisal
-- **Climate domains:** mitigation
-- **Sectors:** cross-sectoral
 
 ## Connected publications
 
@@ -31,5 +22,3 @@ description: "Research on scaling and combining data for place-based climate-imp
 ## Authoritative sources
 
 - [University of Edinburgh project record](https://www.research.ed.ac.uk/en/projects/data-methodologies-for-climate-impact-assessment/) — verified 2026-08-14
-
-**Record verification:** Verified · last verified 2026-08-14.

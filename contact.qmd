@@ -22,4 +22,4 @@ description: "Contact the Cities & Climate Learning Lab."
 
 ## Corrections and removals
 
-Use the address above for Research Watch correction and removal requests. Please include the record title, URL and the correction or removal requested. The lab records the decision and, where appropriate, preserves a dated correction trail.
+Use the address above for Current Conversations correction, grouping and removal requests. Please include the cluster or source title, URL and the correction or removal requested. The lab records the decision and, where appropriate, preserves a dated correction, merge or split trail.

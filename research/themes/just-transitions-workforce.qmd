@@ -23,22 +23,18 @@ description: "How urban climate action changes work, skills, occupations and lab
 <p class="empty-compact">No verified records are published in this view yet.</p>
 ```
 
-## Core publications
+## Selected publications
 
 ```{=html}
 <p class="empty-compact">No verified records are published in this view yet.</p>
 ```
 
-## Related publications
+## Current Conversations
+
+Current Conversations remains secondary to the lab's own work. These recent entries have this theme as a primary or related assignment.
 
 ```{=html}
-<p class="empty-compact">No verified records are published in this view yet.</p>
+<div class="compact-list"><p><a href="/current-conversations/green-transition-justice.html">Social Impacts of the Green Transition: Prospective Environmental (In)Justice in Europe&#x27;s Peripheries</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p><p><a href="/current-conversations/maritime-workforce-skills.html">Preparing the maritime workforce for the twin transition: skill priorities and educational needs</a><br><span>Identified and summarized using AI · not reviewed by the lab</span></p></div>
 ```
 
-## Recent evidence
-
-```{=html}
-<p class="empty-compact">No recent Research Watch item is assigned here.</p>
-```
-
-[Read the Research Watch method](/research-watch/methods.html).
+[How Current Conversations works](/current-conversations/how-it-works.html).

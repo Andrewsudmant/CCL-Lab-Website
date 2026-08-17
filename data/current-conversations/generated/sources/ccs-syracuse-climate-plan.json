@@ -1,0 +1,51 @@
+{
+  "source_id": "ccs-syracuse-climate-plan",
+  "title": "Mayor Owens Announces Adoption of Inaugural Climate Action Plan",
+  "original_url": "https://www.syr.gov/News/City-News/City-2026/2026-07-14-Mayors-Office-News-1130AM",
+  "canonical_url": "https://www.syr.gov/News/City-News/City-2026/2026-07-14-Mayors-Office-News-1130AM",
+  "stable_identifier": null,
+  "authors_or_organisation": [
+    "City of Syracuse"
+  ],
+  "publication_date": "2026-07-14",
+  "retrieval_timestamp": "2026-08-17T12:00:00-07:00",
+  "source_environment": "policy-and-institutions",
+  "source_type": "municipal-announcement",
+  "source_role": "official-announcement",
+  "publisher_or_platform": "City of Syracuse",
+  "source_domain": "www.syr.gov",
+  "language": "en",
+  "geographies": [
+    "global"
+  ],
+  "evidence_basis": [
+    "official-webpage-body"
+  ],
+  "evidence_limitations": "The announcement is outside the strict 30-day window and does not establish delivery performance.",
+  "content_access_status": "substantive",
+  "content_hash": "d69b1ce287d7ab67264b818b500cc78ff8dbc29bb870639e6949876ec8c04d64",
+  "discovery": {
+    "adapter": "captured-web-fixture",
+    "query_id": "cc-fixture-climate-governance-delivery",
+    "query_version": "current-conversations-v1.0.0",
+    "run_id": "gate-4b-5a-mixed-source-captured"
+  },
+  "ai_annotation": {
+    "model": "captured-deterministic-annotation",
+    "prompt_version": "current-conversations-classification-v1-fixture",
+    "summary": "The City of Syracuse announced adoption of its first community and municipal climate action plan, covering resilience, energy, mobility, education, heat and flooding.",
+    "reason_for_relevance": "The plan provides a current municipal example of translating climate goals into an implementation framework."
+  },
+  "risk_flags": [],
+  "correction_status": "none",
+  "availability_status": "available",
+  "review": {
+    "status": "not-reviewed",
+    "reviewer": null,
+    "reviewed_date": null,
+    "edits": []
+  },
+  "lab_affiliated": false,
+  "mdpi_excluded": false,
+  "captured_fixture": true
+}

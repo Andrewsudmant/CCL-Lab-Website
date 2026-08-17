@@ -1,37 +1,40 @@
 ---
-title: "Research Watch methods"
-description: "How Research Watch discovers, annotates, checks and publishes records."
+title: "How Current Conversations works"
+description: "How Current Conversations discovers, groups, summarizes and publishes source-linked entries."
 ---
 
-<p class="page-deck">A transparent account of what automation does, what it cannot establish, and why some records are withheld.</p>
+<p class="page-deck">A selective, automatically generated view—not a systematic review, recommendation system or comprehensive map of public discussion.</p>
 
-## Workflow
+> Current Conversations uses automated searches and AI-generated classification, grouping and summaries to identify recent material connected to the lab's research themes. Sources may include academic papers, policy reports, news, blogs, data tools and public posts. Items have not normally been reviewed by a member of the Cities and Climate Learning Lab, and inclusion does not imply endorsement. Coverage is selective and uneven, and summaries may contain errors or omit important context. Please consult the original sources.
 
-1. **Discover.** Bounded, versioned queries search OpenAlex, Crossref, OpenAI web search and public Bluesky data.
-2. **Normalize.** URLs, DOIs, dates and provider fields are converted to a shared record.
-3. **Deduplicate and cluster.** DOI and canonical URL matches are collapsed; related coverage may be grouped around an original source.
-4. **Classify.** Evidence is matched to one primary and up to two secondary lab themes, with scores and rationales. Geography is assigned separately.
-5. **Summarize.** A summary is allowed only when the evidence record is sufficient. Title-only candidates do not receive a substantive summary.
-6. **Check.** Schema, URL safety, duplicate, evidence, risk, disclosure and diversity controls run deterministically.
-7. **Publish, withhold or quarantine.** Passing records may publish without human review. Failed records remain private for reconsideration or investigation.
-8. **Recheck.** Availability, corrections, removals and age are maintained over time.
+## Discovery and source environments
 
-## Publication rules
+Bounded, versioned queries search academic indexes and, when configured, current web material and the official public Bluesky API. Sources are classified separately by environment—academic research, policy and institutions, news and analysis, blogs and commentary, data and tools, or Bluesky—and by the role they play, such as original research, official policy, reporting, analysis or public discussion. Environments do not carry equal evidentiary weight.
 
-Automatic publication does not mean endorsement. A record is withheld when evidence is insufficient, the primary-theme score is below threshold, or a critical risk flag is present. Suspicious URLs or prompt-injection signals are quarantined. No model can override these gates.
+Coverage is selective, incomplete and shaped by indexing, platform access, language and geography. English-language and well-indexed sources are likely to be overrepresented. Bluesky and paywalled material may be absent. The feature is not a systematic evidence review.
 
-The homepage shows at most six items, with caps per domain. The full feed caps domains, themes and event clusters so a single publisher or news event cannot dominate.
+## Evidence access and source integrity
 
-## Provenance
+Each source records what the process actually accessed: metadata, abstract, licensed full text, official page body, executive summary, permitted excerpt, tool description, public post, linked source or search annotation. Titles and snippets cannot support findings claims. Full copyrighted articles, paywalled text and raw provider payloads are not stored.
 
-Every record retains its original and canonical URL, stable or platform identifier, authors or organisation, source type and name, publication date, retrieval timestamp, query and adapter version, evidence used, model and prompt version, confidence, review state, edits, risk flags and correction status.
+Redirects, broken links, corrections, retractions and material page changes can alter availability. Records are marked, corrected or archived rather than silently deleted.
 
-AI-generated text is an annotation of the evidence available to the process. It is never presented as the source, and the original source link remains primary.
+## Classification, grouping and summaries
 
-## Corrections, availability and removal
+Source content is untrusted data. Embedded instructions cannot change the prompt, policy, budget, repository or publication decision. AI may propose themes, summaries, relevance and grouping, but strict schemas and deterministic controls make the final decision.
 
-Corrections can amend the annotation while preserving a dated edit record. Broken links are marked rather than silently deleted. Removal requests can be sent through the [public correction route](/contact.html); a concise tombstone may be retained where necessary for traceability.
+Grouping proceeds from stable identifiers, canonical and underlying-source links, platform identifiers, normalized titles and organisations, then conservative semantic proposals. Broad topic words are never sufficient. A principal source is normally the most original evidence or official source; reporting, analysis, commentary and public discussion remain separately attributed. Disagreement is stated rather than averaged.
 
-## Readiness and calibration
+## Ranking and automated publication
 
-Before a scheduled production process is enabled, the lab will complete a labelled calibration review, approve thresholds and source policies, and verify provider credentials and costs. Until then, captured test records support private testing of the publication and correction controls and are not presented as public evidence.
+Ranking considers thematic relevance, evidence sufficiency, originality, recency, policy or methodological significance, source-environment diversity, geography, domain concentration and duplicate clusters. It does not principally use citations, likes, reposts, followers or popularity.
+
+At most 12 new entries may publish in one run and six appear on the homepage. Homepage controls permit no more than two entries with the same principal domain, one entry from a cluster and one lab-affiliated entry. Weak records remain withheld. Human review is optional; a review badge appears only with reviewer identity and review date.
+
+## AI and provider limitations
+
+AI summaries can be wrong, incomplete or overconfident. Source access may be unequal, provider indexing may change, and model-assisted grouping may miss or over-connect discussions. A failed provider does not erase the last valid state. Paid web discovery is disabled unless credentials, current exchange-rate information, a valid budget ledger and hard CAD 2 per-run/CAD 20 monthly controls are all present.
+
+## Corrections, removal, privacy and copyright
+
+Use the [public correction route](/contact.html) for factual errors, grouping problems, broken sources or removal requests. Corrections and cluster merge/split history remain traceable. Only the minimum public-post text needed for identification is retained. Original links, metadata and concise annotations are stored; copyrighted bodies and unnecessary personal data are not.

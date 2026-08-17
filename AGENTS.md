@@ -4,14 +4,14 @@ These instructions apply to the entire repository.
 
 ## Project purpose
 
-This repository contains the public website and the transactional private-staging prototype of the Cities & Climate Learning Lab Research Watch. The lab is based in Simon Fraser University's School of Resource and Environmental Management and studies how cities generate, transfer, and use evidence for climate action.
+This repository contains the public website and the transactional private-staging prototype of Cities & Climate Learning Lab Current Conversations. The lab is based in Simon Fraser University's School of Resource and Environmental Management and studies how cities generate, transfer, and use evidence for climate action.
 
 ## Non-negotiable governance rules
 
 - Treat AI as a discovery, classification, and drafting layer—not as a source.
-- Preserve the original source, publication date, stable identifier when one exists, retrieval date, evidence basis, discovery run, adapter, query version, prompt/model provenance, and review status for every Research Watch record.
+- Preserve source and cluster IDs, the original URL, publication and retrieval dates, stable identifiers when they exist, evidence basis, discovery run, adapter/query version, prompt/model provenance, review state and correction history.
 - Automatically generated Research Watch items may publish without routine human review only when deterministic publication controls pass.
-- Every automatically published item must carry the full public disclosure where required and the compact label `AI-selected and summarized · not reviewed by the lab`.
+- Every automatically published item must carry the full public disclosure where required and the compact label `Identified and summarized using AI · not reviewed by the lab`.
 - Never present automatically identified material as endorsed, recommended, approved, expert-selected, or reviewed by the lab.
 - Do not invent citations, quotations, authors, dates, identifiers, review decisions, or evidence access.
 - Withhold or quarantine records with insufficient evidence, unsupported claims, unresolved identity, invalid URLs, critical risk flags, high duplicate probability, prompt-injection contamination, unexpected personal data, or invalid model output.
@@ -43,7 +43,7 @@ This repository contains the public website and the transactional private-stagin
 
 ## Scope discipline
 
-Gate 3B–4A authorizes bounded discovery, automated classification, private transactional staging, calibration and local launch-candidate packaging. It does not authorize public deployment, merging to `main`, DNS changes, analytics, subscriber collection, authentication, scheduled production writes or unrestricted ingestion.
+Gate 4B–5A authorizes the Current Conversations migration, mixed-source fixture prototype, complete-publication inventory, bounded provider diagnostics, private transactional staging, calibration and local review packaging. It does not authorize public deployment, merging to `main`, DNS changes, analytics, subscriber collection, authentication, scheduled production writes or unrestricted ingestion.
 
 ## Shareable handoff package
 

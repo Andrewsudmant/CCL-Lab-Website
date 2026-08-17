@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "current-conversations-ai-output-v1.schema.json",
+  "title": "Current Conversations strict AI output v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["source_environment", "source_role", "primary_theme", "secondary_themes", "theme_scores", "theme_rationales", "geographies", "source_summary", "discussion_statement", "reason_for_relevance", "novelty_or_significance", "evidence_limitations", "confidence", "confidence_basis", "proposed_underlying_source", "proposed_cluster_relationship", "clustering_rationale", "risk_flags", "recommendation"],
+  "properties": {
+    "source_environment": {"enum": ["academic-research", "policy-and-institutions", "news-and-analysis", "blogs-and-commentary", "data-and-tools", "bluesky"]},
+    "source_role": {"type": "string"},
+    "primary_theme": {"type": "string"},
+    "secondary_themes": {"type": "array", "maxItems": 2, "uniqueItems": true, "items": {"type": "string"}},
+    "theme_scores": {"type": "object", "additionalProperties": {"type": "number", "minimum": 0, "maximum": 1}},
+    "theme_rationales": {"type": "object", "additionalProperties": {"type": "string"}},
+    "geographies": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "source_summary": {"type": "string"},
+    "discussion_statement": {"type": "string"},
+    "reason_for_relevance": {"type": "string"},
+    "novelty_or_significance": {"type": "string"},
+    "evidence_limitations": {"type": "string"},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "confidence_basis": {"type": "string"},
+    "proposed_underlying_source": {"type": ["string", "null"], "format": "uri"},
+    "proposed_cluster_relationship": {"type": ["string", "null"]},
+    "clustering_rationale": {"type": "string"},
+    "risk_flags": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "recommendation": {"enum": ["publish", "withhold", "quarantine"]}
+  }
+}

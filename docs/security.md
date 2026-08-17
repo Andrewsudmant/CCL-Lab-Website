@@ -1,50 +1,28 @@
 # Security model
 
-## Secrets and least privilege
+## Secrets and paid access
 
-Local tests and fixture mode require no secrets. API keys, tokens, credentials, `.env` files, raw authorization headers and private provider payloads must never enter Git or public artefacts. Networked workflows use protected secrets, least-privilege tokens, short-lived credentials where available and read-only repository permissions unless an audited content update requires more.
+Fixture tests/builds require no secrets. Never commit API keys, tokens, `.env` files, authorization headers, provider payloads, browser profiles or model reasoning traces. Paid web discovery fails closed unless the API key, model, fresh USD/CAD rate and date, maximum calls/items, estimated per-call cost, CAD 2/run ceiling and CAD 20/month ceiling are all valid. A corrupt or inconsistent ledger disables paid access.
 
-Discovery, annotation and publication packaging are separate stages. Adapters and models do not receive repository write credentials or deployment authority.
+## Untrusted web content and prompt injection
 
-## Untrusted content and prompt injection
+All fetched metadata, HTML, documents, snippets and posts are untrusted data. Parse rather than execute; strip active content; escape output; limit schemes, redirects, size and file types; block private/link-local/cloud-metadata networks; and never let source instructions alter prompts, policy, tools, budgets or publication decisions. Record the exact evidence class shown to a model. Suspected injection, unexpected personal data or invalid structured output is quarantined.
 
-All retrieved metadata, pages, documents, snippets, feeds and posts are untrusted data. Processing must:
+## Network and role separation
 
-- parse content as data and never execute embedded scripts, macros, shell commands or templates;
-- strip active HTML and render only escaped, allow-listed fields;
-- isolate evidence from system/developer instructions;
-- state that source instructions cannot authorize actions or alter policy;
-- bound input size, redirects, nesting and file types;
-- record the exact evidence shown to the model;
-- flag suspected prompt injection and quarantine contaminated output; and
-- avoid exposing secrets, network tools, repository writes or publication credentials to the model.
+Tests and normal builds are offline. Live modes are explicit, bounded, timed and logged. Discovery/annotation components receive no deploy credentials. Repository writing is a separate workflow job with a specific opt-in variable, least-privilege token, exact private branch and changed-path allowlist. No workflow in this gate deploys publicly.
 
-## Bounded network access
+## Safe failure
 
-Networked adapters use identifiable user agents, allow-listed schemes, timeouts, retry caps, caching and rate limits. They block private, loopback, link-local and cloud-metadata address ranges. Redirects and canonical URLs are revalidated. Retrieval respects source terms, robots rules and licences; paywalls are never circumvented.
+Staging is transactional and complete: sources, clusters, feeds, site fragment, run manifest and budget ledger validate before replacement. Failure preserves the last-known-good snapshot and records a failure manifest without leaking fetched content or secrets.
 
-Tests remain network-independent. Live discovery is an explicit mode with a run manifest and bounded lookback/result limits.
+## Required branch protection before production
 
-## Safe failure and publication transactions
+- prohibit direct and force pushes to `main`;
+- require review of control-plane and security changes;
+- require schema, test, build, link and accessibility checks;
+- restrict workflow/action permissions and deployment environments;
+- protect and monitor the automation branch independently; and
+- require incident response for credential exposure or repeated quality failures.
 
-Runs stage output outside the public store. A failed or partial run never deletes prior records or publishes incomplete data. Only a fully validated staging set and successful static build can replace the publishable artefact. Operational reports expose adapter errors, withheld/quarantined counts and whether the previous public state was retained.
-
-## Branch protections
-
-Before production authorization:
-
-- protect `main` against direct/force pushes;
-- require review for workflows, schemas, prompts, source/search policy, security, governance and disclosure wording;
-- require validation, tests, build, internal-link and accessibility checks;
-- restrict workflow permissions and third-party actions;
-- separate an automation content branch from the reviewed control plane; and
-- protect deployment environments independently.
-
-Automatically generated records need not receive item-level approval, but their run manifest and resulting commit/artefact remain auditable.
-
-## Incident handling
-
-Revoke exposed secrets before history cleanup. For unsafe or incorrect published material, mark unavailable, correct or remove the listing, preserve the audit record, assess scope and document remediation. Repeated quality or safety incidents trigger reconsideration under ADR 0002.
-# Gate 3B–4A operational controls
-
-Paid OpenAI requests require all four environment variables: `OPENAI_API_KEY`, `OPENAI_MODEL`, `OPENAI_MAX_COST_PER_RUN` and `OPENAI_MAX_ITEMS_PER_RUN`. Absence fails before network access. Research Watch writes first to a temporary directory and replaces private staging only after validation; a rollback test proves failure preserves last-known-good content. Provider payloads, source bodies, cookies, browser profiles and model reasoning traces are not committed.
+Gate 4B–5A does not configure hosting, production secrets, deployment credentials or public scheduled writes.

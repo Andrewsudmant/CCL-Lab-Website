@@ -1,65 +1,48 @@
 # System architecture
 
-## Purpose
+## Purpose and boundary
 
-The Cities & Climate Learning Lab website is a public, accessible Quarto site backed by versioned structured records. Research Watch may publish automatically generated, normally unreviewed records, but the source—not the model—is always the evidentiary authority.
+The Cities & Climate Learning Lab website is a static, accessible Quarto site backed by versioned records. Current Conversations groups timely source records into public conversation clusters. AI may help discover, classify and summarize; the original source—not a model—is the evidentiary authority. Gate 4B–5A produces local/private artefacts only.
 
 ## Control plane and content plane
 
-Code, schemas, prompts, query packs, source policy, disclosure wording, thresholds, governance and security controls form the **control plane**. They require human-reviewed pull requests.
-
-Automatically discovered Research Watch records form the **content plane**. They may publish without item-level human review when all machine-enforced controls pass. The separation prevents source content or a model from changing the rules governing publication.
-
-## Lifecycle
+Code, schemas, prompts, query packs, source policy, disclosure, budgets, thresholds and workflows form the **control plane** and require reviewed pull requests. Discovered sources and generated clusters form the **content plane**. They may be unreviewed, but can publish only under deterministic controls and conspicuous disclosure.
 
 ```mermaid
 flowchart LR
-    A["Discovery adapters"] --> B["Normalization"]
-    B --> C["Deduplication and event clustering"]
-    C --> D["AI relevance classification"]
-    D --> E["Evidence sufficiency check"]
-    E --> F["AI summary and relevance note"]
-    F --> G["Deterministic validation"]
-    G -->|pass| H["Publish with disclosure"]
-    G -->|recoverable| I["Withhold"]
-    G -->|critical or suspicious| J["Quarantine"]
-    H --> K["Scheduled link and metadata recheck"]
-    K --> L["Archive, correct or remove"]
+  A["Bounded source adapters"] --> B["Normalize source records"]
+  B --> C["Identifier and URL deduplication"]
+  C --> D["Conservative clustering"]
+  D --> E["Evidence-constrained annotation"]
+  E --> F["Schema, risk, diversity and budget checks"]
+  F -->|pass| G["Atomic private staging"]
+  F -->|insufficient| H["Withhold or quarantine"]
+  G --> I["Quarto pages plus JSON Feed and RSS"]
+  I --> J["Recheck, correct, archive or remove"]
 ```
 
-Human review may be recorded at any later point but is not in the required path.
+## Canonical model
+
+- `source_id` records bibliographic identity, URL, stable identifier, dates, organisation, environment/role, accessible evidence, discovery provenance, review and correction state.
+- `cluster_id` records a discussion-level title, principal and linked sources, themes, geography, summary, relevance, limitations, clustering rationale/history and publication state.
+- Principal sources follow an explicit role hierarchy. Commentary can be linked but cannot displace stronger primary research, official policy or dataset evidence without recorded rationale.
+- People, projects and manually selected publications remain YAML. Complete publication reconciliation is a validated JSON inventory generated from ORCID/Crossref/publisher facts plus explicit owner overrides.
 
 ## Components
 
 | Component | Responsibility |
 |---|---|
-| Quarto site | Accessible pages, theme cross-listings, unified Research Watch and public disclosures |
-| Canonical YAML store | One record per person, project, publication or Research Watch item |
-| Controlled vocabularies | Small extensible lists for themes, geography, governance scale, methods, domains, sectors and source types |
-| JSON Schemas | Required provenance, relationship, processing and publication fields |
-| Source adapters | Provider-independent OpenAlex, Crossref, OpenAI web-search, Bluesky and captured-fixture discovery |
-| Processing pipeline | Normalization, stable-key generation, deduplication, event clustering, classification and publication controls |
-| Evaluation | Benchmarks and run metrics for coverage, provenance, failures, diversity and duplication |
-| Run manifests | Inputs, versions, adapter results, errors, counts, model usage and output artefacts |
-| CI/workflows | Network-independent tests plus bounded manual/scheduled discovery and static packaging |
+| Quarto and generated fragments | Responsive semantic pages, archive, filters, feeds and stable moved-page links |
+| Python package | Provider adapters, normalization, clustering, budgets and atomic transactions |
+| JSON Schema | Source, cluster, AI output, query pack and publication constraints |
+| Query/source configuration | Six themes, bounded concepts, exclusions, source roles and diversity caps |
+| Private staging | Complete validated snapshot: sources, clusters, feeds, site fragment, manifest and budget ledger |
+| CI | Offline checks by default; explicit bounded modes; optional isolated automation-branch write |
 
-## Canonical relationship model
+## Publication transaction and safe failure
 
-Projects and publications are stored once. Each has one primary theme and up to three secondary themes, plus separate geographies, methods, climate domains and sectors. Generated theme views point to the same canonical record. Unfiltered lists deduplicate by record ID.
-
-Research Watch records have one scored primary theme and up to two scored secondary themes. Geography is separate and cannot create thematic relevance by itself.
-
-## Publication transaction
-
-A discovery run writes to a temporary staging area. Only after normalization, classification, publication checks, schema validation, listing tests and a full site build succeed are passing records copied into the publishable store. A failed or partial run retains the previous public store unchanged. Run reports and withheld/quarantined audit records are written separately.
-
-## Trust boundaries
-
-Retrieved metadata, HTML, documents, snippets and posts are untrusted data. Adapters have bounded network access and no publication credentials. The classifier receives only recorded evidence, cannot execute actions and cannot change repository policy. Site generation escapes public fields and renders no arbitrary source HTML.
+A run writes a complete candidate snapshot to a temporary sibling directory. After manifest, record, feed and site validation, it atomically replaces `staging/current-conversations/current`; the previous directory becomes last-known-good. Any exception removes only the temporary work and records a failure manifest. Normal builds never discover content or spend money.
 
 ## Deployment model
 
-The output is a static site. Gate 2–3A creates production-ready packages but does not deploy them. A later authorized workflow may publish the last validated artifact from an automation branch or equivalent auditable mechanism.
-# Gate 3B–4A implementation note
-
-The private Research Watch control flow is now discovery → normalization → identifier deduplication → conservative event clustering → evidence sufficiency → deterministic publication and diversity controls → temporary staging → validation → atomic last-known-good replacement. Normal website builds never invoke network discovery. Private staged records, withheld records and run manifests remain separate from curated public YAML.
+The build output is static. The scheduled workflow has repository read permission by default. A separate write job is disabled unless explicitly enabled, verifies an allowlist and targets only `automation/current-conversations-staging`. It cannot deploy and never targets `main`. Production deployment, hosting and DNS are later owner decisions.

@@ -2,8 +2,8 @@
 
 from __future__ import annotations
 from urllib.parse import quote
-from research_watch.adapters.base import AdapterError, get_json
-from research_watch.models import DiscoveredItem
+from current_conversations.adapters.base import AdapterError, get_json
+from current_conversations.models import DiscoveredItem
 
 
 class DataCiteAdapter:
@@ -31,5 +31,7 @@ class DataCiteAdapter:
             platform_identifier=(payload.get("data") or {}).get("id"),
             abstract=next((d.get("description") for d in attrs.get("descriptions", []) if d.get("descriptionType") == "Abstract"), None),
             evidence_types=["metadata-only"], adapter=self.name, query_id=query_id,
+            source_environment="data-and-tools" if (attrs.get("types") or {}).get("resourceTypeGeneral") in {"Dataset", "Software"} else "academic-research",
+            source_role="dataset-or-tool" if (attrs.get("types") or {}).get("resourceTypeGeneral") in {"Dataset", "Software"} else "primary-research",
             raw_metadata={"provider": "DataCite", "retrieved": True},
         )

@@ -1,0 +1,40 @@
+registry_version: "1.0.0"
+notice: >-
+  This registry records provenance and access context. It is not a universal
+  source-quality score and does not replace source-level evaluation.
+sources:
+  - domain: api.openalex.org
+    source_environment: academic-research
+    publisher_or_organisation: OpenAlex
+    original_or_secondary: index
+    known_access_constraints: Abstract coverage varies; rate limits apply.
+    provenance_notes: Discovery index; original publisher or repository links remain authoritative.
+    correction_history: []
+  - domain: api.crossref.org
+    source_environment: academic-research
+    publisher_or_organisation: Crossref
+    original_or_secondary: metadata-registry
+    known_access_constraints: Used for identifier validation and enrichment, not broad discovery.
+    provenance_notes: Member-deposited metadata may conflict with publisher display values.
+    correction_history: []
+  - domain: api.datacite.org
+    source_environment: data-and-tools
+    publisher_or_organisation: DataCite
+    original_or_secondary: metadata-registry
+    known_access_constraints: DOI coverage focuses on repositories, data and software.
+    provenance_notes: Used to resolve known identifiers.
+    correction_history: []
+  - domain: public.api.bsky.app
+    source_environment: bluesky
+    publisher_or_organisation: Bluesky Social
+    original_or_secondary: platform
+    known_access_constraints: Official public AppView may return environment-specific HTTP 403.
+    provenance_notes: Engagement metrics are not treated as evidence quality.
+    correction_history: []
+  - domain: api.openai.com
+    source_environment: news-and-analysis
+    publisher_or_organisation: OpenAI web search
+    original_or_secondary: discovery-layer
+    known_access_constraints: Paid, credentialed, bounded by CAD run and monthly ceilings.
+    provenance_notes: Search annotations lead to original sources; model prose is never the sole record.
+    correction_history: []

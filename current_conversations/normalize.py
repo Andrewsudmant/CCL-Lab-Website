@@ -3,7 +3,7 @@
 from __future__ import annotations
 import re
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
-from research_watch.models import DiscoveredItem
+from current_conversations.models import DiscoveredItem
 
 
 TRACKING = {"fbclid", "gclid", "mc_cid", "mc_eid"}

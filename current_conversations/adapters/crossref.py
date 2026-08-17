@@ -1,8 +1,8 @@
 """Crossref discovery and DOI metadata enrichment."""
 
 from __future__ import annotations
-from research_watch.adapters.base import DiscoveryAdapter, get_json
-from research_watch.models import DiscoveredItem
+from current_conversations.adapters.base import DiscoveryAdapter, get_json
+from current_conversations.models import DiscoveredItem
 
 
 class CrossrefAdapter(DiscoveryAdapter):

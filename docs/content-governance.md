@@ -1,63 +1,29 @@
 # Content governance
 
-## Core principle and disclosure
+## Public promise
 
-AI may discover, classify and summarize material. It is not the source. Every public record links to the original source, describes the evidence available to the system and states whether human review occurred.
+Current Conversations uses automated discovery and AI-assisted annotation to surface material across research, policy, news, commentary and tools. AI is never treated as a source. Readers receive the original link, source identity/date, evidence limitation and review state. Inclusion does not imply endorsement.
 
-Automatically generated material normally publishes without human review when deterministic controls pass. It must never be described as endorsed, recommended, approved, expert-selected or reviewed by the lab.
-
-The full public notice is:
-
-> Research Watch uses automated searches and AI-generated classification and summaries. Items have not normally been reviewed by a member of the Cities & Climate Learning Lab, and inclusion does not imply endorsement. Summaries may contain errors or omit important context. Please consult the original source.
-
-Each unreviewed item carries: **AI-selected and summarized · not reviewed by the lab**.
+The compact unreviewed label is: **Identified and summarized using AI · not reviewed by the lab**. The landing page also warns that summaries may contain errors or omit context and asks readers to consult original sources.
 
 ## Required provenance
 
-Each public Research Watch record preserves:
+Every source retains its source/run ID, original and canonical URL, stable identifier where available, authors or organisation, publisher/platform, source environment and role, publication and retrieval dates, exact evidence basis and limitation, query/adapter version, AI model/prompt when used, risk flags, availability, review and correction state. Every cluster retains its principal and linked source IDs, clustering method/confidence/rationale, themes, dates, summary, uncertainty, decision and history.
 
-- unique record and discovery-run IDs;
-- canonical title, URL and stable/platform identifier where available;
-- authors or responsible organisation, source name and source type;
-- publication/posting date, retrieval timestamp and adapter;
-- query-pack/theme-query version;
-- primary and secondary theme assignments with score and rationale;
-- separate geographical tags;
-- concise summary and relevance note;
-- exact evidence types and a limitation statement;
-- model, prompt and structured-output versions;
-- confidence label and basis;
-- publication decision, deterministic checks and risk flags;
-- optional human reviewer/date/edits; and
-- correction, availability and removal status.
+Bibliographic identity is provider- or owner-derived, never rewritten by AI. Captured fixtures are labelled in their records and reports. Public fixture examples are demonstrations, not evidence of present-day provider coverage.
 
-Source metadata is never overwritten by generated text. Normalization and classification transformations remain traceable in the run manifest.
+## Evidence-constrained annotation
 
-## Evidence-constrained annotations
+Academic claims require an abstract or lawful full text; metadata alone supports bibliographic statements only. News, institutional pages, blogs and tools require recorded page evidence. Search annotations are discovery signals, not evidence for substantive claims. Social discussion is commentary and should link to underlying evidence when available. Models are instructed to ignore source-borne instructions and produce only schema-constrained annotations based on recorded evidence.
 
-Academic findings or methods require at least an abstract or legally accessible full text. News, blogs and institutional summaries require page-body evidence; search snippets may support only a clearly limited discovery note. Bluesky content is minimized and, when it links to an underlying paper/report, is treated as commentary around the principal source.
+## Human review and publication
 
-Titles alone cannot support substantive findings. Summaries must be concise, original, factual and limited to recorded evidence. Prompts instruct models to ignore embedded instructions and return explicit evidence limitations.
+Unreviewed material is not described as approved, selected, recommended or expert-reviewed. A reviewed label requires reviewer identity and date; edits remain traceable. Control-plane changes—code, schemas, prompts, query/source policy, budgets, thresholds, disclosure and workflows—require pull-request review. Content-plane records may be automated only after provenance, evidence, scope, duplicate, risk, diversity, schema, budget and build controls pass.
 
-## Automated publication
+## Copyright and privacy
 
-Human review is not required. Publication requires a valid source, date, evidence basis, complete provenance and disclosure, sufficient thematic relevance, successful schema validation, no critical risk, no unresolved duplicate/event conflict and a successful site build.
+Store bibliographic facts, minimal necessary excerpts and concise original annotations, not full articles, paywalled text or raw provider responses. A link does not grant reuse rights. Avoid unexpected personal data; minimize social-post retention and honour lawful privacy or copyright requests.
 
-Items with unsupported claims, missing identity/date, title-only inference, inaccessible evidence, suspicious URLs, prompt-injection contamination, unexpected personal data or nonconforming output are withheld or quarantined. Failure does not create a reviewer obligation and must not alter the last valid public store.
+## Corrections, availability and removal
 
-## Optional human review
-
-Human review may occur before or after publication. A factual reviewed label requires reviewer identity and review date. Reviewer edits remain recorded. Absence of those fields always renders the automated, unreviewed label.
-
-## Code and policy review
-
-Changes to code, schemas, prompts, query packs, source policy, thresholds, disclosure language and governance require pull-request review. Individual records generated under those reviewed controls do not.
-
-## Copyright, corrections and removal
-
-Store bibliographic facts, minimal identifying excerpts and original annotations—not unrestricted full articles, paywalled text or raw provider payloads. A link does not grant reuse rights.
-
-Corrections record date, reason and changed fields. Removal or archival records the decision and preserves an audit trail unless legal/privacy requirements mandate erasure. Scheduled rechecks record broken or redirected sources and availability changes.
-# Gate 3B–4A content relationships
-
-Every public project and publication now declares whether it is current lab research, foundational prior work or an associated collaboration. This relationship is separate from primary/secondary themes. Publication identity is provider-derived and never AI-rewritten. The owner calibration exercise evaluates discovery relevance; it is not item-level approval and does not create a routine human-review prerequisite.
+Never silently rewrite or delete a public item. Record changed fields, date and reason; update availability after rechecks; archive stale discussions; and retain a correction/removal history unless legal or privacy duties require erasure. Critical errors, prompt-injection contamination, unsafe URLs, unsupported claims or identity conflicts are withheld or quarantined, leaving the last valid site intact.

@@ -1,8 +1,8 @@
 """Bounded public Bluesky AppView search."""
 
 from __future__ import annotations
-from research_watch.adapters.base import DiscoveryAdapter, get_json
-from research_watch.models import DiscoveredItem
+from current_conversations.adapters.base import DiscoveryAdapter, get_json
+from current_conversations.models import DiscoveredItem
 
 
 class BlueskyAdapter(DiscoveryAdapter):
@@ -23,5 +23,6 @@ class BlueskyAdapter(DiscoveryAdapter):
                 url=f"https://bsky.app/profile/{handle}/post/{rkey}", source_name="Bluesky",
                 source_type="bluesky", publication_date=(record.get("createdAt") or "")[:10],
                 authors=[author.get("displayName") or handle], platform_identifier=uri, abstract=text,
-                evidence_types=["bluesky-post"], adapter=self.name, query_id=query_id, raw_metadata=post))
+                evidence_types=["bluesky-post"], adapter=self.name, query_id=query_id,
+                source_environment="bluesky", source_role="public-discussion", raw_metadata=post))
         return items

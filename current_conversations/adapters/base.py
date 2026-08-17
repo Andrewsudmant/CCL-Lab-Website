@@ -8,7 +8,7 @@ import urllib.error
 import time
 from abc import ABC, abstractmethod
 from typing import Any
-from research_watch.models import DiscoveredItem
+from current_conversations.models import DiscoveredItem
 
 
 class AdapterError(RuntimeError):

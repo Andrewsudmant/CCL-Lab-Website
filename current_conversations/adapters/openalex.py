@@ -3,8 +3,8 @@
 from __future__ import annotations
 from datetime import date, timedelta
 from datetime import datetime, timezone
-from research_watch.adapters.base import DiscoveryAdapter, get_json
-from research_watch.models import DiscoveredItem
+from current_conversations.adapters.base import DiscoveryAdapter, get_json
+from current_conversations.models import DiscoveredItem
 
 
 def _abstract(index: dict[str, list[int]] | None) -> str | None:

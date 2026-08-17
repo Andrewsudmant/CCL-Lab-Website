@@ -7,8 +7,8 @@ description: "A public-evidence methodology for understanding occupation switchi
 
 <p class="page-deck">A public-evidence methodology for understanding occupation switching in the United Kingdom's low-carbon transition. It distinguishes same-occupation sector changes from occupation transitions and develops transparent approaches to occupational relatedness, transition requirements, calibration and evidence governance.</p>
 
-**Status:** In Development  
-**Relationship to the lab:** Current Lab Research — Owner-approved current programme of the Cities and Climate Learning Lab.  
+**Status:** In Development<br>
+**Relationship to the lab:** Current Lab Research — Owner-approved current programme of the Cities and Climate Learning Lab.<br>
 **Primary theme:** [Just transitions, occupations and workforce change](/research/themes/just-transitions-workforce.html)
 
 ## Research questions

@@ -7,8 +7,8 @@ description: "Research on scaling and combining data for place-based climate-imp
 
 <p class="page-deck">Research on scaling and combining data for place-based climate-impact assessment, including methods that connect national evidence with local decision contexts.</p>
 
-**Status:** Completed  
-**Relationship to the lab:** Foundational Prior Work — Work completed at the University of Edinburgh before the lab was established; it provides a methodological foundation for the lab's evidence-tools programme.  
+**Status:** Completed<br>
+**Relationship to the lab:** Foundational Prior Work — Work completed at the University of Edinburgh before the lab was established; it provides a methodological foundation for the lab's evidence-tools programme.<br>
 **Primary theme:** [Urban climate evidence infrastructure and decision-support tools](/research/themes/evidence-infrastructure-tools.html)
 
 ## Research questions

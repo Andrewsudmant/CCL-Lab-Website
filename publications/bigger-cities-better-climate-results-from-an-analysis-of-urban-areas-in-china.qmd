@@ -7,9 +7,9 @@ description: "Verified bibliographic record. Consult the original source for its
 
 <p class="page-deck">Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.</p>
 
-**Authors:** Lu Cheng, Zhifu Mi, Andrew Sudmant, D'Maris Coffman  
-**Published:** 2022-03 · Energy Economics · Article  
-**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.  
+**Authors:** Lu Cheng, Zhifu Mi, Andrew Sudmant, D'Maris Coffman<br>
+**Published:** 2022-03 · Energy Economics · Article<br>
+**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.<br>
 **DOI:** [10.1016/j.eneco.2022.105872](https://doi.org/10.1016/j.eneco.2022.105872)
 
 > Lu Cheng, Zhifu Mi, Andrew Sudmant, D'Maris Coffman. (2022). Bigger cities better climate? Results from an analysis of urban areas in China. Energy Economics. https://doi.org/10.1016/j.eneco.2022.105872

@@ -44,9 +44,9 @@ No source disagreement was established by the captured evidence.
 
 ## Grouping provenance
 
-**Rationale:** Single-source cluster.  
-**Principal-source choice:** The original evidence or official source is principal; reporting, analysis and commentary remain separately attributed.  
-**Method/version:** stable-link-and-event-identity · 1.0.0  
+**Rationale:** Single-source cluster.<br>
+**Principal-source choice:** The original evidence or official source is principal; reporting, analysis and commentary remain separately attributed.<br>
+**Method/version:** stable-link-and-event-identity · 1.0.0<br>
 **Confidence:** 1.00
 
 [How Current Conversations works](/current-conversations/how-it-works.html) · [Request a correction](/contact.html)

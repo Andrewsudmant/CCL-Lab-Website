@@ -7,9 +7,9 @@ description: "Verified bibliographic record. Consult the original source for its
 
 <p class="page-deck">Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.</p>
 
-**Authors:** Sarah Colenbrander, Andy Gouldson, Andrew Heshedahl Sudmant, Effie Papargyropoulou  
-**Published:** 2015-05 · Energy Policy · Article  
-**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.  
+**Authors:** Sarah Colenbrander, Andy Gouldson, Andrew Heshedahl Sudmant, Effie Papargyropoulou<br>
+**Published:** 2015-05 · Energy Policy · Article<br>
+**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.<br>
 **DOI:** [10.1016/j.enpol.2015.01.020](https://doi.org/10.1016/j.enpol.2015.01.020)
 
 > Sarah Colenbrander, Andy Gouldson, Andrew Heshedahl Sudmant, Effie Papargyropoulou. (2015). The economic case for low-carbon development in rapidly growing developing world cities: A case study of Palembang, Indonesia. Energy Policy. https://doi.org/10.1016/j.enpol.2015.01.020

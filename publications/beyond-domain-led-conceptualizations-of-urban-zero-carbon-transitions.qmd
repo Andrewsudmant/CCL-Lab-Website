@@ -7,9 +7,9 @@ description: "Verified bibliographic record. Consult the original source for its
 
 <p class="page-deck">Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.</p>
 
-**Authors:** Andrew Sudmant, Matt Tierney, Andy Gouldson, Joule Bergerson  
-**Published:** 2023-12-06 · Academia Environmental Sciences and Sustainability · Article  
-**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.  
+**Authors:** Andrew Sudmant, Matt Tierney, Andy Gouldson, Joule Bergerson<br>
+**Published:** 2023-12-06 · Academia Environmental Sciences and Sustainability · Article<br>
+**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.<br>
 **DOI:** [10.20935/acadenvsci6141](https://doi.org/10.20935/acadenvsci6141)
 
 > Andrew Sudmant, Matt Tierney, Andy Gouldson, Joule Bergerson. (2023). Beyond domain-led conceptualizations of urban zero-carbon transitions. Academia Environmental Sciences and Sustainability. https://doi.org/10.20935/acadenvsci6141

@@ -7,8 +7,8 @@ description: "Research examining where urban climate evidence is produced, which
 
 <p class="page-deck">Research examining where urban climate evidence is produced, which cities can readily learn from that evidence, and how geographic gaps shape evidence transfer.</p>
 
-**Status:** Active  
-**Relationship to the lab:** Foundational Prior Work — The verified preprint was posted while Andrew was affiliated with the University of Edinburgh, before the lab's establishment; the ongoing questions directly inform the lab's current learning and evidence programme.  
+**Status:** Active<br>
+**Relationship to the lab:** Foundational Prior Work — The verified preprint was posted while Andrew was affiliated with the University of Edinburgh, before the lab's establishment; the ongoing questions directly inform the lab's current learning and evidence programme.<br>
 **Primary theme:** [Urban climate learning and evidence transfer](/research/themes/urban-climate-learning.html)
 
 ## Research questions

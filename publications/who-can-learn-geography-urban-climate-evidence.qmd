@@ -7,9 +7,9 @@ description: "The preprint examines the uneven geography of urban climate eviden
 
 <p class="page-deck">The preprint examines the uneven geography of urban climate evidence and asks which cities can readily learn from knowledge produced in other places.</p>
 
-**Authors:** Andrew Sudmant, Egide Kalisa, Simon Montfort, Wenjia Cai, Shaurya Patel, Felix Creutzig  
-**Published:** 2026-03-31 · Research Square · Preprint  
-**Relationship to the lab:** Foundational Prior Work — Posted before the lab was established; it directly anchors the lab's current evidence-transfer programme.  
+**Authors:** Andrew Sudmant, Egide Kalisa, Simon Montfort, Wenjia Cai, Shaurya Patel, Felix Creutzig<br>
+**Published:** 2026-03-31 · Research Square · Preprint<br>
+**Relationship to the lab:** Foundational Prior Work — Posted before the lab was established; it directly anchors the lab's current evidence-transfer programme.<br>
 **DOI:** [10.21203/rs.3.rs-9268986/v1](https://doi.org/10.21203/rs.3.rs-9268986/v1)
 
 > Sudmant, A., Kalisa, E., Montfort, S., Cai, W., Patel, S., & Creutzig, F. (2026). Who can learn from whom? The geography of urban climate evidence. Research Square preprint.

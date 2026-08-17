@@ -7,9 +7,9 @@ description: "The article examines how changing the spatial scale of climate evi
 
 <p class="page-deck">The article examines how changing the spatial scale of climate evidence affects assessment, governance and the interpretation of local climate action in the UK.</p>
 
-**Authors:** Andrew Sudmant  
-**Published:** 2024-05-29 · Environmental Management · Article  
-**Relationship to the lab:** Foundational Prior Work — Published before the lab was established and foundational to its evidence-infrastructure programme.  
+**Authors:** Andrew Sudmant<br>
+**Published:** 2024-05-29 · Environmental Management · Article<br>
+**Relationship to the lab:** Foundational Prior Work — Published before the lab was established and foundational to its evidence-infrastructure programme.<br>
 **DOI:** [10.1007/s00267-024-01991-5](https://doi.org/10.1007/s00267-024-01991-5)
 
 > Sudmant, A. (2024). Data Scaling: Implications for Climate Action and Governance in the UK. Environmental Management, 74(3), 414–424.

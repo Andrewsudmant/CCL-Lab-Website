@@ -194,8 +194,8 @@ def generate_projects(projects: list[dict[str, Any]], publications: list[dict[st
         connections = "\n".join(f'- [{publications_by_id[item]["title"]}](/publications/{item}.html)' for item in record["connected_publications"] if item in publications_by_id) or "No connected publication is recorded."
         body = f'''<p class="page-deck">{record['summary']}</p>
 
-**Status:** {record['status'].replace('-', ' ').title()}  \
-**Relationship to the lab:** {record['relationship_to_lab'].replace('-', ' ').title()} — {record['relationship_note']}  \
+**Status:** {record['status'].replace('-', ' ').title()}<br>
+**Relationship to the lab:** {record['relationship_to_lab'].replace('-', ' ').title()} — {record['relationship_note']}<br>
 **Primary theme:** [{theme_index()[record['primary_theme']]['name']}](/research/themes/{record['primary_theme']}.html)
 
 ## Research questions
@@ -248,9 +248,9 @@ Records are grouped by year. Historic outputs are labelled as foundational or pr
         mdpi_note = "\n\n::: {.notice}\nThis verified MDPI-authored work is retained in the complete scholarly record. By owner policy it is not selected, featured or eligible for Current Conversations.\n:::" if record.get("mdpi_excluded") else ""
         body = f'''<p class="page-deck">{record['abstract_summary']}</p>
 
-**Authors:** {', '.join(record['authors'])}  \
-**Published:** {record['publication_date']} · {record['venue']} · {record['publication_type'].replace('-', ' ').title()}  \
-**Relationship to the lab:** {record['relationship_to_lab'].replace('-', ' ').title()} — {record['relationship_note']}  \
+**Authors:** {', '.join(record['authors'])}<br>
+**Published:** {record['publication_date']} · {record['venue']} · {record['publication_type'].replace('-', ' ').title()}<br>
+**Relationship to the lab:** {record['relationship_to_lab'].replace('-', ' ').title()} — {record['relationship_note']}<br>
 {identifier}
 
 > {record['citation']}
@@ -311,9 +311,9 @@ def generate_conversations(clusters: list[dict[str, Any]], source_list: list[dic
 
 ## Grouping provenance
 
-**Rationale:** {cluster['clustering']['rationale']}  \
-**Principal-source choice:** {cluster['clustering']['principal_source_rationale']}  \
-**Method/version:** {cluster['clustering']['method']} · {cluster['clustering']['version']}  \
+**Rationale:** {cluster['clustering']['rationale']}<br>
+**Principal-source choice:** {cluster['clustering']['principal_source_rationale']}<br>
+**Method/version:** {cluster['clustering']['method']} · {cluster['clustering']['version']}<br>
 **Confidence:** {cluster['clustering']['confidence']:.2f}
 
 [How Current Conversations works](/current-conversations/how-it-works.html) · [Request a correction](/contact.html)'''

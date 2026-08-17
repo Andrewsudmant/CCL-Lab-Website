@@ -7,9 +7,9 @@ description: "Verified bibliographic record. Consult the original source for its
 
 <p class="page-deck">Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.</p>
 
-**Authors:** Andy Gouldson, Sarah Colenbrander, Andrew Sudmant, Effie Papargyropoulou, Niall Kerr, Faye McAnulla, Stephen Hall  
-**Published:** 2016-05 · Cities · Article  
-**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.  
+**Authors:** Andy Gouldson, Sarah Colenbrander, Andrew Sudmant, Effie Papargyropoulou, Niall Kerr, Faye McAnulla, Stephen Hall<br>
+**Published:** 2016-05 · Cities · Article<br>
+**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.<br>
 **DOI:** [10.1016/j.cities.2015.10.010](https://doi.org/10.1016/j.cities.2015.10.010)
 
 > Andy Gouldson, Sarah Colenbrander, Andrew Sudmant, Effie Papargyropoulou, Niall Kerr, Faye McAnulla, Stephen Hall. (2016). Cities and climate change mitigation: Economic opportunities and governance challenges in Asia. Cities. https://doi.org/10.1016/j.cities.2015.10.010

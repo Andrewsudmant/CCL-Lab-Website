@@ -7,8 +7,8 @@ description: "An interactive place-based atlas estimating benefits and costs of 
 
 <p class="page-deck">An interactive place-based atlas estimating benefits and costs of climate action for more than 46,000 UK communities across eleven benefit and cost categories.</p>
 
-**Status:** Active  
-**Relationship to the lab:** Foundational Prior Work — Developed through the University of Edinburgh and collaborators before the lab was established at SFU; it is foundational rather than an SFU lab output.  
+**Status:** Active<br>
+**Relationship to the lab:** Foundational Prior Work — Developed through the University of Edinburgh and collaborators before the lab was established at SFU; it is foundational rather than an SFU lab output.<br>
 **Primary theme:** [Co-benefits, co-costs and place-based valuation](/research/themes/co-benefits-place-based-valuation.html)
 
 ## Research questions

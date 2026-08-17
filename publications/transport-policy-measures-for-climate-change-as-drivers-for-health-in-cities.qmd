@@ -7,9 +7,9 @@ description: "Verified bibliographic record. Consult the original source for its
 
 <p class="page-deck">Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.</p>
 
-**Authors:** Haneen Khreis, Andrew Sudmant, Andy Gouldson, Mark Nieuwenhuijsen  
-**Published:** 2018-07-14 · Integrating Human Health into Urban and Transport Planning · Chapter  
-**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.  
+**Authors:** Haneen Khreis, Andrew Sudmant, Andy Gouldson, Mark Nieuwenhuijsen<br>
+**Published:** 2018-07-14 · Integrating Human Health into Urban and Transport Planning · Chapter<br>
+**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.<br>
 **DOI:** [10.1007/978-3-319-74983-9_28](https://doi.org/10.1007/978-3-319-74983-9_28)
 
 > Haneen Khreis, Andrew Sudmant, Andy Gouldson, Mark Nieuwenhuijsen. (2018). Transport Policy Measures for Climate Change as Drivers for Health in Cities. Integrating Human Health into Urban and Transport Planning. https://doi.org/10.1007/978-3-319-74983-9_28

@@ -7,9 +7,9 @@ description: "Verified bibliographic record. Consult the original source for its
 
 <p class="page-deck">Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.</p>
 
-**Authors:** Lucy Oates, Abhijit Datey, Andrew Sudmant, Ross Gillard, Andy Gouldson  
-**Published:** 2024-05-09 · Land · Article  
-**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.  
+**Authors:** Lucy Oates, Abhijit Datey, Andrew Sudmant, Ross Gillard, Andy Gouldson<br>
+**Published:** 2024-05-09 · Land · Article<br>
+**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.<br>
 **DOI:** [10.3390/land13050641](https://doi.org/10.3390/land13050641)
 
 > Lucy Oates, Abhijit Datey, Andrew Sudmant, Ross Gillard, Andy Gouldson. (2024). Community Participation in Urban Land and Housing Delivery: Evidence from Kerala (India) and Dar es Salaam (Tanzania). Land. https://doi.org/10.3390/land13050641

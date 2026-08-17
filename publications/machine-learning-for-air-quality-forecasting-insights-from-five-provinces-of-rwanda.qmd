@@ -7,9 +7,9 @@ description: "Verified bibliographic record. Consult the original source for its
 
 <p class="page-deck">Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.</p>
 
-**Authors:** Dioumacor Faye, Redouane Lguensat, François Kaly, Andrew Sudmant, Amadou T. Gaye, Egide Kalisa  
-**Published:** 2025-12 · Scientific African · Article  
-**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.  
+**Authors:** Dioumacor Faye, Redouane Lguensat, François Kaly, Andrew Sudmant, Amadou T. Gaye, Egide Kalisa<br>
+**Published:** 2025-12 · Scientific African · Article<br>
+**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.<br>
 **DOI:** [10.1016/j.sciaf.2025.e02959](https://doi.org/10.1016/j.sciaf.2025.e02959)
 
 > Dioumacor Faye, Redouane Lguensat, François Kaly, Andrew Sudmant, Amadou T. Gaye, Egide Kalisa. (2025). Machine learning for air quality forecasting: Insights from five provinces of Rwanda. Scientific African. https://doi.org/10.1016/j.sciaf.2025.e02959

@@ -7,9 +7,9 @@ description: "Verified bibliographic record. Consult the original source for its
 
 <p class="page-deck">Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.</p>
 
-**Authors:** Andrew Sudmant, Sarah Colenbrander, Andy Gouldson, Natasha Chilundika  
-**Published:** 2017-06 · Urban Climate · Article  
-**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.  
+**Authors:** Andrew Sudmant, Sarah Colenbrander, Andy Gouldson, Natasha Chilundika<br>
+**Published:** 2017-06 · Urban Climate · Article<br>
+**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.<br>
 **DOI:** [10.1016/j.uclim.2017.02.011](https://doi.org/10.1016/j.uclim.2017.02.011)
 
 > Andrew Sudmant, Sarah Colenbrander, Andy Gouldson, Natasha Chilundika. (2017). Private opportunities, public benefits? The scope for private finance to deliver low-carbon transport systems in Kigali, Rwanda. Urban Climate. https://doi.org/10.1016/j.uclim.2017.02.011

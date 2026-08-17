@@ -7,9 +7,9 @@ description: "Verified bibliographic record. Consult the original source for its
 
 <p class="page-deck">Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.</p>
 
-**Authors:** Zhongjue Yu, Yong Geng, Qi He, Lucy Oates, Andrew Sudmant, Andy Gouldson, Raimund Bleischwitz  
-**Published:** 2021-07-08 · Climate Policy · Article  
-**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.  
+**Authors:** Zhongjue Yu, Yong Geng, Qi He, Lucy Oates, Andrew Sudmant, Andy Gouldson, Raimund Bleischwitz<br>
+**Published:** 2021-07-08 · Climate Policy · Article<br>
+**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.<br>
 **DOI:** [10.1080/14693062.2021.1948383](https://doi.org/10.1080/14693062.2021.1948383)
 
 > Zhongjue Yu, Yong Geng, Qi He, Lucy Oates, Andrew Sudmant, Andy Gouldson, Raimund Bleischwitz. (2021). Supportive governance for city-scale low carbon building retrofits: a case study from Shanghai. Climate Policy. https://doi.org/10.1080/14693062.2021.1948383

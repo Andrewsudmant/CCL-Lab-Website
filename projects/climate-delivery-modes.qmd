@@ -7,8 +7,8 @@ description: "A comparative programme examining how public authorities, infrastr
 
 <p class="page-deck">A comparative programme examining how public authorities, infrastructure providers, businesses, civil-society organisations, communities and financial actors combine to deliver urban climate action, and how those arrangements vary across city types, sectors and regions.</p>
 
-**Status:** In Development  
-**Relationship to the lab:** Current Lab Research — Owner-approved current programme of the Cities and Climate Learning Lab.  
+**Status:** In Development<br>
+**Relationship to the lab:** Current Lab Research — Owner-approved current programme of the Cities and Climate Learning Lab.<br>
 **Primary theme:** [Climate governance and delivery modes](/research/themes/climate-governance-delivery.html)
 
 ## Research questions

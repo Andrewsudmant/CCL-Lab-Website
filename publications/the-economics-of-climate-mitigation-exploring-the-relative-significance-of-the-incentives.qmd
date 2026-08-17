@@ -7,9 +7,9 @@ description: "Verified bibliographic record. Consult the original source for its
 
 <p class="page-deck">Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.</p>
 
-**Authors:** Sarah Colenbrander, Andrew H. Sudmant, Andy Gouldson, Igor Reis de Albuquerque, Faye McAnulla, Ynara Oliviera de Sousa  
-**Published:** 2017-06-21 · Urbanisation · Article  
-**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.  
+**Authors:** Sarah Colenbrander, Andrew H. Sudmant, Andy Gouldson, Igor Reis de Albuquerque, Faye McAnulla, Ynara Oliviera de Sousa<br>
+**Published:** 2017-06-21 · Urbanisation · Article<br>
+**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.<br>
 **DOI:** [10.1177/2455747117708929](https://doi.org/10.1177/2455747117708929)
 
 > Sarah Colenbrander, Andrew H. Sudmant, Andy Gouldson, Igor Reis de Albuquerque, Faye McAnulla, Ynara Oliviera de Sousa. (2017). The Economics of Climate Mitigation: Exploring the Relative Significance of the Incentives for and Barriers to Low-carbon Investment in Urban Areas. Urbanisation. https://doi.org/10.1177/2455747117708929

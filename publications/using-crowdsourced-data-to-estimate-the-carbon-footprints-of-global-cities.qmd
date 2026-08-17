@@ -7,9 +7,9 @@ description: "Verified bibliographic record. Consult the original source for its
 
 <p class="page-deck">Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.</p>
 
-**Authors:** Xinlu Sun, Zhifu Mi, Andrew Sudmant, D'Maris Coffman, Pu Yang, Richard Wood  
-**Published:** 2022-12 · Advances in Applied Energy · Article  
-**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.  
+**Authors:** Xinlu Sun, Zhifu Mi, Andrew Sudmant, D'Maris Coffman, Pu Yang, Richard Wood<br>
+**Published:** 2022-12 · Advances in Applied Energy · Article<br>
+**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.<br>
 **DOI:** [10.1016/j.adapen.2022.100111](https://doi.org/10.1016/j.adapen.2022.100111)
 
 > Xinlu Sun, Zhifu Mi, Andrew Sudmant, D'Maris Coffman, Pu Yang, Richard Wood. (2022). Using crowdsourced data to estimate the carbon footprints of global cities. Advances in Applied Energy. https://doi.org/10.1016/j.adapen.2022.100111

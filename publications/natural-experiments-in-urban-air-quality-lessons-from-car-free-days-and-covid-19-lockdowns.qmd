@@ -7,9 +7,9 @@ description: "Verified bibliographic record. Consult the original source for its
 
 <p class="page-deck">Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.</p>
 
-**Authors:** Egide Kalisa, Andrew Sudmant, Remy Ruberambuga, Jonathan Bower  
-**Published:** 2025-03-05 · Cities &amp; Health · Article  
-**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.  
+**Authors:** Egide Kalisa, Andrew Sudmant, Remy Ruberambuga, Jonathan Bower<br>
+**Published:** 2025-03-05 · Cities &amp; Health · Article<br>
+**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.<br>
 **DOI:** [10.1080/23748834.2025.2468017](https://doi.org/10.1080/23748834.2025.2468017)
 
 > Egide Kalisa, Andrew Sudmant, Remy Ruberambuga, Jonathan Bower. (2025). Natural experiments in urban air quality: lessons from car-free days and COVID-19 lockdowns in Kigali, Rwanda. Cities &amp; Health. https://doi.org/10.1080/23748834.2025.2468017

@@ -7,9 +7,9 @@ description: "Verified bibliographic record. Consult the original source for its
 
 <p class="page-deck">Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.</p>
 
-**Authors:** Egide Kalisa, Andrew Sudmant  
-**Published:** 2025-07-21 · Scientific Reports · Article  
-**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.  
+**Authors:** Egide Kalisa, Andrew Sudmant<br>
+**Published:** 2025-07-21 · Scientific Reports · Article<br>
+**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.<br>
 **DOI:** [10.1038/s41598-025-12210-4](https://doi.org/10.1038/s41598-025-12210-4)
 
 > Egide Kalisa, Andrew Sudmant. (2025). Heatwaves amplify air pollution risks in Sub-Saharan Africa. Scientific Reports. https://doi.org/10.1038/s41598-025-12210-4

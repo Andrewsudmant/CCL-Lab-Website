@@ -7,8 +7,8 @@ description: "A conditional, place-based scenario model for assessing co-benefit
 
 <p class="page-deck">A conditional, place-based scenario model for assessing co-benefits and co-costs of climate action across domestic buildings, diet and active travel. The programme separates baseline evidence, scenario action, assignment, physical or behavioural effects, causal pathways, endpoints and valuation, with explicit traceability and locality rules.</p>
 
-**Status:** In Development  
-**Relationship to the lab:** Current Lab Research — Owner-approved current programme of the Cities and Climate Learning Lab.  
+**Status:** In Development<br>
+**Relationship to the lab:** Current Lab Research — Owner-approved current programme of the Cities and Climate Learning Lab.<br>
 **Primary theme:** [Co-benefits, co-costs and place-based valuation](/research/themes/co-benefits-place-based-valuation.html)
 
 ## Research questions

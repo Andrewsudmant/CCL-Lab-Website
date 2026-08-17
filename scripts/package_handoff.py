@@ -16,6 +16,7 @@ except ImportError:  # Direct script execution.
     from content import ROOT
 
 CONTEXT_FILES = [
+    Path(".github/workflows/current-conversations-scheduled.yml"),
     Path("AGENTS.md"),
     Path("README.md"),
     Path("docs/architecture.md"),
@@ -36,11 +37,16 @@ CONTEXT_FILES = [
     Path("reports/content/publication-reconciliation.md"),
     Path("reports/pilot/gate-3b-4a-evaluation.md"),
     Path("reports/current-conversations/pilot/gate-4b-5a-evaluation.md"),
+    Path("reports/current-conversations/cost-controls.md"),
     Path("reports/current-conversations/staging/gate-4b-5a-staging-report.md"),
+    Path("reports/current-conversations/staging/rollback-demonstration.md"),
+    Path("reports/file-by-file-summary-gate-4b-5a.md"),
     Path("config/research_scope.yml"),
     Path("config/vocabularies.yml"),
     Path("config/query_packs/current-conversations-v1.yml"),
     Path("config/source_registry.yml"),
+    Path("current_conversations/budget.py"),
+    Path("scripts/stage_current_conversations.py"),
 ]
 
 

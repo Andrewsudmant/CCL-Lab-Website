@@ -28,6 +28,7 @@ def main() -> int:
         path.write_text('{"status":"validated"}\n', encoding="utf-8")
         run("git", "add", allowed, cwd=work)
         run("git", "commit", "-m", "Local staging exercise", cwd=work)
+        commit = run("git", "rev-parse", "HEAD", cwd=work)
         run("git", "branch", "-M", TARGET_BRANCH, cwd=work)
         run("git", "remote", "add", "origin", str(remote), cwd=work)
         run("git", "push", "origin", f"HEAD:{TARGET_BRANCH}", cwd=work)
@@ -35,7 +36,7 @@ def main() -> int:
         assert refs.splitlines() == [TARGET_BRANCH]
     report = ROOT / "reports/current-conversations/staging/local-bare-remote-exercise.md"
     report.parent.mkdir(parents=True, exist_ok=True)
-    report.write_text(f"# Local bare-remote staging exercise\n\nDate: {dt.date.today()}\n\nA temporary repository committed one allow-listed private staging manifest and pushed it only to `{TARGET_BRANCH}` on a temporary local bare remote. The remote contained no `main` reference. The temporary repositories were deleted automatically. No external remote or network was used.\n", encoding="utf-8")
+    report.write_text(f"# Local bare-remote staging exercise\n\nDate: {dt.date.today()}\n\nA temporary repository committed one allow-listed private staging manifest as `{commit}` and pushed it only to `{TARGET_BRANCH}` on a temporary local bare remote. The remote contained no `main` reference. The temporary repositories were deleted automatically. No external remote or network was used.\n", encoding="utf-8")
     print(report)
     return 0
 

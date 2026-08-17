@@ -1,250 +1,698 @@
 [
   {
     "cluster_id": "ccc-atlantic-climate-finance",
+    "source_ids": [
+      "ccs-atlantic-climate-finance"
+    ],
     "title": "Assessing intersectional inequities in climate finance across Atlantic Canada",
+    "discussion": "The study examines uneven access to government and philanthropic climate finance in Atlantic Canada, with a primary case study in Nova Scotia.",
     "principal_source": "Edmund Yirenkyi and Amanda Asiamah",
-    "url": "https://doi.org/10.1007/s44274-026-00957-0",
+    "principal_source_url": "https://doi.org/10.1007/s44274-026-00957-0",
+    "publication_dates": [
+      "2026-08-13"
+    ],
+    "source_environments": [
+      "academic-research"
+    ],
     "primary_theme": "canadian-climate-policy",
+    "secondary_themes": [
+      "co-benefits-place-based-valuation"
+    ],
+    "summary": "The study examines uneven access to government and philanthropic climate finance in Atlantic Canada, with a primary case study in Nova Scotia.",
+    "reason_for_relevance": "It addresses distributional consequences and institutional access within Canadian climate policy delivery.",
+    "evidence_limitations": "The captured abstract supports the topic and approach but not independent verification of findings.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": false,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-austin-tree-canopy",
+    "source_ids": [
+      "ccs-axios-austin-tree-canopy"
+    ],
     "title": "How Austin uses AI to address tree canopies",
+    "discussion": "Axios reports on Austin's use of aerial, weather and socioeconomic data to examine tree-canopy and shade disparities.",
     "principal_source": "Axios Austin",
-    "url": "https://www.axios.com/local/austin/2026/06/04/austin-google-ai-tree-canopies",
+    "principal_source_url": "https://www.axios.com/local/austin/2026/06/04/austin-google-ai-tree-canopies",
+    "publication_dates": [
+      "2026-06-04"
+    ],
+    "source_environments": [
+      "news-and-analysis"
+    ],
     "primary_theme": "evidence-infrastructure-tools",
+    "secondary_themes": [
+      "co-benefits-place-based-valuation"
+    ],
+    "summary": "Axios reports on Austin's use of aerial, weather and socioeconomic data to examine tree-canopy and shade disparities.",
+    "reason_for_relevance": "The example links decision-support infrastructure with place-based heat exposure and distributional choices.",
+    "evidence_limitations": "This item is older than the pilot window and the reporting does not independently validate the tool's estimates.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": true,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-bc-community-infrastructure",
+    "source_ids": [
+      "ccs-bc-community-infrastructure"
+    ],
     "title": "Building Communities Strong in British Columbia with 54 new infrastructure projects",
+    "discussion": "The federal announcement describes funding for local infrastructure projects in British Columbia through arrangements involving Canada, the province, UBCM and local governments.",
     "principal_source": "Housing, Infrastructure and Communities Canada",
-    "url": "https://www.canada.ca/en/housing-infrastructure-communities/news/2026/07/building-communities-strong-in-british-columbia-with-54-new-infrastructure-projects.html",
+    "principal_source_url": "https://www.canada.ca/en/housing-infrastructure-communities/news/2026/07/building-communities-strong-in-british-columbia-with-54-new-infrastructure-projects.html",
+    "publication_dates": [
+      "2026-07-30"
+    ],
+    "source_environments": [
+      "policy-and-institutions"
+    ],
     "primary_theme": "canadian-climate-policy",
+    "secondary_themes": [
+      "climate-governance-delivery"
+    ],
+    "summary": "The federal announcement describes funding for local infrastructure projects in British Columbia through arrangements involving Canada, the province, UBCM and local governments.",
+    "reason_for_relevance": "It provides a current example of intergovernmental delivery arrangements that shape municipal capacity and resilience investment.",
+    "evidence_limitations": "This is an official announcement, not an independent evaluation of project outcomes.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": true,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-bc-lgcap-nonrenewal",
+    "source_ids": [
+      "ccs-bc-lgcap-nonrenewal"
+    ],
     "title": "Local Government Climate Action Program has not been renewed",
+    "discussion": "UBCM reports that a provincial programme used by local governments for climate staffing, planning and implementation was not renewed in the 2026/27 service plan.",
     "principal_source": "Union of BC Municipalities",
-    "url": "https://www.ubcm.ca/about-ubcm/latest-news/local-government-climate-action-program-has-not-been-renewed",
+    "principal_source_url": "https://www.ubcm.ca/about-ubcm/latest-news/local-government-climate-action-program-has-not-been-renewed",
+    "publication_dates": [
+      "2026-04-15"
+    ],
+    "source_environments": [
+      "policy-and-institutions"
+    ],
     "primary_theme": "canadian-climate-policy",
+    "secondary_themes": [
+      "climate-governance-delivery"
+    ],
+    "summary": "UBCM reports that a provincial programme used by local governments for climate staffing, planning and implementation was not renewed in the 2026/27 service plan.",
+    "reason_for_relevance": "The item concerns the stability of intergovernmental funding and municipal delivery capacity in British Columbia.",
+    "evidence_limitations": "The item predates the 30-day pilot window and is included only as a captured calibration fixture.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": true,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-berkeley-synthesis-launch",
+    "source_ids": [
+      "ccs-berkeley-synthesis-launch"
+    ],
     "title": "From Observation to Decision: An Introduction to Synthesis by Berkeley Earth",
+    "discussion": "Berkeley Earth introduces a platform connecting historical observations with bias-corrected climate projections at local scale for cities and countries.",
     "principal_source": "Berkeley Earth",
-    "url": "https://berkeleyearth.org/from-observation-to-decision-an-introduction-to-synthesis-by-berkeley-earth/",
+    "principal_source_url": "https://berkeleyearth.org/from-observation-to-decision-an-introduction-to-synthesis-by-berkeley-earth/",
+    "publication_dates": [
+      "2026-07-08"
+    ],
+    "source_environments": [
+      "blogs-and-commentary"
+    ],
     "primary_theme": "evidence-infrastructure-tools",
+    "secondary_themes": [],
+    "summary": "Berkeley Earth introduces a platform connecting historical observations with bias-corrected climate projections at local scale for cities and countries.",
+    "reason_for_relevance": "The source makes explicit claims about moving from observation to decision, directly engaging the lab's interest in usable evidence infrastructure.",
+    "evidence_limitations": "This is the developer's own description, outside the 30-day window, and not an independent evaluation.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": true,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-coolcity-europe-tool-news",
+    "source_ids": [
+      "ccs-coolcity-europe-tool-news"
+    ],
     "title": "Planning data-driven climate adaptation actions",
+    "discussion": "The Covenant of Mayors describes a platform offering comparable Earth-observation data intended to support adaptation planning across European cities.",
     "principal_source": "EU Covenant of Mayors",
-    "url": "https://eu-mayors.ec.europa.eu/en/news/planning-data-driven-climate-adaptation-actions",
+    "principal_source_url": "https://eu-mayors.ec.europa.eu/en/news/planning-data-driven-climate-adaptation-actions",
+    "publication_dates": [
+      "2026-07-29"
+    ],
+    "source_environments": [
+      "policy-and-institutions"
+    ],
     "primary_theme": "evidence-infrastructure-tools",
+    "secondary_themes": [],
+    "summary": "The Covenant of Mayors describes a platform offering comparable Earth-observation data intended to support adaptation planning across European cities.",
+    "reason_for_relevance": "It is a live example of urban evidence infrastructure and the claims made about its decision-support use.",
+    "evidence_limitations": "The announcement describes intended use; independent usability and impact evidence were not accessed.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": true,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-coolcity-index",
+    "source_ids": [
+      "ccs-coolcity-index"
+    ],
     "title": "COOLCITY Index.eu",
+    "discussion": "The platform offers comparable urban climate and environmental indicators intended to support adaptation prioritisation across European cities.",
     "principal_source": "COOLCITY project",
-    "url": "https://coolcityindex.eu/",
+    "principal_source_url": "https://coolcityindex.eu/",
+    "publication_dates": [
+      "2026-07-29"
+    ],
+    "source_environments": [
+      "data-and-tools"
+    ],
     "primary_theme": "evidence-infrastructure-tools",
+    "secondary_themes": [],
+    "summary": "The platform offers comparable urban climate and environmental indicators intended to support adaptation prioritisation across European cities.",
+    "reason_for_relevance": "It is directly relevant to the design and governance of municipal climate decision-support infrastructure.",
+    "evidence_limitations": "The source was identified through an institutional announcement; direct tool evaluation remains outstanding.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": true,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-data-portal-for-cities",
+    "source_ids": [
+      "ccs-data-portal-for-cities"
+    ],
     "title": "Data Portal for Cities",
+    "discussion": "The platform provides preliminary city emissions data and export functions intended to help local governments build inventories and set priorities.",
     "principal_source": "Data Portal for Cities",
-    "url": "https://dataportalforcities.org/",
+    "principal_source_url": "https://dataportalforcities.org/",
+    "publication_dates": [
+      "2026-08-01"
+    ],
+    "source_environments": [
+      "data-and-tools"
+    ],
     "primary_theme": "evidence-infrastructure-tools",
+    "secondary_themes": [
+      "climate-governance-delivery"
+    ],
+    "summary": "The platform provides preliminary city emissions data and export functions intended to help local governments build inventories and set priorities.",
+    "reason_for_relevance": "It is an example of shared evidence infrastructure intended to fill local data gaps and support municipal reporting.",
+    "evidence_limitations": "The page describes intended capabilities; coverage, uncertainty and decision impact were not independently assessed.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": true,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-el-nino-urban-heat",
+    "source_ids": [
+      "ccs-ap-el-nino-heat"
+    ],
     "title": "This summer isn't breaking heat records yet. Wait until El Nino kicks in, scientists say",
+    "discussion": "Associated Press reports scientists' assessment of the interaction between long-term warming, a strengthening El Nino and extreme heat affecting cities and regions.",
     "principal_source": "Associated Press",
-    "url": "https://apnews.com/article/ffd31dd358a894667c63f4c0a21cd677",
+    "principal_source_url": "https://apnews.com/article/ffd31dd358a894667c63f4c0a21cd677",
+    "publication_dates": [
+      "2026-08-04"
+    ],
+    "source_environments": [
+      "news-and-analysis"
+    ],
     "primary_theme": "climate-governance-delivery",
+    "secondary_themes": [],
+    "summary": "Associated Press reports scientists' assessment of the interaction between long-term warming, a strengthening El Nino and extreme heat affecting cities and regions.",
+    "reason_for_relevance": "The reporting provides context for near-term urban adaptation and service-delivery pressures without substituting for primary climate data.",
+    "evidence_limitations": "The source is journalistic synthesis; scientific claims should be checked against the cited primary institutions.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": true,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-era5-urban-biases",
+    "source_ids": [
+      "ccs-era5-urban-biases"
+    ],
     "title": "Evaluating ERA5-Land air temperature and dew point biases in built-up environments in the UK",
+    "discussion": "The study evaluates temperature and dew-point biases in ERA5-Land data across built-up UK environments and considers how those biases propagate into urban climate applications.",
     "principal_source": "Junjie Yu and co-authors",
-    "url": "https://doi.org/10.1016/j.uclim.2026.103088",
+    "principal_source_url": "https://doi.org/10.1016/j.uclim.2026.103088",
+    "publication_dates": [
+      "2026-08-13"
+    ],
+    "source_environments": [
+      "academic-research"
+    ],
     "primary_theme": "evidence-infrastructure-tools",
+    "secondary_themes": [],
+    "summary": "The study evaluates temperature and dew-point biases in ERA5-Land data across built-up UK environments and considers how those biases propagate into urban climate applications.",
+    "reason_for_relevance": "It shows how infrastructure-level data limitations can affect downstream urban climate decisions.",
+    "evidence_limitations": "The summary uses the provider abstract and does not independently reproduce the validation.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": false,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-france-heat-drought",
+    "source_ids": [
+      "ccs-lemonde-france-heat-drought"
+    ],
     "title": "July breaks drought and heat records in France: The issue of water is becoming absolutely critical",
+    "discussion": "Le Monde reports on French heat and drought records and the resulting pressure on water systems, communities and public authorities.",
     "principal_source": "Le Monde",
-    "url": "https://www.lemonde.fr/en/environment/article/2026/08/05/july-breaks-drought-and-heat-records-the-issue-of-water-is-becoming-absolutely-critical_6756164_114.html",
+    "principal_source_url": "https://www.lemonde.fr/en/environment/article/2026/08/05/july-breaks-drought-and-heat-records-the-issue-of-water-is-becoming-absolutely-critical_6756164_114.html",
+    "publication_dates": [
+      "2026-08-05"
+    ],
+    "source_environments": [
+      "news-and-analysis"
+    ],
     "primary_theme": "climate-governance-delivery",
+    "secondary_themes": [],
+    "summary": "Le Monde reports on French heat and drought records and the resulting pressure on water systems, communities and public authorities.",
+    "reason_for_relevance": "The coverage highlights the delivery challenge of adapting services and urban systems under concurrent climate risks.",
+    "evidence_limitations": "The article is reporting rather than an official dataset; source claims remain attributed to the named institutions.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": true,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-green-transition-justice",
+    "source_ids": [
+      "ccs-green-transition-justice"
+    ],
     "title": "Social Impacts of the Green Transition: Prospective Environmental (In)Justice in Europe's Peripheries",
+    "discussion": "Using six case studies, the article considers prospective environmental injustice associated with decarbonisation, critical minerals, regional strategies and gaps between workforce and socio-ecological policy.",
     "principal_source": "Marcus Erridge and co-authors",
-    "url": "https://doi.org/10.17645/pag.12268",
+    "principal_source_url": "https://doi.org/10.17645/pag.12268",
+    "publication_dates": [
+      "2026-08-13"
+    ],
+    "source_environments": [
+      "academic-research"
+    ],
     "primary_theme": "just-transitions-workforce",
+    "secondary_themes": [],
+    "summary": "Using six case studies, the article considers prospective environmental injustice associated with decarbonisation, critical minerals, regional strategies and gaps between workforce and socio-ecological policy.",
+    "reason_for_relevance": "It speaks to how transition benefits and burdens are governed across places and labour-market strategies.",
+    "evidence_limitations": "The captured abstract supports a high-level description but not a case-by-case assessment.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": false,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-housing-climate-rights",
+    "source_ids": [
+      "ccs-c40-housing-climate"
+    ],
     "title": "Why the Right to Housing is the Key to Climate Survival",
+    "discussion": "C40 commentary links housing rights, construction, affordability and climate resilience and points to a related white paper developed with The Shift.",
     "principal_source": "C40 Cities",
-    "url": "https://www.c40.org/news/why-the-right-to-housing-is-the-key-to-climate-survival/",
+    "principal_source_url": "https://www.c40.org/news/why-the-right-to-housing-is-the-key-to-climate-survival/",
+    "publication_dates": [
+      "2026-06-11"
+    ],
+    "source_environments": [
+      "blogs-and-commentary"
+    ],
     "primary_theme": "co-benefits-place-based-valuation",
+    "secondary_themes": [
+      "climate-governance-delivery"
+    ],
+    "summary": "C40 commentary links housing rights, construction, affordability and climate resilience and points to a related white paper developed with The Shift.",
+    "reason_for_relevance": "It frames climate action through place-based distribution, housing governance and co-costs rather than emissions alone.",
+    "evidence_limitations": "The commentary predates the pilot window and advances an argument rather than independently testing outcomes.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": true,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-july-city-warming",
+    "source_ids": [
+      "ccs-climate-central-july-warming"
+    ],
     "title": "July 4th: The Hottest Month Is Getting Hotter After 250 Years of Climate Change",
+    "discussion": "Climate Central presents city-level July temperature trends, downloadable data and methodology for more than 240 US cities.",
     "principal_source": "Climate Central",
-    "url": "https://www.climatecentral.org/climate-matters/250-years-of-climate-change",
+    "principal_source_url": "https://www.climatecentral.org/climate-matters/250-years-of-climate-change",
+    "publication_dates": [
+      "2026-07-01"
+    ],
+    "source_environments": [
+      "blogs-and-commentary"
+    ],
     "primary_theme": "evidence-infrastructure-tools",
+    "secondary_themes": [],
+    "summary": "Climate Central presents city-level July temperature trends, downloadable data and methodology for more than 240 US cities.",
+    "reason_for_relevance": "The item demonstrates how analysis, local data and communication products are assembled for urban evidence use.",
+    "evidence_limitations": "The analysis is outside the 30-day pilot window and is geographically limited to US cities.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": true,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-local-capacity-policy-evaluation",
+    "source_ids": [
+      "ccs-local-capacity-policy-evaluation"
+    ],
     "title": "Local capacity building and policy evaluation in climate and environmental governance",
+    "discussion": "The paper examines how local capacity building and policy evaluation shape climate and environmental governance, using Mexico City as a case through which to discuss urban transformation.",
     "principal_source": "Gian Carlo Delgado Ramos",
-    "url": "https://doi.org/10.1007/s44327-026-00345-6",
+    "principal_source_url": "https://doi.org/10.1007/s44327-026-00345-6",
+    "publication_dates": [
+      "2026-08-14"
+    ],
+    "source_environments": [
+      "academic-research"
+    ],
     "primary_theme": "urban-climate-learning",
+    "secondary_themes": [],
+    "summary": "The paper examines how local capacity building and policy evaluation shape climate and environmental governance, using Mexico City as a case through which to discuss urban transformation.",
+    "reason_for_relevance": "It connects directly to how cities build the institutional capacity needed to interpret evidence and sustain climate action.",
+    "evidence_limitations": "The captured OpenAlex abstract was available; the full analysis was not independently reproduced.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": false,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-local-temperature-records-tool",
+    "source_ids": [
+      "ccs-climate-central-local-records"
+    ],
     "title": "Local Records Data Viewer",
+    "discussion": "The viewer provides filterable daily temperature records for US cities using open data from NOAA regional climate centres.",
     "principal_source": "Climate Central",
-    "url": "https://app.climatecentral.org/dataviz/local-records/data-viewer",
+    "principal_source_url": "https://app.climatecentral.org/dataviz/local-records/data-viewer",
+    "publication_dates": [
+      "2026-07-27"
+    ],
+    "source_environments": [
+      "data-and-tools"
+    ],
     "primary_theme": "evidence-infrastructure-tools",
+    "secondary_themes": [],
+    "summary": "The viewer provides filterable daily temperature records for US cities using open data from NOAA regional climate centres.",
+    "reason_for_relevance": "It is a concrete example of an urban-facing data interface whose design and provenance shape evidence use.",
+    "evidence_limitations": "Coverage is US-specific and the private pilot did not test usability or reproduce the underlying calculations.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": true,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-maritime-workforce-skills",
+    "source_ids": [
+      "ccs-maritime-workforce-skills"
+    ],
     "title": "Preparing the maritime workforce for the twin transition: skill priorities and educational needs",
+    "discussion": "The study investigates skill priorities and education needs created by the maritime sector's linked decarbonisation and digital transitions.",
     "principal_source": "Phoebe Koundouri and co-authors",
-    "url": "https://doi.org/10.3389/frevc.2026.1887750",
+    "principal_source_url": "https://doi.org/10.3389/frevc.2026.1887750",
+    "publication_dates": [
+      "2026-07-24"
+    ],
+    "source_environments": [
+      "academic-research"
+    ],
     "primary_theme": "just-transitions-workforce",
+    "secondary_themes": [],
+    "summary": "The study investigates skill priorities and education needs created by the maritime sector's linked decarbonisation and digital transitions.",
+    "reason_for_relevance": "It offers a sectoral example of how climate delivery changes occupational requirements and training needs.",
+    "evidence_limitations": "Urban implications are indirect and should be assessed during owner calibration.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": false,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-multilayered-urban-forests",
+    "source_ids": [
+      "ccs-multilayered-urban-forests"
+    ],
     "title": "Multi-layered Urban Forests: can a City be dense and green?",
+    "discussion": "The paper discusses how urban density and layered urban forest design can be considered together rather than treated as mutually exclusive planning goals.",
     "principal_source": "Mohammad A. Rahman and co-authors",
-    "url": "https://doi.org/10.3389/frsc.2026.1842594",
+    "principal_source_url": "https://doi.org/10.3389/frsc.2026.1842594",
+    "publication_dates": [
+      "2026-08-10"
+    ],
+    "source_environments": [
+      "academic-research"
+    ],
     "primary_theme": "co-benefits-place-based-valuation",
+    "secondary_themes": [],
+    "summary": "The paper discusses how urban density and layered urban forest design can be considered together rather than treated as mutually exclusive planning goals.",
+    "reason_for_relevance": "It illustrates place-based trade-offs among urban form, greenery, biodiversity and heat-related benefits.",
+    "evidence_limitations": "The annotation uses abstract evidence and does not independently evaluate the design proposals.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": false,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-nature-based-solutions-scaling",
+    "source_ids": [
+      "ccs-nature-based-solutions-scaling"
+    ],
     "title": "From pilot to paradigm: a call for entrepreneurial strategies to scale up the implementation of nature-based solutions",
+    "discussion": "The article asks how cities can move nature-based solutions beyond isolated pilots and discusses more proactive implementation strategies and their potential co-benefits.",
     "principal_source": "Tara Op de Beeck and Tom Coppens",
-    "url": "https://doi.org/10.1080/09654313.2026.2714960",
+    "principal_source_url": "https://doi.org/10.1080/09654313.2026.2714960",
+    "publication_dates": [
+      "2026-08-13"
+    ],
+    "source_environments": [
+      "academic-research"
+    ],
     "primary_theme": "climate-governance-delivery",
+    "secondary_themes": [
+      "co-benefits-place-based-valuation"
+    ],
+    "summary": "The article asks how cities can move nature-based solutions beyond isolated pilots and discusses more proactive implementation strategies and their potential co-benefits.",
+    "reason_for_relevance": "Moving from pilots to city-wide delivery is central to the lab's interest in implementation arrangements and learning.",
+    "evidence_limitations": "Only the abstract was available to the captured discovery process.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": false,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-reuters-climate-monitor",
+    "source_ids": [
+      "ccs-reuters-climate-monitor"
+    ],
     "title": "Reuters Climate Monitor",
+    "discussion": "Copernicus describes a Reuters interactive that compares current temperatures with historical averages and includes city-oriented views.",
     "principal_source": "Reuters and Copernicus Climate Change Service",
-    "url": "https://climate.copernicus.eu/reuters-launches-climate-monitor-tool-powered-copernicus-climate-change-service-data",
+    "principal_source_url": "https://climate.copernicus.eu/reuters-launches-climate-monitor-tool-powered-copernicus-climate-change-service-data",
+    "publication_dates": [
+      "2026-07-02"
+    ],
+    "source_environments": [
+      "data-and-tools"
+    ],
     "primary_theme": "evidence-infrastructure-tools",
+    "secondary_themes": [],
+    "summary": "Copernicus describes a Reuters interactive that compares current temperatures with historical averages and includes city-oriented views.",
+    "reason_for_relevance": "The tool shows how authoritative climate data are translated into a public decision and communication interface.",
+    "evidence_limitations": "The announcement predates the pilot window and the interface was not independently evaluated.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": true,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-sustainable-urban-data-centres",
+    "source_ids": [
+      "ccs-c40-data-centres-pact",
+      "ccs-ap-data-centres-reporting"
+    ],
     "title": "Mayors from around the world unite in call for sustainable urban data centres",
+    "discussion": "C40 describes a pact through which participating mayors seek to shape urban data-centre growth around energy, water, land, cost and community concerns.",
     "principal_source": "C40 Cities",
-    "url": "https://www.c40.org/news/mayors-from-around-the-world-unite-in-call-for-sustainable-urban-data-centres/",
+    "principal_source_url": "https://www.c40.org/news/mayors-from-around-the-world-unite-in-call-for-sustainable-urban-data-centres/",
+    "publication_dates": [
+      "2026-06-23",
+      "2026-06-23"
+    ],
+    "source_environments": [
+      "policy-and-institutions",
+      "news-and-analysis"
+    ],
     "primary_theme": "climate-governance-delivery",
+    "secondary_themes": [
+      "co-benefits-place-based-valuation"
+    ],
+    "summary": "C40 describes a pact through which participating mayors seek to shape urban data-centre growth around energy, water, land, cost and community concerns.",
+    "reason_for_relevance": "The pact illustrates collective city governance of a fast-growing infrastructure challenge with climate and distributional implications.",
+    "evidence_limitations": "This official announcement predates the 30-day window and does not verify implementation by signatory cities.",
+    "grouping_rationale": "The reporting links directly to the named official pact.",
+    "linked_source_urls": [
+      "https://apnews.com/article/37df5184ad4f28ea084082563182e1ea"
+    ],
+    "captured_fixture": true,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-syracuse-climate-plan",
+    "source_ids": [
+      "ccs-syracuse-climate-plan"
+    ],
     "title": "Mayor Owens Announces Adoption of Inaugural Climate Action Plan",
+    "discussion": "The City of Syracuse announced adoption of its first community and municipal climate action plan, covering resilience, energy, mobility, education, heat and flooding.",
     "principal_source": "City of Syracuse",
-    "url": "https://www.syr.gov/News/City-News/City-2026/2026-07-14-Mayors-Office-News-1130AM",
+    "principal_source_url": "https://www.syr.gov/News/City-News/City-2026/2026-07-14-Mayors-Office-News-1130AM",
+    "publication_dates": [
+      "2026-07-14"
+    ],
+    "source_environments": [
+      "policy-and-institutions"
+    ],
     "primary_theme": "climate-governance-delivery",
+    "secondary_themes": [],
+    "summary": "The City of Syracuse announced adoption of its first community and municipal climate action plan, covering resilience, energy, mobility, education, heat and flooding.",
+    "reason_for_relevance": "The plan provides a current municipal example of translating climate goals into an implementation framework.",
+    "evidence_limitations": "The announcement is outside the strict 30-day window and does not establish delivery performance.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": true,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-unep-extreme-heat-diplomacy",
+    "source_ids": [
+      "ccs-unep-extreme-heat-diplomacy"
+    ],
     "title": "Beating the Heat Together: City Diplomacy and the Global Mobilization against Extreme Heat",
+    "discussion": "UNEP's event page frames extreme heat as a topic for city diplomacy and shared urban learning among municipal and international actors.",
     "principal_source": "United Nations Environment Programme",
-    "url": "https://www.unep.org/events/unep-event/beating-heat-together-city-diplomacy-and-global-mobilization-against-extreme-heat",
+    "principal_source_url": "https://www.unep.org/events/unep-event/beating-heat-together-city-diplomacy-and-global-mobilization-against-extreme-heat",
+    "publication_dates": [
+      "2026-08-03"
+    ],
+    "source_environments": [
+      "policy-and-institutions"
+    ],
     "primary_theme": "urban-climate-learning",
+    "secondary_themes": [
+      "climate-governance-delivery"
+    ],
+    "summary": "UNEP's event page frames extreme heat as a topic for city diplomacy and shared urban learning among municipal and international actors.",
+    "reason_for_relevance": "It illustrates how cities exchange approaches and mobilize collective attention around climate risk.",
+    "evidence_limitations": "An event page establishes the discussion agenda, not evidence of resulting policy change.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": true,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-urban-smes-net-zero",
+    "source_ids": [
+      "ccs-urban-smes-net-zero"
+    ],
     "title": "Engaging urban SMEs in net-zero transitions to mitigate climate change: Navigating multi-level governance challenges",
+    "discussion": "Drawing on interviews and policy documents, the study considers how multi-level governance arrangements influence climate action among small and medium-sized enterprises in Melbourne.",
     "principal_source": "Chamila Weerathunghe Arachchige and co-authors",
-    "url": "https://doi.org/10.1177/02662426261464140",
+    "principal_source_url": "https://doi.org/10.1177/02662426261464140",
+    "publication_dates": [
+      "2026-08-15"
+    ],
+    "source_environments": [
+      "academic-research"
+    ],
     "primary_theme": "climate-governance-delivery",
+    "secondary_themes": [],
+    "summary": "Drawing on interviews and policy documents, the study considers how multi-level governance arrangements influence climate action among small and medium-sized enterprises in Melbourne.",
+    "reason_for_relevance": "It examines how governance frameworks and delivery relationships affect implementation beyond municipal government itself.",
+    "evidence_limitations": "The summary is constrained to provider-supplied abstract evidence.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": false,
     "relevance": "",
     "grouping": "",
     "comments": ""
   },
   {
     "cluster_id": "ccc-urbclim-model",
+    "source_ids": [
+      "ccs-urbclim-model"
+    ],
     "title": "The UrbClim model",
+    "discussion": "The UrbClim site describes a city-scale climate model offering high-resolution outputs for heat and related variables across historical and future periods.",
     "principal_source": "VITO",
-    "url": "https://www.urban-climate.eu/model",
+    "principal_source_url": "https://www.urban-climate.eu/model",
+    "publication_dates": [
+      "2026-06-23"
+    ],
+    "source_environments": [
+      "data-and-tools"
+    ],
     "primary_theme": "evidence-infrastructure-tools",
+    "secondary_themes": [],
+    "summary": "The UrbClim site describes a city-scale climate model offering high-resolution outputs for heat and related variables across historical and future periods.",
+    "reason_for_relevance": "It raises questions about model validation, usability and how city-scale climate evidence enters planning decisions.",
+    "evidence_limitations": "The developer description predates the pilot window; accuracy claims were not independently tested.",
+    "grouping_rationale": "Single-source cluster.",
+    "linked_source_urls": [],
+    "captured_fixture": true,
     "relevance": "",
     "grouping": "",
     "comments": ""

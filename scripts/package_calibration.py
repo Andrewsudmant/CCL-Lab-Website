@@ -19,12 +19,18 @@ def package(output: Path | None = None) -> Path:
         raise FileNotFoundError(f"Missing calibration files: {missing}; run make current-conversations-pilot")
     destination = output or ROOT / "deliverables" / f"CCLL-current-conversations-calibration-{dt.date.today()}.zip"
     destination.parent.mkdir(parents=True, exist_ok=True)
-    manifest = ["CCLL Current Conversations calibration", f"Created: {dt.date.today()}", "Labels evaluate discovery and grouping; they are not publication approvals.", "", "SHA-256  File"]
+    manifest = ["CCLL Current Conversations calibration", f"Created: {dt.date.today()}", "Labels evaluate discovery and grouping; they are not publication approvals.", "All 25 active entries are explicitly captured fixtures; none is represented as a live Gate 4B–5A retrieval.", "", "SHA-256  File"]
     with zipfile.ZipFile(destination, "w", zipfile.ZIP_DEFLATED) as archive:
         for name in REQUIRED:
             data = (source / name).read_bytes()
             archive.writestr(name, data)
             manifest.append(f"{hashlib.sha256(data).hexdigest()}  {name}")
+        for kind in ("sources", "clusters"):
+            for path in sorted((ROOT / f"data/current-conversations/generated/{kind}").glob("*.json")):
+                data = path.read_bytes()
+                name = f"metadata/{kind}/{path.name}"
+                archive.writestr(name, data)
+                manifest.append(f"{hashlib.sha256(data).hexdigest()}  {name}")
         archive.writestr("MANIFEST.txt", "\n".join(manifest) + "\n")
     return destination
 

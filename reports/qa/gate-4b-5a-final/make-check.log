@@ -1,0 +1,13 @@
+Gate 4B–5A final check — 2026-08-17
+Command: make check
+Result: PASS
+
+- Content validation: 70 records, 14 schemas
+- Automated tests: 64 passed
+- Expected warning: one DeprecationWarning from the one-gate research_watch import shim
+- Quarto render: 88 HTML pages
+- Internal link validation: passed
+- Static accessibility validation: passed for 88 HTML pages
+- JSON Feed: 25 items, valid JSON Feed 1.1 structure
+- RSS: parsed as valid XML
+- External canonical-source network check: not rerun in the final offline check; bounded scaffold retained

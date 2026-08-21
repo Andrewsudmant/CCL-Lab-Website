@@ -9,7 +9,36 @@ description: "An interactive place-based atlas estimating benefits and costs of 
 
 **Status:** Active<br>
 **Relationship to the lab:** Foundational Prior Work — Developed through the University of Edinburgh and collaborators before the lab was established at SFU; it is foundational rather than an SFU lab output.<br>
-**Primary theme:** [Co-benefits, co-costs and place-based valuation](/research/themes/co-benefits-place-based-valuation.html)
+**Primary theme:** [Consequences for People and Places](/research/consequences-for-people-and-places.html)
+
+## How this project contributes to climate learning
+
+**Primary theme:** [Consequences for People and Places](/research/consequences-for-people-and-places.html)
+
+**Secondary connections:** [Where New Evidence Matters](/research/where-new-evidence-matters.html), [Modes of Climate Delivery](/research/modes-of-climate-delivery.html)
+
+**Decision or problem:** How place-based evidence can make locally varying benefits and costs of climate action visible.
+
+**Existing evidence:** Verified atlas methods, outputs and a connected publication from foundational prior work.
+
+**Transfer conditions:** Estimates are specific to UK data, communities, scenarios and valuation choices.
+
+**Consequential uncertainty:** Data availability and modelling choices affect which consequences can be represented at community scale.
+
+**Consequences examined:** Eleven categories of benefits and costs across more than 46,000 UK communities.
+
+**Evidence status:** Active foundational prior work with authoritative project and tool sources.
+
+**Claim boundaries:** Atlas estimates are not universal predictions and do not establish suitability for another place.
+
+**Next learning question:** Which additional local evidence would most improve interpretation of community-level differences?
+
+### Research facets
+
+**Geographies:** united-kingdom<br>
+**Climate domains:** mitigation<br>
+**Sectors:** cross-sectoral<br>
+**Methods:** place-based-modelling, spatial-analysis, data-visualization
 
 ## Research questions
 

@@ -13,7 +13,7 @@
       let shown = 0;
       cards.forEach((card) => {
         const matches = (!query || card.textContent.toLowerCase().includes(query)) &&
-          (!theme || card.dataset.theme.split(" ").includes(theme)) &&
+          (!theme || (theme === "__unclassified__" ? !card.dataset.theme : card.dataset.theme.split(" ").includes(theme))) &&
           (!environment || card.dataset.environment.split(" ").includes(environment)) &&
           (!geography || card.dataset.geography.split(" ").includes(geography)) &&
           (!kind || card.dataset.kind === kind) && (!since || card.dataset.date >= since);

@@ -7,6 +7,7 @@ project:
     - "current-conversations/*.qmd"
     - "research-watch/*.qmd"
     - "research/themes/*.qmd"
+    - "research/*.qmd"
     - "projects/*.qmd"
     - "publications/*.qmd"
     - "!generated/*.qmd"
@@ -38,7 +39,7 @@ website:
           - href: data-tools.qmd
             text: Data & Tools
       - href: current-conversations/index.qmd
-        text: Conversations
+        text: Current Conversations
       - href: opportunities.qmd
         text: Opportunities
       - text: About

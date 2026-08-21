@@ -7,7 +7,7 @@
   "date_most_recently_observed": "2026-07-14",
   "principal_source_id": "ccs-syracuse-climate-plan",
   "linked_source_ids": [],
-  "primary_theme": "climate-governance-delivery",
+  "primary_theme": "modes-of-climate-delivery",
   "secondary_themes": [],
   "geographies": [
     "global"
@@ -34,7 +34,7 @@
     "used": false,
     "model": null,
     "prompt_version": "current-conversations-classification-v1-fixture",
-    "run_id": "gate-4b-5a-mixed-source-captured"
+    "run_id": "thematic-reframe-mixed-source-captured"
   },
   "publication_decision": "published",
   "correction_status": "none",

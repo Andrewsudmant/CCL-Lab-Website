@@ -8,7 +8,7 @@
   "properties": {
     "source_environment": {"enum": ["academic-research", "policy-and-institutions", "news-and-analysis", "blogs-and-commentary", "data-and-tools", "bluesky"]},
     "source_role": {"type": "string"},
-    "primary_theme": {"type": "string"},
+    "primary_theme": {"type": ["string", "null"]},
     "secondary_themes": {"type": "array", "maxItems": 2, "uniqueItems": true, "items": {"type": "string"}},
     "theme_scores": {"type": "object", "additionalProperties": {"type": "number", "minimum": 0, "maximum": 1}},
     "theme_rationales": {"type": "object", "additionalProperties": {"type": "string"}},

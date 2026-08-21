@@ -9,7 +9,34 @@ description: "Research examining where urban climate evidence is produced, which
 
 **Status:** Active<br>
 **Relationship to the lab:** Foundational Prior Work — The verified preprint was posted while Andrew was affiliated with the University of Edinburgh, before the lab's establishment; the ongoing questions directly inform the lab's current learning and evidence programme.<br>
-**Primary theme:** [Urban climate learning and evidence transfer](/research/themes/urban-climate-learning.html)
+**Primary theme:** [Geographies of Climate Learning](/research/geographies-of-climate-learning.html)
+
+## How this project contributes to climate learning
+
+**Primary theme:** [Geographies of Climate Learning](/research/geographies-of-climate-learning.html)
+
+**Secondary connections:** [Where New Evidence Matters](/research/where-new-evidence-matters.html)
+
+**Decision or problem:** Which existing urban climate evidence is visible and plausibly relevant beyond the places where it was produced.
+
+**Existing evidence:** A verified preprint and an external global evidence-map article.
+
+**Transfer conditions:** Geographic and institutional similarity affect the plausibility of learning between cities.
+
+**Consequential uncertainty:** Evidence gaps may limit comparison, but their importance depends on the decisions and mechanisms at issue.
+
+**Evidence status:** Active research grounded in a verified preprint; ongoing findings are not inferred here.
+
+**Claim boundaries:** Geographic proximity or evidence volume alone does not establish transferability.
+
+**Next learning question:** Which evidence gaps most constrain consequential comparisons between cities?
+
+### Research facets
+
+**Geographies:** global<br>
+**Climate domains:** evidence-and-learning<br>
+**Sectors:** cross-sectoral<br>
+**Methods:** evidence-mapping, literature-review, spatial-analysis
 
 ## Research questions
 

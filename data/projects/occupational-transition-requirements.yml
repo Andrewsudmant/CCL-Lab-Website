@@ -13,8 +13,16 @@ research_questions:
   - How can occupational relatedness and transition requirements be calibrated from public evidence?
 start_date: null
 end_date: null
-primary_theme: just-transitions-workforce
-secondary_themes: [evidence-infrastructure-tools, climate-governance-delivery]
+primary_theme: consequences-for-people-and-places
+secondary_themes: [where-new-evidence-matters, modes-of-climate-delivery]
+decision_or_problem: How to distinguish sector changes from occupation transitions in place-based low-carbon workforce planning.
+existing_evidence: Public occupational evidence used to examine relatedness and transition requirements.
+consequential_uncertainty: Calibration choices affect which transition requirements and workforce burdens become visible.
+delivery_conditions: Workforce institutions, skills systems and employers shape whether occupational transitions are feasible.
+consequences_examined: Changes in occupations, skills requirements and access to low-carbon work.
+evidence_status: Owner-approved programme description; the methodology is in development.
+claim_boundaries: The work does not predict individual transitions or presume that all green employment is accessible or good work.
+next_learning_question: Which transition requirements are most consequential for workers and places?
 geographies: [united-kingdom]
 governance_scales: [federal-national, regional]
 methods: [occupational-analysis, evidence-synthesis, taxonomy-development, network-analysis, calibration]

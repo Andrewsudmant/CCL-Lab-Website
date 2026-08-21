@@ -4,7 +4,11 @@
 
 Current Conversations uses automated discovery and AI-assisted annotation to surface material across research, policy, news, commentary and tools. AI is never treated as a source. Readers receive the original link, source identity/date, evidence limitation and review state. Inclusion does not imply endorsement.
 
+Current Conversations is horizon scanning around the questions the lab studies. A theme assignment records a bounded classification, not evidential quality, transferability or recommendation. Geography, source type and topic remain separate from lab theme. Records may be cross-cutting or unclassified when available evidence does not justify an assignment.
+
 The compact unreviewed label follows the record, not the system's potential capabilities. Use **Identified and summarized using AI · not reviewed by the lab** only when `ai_provenance.used=true`. Captured fixtures with `used=false` say **Captured fixture · no AI generation recorded · not reviewed by the lab**. The landing page also warns that summaries may contain errors or omit context and asks readers to consult original sources.
+
+The four research-theme titles, guiding questions, descriptions and analytical boundaries are owner-approved and canonical in `config/research_scope.yml`. Project mappings must be supported by existing project material; optional learning fields remain absent when evidence is insufficient. Methods and geographies must not be promoted into competing top-level themes.
 
 ## Required provenance
 

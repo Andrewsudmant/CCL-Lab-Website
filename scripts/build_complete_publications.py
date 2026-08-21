@@ -23,16 +23,14 @@ def slug(value: str) -> str:
 def theme_for(title: str) -> str:
     value = title.casefold()
     if any(term in value for term in ("workforce", "worker", "livelihood", "just transition", "employment")):
-        return "just-transitions-workforce"
-    if any(term in value for term in ("data", "forecast", "account", "machine learning", "air quality")):
-        return "evidence-infrastructure-tools"
+        return "consequences-for-people-and-places"
     if any(term in value for term in ("governance", "policy", "delivery", "implementation")):
-        return "climate-governance-delivery"
-    if any(term in value for term in ("economic", "finance", "pro-poor", "benefit", "health")):
-        return "co-benefits-place-based-valuation"
-    if any(term in value for term in ("canada", "calgary", "british columbia")):
-        return "canadian-climate-policy"
-    return "urban-climate-learning"
+        return "modes-of-climate-delivery"
+    if any(term in value for term in ("economic", "finance", "pro-poor", "benefit", "health", "social impact", "inequit")):
+        return "consequences-for-people-and-places"
+    if any(term in value for term in ("data scaling", "natural experiment", "forecasting", "machine learning", "blind spot", "crowdsourced", "carbon account", "methodolog")):
+        return "where-new-evidence-matters"
+    return "geographies-of-climate-learning"
 
 
 def geographies_for(title: str) -> list[str]:

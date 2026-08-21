@@ -14,8 +14,21 @@ research_questions:
   - How should evidence, geography and valuation choices be governed and traced?
 start_date: null
 end_date: null
-primary_theme: co-benefits-place-based-valuation
-secondary_themes: [evidence-infrastructure-tools, climate-governance-delivery]
+primary_theme: consequences-for-people-and-places
+secondary_themes: [where-new-evidence-matters, modes-of-climate-delivery]
+decision_or_problem: >-
+  How to represent the locally varying benefits, burdens and costs of climate scenarios
+  without obscuring causal, geographic or valuation assumptions.
+existing_evidence: >-
+  The model separates baseline evidence, scenario actions, causal pathways, endpoints
+  and valuation so their provenance and applicability can be examined.
+consequential_uncertainty: >-
+  Local evidence availability, causal assignment and valuation choices may materially
+  change the consequences represented for a place.
+consequences_examined: Health, equity and other place-based co-benefits, co-costs and distributional outcomes.
+evidence_status: Owner-approved programme description; the model is in development.
+claim_boundaries: Scenarios are conditional appraisals, not predictions or universal transferability claims.
+next_learning_question: Which local evidence and valuation choices most alter scenario conclusions?
 geographies: [canada, united-kingdom]
 governance_scales: [municipal, neighbourhood]
 methods: [place-based-modelling, economic-appraisal, distributional-analysis]

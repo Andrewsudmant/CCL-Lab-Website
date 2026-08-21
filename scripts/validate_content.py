@@ -16,12 +16,19 @@ try:
 except ImportError:
     from content import ROOT, load_yaml, research_scope
 
-CANONICAL_THEMES = {
+CANONICAL_THEME_ORDER = [
+    ("geographies-of-climate-learning", "Geographies of Climate Learning"),
+    ("where-new-evidence-matters", "Where New Evidence Matters"),
+    ("modes-of-climate-delivery", "Modes of Climate Delivery"),
+    ("consequences-for-people-and-places", "Consequences for People and Places"),
+]
+CANONICAL_THEMES = {item[0] for item in CANONICAL_THEME_ORDER}
+RETIRED_THEMES = {
     "urban-climate-learning", "climate-governance-delivery",
     "co-benefits-place-based-valuation", "just-transitions-workforce",
     "evidence-infrastructure-tools", "canadian-climate-policy",
+    "canadian-comparative-policy",
 }
-RETIRED_THEME = "canadian-comparative-policy"
 CRITICAL_FLAGS = {"title-only", "prompt-injection", "suspicious-url", "unsupported-claim"}
 
 
@@ -52,8 +59,9 @@ def validate_all() -> list[str]:
     scope = research_scope()
     errors.extend(schema_errors(scope, scope_schema, "config/research_scope.yml"))
     theme_ids = [item.get("id") for item in scope.get("themes", [])]
-    if set(theme_ids) != CANONICAL_THEMES or len(theme_ids) != len(set(theme_ids)):
-        errors.append("config/research_scope.yml: theme IDs must be the six canonical unique IDs")
+    observed_themes = [(item.get("id"), item.get("name")) for item in scope.get("themes", [])]
+    if observed_themes != CANONICAL_THEME_ORDER:
+        errors.append("config/research_scope.yml: theme IDs and titles must match the four canonical themes in order")
 
     vocab = load_yaml(ROOT / "config/vocabularies.yml")
     errors.extend(schema_errors(vocab, load_schema("vocabularies.schema.json"), "config/vocabularies.yml"))
@@ -129,17 +137,23 @@ def validate_all() -> list[str]:
             errors.append(f"{label}: missing linked sources: {', '.join(sorted(missing))}")
         if principal in linked or len(linked) != len(set(linked)):
             errors.append(f"{label}: principal/linked source IDs must be unique")
-        errors.extend(theme_reference_errors([record.get("primary_theme"), *record.get("secondary_themes", [])], label, CANONICAL_THEMES))
+        errors.extend(theme_reference_errors([record.get("primary_theme"), *record.get("secondary_themes", [])], label, CANONICAL_THEMES, allow_unclassified=True))
 
-    # Retired IDs must not survive in controlled content or site source.
+    # Retired IDs must not survive in controlled content. Generated transition
+    # routes retain old slugs only so shared URLs resolve to an explanatory page.
     for base in (ROOT / "config", ROOT / "data", ROOT / "schemas"):
         for path in base.rglob("*"):
-            if path.is_file() and RETIRED_THEME in path.read_text(encoding="utf-8", errors="ignore"):
-                errors.append(f"{path.relative_to(ROOT)}: contains retired theme ID {RETIRED_THEME}")
+            if path.is_file():
+                text = path.read_text(encoding="utf-8", errors="ignore")
+                for retired in RETIRED_THEMES:
+                    if retired in text:
+                        errors.append(f"{path.relative_to(ROOT)}: contains retired theme ID {retired}")
     return errors
 
 
-def theme_reference_errors(values: list[str], label: str, theme_ids: set[str]) -> list[str]:
+def theme_reference_errors(values: list[str | None], label: str, theme_ids: set[str], *, allow_unclassified: bool = False) -> list[str]:
+    if allow_unclassified:
+        values = [value for value in values if value is not None]
     unknown = sorted(set(values) - theme_ids)
     return [f"{label}: unknown theme IDs: {', '.join(unknown)}"] if unknown else []
 

@@ -7,10 +7,8 @@
   "date_most_recently_observed": "2026-04-15",
   "principal_source_id": "ccs-bc-lgcap-nonrenewal",
   "linked_source_ids": [],
-  "primary_theme": "canadian-climate-policy",
-  "secondary_themes": [
-    "climate-governance-delivery"
-  ],
+  "primary_theme": "modes-of-climate-delivery",
+  "secondary_themes": [],
   "geographies": [
     "canada",
     "british-columbia"
@@ -37,7 +35,7 @@
     "used": false,
     "model": null,
     "prompt_version": "current-conversations-classification-v1-fixture",
-    "run_id": "gate-4b-5a-mixed-source-captured"
+    "run_id": "thematic-reframe-mixed-source-captured"
   },
   "publication_decision": "published",
   "correction_status": "none",

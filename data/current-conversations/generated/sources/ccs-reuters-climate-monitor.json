@@ -26,9 +26,9 @@
   "content_hash": "1b03b621ed342d65dd8680cba8e663d7f1eb59eac0f991d38c728f39f640a82d",
   "discovery": {
     "adapter": "captured-web-fixture",
-    "query_id": "cc-fixture-evidence-infrastructure-tools",
-    "query_version": "current-conversations-v1.0.0",
-    "run_id": "gate-4b-5a-mixed-source-captured"
+    "query_id": "cc-fixture-unclassified",
+    "query_version": "current-conversations-v2.0.0",
+    "run_id": "thematic-reframe-mixed-source-captured"
   },
   "ai_annotation": {
     "model": "captured-deterministic-annotation",

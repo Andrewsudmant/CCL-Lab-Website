@@ -9,40 +9,40 @@ global_exclusions:
 source_queries:
   openalex:
     - id: urban-learning-transfer
-      themes: [urban-climate-learning]
+      themes: [geographies-of-climate-learning]
       query: urban climate policy learning
     - id: urban-learning-geography
-      themes: [urban-climate-learning, evidence-infrastructure-tools]
+      themes: [geographies-of-climate-learning, where-new-evidence-matters]
       query: urban climate knowledge transfer
     - id: governance-delivery-institutions
-      themes: [climate-governance-delivery]
+      themes: [modes-of-climate-delivery]
       query: urban climate governance
     - id: governance-delivery-modes
-      themes: [climate-governance-delivery]
+      themes: [modes-of-climate-delivery]
       query: city climate implementation
     - id: cobenefits-place
-      themes: [co-benefits-place-based-valuation]
+      themes: [consequences-for-people-and-places]
       query: climate co-benefits cities
     - id: cobenefits-costs
-      themes: [co-benefits-place-based-valuation]
+      themes: [consequences-for-people-and-places]
       query: climate action valuation
     - id: workforce-occupations
-      themes: [just-transitions-workforce]
+      themes: [consequences-for-people-and-places]
       query: green transition workforce
     - id: workforce-switching
-      themes: [just-transitions-workforce]
+      themes: [consequences-for-people-and-places]
       query: climate occupations skills
     - id: evidence-tools
-      themes: [evidence-infrastructure-tools]
+      themes: [where-new-evidence-matters]
       query: urban climate decision support
     - id: evidence-mapping
-      themes: [evidence-infrastructure-tools]
+      themes: [where-new-evidence-matters]
       query: urban climate data tools
     - id: canadian-policy-federal
-      themes: [canadian-climate-policy]
+      themes: [modes-of-climate-delivery]
       query: Canada municipal climate
     - id: canadian-policy-bc
-      themes: [canadian-climate-policy]
+      themes: [modes-of-climate-delivery]
       query: British Columbia climate
   crossref:
     - id: doi-enrichment
@@ -50,11 +50,11 @@ source_queries:
       query: metadata enrichment by DOI for records found by other adapters
   openai_web_search:
     - id: reports-news-tools
-      themes: [urban-climate-learning, climate-governance-delivery, co-benefits-place-based-valuation, just-transitions-workforce, evidence-infrastructure-tools, canadian-climate-policy]
+      themes: [geographies-of-climate-learning, modes-of-climate-delivery, consequences-for-people-and-places, consequences-for-people-and-places, where-new-evidence-matters, modes-of-climate-delivery]
       query: recent credible reports, news, commentary and decision tools matching the versioned research scope
   bluesky:
     - id: bounded-practitioner-search
-      themes: [urban-climate-learning, climate-governance-delivery, evidence-infrastructure-tools, canadian-climate-policy]
+      themes: [geographies-of-climate-learning, modes-of-climate-delivery, where-new-evidence-matters, modes-of-climate-delivery]
       query: '(urban climate OR municipal climate OR Canadian climate policy)'
 controls:
   maximum_new_items_per_run: 12

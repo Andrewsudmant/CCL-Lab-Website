@@ -49,11 +49,11 @@ def test_no_photo_is_supported() -> None:
 
 
 def test_homepage_watch_limit_and_disclosures() -> None:
-    generated = (ROOT / "generated/home-watch.qmd").read_text()
-    assert generated.count('<article class="watch-card') <= 6
+    generated = (ROOT / "generated/home-current-conversations.qmd").read_text()
+    assert generated.count('<article class="conversation-card') <= 6
     homepage = (ROOT / "index.qmd").read_text()
-    assert "inclusion does not imply endorsement" in homepage
-    assert "AI-selected and summarized" in generated
+    assert "Inclusion does not indicate endorsement" in homepage
+    assert "Captured fixture · no AI generation recorded" in generated
 
 
 def test_publications_have_exact_relationship_and_provenance() -> None:
@@ -75,15 +75,16 @@ def test_known_publication_truth_constraints() -> None:
 
 def test_theme_statuses_and_separation() -> None:
     themes = {t["id"]: t for t in research_scope()["themes"]}
-    assert themes["evidence-infrastructure-tools"]["status"] == "established"
-    assert themes["just-transitions-workforce"]["status"] == "developing"
-    assert themes["canadian-climate-policy"]["status"] == "developing"
+    assert themes["where-new-evidence-matters"]["status"] == "developing"
+    assert themes["consequences-for-people-and-places"]["status"] == "established"
+    assert themes["modes-of-climate-delivery"]["status"] == "established"
     for record in load_records("data/projects") + load_records("data/publications"):
         assert record["primary_theme"] not in record["geographies"]
 
 
-def test_no_invented_canadian_project() -> None:
-    assert not any(p["primary_theme"] == "canadian-climate-policy" for p in load_records("data/projects"))
+def test_canada_is_a_geography_not_a_theme() -> None:
+    assert "canadian-climate-policy" not in {theme["id"] for theme in research_scope()["themes"]}
+    assert "canada" in yaml.safe_load((ROOT / "config/vocabularies.yml").read_text())["geographies"]
 
 
 def test_canonical_cross_listing_does_not_duplicate_records() -> None:
@@ -144,6 +145,6 @@ def test_important_public_routes_remain(route: str) -> None:
     assert (ROOT / route).is_file()
 
 
-@pytest.mark.parametrize("theme_id", ["urban-climate-learning", "climate-governance-delivery", "co-benefits-place-based-valuation", "just-transitions-workforce", "evidence-infrastructure-tools", "canadian-climate-policy"])
+@pytest.mark.parametrize("theme_id", ["geographies-of-climate-learning", "where-new-evidence-matters", "modes-of-climate-delivery", "consequences-for-people-and-places"])
 def test_each_theme_page_is_generated(theme_id: str) -> None:
-    assert (ROOT / "research/themes" / f"{theme_id}.qmd").is_file()
+    assert (ROOT / "research" / f"{theme_id}.qmd").is_file()

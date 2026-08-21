@@ -7,9 +7,9 @@
   "date_most_recently_observed": "2026-06-11",
   "principal_source_id": "ccs-c40-housing-climate",
   "linked_source_ids": [],
-  "primary_theme": "co-benefits-place-based-valuation",
+  "primary_theme": "consequences-for-people-and-places",
   "secondary_themes": [
-    "climate-governance-delivery"
+    "modes-of-climate-delivery"
   ],
   "geographies": [
     "global"
@@ -36,7 +36,7 @@
     "used": false,
     "model": null,
     "prompt_version": "current-conversations-classification-v1-fixture",
-    "run_id": "gate-4b-5a-mixed-source-captured"
+    "run_id": "thematic-reframe-mixed-source-captured"
   },
   "publication_decision": "published",
   "correction_status": "none",

@@ -13,8 +13,18 @@ research_questions:
   - How do delivery arrangements vary across city types, sectors and regions?
 start_date: null
 end_date: null
-primary_theme: climate-governance-delivery
-secondary_themes: [urban-climate-learning, canadian-climate-policy]
+primary_theme: modes-of-climate-delivery
+secondary_themes: [geographies-of-climate-learning]
+decision_or_problem: >-
+  How cities can make climate action operable and durable through configurations
+  of authority, finance, coordination, implementation and maintenance.
+delivery_conditions: >-
+  The programme examines combinations of public authority, infrastructure provision,
+  finance, civic participation and organisational capability rather than treating a
+  delivery mode as an intervention or sector label.
+evidence_status: Owner-approved programme description; comparative empirical work is in development.
+claim_boundaries: No delivery configuration is presented as universally suitable or effective.
+next_learning_question: Which delivery conditions recur across places, and which remain context dependent?
 geographies: [canada, global]
 governance_scales: [international, federal-national, provincial-territorial, regional, municipal]
 methods: [comparative-case-study, institutional-analysis, policy-analysis]

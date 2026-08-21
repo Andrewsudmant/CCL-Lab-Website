@@ -27,9 +27,9 @@
   "content_hash": "3523ecd4775cc0310a40dff46c36983715b4f8227467adb969e9ae4df9c6caf7",
   "discovery": {
     "adapter": "captured-web-fixture",
-    "query_id": "cc-fixture-canadian-climate-policy",
-    "query_version": "current-conversations-v1.0.0",
-    "run_id": "gate-4b-5a-mixed-source-captured"
+    "query_id": "cc-fixture-modes-of-climate-delivery",
+    "query_version": "current-conversations-v2.0.0",
+    "run_id": "thematic-reframe-mixed-source-captured"
   },
   "ai_annotation": {
     "model": "captured-deterministic-annotation",

@@ -20,11 +20,11 @@ discovery:
   query_version: research-watch-v1.0.0
 theme_assignments:
   primary:
-    theme_id: urban-climate-learning
+    theme_id: geographies-of-climate-learning
     score: 0.94
     rationale: The paper maps how urban climate knowledge is produced and where evidence gaps remain.
   secondary:
-    - theme_id: evidence-infrastructure-tools
+    - theme_id: where-new-evidence-matters
       score: 0.88
       rationale: It builds an AI-assisted evidence map from a large bibliographic corpus.
 geographies: [global]

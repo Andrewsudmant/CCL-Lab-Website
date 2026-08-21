@@ -29,9 +29,9 @@
   "content_hash": "428af93f4db8055c6bbb91228994b3111c142b42379e38e3c48bbbd0b140db37",
   "discovery": {
     "adapter": "openalex",
-    "query_id": "cc-fixture-urban-climate-learning",
-    "query_version": "current-conversations-v1.0.0",
-    "run_id": "gate-4b-5a-mixed-source-captured"
+    "query_id": "cc-fixture-modes-of-climate-delivery",
+    "query_version": "current-conversations-v2.0.0",
+    "run_id": "thematic-reframe-mixed-source-captured"
   },
   "ai_annotation": {
     "model": "captured-deterministic-annotation",

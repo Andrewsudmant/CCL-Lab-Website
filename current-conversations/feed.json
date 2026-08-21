@@ -13,7 +13,7 @@
       "date_modified": "2026-08-15",
       "external_url": "https://doi.org/10.1177/02662426261464140",
       "tags": [
-        "climate-governance-delivery"
+        "modes-of-climate-delivery"
       ]
     },
     {
@@ -25,7 +25,7 @@
       "date_modified": "2026-08-14",
       "external_url": "https://doi.org/10.1007/s44327-026-00345-6",
       "tags": [
-        "urban-climate-learning"
+        "modes-of-climate-delivery"
       ]
     },
     {
@@ -37,8 +37,8 @@
       "date_modified": "2026-08-13",
       "external_url": "https://doi.org/10.1007/s44274-026-00957-0",
       "tags": [
-        "canadian-climate-policy",
-        "co-benefits-place-based-valuation"
+        "consequences-for-people-and-places",
+        "modes-of-climate-delivery"
       ]
     },
     {
@@ -50,7 +50,7 @@
       "date_modified": "2026-08-13",
       "external_url": "https://doi.org/10.1016/j.uclim.2026.103088",
       "tags": [
-        "evidence-infrastructure-tools"
+        "where-new-evidence-matters"
       ]
     },
     {
@@ -62,7 +62,7 @@
       "date_modified": "2026-08-13",
       "external_url": "https://doi.org/10.17645/pag.12268",
       "tags": [
-        "just-transitions-workforce"
+        "consequences-for-people-and-places"
       ]
     },
     {
@@ -74,8 +74,8 @@
       "date_modified": "2026-08-13",
       "external_url": "https://doi.org/10.1080/09654313.2026.2714960",
       "tags": [
-        "climate-governance-delivery",
-        "co-benefits-place-based-valuation"
+        "modes-of-climate-delivery",
+        "consequences-for-people-and-places"
       ]
     },
     {
@@ -87,7 +87,7 @@
       "date_modified": "2026-08-10",
       "external_url": "https://doi.org/10.3389/frsc.2026.1842594",
       "tags": [
-        "co-benefits-place-based-valuation"
+        "consequences-for-people-and-places"
       ]
     },
     {
@@ -98,9 +98,7 @@
       "date_published": "2026-08-05",
       "date_modified": "2026-08-05",
       "external_url": "https://www.lemonde.fr/en/environment/article/2026/08/05/july-breaks-drought-and-heat-records-the-issue-of-water-is-becoming-absolutely-critical_6756164_114.html",
-      "tags": [
-        "climate-governance-delivery"
-      ]
+      "tags": []
     },
     {
       "id": "ccc-el-nino-urban-heat",
@@ -110,9 +108,7 @@
       "date_published": "2026-08-04",
       "date_modified": "2026-08-04",
       "external_url": "https://apnews.com/article/ffd31dd358a894667c63f4c0a21cd677",
-      "tags": [
-        "climate-governance-delivery"
-      ]
+      "tags": []
     },
     {
       "id": "ccc-unep-extreme-heat-diplomacy",
@@ -123,8 +119,8 @@
       "date_modified": "2026-08-03",
       "external_url": "https://www.unep.org/events/unep-event/beating-heat-together-city-diplomacy-and-global-mobilization-against-extreme-heat",
       "tags": [
-        "urban-climate-learning",
-        "climate-governance-delivery"
+        "geographies-of-climate-learning",
+        "modes-of-climate-delivery"
       ]
     },
     {
@@ -136,8 +132,8 @@
       "date_modified": "2026-08-01",
       "external_url": "https://dataportalforcities.org/",
       "tags": [
-        "evidence-infrastructure-tools",
-        "climate-governance-delivery"
+        "where-new-evidence-matters",
+        "modes-of-climate-delivery"
       ]
     },
     {
@@ -149,8 +145,7 @@
       "date_modified": "2026-07-30",
       "external_url": "https://www.canada.ca/en/housing-infrastructure-communities/news/2026/07/building-communities-strong-in-british-columbia-with-54-new-infrastructure-projects.html",
       "tags": [
-        "canadian-climate-policy",
-        "climate-governance-delivery"
+        "modes-of-climate-delivery"
       ]
     },
     {
@@ -162,7 +157,7 @@
       "date_modified": "2026-07-29",
       "external_url": "https://eu-mayors.ec.europa.eu/en/news/planning-data-driven-climate-adaptation-actions",
       "tags": [
-        "evidence-infrastructure-tools"
+        "where-new-evidence-matters"
       ]
     },
     {
@@ -174,7 +169,7 @@
       "date_modified": "2026-07-29",
       "external_url": "https://coolcityindex.eu/",
       "tags": [
-        "evidence-infrastructure-tools"
+        "where-new-evidence-matters"
       ]
     },
     {
@@ -186,7 +181,7 @@
       "date_modified": "2026-07-27",
       "external_url": "https://app.climatecentral.org/dataviz/local-records/data-viewer",
       "tags": [
-        "evidence-infrastructure-tools"
+        "where-new-evidence-matters"
       ]
     },
     {
@@ -198,7 +193,7 @@
       "date_modified": "2026-07-24",
       "external_url": "https://doi.org/10.3389/frevc.2026.1887750",
       "tags": [
-        "just-transitions-workforce"
+        "consequences-for-people-and-places"
       ]
     },
     {
@@ -210,7 +205,7 @@
       "date_modified": "2026-07-14",
       "external_url": "https://www.syr.gov/News/City-News/City-2026/2026-07-14-Mayors-Office-News-1130AM",
       "tags": [
-        "climate-governance-delivery"
+        "modes-of-climate-delivery"
       ]
     },
     {
@@ -222,7 +217,7 @@
       "date_modified": "2026-07-08",
       "external_url": "https://berkeleyearth.org/from-observation-to-decision-an-introduction-to-synthesis-by-berkeley-earth/",
       "tags": [
-        "evidence-infrastructure-tools"
+        "where-new-evidence-matters"
       ]
     },
     {
@@ -233,9 +228,7 @@
       "date_published": "2026-07-02",
       "date_modified": "2026-07-02",
       "external_url": "https://climate.copernicus.eu/reuters-launches-climate-monitor-tool-powered-copernicus-climate-change-service-data",
-      "tags": [
-        "evidence-infrastructure-tools"
-      ]
+      "tags": []
     },
     {
       "id": "ccc-july-city-warming",
@@ -246,7 +239,7 @@
       "date_modified": "2026-07-01",
       "external_url": "https://www.climatecentral.org/climate-matters/250-years-of-climate-change",
       "tags": [
-        "evidence-infrastructure-tools"
+        "where-new-evidence-matters"
       ]
     },
     {
@@ -258,8 +251,8 @@
       "date_modified": "2026-06-23",
       "external_url": "https://www.c40.org/news/mayors-from-around-the-world-unite-in-call-for-sustainable-urban-data-centres/",
       "tags": [
-        "climate-governance-delivery",
-        "co-benefits-place-based-valuation"
+        "modes-of-climate-delivery",
+        "consequences-for-people-and-places"
       ]
     },
     {
@@ -271,7 +264,7 @@
       "date_modified": "2026-06-23",
       "external_url": "https://www.urban-climate.eu/model",
       "tags": [
-        "evidence-infrastructure-tools"
+        "where-new-evidence-matters"
       ]
     },
     {
@@ -283,8 +276,8 @@
       "date_modified": "2026-06-11",
       "external_url": "https://www.c40.org/news/why-the-right-to-housing-is-the-key-to-climate-survival/",
       "tags": [
-        "co-benefits-place-based-valuation",
-        "climate-governance-delivery"
+        "consequences-for-people-and-places",
+        "modes-of-climate-delivery"
       ]
     },
     {
@@ -296,8 +289,8 @@
       "date_modified": "2026-06-04",
       "external_url": "https://www.axios.com/local/austin/2026/06/04/austin-google-ai-tree-canopies",
       "tags": [
-        "evidence-infrastructure-tools",
-        "co-benefits-place-based-valuation"
+        "where-new-evidence-matters",
+        "consequences-for-people-and-places"
       ]
     },
     {
@@ -309,8 +302,7 @@
       "date_modified": "2026-04-15",
       "external_url": "https://www.ubcm.ca/about-ubcm/latest-news/local-government-climate-action-program-has-not-been-renewed",
       "tags": [
-        "canadian-climate-policy",
-        "climate-governance-delivery"
+        "modes-of-climate-delivery"
       ]
     }
   ]

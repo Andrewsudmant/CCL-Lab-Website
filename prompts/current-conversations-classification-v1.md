@@ -11,8 +11,10 @@ the process actually accessed. Do not infer methods, findings or conclusions fro
 title or search snippet. Make uncertainty and access limitations visible.
 
 Return strict JSON conforming to
-`current-conversations-ai-output-v1.schema.json`. Assign one primary lab theme and no
-more than two secondary themes, with scores and rationales. Geography is separate and
+`current-conversations-ai-output-v1.schema.json`. Assign one primary lab theme only when
+the evidence supports it, and no more than two secondary themes. Use a null primary and
+no secondary themes when classification remains uncertain or only cross-cutting. Theme
+scores and rationales must record the basis. Geography, source type and topic are separate and
 does not establish thematic relevance. Public visibility, likes, reposts and citation
 counts do not establish credibility or substantive relevance.
 

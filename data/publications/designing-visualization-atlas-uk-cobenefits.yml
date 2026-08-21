@@ -22,8 +22,8 @@ abstract_summary: >-
   identifies considerations for building large, interactive visualization atlases.
 relationship_to_lab: foundational-prior-work
 relationship_note: Produced through the UK Atlas collaboration before the lab was established at SFU.
-primary_theme: evidence-infrastructure-tools
-secondary_themes: [co-benefits-place-based-valuation]
+primary_theme: consequences-for-people-and-places
+secondary_themes: [where-new-evidence-matters]
 geographies: [united-kingdom]
 governance_scales: [municipal, neighbourhood]
 methods: [data-visualization, co-design]

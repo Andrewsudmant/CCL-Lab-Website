@@ -10,10 +10,10 @@ def test_generated_listing_counts_match_records() -> None:
     themes = (ROOT / "generated/home-themes.qmd").read_text(encoding="utf-8")
     people = (ROOT / "generated/people.qmd").read_text(encoding="utf-8")
     projects = (ROOT / "generated/projects.qmd").read_text(encoding="utf-8")
-    publications = (ROOT / "generated/publications.qmd").read_text(encoding="utf-8")
+    publications = (ROOT / "generated/publications-selected.qmd").read_text(encoding="utf-8")
     conversations = (ROOT / "generated/current-conversations-feed.qmd").read_text(encoding="utf-8")
 
-    assert themes.count('<article class="theme-card">') == len(research_scope()["themes"])
+    assert themes.count('<li class="cycle-stage">') == len(research_scope()["themes"])
     assert people.count('<article class="record-card') == len(load_records("data/people"))
     assert projects.count('<article class="record-card') == len(load_records("data/projects"))
     assert publications.count('<article class="record-card') == len(load_records("data/publications"))
@@ -38,7 +38,7 @@ def test_canonical_detail_pages_and_theme_views_exist() -> None:
     for record in load_records("data/publications"):
         assert (ROOT / "publications" / f'{record["record_id"]}.qmd').exists()
     for theme in research_scope()["themes"]:
-        assert (ROOT / "research/themes" / f'{theme["id"]}.qmd').exists()
+        assert (ROOT / "research" / f'{theme["id"]}.qmd').exists()
 
 
 def test_generated_fragments_are_marked() -> None:

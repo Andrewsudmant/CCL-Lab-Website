@@ -28,7 +28,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "urban-climate-learning",
+        "theme_id": "geographies-of-climate-learning",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -128,7 +128,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "urban-climate-learning",
+        "theme_id": "geographies-of-climate-learning",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -227,7 +227,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "urban-climate-learning",
+        "theme_id": "geographies-of-climate-learning",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -330,7 +330,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "urban-climate-learning",
+        "theme_id": "geographies-of-climate-learning",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -427,7 +427,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "urban-climate-learning",
+        "theme_id": "geographies-of-climate-learning",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -525,7 +525,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "urban-climate-learning",
+        "theme_id": "geographies-of-climate-learning",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -629,7 +629,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "urban-climate-learning",
+        "theme_id": "geographies-of-climate-learning",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -726,7 +726,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "climate-governance-delivery",
+        "theme_id": "modes-of-climate-delivery",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -821,7 +821,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "climate-governance-delivery",
+        "theme_id": "modes-of-climate-delivery",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -916,7 +916,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "climate-governance-delivery",
+        "theme_id": "modes-of-climate-delivery",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -1013,7 +1013,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "climate-governance-delivery",
+        "theme_id": "modes-of-climate-delivery",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -1108,7 +1108,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "climate-governance-delivery",
+        "theme_id": "modes-of-climate-delivery",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -1203,7 +1203,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "co-benefits-place-based-valuation",
+        "theme_id": "consequences-for-people-and-places",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -1299,7 +1299,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "co-benefits-place-based-valuation",
+        "theme_id": "consequences-for-people-and-places",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -1394,7 +1394,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "co-benefits-place-based-valuation",
+        "theme_id": "consequences-for-people-and-places",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -1496,7 +1496,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "co-benefits-place-based-valuation",
+        "theme_id": "consequences-for-people-and-places",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -1594,7 +1594,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "co-benefits-place-based-valuation",
+        "theme_id": "consequences-for-people-and-places",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -1692,7 +1692,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "co-benefits-place-based-valuation",
+        "theme_id": "consequences-for-people-and-places",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -1791,7 +1791,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "co-benefits-place-based-valuation",
+        "theme_id": "consequences-for-people-and-places",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -1889,7 +1889,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "co-benefits-place-based-valuation",
+        "theme_id": "consequences-for-people-and-places",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -1984,7 +1984,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "just-transitions-workforce",
+        "theme_id": "consequences-for-people-and-places",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -2081,7 +2081,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "just-transitions-workforce",
+        "theme_id": "consequences-for-people-and-places",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -2182,7 +2182,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "just-transitions-workforce",
+        "theme_id": "consequences-for-people-and-places",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -2277,7 +2277,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "just-transitions-workforce",
+        "theme_id": "consequences-for-people-and-places",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -2378,7 +2378,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "just-transitions-workforce",
+        "theme_id": "consequences-for-people-and-places",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -2480,7 +2480,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "just-transitions-workforce",
+        "theme_id": "consequences-for-people-and-places",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -2578,7 +2578,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "just-transitions-workforce",
+        "theme_id": "consequences-for-people-and-places",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -2675,7 +2675,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "just-transitions-workforce",
+        "theme_id": "consequences-for-people-and-places",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -2790,7 +2790,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "evidence-infrastructure-tools",
+        "theme_id": "where-new-evidence-matters",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -2888,7 +2888,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "canadian-climate-policy",
+        "theme_id": "modes-of-climate-delivery",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -2984,7 +2984,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "canadian-climate-policy",
+        "theme_id": "modes-of-climate-delivery",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -3099,7 +3099,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "canadian-climate-policy",
+        "theme_id": "modes-of-climate-delivery",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -3194,7 +3194,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "canadian-climate-policy",
+        "theme_id": "modes-of-climate-delivery",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -3289,7 +3289,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "canadian-climate-policy",
+        "theme_id": "modes-of-climate-delivery",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },
@@ -3389,7 +3389,7 @@
     },
     "theme_assignments": {
       "primary": {
-        "theme_id": "canadian-climate-policy",
+        "theme_id": "modes-of-climate-delivery",
         "score": 0.72,
         "rationale": "Deterministic query-to-theme assignment for owner calibration; not an AI judgement."
       },

@@ -12,8 +12,14 @@ research_questions:
   - How can national evidence be scaled for local climate-impact assessment?
 start_date: 2023-10-03
 end_date: 2025-04-02
-primary_theme: evidence-infrastructure-tools
-secondary_themes: [co-benefits-place-based-valuation]
+primary_theme: where-new-evidence-matters
+secondary_themes: [consequences-for-people-and-places]
+decision_or_problem: How national evidence can be scaled without losing the information needed for local climate-impact assessment.
+existing_evidence: Verified University of Edinburgh project material and its connected publication.
+transfer_conditions: Scale, spatial resolution and local decision context affect whether national evidence is relevant locally.
+consequential_uncertainty: Scaling choices can alter the impacts and governance implications visible to decision-makers.
+evidence_status: Completed foundational prior work with an authoritative institutional project record.
+claim_boundaries: The project does not establish one universally valid data-scaling method.
 geographies: [united-kingdom]
 governance_scales: [federal-national, municipal, neighbourhood]
 methods: [place-based-modelling, spatial-analysis, economic-appraisal]

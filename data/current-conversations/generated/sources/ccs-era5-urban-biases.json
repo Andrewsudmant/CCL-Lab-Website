@@ -29,9 +29,9 @@
   "content_hash": "16210ff1e5b9a527805745499777028ec49afeb6bee9d26dedd9d1149cb4c123",
   "discovery": {
     "adapter": "openalex",
-    "query_id": "cc-fixture-evidence-infrastructure-tools",
-    "query_version": "current-conversations-v1.0.0",
-    "run_id": "gate-4b-5a-mixed-source-captured"
+    "query_id": "cc-fixture-where-new-evidence-matters",
+    "query_version": "current-conversations-v2.0.0",
+    "run_id": "thematic-reframe-mixed-source-captured"
   },
   "ai_annotation": {
     "model": "captured-deterministic-annotation",

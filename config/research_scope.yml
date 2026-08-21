@@ -1,227 +1,121 @@
-scope_version: "0.2.0"
+scope_version: "1.0.0"
 owner_review_required: true
-notice: "Theme definitions are owner-directed; representative examples remain placeholders unless an authoritative source is linked."
+notice: >-
+  The four theme titles, questions, descriptions and analytical boundaries are
+  owner-approved. Representative examples remain placeholders requiring owner review.
 themes:
-  - id: urban-climate-learning
-    name: Urban climate learning and evidence transfer
+  - id: geographies-of-climate-learning
+    name: Geographies of Climate Learning
     status: established
+    guiding_question: >-
+      How does place shape which urban climate knowledge is produced, recognised and useful elsewhere?
     definition: >-
-      How municipal organisations and their partners acquire, interpret, adapt,
-      share and institutionalise evidence about climate action across places and
-      over time.
+      We study how urban climate knowledge is distributed across places, which cities
+      can plausibly learn from one another, and how institutional and geographic context
+      shapes the relevance of evidence produced elsewhere.
+    cycle_role: Existing knowledge and its relevance across places.
     included_questions:
-      - How does evidence move between cities, professional networks and orders of government?
-      - Which organisational routines turn lessons from pilots into durable practice?
-      - How are policies translated when local institutions and conditions differ?
+      - Where is urban climate knowledge produced, recognised and made visible?
+      - Which cities can plausibly learn from one another, and under what conditions?
+      - How do institutional and geographic contexts shape replication, comparison and case-study usefulness?
     exclusions:
-      - Learning research with no meaningful connection to urban climate action.
-      - Simple inventories of policy adoption that do not examine evidence or learning.
+      - Claims that evidence transfers intact or applies unchanged between cities.
+      - Simple inventories of policy adoption that do not examine evidence, comparison or learning.
     initial_search_concepts:
-      - municipal policy learning
-      - urban climate policy transfer
-      - lesson drawing between cities
-      - transmunicipal climate networks
-      - evidence use in local government
-    geographical_priorities:
-      - Canada
-      - British Columbia
-      - Comparative international cities
-    methodological_interests:
-      - Comparative case studies
-      - Process tracing
-      - Organisational ethnography
-      - Policy network analysis
-      - Evidence synthesis
+      - geography of urban climate evidence
+      - municipal climate policy learning across places
+      - urban climate evidence transfer conditions
+      - replication and generalisability in urban research
+      - comparative case usefulness cities climate
+    geographical_priorities: [British Columbia, Canada, Comparative international cities]
+    methodological_interests: [Comparative research, Evidence mapping, Evidence synthesis, Spatial analysis]
     representative_placeholder_examples:
-      - title: "PLACEHOLDER — Comparative study of municipal heat-policy learning"
-        placeholder: true
-      - title: "PLACEHOLDER — Evidence transfer through a city climate network"
-        placeholder: true
+      - {title: "PLACEHOLDER — Comparative study of municipal heat-policy learning", placeholder: true}
+      - {title: "PLACEHOLDER — Geography of evidence available to cities", placeholder: true}
 
-  - id: climate-governance-delivery
-    name: Climate governance and delivery modes
-    status: established
+  - id: where-new-evidence-matters
+    name: Where New Evidence Matters
+    status: developing
+    guiding_question: Which new evidence would most improve urban climate decisions?
     definition: >-
-      How authority, capacity, finance, partnerships and implementation
-      arrangements shape the delivery of urban mitigation and adaptation.
+      We develop approaches for identifying where new cases, evaluations, datasets and
+      forms of knowledge could resolve consequential uncertainty or expand the learning
+      options available to cities.
+    cycle_role: Choices about which uncertainties and evidence gaps merit investigation.
     included_questions:
-      - Which delivery arrangements help cities move from plans to implementation?
-      - How do public, private, civic and intergovernmental actors share authority and risk?
-      - How do procurement, budgeting and administrative capacity affect delivery?
+      - Which unresolved questions could materially alter an urban climate decision?
+      - Where could a new case, evaluation or dataset clarify an important mechanism?
+      - Which systematic exclusions limit the learning options available to multiple cities?
     exclusions:
-      - National governance analysis without an urban implementation dimension.
-      - Technical performance studies that do not examine governance or delivery.
+      - Treating every geographical evidence gap as equally important.
+      - Tool or dataset announcements without a consequential evidence question.
+      - Automated research-priority scores or context-free rankings of evidence needs.
     initial_search_concepts:
-      - urban climate governance
-      - municipal climate implementation
-      - local government delivery capacity
-      - climate procurement cities
-      - multilevel climate governance
-    geographical_priorities:
-      - Canada
-      - British Columbia
-      - Comparable federal and multilevel systems
-    methodological_interests:
-      - Institutional analysis
-      - Implementation research
-      - Public administration
-      - Comparative governance
-      - Partnership analysis
+      - value of additional evidence urban climate
+      - consequential uncertainty municipal climate decisions
+      - strategic case selection urban climate research
+      - evidence gaps that change city decisions
+      - excluded knowledge urban climate evidence
+    geographical_priorities: [British Columbia, Canada, Comparative international cities]
+    methodological_interests: [Research prioritisation, Case selection, Causal inference, Evidence synthesis]
     representative_placeholder_examples:
-      - title: "PLACEHOLDER — Municipal retrofit delivery models"
-        placeholder: true
-      - title: "PLACEHOLDER — Intergovernmental coordination for urban adaptation"
-        placeholder: true
+      - {title: "PLACEHOLDER — Consequential evidence gaps in municipal retrofit decisions", placeholder: true}
+      - {title: "PLACEHOLDER — Strategic selection of new urban climate cases", placeholder: true}
 
-  - id: co-benefits-place-based-valuation
-    name: Co-benefits, co-costs and place-based valuation
+  - id: modes-of-climate-delivery
+    name: Modes of Climate Delivery
     status: established
+    guiding_question: >-
+      Through which institutional arrangements does urban climate action become possible and durable?
     definition: >-
-      How cities identify, value and distribute the multiple benefits, costs and
-      trade-offs of climate action in specific social and spatial contexts.
+      We examine how climate action is authorised, financed, coordinated, implemented
+      and maintained, and why similar interventions depend on different delivery
+      configurations in different places.
+    cycle_role: The arrangements through which climate action becomes operable.
     included_questions:
-      - Which co-benefits and co-costs matter to communities and decision-makers?
-      - How do valuation methods reflect local priorities, uncertainty and distribution?
-      - When do co-benefit claims change investment or policy choices?
+      - How are urban climate actions authorised, financed, coordinated and maintained?
+      - Which configurations of authority, capability and participation make delivery possible?
+      - How do sequencing, contestation and institutional learning affect durability?
     exclusions:
-      - Generic cost-benefit analysis without place-based or climate relevance.
+      - Treating a delivery mode as merely an intervention type, policy instrument, sector or list of actors.
+      - Technical performance studies that do not examine enabling or delivery arrangements.
+    initial_search_concepts:
+      - urban climate delivery modes
+      - municipal climate implementation arrangements
+      - climate action authority finance coordination maintenance
+      - institutional capability urban climate delivery
+      - multilevel climate delivery configurations
+    geographical_priorities: [British Columbia, Canada, Comparative international cities]
+    methodological_interests: [Institutional analysis, Implementation research, Comparative governance, Public administration]
+    representative_placeholder_examples:
+      - {title: "PLACEHOLDER — Municipal retrofit delivery configurations", placeholder: true}
+      - {title: "PLACEHOLDER — Intergovernmental arrangements for urban adaptation", placeholder: true}
+
+  - id: consequences-for-people-and-places
+    name: Consequences for People and Places
+    status: established
+    guiding_question: What does climate action change, for whom, where and over what period?
+    definition: >-
+      We study how climate action affects health, equity, social cohesion and other
+      dimensions of wellbeing, including how benefits, burdens and risks are distributed
+      across populations and places.
+    cycle_role: >-
+      Observed outcomes, their distribution, and evidence that informs subsequent decisions.
+    included_questions:
+      - How are benefits, burdens and risks distributed across populations and places?
+      - What health, equity, social-cohesion and local economic consequences occur over time?
+      - How should place-based appraisal represent uncertainty, adverse effects and uneven outcomes?
+    exclusions:
+      - Assuming that all consequences of climate action are positive or evenly distributed.
       - Promotional co-benefit claims without an identifiable evidence basis.
     initial_search_concepts:
-      - urban climate co-benefits
-      - place-based climate valuation
-      - distributional impacts municipal climate policy
-      - climate action co-costs
-      - social value local climate action
-    geographical_priorities:
-      - Canada
-      - British Columbia
-      - Cities with comparable valuation contexts
-    methodological_interests:
-      - Distributional analysis
-      - Participatory valuation
-      - Multi-criteria decision analysis
-      - Health and equity impact assessment
-      - Mixed-method evaluation
+      - distributional consequences urban climate action
+      - climate action health equity social cohesion
+      - place-based climate co-benefits co-costs
+      - just transition workforce local consequences
+      - adverse effects municipal climate policy
+    geographical_priorities: [British Columbia, Canada, Comparative international cities]
+    methodological_interests: [Distributional analysis, Place-based appraisal, Health impact assessment, Mixed-method evaluation]
     representative_placeholder_examples:
-      - title: "PLACEHOLDER — Neighbourhood valuation of active-transport co-benefits"
-        placeholder: true
-      - title: "PLACEHOLDER — Distributional co-costs of building decarbonisation"
-        placeholder: true
-
-  - id: just-transitions-workforce
-    name: Just transitions, occupations and workforce change
-    status: developing
-    definition: >-
-      How urban climate action changes work, skills, occupations and labour-market
-      opportunities, and how transition benefits and burdens are governed.
-    included_questions:
-      - Which occupations and skills are affected by urban decarbonisation and adaptation?
-      - How can workforce policy improve access to good, low-carbon work?
-      - How do labour institutions participate in local transition planning?
-    exclusions:
-      - National workforce forecasts with no urban or place-based interpretation.
-      - Broad just-transition commentary without evidence about institutions, work or distribution.
-    initial_search_concepts:
-      - just transition cities
-      - municipal climate workforce
-      - green occupations urban
-      - building retrofit labour demand
-      - climate adaptation workforce
-    geographical_priorities:
-      - Canada
-      - British Columbia
-      - Resource-dependent and rapidly transitioning urban regions
-    methodological_interests:
-      - Occupational analysis
-      - Labour-market modelling
-      - Worker and employer interviews
-      - Distributional analysis
-      - Place-based transition studies
-    representative_placeholder_examples:
-      - title: "PLACEHOLDER — Occupations required for municipal retrofit delivery"
-        placeholder: true
-      - title: "PLACEHOLDER — Worker participation in a local transition plan"
-        placeholder: true
-
-  - id: evidence-infrastructure-tools
-    name: Urban climate evidence infrastructure and decision-support tools
-    status: established
-    definition: >-
-      The data systems, indicators, models, standards and decision-support tools
-      that shape what urban climate evidence is produced, trusted and used.
-    included_questions:
-      - What infrastructure makes climate evidence usable in municipal decisions?
-      - How do indicators and models encode values, uncertainty and blind spots?
-      - Which tool-design and governance choices support responsible adoption?
-    exclusions:
-      - Tool announcements without documentation, methods or a plausible decision use.
-      - Climate datasets with no urban scale or governance relevance.
-    initial_search_concepts:
-      - municipal climate decision support
-      - urban climate data infrastructure
-      - city climate indicators
-      - evidence platform local government
-      - responsible AI municipal climate
-    geographical_priorities:
-      - Canada
-      - British Columbia
-      - International city-data collaborations
-    methodological_interests:
-      - Infrastructure studies
-      - Human-centred design
-      - Data governance
-      - Model evaluation
-      - Usability research
-    representative_placeholder_examples:
-      - title: "PLACEHOLDER — Audit of a municipal emissions decision-support tool"
-        placeholder: true
-      - title: "PLACEHOLDER — Governance of shared urban climate indicators"
-        placeholder: true
-
-  - id: canadian-climate-policy
-    name: Canadian climate policy
-    status: developing
-    definition: >-
-      Research on the design, politics, governance, implementation and consequences
-      of Canadian climate policy across federal, provincial, territorial, Indigenous,
-      regional and municipal institutions, with particular attention to British
-      Columbia and to implications for cities and communities.
-    included_questions:
-      - How do federal, provincial and territorial policy choices shape climate action and outcomes?
-      - How do Canadian intergovernmental arrangements affect municipal and community implementation?
-      - How do Indigenous governments and governance systems shape climate policy where sources support inclusion?
-      - What consequences do national and provincial policies have for cities, communities and households?
-      - What can careful comparison reveal about Canadian policy design or implementation?
-    exclusions:
-      - Research located in Canada where Canadian policy, institutions or outcomes are not substantively analysed.
-      - Generic city rankings or inventories without transparent policy analysis.
-      - Comparative work in which Canada is incidental rather than analytically important.
-    initial_search_concepts:
-      - Canadian climate policy
-      - federal climate policy Canada
-      - provincial and territorial climate policy
-      - British Columbia climate policy
-      - municipal climate policy Canada
-      - intergovernmental climate governance Canada
-      - implementation of Canadian climate policy
-      - climate policy evaluation Canada
-      - Indigenous climate governance Canada
-      - consequences of federal and provincial climate policy for cities and communities
-    geographical_priorities:
-      - Canada
-      - British Columbia
-      - Other provinces and territories
-      - Indigenous governments and communities where terminology and sources support inclusion
-      - International comparators where analytically relevant
-    methodological_interests:
-      - Legal and institutional analysis
-      - Policy design and implementation research
-      - Programme evaluation
-      - Longitudinal policy tracking
-      - Federalism and intergovernmental analysis
-      - Comparative policy analysis
-    representative_placeholder_examples:
-      - title: "PLACEHOLDER — Implementation of Canadian building decarbonisation policy across governments"
-        placeholder: true
-      - title: "PLACEHOLDER — Consequences of British Columbia climate policy for municipalities and communities"
-        placeholder: true
+      - {title: "PLACEHOLDER — Distributional consequences of building decarbonisation", placeholder: true}
+      - {title: "PLACEHOLDER — Place-based health and social effects of active travel", placeholder: true}

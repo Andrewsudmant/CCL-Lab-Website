@@ -34,7 +34,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
-      "primary_theme": "climate-governance-delivery",
+      "primary_theme": "modes-of-climate-delivery",
       "secondary_themes": [],
       "geographies": [
         "global"
@@ -99,9 +99,9 @@
       "abstract_summary": "The preprint reflects on the design process for the UK Co-Benefits Atlas and identifies considerations for building large, interactive visualization atlases.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Produced through the UK Atlas collaboration before the lab was established at SFU.",
-      "primary_theme": "evidence-infrastructure-tools",
+      "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [
-        "co-benefits-place-based-valuation"
+        "where-new-evidence-matters"
       ],
       "geographies": [
         "united-kingdom"
@@ -176,9 +176,9 @@
       "abstract_summary": "The preprint examines the uneven geography of urban climate evidence and asks which cities can readily learn from knowledge produced in other places.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Posted before the lab was established; it directly anchors the lab's current evidence-transfer programme.",
-      "primary_theme": "urban-climate-learning",
+      "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [
-        "evidence-infrastructure-tools"
+        "where-new-evidence-matters"
       ],
       "geographies": [
         "global",
@@ -253,7 +253,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "evidence-infrastructure-tools",
+      "primary_theme": "where-new-evidence-matters",
       "secondary_themes": [],
       "geographies": [
         "rwanda"
@@ -313,7 +313,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "urban-climate-learning",
+      "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
       "geographies": [
         "global"
@@ -374,7 +374,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "evidence-infrastructure-tools",
+      "primary_theme": "where-new-evidence-matters",
       "secondary_themes": [],
       "geographies": [
         "rwanda"
@@ -431,9 +431,9 @@
       "abstract_summary": "The article examines how institutions organise urban service delivery and infrastructure transitions in Southern cities in relation to climate and development.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Published before the lab was established and foundational to its delivery-modes research.",
-      "primary_theme": "climate-governance-delivery",
+      "primary_theme": "modes-of-climate-delivery",
       "secondary_themes": [
-        "co-benefits-place-based-valuation"
+        "consequences-for-people-and-places"
       ],
       "geographies": [
         "global"
@@ -498,9 +498,9 @@
       "abstract_summary": "The article argues for more coherent replication and generalization practices in urban research so findings can accumulate across places and studies.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Published before the lab was established and foundational to its urban-learning programme.",
-      "primary_theme": "urban-climate-learning",
+      "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [
-        "evidence-infrastructure-tools"
+        "where-new-evidence-matters"
       ],
       "geographies": [
         "global"
@@ -571,9 +571,9 @@
       "abstract_summary": "The article assesses the wider economic and social consequences of UK climate action and considers how those consequences alter policy appraisal.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Published before the lab was established and foundational to its co-benefits and policy-appraisal programme.",
-      "primary_theme": "co-benefits-place-based-valuation",
+      "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [
-        "climate-governance-delivery"
+        "modes-of-climate-delivery"
       ],
       "geographies": [
         "united-kingdom"
@@ -675,7 +675,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "climate-governance-delivery",
+      "primary_theme": "modes-of-climate-delivery",
       "secondary_themes": [],
       "geographies": [
         "global"
@@ -731,10 +731,10 @@
       "abstract_summary": "The article examines how changing the spatial scale of climate evidence affects assessment, governance and the interpretation of local climate action in the UK.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Published before the lab was established and foundational to its evidence-infrastructure programme.",
-      "primary_theme": "evidence-infrastructure-tools",
+      "primary_theme": "where-new-evidence-matters",
       "secondary_themes": [
-        "co-benefits-place-based-valuation",
-        "climate-governance-delivery"
+        "consequences-for-people-and-places",
+        "modes-of-climate-delivery"
       ],
       "geographies": [
         "united-kingdom"
@@ -812,7 +812,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "climate-governance-delivery",
+      "primary_theme": "modes-of-climate-delivery",
       "secondary_themes": [],
       "geographies": [
         "india"
@@ -874,7 +874,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "urban-climate-learning",
+      "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
       "geographies": [
         "global"
@@ -937,7 +937,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "urban-climate-learning",
+      "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
       "geographies": [
         "india"
@@ -997,7 +997,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "urban-climate-learning",
+      "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
       "geographies": [
         "united-kingdom"
@@ -1061,7 +1061,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "evidence-infrastructure-tools",
+      "primary_theme": "where-new-evidence-matters",
       "secondary_themes": [],
       "geographies": [
         "global"
@@ -1121,7 +1121,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "urban-climate-learning",
+      "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
       "geographies": [
         "global"
@@ -1185,7 +1185,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "urban-climate-learning",
+      "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
       "geographies": [
         "global"
@@ -1245,7 +1245,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
-      "primary_theme": "just-transitions-workforce",
+      "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [],
       "geographies": [
         "united-kingdom"
@@ -1305,7 +1305,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
-      "primary_theme": "urban-climate-learning",
+      "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
       "geographies": [
         "united-kingdom"
@@ -1372,7 +1372,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "climate-governance-delivery",
+      "primary_theme": "modes-of-climate-delivery",
       "secondary_themes": [],
       "geographies": [
         "global"
@@ -1436,7 +1436,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "evidence-infrastructure-tools",
+      "primary_theme": "where-new-evidence-matters",
       "secondary_themes": [],
       "geographies": [
         "india"
@@ -1495,7 +1495,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
-      "primary_theme": "urban-climate-learning",
+      "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
       "geographies": [
         "rwanda"
@@ -1556,7 +1556,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
-      "primary_theme": "urban-climate-learning",
+      "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
       "geographies": [
         "united-kingdom"
@@ -1620,7 +1620,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
-      "primary_theme": "urban-climate-learning",
+      "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
       "geographies": [
         "united-kingdom"
@@ -1679,7 +1679,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
-      "primary_theme": "just-transitions-workforce",
+      "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [],
       "geographies": [
         "united-kingdom"
@@ -1759,9 +1759,9 @@
       "abstract_summary": "A systematic assessment of how European urban climate action plans integrate mitigation and adaptation objectives and measures.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Prior collaborative work included for its direct relevance to urban climate governance and delivery.",
-      "primary_theme": "climate-governance-delivery",
+      "primary_theme": "modes-of-climate-delivery",
       "secondary_themes": [
-        "urban-climate-learning"
+        "geographies-of-climate-learning"
       ],
       "geographies": [
         "europe"
@@ -1831,7 +1831,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "climate-governance-delivery",
+      "primary_theme": "modes-of-climate-delivery",
       "secondary_themes": [],
       "geographies": [
         "global"
@@ -1890,7 +1890,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
-      "primary_theme": "urban-climate-learning",
+      "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
       "geographies": [
         "global"
@@ -1949,7 +1949,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
-      "primary_theme": "urban-climate-learning",
+      "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
       "geographies": [
         "united-kingdom"
@@ -2008,7 +2008,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
-      "primary_theme": "just-transitions-workforce",
+      "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [],
       "geographies": [
         "united-kingdom"
@@ -2067,9 +2067,9 @@
       "abstract_summary": "The article evaluates the economic case for low-carbon development options in Kigali and considers implications for urban investment and governance.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Prior collaborative research included as an intellectual foundation for place-based appraisal.",
-      "primary_theme": "co-benefits-place-based-valuation",
+      "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [
-        "climate-governance-delivery"
+        "modes-of-climate-delivery"
       ],
       "geographies": [
         "rwanda",
@@ -2144,7 +2144,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "climate-governance-delivery",
+      "primary_theme": "modes-of-climate-delivery",
       "secondary_themes": [],
       "geographies": [
         "global"
@@ -2209,7 +2209,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "evidence-infrastructure-tools",
+      "primary_theme": "where-new-evidence-matters",
       "secondary_themes": [],
       "geographies": [
         "united-kingdom",
@@ -2275,7 +2275,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "co-benefits-place-based-valuation",
+      "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [],
       "geographies": [
         "global"
@@ -2336,7 +2336,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "co-benefits-place-based-valuation",
+      "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [],
       "geographies": [
         "rwanda"
@@ -2403,7 +2403,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "evidence-infrastructure-tools",
+      "primary_theme": "where-new-evidence-matters",
       "secondary_themes": [],
       "geographies": [
         "united-kingdom"
@@ -2474,7 +2474,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "co-benefits-place-based-valuation",
+      "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [],
       "geographies": [
         "india"
@@ -2543,7 +2543,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "urban-climate-learning",
+      "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
       "geographies": [
         "global"
@@ -2602,9 +2602,9 @@
       "abstract_summary": "The article considers the affordability and economic case for ambitious low-carbon action in cities.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Prior research included as a foundation for the lab's urban climate appraisal programme.",
-      "primary_theme": "co-benefits-place-based-valuation",
+      "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [
-        "climate-governance-delivery"
+        "modes-of-climate-delivery"
       ],
       "geographies": [
         "global"
@@ -2679,7 +2679,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "climate-governance-delivery",
+      "primary_theme": "modes-of-climate-delivery",
       "secondary_themes": [],
       "geographies": [
         "global"
@@ -2746,7 +2746,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "urban-climate-learning",
+      "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
       "geographies": [
         "global"
@@ -2813,7 +2813,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "co-benefits-place-based-valuation",
+      "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [],
       "geographies": [
         "global"
@@ -2877,9 +2877,9 @@
       "abstract_summary": "The article examines the economic rationale for city-level climate action and assesses how investment costs and wider benefits shape the case for action.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Prior collaborative research included as an intellectual foundation for climate appraisal and delivery.",
-      "primary_theme": "co-benefits-place-based-valuation",
+      "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [
-        "climate-governance-delivery"
+        "modes-of-climate-delivery"
       ],
       "geographies": [
         "global"
@@ -2952,7 +2952,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "co-benefits-place-based-valuation",
+      "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [],
       "geographies": [
         "global"
@@ -3017,7 +3017,7 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "co-benefits-place-based-valuation",
+      "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [],
       "geographies": [
         "global"

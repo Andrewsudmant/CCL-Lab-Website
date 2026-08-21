@@ -7,9 +7,9 @@
   "date_most_recently_observed": "2026-08-13",
   "principal_source_id": "ccs-nature-based-solutions-scaling",
   "linked_source_ids": [],
-  "primary_theme": "climate-governance-delivery",
+  "primary_theme": "modes-of-climate-delivery",
   "secondary_themes": [
-    "co-benefits-place-based-valuation"
+    "consequences-for-people-and-places"
   ],
   "geographies": [
     "global"
@@ -36,7 +36,7 @@
     "used": false,
     "model": null,
     "prompt_version": "current-conversations-classification-v1-fixture",
-    "run_id": "gate-4b-5a-mixed-source-captured"
+    "run_id": "thematic-reframe-mixed-source-captured"
   },
   "publication_decision": "published",
   "correction_status": "none",

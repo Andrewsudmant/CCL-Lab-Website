@@ -14,8 +14,15 @@ research_questions:
   - Which places are well represented in the evidence available to other cities?
 start_date: null
 end_date: null
-primary_theme: urban-climate-learning
-secondary_themes: [evidence-infrastructure-tools]
+primary_theme: geographies-of-climate-learning
+secondary_themes: [where-new-evidence-matters]
+decision_or_problem: Which existing urban climate evidence is visible and plausibly relevant beyond the places where it was produced.
+existing_evidence: A verified preprint and an external global evidence-map article.
+transfer_conditions: Geographic and institutional similarity affect the plausibility of learning between cities.
+consequential_uncertainty: Evidence gaps may limit comparison, but their importance depends on the decisions and mechanisms at issue.
+evidence_status: Active research grounded in a verified preprint; ongoing findings are not inferred here.
+claim_boundaries: Geographic proximity or evidence volume alone does not establish transferability.
+next_learning_question: Which evidence gaps most constrain consequential comparisons between cities?
 geographies: [global]
 governance_scales: [international, municipal]
 methods: [evidence-mapping, literature-review, spatial-analysis]

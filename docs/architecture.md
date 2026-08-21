@@ -4,6 +4,8 @@
 
 The Cities & Climate Learning Lab website is a static, accessible Quarto site backed by versioned records. Current Conversations groups timely source records into public conversation clusters. AI may help discover, classify and summarize; the original source—not a model—is the evidentiary authority. Gate 5B prepares a protected, artifact-only live benchmark but makes no paid call and performs no public deployment.
 
+The public information architecture is driven by the four-theme registry in `config/research_scope.yml`. The generator uses that single source for the homepage learning cycle, research overview, theme landing pages, record links and feed classifications. Project records retain one primary theme and optional secondary themes while geography, method, sector and climate domain remain separate facets. Current Conversations clusters may use a null primary theme when evidence does not support classification.
+
 ## Control plane and content plane
 
 Code, schemas, prompts, query packs, source policy, disclosure, budgets, thresholds and workflows form the **control plane** and require reviewed pull requests. Discovered sources and generated clusters form the **content plane**. They may be unreviewed, but can publish only under deterministic controls and conspicuous disclosure.
@@ -46,3 +48,5 @@ A run writes a complete candidate snapshot to a temporary sibling directory. Aft
 ## Deployment model
 
 The build output is static. Discovery and benchmark jobs have repository read permission. `Current Conversations live benchmark` is manual, uses the protected `live-benchmark` environment and produces artifacts only. A separate staging job is disabled unless explicitly enabled, validates an allowed-path diff and targets only `automation/current-conversations-staging` with write permission. It cannot deploy and never targets `main`. Production deployment, hosting and DNS are later owner decisions.
+
+Quarto cannot create server-side HTTP redirects in a static local build. The generator therefore preserves six former theme URLs as accessible transition pages with canonical links and a direct route to the corresponding new programme page. Internal navigation and generated record links use only the four new routes.

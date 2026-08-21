@@ -7,7 +7,7 @@
   "date_most_recently_observed": "2026-08-13",
   "principal_source_id": "ccs-green-transition-justice",
   "linked_source_ids": [],
-  "primary_theme": "just-transitions-workforce",
+  "primary_theme": "consequences-for-people-and-places",
   "secondary_themes": [],
   "geographies": [
     "europe"
@@ -34,7 +34,7 @@
     "used": false,
     "model": null,
     "prompt_version": "current-conversations-classification-v1-fixture",
-    "run_id": "gate-4b-5a-mixed-source-captured"
+    "run_id": "thematic-reframe-mixed-source-captured"
   },
   "publication_decision": "published",
   "correction_status": "none",

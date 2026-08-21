@@ -1,4 +1,4 @@
-.PHONY: install validate generate test build linkcheck linkcheck-external accessibility check publications-refresh current-conversations-fixture current-conversations-discover openalex-diagnostics current-conversations-pilot current-conversations-recheck current-conversations-stage current-conversations-rollback-test model-benchmark calibration-pack browser-qa handoff owner-review owner-package research-watch-fixture research-watch-pilot research-watch-recheck preview clean
+.PHONY: install validate generate test build linkcheck linkcheck-external accessibility check publications-refresh current-conversations-fixture current-conversations-discover openalex-diagnostics current-conversations-pilot current-conversations-recheck current-conversations-stage current-conversations-rollback-test model-benchmark calibration-pack browser-qa handoff owner-review owner-package thematic-owner-review research-watch-fixture research-watch-pilot research-watch-recheck preview clean
 
 HANDOFF_SUMMARY ?= docs/handoffs/gate-5b-handoff.md
 PYTHON ?= $(if $(wildcard .venv/bin/python),.venv/bin/python,python3)
@@ -52,6 +52,8 @@ handoff:
 owner-package:
 	$(PYTHON) scripts/package_owner_review.py
 owner-review: owner-package
+thematic-owner-review:
+	$(PYTHON) scripts/package_thematic_review.py
 research-watch-fixture:
 	@echo "Deprecated: use current-conversations-fixture"
 	@$(MAKE) current-conversations-fixture

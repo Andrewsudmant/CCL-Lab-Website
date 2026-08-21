@@ -17,7 +17,10 @@ def test_source_cluster_relationships_are_complete() -> None:
     sources = {record["source_id"]: record for record in json_records("sources")}
     clusters = json_records("clusters")
     assert len(sources) == 26 and len(clusters) == 25
-    assert set(record["primary_theme"] for record in clusters) == {theme["id"] for theme in __import__("yaml").safe_load((ROOT / "config/research_scope.yml").read_text())["themes"]}
+    assigned = {record["primary_theme"] for record in clusters if record["primary_theme"]}
+    themes = {theme["id"] for theme in __import__("yaml").safe_load((ROOT / "config/research_scope.yml").read_text())["themes"]}
+    assert assigned == themes
+    assert any(record["primary_theme"] is None for record in clusters)
     assert any(record["linked_source_ids"] for record in clusters)
     for cluster in clusters:
         assert cluster["principal_source_id"] in sources

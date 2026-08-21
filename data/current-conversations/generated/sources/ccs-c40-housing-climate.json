@@ -26,9 +26,9 @@
   "content_hash": "f87b17f4598c9cbd6b20a61fca2e70ade705b3e515b83387a9db50eebcc47783",
   "discovery": {
     "adapter": "captured-web-fixture",
-    "query_id": "cc-fixture-co-benefits-place-based-valuation",
-    "query_version": "current-conversations-v1.0.0",
-    "run_id": "gate-4b-5a-mixed-source-captured"
+    "query_id": "cc-fixture-consequences-for-people-and-places",
+    "query_version": "current-conversations-v2.0.0",
+    "run_id": "thematic-reframe-mixed-source-captured"
   },
   "ai_annotation": {
     "model": "captured-deterministic-annotation",

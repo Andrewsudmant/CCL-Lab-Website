@@ -6,6 +6,8 @@ These instructions apply to the entire repository.
 
 This repository contains the public website and the transactional private-staging prototype of Cities & Climate Learning Lab Current Conversations. The lab is based in Simon Fraser University's School of Resource and Environmental Management and studies how cities generate, transfer, and use evidence for climate action.
 
+The public research architecture has four canonical themes, in this order: **Geographies of Climate Learning**, **Where New Evidence Matters**, **Modes of Climate Delivery**, and **Consequences for People and Places**. Treat them as connected questions in an iterative learning cycle, not independent topic buckets. Keep climate domains, sectors, geographies and methods as separate facets. `config/research_scope.yml` is the authoritative registry for titles, questions, descriptions and analytical boundaries.
+
 ## Non-negotiable governance rules
 
 - Treat AI as a discovery, classification, and drafting layer—not as a source.
@@ -13,6 +15,7 @@ This repository contains the public website and the transactional private-stagin
 - Automatically generated Current Conversations items may publish without routine human review only when deterministic publication controls pass.
 - Public disclosure must follow actual provenance. Use `Identified and summarized using AI · not reviewed by the lab` only when `ai_provenance.used=true`; non-AI fixtures must say that no AI generation was recorded and must never imply a live retrieval.
 - Never present automatically identified material as endorsed, recommended, approved, expert-selected, or reviewed by the lab.
+- Current Conversations is horizon scanning, not a validated evidence base, transferability assessment or recommendation system. A source may remain cross-cutting or unclassified when thematic evidence is insufficient.
 - Do not invent citations, quotations, authors, dates, identifiers, review decisions, or evidence access.
 - Withhold or quarantine records with insufficient evidence, unsupported claims, unresolved identity, invalid URLs, critical risk flags, high duplicate probability, prompt-injection contamination, unexpected personal data, or invalid model output.
 - Human review is optional and may be recorded later. Never imply review when reviewer and review date are absent.
@@ -44,6 +47,8 @@ This repository contains the public website and the transactional private-stagin
 ## Scope discipline
 
 Gate 5B authorizes credential-independent live-benchmark preparation, authoritative publication reconciliation, bounded no-key diagnostics, mocked Responses testing, calibration-generator preparation and local review packaging. It does not authorize a paid call, public deployment, merging to `main`, DNS changes, analytics, subscriber collection, authentication, production publication, scheduled paid discovery or unrestricted ingestion. The first owner-approved live benchmark writes artifacts only.
+
+The thematic-architecture reframe authorizes copy, taxonomy, schema, fixture, route, generator, CSS, test and documentation changes needed to implement the four-theme programme. It does not authorize a redesign, a new evidence platform, unsupported research claims, deployment, secret changes, permission changes or history rewriting.
 
 ## Shareable handoff package
 

@@ -9,7 +9,34 @@ description: "A conditional, place-based scenario model for assessing co-benefit
 
 **Status:** In Development<br>
 **Relationship to the lab:** Current Lab Research — Owner-approved current programme of the Cities and Climate Learning Lab.<br>
-**Primary theme:** [Co-benefits, co-costs and place-based valuation](/research/themes/co-benefits-place-based-valuation.html)
+**Primary theme:** [Consequences for People and Places](/research/consequences-for-people-and-places.html)
+
+## How this project contributes to climate learning
+
+**Primary theme:** [Consequences for People and Places](/research/consequences-for-people-and-places.html)
+
+**Secondary connections:** [Where New Evidence Matters](/research/where-new-evidence-matters.html), [Modes of Climate Delivery](/research/modes-of-climate-delivery.html)
+
+**Decision or problem:** How to represent the locally varying benefits, burdens and costs of climate scenarios without obscuring causal, geographic or valuation assumptions.
+
+**Existing evidence:** The model separates baseline evidence, scenario actions, causal pathways, endpoints and valuation so their provenance and applicability can be examined.
+
+**Consequential uncertainty:** Local evidence availability, causal assignment and valuation choices may materially change the consequences represented for a place.
+
+**Consequences examined:** Health, equity and other place-based co-benefits, co-costs and distributional outcomes.
+
+**Evidence status:** Owner-approved programme description; the model is in development.
+
+**Claim boundaries:** Scenarios are conditional appraisals, not predictions or universal transferability claims.
+
+**Next learning question:** Which local evidence and valuation choices most alter scenario conclusions?
+
+### Research facets
+
+**Geographies:** canada, united-kingdom<br>
+**Climate domains:** mitigation<br>
+**Sectors:** buildings, transport, health<br>
+**Methods:** place-based-modelling, economic-appraisal, distributional-analysis
 
 ## Research questions
 

@@ -1,0 +1,29 @@
+---
+title: "Our approach"
+description: "How the lab distinguishes evidence, contextual relevance, interpretation, delivery, consequences and further learning."
+---
+
+<p class="page-deck">Urban climate learning depends on several connected states. The lab does not treat them as interchangeable or presume a universal path through them.</p>
+
+<ol class="approach-states">
+  <li><strong>Evidence exists.</strong> Research, administrative, professional, community, local or Indigenous knowledge has been produced.</li>
+  <li><strong>Evidence is visible or reachable.</strong> People and institutions can find it, access it and understand its provenance and limits.</li>
+  <li><strong>Evidence may be relevant to a context.</strong> Relevance is examined rather than inferred from visibility, popularity or proximity.</li>
+  <li><strong>Actors interpret and use it.</strong> Knowledge is weighed through professional judgement, authority, values and practical constraints.</li>
+  <li><strong>Institutions organise and deliver action.</strong> Authority, finance, coordination, participation, capability and maintenance make action operable.</li>
+  <li><strong>Consequences occur.</strong> Benefits, burdens, risks and unintended effects emerge over different periods and in different places.</li>
+  <li><strong>Consequences are evaluated and distributed.</strong> Which outcomes are counted—and for whom—shapes what is learned.</li>
+  <li><strong>Resulting knowledge changes later decisions.</strong> Outcomes reveal unresolved questions and revise what other places can plausibly learn.</li>
+</ol>
+
+## Commitments
+
+- Contextual relevance should be examined rather than assumed.
+- Evidence status and uncertainty should remain visible.
+- A case may be useful without providing a universally transferable model.
+- Failures and partial implementation may provide valuable knowledge.
+- Local, professional, administrative, community and Indigenous knowledge should not be treated merely as inferior substitutes for published research.
+- Questions about whose knowledge travels and whose outcomes are counted are questions of authority and justice.
+- The lab does not seek context-free lists of universal best practices.
+
+[Explore the four connected research questions](/research.html).

@@ -50,7 +50,7 @@
       "date_modified": "2026-08-13",
       "external_url": "https://doi.org/10.1016/j.uclim.2026.103088",
       "tags": [
-        "where-new-evidence-matters"
+        "geographies-of-climate-learning"
       ]
     },
     {
@@ -131,10 +131,7 @@
       "date_published": "2026-08-01",
       "date_modified": "2026-08-01",
       "external_url": "https://dataportalforcities.org/",
-      "tags": [
-        "where-new-evidence-matters",
-        "modes-of-climate-delivery"
-      ]
+      "tags": []
     },
     {
       "id": "ccc-bc-community-infrastructure",
@@ -157,7 +154,7 @@
       "date_modified": "2026-07-29",
       "external_url": "https://eu-mayors.ec.europa.eu/en/news/planning-data-driven-climate-adaptation-actions",
       "tags": [
-        "where-new-evidence-matters"
+        "geographies-of-climate-learning"
       ]
     },
     {
@@ -168,9 +165,7 @@
       "date_published": "2026-07-29",
       "date_modified": "2026-07-29",
       "external_url": "https://coolcityindex.eu/",
-      "tags": [
-        "where-new-evidence-matters"
-      ]
+      "tags": []
     },
     {
       "id": "ccc-local-temperature-records-tool",
@@ -180,9 +175,7 @@
       "date_published": "2026-07-27",
       "date_modified": "2026-07-27",
       "external_url": "https://app.climatecentral.org/dataviz/local-records/data-viewer",
-      "tags": [
-        "where-new-evidence-matters"
-      ]
+      "tags": []
     },
     {
       "id": "ccc-maritime-workforce-skills",
@@ -217,7 +210,7 @@
       "date_modified": "2026-07-08",
       "external_url": "https://berkeleyearth.org/from-observation-to-decision-an-introduction-to-synthesis-by-berkeley-earth/",
       "tags": [
-        "where-new-evidence-matters"
+        "geographies-of-climate-learning"
       ]
     },
     {
@@ -239,7 +232,7 @@
       "date_modified": "2026-07-01",
       "external_url": "https://www.climatecentral.org/climate-matters/250-years-of-climate-change",
       "tags": [
-        "where-new-evidence-matters"
+        "geographies-of-climate-learning"
       ]
     },
     {
@@ -263,9 +256,7 @@
       "date_published": "2026-06-23",
       "date_modified": "2026-06-23",
       "external_url": "https://www.urban-climate.eu/model",
-      "tags": [
-        "where-new-evidence-matters"
-      ]
+      "tags": []
     },
     {
       "id": "ccc-housing-climate-rights",
@@ -289,7 +280,6 @@
       "date_modified": "2026-06-04",
       "external_url": "https://www.axios.com/local/austin/2026/06/04/austin-google-ai-tree-canopies",
       "tags": [
-        "where-new-evidence-matters",
         "consequences-for-people-and-places"
       ]
     },

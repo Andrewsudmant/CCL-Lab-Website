@@ -26,15 +26,15 @@
   "content_hash": "37fd3e7226afd06619d576f80f801c1ea9cddb579dbd3c0c60d6a38752b5f467",
   "discovery": {
     "adapter": "captured-web-fixture",
-    "query_id": "cc-fixture-where-new-evidence-matters",
-    "query_version": "current-conversations-v2.0.0",
-    "run_id": "thematic-reframe-mixed-source-captured"
+    "query_id": "cc-fixture-geographies-of-climate-learning",
+    "query_version": "current-conversations-fixture-v3.0.0",
+    "run_id": "gate-5c-mixed-source-captured"
   },
   "ai_annotation": {
     "model": "captured-deterministic-annotation",
     "prompt_version": "current-conversations-classification-v1-fixture",
     "summary": "Climate Central presents city-level July temperature trends, downloadable data and methodology for more than 240 US cities.",
-    "reason_for_relevance": "The item demonstrates how analysis, local data and communication products are assembled for urban evidence use."
+    "reason_for_relevance": "The item concerns geographically distributed city evidence and access to its data and methods; it does not establish a future research priority."
   },
   "risk_flags": [],
   "correction_status": "none",

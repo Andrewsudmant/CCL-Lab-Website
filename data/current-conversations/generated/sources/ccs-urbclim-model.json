@@ -26,15 +26,15 @@
   "content_hash": "6b426a27c1058310bf81270b82f4258ae1da058ea4582f61c334230eee91cf22",
   "discovery": {
     "adapter": "captured-web-fixture",
-    "query_id": "cc-fixture-where-new-evidence-matters",
-    "query_version": "current-conversations-v2.0.0",
-    "run_id": "thematic-reframe-mixed-source-captured"
+    "query_id": "cc-fixture-unclassified",
+    "query_version": "current-conversations-fixture-v3.0.0",
+    "run_id": "gate-5c-mixed-source-captured"
   },
   "ai_annotation": {
     "model": "captured-deterministic-annotation",
     "prompt_version": "current-conversations-classification-v1-fixture",
     "summary": "The UrbClim site describes a city-scale climate model offering high-resolution outputs for heat and related variables across historical and future periods.",
-    "reason_for_relevance": "It raises questions about model validation, usability and how city-scale climate evidence enters planning decisions."
+    "reason_for_relevance": "It is a technical model fixture; model availability alone does not justify Theme 2 or another analytical relationship."
   },
   "risk_flags": [],
   "correction_status": "none",

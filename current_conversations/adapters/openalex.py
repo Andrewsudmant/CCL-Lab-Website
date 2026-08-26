@@ -18,8 +18,10 @@ class OpenAlexAdapter(DiscoveryAdapter):
     name = "openalex"
     endpoint = "https://api.openalex.org/works"
 
-    def search(self, query: str, query_id: str, limit: int = 10, lookback_days: int = 30) -> list[DiscoveredItem]:
-        parameters = {
+    @staticmethod
+    def provider_parameters(query: str, limit: int = 10, lookback_days: int = 30) -> dict[str, str | int]:
+        """Return the exact bounded OpenAlex parameters used for a search."""
+        return {
             # OpenAlex's provider-native full-text search ranks title, abstract
             # and full-text signals. Filters remain structural and auditable.
             "search": query,
@@ -29,6 +31,9 @@ class OpenAlexAdapter(DiscoveryAdapter):
             "select": "id,doi,title,display_name,publication_date,authorships,primary_location,locations,abstract_inverted_index,cited_by_api_url",
             "mailto": "andrew_sudmant@sfu.ca",
         }
+
+    def search(self, query: str, query_id: str, limit: int = 10, lookback_days: int = 30) -> list[DiscoveredItem]:
+        parameters = self.provider_parameters(query, limit, lookback_days)
         payload = get_json(self.endpoint, parameters)
         items = []
         for work in payload.get("results", []):

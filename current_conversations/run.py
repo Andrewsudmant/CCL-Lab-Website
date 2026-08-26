@@ -17,11 +17,12 @@ from current_conversations.adapters.openalex import OpenAlexAdapter
 from current_conversations.normalize import deduplicate
 
 ROOT = Path(__file__).resolve().parents[1]
+ACTIVE_QUERY_PACK = ROOT / "config/query_packs/current-conversations-v2.yml"
 ADAPTERS = {"openalex": OpenAlexAdapter, "crossref": CrossrefAdapter, "bluesky": BlueskyAdapter, "openai_web_search": OpenAIWebSearchAdapter}
 
 
 def query_for(adapter: str, query_id: str | None) -> dict:
-    pack = yaml.safe_load((ROOT / "config/query_packs/current-conversations-v1.yml").read_text())
+    pack = yaml.safe_load(ACTIVE_QUERY_PACK.read_text())
     group = "academic" if adapter in {"openalex", "crossref"} else "bluesky" if adapter == "bluesky" else "web"
     queries = pack["queries"][group]
     if query_id:
@@ -50,7 +51,17 @@ def main() -> int:
         except AdapterError as exc:
             print(f"Adapter unavailable: {exc}")
             return 2
-        result = {"mode": "live-bounded", "adapter": args.adapter, "query_id": query["id"], "items": [item.public_dict() for item in items], "duplicates": duplicates}
+        result = {
+            "mode": "live-bounded",
+            "adapter": args.adapter,
+            "query_pack": "current-conversations-v2@3.0.0",
+            "query_id": query["id"],
+            "query_type": query["query_type"],
+            "theme_intent": query["theme_intent"],
+            "classification_required": query["classification_required"],
+            "items": [item.public_dict() for item in items],
+            "duplicates": duplicates,
+        }
     text = json.dumps(result, indent=2, ensure_ascii=False)
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)

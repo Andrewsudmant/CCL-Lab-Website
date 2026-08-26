@@ -26,15 +26,15 @@
   "content_hash": "8ac36d580701d67efd473aa60e2e5939fdd6598e8b15e2bf76d0caa97cb4ebbc",
   "discovery": {
     "adapter": "captured-web-fixture",
-    "query_id": "cc-fixture-where-new-evidence-matters",
-    "query_version": "current-conversations-v2.0.0",
-    "run_id": "thematic-reframe-mixed-source-captured"
+    "query_id": "cc-fixture-unclassified",
+    "query_version": "current-conversations-fixture-v3.0.0",
+    "run_id": "gate-5c-mixed-source-captured"
   },
   "ai_annotation": {
     "model": "captured-deterministic-annotation",
     "prompt_version": "current-conversations-classification-v1-fixture",
     "summary": "The platform offers comparable urban climate and environmental indicators intended to support adaptation prioritisation across European cities.",
-    "reason_for_relevance": "It is directly relevant to the design and governance of municipal climate decision-support infrastructure."
+    "reason_for_relevance": "It is a technical fixture for testing a decision-support source; intended use alone does not establish a substantive theme relationship."
   },
   "risk_flags": [],
   "correction_status": "none",

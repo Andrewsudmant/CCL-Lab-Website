@@ -17,7 +17,7 @@ The viewer provides filterable daily temperature records for US cities using ope
 
 ## Why it may be relevant
 
-It is a concrete example of an urban-facing data interface whose design and provenance shape evidence use.
+It is a technical fixture for testing a data-tool source; available description evidence does not justify a theme assignment.
 
 ## Evidence, interpretation and uncertainty
 

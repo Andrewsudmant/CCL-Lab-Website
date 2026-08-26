@@ -31,3 +31,7 @@ Store bibliographic facts, minimal necessary excerpts and concise original annot
 ## Corrections, availability and removal
 
 Never silently rewrite or delete a public item. Record changed fields, date and reason; update availability after rechecks; archive stale discussions; and retain a correction/removal history unless legal or privacy duties require erasure. Critical errors, prompt-injection contamination, unsafe URLs, unsupported claims or identity conflicts are withheld or quarantined, leaving the last valid site intact.
+
+### Themes and discovery facets
+
+Current Conversations classification connects a source to one or more of the four analytical questions; it does not rate evidence or recommend action. The discovery query, source environment and location cannot determine the classification. Geography, sector, method and climate domain remain separate facets. A data tool, model, Canadian source or workforce source may relate to any theme—or remain unclassified—depending on the evidence actually available. `Where New Evidence Matters` is used only for a prospective, consequential evidence question, not for a generic gap, new dataset or new tool.

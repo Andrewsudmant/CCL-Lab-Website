@@ -30,8 +30,8 @@
   "discovery": {
     "adapter": "openalex",
     "query_id": "cc-fixture-consequences-for-people-and-places",
-    "query_version": "current-conversations-v2.0.0",
-    "run_id": "thematic-reframe-mixed-source-captured"
+    "query_version": "current-conversations-fixture-v3.0.0",
+    "run_id": "gate-5c-mixed-source-captured"
   },
   "ai_annotation": {
     "model": "captured-deterministic-annotation",

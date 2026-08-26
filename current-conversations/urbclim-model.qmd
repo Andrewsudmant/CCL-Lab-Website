@@ -17,7 +17,7 @@ The UrbClim site describes a city-scale climate model offering high-resolution o
 
 ## Why it may be relevant
 
-It raises questions about model validation, usability and how city-scale climate evidence enters planning decisions.
+It is a technical model fixture; model availability alone does not justify Theme 2 or another analytical relationship.
 
 ## Evidence, interpretation and uncertainty
 

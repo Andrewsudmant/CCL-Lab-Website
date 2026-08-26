@@ -17,7 +17,7 @@ The study evaluates temperature and dew-point biases in ERA5-Land data across bu
 
 ## Why it may be relevant
 
-It shows how infrastructure-level data limitations can affect downstream urban climate decisions.
+It concerns how geographical representation and data bias affect what can be inferred for built-up places.
 
 ## Evidence, interpretation and uncertainty
 

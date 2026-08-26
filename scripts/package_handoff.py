@@ -61,6 +61,7 @@ CONTEXT_FILES = [
     Path("config/research_scope.yml"),
     Path("config/vocabularies.yml"),
     Path("config/query_packs/current-conversations-v1.yml"),
+    Path("config/query_packs/current-conversations-v2.yml"),
     Path("config/source_registry.yml"),
     Path("current_conversations/budget.py"),
     Path("scripts/stage_current_conversations.py"),

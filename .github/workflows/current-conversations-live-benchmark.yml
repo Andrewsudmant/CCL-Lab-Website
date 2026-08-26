@@ -8,13 +8,17 @@ on:
         required: true
         type: choice
         options:
-          - cc-w01-learning
-          - cc-w02-governance
-          - cc-w03-cobenefits
-          - cc-w04-workforce
-          - cc-w05-tools
-          - cc-w06-canada
-        default: cc-w02-governance
+          - cc3-w01-geographies
+          - cc3-w02-new-evidence
+          - cc3-w03-delivery
+          - cc3-w04-consequences
+          - cc3-w05-tools-facet
+          - cc3-w06-workforce-facet
+          - cc3-w07-canada-geographies
+          - cc3-w08-bc-new-evidence
+          - cc3-w09-canada-delivery
+          - cc3-w10-canada-consequences
+        default: cc3-w03-delivery
       result_limit:
         description: "Maximum structured candidates"
         required: true

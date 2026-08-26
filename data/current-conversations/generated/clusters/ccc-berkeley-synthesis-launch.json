@@ -7,7 +7,7 @@
   "date_most_recently_observed": "2026-07-08",
   "principal_source_id": "ccs-berkeley-synthesis-launch",
   "linked_source_ids": [],
-  "primary_theme": "where-new-evidence-matters",
+  "primary_theme": "geographies-of-climate-learning",
   "secondary_themes": [],
   "geographies": [
     "global"
@@ -17,7 +17,7 @@
   ],
   "principal_source_role": "research-commentary",
   "summary": "Berkeley Earth introduces a platform connecting historical observations with bias-corrected climate projections at local scale for cities and countries.",
-  "reason_for_relevance": "The source makes explicit claims about moving from observation to decision, directly engaging the lab's interest in usable evidence infrastructure.",
+  "reason_for_relevance": "The source concerns how historical and projected evidence is made locally accessible; it does not identify which additional evidence should be produced.",
   "limitations": "This is the developer's own description, outside the 30-day window, and not an independent evaluation.",
   "agreement_disagreement_uncertainty": "No source disagreement was established by the captured evidence.",
   "clustering": {
@@ -34,7 +34,7 @@
     "used": false,
     "model": null,
     "prompt_version": "current-conversations-classification-v1-fixture",
-    "run_id": "thematic-reframe-mixed-source-captured"
+    "run_id": "gate-5c-mixed-source-captured"
   },
   "publication_decision": "published",
   "correction_status": "none",

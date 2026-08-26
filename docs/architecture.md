@@ -37,7 +37,7 @@ flowchart LR
 | Quarto and generated fragments | Responsive semantic pages, archive, filters, feeds and stable moved-page links |
 | Python package | Provider adapters, normalization, clustering, budgets and atomic transactions |
 | JSON Schema | Source, cluster, strict Responses output, query pack and publication constraints |
-| Query/source configuration | Six themes, bounded concepts, exclusions, source roles and diversity caps |
+| Query/source configuration | Four analytical themes, separate facets, bounded concepts, exclusions, source roles and diversity caps |
 | Private staging | Complete validated snapshot: sources, clusters, feeds, site fragment, manifest and budget ledger |
 | CI | Build before site-inspection tests; offline checks by default; protected manual benchmark; optional isolated automation-branch write |
 
@@ -50,3 +50,7 @@ A run writes a complete candidate snapshot to a temporary sibling directory. Aft
 The build output is static. Discovery and benchmark jobs have repository read permission. `Current Conversations live benchmark` is manual, uses the protected `live-benchmark` environment and produces artifacts only. A separate staging job is disabled unless explicitly enabled, validates an allowed-path diff and targets only `automation/current-conversations-staging` with write permission. It cannot deploy and never targets `main`. Production deployment, hosting and DNS are later owner decisions.
 
 Quarto cannot create server-side HTTP redirects in a static local build. The generator therefore preserves six former theme URLs as accessible transition pages with canonical links and a direct route to the corresponding new programme page. Internal navigation and generated record links use only the four new routes.
+
+### Query intent, facets and classification
+
+`config/query_packs/current-conversations-v2.yml` is the active discovery configuration. A query is explicitly a theme, facet or exploratory query. Theme queries record an intended analytical question; facet and exploratory queries keep `theme_intent: null`. Geography, sector, method, climate domain, source environment, tools, datasets and models do not force classification. Every retrieved source still undergoes content-based classification, and a null primary theme remains valid. The v1 pack is retained as superseded migration evidence rather than overwritten.

@@ -26,15 +26,15 @@
   "content_hash": "70e39eb1ca3837488111d541a89101943430be2d636d7836ceff11f7d2323031",
   "discovery": {
     "adapter": "captured-web-fixture",
-    "query_id": "cc-fixture-where-new-evidence-matters",
-    "query_version": "current-conversations-v2.0.0",
-    "run_id": "thematic-reframe-mixed-source-captured"
+    "query_id": "cc-fixture-geographies-of-climate-learning",
+    "query_version": "current-conversations-fixture-v3.0.0",
+    "run_id": "gate-5c-mixed-source-captured"
   },
   "ai_annotation": {
     "model": "captured-deterministic-annotation",
     "prompt_version": "current-conversations-classification-v1-fixture",
     "summary": "Berkeley Earth introduces a platform connecting historical observations with bias-corrected climate projections at local scale for cities and countries.",
-    "reason_for_relevance": "The source makes explicit claims about moving from observation to decision, directly engaging the lab's interest in usable evidence infrastructure."
+    "reason_for_relevance": "The source concerns how historical and projected evidence is made locally accessible; it does not identify which additional evidence should be produced."
   },
   "risk_flags": [],
   "correction_status": "none",

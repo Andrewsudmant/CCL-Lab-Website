@@ -65,11 +65,28 @@ def validate_all() -> list[str]:
 
     vocab = load_yaml(ROOT / "config/vocabularies.yml")
     errors.extend(schema_errors(vocab, load_schema("vocabularies.schema.json"), "config/vocabularies.yml"))
-    query_pack = load_yaml(ROOT / "config/query_packs/current-conversations-v1.yml")
-    errors.extend(schema_errors(query_pack, load_schema("current-conversations-query-pack.schema.json"), "config/query_packs/current-conversations-v1.yml"))
+    query_pack = load_yaml(ROOT / "config/query_packs/current-conversations-v2.yml")
+    errors.extend(schema_errors(query_pack, load_schema("current-conversations-query-pack.schema.json"), "config/query_packs/current-conversations-v2.yml"))
     for query_group in query_pack.get("queries", {}).values():
         for query in query_group:
-            errors.extend(theme_reference_errors([query.get("theme")], "query pack", CANONICAL_THEMES))
+            label = f"query pack {query.get('id')}"
+            errors.extend(theme_reference_errors([query.get("theme_intent"), *query.get("candidate_themes", [])], label, CANONICAL_THEMES, allow_unclassified=True))
+            if query.get("query_type") == "theme" and not query.get("theme_intent"):
+                errors.append(f"{label}: theme queries require theme_intent")
+            if query.get("query_type") != "theme" and query.get("theme_intent") is not None:
+                errors.append(f"{label}: facet and exploratory queries cannot force theme_intent")
+            if query.get("classification_required") is not True:
+                errors.append(f"{label}: every retrieved item requires content-based classification")
+            facets = query.get("facets", {})
+            for field, vocabulary in (("geographies", "geographies"), ("sectors", "sectors"), ("methods", "methods"), ("climate_domains", "climate_domains")):
+                invalid = sorted(set(facets.get(field, [])) - set(vocab[vocabulary]))
+                if invalid:
+                    errors.append(f"{label}: invalid facet {field}: {', '.join(invalid)}")
+            if query.get("theme_intent") == "where-new-evidence-matters":
+                lowered = query.get("query", "").casefold()
+                consequential = ("consequential", "value of", "could change", "evaluation priorit", "research priorit")
+                if not any(term in lowered for term in consequential):
+                    errors.append(f"{label}: Theme 2 query lacks a consequential evidence or uncertainty concept")
 
     records: dict[str, list[dict[str, Any]]] = {}
     for kind, schema_name in (("people", "person.schema.json"), ("projects", "project.schema.json"), ("publications", "publication.schema.json")):

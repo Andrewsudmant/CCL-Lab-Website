@@ -99,12 +99,12 @@ def validate_snapshot(path: Path) -> None:
 
 def live_diagnostic(mode: str, limit: int) -> dict:
     if mode == "live-academic":
-        query = "municipal climate policy learning evidence transfer"
+        query = "urban climate evidence geography comparison transfer conditions generalisability"
         providers = {"openalex": OpenAlexAdapter(), "crossref": CrossrefAdapter()}
         result = {}
         for name, adapter in providers.items():
             try:
-                found = adapter.search(query, "cc-a01-learning", limit)
+                found = adapter.search(query, "cc3-a01-geographies", limit)
                 result[name] = {"status": "live-success", "count": len(found)}
             except AdapterError as exc:
                 result[name] = {"status": "live-limited", "reason": str(exc)}
@@ -116,7 +116,7 @@ def live_diagnostic(mode: str, limit: int) -> dict:
         return result
     if mode == "bluesky":
         try:
-            found = BlueskyAdapter().search("urban climate evidence", "cc-b01-learning", limit)
+            found = BlueskyAdapter().search("urban climate evidence comparison", "cc3-b01-geographies", limit)
             return {"bluesky": {"status": "live-success", "count": len(found)}}
         except AdapterError as exc:
             return {"bluesky": {"status": "live-limited", "reason": str(exc)}}

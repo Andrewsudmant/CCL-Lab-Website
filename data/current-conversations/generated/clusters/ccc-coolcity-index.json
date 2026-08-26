@@ -7,7 +7,7 @@
   "date_most_recently_observed": "2026-07-29",
   "principal_source_id": "ccs-coolcity-index",
   "linked_source_ids": [],
-  "primary_theme": "where-new-evidence-matters",
+  "primary_theme": null,
   "secondary_themes": [],
   "geographies": [
     "europe"
@@ -17,7 +17,7 @@
   ],
   "principal_source_role": "dataset-or-tool",
   "summary": "The platform offers comparable urban climate and environmental indicators intended to support adaptation prioritisation across European cities.",
-  "reason_for_relevance": "It is directly relevant to the design and governance of municipal climate decision-support infrastructure.",
+  "reason_for_relevance": "It is a technical fixture for testing a decision-support source; intended use alone does not establish a substantive theme relationship.",
   "limitations": "The source was identified through an institutional announcement; direct tool evaluation remains outstanding.",
   "agreement_disagreement_uncertainty": "No source disagreement was established by the captured evidence.",
   "clustering": {
@@ -34,7 +34,7 @@
     "used": false,
     "model": null,
     "prompt_version": "current-conversations-classification-v1-fixture",
-    "run_id": "thematic-reframe-mixed-source-captured"
+    "run_id": "gate-5c-mixed-source-captured"
   },
   "publication_decision": "published",
   "correction_status": "none",

@@ -29,15 +29,15 @@
   "content_hash": "16210ff1e5b9a527805745499777028ec49afeb6bee9d26dedd9d1149cb4c123",
   "discovery": {
     "adapter": "openalex",
-    "query_id": "cc-fixture-where-new-evidence-matters",
-    "query_version": "current-conversations-v2.0.0",
-    "run_id": "thematic-reframe-mixed-source-captured"
+    "query_id": "cc-fixture-geographies-of-climate-learning",
+    "query_version": "current-conversations-fixture-v3.0.0",
+    "run_id": "gate-5c-mixed-source-captured"
   },
   "ai_annotation": {
     "model": "captured-deterministic-annotation",
     "prompt_version": "current-conversations-classification-v1-fixture",
     "summary": "The study evaluates temperature and dew-point biases in ERA5-Land data across built-up UK environments and considers how those biases propagate into urban climate applications.",
-    "reason_for_relevance": "It shows how infrastructure-level data limitations can affect downstream urban climate decisions."
+    "reason_for_relevance": "It concerns how geographical representation and data bias affect what can be inferred for built-up places."
   },
   "risk_flags": [],
   "correction_status": "none",

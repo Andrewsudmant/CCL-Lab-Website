@@ -38,6 +38,9 @@ methods:
 climate_domains:
   mitigation: Mitigation
   adaptation: Adaptation
+  vulnerability: Vulnerability
+  governance: Governance
+  monitoring-evaluation-learning: Monitoring, evaluation and learning
   climate-impacts: Climate impacts
   resilience: Resilience
   just-transition: Just transition

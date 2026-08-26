@@ -17,7 +17,7 @@ Axios reports on Austin's use of aerial, weather and socioeconomic data to exami
 
 ## Why it may be relevant
 
-The example links decision-support infrastructure with place-based heat exposure and distributional choices.
+The example concerns place-based heat exposure and the distribution of shade; use of AI does not itself establish a Theme 2 relationship.
 
 ## Evidence, interpretation and uncertainty
 

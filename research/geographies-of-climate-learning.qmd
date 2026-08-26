@@ -56,7 +56,7 @@ We study how urban climate knowledge is distributed across places, which cities 
 These externally sourced items are separate from the lab's projects and outputs. Classification indicates topical connection, not endorsement, evidential quality or applicability to another city.
 
 ```{=html}
-<div class="compact-list"><p><a href="/current-conversations/unep-extreme-heat-diplomacy.html">Beating the Heat Together: City Diplomacy and the Global Mobilization against Extreme Heat</a><br><span>Captured fixture · no AI generation recorded · not reviewed by the lab</span></p></div>
+<div class="compact-list"><p><a href="/current-conversations/berkeley-synthesis-launch.html">From Observation to Decision: An Introduction to Synthesis by Berkeley Earth</a><br><span>Captured fixture · no AI generation recorded · not reviewed by the lab</span></p><p><a href="/current-conversations/coolcity-europe-tool-news.html">Planning data-driven climate adaptation actions</a><br><span>Captured fixture · no AI generation recorded · not reviewed by the lab</span></p><p><a href="/current-conversations/era5-urban-biases.html">Evaluating ERA5-Land air temperature and dew point biases in built-up environments in the UK</a><br><span>Automatically identified · no AI generation recorded · not reviewed by the lab</span></p></div>
 ```
 
 [How Current Conversations works](/current-conversations/how-it-works.html).

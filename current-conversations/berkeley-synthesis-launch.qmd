@@ -17,7 +17,7 @@ Berkeley Earth introduces a platform connecting historical observations with bia
 
 ## Why it may be relevant
 
-The source makes explicit claims about moving from observation to decision, directly engaging the lab's interest in usable evidence infrastructure.
+The source concerns how historical and projected evidence is made locally accessible; it does not identify which additional evidence should be produced.
 
 ## Evidence, interpretation and uncertainty
 

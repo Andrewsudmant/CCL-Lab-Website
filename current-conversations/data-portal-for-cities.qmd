@@ -17,7 +17,7 @@ The platform provides preliminary city emissions data and export functions inten
 
 ## Why it may be relevant
 
-It is an example of shared evidence infrastructure intended to fill local data gaps and support municipal reporting.
+It is a technical fixture for a shared data portal; the developer description does not establish a consequential evidence priority or delivery relationship.
 
 ## Evidence, interpretation and uncertainty
 

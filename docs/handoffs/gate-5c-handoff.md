@@ -33,7 +33,7 @@ The four themes come from one versioned registry. Project records remain canonic
 
 Current Conversations retains original and canonical URLs, stable identifiers, source/cluster IDs, publication/retrieval dates, exact evidence access, query/adapter version, AI provenance, review state, risk flags, corrections and cluster history. AI is a discovery/annotation layer, never the source. External items remain visually and semantically separate from lab-authored projects and outputs. Corrections are recorded rather than silently deleted, and failed runs preserve last-known-good content.
 
-The final repository/history scan found zero credential-pattern findings across 1,045 reachable blobs and 515 present files. No paid call, API-key access, merge, deployment, Pages setting, DNS, permission, secret/environment, force-push or history rewrite occurred.
+The pre-first-push repository/history scan found zero credential-pattern findings across 1,045 reachable blobs and 515 present files; a later post-handoff scan also found zero findings across 1,050 blobs and 518 files. No paid call, API-key access, merge, deployment, Pages setting, DNS, permission, secret/environment, force-push or history rewrite occurred.
 
 ## Quality and Git state
 

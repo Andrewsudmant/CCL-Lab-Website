@@ -1,4 +1,4 @@
-scope_version: "1.0.0"
+scope_version: "1.1.0"
 owner_review_required: true
 notice: >-
   The four theme titles, questions, descriptions and analytical boundaries are
@@ -6,7 +6,7 @@ notice: >-
 themes:
   - id: geographies-of-climate-learning
     name: Geographies of Climate Learning
-    status: established
+    portfolio_maturity: established
     guiding_question: >-
       How does place shape which urban climate knowledge is produced, recognised and useful elsewhere?
     definition: >-
@@ -35,7 +35,7 @@ themes:
 
   - id: where-new-evidence-matters
     name: Where New Evidence Matters
-    status: developing
+    portfolio_maturity: developing
     guiding_question: Which new evidence would most improve urban climate decisions?
     definition: >-
       We develop approaches for identifying where new cases, evaluations, datasets and
@@ -64,7 +64,7 @@ themes:
 
   - id: modes-of-climate-delivery
     name: Modes of Climate Delivery
-    status: established
+    portfolio_maturity: established
     guiding_question: >-
       Through which institutional arrangements does urban climate action become possible and durable?
     definition: >-
@@ -93,7 +93,7 @@ themes:
 
   - id: consequences-for-people-and-places
     name: Consequences for People and Places
-    status: established
+    portfolio_maturity: established
     guiding_question: What does climate action change, for whom, where and over what period?
     definition: >-
       We study how climate action affects health, equity, social cohesion and other

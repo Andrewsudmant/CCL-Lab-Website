@@ -15,7 +15,7 @@ description: "An interactive place-based atlas estimating benefits and costs of 
 
 **Primary theme:** [Consequences for People and Places](/research/consequences-for-people-and-places.html)
 
-**Secondary connections:** [Where New Evidence Matters](/research/where-new-evidence-matters.html), [Modes of Climate Delivery](/research/modes-of-climate-delivery.html)
+**Secondary connections:** [Geographies of Climate Learning](/research/geographies-of-climate-learning.html)
 
 **Decision or problem:** How place-based evidence can make locally varying benefits and costs of climate action visible.
 
@@ -23,15 +23,11 @@ description: "An interactive place-based atlas estimating benefits and costs of 
 
 **Transfer conditions:** Estimates are specific to UK data, communities, scenarios and valuation choices.
 
-**Consequential uncertainty:** Data availability and modelling choices affect which consequences can be represented at community scale.
-
 **Consequences examined:** Eleven categories of benefits and costs across more than 46,000 UK communities.
 
 **Evidence status:** Active foundational prior work with authoritative project and tool sources.
 
 **Claim boundaries:** Atlas estimates are not universal predictions and do not establish suitability for another place.
-
-**Next learning question:** Which additional local evidence would most improve interpretation of community-level differences?
 
 ### Research facets
 

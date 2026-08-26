@@ -8,12 +8,12 @@ description: "Research on scaling and combining data for place-based climate-imp
 <p class="page-deck">Research on scaling and combining data for place-based climate-impact assessment, including methods that connect national evidence with local decision contexts.</p>
 
 **Status:** Completed<br>
-**Relationship to the lab:** Foundational Prior Work — Work completed at the University of Edinburgh before the lab was established; it provides a methodological foundation for the lab's evidence-tools programme.<br>
-**Primary theme:** [Where New Evidence Matters](/research/where-new-evidence-matters.html)
+**Relationship to the lab:** Foundational Prior Work — Work completed at the University of Edinburgh before the lab was established; it provides a methodological foundation for the lab's research on evidence across places.<br>
+**Primary theme:** [Geographies of Climate Learning](/research/geographies-of-climate-learning.html)
 
 ## How this project contributes to climate learning
 
-**Primary theme:** [Where New Evidence Matters](/research/where-new-evidence-matters.html)
+**Primary theme:** [Geographies of Climate Learning](/research/geographies-of-climate-learning.html)
 
 **Secondary connections:** [Consequences for People and Places](/research/consequences-for-people-and-places.html)
 

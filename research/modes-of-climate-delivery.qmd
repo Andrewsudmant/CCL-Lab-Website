@@ -36,7 +36,7 @@ We examine how climate action is authorised, financed, coordinated, implemented 
 ## Lab research: related projects
 
 ```{=html}
-<div class="compact-list"><p><a href="/projects/coben-place-based-model.html">CoBen: place-based co-benefits and co-costs</a></p><p><a href="/projects/occupational-transition-requirements.html">Occupational transition requirements and occupation switching</a></p><p><a href="/projects/uk-co-benefits-atlas.html">UK Co-Benefits Atlas</a></p></div>
+<div class="compact-list"><p><a href="/projects/coben-place-based-model.html">CoBen: place-based co-benefits and co-costs</a></p><p><a href="/projects/occupational-transition-requirements.html">Occupational transition requirements and occupation switching</a></p></div>
 ```
 
 ## Lab-authored publications and outputs

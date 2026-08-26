@@ -16,7 +16,11 @@ THEMES = [
 
 def test_exact_theme_titles_order_and_routes() -> None:
     generate_all()
-    assert [(item["id"], item["name"]) for item in research_scope()["themes"]] == THEMES
+    themes = research_scope()["themes"]
+    assert [(item["id"], item["name"]) for item in themes] == THEMES
+    assert len(themes) == 4
+    assert themes[1]["portfolio_maturity"] == "developing"
+    assert all("status" not in item for item in themes)
     for theme_id, _ in THEMES:
         assert (ROOT / "research" / f"{theme_id}.qmd").exists()
 
@@ -35,6 +39,27 @@ def test_homepage_establishes_programme_before_current_conversations() -> None:
     assert "How cities find, generate and use evidence for climate action." in page
     assert page.index("Four connected questions") < page.index("Current Conversations")
     assert page.index("Featured projects and outputs") < page.index("Current Conversations")
+    featured = [
+        "projects/geography-urban-climate-evidence.html",
+        "projects/climate-delivery-modes.html",
+        "projects/coben-place-based-model.html",
+    ]
+    positions = [page.index(path) for path in featured]
+    assert positions == sorted(positions)
+    assert "UK Co-Benefits Atlas" in page
+
+
+def test_public_theme_surfaces_do_not_show_portfolio_maturity_badges() -> None:
+    generate_all()
+    public_theme_sources = [
+        ROOT / "generated/home-themes.qmd",
+        ROOT / "generated/research-themes.qmd",
+        *[ROOT / "research" / f"{theme_id}.qmd" for theme_id, _ in THEMES],
+    ]
+    visible = "\n".join(path.read_text() for path in public_theme_sources)
+    assert "Established" not in visible
+    assert "Developing" not in visible
+    assert "theme-status" not in visible
 
 
 def test_project_theme_relationships_and_optional_learning_fields() -> None:
@@ -48,6 +73,23 @@ def test_project_theme_relationships_and_optional_learning_fields() -> None:
         assert project.get("evidence_status")
         page = (ROOT / "projects" / f'{project["record_id"]}.qmd').read_text()
         assert "How this project contributes to climate learning" in page
+
+    mapping = {record["record_id"]: record for record in projects}
+    assert mapping["geography-urban-climate-evidence"]["primary_theme"] == "geographies-of-climate-learning"
+    assert mapping["geography-urban-climate-evidence"]["secondary_themes"] == ["where-new-evidence-matters"]
+    assert mapping["data-methodologies-climate-impact"]["primary_theme"] == "geographies-of-climate-learning"
+    assert mapping["data-methodologies-climate-impact"]["secondary_themes"] == ["consequences-for-people-and-places"]
+    assert mapping["climate-delivery-modes"]["secondary_themes"] == ["geographies-of-climate-learning"]
+    assert mapping["coben-place-based-model"]["secondary_themes"] == ["where-new-evidence-matters", "modes-of-climate-delivery"]
+    assert mapping["occupational-transition-requirements"]["secondary_themes"] == ["where-new-evidence-matters", "modes-of-climate-delivery"]
+    atlas = mapping["uk-co-benefits-atlas"]
+    assert atlas["primary_theme"] == "consequences-for-people-and-places"
+    assert atlas["secondary_themes"] == ["geographies-of-climate-learning"]
+    assert "consequential_uncertainty" not in atlas
+    assert "next_learning_question" not in atlas
+    atlas_page = (ROOT / "projects/uk-co-benefits-atlas.qmd").read_text()
+    assert "**Consequential uncertainty:**" not in atlas_page
+    assert "**Next learning question:**" not in atlas_page
 
 
 def test_current_conversations_filters_disclosure_and_unclassified_state() -> None:

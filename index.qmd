@@ -61,6 +61,7 @@ page-layout: full
     <article class="theme-card"><h3><a href="projects/climate-delivery-modes.html">Climate delivery modes</a></h3><p>How authority, finance, coordination and capability combine to make action operable.</p></article>
     <article class="theme-card"><h3><a href="projects/coben-place-based-model.html">CoBen</a></h3><p>Place-based appraisal of benefits, burdens, costs and distributional outcomes.</p></article>
   </div>
+  <p class="small-note"><strong>Foundational prior work:</strong> the <a href="projects/uk-co-benefits-atlas.html">UK Co-Benefits Atlas</a> makes place-based benefits and costs visible across UK communities; its estimates are not assumed to transfer unchanged elsewhere.</p>
   <p><a href="outputs.html">Explore publications, outputs, data and tools →</a></p>
 </section>
 ```

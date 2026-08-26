@@ -14,15 +14,13 @@ research_questions:
 start_date: null
 end_date: null
 primary_theme: consequences-for-people-and-places
-secondary_themes: [where-new-evidence-matters, modes-of-climate-delivery]
+secondary_themes: [geographies-of-climate-learning]
 decision_or_problem: How place-based evidence can make locally varying benefits and costs of climate action visible.
 existing_evidence: Verified atlas methods, outputs and a connected publication from foundational prior work.
 transfer_conditions: Estimates are specific to UK data, communities, scenarios and valuation choices.
-consequential_uncertainty: Data availability and modelling choices affect which consequences can be represented at community scale.
 consequences_examined: Eleven categories of benefits and costs across more than 46,000 UK communities.
 evidence_status: Active foundational prior work with authoritative project and tool sources.
 claim_boundaries: Atlas estimates are not universal predictions and do not establish suitability for another place.
-next_learning_question: Which additional local evidence would most improve interpretation of community-level differences?
 geographies: [united-kingdom]
 governance_scales: [municipal, neighbourhood]
 methods: [place-based-modelling, spatial-analysis, data-visualization]

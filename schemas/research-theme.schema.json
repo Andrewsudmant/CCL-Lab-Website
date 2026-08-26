@@ -4,11 +4,14 @@
   "title": "Research theme",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "name", "status", "guiding_question", "definition", "cycle_role", "included_questions", "exclusions", "initial_search_concepts", "geographical_priorities", "methodological_interests", "representative_placeholder_examples"],
+  "required": ["id", "name", "portfolio_maturity", "guiding_question", "definition", "cycle_role", "included_questions", "exclusions", "initial_search_concepts", "geographical_priorities", "methodological_interests", "representative_placeholder_examples"],
   "properties": {
     "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
     "name": {"type": "string", "minLength": 8},
-    "status": {"enum": ["established", "developing"]},
+    "portfolio_maturity": {
+      "enum": ["established", "developing"],
+      "description": "Internal portfolio-planning metadata. It describes the maturity of projects and outputs, not the intellectual status or public importance of the theme."
+    },
     "guiding_question": {"type": "string", "minLength": 20},
     "definition": {"type": "string", "minLength": 40},
     "cycle_role": {"type": "string", "minLength": 20},

@@ -31,13 +31,13 @@ We develop approaches for identifying where new cases, evaluations, datasets and
 ## Lab research: core projects
 
 ```{=html}
-<div class="compact-list"><p><a href="/projects/data-methodologies-climate-impact.html">Data Methodologies for Climate Impact Assessment</a></p></div>
+<p class="empty-compact">No verified records are published in this view yet.</p>
 ```
 
 ## Lab research: related projects
 
 ```{=html}
-<div class="compact-list"><p><a href="/projects/coben-place-based-model.html">CoBen: place-based co-benefits and co-costs</a></p><p><a href="/projects/geography-urban-climate-evidence.html">Geography of urban climate evidence</a></p><p><a href="/projects/occupational-transition-requirements.html">Occupational transition requirements and occupation switching</a></p><p><a href="/projects/uk-co-benefits-atlas.html">UK Co-Benefits Atlas</a></p></div>
+<div class="compact-list"><p><a href="/projects/coben-place-based-model.html">CoBen: place-based co-benefits and co-costs</a></p><p><a href="/projects/geography-urban-climate-evidence.html">Geography of urban climate evidence</a></p><p><a href="/projects/occupational-transition-requirements.html">Occupational transition requirements and occupation switching</a></p></div>
 ```
 
 ## Lab-authored publications and outputs

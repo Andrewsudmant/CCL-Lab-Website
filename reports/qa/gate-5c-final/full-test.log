@@ -1,0 +1,25 @@
+Cities & Climate Learning Lab — Gate 5C final quality log
+Run date: 2026-08-26
+
+make validate
+  PASS — Validated 70 records and 15 schemas.
+
+make test
+  Initial run: 2 legacy-test failures exposed obsolete assumptions (`status` field and forced fixture coverage).
+  Corrective action: tests now use internal `portfolio_maturity` and permit honest missing theme coverage.
+  Final result: PASS — 98 passed, 1 warning in 4.69s.
+
+make build
+  PASS — Quarto rendered 103/103 pages to _site.
+
+make check
+  PASS — 70 records / 15 schemas; 103-page deterministic build; 98 tests; internal link checks; static accessibility checks for 103 HTML pages.
+  Warning: one expected DeprecationWarning from the compatibility `research_watch` import in `tests/test_gate_3b_4a_controls.py`.
+
+make openalex-diagnostics
+  PASS — credential-free diagnostic completed for all 10 active academic queries with no provider request errors.
+  Interpretation: counts are not relevance or completeness measures. Several obvious false positives require later calibration.
+
+Paid/model calls: none.
+Credentials requested or accessed: none.
+Public deployment: none.

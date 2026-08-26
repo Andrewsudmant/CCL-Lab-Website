@@ -50,6 +50,8 @@ Gate 5B authorizes credential-independent live-benchmark preparation, authoritat
 
 The thematic-architecture reframe authorizes copy, taxonomy, schema, fixture, route, generator, CSS, test and documentation changes needed to implement the four-theme programme. It does not authorize a redesign, a new evidence platform, unsupported research claims, deployment, secret changes, permission changes or history rewriting.
 
+Gate 5C makes the four-theme programme intellectually consistent and transfers preserved history for owner review. Treat theme maturity as internal `portfolio_maturity` metadata only; never display “Established” or “Developing” on principal theme surfaces. `Where New Evidence Matters` requires a prospective consequential evidence question, not a generic gap, tool, dataset, method or under-represented place. Current Conversations query intent never forces final classification; geography, sector, method, climate domain and source environment remain facets, and null classification is valid. Gate 5C does not authorize paid calls, merge, deployment, Pages, secret/environment changes, repository permission changes or history rewriting.
+
 ## Shareable handoff package
 
 After every substantive completed task, provide a fresh ZIP package that the owner can upload to a new ChatGPT conversation. The package must:

@@ -75,9 +75,9 @@ def test_known_publication_truth_constraints() -> None:
 
 def test_theme_statuses_and_separation() -> None:
     themes = {t["id"]: t for t in research_scope()["themes"]}
-    assert themes["where-new-evidence-matters"]["status"] == "developing"
-    assert themes["consequences-for-people-and-places"]["status"] == "established"
-    assert themes["modes-of-climate-delivery"]["status"] == "established"
+    assert themes["where-new-evidence-matters"]["portfolio_maturity"] == "developing"
+    assert themes["consequences-for-people-and-places"]["portfolio_maturity"] == "established"
+    assert themes["modes-of-climate-delivery"]["portfolio_maturity"] == "established"
     for record in load_records("data/projects") + load_records("data/publications"):
         assert record["primary_theme"] not in record["geographies"]
 

@@ -19,7 +19,11 @@ def test_source_cluster_relationships_are_complete() -> None:
     assert len(sources) == 26 and len(clusters) == 25
     assigned = {record["primary_theme"] for record in clusters if record["primary_theme"]}
     themes = {theme["id"] for theme in __import__("yaml").safe_load((ROOT / "config/research_scope.yml").read_text())["themes"]}
-    assert assigned == themes
+    assert assigned <= themes
+    # Technical fixtures are not forced into every theme to improve apparent
+    # coverage. Theme 2 requires consequential prospective evidence, and the
+    # current fixtures do not provide a final owner calibration set.
+    assert "where-new-evidence-matters" not in assigned
     assert any(record["primary_theme"] is None for record in clusters)
     assert any(record["linked_source_ids"] for record in clusters)
     for cluster in clusters:

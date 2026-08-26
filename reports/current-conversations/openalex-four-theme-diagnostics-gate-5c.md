@@ -21,6 +21,12 @@ Scope: up to two provider-native results for every active academic query, using 
 
 This is a connectivity and query-shape diagnostic, not a measure of scientific relevance, completeness or a final calibration set. False-positive notes are conservative heuristics and require human calibration.
 
+## Operator review of this bounded run
+
+The returned titles show that broad OpenAlex full-text ranking can satisfy the multi-term queries through incidental matches. Obvious examples include biomass biorefineries for Theme 2, national-resistance finance for consequences, parental employment for the workforce facet, North Macedonian raw materials for the BC evidence query, and Ethiopian displacement for Canadian delivery. The Canada/geographies and Canada/consequences results also lack an obvious Canadian municipal relationship in their titles. The one clearest plausible hit is the multilevel-governance transportation research-agenda record under Canadian delivery, but even that requires abstract review before classification.
+
+This pattern indicates that most queries are **too broad in provider-native full-text form**, not too narrow. The BC Theme 2 and workforce queries are the clearest calibration priorities. Later no-key work should test structured concept/filter combinations and human-labelled precision without treating result count as success. No returned item was added to fixtures, staging or the public site.
+
 ## `cc3-a01-geographies`
 
 - Query: `urban climate evidence geography comparison transfer conditions generalisability`

@@ -7,13 +7,13 @@ make validate
 make test
   Initial run: 2 legacy-test failures exposed obsolete assumptions (`status` field and forced fixture coverage).
   Corrective action: tests now use internal `portfolio_maturity` and permit honest missing theme coverage.
-  Final result: PASS — 98 passed, 1 warning in 4.69s.
+  Final result before package-test addition: PASS — 98 passed, 1 warning.
 
 make build
   PASS — Quarto rendered 103/103 pages to _site.
 
 make check
-  PASS — 70 records / 15 schemas; 103-page deterministic build; 98 tests; internal link checks; static accessibility checks for 103 HTML pages.
+  Final clean-commit result: PASS — 70 records / 15 schemas; 103-page deterministic build; 99 tests; internal link checks; static accessibility checks for 103 HTML pages.
   Warning: one expected DeprecationWarning from the compatibility `research_watch` import in `tests/test_gate_3b_4a_controls.py`.
 
 make openalex-diagnostics

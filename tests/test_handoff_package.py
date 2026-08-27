@@ -68,3 +68,12 @@ def test_gate_5d_owner_review_contains_work_ideas_migration_and_site(tmp_path) -
         assert "review/content/theme-examples-audit-gate-5d.md" in names
         assert "source/schemas/research-work.schema.json" in names
         assert any(name.startswith("source/data/research-ideas/") for name in names)
+        for viewport in ("desktop", "mobile"):
+            assert f"review/screenshots/gate-5d/{viewport}/home.png" in names
+            assert f"review/screenshots/gate-5d/{viewport}/learning-cycle.png" in names
+            assert f"review/screenshots/gate-5d/{viewport}/work.png" in names
+            assert f"review/screenshots/gate-5d/{viewport}/current-conversations.png" in names
+            for theme in ("geographies", "new-evidence", "delivery", "consequences"):
+                assert f"review/screenshots/gate-5d/{viewport}/theme-{theme}.png" in names
+                assert f"review/screenshots/gate-5d/{viewport}/ideas-{theme}.png" in names
+        assert not any("gate-5c" in name for name in names)

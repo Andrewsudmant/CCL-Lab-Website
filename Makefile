@@ -1,6 +1,6 @@
 .PHONY: install validate generate test build linkcheck linkcheck-external accessibility check publications-refresh current-conversations-fixture current-conversations-discover openalex-diagnostics current-conversations-pilot current-conversations-recheck current-conversations-stage current-conversations-rollback-test model-benchmark calibration-pack browser-qa handoff owner-review owner-package thematic-owner-review gate-5c-owner-review gate-5d-owner-review research-watch-fixture research-watch-pilot research-watch-recheck preview clean
 
-HANDOFF_SUMMARY ?= docs/handoffs/gate-5b-handoff.md
+HANDOFF_SUMMARY ?= docs/handoffs/gate-5d-handoff.md
 PYTHON ?= $(if $(wildcard .venv/bin/python),.venv/bin/python,python3)
 
 install:
@@ -9,7 +9,7 @@ validate:
 	$(PYTHON) scripts/validate_content.py
 generate:
 	$(PYTHON) scripts/generate_site.py
-test: generate
+test: build
 	$(PYTHON) -m pytest
 build: generate
 	./scripts/quarto.sh render

@@ -4,7 +4,7 @@
 
 The Cities & Climate Learning Lab website is a static, accessible Quarto site backed by versioned records. Current Conversations groups timely source records into public conversation clusters. AI may help discover, classify and summarize; the original source—not a model—is the evidentiary authority. Gate 5B prepares a protected, artifact-only live benchmark but makes no paid call and performs no public deployment.
 
-The public information architecture is driven by the four-theme registry in `config/research_scope.yml`. The generator uses that single source for the homepage learning cycle, research overview, theme landing pages, record links and feed classifications. Project records retain one primary theme and optional secondary themes while geography, method, sector and climate domain remain separate facets. Current Conversations clusters may use a null primary theme when evidence does not support classification.
+The public information architecture is driven by the four-theme registry in `config/research_scope.yml`. The generator uses that single source for the homepage learning cycle, research overview, theme landing pages, record links and feed classifications. Themes have no status: all four are current intellectual questions. Research-work records retain one primary theme and optional secondary themes while geography, method, sector and climate domain remain separate facets. Current Conversations clusters may use a null primary theme when evidence does not support classification.
 
 ## Control plane and content plane
 
@@ -28,7 +28,16 @@ flowchart LR
 - `source_id` records bibliographic identity, URL, stable identifier, dates, organisation, environment/role, accessible evidence, discovery provenance, review and correction state.
 - `cluster_id` records a discussion-level title, principal and linked sources, themes, geography, summary, relevance, limitations, clustering rationale/history and publication state.
 - Principal sources follow an explicit role hierarchy. Commentary can be linked but cannot displace stronger primary research, official policy or dataset evidence without recorded rationale.
-- People, projects and manually selected publications remain YAML. Complete publication reconciliation is a validated JSON inventory generated from ORCID/Crossref/publisher facts plus explicit owner overrides.
+- People, research work, research ideas and manually selected publications remain YAML. Complete publication reconciliation is a validated JSON inventory generated from ORCID/Crossref/publisher facts plus explicit owner overrides.
+
+### Research content model
+
+- A **theme** is an enduring analytical question. It does not carry ongoing/completed or maturity status.
+- **Research work** is actual activity: programme, research line, project, study, paper, report, tool or dataset. It is ongoing or completed and records its relationship to CCLL.
+- A **publication or output** is one canonical bibliographic record. It may link to genuine work, link directly to themes, or have no parent work record. Work never duplicates title, authors, year, identifier or publication status when those facts come from a connected publication.
+- A **research idea** is a separately validated possible future question with suggested methods and a mandatory non-active/non-funded disclaimer. It cannot enter work or output counts, feeds or Current Conversations.
+
+`scripts/generate_site.py` derives paper/report work titles from their connected canonical publication when `title: null`, produces one canonical `/work/` listing, and creates accessible `/projects/` transition pages. Theme pages aggregate ongoing work, selected completed/foundational work, separately styled research ideas, learning-cycle connections and—last—external Current Conversations. Publication examples are deduplicated when the same canonical record is already represented by connected work.
 
 ## Components
 
@@ -49,7 +58,7 @@ A run writes a complete candidate snapshot to a temporary sibling directory. Aft
 
 The build output is static. Discovery and benchmark jobs have repository read permission. `Current Conversations live benchmark` is manual, uses the protected `live-benchmark` environment and produces artifacts only. A separate staging job is disabled unless explicitly enabled, validates an allowed-path diff and targets only `automation/current-conversations-staging` with write permission. It cannot deploy and never targets `main`. Production deployment, hosting and DNS are later owner decisions.
 
-Quarto cannot create server-side HTTP redirects in a static local build. The generator therefore preserves six former theme URLs as accessible transition pages with canonical links and a direct route to the corresponding new programme page. Internal navigation and generated record links use only the four new routes.
+Quarto cannot create server-side HTTP redirects in a static local build. The generator therefore preserves six former theme URLs and the former project routes as accessible transition pages with canonical links and direct destinations. Internal navigation and generated record links use only the four current theme routes and `/work/`.
 
 ### Query intent, facets and classification
 

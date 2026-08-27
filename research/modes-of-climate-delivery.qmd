@@ -1,6 +1,6 @@
 ---
 title: "Modes of Climate Delivery"
-description: "We examine how climate action is authorised, financed, coordinated, implemented and maintained, and why similar interventions depend on different delivery configurations in different places."
+description: "How authority, finance, capability, coordination and participation combine to make climate action possible and durable."
 canonical-url: "/research/modes-of-climate-delivery.html"
 ---
 
@@ -10,10 +10,14 @@ canonical-url: "/research/modes-of-climate-delivery.html"
 
 <p class="page-deck"><strong>Through which institutional arrangements does urban climate action become possible and durable?</strong></p>
 
-We examine how climate action is authorised, financed, coordinated, implemented and maintained, and why similar interventions depend on different delivery configurations in different places.
+Evidence and ambition do not implement themselves. Urban climate action becomes possible through particular configurations of authority, finance, organisational capability, infrastructure provision, participation, coordination, sequencing and maintenance. Similar interventions may therefore follow very different delivery routes across cities.
+
+This theme compares how these configurations are assembled across city types, sectors and institutional settings. We examine which mechanisms make action operable, how responsibilities and resources are combined over time, why delivery arrangements endure or fail, and how they change as political, fiscal and social conditions shift. The aim is not to identify one universal delivery model, but to distinguish recurring patterns from context-dependent arrangements.
 
 ::: {.notice}
-**Part of a connected learning cycle.** Projects and cities may enter at different points. Evidence about consequences can revise judgements about existing knowledge and where new evidence matters.
+**Analytical boundary.** A delivery mode is a configuration through which change becomes operable. It is not merely a technology, sector, policy instrument or list of actors.
+
+**Place in the learning cycle.** Delivery arrangements shape which consequences occur, who experiences them and whether climate action can be maintained over time.
 :::
 
 ## Questions the lab investigates
@@ -22,38 +26,92 @@ We examine how climate action is authorised, financed, coordinated, implemented 
 - Which configurations of authority, capability and participation make delivery possible?
 - How do sequencing, contestation and institutional learning affect durability?
 
-## Analytical boundary
-
-- Treating a delivery mode as merely an intervention type, policy instrument, sector or list of actors.
-- Technical performance studies that do not examine enabling or delivery arrangements.
-
-## Lab research: core projects
+## Ongoing work
 
 ```{=html}
-<div class="compact-list"><p><a href="/projects/climate-delivery-modes.html">Climate delivery modes</a></p></div>
+<div class="record-list"><article class="record-card work-card" data-status="ongoing" data-type="research-programme" data-themes="modes-of-climate-delivery geographies-of-climate-learning" data-geography="canada global" data-method="comparative-case-study institutional-analysis policy-analysis" data-sector="cross-sectoral urban-infrastructure">
+  <p class="record-kicker">Ongoing research programme · Current CCLL work</p>
+  <h3><a href="/work/climate-delivery-modes.html">Climate delivery modes</a></h3>
+  <p>An ongoing comparative programme examining how authority, finance, organisational capability, infrastructure provision, participation, coordination, sequencing and maintenance combine to deliver urban climate action.</p>
+  <ul class="tag-list"><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Related)</span></li></ul>
+</article><article class="record-card work-card" data-status="ongoing" data-type="research-programme" data-themes="consequences-for-people-and-places where-new-evidence-matters modes-of-climate-delivery" data-geography="canada united-kingdom" data-method="place-based-modelling economic-appraisal distributional-analysis" data-sector="buildings transport health">
+  <p class="record-kicker">Ongoing research programme · Current CCLL work</p>
+  <h3><a href="/work/coben-place-based-model.html">CoBen: place-based co-benefits and co-costs</a></h3>
+  <p>An ongoing conditional, place-based scenario programme for assessing co-benefits and co-costs of climate action while retaining causal, geographical, delivery and valuation assumptions.</p>
+  <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a><span class="sr-only"> (Related)</span></li><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Related)</span></li></ul>
+</article><article class="record-card work-card" data-status="ongoing" data-type="research-line" data-themes="consequences-for-people-and-places where-new-evidence-matters modes-of-climate-delivery" data-geography="united-kingdom" data-method="occupational-analysis evidence-synthesis taxonomy-development network-analysis calibration" data-sector="labour-workforce">
+  <p class="record-kicker">Ongoing research line · Current CCLL work</p>
+  <h3><a href="/work/occupational-transition-requirements.html">Occupational transition requirements and occupation switching</a></h3>
+  <p>An ongoing research line developing transparent public-evidence methods for distinguishing same-occupation sector changes from transitions between occupations in low-carbon workforce planning.</p>
+  <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a><span class="sr-only"> (Related)</span></li><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Related)</span></li></ul>
+</article></div>
 ```
 
-## Lab research: related projects
+## Selected completed and foundational work
 
 ```{=html}
-<div class="compact-list"><p><a href="/projects/coben-place-based-model.html">CoBen: place-based co-benefits and co-costs</a></p><p><a href="/projects/occupational-transition-requirements.html">Occupational transition requirements and occupation switching</a></p></div>
+<div class="record-list"><article class="record-card publication-example" data-themes="modes-of-climate-delivery consequences-for-people-and-places">
+  <p class="record-kicker">Article · Foundational prior work · 2024</p>
+  <h3><a href="/publications/infrastructure-transitions-southern-cities.html">Infrastructure Transitions in Southern Cities: Organising Urban Service Delivery for Climate and Development</a></h3>
+  <p>The article examines the institutional organisation of urban service delivery and infrastructure transitions in Southern cities.</p>
+  <ul class="tag-list"><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Related)</span></li></ul>
+</article><article class="record-card publication-example" data-themes="modes-of-climate-delivery">
+  <p class="record-kicker">Preprint · Foundational prior work · 2022</p>
+  <h3><a href="/publications/missing-the-target-are-local-climate-targets-aligned-with-national-net-zero-ambitions.html">Missing the target: Are local climate targets aligned with national net zero ambitions?</a></h3>
+  <p>The repository abstract examines divisions of responsibility, capacity and coordination across national, regional and local governance.</p>
+  <ul class="tag-list"><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Primary)</span></li></ul>
+</article><article class="record-card publication-example" data-themes="modes-of-climate-delivery">
+  <p class="record-kicker">Article · Foundational prior work · 2021</p>
+  <h3><a href="/publications/supportive-governance-for-city-scale-low-carbon-building-retrofits-a-case-study-from-shang.html">Supportive governance for city-scale low carbon building retrofits: a case study from Shanghai</a></h3>
+  <p>The publisher record examines governance arrangements enabling city-scale low-carbon building retrofit in Shanghai.</p>
+  <ul class="tag-list"><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Primary)</span></li></ul>
+</article><article class="record-card publication-example" data-themes="modes-of-climate-delivery consequences-for-people-and-places">
+  <p class="record-kicker">Report · Foundational prior work · 2020</p>
+  <h3><a href="/publications/financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transi.html">Financing climate action with positive social impact: How banking can support a just transition in the UK</a></h3>
+  <p>The commissioning institution describes how banking and place-based finance can support delivery of a just transition.</p>
+  <ul class="tag-list"><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Related)</span></li></ul>
+</article><article class="record-card publication-example" data-themes="modes-of-climate-delivery geographies-of-climate-learning">
+  <p class="record-kicker">Article · Foundational prior work · 2020</p>
+  <h3><a href="/publications/integration-mitigation-adaptation-europe.html">Integration of mitigation and adaptation in urban climate change action plans in Europe: A systematic assessment</a></h3>
+  <p>The systematic assessment compares how European city plans institutionally integrate mitigation and adaptation.</p>
+  <ul class="tag-list"><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Related)</span></li></ul>
+</article><article class="record-card publication-example" data-themes="consequences-for-people-and-places modes-of-climate-delivery">
+  <p class="record-kicker">Article · Foundational prior work · 2018</p>
+  <h3><a href="/publications/kigali-economic-appraisal.html">The scope for low-carbon development in Kigali, Rwanda: An economic appraisal</a></h3>
+  <p>The appraisal examines investment and governance implications that condition the delivery of low-carbon options in Kigali.</p>
+  <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Related)</span></li></ul>
+</article><article class="record-card publication-example" data-themes="consequences-for-people-and-places modes-of-climate-delivery">
+  <p class="record-kicker">Article · Foundational prior work · 2016</p>
+  <h3><a href="/publications/low-carbon-cities-affordable.html">Low carbon cities: is ambitious action affordable?</a></h3>
+  <p>The article&#x27;s investment and affordability analysis bears on the financial conditions through which ambitious action can be delivered.</p>
+  <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Related)</span></li></ul>
+</article><article class="record-card publication-example" data-themes="consequences-for-people-and-places modes-of-climate-delivery">
+  <p class="record-kicker">Article · Foundational prior work · 2015</p>
+  <h3><a href="/publications/economic-case-climate-action-cities.html">Exploring the economic case for climate action in cities</a></h3>
+  <p>The analysis considers investment requirements and economic conditions shaping how city action may be financed and delivered.</p>
+  <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Related)</span></li></ul>
+</article></div>
 ```
 
-## Lab-authored publications and outputs
+## Research ideas
+
+These are possible future research directions for owner review. They are not commitments, funded activity or open opportunities.
 
 ```{=html}
-<div class="compact-list"><p><a href="/publications/infrastructure-transitions-southern-cities.html">Infrastructure Transitions in Southern Cities: Organising Urban Service Delivery for Climate and Development</a></p><p><a href="/publications/integration-mitigation-adaptation-europe.html">Integration of mitigation and adaptation in urban climate change action plans in Europe: A systematic assessment</a></p><p><a href="/publications/climate-policy-social-policy.html">Climate policy as social policy? A comprehensive assessment of the economic impact of climate action in the UK</a></p><p><a href="/publications/data-scaling-climate-action-governance-uk.html">Data Scaling: Implications for Climate Action and Governance in the UK</a></p><p><a href="/publications/kigali-economic-appraisal.html">The scope for low-carbon development in Kigali, Rwanda: An economic appraisal</a></p><p><a href="/publications/low-carbon-cities-affordable.html">Low carbon cities: is ambitious action affordable?</a></p><p><a href="/publications/economic-case-climate-action-cities.html">Exploring the economic case for climate action in cities</a></p></div>
+<div class="idea-grid"><article class="idea-card"><p class="idea-disclaimer">Research idea · not currently an active or funded project</p><h3>Which configurations of authority, finance, capability and participation recur across different city types?</h3><p>Comparing configurations may reveal recurring mechanisms while preserving the institutional conditions that make them work differently across places.</p><h4>Suggested methods</h4><ul class="method-list"><li>comparative case studies</li><li>qualitative comparative analysis</li><li>institutional mapping</li><li>process tracing</li><li>configurational analysis</li></ul></article><article class="idea-card"><p class="idea-disclaimer">Research idea · not currently an active or funded project</p><h3>How do delivery arrangements change between policy adoption, implementation and long-term maintenance?</h3><p>Following arrangements over time could identify where authority, resources and accountability shift after policy adoption.</p><h4>Suggested methods</h4><ul class="method-list"><li>longitudinal process tracing</li><li>event sequence analysis</li><li>policy document archives</li><li>organisational interviews</li><li>implementation history comparison</li></ul></article><article class="idea-card"><p class="idea-disclaimer">Research idea · not currently an active or funded project</p><h3>How do federal and provincial institutions enable or constrain municipal climate delivery in Canada?</h3><p>Municipal action depends on intergovernmental authority and finance, but these relationships may vary across provinces, sectors and city types.</p><h4>Suggested methods</h4><ul class="method-list"><li>multilevel governance comparison</li><li>intergovernmental fiscal analysis</li><li>paired municipal cases</li><li>policy network analysis</li><li>comparative institutional analysis</li></ul></article></div>
 ```
 
-## Connections across the programme
+## Connections across the learning cycle
 
-- [Geographies of Climate Learning](/research/geographies-of-climate-learning.html) — Existing knowledge and its relevance across places.
-- [Where New Evidence Matters](/research/where-new-evidence-matters.html) — Choices about which uncertainties and evidence gaps merit investigation.
-- [Consequences for People and Places](/research/consequences-for-people-and-places.html) — Observed outcomes, their distribution, and evidence that informs subsequent decisions.
+- **Input from [Where New Evidence Matters](/research/where-new-evidence-matters.html):** New evidence matters most when it changes what decision-makers understand about how climate action can be delivered or what it may cause.
+- **Next stage — [Consequences for People and Places](/research/consequences-for-people-and-places.html):** Delivery arrangements shape which consequences occur, who experiences them and whether climate action can be maintained over time.
+- **Return loop:** Consequences generate new evidence, reveal unresolved questions and revise what other cities may plausibly learn.
 
 ## External horizon scanning: Current Conversations
 
-These externally sourced items are separate from the lab's projects and outputs. Classification indicates topical connection, not endorsement, evidential quality or applicability to another city.
+Items are collected, classified and summarised automatically to show where the lab’s topics are being discussed. Inclusion does not indicate endorsement, evidential quality or applicability to a particular city.
+
+These external records are separate from lab-authored work, completed and foundational work, and research ideas.
 
 ```{=html}
 <div class="compact-list"><p><a href="/current-conversations/atlantic-climate-finance.html">Assessing intersectional inequities in climate finance across Atlantic Canada</a><br><span>Automatically identified · no AI generation recorded · not reviewed by the lab</span></p><p><a href="/current-conversations/bc-community-infrastructure.html">Building Communities Strong in British Columbia with 54 new infrastructure projects</a><br><span>Captured fixture · no AI generation recorded · not reviewed by the lab</span></p><p><a href="/current-conversations/bc-lgcap-nonrenewal.html">Local Government Climate Action Program has not been renewed</a><br><span>Captured fixture · no AI generation recorded · not reviewed by the lab</span></p></div>

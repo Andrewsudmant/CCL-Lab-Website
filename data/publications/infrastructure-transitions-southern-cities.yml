@@ -29,6 +29,10 @@ theme_relationships:
     relationship: primary
     rationale: The article examines the institutional organisation of urban service delivery and infrastructure transitions in Southern cities.
     evidence_source: https://doi.org/10.17645/up.8302
+  - theme_id: consequences-for-people-and-places
+    relationship: secondary
+    rationale: The paper connects urban service-delivery arrangements to climate and development consequences in Southern cities.
+    evidence_source: https://doi.org/10.17645/up.8302
 geographies: [global]
 governance_scales: [municipal]
 methods: [institutional-analysis, comparative-case-study]

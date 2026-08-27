@@ -29,6 +29,10 @@ theme_relationships:
     relationship: primary
     rationale: The article appraises investment costs and wider economic benefits of city-level climate action.
     evidence_source: https://doi.org/10.1016/j.gloenvcha.2015.07.009
+  - theme_id: modes-of-climate-delivery
+    relationship: secondary
+    rationale: The analysis considers investment requirements and economic conditions shaping how city action may be financed and delivered.
+    evidence_source: https://doi.org/10.1016/j.gloenvcha.2015.07.009
 geographies: [global]
 governance_scales: [municipal]
 methods: [economic-appraisal, comparative-case-study]

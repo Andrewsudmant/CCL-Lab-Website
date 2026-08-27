@@ -1,6 +1,6 @@
 ---
 title: "Geographies of Climate Learning"
-description: "We study how urban climate knowledge is distributed across places, which cities can plausibly learn from one another, and how institutional and geographic context shapes the relevance of evidence produced elsewhere."
+description: "How place shapes which urban climate knowledge is produced, recognised and potentially useful elsewhere."
 canonical-url: "/research/geographies-of-climate-learning.html"
 ---
 
@@ -10,10 +10,14 @@ canonical-url: "/research/geographies-of-climate-learning.html"
 
 <p class="page-deck"><strong>How does place shape which urban climate knowledge is produced, recognised and useful elsewhere?</strong></p>
 
-We study how urban climate knowledge is distributed across places, which cities can plausibly learn from one another, and how institutional and geographic context shapes the relevance of evidence produced elsewhere.
+Cities rarely possess complete local evidence for every climate decision, so they draw on studies, cases, models and practical experience produced elsewhere. Yet the relevance of that knowledge depends on more than geographical proximity or superficial similarity. Institutional arrangements, infrastructure, climate, political authority, data systems and social conditions may all affect whether a finding remains useful in another setting.
+
+This theme studies the geography of urban climate knowledge: where evidence is produced, which cities and populations are made visible, how particular cases become reference points, and under what conditions findings may inform decisions beyond their original location. We examine not only whether knowledge travels, but also how it is interpreted, adapted, combined or rejected as it moves between places.
 
 ::: {.notice}
-**Part of a connected learning cycle.** Projects and cities may enter at different points. Evidence about consequences can revise judgements about existing knowledge and where new evidence matters.
+**Analytical boundary.** This theme concerns existing knowledge and the conditions under which it may be relevant elsewhere. It does not assume that findings transfer unchanged between cities.
+
+**Place in the learning cycle.** Mapping the reach and limits of existing knowledge reveals which unresolved questions could be consequential enough to justify new research.
 :::
 
 ## Questions the lab investigates
@@ -22,38 +26,82 @@ We study how urban climate knowledge is distributed across places, which cities 
 - Which cities can plausibly learn from one another, and under what conditions?
 - How do institutional and geographic contexts shape replication, comparison and case-study usefulness?
 
-## Analytical boundary
-
-- Claims that evidence transfers intact or applies unchanged between cities.
-- Simple inventories of policy adoption that do not examine evidence, comparison or learning.
-
-## Lab research: core projects
+## Ongoing work
 
 ```{=html}
-<div class="compact-list"><p><a href="/projects/data-methodologies-climate-impact.html">Data Methodologies for Climate Impact Assessment</a></p><p><a href="/projects/geography-urban-climate-evidence.html">Geography of urban climate evidence</a></p></div>
+<div class="record-list"><article class="record-card work-card" data-status="ongoing" data-type="research-programme" data-themes="modes-of-climate-delivery geographies-of-climate-learning" data-geography="canada global" data-method="comparative-case-study institutional-analysis policy-analysis" data-sector="cross-sectoral urban-infrastructure">
+  <p class="record-kicker">Ongoing research programme · Current CCLL work</p>
+  <h3><a href="/work/climate-delivery-modes.html">Climate delivery modes</a></h3>
+  <p>An ongoing comparative programme examining how authority, finance, organisational capability, infrastructure provision, participation, coordination, sequencing and maintenance combine to deliver urban climate action.</p>
+  <ul class="tag-list"><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Related)</span></li></ul>
+</article><article class="record-card work-card" data-status="ongoing" data-type="paper" data-themes="geographies-of-climate-learning where-new-evidence-matters" data-geography="global" data-method="evidence-mapping literature-review spatial-analysis" data-sector="cross-sectoral">
+  <p class="record-kicker">Paper · Work begun before CCLL and continuing</p>
+  <h3><a href="/work/geography-urban-climate-evidence.html">Who can learn from whom? The geography of urban climate evidence</a></h3>
+  <p>An ongoing paper mapping where urban climate evidence is produced and examining the conditions under which documented findings may be relevant to other cities.</p>
+  <ul class="tag-list"><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a><span class="sr-only"> (Related)</span></li></ul>
+</article><article class="record-card work-card" data-status="ongoing" data-type="tool" data-themes="consequences-for-people-and-places geographies-of-climate-learning" data-geography="united-kingdom" data-method="place-based-modelling spatial-analysis data-visualization" data-sector="cross-sectoral">
+  <p class="record-kicker">Active tool · Foundational prior work</p>
+  <h3><a href="/work/uk-co-benefits-atlas-tool.html">Interactive UK Co-Benefits Atlas</a></h3>
+  <p>The active public interface associated with the completed UK Co-Benefits Atlas project, providing access to place-based estimates and documented methods.</p>
+  <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Related)</span></li></ul>
+</article></div>
 ```
 
-## Lab research: related projects
+## Selected completed and foundational work
 
 ```{=html}
-<div class="compact-list"><p><a href="/projects/climate-delivery-modes.html">Climate delivery modes</a></p><p><a href="/projects/uk-co-benefits-atlas.html">UK Co-Benefits Atlas</a></p></div>
+<div class="record-list"><article class="record-card work-card" data-status="completed" data-type="project" data-themes="geographies-of-climate-learning consequences-for-people-and-places" data-geography="united-kingdom" data-method="place-based-modelling spatial-analysis economic-appraisal" data-sector="cross-sectoral">
+  <p class="record-kicker">Project · Foundational prior work</p>
+  <h3><a href="/work/data-methodologies-climate-impact.html">Data Methodologies for Climate Impact Assessment</a></h3>
+  <p>A completed project on scaling and combining data for place-based climate-impact assessment, including relationships between national evidence and local decision contexts.</p>
+  <ul class="tag-list"><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Related)</span></li></ul>
+</article><article class="record-card work-card" data-status="completed" data-type="project" data-themes="consequences-for-people-and-places geographies-of-climate-learning" data-geography="united-kingdom" data-method="place-based-modelling spatial-analysis data-visualization" data-sector="cross-sectoral">
+  <p class="record-kicker">Project · Foundational prior work</p>
+  <h3><a href="/work/uk-co-benefits-atlas.html">UK Co-Benefits Atlas</a></h3>
+  <p>A completed project that developed a place-based atlas for examining how estimated benefits and costs of climate action vary across UK communities.</p>
+  <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Related)</span></li></ul>
+</article><article class="record-card publication-example" data-themes="geographies-of-climate-learning where-new-evidence-matters">
+  <p class="record-kicker">Article · Foundational prior work · 2024</p>
+  <h3><a href="/publications/replicate-generalize-urban-research.html">Replicate and generalize to make urban research coherent</a></h3>
+  <p>The publisher abstract centres replication, generalisability and whether urban findings remain useful across contexts.</p>
+  <ul class="tag-list"><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a><span class="sr-only"> (Related)</span></li></ul>
+</article><article class="record-card publication-example" data-themes="geographies-of-climate-learning">
+  <p class="record-kicker">Article · Foundational prior work · 2022</p>
+  <h3><a href="/publications/using-crowdsourced-data-to-estimate-the-carbon-footprints-of-global-cities.html">Using crowdsourced data to estimate the carbon footprints of global cities</a></h3>
+  <p>The institutional full-text record supports global city comparison and responsibility allocation using a common estimation method.</p>
+  <ul class="tag-list"><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Primary)</span></li></ul>
+</article><article class="record-card publication-example" data-themes="modes-of-climate-delivery geographies-of-climate-learning">
+  <p class="record-kicker">Article · Foundational prior work · 2020</p>
+  <h3><a href="/publications/integration-mitigation-adaptation-europe.html">Integration of mitigation and adaptation in urban climate change action plans in Europe: A systematic assessment</a></h3>
+  <p>Its cross-city systematic comparison supports analysis of recurring and place-dependent planning arrangements.</p>
+  <ul class="tag-list"><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Related)</span></li></ul>
+</article><article class="record-card publication-example" data-themes="geographies-of-climate-learning">
+  <p class="record-kicker">Article · Foundational prior work · 2018</p>
+  <h3><a href="/publications/producer-cities-and-consumer-cities-using-production-and-consumption-based-carbon-accounts.html">Producer cities and consumer cities: Using production- and consumption-based carbon accounts to guide climate action in China, the UK, and the US</a></h3>
+  <p>The paper compares production- and consumption-based city accounts across China, the UK and the United States.</p>
+  <ul class="tag-list"><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Primary)</span></li></ul>
+</article></div>
 ```
 
-## Lab-authored publications and outputs
+## Research ideas
+
+These are possible future research directions for owner review. They are not commitments, funded activity or open opportunities.
 
 ```{=html}
-<div class="compact-list"><p><a href="/publications/who-can-learn-geography-urban-climate-evidence.html">Who can learn from whom? The geography of urban climate evidence</a></p><p><a href="/publications/replicate-generalize-urban-research.html">Replicate and generalize to make urban research coherent</a></p><p><a href="/publications/integration-mitigation-adaptation-europe.html">Integration of mitigation and adaptation in urban climate change action plans in Europe: A systematic assessment</a></p></div>
+<div class="idea-grid"><article class="idea-card"><p class="idea-disclaimer">Research idea · not currently an active or funded project</p><h3>Under what conditions can findings produced in one city inform a decision in another?</h3><p>Clearer conditions for relevance could help cities use external evidence without assuming that it transfers unchanged.</p><h4>Suggested methods</h4><ul class="method-list"><li>transportability and generalisability</li><li>hierarchical meta analysis</li><li>matched city comparison</li><li>city typologies</li><li>geospatial analysis</li></ul></article><article class="idea-card"><p class="idea-disclaimer">Research idea · not currently an active or funded project</p><h3>Which cities and populations are structurally absent from influential urban climate evidence?</h3><p>Systematic absence may narrow what is treated as general knowledge and leave important conditions invisible to research and policy.</p><h4>Suggested methods</h4><ul class="method-list"><li>bibliometric mapping</li><li>natural language processing</li><li>geocoding</li><li>citation network analysis</li><li>population vulnerability comparison</li></ul></article><article class="idea-card"><p class="idea-disclaimer">Research idea · not currently an active or funded project</p><h3>How is evidence changed as it moves through city networks, intermediary organisations and policy institutions?</h3><p>Tracing adaptation and reuse could show why apparently shared evidence produces different understandings across institutions and places.</p><h4>Suggested methods</h4><ul class="method-list"><li>comparative process tracing</li><li>policy document analysis</li><li>interviews</li><li>network analysis</li><li>citation and document reuse tracing</li></ul></article></div>
 ```
 
-## Connections across the programme
+## Connections across the learning cycle
 
-- [Where New Evidence Matters](/research/where-new-evidence-matters.html) — Choices about which uncertainties and evidence gaps merit investigation.
-- [Modes of Climate Delivery](/research/modes-of-climate-delivery.html) — The arrangements through which climate action becomes operable.
-- [Consequences for People and Places](/research/consequences-for-people-and-places.html) — Observed outcomes, their distribution, and evidence that informs subsequent decisions.
+- **Input from [Consequences for People and Places](/research/consequences-for-people-and-places.html):** Observed consequences generate new knowledge, expose the limits of earlier assumptions and change what other cities may plausibly learn.
+- **Next stage — [Where New Evidence Matters](/research/where-new-evidence-matters.html):** Mapping the reach and limits of existing knowledge reveals which unresolved questions could be consequential enough to justify new research.
+- **Return loop:** Consequences generate new evidence, reveal unresolved questions and revise what other cities may plausibly learn.
 
 ## External horizon scanning: Current Conversations
 
-These externally sourced items are separate from the lab's projects and outputs. Classification indicates topical connection, not endorsement, evidential quality or applicability to another city.
+Items are collected, classified and summarised automatically to show where the lab’s topics are being discussed. Inclusion does not indicate endorsement, evidential quality or applicability to a particular city.
+
+These external records are separate from lab-authored work, completed and foundational work, and research ideas.
 
 ```{=html}
 <div class="compact-list"><p><a href="/current-conversations/berkeley-synthesis-launch.html">From Observation to Decision: An Introduction to Synthesis by Berkeley Earth</a><br><span>Captured fixture · no AI generation recorded · not reviewed by the lab</span></p><p><a href="/current-conversations/coolcity-europe-tool-news.html">Planning data-driven climate adaptation actions</a><br><span>Captured fixture · no AI generation recorded · not reviewed by the lab</span></p><p><a href="/current-conversations/era5-urban-biases.html">Evaluating ERA5-Land air temperature and dew point biases in built-up environments in the UK</a><br><span>Automatically identified · no AI generation recorded · not reviewed by the lab</span></p></div>

@@ -6,6 +6,7 @@ from scripts.content import ROOT
 from scripts.package_handoff import package
 from scripts.package_owner_review import package as package_owner_review
 from scripts.package_gate_5c_review import package as package_gate_5c_review
+from scripts.package_gate_5d_review import package as package_gate_5d_review
 
 
 def test_handoff_package_contains_summary_and_governance(tmp_path) -> None:
@@ -51,3 +52,19 @@ def test_gate_5c_owner_review_contains_only_current_review_screenshots(tmp_path)
         assert "review/query-migration.md" in names
         assert "review/openalex-diagnostics.md" in names
         assert not any("gate-5b" in name or "thematic-architecture-reframe-v1" in name for name in names)
+
+
+def test_gate_5d_owner_review_contains_work_ideas_migration_and_site(tmp_path) -> None:
+    destination = tmp_path / "gate-5d-owner-review.zip"
+    package_gate_5d_review(destination)
+    with zipfile.ZipFile(destination) as archive:
+        names = set(archive.namelist())
+        assert "00_READ_ME_FIRST.md" in names
+        assert "MANIFEST.txt" in names
+        assert "rendered-site/work.html" in names
+        assert "rendered-site/work/geography-urban-climate-evidence.html" in names
+        assert "rendered-site/projects/geography-urban-climate-evidence.html" in names
+        assert "review/migration.md" in names
+        assert "review/content/theme-examples-audit-gate-5d.md" in names
+        assert "source/schemas/research-work.schema.json" in names
+        assert any(name.startswith("source/data/research-ideas/") for name in names)

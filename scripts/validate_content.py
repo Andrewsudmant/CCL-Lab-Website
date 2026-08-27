@@ -88,6 +88,16 @@ def validate_all() -> list[str]:
                 if not any(term in lowered for term in consequential):
                     errors.append(f"{label}: Theme 2 query lacks a consequential evidence or uncertainty concept")
 
+    publication_examples = load_yaml(ROOT / "config/publication_theme_examples.yml")
+    errors.extend(schema_errors(publication_examples, load_schema("publication-theme-examples.schema.json"), "config/publication_theme_examples.yml"))
+    for example in publication_examples.get("records", []):
+        label = f"publication theme example {example.get('record_id')}"
+        relationship_themes = [item.get("theme_id") for item in example.get("theme_relationships", [])]
+        errors.extend(theme_reference_errors([example.get("primary_theme"), *example.get("secondary_themes", []), *relationship_themes], label, CANONICAL_THEMES))
+        assigned = {example.get("primary_theme"), *example.get("secondary_themes", [])}
+        if assigned != set(relationship_themes):
+            errors.append(f"{label}: every assigned theme requires exactly one rationale")
+
     records: dict[str, list[dict[str, Any]]] = {}
     for kind, schema_name in (
         ("people", "person.schema.json"),
@@ -265,6 +275,9 @@ def unique_and_crosslink_errors(records: dict[str, list[dict[str, Any]]]) -> lis
         errors.extend(theme_reference_errors(relationship_themes, f"publication {publication.get('record_id')} relationships", CANONICAL_THEMES))
         if len(relationship_themes) != len(set(relationship_themes)):
             errors.append(f"publication {publication.get('record_id')}: theme relationships must be unique")
+        assigned = {publication.get("primary_theme"), *publication.get("secondary_themes", [])}
+        if publication.get("theme_relationships") and assigned != set(relationship_themes):
+            errors.append(f"publication {publication.get('record_id')}: every assigned selected-example theme requires a rationale")
     return errors
 
 

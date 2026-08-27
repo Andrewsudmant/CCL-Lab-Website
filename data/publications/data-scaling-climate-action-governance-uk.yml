@@ -33,6 +33,10 @@ theme_relationships:
     relationship: secondary
     rationale: The paper identifies specific future analysis needed because scaling choices may affect efficacy and equity interpretations.
     evidence_source: https://link.springer.com/article/10.1007/s00267-024-01991-5
+  - theme_id: consequences-for-people-and-places
+    relationship: secondary
+    rationale: The paper explicitly considers how scaling may alter the equity implications visible in climate appraisal.
+    evidence_source: https://link.springer.com/article/10.1007/s00267-024-01991-5
 geographies: [united-kingdom]
 governance_scales: [federal-national, municipal, neighbourhood]
 methods: [place-based-modelling, spatial-analysis, economic-appraisal]

@@ -1,6 +1,6 @@
 ---
 title: "Research theme route updated"
-description: "We develop approaches for identifying where new cases, evaluations, datasets and forms of knowledge could resolve consequential uncertainty or expand the learning options available to cities."
+description: "Which additional cases, evaluations, datasets or forms of knowledge could make a consequential difference to urban climate decisions?"
 canonical-url: "/research/where-new-evidence-matters.html"
 ---
 

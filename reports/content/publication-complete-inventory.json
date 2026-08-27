@@ -121,6 +121,12 @@
           "relationship": "primary",
           "rationale": "The preprint documents design choices for presenting place-based climate benefits and costs through the UK Atlas.",
           "evidence_source": "https://arxiv.org/abs/2604.20781v2"
+        },
+        {
+          "theme_id": "geographies-of-climate-learning",
+          "relationship": "secondary",
+          "rationale": "The design account concerns how highly localised evidence is organised and communicated across UK communities.",
+          "evidence_source": "https://arxiv.org/abs/2604.20781v2"
         }
       ],
       "geographies": [
@@ -478,6 +484,12 @@
           "relationship": "primary",
           "rationale": "The article examines the institutional organisation of urban service delivery and infrastructure transitions in Southern cities.",
           "evidence_source": "https://doi.org/10.17645/up.8302"
+        },
+        {
+          "theme_id": "consequences-for-people-and-places",
+          "relationship": "secondary",
+          "rationale": "The paper connects urban service-delivery arrangements to climate and development consequences in Southern cities.",
+          "evidence_source": "https://doi.org/10.17645/up.8302"
         }
       ],
       "geographies": [
@@ -629,9 +641,7 @@
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Published before the lab was established and foundational to its co-benefits and policy-appraisal programme.",
       "primary_theme": "consequences-for-people-and-places",
-      "secondary_themes": [
-        "modes-of-climate-delivery"
-      ],
+      "secondary_themes": [],
       "theme_relationships": [
         {
           "theme_id": "consequences-for-people-and-places",
@@ -813,6 +823,12 @@
           "theme_id": "where-new-evidence-matters",
           "relationship": "secondary",
           "rationale": "The paper identifies specific future analysis needed because scaling choices may affect efficacy and equity interpretations.",
+          "evidence_source": "https://link.springer.com/article/10.1007/s00267-024-01991-5"
+        },
+        {
+          "theme_id": "consequences-for-people-and-places",
+          "relationship": "secondary",
+          "rationale": "The paper explicitly considers how scaling may alter the equity implications visible in climate appraisal.",
           "evidence_source": "https://link.springer.com/article/10.1007/s00267-024-01991-5"
         }
       ],
@@ -1214,9 +1230,7 @@
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "modes-of-climate-delivery",
-      "secondary_themes": [
-        "consequences-for-people-and-places"
-      ],
+      "secondary_themes": [],
       "theme_relationships": [
         {
           "theme_id": "modes-of-climate-delivery",
@@ -1485,9 +1499,7 @@
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "modes-of-climate-delivery",
-      "secondary_themes": [
-        "geographies-of-climate-learning"
-      ],
+      "secondary_themes": [],
       "theme_relationships": [
         {
           "theme_id": "modes-of-climate-delivery",
@@ -1559,9 +1571,7 @@
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "where-new-evidence-matters",
-      "secondary_themes": [
-        "consequences-for-people-and-places"
-      ],
+      "secondary_themes": [],
       "theme_relationships": [
         {
           "theme_id": "where-new-evidence-matters",
@@ -1823,6 +1833,12 @@
           "theme_id": "modes-of-climate-delivery",
           "relationship": "primary",
           "rationale": "The commissioning institution describes how banking and place-based finance can support delivery of a just transition.",
+          "evidence_source": "https://www.lse.ac.uk/granthaminstitute/publication/financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transition-in-the-uk/"
+        },
+        {
+          "theme_id": "consequences-for-people-and-places",
+          "relationship": "secondary",
+          "rationale": "The report makes positive social impact and place-based just-transition consequences explicit objectives of financing.",
           "evidence_source": "https://www.lse.ac.uk/granthaminstitute/publication/financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transition-in-the-uk/"
         }
       ],
@@ -2178,9 +2194,7 @@
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
       "primary_theme": "consequences-for-people-and-places",
-      "secondary_themes": [
-        "modes-of-climate-delivery"
-      ],
+      "secondary_themes": [],
       "theme_relationships": [
         {
           "theme_id": "consequences-for-people-and-places",
@@ -2255,6 +2269,12 @@
           "theme_id": "consequences-for-people-and-places",
           "relationship": "primary",
           "rationale": "The article evaluates the local economic consequences and investment implications of low-carbon options in Kigali.",
+          "evidence_source": "https://doi.org/10.1002/sd.1906"
+        },
+        {
+          "theme_id": "modes-of-climate-delivery",
+          "relationship": "secondary",
+          "rationale": "The appraisal examines investment and governance implications that condition the delivery of low-carbon options in Kigali.",
           "evidence_source": "https://doi.org/10.1002/sd.1906"
         }
       ],
@@ -2398,9 +2418,7 @@
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "geographies-of-climate-learning",
-      "secondary_themes": [
-        "where-new-evidence-matters"
-      ],
+      "secondary_themes": [],
       "theme_relationships": [
         {
           "theme_id": "geographies-of-climate-learning",
@@ -2604,9 +2622,7 @@
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "where-new-evidence-matters",
-      "secondary_themes": [
-        "consequences-for-people-and-places"
-      ],
+      "secondary_themes": [],
       "theme_relationships": [
         {
           "theme_id": "where-new-evidence-matters",
@@ -2830,6 +2846,12 @@
           "theme_id": "consequences-for-people-and-places",
           "relationship": "primary",
           "rationale": "The article directly examines the affordability and economic consequences of ambitious low-carbon city action.",
+          "evidence_source": "https://doi.org/10.1007/s10584-016-1751-9"
+        },
+        {
+          "theme_id": "modes-of-climate-delivery",
+          "relationship": "secondary",
+          "rationale": "The article's investment and affordability analysis bears on the financial conditions through which ambitious action can be delivered.",
           "evidence_source": "https://doi.org/10.1007/s10584-016-1751-9"
         }
       ],
@@ -3116,6 +3138,12 @@
           "theme_id": "consequences-for-people-and-places",
           "relationship": "primary",
           "rationale": "The article appraises investment costs and wider economic benefits of city-level climate action.",
+          "evidence_source": "https://doi.org/10.1016/j.gloenvcha.2015.07.009"
+        },
+        {
+          "theme_id": "modes-of-climate-delivery",
+          "relationship": "secondary",
+          "rationale": "The analysis considers investment requirements and economic conditions shaping how city action may be financed and delivered.",
           "evidence_source": "https://doi.org/10.1016/j.gloenvcha.2015.07.009"
         }
       ],

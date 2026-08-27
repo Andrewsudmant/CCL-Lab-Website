@@ -8,7 +8,15 @@ Current Conversations is horizon scanning around the questions the lab studies. 
 
 The compact unreviewed label follows the record, not the system's potential capabilities. Use **Identified and summarized using AI · not reviewed by the lab** only when `ai_provenance.used=true`. Captured fixtures with `used=false` say **Captured fixture · no AI generation recorded · not reviewed by the lab**. The landing page also warns that summaries may contain errors or omit context and asks readers to consult original sources.
 
-The four research-theme titles, guiding questions, descriptions and analytical boundaries are owner-approved and canonical in `config/research_scope.yml`. Project mappings must be supported by existing project material; optional learning fields remain absent when evidence is insufficient. Methods and geographies must not be promoted into competing top-level themes.
+The four research-theme titles, guiding questions, descriptions and analytical boundaries are owner-approved and canonical in `config/research_scope.yml`. Themes do not have active/completed or maturity status. Research-work relationships must be supported by project material, a canonical publication, an institutional record or an explicit owner-approved programme description; optional learning fields remain absent when evidence is insufficient. Methods and geographies must not be promoted into competing top-level themes.
+
+## Themes, work, outputs and ideas
+
+Themes are current intellectual questions. Research work records actual ongoing or completed activity and must identify its type and relationship to the lab. Prior work may appear as a defensible example of a current theme without being relabelled as a CCLL output. A standalone paper may connect directly to themes and must not receive an invented project parent. Bibliographic facts stay in the canonical publication record and are derived by work rendering rather than copied.
+
+Research ideas are a separate editorial class. Each must state a question, why it may matter, suggested methods, owner-review state and the exact non-active/non-funded disclaimer. Ideas contain no invented funders, partners, dates, deliverables, findings or recruitment claims. They are excluded from Work, publications, Current Conversations, RSS and active/funded counts.
+
+Selected publication examples require a recorded thematic rationale and the authoritative evidence source used to support it. Titles alone are insufficient. MDPI publications may remain in the complete verified bibliography under owner policy but cannot become selected thematic examples.
 
 ## Required provenance
 

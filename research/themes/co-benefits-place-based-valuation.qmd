@@ -1,6 +1,6 @@
 ---
 title: "Research theme route updated"
-description: "We study how climate action affects health, equity, social cohesion and other dimensions of wellbeing, including how benefits, burdens and risks are distributed across populations and places."
+description: "What climate action changes for different people and places, including benefits, burdens, risks and trade-offs over time."
 canonical-url: "/research/consequences-for-people-and-places.html"
 ---
 

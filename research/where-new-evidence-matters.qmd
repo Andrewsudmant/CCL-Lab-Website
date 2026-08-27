@@ -1,6 +1,6 @@
 ---
 title: "Where New Evidence Matters"
-description: "We develop approaches for identifying where new cases, evaluations, datasets and forms of knowledge could resolve consequential uncertainty or expand the learning options available to cities."
+description: "Which additional cases, evaluations, datasets or forms of knowledge could make a consequential difference to urban climate decisions?"
 canonical-url: "/research/where-new-evidence-matters.html"
 ---
 
@@ -10,10 +10,14 @@ canonical-url: "/research/where-new-evidence-matters.html"
 
 <p class="page-deck"><strong>Which new evidence would most improve urban climate decisions?</strong></p>
 
-We develop approaches for identifying where new cases, evaluations, datasets and forms of knowledge could resolve consequential uncertainty or expand the learning options available to cities.
+Once the limits of existing evidence become visible, a further question follows: which additional evidence would materially improve decisions? The absence of a study does not, by itself, establish a research priority. Some gaps may have little consequence, while a carefully chosen new case, evaluation, dataset or causal test may resolve uncertainty for many cities.
+
+This theme examines where new evidence could alter an appraisal, clarify an important mechanism, correct systematic exclusion or expand the range of cities able to learn. It connects evidence mapping with choices about research design, asking not only where knowledge is missing, but where producing new knowledge could make a consequential difference.
 
 ::: {.notice}
-**Part of a connected learning cycle.** Projects and cities may enter at different points. Evidence about consequences can revise judgements about existing knowledge and where new evidence matters.
+**Analytical boundary.** This theme concerns prospective choices about what evidence should be produced next. A data gap, new tool or under-studied location is not automatically a research priority.
+
+**Place in the learning cycle.** New evidence matters most when it changes what decision-makers understand about how climate action can be delivered or what it may cause.
 :::
 
 ## Questions the lab investigates
@@ -22,42 +26,75 @@ We develop approaches for identifying where new cases, evaluations, datasets and
 - Where could a new case, evaluation or dataset clarify an important mechanism?
 - Which systematic exclusions limit the learning options available to multiple cities?
 
-## Analytical boundary
-
-- Treating every geographical evidence gap as equally important.
-- Tool or dataset announcements without a consequential evidence question.
-- Automated research-priority scores or context-free rankings of evidence needs.
-
-## Lab research: core projects
+## Ongoing work
 
 ```{=html}
-<p class="empty-compact">No verified records are published in this view yet.</p>
+<div class="record-list"><article class="record-card work-card" data-status="ongoing" data-type="research-programme" data-themes="consequences-for-people-and-places where-new-evidence-matters modes-of-climate-delivery" data-geography="canada united-kingdom" data-method="place-based-modelling economic-appraisal distributional-analysis" data-sector="buildings transport health">
+  <p class="record-kicker">Ongoing research programme · Current CCLL work</p>
+  <h3><a href="/work/coben-place-based-model.html">CoBen: place-based co-benefits and co-costs</a></h3>
+  <p>An ongoing conditional, place-based scenario programme for assessing co-benefits and co-costs of climate action while retaining causal, geographical, delivery and valuation assumptions.</p>
+  <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a><span class="sr-only"> (Related)</span></li><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Related)</span></li></ul>
+</article><article class="record-card work-card" data-status="ongoing" data-type="paper" data-themes="geographies-of-climate-learning where-new-evidence-matters" data-geography="global" data-method="evidence-mapping literature-review spatial-analysis" data-sector="cross-sectoral">
+  <p class="record-kicker">Paper · Work begun before CCLL and continuing</p>
+  <h3><a href="/work/geography-urban-climate-evidence.html">Who can learn from whom? The geography of urban climate evidence</a></h3>
+  <p>An ongoing paper mapping where urban climate evidence is produced and examining the conditions under which documented findings may be relevant to other cities.</p>
+  <ul class="tag-list"><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a><span class="sr-only"> (Related)</span></li></ul>
+</article><article class="record-card work-card" data-status="ongoing" data-type="research-line" data-themes="consequences-for-people-and-places where-new-evidence-matters modes-of-climate-delivery" data-geography="united-kingdom" data-method="occupational-analysis evidence-synthesis taxonomy-development network-analysis calibration" data-sector="labour-workforce">
+  <p class="record-kicker">Ongoing research line · Current CCLL work</p>
+  <h3><a href="/work/occupational-transition-requirements.html">Occupational transition requirements and occupation switching</a></h3>
+  <p>An ongoing research line developing transparent public-evidence methods for distinguishing same-occupation sector changes from transitions between occupations in low-carbon workforce planning.</p>
+  <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a><span class="sr-only"> (Related)</span></li><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Related)</span></li></ul>
+</article></div>
 ```
 
-## Lab research: related projects
+## Selected completed and foundational work
 
 ```{=html}
-<div class="compact-list"><p><a href="/projects/coben-place-based-model.html">CoBen: place-based co-benefits and co-costs</a></p><p><a href="/projects/geography-urban-climate-evidence.html">Geography of urban climate evidence</a></p><p><a href="/projects/occupational-transition-requirements.html">Occupational transition requirements and occupation switching</a></p></div>
+<div class="record-list"><article class="record-card publication-example" data-themes="geographies-of-climate-learning where-new-evidence-matters">
+  <p class="record-kicker">Article · Foundational prior work · 2024</p>
+  <h3><a href="/publications/replicate-generalize-urban-research.html">Replicate and generalize to make urban research coherent</a></h3>
+  <p>The paper calls for future testing of replication and generalisability where it could improve cumulative urban research.</p>
+  <ul class="tag-list"><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a><span class="sr-only"> (Related)</span></li></ul>
+</article><article class="record-card publication-example" data-themes="geographies-of-climate-learning where-new-evidence-matters consequences-for-people-and-places">
+  <p class="record-kicker">Article · Foundational prior work · 2024</p>
+  <h3><a href="/publications/data-scaling-climate-action-governance-uk.html">Data Scaling: Implications for Climate Action and Governance in the UK</a></h3>
+  <p>The paper identifies specific future analysis needed because scaling choices may affect efficacy and equity interpretations.</p>
+  <ul class="tag-list"><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a><span class="sr-only"> (Related)</span></li><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Related)</span></li></ul>
+</article><article class="record-card publication-example" data-themes="where-new-evidence-matters">
+  <p class="record-kicker">Article · Foundational prior work · 2021</p>
+  <h3><a href="/publications/fair-weather-forecasting-the-shortcomings-of-big-data-for-sustainable-development-a-case-s.html">Fair weather forecasting? The shortcomings of big data for sustainable development, a case study from Hubballi‐Dharwad, India</a></h3>
+  <p>The abstract identifies systematic omissions in big-data transport evidence that could bias evaluation and planning decisions.</p>
+  <ul class="tag-list"><li><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a><span class="sr-only"> (Primary)</span></li></ul>
+</article><article class="record-card publication-example" data-themes="where-new-evidence-matters">
+  <p class="record-kicker">Article · Foundational prior work · 2017</p>
+  <h3><a href="/publications/uncovering-blind-spots-in-urban-carbon-management-the-role-of-consumption-based-carbon-acc.html">Uncovering blind spots in urban carbon management: the role of consumption-based carbon accounting in Bristol, UK</a></h3>
+  <p>The publisher abstract shows how omitted consumption emissions conceal mitigation opportunities and alter city decision-making.</p>
+  <ul class="tag-list"><li><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a><span class="sr-only"> (Primary)</span></li></ul>
+</article></div>
 ```
 
-## Lab-authored publications and outputs
+## Research ideas
+
+These are possible future research directions for owner review. They are not commitments, funded activity or open opportunities.
 
 ```{=html}
-<div class="compact-list"><p><a href="/publications/data-scaling-climate-action-governance-uk.html">Data Scaling: Implications for Climate Action and Governance in the UK</a></p><p><a href="/publications/designing-visualization-atlas-uk-cobenefits.html">Designing a Visualization Atlas: Lessons &amp; Reflections from The UK Co-Benefits Atlas for Climate Mitigation</a></p><p><a href="/publications/who-can-learn-geography-urban-climate-evidence.html">Who can learn from whom? The geography of urban climate evidence</a></p><p><a href="/publications/replicate-generalize-urban-research.html">Replicate and generalize to make urban research coherent</a></p></div>
+<div class="idea-grid"><article class="idea-card"><p class="idea-disclaimer">Research idea · not currently an active or funded project</p><h3>Which additional urban case would most reduce decision-relevant uncertainty across several cities?</h3><p>Choosing cases for their likely information value could make scarce research effort more useful across multiple decisions.</p><h4>Suggested methods</h4><ul class="method-list"><li>bayesian value of information</li><li>active learning</li><li>optimal sample design</li><li>sensitivity analysis</li><li>evidence gap and decision pathway mapping</li></ul></article><article class="idea-card"><p class="idea-disclaimer">Research idea · not currently an active or funded project</p><h3>Where would a causal evaluation change a policy choice rather than merely add another case study?</h3><p>Linking evaluation design to decision thresholds could distinguish consequential uncertainty from gaps that are only descriptive.</p><h4>Suggested methods</h4><ul class="method-list"><li>decision pathway mapping</li><li>natural experiments</li><li>difference in differences</li><li>synthetic controls</li><li>matched comparison</li><li>pre analysis of decision thresholds</li></ul></article><article class="idea-card"><p class="idea-disclaimer">Research idea · not currently an active or funded project</p><h3>Which exclusions in the urban climate evidence base have the largest consequences for appraisal or policy design?</h3><p>Some exclusions may systematically change who or what an appraisal represents, making them more consequential than other evidence gaps.</p><h4>Suggested methods</h4><ul class="method-list"><li>evidence gap mapping</li><li>population vulnerability linkage</li><li>distributional analysis</li><li>participatory priority setting</li><li>scenario analysis</li></ul></article></div>
 ```
 
-## Connections across the programme
+## Connections across the learning cycle
 
-- [Geographies of Climate Learning](/research/geographies-of-climate-learning.html) — Existing knowledge and its relevance across places.
-- [Modes of Climate Delivery](/research/modes-of-climate-delivery.html) — The arrangements through which climate action becomes operable.
-- [Consequences for People and Places](/research/consequences-for-people-and-places.html) — Observed outcomes, their distribution, and evidence that informs subsequent decisions.
+- **Input from [Geographies of Climate Learning](/research/geographies-of-climate-learning.html):** Mapping the reach and limits of existing knowledge reveals which unresolved questions could be consequential enough to justify new research.
+- **Next stage — [Modes of Climate Delivery](/research/modes-of-climate-delivery.html):** New evidence matters most when it changes what decision-makers understand about how climate action can be delivered or what it may cause.
+- **Return loop:** Consequences generate new evidence, reveal unresolved questions and revise what other cities may plausibly learn.
 
 ## External horizon scanning: Current Conversations
 
-These externally sourced items are separate from the lab's projects and outputs. Classification indicates topical connection, not endorsement, evidential quality or applicability to another city.
+Items are collected, classified and summarised automatically to show where the lab’s topics are being discussed. Inclusion does not indicate endorsement, evidential quality or applicability to a particular city.
+
+These external records are separate from lab-authored work, completed and foundational work, and research ideas.
 
 ```{=html}
-<p class="empty-compact">No recent Current Conversations entry is assigned here.</p>
+<p class="small-note">No fixture is currently classified to this theme.</p>
 ```
 
 [How Current Conversations works](/current-conversations/how-it-works.html).

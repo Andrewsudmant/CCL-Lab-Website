@@ -18,6 +18,8 @@ Tests and normal builds are offline. Live modes are explicit, bounded, timed and
 
 Staging is transactional and complete: sources, clusters, feeds, site fragment, run manifest and budget ledger validate before replacement. Failure preserves the last-known-good snapshot and records a failure manifest without leaking fetched content or secrets.
 
+Research-work and research-idea records are editorial content, not a place for private planning data. Do not add confidential partner discussions, unannounced funding, private review labels, prospective personal data or unpublished findings. Owner-review ZIPs stay in ignored `deliverables/` and may contain only bounded public or governance material.
+
 ## Required branch protection before production
 
 - prohibit direct and force pushes to `main`;

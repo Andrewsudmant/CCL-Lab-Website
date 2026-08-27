@@ -1,6 +1,6 @@
 ---
 title: "Research theme route updated"
-description: "We study how urban climate knowledge is distributed across places, which cities can plausibly learn from one another, and how institutional and geographic context shapes the relevance of evidence produced elsewhere."
+description: "How place shapes which urban climate knowledge is produced, recognised and potentially useful elsewhere."
 canonical-url: "/research/geographies-of-climate-learning.html"
 ---
 

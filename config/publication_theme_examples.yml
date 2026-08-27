@@ -14,7 +14,7 @@ records:
         evidence_source: https://www.research.ed.ac.uk/en/publications/using-crowdsourced-data-to-estimate-the-carbon-footprints-of-glob/
   - record_id: producer-cities-and-consumer-cities-using-production-and-consumption-based-carbon-accounts
     primary_theme: geographies-of-climate-learning
-    secondary_themes: [where-new-evidence-matters]
+    secondary_themes: []
     theme_relationships:
       - theme_id: geographies-of-climate-learning
         relationship: primary
@@ -22,7 +22,7 @@ records:
         evidence_source: https://doi.org/10.1016/j.jclepro.2017.12.139
   - record_id: fair-weather-forecasting-the-shortcomings-of-big-data-for-sustainable-development-a-case-s
     primary_theme: where-new-evidence-matters
-    secondary_themes: [consequences-for-people-and-places]
+    secondary_themes: []
     theme_relationships:
       - theme_id: where-new-evidence-matters
         relationship: primary
@@ -30,7 +30,7 @@ records:
         evidence_source: https://ideas.repec.org/p/hal/journl/hal-04501697.html
   - record_id: uncovering-blind-spots-in-urban-carbon-management-the-role-of-consumption-based-carbon-acc
     primary_theme: where-new-evidence-matters
-    secondary_themes: [consequences-for-people-and-places]
+    secondary_themes: []
     theme_relationships:
       - theme_id: where-new-evidence-matters
         relationship: primary
@@ -38,7 +38,7 @@ records:
         evidence_source: https://link.springer.com/article/10.1007/s10113-017-1112-x
   - record_id: supportive-governance-for-city-scale-low-carbon-building-retrofits-a-case-study-from-shang
     primary_theme: modes-of-climate-delivery
-    secondary_themes: [geographies-of-climate-learning]
+    secondary_themes: []
     theme_relationships:
       - theme_id: modes-of-climate-delivery
         relationship: primary
@@ -52,9 +52,13 @@ records:
         relationship: primary
         rationale: The commissioning institution describes how banking and place-based finance can support delivery of a just transition.
         evidence_source: https://www.lse.ac.uk/granthaminstitute/publication/financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transition-in-the-uk/
+      - theme_id: consequences-for-people-and-places
+        relationship: secondary
+        rationale: The report makes positive social impact and place-based just-transition consequences explicit objectives of financing.
+        evidence_source: https://www.lse.ac.uk/granthaminstitute/publication/financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transition-in-the-uk/
   - record_id: missing-the-target-are-local-climate-targets-aligned-with-national-net-zero-ambitions
     primary_theme: modes-of-climate-delivery
-    secondary_themes: [consequences-for-people-and-places]
+    secondary_themes: []
     theme_relationships:
       - theme_id: modes-of-climate-delivery
         relationship: primary
@@ -70,7 +74,7 @@ records:
         evidence_source: https://eprints.whiterose.ac.uk/183447/
   - record_id: investing-in-a-just-transition-in-the-uk-how-investors-can-integrate-social-impact-and-pla
     primary_theme: consequences-for-people-and-places
-    secondary_themes: [modes-of-climate-delivery]
+    secondary_themes: []
     theme_relationships:
       - theme_id: consequences-for-people-and-places
         relationship: primary

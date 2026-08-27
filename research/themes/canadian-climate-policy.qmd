@@ -1,6 +1,6 @@
 ---
 title: "Research theme route updated"
-description: "We examine how climate action is authorised, financed, coordinated, implemented and maintained, and why similar interventions depend on different delivery configurations in different places."
+description: "How authority, finance, capability, coordination and participation combine to make climate action possible and durable."
 canonical-url: "/research/modes-of-climate-delivery.html"
 ---
 

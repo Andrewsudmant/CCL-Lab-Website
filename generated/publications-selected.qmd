@@ -20,11 +20,11 @@
   <h3><a href="/publications/replicate-generalize-urban-research.html">Replicate and generalize to make urban research coherent</a></h3>
   <p>The article argues for more coherent replication and generalization practices in urban research so findings can accumulate across places and studies.</p>
   <ul class="tag-list"><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a><span class="sr-only"> (Related)</span></li></ul>
-</article><article class="record-card" data-themes="consequences-for-people-and-places modes-of-climate-delivery">
+</article><article class="record-card" data-themes="consequences-for-people-and-places">
   <p class="record-kicker">Foundational Prior Work · Journal Of Environmental Studies And Sciences · 2024</p>
   <h3><a href="/publications/climate-policy-social-policy.html">Climate policy as social policy? A comprehensive assessment of the economic impact of climate action in the UK</a></h3>
   <p>The article assesses the wider economic and social consequences of UK climate action and considers how those consequences alter policy appraisal.</p>
-  <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Related)</span></li></ul>
+  <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li></ul>
 </article><article class="record-card" data-themes="geographies-of-climate-learning where-new-evidence-matters consequences-for-people-and-places">
   <p class="record-kicker">Foundational Prior Work · Environmental Management · 2024</p>
   <h3><a href="/publications/data-scaling-climate-action-governance-uk.html">Data Scaling: Implications for Climate Action and Governance in the UK</a></h3>

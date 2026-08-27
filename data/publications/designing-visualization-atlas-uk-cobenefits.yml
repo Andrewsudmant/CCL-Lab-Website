@@ -29,6 +29,10 @@ theme_relationships:
     relationship: primary
     rationale: The preprint documents design choices for presenting place-based climate benefits and costs through the UK Atlas.
     evidence_source: https://arxiv.org/abs/2604.20781v2
+  - theme_id: geographies-of-climate-learning
+    relationship: secondary
+    rationale: The design account concerns how highly localised evidence is organised and communicated across UK communities.
+    evidence_source: https://arxiv.org/abs/2604.20781v2
 geographies: [united-kingdom]
 governance_scales: [municipal, neighbourhood]
 methods: [data-visualization, co-design]

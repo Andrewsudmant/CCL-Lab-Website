@@ -5,7 +5,6 @@ from __future__ import annotations
 
 import html
 import json
-import shutil
 import sys
 from collections import Counter
 from pathlib import Path
@@ -469,17 +468,6 @@ def generate_all() -> None:
     errors = validate_all()
     if errors: raise ValueError("content validation failed:\n" + "\n".join(errors))
     OUT.mkdir(exist_ok=True)
-    for legacy in (
-        "home-watch.qmd", "publications.qmd", "research-watch-automated.qmd",
-        "research-watch-candidates.qmd", "research-watch-reviewed.qmd", "projects.qmd",
-    ):
-        (OUT / legacy).unlink(missing_ok=True)
-    for directory in (ROOT / "projects", ROOT / "work", ROOT / "publications", ROOT / "research/themes"):
-        if directory.exists(): shutil.rmtree(directory)
-    for path in (ROOT / "research").glob("*.qmd"):
-        if path.name != "our-approach.qmd": path.unlink()
-    for path in (ROOT / "current-conversations").glob("*.qmd"):
-        if path.name not in {"index.qmd", "how-it-works.qmd"}: path.unlink()
     works = load_records("data/work")
     ideas = load_records("data/research-ideas")
     complete = json.loads((ROOT / "reports/content/publication-complete-inventory.json").read_text(encoding="utf-8"))["records"]
@@ -487,6 +475,31 @@ def generate_all() -> None:
     clusters = load_json_records(ROOT / "data/current-conversations/generated/clusters")
     generate_themes(works, ideas, complete, clusters, {record["source_id"]: record for record in sources})
     generate_people(); generate_work(works, complete); generate_publications(complete); generate_conversations(clusters, sources)
+    expected: dict[Path, set[str]] = {
+        OUT: {
+            "home-themes.qmd", "research-themes.qmd", "people.qmd", "work.qmd",
+            "publications-selected.qmd", "publications-complete.qmd",
+            "current-conversations-feed.qmd", "home-current-conversations.qmd",
+        },
+        ROOT / "work": {f"{record['work_id']}.qmd" for record in works},
+        ROOT / "projects": {f"{record['work_id']}.qmd" for record in works},
+        ROOT / "publications": {"complete.qmd", *{f"{record['record_id']}.qmd" for record in complete}},
+        ROOT / "research": {"our-approach.qmd", *{f"{theme['id']}.qmd" for theme in research_scope()["themes"]}},
+        ROOT / "research/themes": {
+            "urban-climate-learning.qmd", "evidence-infrastructure-tools.qmd",
+            "climate-governance-delivery.qmd", "co-benefits-place-based-valuation.qmd",
+            "just-transitions-workforce.qmd", "canadian-climate-policy.qmd",
+        },
+        ROOT / "current-conversations": {
+            "index.qmd", "how-it-works.qmd", *{f"{record['slug']}.qmd" for record in clusters if record["publication_decision"] == "published"},
+        },
+    }
+    # Cleanup happens only after every current page and feed has been written.
+    # A generation failure therefore leaves the prior complete source tree intact.
+    for directory, names in expected.items():
+        for path in directory.glob("*.qmd"):
+            if path.name not in names:
+                path.unlink()
 
 
 def main() -> int:

@@ -9,7 +9,7 @@ description: "The article considers the affordability and economic case for ambi
 
 **Authors:** Andrew Sudmant, Joel Millward-Hopkins, Sarah Colenbrander, Andy Gouldson<br>
 **Published:** 2016-08-15 · Climatic Change · Article<br>
-**Relationship to the lab:** Foundational Prior Work — Prior research included as a foundation for the lab's urban climate appraisal programme.<br>
+**Relationship to the lab:** Foundational prior work — Prior research included as a foundation for the lab's urban climate appraisal programme.<br>
 **DOI:** [10.1007/s10584-016-1751-9](https://doi.org/10.1007/s10584-016-1751-9)
 
 > Sudmant, A., Millward-Hopkins, J., Colenbrander, S., & Gouldson, A. (2016). Low carbon cities: is ambitious action affordable? Climatic Change, 138(3–4), 681–688.

@@ -9,7 +9,7 @@ description: "Verified bibliographic record. Consult the original source for its
 
 **Authors:** Andrew Heshedahl Sudmant, Andy Gouldson, Sarah Colenbrander, Rory Sullivan, Faye McAnulla, Niall Kerr<br>
 **Published:** 2015-11-13 · Climate Policy · Article<br>
-**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.<br>
+**Relationship to the lab:** Foundational prior work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.<br>
 **DOI:** [10.1080/14693062.2015.1104498](https://doi.org/10.1080/14693062.2015.1104498)
 
 > Andrew Heshedahl Sudmant, Andy Gouldson, Sarah Colenbrander, Rory Sullivan, Faye McAnulla, Niall Kerr. (2015). Understanding the case for low-carbon investment through bottom-up assessments of city-scale opportunities. Climate Policy. https://doi.org/10.1080/14693062.2015.1104498
@@ -18,4 +18,4 @@ description: "Verified bibliographic record. Consult the original source for its
 
 ## Metadata provenance
 
-Metadata sources: orcid, crossref · last verified 2026-08-17 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.
+Metadata sources: orcid, crossref · last verified 2026-08-27 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.

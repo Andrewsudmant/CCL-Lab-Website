@@ -22,14 +22,23 @@ abstract_summary: >-
   assessment, governance and the interpretation of local climate action in the UK.
 relationship_to_lab: foundational-prior-work
 relationship_note: Published before the lab was established and foundational to its evidence-infrastructure programme.
-primary_theme: where-new-evidence-matters
-secondary_themes: [consequences-for-people-and-places, modes-of-climate-delivery]
+primary_theme: geographies-of-climate-learning
+secondary_themes: [where-new-evidence-matters, consequences-for-people-and-places]
+theme_relationships:
+  - theme_id: geographies-of-climate-learning
+    relationship: primary
+    rationale: The paper examines how spatial aggregation changes the relevance and interpretation of evidence across national and local scales.
+    evidence_source: https://link.springer.com/article/10.1007/s00267-024-01991-5
+  - theme_id: where-new-evidence-matters
+    relationship: secondary
+    rationale: The paper identifies specific future analysis needed because scaling choices may affect efficacy and equity interpretations.
+    evidence_source: https://link.springer.com/article/10.1007/s00267-024-01991-5
 geographies: [united-kingdom]
 governance_scales: [federal-national, municipal, neighbourhood]
 methods: [place-based-modelling, spatial-analysis, economic-appraisal]
 climate_domains: [mitigation]
 sectors: [cross-sectoral]
-connected_projects: [data-methodologies-climate-impact]
+connected_work_ids: [data-methodologies-climate-impact]
 featured: true
 metadata_sources: [orcid, crossref, publisher]
 last_verified_date: 2026-08-14

@@ -9,7 +9,7 @@ description: "The article examines how institutions organise urban service deliv
 
 **Authors:** Lucy Oates, Andrew Sudmant<br>
 **Published:** 2024-08-29 · Urban Planning · Article<br>
-**Relationship to the lab:** Foundational Prior Work — Published before the lab was established and foundational to its delivery-modes research.<br>
+**Relationship to the lab:** Foundational prior work — Published before the lab was established and foundational to its delivery-modes research.<br>
 **DOI:** [10.17645/up.8302](https://doi.org/10.17645/up.8302)
 
 > Oates, L., & Sudmant, A. (2024). Infrastructure Transitions in Southern Cities: Organising Urban Service Delivery for Climate and Development. Urban Planning, 9, Article 8302.

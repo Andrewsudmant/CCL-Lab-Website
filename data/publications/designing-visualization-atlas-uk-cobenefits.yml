@@ -23,13 +23,18 @@ abstract_summary: >-
 relationship_to_lab: foundational-prior-work
 relationship_note: Produced through the UK Atlas collaboration before the lab was established at SFU.
 primary_theme: consequences-for-people-and-places
-secondary_themes: [where-new-evidence-matters]
+secondary_themes: [geographies-of-climate-learning]
+theme_relationships:
+  - theme_id: consequences-for-people-and-places
+    relationship: primary
+    rationale: The preprint documents design choices for presenting place-based climate benefits and costs through the UK Atlas.
+    evidence_source: https://arxiv.org/abs/2604.20781v2
 geographies: [united-kingdom]
 governance_scales: [municipal, neighbourhood]
 methods: [data-visualization, co-design]
 climate_domains: [mitigation, evidence-and-learning]
 sectors: [cross-sectoral]
-connected_projects: [uk-co-benefits-atlas]
+connected_work_ids: [uk-co-benefits-atlas]
 featured: true
 metadata_sources: [datacite, repository]
 last_verified_date: 2026-08-14

@@ -1,0 +1,41 @@
+work_id: climate-delivery-modes
+title: Climate delivery modes
+work_type: research-programme
+work_status: ongoing
+relationship_to_lab: current-ccll-work
+relationship_note: >-
+  Research developed before the lab was established and published after Andrew joined Simon Fraser University; foundational to the lab's current delivery programme.
+summary: >-
+  An ongoing comparative programme examining how authority, finance, organisational capability, infrastructure
+  provision, participation, coordination, sequencing and maintenance combine to deliver urban climate action.
+research_questions:
+  - Which configurations of authority, finance, capability and participation make urban climate action possible and durable?
+  - How do delivery arrangements vary across city types, sectors and institutional settings?
+primary_theme: modes-of-climate-delivery
+secondary_themes: [geographies-of-climate-learning]
+parent_work_id: null
+connected_work_ids: []
+connected_publication_ids: [from-urban-climate-ambition-to-delivery]
+connected_tool_ids: []
+decision_or_problem: How cities can make climate action operable and durable through configurations of authority, finance and coordination.
+delivery_conditions: The programme studies configurations rather than treating a delivery mode as an intervention, technology or sector label.
+evidence_status: Owner-approved current programme connected to a verified peer-reviewed framework paper.
+claim_boundaries: No delivery configuration is presented as universally suitable or effective, and no unpublished IPCC material is used.
+next_learning_question: Which delivery conditions recur across places, and which remain context dependent?
+geographies: [canada, global]
+governance_scales: [international, federal-national, provincial-territorial, regional, municipal]
+methods: [comparative-case-study, institutional-analysis, policy-analysis]
+sectors: [cross-sectoral, urban-infrastructure]
+climate_domains: [mitigation, adaptation]
+authoritative_sources:
+  - label: Owner-approved Gate 5D programme description
+    url: null
+    retrieved_date: 2026-08-27
+    source_type: owner-approved-programme
+  - label: Nature publisher record for the delivery-modes framework
+    url: https://www.nature.com/articles/s44168-026-00408-9
+    retrieved_date: 2026-08-27
+    source_type: public-web
+last_verified_date: 2026-08-27
+verification_status: owner-approved
+featured: true

@@ -9,7 +9,7 @@ description: "The preprint reflects on the design process for the UK Co-Benefits
 
 **Authors:** Jinrui Wang, Alexis Pister, Sian Phillips, Sarah Bissett, Ruaidhri Higgins-Lavery, Clare Wharmby, Andrew Sudmant, Uta Hinrichs, Benjamin Bach<br>
 **Published:** 2026-04-22 · arXiv · Preprint<br>
-**Relationship to the lab:** Foundational Prior Work — Produced through the UK Atlas collaboration before the lab was established at SFU.<br>
+**Relationship to the lab:** Foundational prior work — Produced through the UK Atlas collaboration before the lab was established at SFU.<br>
 **DOI:** [10.48550/arXiv.2604.20781](https://doi.org/10.48550/arXiv.2604.20781)
 
 > Wang, J., Pister, A., Phillips, S., Bissett, S., Higgins-Lavery, R., Wharmby, C., Sudmant, A., Hinrichs, U., & Bach, B. (2026). Designing a Visualization Atlas: Lessons & Reflections from The UK Co-Benefits Atlas for Climate Mitigation. arXiv:2604.20781v2.

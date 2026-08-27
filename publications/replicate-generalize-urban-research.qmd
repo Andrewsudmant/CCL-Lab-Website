@@ -9,7 +9,7 @@ description: "The article argues for more coherent replication and generalizatio
 
 **Authors:** Andrew Sudmant, Felix Creutzig, Zhifu Mi<br>
 **Published:** 2024-08-07 · International Journal of Urban Sciences · Article<br>
-**Relationship to the lab:** Foundational Prior Work — Published before the lab was established and foundational to its urban-learning programme.<br>
+**Relationship to the lab:** Foundational prior work — Published before the lab was established and foundational to its urban-learning programme.<br>
 **DOI:** [10.1080/12265934.2024.2382706](https://doi.org/10.1080/12265934.2024.2382706)
 
 > Sudmant, A., Creutzig, F., & Mi, Z. (2024). Replicate and generalize to make urban research coherent. International Journal of Urban Sciences.

@@ -6,7 +6,7 @@ description: "Four connected questions about how urban climate knowledge becomes
 <p class="page-deck">The lab studies how urban climate knowledge becomes cumulative: what may be useful across places, where new evidence would matter, how action becomes operable, and what changes for people and places.</p>
 
 ::: {.notice}
-**One connected programme.** The themes are ordered questions, not independent subject areas. Consequences generate new evidence, revise judgements and shape what cities investigate next. Projects may enter the cycle at different points.
+**One connected programme.** The themes are ordered questions, not independent subject areas. Consequences generate new evidence, revise judgements and shape what cities investigate next. Research work may enter the cycle at different points.
 :::
 
 [Read our approach to evidence, relevance, use, delivery and consequences →](/research/our-approach.html)

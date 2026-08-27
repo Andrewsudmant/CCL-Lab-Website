@@ -34,6 +34,17 @@ new_records:
     current_version_date: 2026-08-03
     url: https://doi.org/10.1038/s44168-026-00408-9
     citation: "Sudmant, A., Pflieger, G., Sharpe, S., Bulkeley, H., Burch, S., Pathak, M., Roberts, D. C., & Solecki, W. (2026). From urban climate ambition to delivery: a framework of climate delivery modes. npj Climate Action. https://doi.org/10.1038/s44168-026-00408-9"
+    relationship_to_lab: pre-ccll-work-continuing
+    relationship_note: >-
+      Research developed before CCLL was established and published after Andrew joined Simon Fraser University; foundational to the current delivery programme.
+    primary_theme: modes-of-climate-delivery
+    secondary_themes: [geographies-of-climate-learning]
+    connected_work_ids: [climate-delivery-modes]
+    theme_relationships:
+      - theme_id: modes-of-climate-delivery
+        relationship: primary
+        rationale: The publisher record presents a framework comparing configurations through which urban climate ambition becomes delivery.
+        evidence_source: https://www.nature.com/articles/s44168-026-00408-9
     authoritative_sources:
       - label: Nature publisher record
         url: https://www.nature.com/articles/s44168-026-00408-9

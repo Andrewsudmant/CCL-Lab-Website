@@ -24,12 +24,17 @@ relationship_to_lab: foundational-prior-work
 relationship_note: Prior research included as a foundation for the lab's urban climate appraisal programme.
 primary_theme: consequences-for-people-and-places
 secondary_themes: [modes-of-climate-delivery]
+theme_relationships:
+  - theme_id: consequences-for-people-and-places
+    relationship: primary
+    rationale: The article directly examines the affordability and economic consequences of ambitious low-carbon city action.
+    evidence_source: https://doi.org/10.1007/s10584-016-1751-9
 geographies: [global]
 governance_scales: [municipal]
 methods: [economic-appraisal]
 climate_domains: [mitigation]
 sectors: [cross-sectoral]
-connected_projects: []
+connected_work_ids: []
 featured: true
 metadata_sources: [orcid, crossref, publisher]
 last_verified_date: 2026-08-14

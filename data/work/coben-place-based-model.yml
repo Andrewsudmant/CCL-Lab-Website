@@ -1,0 +1,39 @@
+work_id: coben-place-based-model
+title: "CoBen: place-based co-benefits and co-costs"
+work_type: research-programme
+work_status: ongoing
+relationship_to_lab: current-ccll-work
+relationship_note: Owner-approved current programme of the Cities and Climate Learning Lab.
+summary: >-
+  An ongoing conditional, place-based scenario programme for assessing co-benefits and co-costs of climate action
+  while retaining causal, geographical, delivery and valuation assumptions.
+research_questions:
+  - How can local climate scenarios represent co-benefits and co-costs without obscuring causal assumptions?
+  - How should evidence, geography and valuation choices be governed and traced?
+primary_theme: consequences-for-people-and-places
+secondary_themes: [where-new-evidence-matters, modes-of-climate-delivery]
+parent_work_id: null
+connected_work_ids: []
+connected_publication_ids: []
+connected_tool_ids: []
+decision_or_problem: How to represent locally varying benefits, burdens and costs without obscuring causal, geographic or valuation assumptions.
+existing_evidence: The model separates baseline evidence, scenario actions, causal pathways, endpoints and valuation for traceable review.
+consequential_uncertainty: Local evidence availability, causal assignment and valuation choices may materially change represented consequences.
+delivery_conditions: Delivery and response assumptions remain separate so implementation conditions are not mistaken for outcome evidence.
+consequences_examined: Health, equity and other place-based co-benefits, co-costs and distributional outcomes.
+evidence_status: Owner-approved programme description; the model remains in development and provisional internal findings are not public conclusions.
+claim_boundaries: Scenarios are conditional appraisals, not forecasts, predictions or universal transferability claims.
+next_learning_question: Which local evidence, delivery and valuation choices most alter scenario conclusions?
+geographies: [canada, united-kingdom]
+governance_scales: [municipal, neighbourhood]
+methods: [place-based-modelling, economic-appraisal, distributional-analysis]
+sectors: [buildings, transport, health]
+climate_domains: [mitigation]
+authoritative_sources:
+  - label: Owner-approved Gate 5D programme description
+    url: null
+    retrieved_date: 2026-08-27
+    source_type: owner-approved-programme
+last_verified_date: 2026-08-27
+verification_status: owner-approved
+featured: true

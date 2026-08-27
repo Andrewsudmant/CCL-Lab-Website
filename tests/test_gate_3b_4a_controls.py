@@ -58,7 +58,7 @@ def test_homepage_watch_limit_and_disclosures() -> None:
 
 def test_publications_have_exact_relationship_and_provenance() -> None:
     pubs = load_records("data/publications")
-    assert all(p["relationship_to_lab"] in {"current-lab-research", "foundational-prior-work", "associated-collaboration"} for p in pubs)
+    assert all(p["relationship_to_lab"] in {"current-ccll-work", "pre-ccll-work-continuing", "foundational-prior-work", "associated-collaboration"} for p in pubs)
     assert all(p["metadata_sources"] and p["last_verified_date"] and p["authoritative_sources"] for p in pubs)
     assert all("and collaborators" not in " ".join(p["authors"]).lower() for p in pubs)
 
@@ -75,10 +75,8 @@ def test_known_publication_truth_constraints() -> None:
 
 def test_theme_statuses_and_separation() -> None:
     themes = {t["id"]: t for t in research_scope()["themes"]}
-    assert themes["where-new-evidence-matters"]["portfolio_maturity"] == "developing"
-    assert themes["consequences-for-people-and-places"]["portfolio_maturity"] == "established"
-    assert themes["modes-of-climate-delivery"]["portfolio_maturity"] == "established"
-    for record in load_records("data/projects") + load_records("data/publications"):
+    assert all("portfolio_maturity" not in theme for theme in themes.values())
+    for record in load_records("data/work") + load_records("data/publications"):
         assert record["primary_theme"] not in record["geographies"]
 
 
@@ -88,8 +86,8 @@ def test_canada_is_a_geography_not_a_theme() -> None:
 
 
 def test_canonical_cross_listing_does_not_duplicate_records() -> None:
-    projects = load_records("data/projects")
-    ids = [p["record_id"] for p in projects]
+    projects = load_records("data/work")
+    ids = [p["work_id"] for p in projects]
     assert len(ids) == len(set(ids))
     assert any(p["secondary_themes"] for p in projects)
 
@@ -140,7 +138,7 @@ def test_pipeline_is_not_a_build_side_effect() -> None:
     assert "pilot" not in build_recipe and "discover" not in build_recipe
 
 
-@pytest.mark.parametrize("route", ["index.qmd", "research.qmd", "projects.qmd", "people.qmd", "outputs.qmd", "publications.qmd", "data-tools.qmd", "opportunities.qmd", "about-andrew.qmd", "contact.qmd", "current-conversations/index.qmd", "current-conversations/how-it-works.qmd", "research-watch/index.qmd", "research-watch/methods.qmd"])
+@pytest.mark.parametrize("route", ["index.qmd", "research.qmd", "work.qmd", "projects.qmd", "people.qmd", "outputs.qmd", "publications.qmd", "data-tools.qmd", "opportunities.qmd", "about-andrew.qmd", "contact.qmd", "current-conversations/index.qmd", "current-conversations/how-it-works.qmd", "research-watch/index.qmd", "research-watch/methods.qmd"])
 def test_important_public_routes_remain(route: str) -> None:
     assert (ROOT / route).is_file()
 

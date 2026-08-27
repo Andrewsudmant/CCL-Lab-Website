@@ -89,7 +89,12 @@ def validate_all() -> list[str]:
                     errors.append(f"{label}: Theme 2 query lacks a consequential evidence or uncertainty concept")
 
     records: dict[str, list[dict[str, Any]]] = {}
-    for kind, schema_name in (("people", "person.schema.json"), ("projects", "project.schema.json"), ("publications", "publication.schema.json")):
+    for kind, schema_name in (
+        ("people", "person.schema.json"),
+        ("work", "research-work.schema.json"),
+        ("research-ideas", "research-idea.schema.json"),
+        ("publications", "publication.schema.json"),
+    ):
         records[kind] = []
         schema = load_schema(schema_name)
         for path in sorted((ROOT / "data" / kind).glob("*.yml")):
@@ -187,6 +192,8 @@ def content_policy_errors(record: dict[str, Any], label: str, vocab: dict[str, A
             invalid = sorted(set(record.get(field, [])) - set(vocab[vocabulary]))
             if invalid:
                 errors.append(f"{label}: invalid {field}: {', '.join(invalid)}")
+    elif "theme_id" in record:
+        errors.extend(theme_reference_errors([record.get("theme_id")], label, CANONICAL_THEMES))
     else:
         errors.extend(theme_reference_errors(record.get("themes", []), label, CANONICAL_THEMES))
     if "authors" in record:
@@ -205,12 +212,18 @@ def content_policy_errors(record: dict[str, Any], label: str, vocab: dict[str, A
 
 def unique_and_crosslink_errors(records: dict[str, list[dict[str, Any]]]) -> list[str]:
     errors = []
-    project_ids = {r.get("record_id") for r in records["projects"]}
+    work_ids = {r.get("work_id") for r in records["work"]}
     publication_ids = {r.get("record_id") for r in records["publications"]}
-    for kind in ("projects", "publications"):
-        ids = [r.get("record_id") for r in records[kind]]
+    complete_path = ROOT / "reports/content/publication-complete-inventory.json"
+    if complete_path.is_file():
+        publication_ids |= {
+            item.get("record_id")
+            for item in json.loads(complete_path.read_text(encoding="utf-8")).get("records", [])
+        }
+    for kind, id_field in (("work", "work_id"), ("research-ideas", "idea_id"), ("publications", "record_id")):
+        ids = [r.get(id_field) for r in records[kind]]
         if len(ids) != len(set(ids)):
-            errors.append(f"data/{kind}: record_id values must be unique")
+            errors.append(f"data/{kind}: {id_field} values must be unique")
     dois = [r.get("doi", "").lower() for r in records["publications"] if r.get("doi")]
     urls = [r.get("url") for r in records["publications"]]
     if len(dois) != len(set(dois)):
@@ -220,14 +233,38 @@ def unique_and_crosslink_errors(records: dict[str, list[dict[str, Any]]]) -> lis
     for publication in records["publications"]:
         if publication.get("doi", "").lower() == "10.1038/s44284-025-00260-8":
             errors.append("data/publications: Nature Cities global stocktake is not an Andrew Sudmant publication")
-    for project in records["projects"]:
-        missing = set(project.get("connected_publications", [])) - publication_ids
+    for work in records["work"]:
+        work_id = work.get("work_id")
+        missing = set(work.get("connected_publication_ids", [])) - publication_ids
         if missing:
-            errors.append(f"project {project.get('record_id')}: missing publication links: {', '.join(sorted(missing))}")
+            errors.append(f"work {work_id}: missing publication links: {', '.join(sorted(missing))}")
+        missing_work = set(work.get("connected_work_ids", [])) - work_ids
+        if missing_work:
+            errors.append(f"work {work_id}: missing work links: {', '.join(sorted(missing_work))}")
+        missing_tools = set(work.get("connected_tool_ids", [])) - work_ids
+        if missing_tools:
+            errors.append(f"work {work_id}: missing tool links: {', '.join(sorted(missing_tools))}")
+        parent = work.get("parent_work_id")
+        if parent is not None and parent not in work_ids:
+            errors.append(f"work {work_id}: missing parent work: {parent}")
+        if parent == work_id or work_id in work.get("connected_work_ids", []):
+            errors.append(f"work {work_id}: cannot link to itself")
+        if work.get("work_type") in {"paper", "report"} and work.get("title") is None and len(work.get("connected_publication_ids", [])) != 1:
+            errors.append(f"work {work_id}: publication-derived title requires exactly one connected publication")
+        if work.get("work_type") not in {"paper", "report"} and work.get("title") is None:
+            errors.append(f"work {work_id}: only paper/report records may derive a title from a publication")
+        for tool_id in work.get("connected_tool_ids", []):
+            tool = next((item for item in records["work"] if item.get("work_id") == tool_id), None)
+            if tool and tool.get("work_type") not in {"tool", "dataset"}:
+                errors.append(f"work {work_id}: connected_tool_ids must reference tool or dataset work")
     for publication in records["publications"]:
-        missing = set(publication.get("connected_projects", [])) - project_ids
+        missing = set(publication.get("connected_work_ids", [])) - work_ids
         if missing:
-            errors.append(f"publication {publication.get('record_id')}: missing project links: {', '.join(sorted(missing))}")
+            errors.append(f"publication {publication.get('record_id')}: missing work links: {', '.join(sorted(missing))}")
+        relationship_themes = [item.get("theme_id") for item in publication.get("theme_relationships", [])]
+        errors.extend(theme_reference_errors(relationship_themes, f"publication {publication.get('record_id')} relationships", CANONICAL_THEMES))
+        if len(relationship_themes) != len(set(relationship_themes)):
+            errors.append(f"publication {publication.get('record_id')}: theme relationships must be unique")
     return errors
 
 

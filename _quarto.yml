@@ -8,6 +8,7 @@ project:
     - "research-watch/*.qmd"
     - "research/themes/*.qmd"
     - "research/*.qmd"
+    - "work/*.qmd"
     - "projects/*.qmd"
     - "publications/*.qmd"
     - "!generated/*.qmd"
@@ -26,8 +27,8 @@ website:
     left:
       - href: research.qmd
         text: Research
-      - href: projects.qmd
-        text: Projects
+      - href: work.qmd
+        text: Work
       - href: people.qmd
         text: People
       - text: Outputs

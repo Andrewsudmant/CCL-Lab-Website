@@ -85,12 +85,61 @@ def provenance_disclosure(cluster: dict[str, Any]) -> str:
 
 
 def record_card(record: dict[str, Any], kind: str) -> str:
-    relation = record.get("relationship_to_lab", "").replace("-", " ").title()
+    relation = relationship_label(record.get("relationship_to_lab", ""))
     meta = " · ".join(filter(None, [relation, record.get("status"), record.get("venue"), str(record.get("publication_date", ""))[:4]]))
     return f'''<article class="record-card" data-themes="{esc(' '.join([record['primary_theme'], *record['secondary_themes']]))}">
   <p class="record-kicker">{esc(meta.replace('-', ' ').title())}</p>
   <h3><a href="/{kind}/{esc(record['record_id'])}.html">{esc(record['title'])}</a></h3>
   <p>{esc(record.get('summary') or record.get('abstract_summary'))}</p>
+  {linked_tags(record['primary_theme'], record['secondary_themes'])}
+</article>'''
+
+
+def work_title(record: dict[str, Any], publications: dict[str, dict[str, Any]]) -> str:
+    if record.get("title"):
+        return record["title"]
+    publication_id = record["connected_publication_ids"][0]
+    return publications[publication_id]["title"]
+
+
+def work_type_label(record: dict[str, Any]) -> str:
+    work_type = record["work_type"].replace("-", " ")
+    if record["work_status"] == "ongoing":
+        if record["work_type"] in {"research-programme", "project", "research-line"}:
+            return f"Ongoing {work_type}"
+        if record["work_type"] == "tool":
+            return "Active tool"
+    return work_type.title()
+
+
+def relationship_label(value: str) -> str:
+    return {
+        "current-ccll-work": "Current CCLL work",
+        "pre-ccll-work-continuing": "Work begun before CCLL and continuing",
+        "foundational-prior-work": "Foundational prior work",
+        "associated-collaboration": "Associated collaboration",
+    }.get(value, value.replace("-", " ").title())
+
+
+def work_card(record: dict[str, Any], publications: dict[str, dict[str, Any]]) -> str:
+    title = work_title(record, publications)
+    themes = [record["primary_theme"], *record["secondary_themes"]]
+    relation = relationship_label(record["relationship_to_lab"])
+    return f'''<article class="record-card work-card" data-status="{esc(record['work_status'])}" data-type="{esc(record['work_type'])}" data-themes="{esc(' '.join(themes))}" data-geography="{esc(' '.join(record['geographies']))}" data-method="{esc(' '.join(record['methods']))}" data-sector="{esc(' '.join(record['sectors']))}">
+  <p class="record-kicker">{esc(work_type_label(record))} · {esc(relation)}</p>
+  <h3><a href="/work/{esc(record['work_id'])}.html">{esc(title)}</a></h3>
+  <p>{esc(record['summary'])}</p>
+  {linked_tags(record['primary_theme'], record['secondary_themes'])}
+</article>'''
+
+
+def publication_theme_card(record: dict[str, Any], theme_id: str) -> str:
+    relationship = next(item for item in record["theme_relationships"] if item["theme_id"] == theme_id)
+    relation = relationship_label(record["relationship_to_lab"])
+    return f'''<article class="record-card publication-example" data-themes="{esc(' '.join([record['primary_theme'], *record['secondary_themes']]))}">
+  <p class="record-kicker">{esc(record['publication_type'].replace('-', ' ').title())} · {esc(relation)} · {esc(record['publication_date'][:4])}</p>
+  <h3><a href="/publications/{esc(record['record_id'])}.html">{esc(record['title'])}</a></h3>
+  <p>{esc(relationship['rationale'])}</p>
   {linked_tags(record['primary_theme'], record['secondary_themes'])}
 </article>'''
 
@@ -137,7 +186,7 @@ def select_home_clusters(clusters: list[dict[str, Any]], sources: dict[str, dict
     return chosen
 
 
-def generate_themes(projects: list[dict[str, Any]], publications: list[dict[str, Any]], clusters: list[dict[str, Any]], sources: dict[str, dict[str, Any]]) -> None:
+def generate_themes(works: list[dict[str, Any]], ideas: list[dict[str, Any]], publications: list[dict[str, Any]], clusters: list[dict[str, Any]], sources: dict[str, dict[str, Any]]) -> None:
     themes = research_scope()["themes"]
     home = ['<ol class="learning-cycle" aria-label="Four connected research questions">']
     details = ['<div class="detail-grid connected-theme-list">']
@@ -150,70 +199,85 @@ def generate_themes(projects: list[dict[str, Any]], publications: list[dict[str,
         "canadian-climate-policy": "modes-of-climate-delivery",
     }
     for index, theme in enumerate(themes, 1):
-        home.append(f'''<li class="cycle-stage"><article><span class="theme-number">0{index}</span><p class="cycle-role">{esc(theme['cycle_role'])}</p><h3><a href="/research/{esc(theme['id'])}.html">{esc(theme['name'])}</a></h3><p class="guiding-question">{esc(theme['guiding_question'])}</p><p>{esc(theme['definition'])}</p><p><a class="text-link" href="/research/{esc(theme['id'])}.html">Explore this question <span aria-hidden="true">→</span></a></p></article></li>''')
-        details.append(f'''<article class="detail-card" id="{esc(theme['id'])}"><div class="detail-index">0{index}</div><div><p class="cycle-role">{esc(theme['cycle_role'])}</p><h2><a href="/research/{esc(theme['id'])}.html">{esc(theme['name'])}</a></h2><p class="guiding-question">{esc(theme['guiding_question'])}</p><p>{esc(theme['definition'])}</p><p><a class="text-link" href="/research/{esc(theme['id'])}.html">View the theme programme →</a></p></div><aside class="detail-meta"><strong>Geographic priorities</strong><span>{esc(', '.join(theme['geographical_priorities']))}</span><strong>Methods of interest</strong><span>{esc(', '.join(theme['methodological_interests']))}</span></aside></article>''')
-        core_projects = [record for record in projects if record["primary_theme"] == theme["id"]]
-        related_projects = [record for record in projects if theme["id"] in record["secondary_themes"]]
-        core_pubs = [record for record in publications if record["primary_theme"] == theme["id"] and record["featured"]]
-        related_pubs = [record for record in publications if theme["id"] in record["secondary_themes"] and record["featured"]]
+        home.append(f'''<li class="cycle-stage"><article><span class="theme-number">0{index}</span><p class="cycle-role">{esc(theme['cycle_role'])}</p><h3><a href="/research/{esc(theme['id'])}.html">{esc(theme['name'])}</a></h3><p class="guiding-question">{esc(theme['guiding_question'])}</p><p>{esc(theme['homepage_description'])}</p><p><a class="text-link" href="/research/{esc(theme['id'])}.html">Explore this question <span aria-hidden="true">→</span></a></p></article></li>''')
+        details.append(f'''<article class="detail-card" id="{esc(theme['id'])}"><div class="detail-index">0{index}</div><div><p class="cycle-role">{esc(theme['cycle_role'])}</p><h2><a href="/research/{esc(theme['id'])}.html">{esc(theme['name'])}</a></h2><p class="guiding-question">{esc(theme['guiding_question'])}</p><p>{esc(theme['homepage_description'])}</p><p><a class="text-link" href="/research/{esc(theme['id'])}.html">View the theme programme →</a></p></div><aside class="detail-meta"><strong>Geographic priorities</strong><span>{esc(', '.join(theme['geographical_priorities']))}</span><strong>Methods of interest</strong><span>{esc(', '.join(theme['methodological_interests']))}</span></aside></article>''')
+        relevant_work = [record for record in works if record["primary_theme"] == theme["id"] or theme["id"] in record["secondary_themes"]]
+        ongoing_work = [record for record in relevant_work if record["work_status"] == "ongoing"]
+        completed_work = [record for record in relevant_work if record["work_status"] == "completed"]
+        connected_publications = {publication_id for record in relevant_work for publication_id in record["connected_publication_ids"]}
+        selected_publications = [
+            record for record in publications
+            if not record.get("mdpi_excluded")
+            and record["record_id"] not in connected_publications
+            and any(item["theme_id"] == theme["id"] for item in record.get("theme_relationships", []))
+        ]
+        theme_ideas = sorted([record for record in ideas if record["theme_id"] == theme["id"] and record["owner_review_status"] != "withheld"], key=lambda item: item["display_order"])
         recent = [record for record in clusters if record["publication_decision"] == "published" and (record["primary_theme"] == theme["id"] or theme["id"] in record["secondary_themes"])][:3]
-        def links(items: list[dict[str, Any]], kind: str) -> str:
-            return '<div class="compact-list">' + ''.join(f'<p><a href="/{kind}/{esc(item["record_id"])}.html">{esc(item["title"])}</a></p>' for item in items) + '</div>' if items else '<p class="empty-compact">No verified records are published in this view yet.</p>'
-        recent_html = '<div class="compact-list">' + ''.join(f'<p><a href="/current-conversations/{esc(item["slug"])}.html">{esc(item["public_title"])}</a><br><span>{esc(provenance_label(item))}</span></p>' for item in recent) + '</div>' if recent else '<p class="empty-compact">No recent Current Conversations entry is assigned here.</p>'
-        other_themes = [item for item in themes if item["id"] != theme["id"]]
-        connections = "\n".join(f'- [{item["name"]}](/research/{item["id"]}.html) — {item["cycle_role"]}' for item in other_themes)
+        publications_by_id = {record["record_id"]: record for record in publications}
+        ongoing_html = '<div class="record-list">' + ''.join(work_card(record, publications_by_id) for record in ongoing_work) + '</div>'
+        completed_html = '<div class="record-list">' + ''.join(work_card(record, publications_by_id) for record in completed_work) + ''.join(publication_theme_card(record, theme["id"]) for record in selected_publications) + '</div>'
+        idea_html = '<div class="idea-grid">' + ''.join(f'''<article class="idea-card"><p class="idea-disclaimer">{esc(item['disclaimer'])}</p><h3>{esc(item['question'])}</h3><p>{esc(item['why_it_may_matter'])}</p><h4>Suggested methods</h4>{tags([method.replace('-', ' ') for method in item['suggested_methods']], 'method-list')}</article>''' for item in theme_ideas) + '</div>'
+        recent_html = '<div class="compact-list">' + ''.join(f'<p><a href="/current-conversations/{esc(item["slug"])}.html">{esc(item["public_title"])}</a><br><span>{esc(provenance_label(item))}</span></p>' for item in recent) + '</div>' if recent else '<p class="small-note">No fixture is currently classified to this theme.</p>'
+        previous_theme = themes[index - 2] if index > 1 else themes[-1]
+        next_theme = themes[index] if index < len(themes) else themes[0]
+        connections = f'''- **Input from [{previous_theme['name']}](/research/{previous_theme['id']}.html):** {previous_theme['connection_to_next']}
+- **Next stage — [{next_theme['name']}](/research/{next_theme['id']}.html):** {theme['connection_to_next']}
+- **Return loop:** Consequences generate new evidence, reveal unresolved questions and revise what other cities may plausibly learn.'''
         questions = "\n".join(f"- {item}" for item in theme["included_questions"])
-        boundaries = "\n".join(f"- {item}" for item in theme["exclusions"])
         body = f'''<p class="cycle-role">{theme['cycle_role']}</p>
 
 <p class="page-deck"><strong>{theme['guiding_question']}</strong></p>
 
-{theme['definition']}
+{theme['long_description'][0]}
+
+{theme['long_description'][1]}
 
 ::: {{.notice}}
-**Part of a connected learning cycle.** Projects and cities may enter at different points. Evidence about consequences can revise judgements about existing knowledge and where new evidence matters.
+**Analytical boundary.** {theme['analytical_boundary']}
+
+**Place in the learning cycle.** {theme['connection_to_next']}
 :::
 
 ## Questions the lab investigates
 
 {questions}
 
-## Analytical boundary
-
-{boundaries}
-
-## Lab research: core projects
+## Ongoing work
 
 ```{{=html}}
-{links(core_projects, 'projects')}
+{ongoing_html}
 ```
 
-## Lab research: related projects
+## Selected completed and foundational work
 
 ```{{=html}}
-{links(related_projects, 'projects')}
+{completed_html}
 ```
 
-## Lab-authored publications and outputs
+## Research ideas
+
+These are possible future research directions for owner review. They are not commitments, funded activity or open opportunities.
 
 ```{{=html}}
-{links(core_pubs + related_pubs, 'publications')}
+{idea_html}
 ```
 
-## Connections across the programme
+## Connections across the learning cycle
 
 {connections}
 
 ## External horizon scanning: Current Conversations
 
-These externally sourced items are separate from the lab's projects and outputs. Classification indicates topical connection, not endorsement, evidential quality or applicability to another city.
+Items are collected, classified and summarised automatically to show where the lab’s topics are being discussed. Inclusion does not indicate endorsement, evidential quality or applicability to a particular city.
+
+These external records are separate from lab-authored work, completed and foundational work, and research ideas.
 
 ```{{=html}}
 {recent_html}
 ```
 
 [How Current Conversations works](/current-conversations/how-it-works.html).'''
-        write_page(ROOT / "research" / f"{theme['id']}.qmd", theme["name"], theme["definition"], body, canonical=f"/research/{theme['id']}.html")
+        write_page(ROOT / "research" / f"{theme['id']}.qmd", theme["name"], theme["homepage_description"], body, canonical=f"/research/{theme['id']}.html")
     for old_id, new_id in legacy_routes.items():
         destination = theme_index()[new_id]
         redirect_body = f'''<p class="page-deck">This former theme route has moved into the lab's four-theme research programme.</p>
@@ -221,7 +285,7 @@ These externally sourced items are separate from the lab's projects and outputs.
 [Continue to **{destination['name']}**](/research/{new_id}.html).
 
 This transition page preserves older internal and shared links. It does not define a separate research theme.'''
-        write_page(ROOT / "research/themes" / f"{old_id}.qmd", "Research theme route updated", destination["definition"], redirect_body, canonical=f"/research/{new_id}.html")
+        write_page(ROOT / "research/themes" / f"{old_id}.qmd", "Research theme route updated", destination["homepage_description"], redirect_body, canonical=f"/research/{new_id}.html")
     home.append('<li class="cycle-return"><strong>Consequences generate further learning.</strong> Outcomes, burdens and unresolved questions return to the first two stages as new evidence and revised judgements.</li></ol>')
     details.append('<div class="cycle-return-note"><strong>The return matters:</strong> consequences generate new evidence, expose unresolved questions and change what other places can plausibly learn.</div></div>')
     write_fragment("home-themes.qmd", "\n".join(home)); write_fragment("research-themes.qmd", "\n".join(details))
@@ -235,17 +299,16 @@ def generate_people() -> None:
     cards.append("</div>"); write_fragment("people.qmd", "\n".join(cards))
 
 
-def generate_projects(projects: list[dict[str, Any]], publications: list[dict[str, Any]]) -> None:
-    groups = [("Current lab research", "current-lab-research"), ("Foundational and prior work", "foundational-prior-work"), ("Associated collaborations", "associated-collaboration")]
-    listing = []
-    for heading, key in groups:
-        items = [record for record in projects if record["relationship_to_lab"] == key]
-        if items: listing.append(f'<section class="relationship-group"><h2>{heading}</h2><div class="record-list">' + ''.join(record_card(item, "projects") for item in items) + '</div></section>')
-    write_fragment("projects.qmd", "".join(listing))
+def generate_work(works: list[dict[str, Any]], publications: list[dict[str, Any]]) -> None:
     publications_by_id = {record["record_id"]: record for record in publications}
-    for record in projects:
+    listing = '<div class="record-list" id="work-results">' + ''.join(work_card(record, publications_by_id) for record in works) + '</div>'
+    write_fragment("work.qmd", listing)
+    work_by_id = {record["work_id"]: record for record in works}
+    for record in works:
+        title = work_title(record, publications_by_id)
         sources = "\n".join((f'- [{item["label"]}]({item["url"]})' if item.get("url") else f'- {item["label"]}') + f' — verified {item["retrieved_date"]}' for item in record["authoritative_sources"])
-        connections = "\n".join(f'- [{publications_by_id[item]["title"]}](/publications/{item}.html)' for item in record["connected_publications"] if item in publications_by_id) or "No connected publication is recorded."
+        publication_connections = "\n".join(f'- [{publications_by_id[item]["title"]}](/publications/{item}.html)' for item in record["connected_publication_ids"] if item in publications_by_id)
+        work_connections = "\n".join(f'- [{work_title(work_by_id[item], publications_by_id)}](/work/{item}.html)' for item in record["connected_work_ids"] if item in work_by_id)
         learning_fields = [
             ("Decision or problem", "decision_or_problem"),
             ("Existing evidence", "existing_evidence"),
@@ -260,28 +323,35 @@ def generate_projects(projects: list[dict[str, Any]], publications: list[dict[st
         learning = "\n\n".join(f"**{label}:** {record[key]}" for label, key in learning_fields if record.get(key))
         secondary = ", ".join(f'[{theme_index()[item]["name"]}](/research/{item}.html)' for item in record["secondary_themes"]) or "No secondary theme assigned."
         facets = f"**Geographies:** {', '.join(record['geographies'])}<br>\n**Climate domains:** {', '.join(record['climate_domains'])}<br>\n**Sectors:** {', '.join(record['sectors'])}<br>\n**Methods:** {', '.join(record['methods'])}"
-        learning_section = f"## How this project contributes to climate learning\n\n**Primary theme:** [{theme_index()[record['primary_theme']]['name']}](/research/{record['primary_theme']}.html)\n\n**Secondary connections:** {secondary}\n\n{learning}\n\n### Research facets\n\n{facets}" if learning else ""
+        learning_section = f"## How this work contributes to climate learning\n\n**Primary theme:** [{theme_index()[record['primary_theme']]['name']}](/research/{record['primary_theme']}.html)\n\n**Secondary connections:** {secondary}\n\n{learning}\n\n### Research facets\n\n{facets}" if learning else ""
+        questions = f"## Research questions\n\n{chr(10).join('- ' + item for item in record['research_questions'])}" if record["research_questions"] else ""
+        connected_sections = ""
+        if publication_connections:
+            connected_sections += f"\n\n## Connected publications\n\n{publication_connections}"
+        if work_connections:
+            connected_sections += f"\n\n## Connected work and tools\n\n{work_connections}"
         body = f'''<p class="page-deck">{record['summary']}</p>
 
-**Status:** {record['status'].replace('-', ' ').title()}<br>
-**Relationship to the lab:** {record['relationship_to_lab'].replace('-', ' ').title()} — {record['relationship_note']}<br>
+**Work type:** {work_type_label(record)}<br>
+**Status:** {record['work_status'].title()}<br>
+**Relationship to the lab:** {relationship_label(record['relationship_to_lab'])} — {record['relationship_note']}<br>
 **Primary theme:** [{theme_index()[record['primary_theme']]['name']}](/research/{record['primary_theme']}.html)
 
 {learning_section}
 
-## Research questions
-
-{chr(10).join('- ' + item for item in record['research_questions'])}
-
-## Connected publications
-
-{connections}
+{questions}{connected_sections}
 
 ## Authoritative sources
 
 {sources}
 '''
-        write_page(ROOT / "projects" / f"{record['record_id']}.qmd", record["title"], record["summary"], body)
+        write_page(ROOT / "work" / f"{record['work_id']}.qmd", title, record["summary"], body, canonical=f"/work/{record['work_id']}.html")
+        transition = f'''<p class="page-deck">This record now appears in the broader Work section.</p>
+
+[Continue to **{title}**](/work/{record['work_id']}.html).
+
+The former Projects route is retained so older links continue to resolve. It is not a second canonical record.'''
+        write_page(ROOT / "projects" / f"{record['work_id']}.qmd", "Research work route updated", record["summary"], transition, canonical=f"/work/{record['work_id']}.html")
 
 
 def generate_publications(publications: list[dict[str, Any]]) -> None:
@@ -321,7 +391,7 @@ Records are grouped by year. Historic outputs are labelled as foundational or pr
 
 **Authors:** {', '.join(record['authors'])}<br>
 **Published:** {record['publication_date']} · {record['venue']} · {record['publication_type'].replace('-', ' ').title()}<br>
-**Relationship to the lab:** {record['relationship_to_lab'].replace('-', ' ').title()} — {record['relationship_note']}<br>
+**Relationship to the lab:** {relationship_label(record['relationship_to_lab'])} — {record['relationship_note']}<br>
 {identifier}
 
 > {record['citation']}
@@ -401,21 +471,22 @@ def generate_all() -> None:
     OUT.mkdir(exist_ok=True)
     for legacy in (
         "home-watch.qmd", "publications.qmd", "research-watch-automated.qmd",
-        "research-watch-candidates.qmd", "research-watch-reviewed.qmd",
+        "research-watch-candidates.qmd", "research-watch-reviewed.qmd", "projects.qmd",
     ):
         (OUT / legacy).unlink(missing_ok=True)
-    for directory in (ROOT / "projects", ROOT / "publications", ROOT / "research/themes"):
+    for directory in (ROOT / "projects", ROOT / "work", ROOT / "publications", ROOT / "research/themes"):
         if directory.exists(): shutil.rmtree(directory)
     for path in (ROOT / "research").glob("*.qmd"):
         if path.name != "our-approach.qmd": path.unlink()
     for path in (ROOT / "current-conversations").glob("*.qmd"):
         if path.name not in {"index.qmd", "how-it-works.qmd"}: path.unlink()
-    projects = load_records("data/projects")
+    works = load_records("data/work")
+    ideas = load_records("data/research-ideas")
     complete = json.loads((ROOT / "reports/content/publication-complete-inventory.json").read_text(encoding="utf-8"))["records"]
     sources = load_json_records(ROOT / "data/current-conversations/generated/sources")
     clusters = load_json_records(ROOT / "data/current-conversations/generated/clusters")
-    generate_themes(projects, complete, clusters, {record["source_id"]: record for record in sources})
-    generate_people(); generate_projects(projects, complete); generate_publications(complete); generate_conversations(clusters, sources)
+    generate_themes(works, ideas, complete, clusters, {record["source_id"]: record for record in sources})
+    generate_people(); generate_work(works, complete); generate_publications(complete); generate_conversations(clusters, sources)
 
 
 def main() -> int:

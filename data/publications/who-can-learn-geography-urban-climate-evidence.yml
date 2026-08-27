@@ -19,17 +19,26 @@ url: https://doi.org/10.21203/rs.3.rs-9268986/v1
 citation: "Sudmant, A., Kalisa, E., Montfort, S., Cai, W., Patel, S., & Creutzig, F. (2026). Who can learn from whom? The geography of urban climate evidence. Research Square preprint."
 abstract_summary: >-
   The preprint examines the uneven geography of urban climate evidence and asks
-  which cities can readily learn from knowledge produced in other places.
-relationship_to_lab: foundational-prior-work
+  the conditions under which documented findings may be relevant to other cities.
+relationship_to_lab: pre-ccll-work-continuing
 relationship_note: Posted before the lab was established; it directly anchors the lab's current evidence-transfer programme.
 primary_theme: geographies-of-climate-learning
 secondary_themes: [where-new-evidence-matters]
+theme_relationships:
+  - theme_id: geographies-of-climate-learning
+    relationship: primary
+    rationale: The preprint maps unequal evidence geographies and evaluates access to documented analogue experience across cities.
+    evidence_source: https://doi.org/10.21203/rs.3.rs-9268986/v1
+  - theme_id: where-new-evidence-matters
+    relationship: secondary
+    rationale: The analysis identifies where new primary evidence may be most consequential for cities with limited direct or analogue evidence.
+    evidence_source: https://doi.org/10.21203/rs.3.rs-9268986/v1
 geographies: [global, sub-saharan-africa, rwanda]
 governance_scales: [international, municipal]
 methods: [evidence-mapping, spatial-analysis, literature-review]
 climate_domains: [evidence-and-learning]
 sectors: [cross-sectoral]
-connected_projects: [geography-urban-climate-evidence]
+connected_work_ids: [geography-urban-climate-evidence]
 featured: true
 metadata_sources: [crossref, repository]
 last_verified_date: 2026-08-14

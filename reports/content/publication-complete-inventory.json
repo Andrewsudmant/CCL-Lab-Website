@@ -1,5 +1,5 @@
 {
-  "verified_at": "2026-08-17",
+  "verified_at": "2026-08-27",
   "orcid": "0000-0001-8650-8419",
   "records": [
     {
@@ -32,10 +32,20 @@
       "url": "https://doi.org/10.1038/s44168-026-00408-9",
       "citation": "Sudmant, A., Pflieger, G., Sharpe, S., Bulkeley, H., Burch, S., Pathak, M., Roberts, D. C., & Solecki, W. (2026). From urban climate ambition to delivery: a framework of climate delivery modes. npj Climate Action. https://doi.org/10.1038/s44168-026-00408-9",
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
-      "relationship_to_lab": "foundational-prior-work",
-      "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
+      "relationship_to_lab": "pre-ccll-work-continuing",
+      "relationship_note": "Research developed before CCLL was established and published after Andrew joined Simon Fraser University; foundational to the current delivery programme.",
       "primary_theme": "modes-of-climate-delivery",
-      "secondary_themes": [],
+      "secondary_themes": [
+        "geographies-of-climate-learning"
+      ],
+      "theme_relationships": [
+        {
+          "theme_id": "modes-of-climate-delivery",
+          "relationship": "primary",
+          "rationale": "The publisher record presents a framework comparing configurations through which urban climate ambition becomes delivery.",
+          "evidence_source": "https://www.nature.com/articles/s44168-026-00408-9"
+        }
+      ],
       "geographies": [
         "global"
       ],
@@ -47,14 +57,16 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [
+        "climate-delivery-modes"
+      ],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
       "metadata_sources": [
         "publisher"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Nature publisher record",
@@ -101,7 +113,15 @@
       "relationship_note": "Produced through the UK Atlas collaboration before the lab was established at SFU.",
       "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [
-        "where-new-evidence-matters"
+        "geographies-of-climate-learning"
+      ],
+      "theme_relationships": [
+        {
+          "theme_id": "consequences-for-people-and-places",
+          "relationship": "primary",
+          "rationale": "The preprint documents design choices for presenting place-based climate benefits and costs through the UK Atlas.",
+          "evidence_source": "https://arxiv.org/abs/2604.20781v2"
+        }
       ],
       "geographies": [
         "united-kingdom"
@@ -121,7 +141,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [
+      "connected_work_ids": [
         "uk-co-benefits-atlas"
       ],
       "featured": true,
@@ -173,12 +193,26 @@
       "current_version_date": "2026-03-31",
       "url": "https://doi.org/10.21203/rs.3.rs-9268986/v1",
       "citation": "Sudmant, A., Kalisa, E., Montfort, S., Cai, W., Patel, S., & Creutzig, F. (2026). Who can learn from whom? The geography of urban climate evidence. Research Square preprint.",
-      "abstract_summary": "The preprint examines the uneven geography of urban climate evidence and asks which cities can readily learn from knowledge produced in other places.",
-      "relationship_to_lab": "foundational-prior-work",
+      "abstract_summary": "The preprint examines the uneven geography of urban climate evidence and asks the conditions under which documented findings may be relevant to other cities.",
+      "relationship_to_lab": "pre-ccll-work-continuing",
       "relationship_note": "Posted before the lab was established; it directly anchors the lab's current evidence-transfer programme.",
       "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [
         "where-new-evidence-matters"
+      ],
+      "theme_relationships": [
+        {
+          "theme_id": "geographies-of-climate-learning",
+          "relationship": "primary",
+          "rationale": "The preprint maps unequal evidence geographies and evaluates access to documented analogue experience across cities.",
+          "evidence_source": "https://doi.org/10.21203/rs.3.rs-9268986/v1"
+        },
+        {
+          "theme_id": "where-new-evidence-matters",
+          "relationship": "secondary",
+          "rationale": "The analysis identifies where new primary evidence may be most consequential for cities with limited direct or analogue evidence.",
+          "evidence_source": "https://doi.org/10.21203/rs.3.rs-9268986/v1"
+        }
       ],
       "geographies": [
         "global",
@@ -200,7 +234,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [
+      "connected_work_ids": [
         "geography-urban-climate-evidence"
       ],
       "featured": true,
@@ -255,6 +289,7 @@
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "where-new-evidence-matters",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "rwanda"
       ],
@@ -266,7 +301,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -274,12 +309,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1016/j.sciaf.2025.e02959",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -315,6 +350,7 @@
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "global"
       ],
@@ -326,7 +362,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -334,12 +370,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1038/s41598-025-12210-4",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -376,6 +412,7 @@
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "where-new-evidence-matters",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "rwanda"
       ],
@@ -387,7 +424,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -395,12 +432,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1080/23748834.2025.2468017",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -435,6 +472,14 @@
       "secondary_themes": [
         "consequences-for-people-and-places"
       ],
+      "theme_relationships": [
+        {
+          "theme_id": "modes-of-climate-delivery",
+          "relationship": "primary",
+          "rationale": "The article examines the institutional organisation of urban service delivery and infrastructure transitions in Southern cities.",
+          "evidence_source": "https://doi.org/10.17645/up.8302"
+        }
+      ],
       "geographies": [
         "global"
       ],
@@ -452,7 +497,7 @@
       "sectors": [
         "urban-infrastructure"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": true,
       "metadata_sources": [
         "orcid",
@@ -502,6 +547,20 @@
       "secondary_themes": [
         "where-new-evidence-matters"
       ],
+      "theme_relationships": [
+        {
+          "theme_id": "geographies-of-climate-learning",
+          "relationship": "primary",
+          "rationale": "The publisher abstract centres replication, generalisability and whether urban findings remain useful across contexts.",
+          "evidence_source": "https://www.tandfonline.com/doi/full/10.1080/12265934.2024.2382706"
+        },
+        {
+          "theme_id": "where-new-evidence-matters",
+          "relationship": "secondary",
+          "rationale": "The paper calls for future testing of replication and generalisability where it could improve cumulative urban research.",
+          "evidence_source": "https://www.tandfonline.com/doi/full/10.1080/12265934.2024.2382706"
+        }
+      ],
       "geographies": [
         "global"
       ],
@@ -519,9 +578,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [
-        "geography-urban-climate-evidence"
-      ],
+      "connected_work_ids": [],
       "featured": true,
       "metadata_sources": [
         "orcid",
@@ -575,6 +632,14 @@
       "secondary_themes": [
         "modes-of-climate-delivery"
       ],
+      "theme_relationships": [
+        {
+          "theme_id": "consequences-for-people-and-places",
+          "relationship": "primary",
+          "rationale": "The publisher abstract assesses wider economic and social consequences of UK climate action.",
+          "evidence_source": "https://doi.org/10.1007/s13412-024-00955-9"
+        }
+      ],
       "geographies": [
         "united-kingdom"
       ],
@@ -593,7 +658,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": true,
       "metadata_sources": [
         "orcid",
@@ -677,6 +742,7 @@
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "modes-of-climate-delivery",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "global"
       ],
@@ -688,7 +754,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -696,12 +762,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1038/s42949-024-00168-7",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -731,10 +797,24 @@
       "abstract_summary": "The article examines how changing the spatial scale of climate evidence affects assessment, governance and the interpretation of local climate action in the UK.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Published before the lab was established and foundational to its evidence-infrastructure programme.",
-      "primary_theme": "where-new-evidence-matters",
+      "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [
-        "consequences-for-people-and-places",
-        "modes-of-climate-delivery"
+        "where-new-evidence-matters",
+        "consequences-for-people-and-places"
+      ],
+      "theme_relationships": [
+        {
+          "theme_id": "geographies-of-climate-learning",
+          "relationship": "primary",
+          "rationale": "The paper examines how spatial aggregation changes the relevance and interpretation of evidence across national and local scales.",
+          "evidence_source": "https://link.springer.com/article/10.1007/s00267-024-01991-5"
+        },
+        {
+          "theme_id": "where-new-evidence-matters",
+          "relationship": "secondary",
+          "rationale": "The paper identifies specific future analysis needed because scaling choices may affect efficacy and equity interpretations.",
+          "evidence_source": "https://link.springer.com/article/10.1007/s00267-024-01991-5"
+        }
       ],
       "geographies": [
         "united-kingdom"
@@ -755,7 +835,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [
+      "connected_work_ids": [
         "data-methodologies-climate-impact"
       ],
       "featured": true,
@@ -814,6 +894,7 @@
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "modes-of-climate-delivery",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "india"
       ],
@@ -825,7 +906,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": false,
       "mdpi_excluded": true,
@@ -834,12 +915,12 @@
         "crossref",
         "owner-override"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.3390/land13050641",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -876,6 +957,7 @@
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "global"
       ],
@@ -887,7 +969,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -895,12 +977,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.20935/acadenvsci6141",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -939,6 +1021,7 @@
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "india"
       ],
@@ -950,7 +1033,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -958,12 +1041,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1177/09562478231190475",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -999,6 +1082,7 @@
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "united-kingdom"
       ],
@@ -1010,7 +1094,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -1018,12 +1102,12 @@
         "orcid",
         "datacite"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Datacite DOI record",
           "url": "https://api.datacite.org/dois/10.5281/zenodo.8075492",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -1061,8 +1145,16 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "where-new-evidence-matters",
+      "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
+      "theme_relationships": [
+        {
+          "theme_id": "geographies-of-climate-learning",
+          "relationship": "primary",
+          "rationale": "The institutional full-text record supports global city comparison and responsibility allocation using a common estimation method.",
+          "evidence_source": "https://www.research.ed.ac.uk/en/publications/using-crowdsourced-data-to-estimate-the-carbon-footprints-of-glob/"
+        }
+      ],
       "geographies": [
         "global"
       ],
@@ -1074,7 +1166,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -1082,12 +1174,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1016/j.adapen.2022.100111",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -1121,8 +1213,18 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "geographies-of-climate-learning",
-      "secondary_themes": [],
+      "primary_theme": "modes-of-climate-delivery",
+      "secondary_themes": [
+        "consequences-for-people-and-places"
+      ],
+      "theme_relationships": [
+        {
+          "theme_id": "modes-of-climate-delivery",
+          "relationship": "primary",
+          "rationale": "The repository abstract examines divisions of responsibility, capacity and coordination across national, regional and local governance.",
+          "evidence_source": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4021672"
+        }
+      ],
       "geographies": [
         "global"
       ],
@@ -1134,7 +1236,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -1142,12 +1244,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.21203/rs.3.rs-1676382/v1",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -1187,6 +1289,7 @@
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "global"
       ],
@@ -1198,7 +1301,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -1206,12 +1309,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1016/j.eneco.2022.105872",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -1247,6 +1350,14 @@
       "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
       "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [],
+      "theme_relationships": [
+        {
+          "theme_id": "consequences-for-people-and-places",
+          "relationship": "primary",
+          "rationale": "The institutional report centres workers' perceptions and place-based employment consequences of the green transition.",
+          "evidence_source": "https://eprints.whiterose.ac.uk/183447/"
+        }
+      ],
       "geographies": [
         "united-kingdom"
       ],
@@ -1258,7 +1369,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -1266,7 +1377,7 @@
         "orcid",
         "repository"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "White Rose Research Online institutional record",
@@ -1307,6 +1418,7 @@
       "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
       "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "united-kingdom"
       ],
@@ -1318,7 +1430,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -1326,7 +1438,7 @@
         "orcid",
         "repository"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "North Yorkshire Council public document repository",
@@ -1373,7 +1485,17 @@
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "modes-of-climate-delivery",
-      "secondary_themes": [],
+      "secondary_themes": [
+        "geographies-of-climate-learning"
+      ],
+      "theme_relationships": [
+        {
+          "theme_id": "modes-of-climate-delivery",
+          "relationship": "primary",
+          "rationale": "The publisher record examines governance arrangements enabling city-scale low-carbon building retrofit in Shanghai.",
+          "evidence_source": "https://doi.org/10.1080/14693062.2021.1948383"
+        }
+      ],
       "geographies": [
         "global"
       ],
@@ -1385,7 +1507,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -1393,12 +1515,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1080/14693062.2021.1948383",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -1437,7 +1559,17 @@
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "where-new-evidence-matters",
-      "secondary_themes": [],
+      "secondary_themes": [
+        "consequences-for-people-and-places"
+      ],
+      "theme_relationships": [
+        {
+          "theme_id": "where-new-evidence-matters",
+          "relationship": "primary",
+          "rationale": "The abstract identifies systematic omissions in big-data transport evidence that could bias evaluation and planning decisions.",
+          "evidence_source": "https://ideas.repec.org/p/hal/journl/hal-04501697.html"
+        }
+      ],
       "geographies": [
         "india"
       ],
@@ -1449,7 +1581,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -1457,12 +1589,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1002/sd.2221",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -1497,6 +1629,7 @@
       "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
       "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "rwanda"
       ],
@@ -1508,7 +1641,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -1516,7 +1649,7 @@
         "orcid",
         "repository"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "International Growth Centre publication record",
@@ -1558,6 +1691,7 @@
       "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
       "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "united-kingdom"
       ],
@@ -1569,7 +1703,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -1577,7 +1711,7 @@
         "orcid",
         "repository"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "University of Edinburgh Research Explorer",
@@ -1622,6 +1756,7 @@
       "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
       "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "united-kingdom"
       ],
@@ -1633,7 +1768,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -1641,7 +1776,7 @@
         "orcid",
         "repository"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "University of Edinburgh Research Explorer",
@@ -1679,8 +1814,18 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
-      "primary_theme": "consequences-for-people-and-places",
-      "secondary_themes": [],
+      "primary_theme": "modes-of-climate-delivery",
+      "secondary_themes": [
+        "consequences-for-people-and-places"
+      ],
+      "theme_relationships": [
+        {
+          "theme_id": "modes-of-climate-delivery",
+          "relationship": "primary",
+          "rationale": "The commissioning institution describes how banking and place-based finance can support delivery of a just transition.",
+          "evidence_source": "https://www.lse.ac.uk/granthaminstitute/publication/financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transition-in-the-uk/"
+        }
+      ],
       "geographies": [
         "united-kingdom"
       ],
@@ -1692,7 +1837,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -1700,7 +1845,7 @@
         "orcid",
         "repository"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "LSE Grantham Research Institute publication record",
@@ -1763,6 +1908,20 @@
       "secondary_themes": [
         "geographies-of-climate-learning"
       ],
+      "theme_relationships": [
+        {
+          "theme_id": "modes-of-climate-delivery",
+          "relationship": "primary",
+          "rationale": "The systematic assessment compares how European city plans institutionally integrate mitigation and adaptation.",
+          "evidence_source": "https://doi.org/10.1016/j.rser.2019.109623"
+        },
+        {
+          "theme_id": "geographies-of-climate-learning",
+          "relationship": "secondary",
+          "rationale": "Its cross-city systematic comparison supports analysis of recurring and place-dependent planning arrangements.",
+          "evidence_source": "https://doi.org/10.1016/j.rser.2019.109623"
+        }
+      ],
       "geographies": [
         "europe"
       ],
@@ -1780,7 +1939,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": true,
       "metadata_sources": [
         "orcid",
@@ -1831,8 +1990,16 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "modes-of-climate-delivery",
+      "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [],
+      "theme_relationships": [
+        {
+          "theme_id": "consequences-for-people-and-places",
+          "relationship": "primary",
+          "rationale": "The review examines social, environmental, health and economic consequences of low-carbon transport policy.",
+          "evidence_source": "https://doi.org/10.1016/B978-0-12-818122-5.00019-3"
+        }
+      ],
       "geographies": [
         "global"
       ],
@@ -1844,7 +2011,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -1852,12 +2019,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1016/b978-0-12-818122-5.00019-3",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -1892,6 +2059,7 @@
       "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
       "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "global"
       ],
@@ -1903,7 +2071,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -1911,7 +2079,7 @@
         "orcid",
         "repository"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Coalition for Urban Transitions report",
@@ -1951,6 +2119,7 @@
       "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
       "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "united-kingdom"
       ],
@@ -1962,7 +2131,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -1970,7 +2139,7 @@
         "orcid",
         "repository"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "University of Edinburgh Research Explorer",
@@ -2009,7 +2178,17 @@
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
       "primary_theme": "consequences-for-people-and-places",
-      "secondary_themes": [],
+      "secondary_themes": [
+        "modes-of-climate-delivery"
+      ],
+      "theme_relationships": [
+        {
+          "theme_id": "consequences-for-people-and-places",
+          "relationship": "primary",
+          "rationale": "The commissioning institution frames investment choices around social impact and place-based consequences of transition.",
+          "evidence_source": "https://www.lse.ac.uk/granthaminstitute/publication/investing-in-a-just-transition-in-the-uk/"
+        }
+      ],
       "geographies": [
         "united-kingdom"
       ],
@@ -2021,7 +2200,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -2029,7 +2208,7 @@
         "orcid",
         "repository"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "LSE Grantham Research Institute publication record",
@@ -2071,6 +2250,14 @@
       "secondary_themes": [
         "modes-of-climate-delivery"
       ],
+      "theme_relationships": [
+        {
+          "theme_id": "consequences-for-people-and-places",
+          "relationship": "primary",
+          "rationale": "The article evaluates the local economic consequences and investment implications of low-carbon options in Kigali.",
+          "evidence_source": "https://doi.org/10.1002/sd.1906"
+        }
+      ],
       "geographies": [
         "rwanda",
         "sub-saharan-africa"
@@ -2088,7 +2275,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": true,
       "metadata_sources": [
         "orcid",
@@ -2146,6 +2333,7 @@
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "modes-of-climate-delivery",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "global"
       ],
@@ -2157,7 +2345,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -2165,12 +2353,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1007/978-3-319-74983-9_28",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -2209,8 +2397,18 @@
       "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-      "primary_theme": "where-new-evidence-matters",
-      "secondary_themes": [],
+      "primary_theme": "geographies-of-climate-learning",
+      "secondary_themes": [
+        "where-new-evidence-matters"
+      ],
+      "theme_relationships": [
+        {
+          "theme_id": "geographies-of-climate-learning",
+          "relationship": "primary",
+          "rationale": "The paper compares production- and consumption-based city accounts across China, the UK and the United States.",
+          "evidence_source": "https://doi.org/10.1016/j.jclepro.2017.12.139"
+        }
+      ],
       "geographies": [
         "united-kingdom",
         "global"
@@ -2223,7 +2421,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -2231,12 +2429,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1016/j.jclepro.2017.12.139",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -2277,6 +2475,7 @@
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "global"
       ],
@@ -2288,7 +2487,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -2296,12 +2495,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1177/2455747117708929",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -2338,6 +2537,7 @@
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "rwanda"
       ],
@@ -2349,7 +2549,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -2357,12 +2557,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1016/j.uclim.2017.02.011",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -2404,7 +2604,17 @@
       "relationship_to_lab": "foundational-prior-work",
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "where-new-evidence-matters",
-      "secondary_themes": [],
+      "secondary_themes": [
+        "consequences-for-people-and-places"
+      ],
+      "theme_relationships": [
+        {
+          "theme_id": "where-new-evidence-matters",
+          "relationship": "primary",
+          "rationale": "The publisher abstract shows how omitted consumption emissions conceal mitigation opportunities and alter city decision-making.",
+          "evidence_source": "https://link.springer.com/article/10.1007/s10113-017-1112-x"
+        }
+      ],
       "geographies": [
         "united-kingdom"
       ],
@@ -2416,7 +2626,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -2424,12 +2634,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1007/s10113-017-1112-x",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -2476,6 +2686,14 @@
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [],
+      "theme_relationships": [
+        {
+          "theme_id": "consequences-for-people-and-places",
+          "relationship": "primary",
+          "rationale": "The paper directly examines whether low-carbon urban development produces pro-poor distributional outcomes in Kolkata.",
+          "evidence_source": "https://doi.org/10.1177/0956247816677775"
+        }
+      ],
       "geographies": [
         "india"
       ],
@@ -2487,7 +2705,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -2495,12 +2713,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1177/0956247816677775",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -2545,6 +2763,7 @@
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "global"
       ],
@@ -2556,7 +2775,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -2564,12 +2783,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1016/j.apenergy.2016.07.112",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -2606,6 +2825,14 @@
       "secondary_themes": [
         "modes-of-climate-delivery"
       ],
+      "theme_relationships": [
+        {
+          "theme_id": "consequences-for-people-and-places",
+          "relationship": "primary",
+          "rationale": "The article directly examines the affordability and economic consequences of ambitious low-carbon city action.",
+          "evidence_source": "https://doi.org/10.1007/s10584-016-1751-9"
+        }
+      ],
       "geographies": [
         "global"
       ],
@@ -2621,7 +2848,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": true,
       "metadata_sources": [
         "orcid",
@@ -2681,6 +2908,7 @@
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "modes-of-climate-delivery",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "global"
       ],
@@ -2692,7 +2920,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -2700,12 +2928,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1016/j.cities.2015.10.010",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -2748,6 +2976,7 @@
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "geographies-of-climate-learning",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "global"
       ],
@@ -2759,7 +2988,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -2767,12 +2996,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1080/14693062.2015.1104498",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -2815,6 +3044,7 @@
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "global"
       ],
@@ -2826,7 +3056,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -2834,12 +3064,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1016/j.jenvman.2015.08.001",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -2881,6 +3111,14 @@
       "secondary_themes": [
         "modes-of-climate-delivery"
       ],
+      "theme_relationships": [
+        {
+          "theme_id": "consequences-for-people-and-places",
+          "relationship": "primary",
+          "rationale": "The article appraises investment costs and wider economic benefits of city-level climate action.",
+          "evidence_source": "https://doi.org/10.1016/j.gloenvcha.2015.07.009"
+        }
+      ],
       "geographies": [
         "global"
       ],
@@ -2897,7 +3135,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": true,
       "metadata_sources": [
         "orcid",
@@ -2954,6 +3192,7 @@
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "global"
       ],
@@ -2965,7 +3204,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -2973,12 +3212,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1080/17565529.2015.1040367",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"
@@ -3019,6 +3258,7 @@
       "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
       "primary_theme": "consequences-for-people-and-places",
       "secondary_themes": [],
+      "theme_relationships": [],
       "geographies": [
         "global"
       ],
@@ -3030,7 +3270,7 @@
       "sectors": [
         "cross-sectoral"
       ],
-      "connected_projects": [],
+      "connected_work_ids": [],
       "featured": false,
       "current_conversations_eligible": true,
       "mdpi_excluded": false,
@@ -3038,12 +3278,12 @@
         "orcid",
         "crossref"
       ],
-      "last_verified_date": "2026-08-17",
+      "last_verified_date": "2026-08-27",
       "authoritative_sources": [
         {
           "label": "Crossref DOI record",
           "url": "https://api.crossref.org/works/10.1016/j.enpol.2015.01.020",
-          "retrieved_date": "2026-08-17"
+          "retrieved_date": "2026-08-27"
         }
       ],
       "verification_status": "verified"

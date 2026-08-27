@@ -9,7 +9,7 @@ description: "Verified bibliographic record. Consult the original source for its
 
 **Authors:** Jo Cutter, Vera Trappmann, Ursula Balderson, Andrew Sudmant, Helen Norman<br>
 **Published:** 2021-12 · Centre for Employment Relations Innovation and Change, University of Leeds · Report<br>
-**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.<br>
+**Relationship to the lab:** Foundational prior work — Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.<br>
 **Stable identifier:** none assigned by the authoritative source; use the original-source URL.
 
 > Jo Cutter, Vera Trappmann, Ursula Balderson, Andrew Sudmant, Helen Norman. (2021). Workers’ perceptions of climate change and the green transition in Yorkshire and the Humber: Building the evidence base for the just transition in the region. Centre for Employment Relations Innovation and Change, University of Leeds.
@@ -18,4 +18,4 @@ description: "Verified bibliographic record. Consult the original source for its
 
 ## Metadata provenance
 
-Metadata sources: orcid, repository · last verified 2026-08-17 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.
+Metadata sources: orcid, repository · last verified 2026-08-27 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.

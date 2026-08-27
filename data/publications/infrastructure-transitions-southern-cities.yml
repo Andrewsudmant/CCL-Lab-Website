@@ -24,12 +24,17 @@ relationship_to_lab: foundational-prior-work
 relationship_note: Published before the lab was established and foundational to its delivery-modes research.
 primary_theme: modes-of-climate-delivery
 secondary_themes: [consequences-for-people-and-places]
+theme_relationships:
+  - theme_id: modes-of-climate-delivery
+    relationship: primary
+    rationale: The article examines the institutional organisation of urban service delivery and infrastructure transitions in Southern cities.
+    evidence_source: https://doi.org/10.17645/up.8302
 geographies: [global]
 governance_scales: [municipal]
 methods: [institutional-analysis, comparative-case-study]
 climate_domains: [mitigation, resilience]
 sectors: [urban-infrastructure]
-connected_projects: []
+connected_work_ids: []
 featured: true
 metadata_sources: [orcid, crossref, publisher]
 last_verified_date: 2026-08-14

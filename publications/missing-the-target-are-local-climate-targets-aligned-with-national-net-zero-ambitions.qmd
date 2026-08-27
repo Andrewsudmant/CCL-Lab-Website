@@ -9,7 +9,7 @@ description: "Verified bibliographic record. Consult the original source for its
 
 **Authors:** Andrew Sudmant, Candice Howarth, Matt Lane<br>
 **Published:** 2022-05-20 · Authoritative repository record · Preprint<br>
-**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.<br>
+**Relationship to the lab:** Foundational prior work — Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.<br>
 **DOI:** [10.21203/rs.3.rs-1676382/v1](https://doi.org/10.21203/rs.3.rs-1676382/v1)
 
 > Andrew Sudmant, Candice Howarth, Matt Lane. (2022). Missing the target: Are local climate targets aligned with national net zero ambitions?. Authoritative repository record. https://doi.org/10.21203/rs.3.rs-1676382/v1
@@ -18,4 +18,4 @@ description: "Verified bibliographic record. Consult the original source for its
 
 ## Metadata provenance
 
-Metadata sources: orcid, crossref · last verified 2026-08-17 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.
+Metadata sources: orcid, crossref · last verified 2026-08-27 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.

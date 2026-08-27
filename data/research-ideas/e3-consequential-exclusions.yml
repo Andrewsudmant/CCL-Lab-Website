@@ -1,0 +1,12 @@
+idea_id: e3-consequential-exclusions
+theme_id: where-new-evidence-matters
+question: Which exclusions in the urban climate evidence base have the largest consequences for appraisal or policy design?
+why_it_may_matter: >-
+  Some exclusions may systematically change who or what an appraisal represents, making them more consequential than other evidence gaps.
+suggested_methods: [evidence-gap-mapping, population-vulnerability-linkage, distributional-analysis, participatory-priority-setting, scenario-analysis]
+possible_geographies: [global]
+possible_sectors: [cross-sectoral]
+possible_climate_domains: [mitigation, adaptation, resilience]
+display_order: 3
+owner_review_status: draft-owner-review
+disclaimer: Research idea · not currently an active or funded project

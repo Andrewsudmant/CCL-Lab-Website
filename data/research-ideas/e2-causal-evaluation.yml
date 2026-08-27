@@ -1,0 +1,12 @@
+idea_id: e2-causal-evaluation
+theme_id: where-new-evidence-matters
+question: Where would a causal evaluation change a policy choice rather than merely add another case study?
+why_it_may_matter: >-
+  Linking evaluation design to decision thresholds could distinguish consequential uncertainty from gaps that are only descriptive.
+suggested_methods: [decision-pathway-mapping, natural-experiments, difference-in-differences, synthetic-controls, matched-comparison, pre-analysis-of-decision-thresholds]
+possible_geographies: [canada, global]
+possible_sectors: [transport, buildings]
+possible_climate_domains: [mitigation, adaptation]
+display_order: 2
+owner_review_status: draft-owner-review
+disclaimer: Research idea · not currently an active or funded project

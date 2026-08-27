@@ -3,7 +3,7 @@
   "title": "Canonical publication record",
   "type": "object",
   "additionalProperties": false,
-  "required": ["record_id", "title", "authors", "publication_date", "date_precision", "publication_type", "peer_review_status", "venue", "volume", "issue", "pages", "article_number", "doi", "other_identifiers", "version", "original_submission_date", "current_version_date", "url", "citation", "abstract_summary", "relationship_to_lab", "relationship_note", "primary_theme", "secondary_themes", "geographies", "governance_scales", "methods", "climate_domains", "sectors", "connected_projects", "featured", "metadata_sources", "last_verified_date", "authoritative_sources", "verification_status"],
+  "required": ["record_id", "title", "authors", "publication_date", "date_precision", "publication_type", "peer_review_status", "venue", "volume", "issue", "pages", "article_number", "doi", "other_identifiers", "version", "original_submission_date", "current_version_date", "url", "citation", "abstract_summary", "relationship_to_lab", "relationship_note", "primary_theme", "secondary_themes", "theme_relationships", "geographies", "governance_scales", "methods", "climate_domains", "sectors", "connected_work_ids", "featured", "metadata_sources", "last_verified_date", "authoritative_sources", "verification_status"],
   "properties": {
     "record_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
     "title": {"type": "string", "minLength": 8},
@@ -25,16 +25,31 @@
     "url": {"type": "string", "format": "uri", "pattern": "^https://"},
     "citation": {"type": "string", "minLength": 20},
     "abstract_summary": {"type": "string", "minLength": 30},
-    "relationship_to_lab": {"enum": ["current-lab-research", "foundational-prior-work", "associated-collaboration"]},
+    "relationship_to_lab": {"enum": ["current-ccll-work", "pre-ccll-work-continuing", "foundational-prior-work", "associated-collaboration"]},
     "relationship_note": {"type": "string", "minLength": 20},
     "primary_theme": {"type": "string"},
     "secondary_themes": {"type": "array", "maxItems": 3, "uniqueItems": true, "items": {"type": "string"}},
+    "theme_relationships": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["theme_id", "relationship", "rationale", "evidence_source"],
+        "properties": {
+          "theme_id": {"type": "string"},
+          "relationship": {"enum": ["primary", "secondary"]},
+          "rationale": {"type": "string", "minLength": 30},
+          "evidence_source": {"type": "string", "format": "uri", "pattern": "^https://"}
+        }
+      }
+    },
     "geographies": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
     "governance_scales": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
     "methods": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
     "climate_domains": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
     "sectors": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
-    "connected_projects": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "connected_work_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
     "featured": {"type": "boolean"},
     "current_conversations_eligible": {"type": "boolean"},
     "mdpi_excluded": {"type": "boolean"},

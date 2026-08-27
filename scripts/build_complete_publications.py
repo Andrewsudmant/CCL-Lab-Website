@@ -76,10 +76,10 @@ def build_record(item: dict, selected: dict[str, dict], verified_date: str) -> d
         "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
         "relationship_to_lab": "foundational-prior-work",
         "relationship_note": "Verified work by Andrew Sudmant that predates the establishment of the Cities & Climate Learning Lab.",
-        "primary_theme": theme_for(title), "secondary_themes": [],
+        "primary_theme": theme_for(title), "secondary_themes": [], "theme_relationships": [],
         "geographies": geographies_for(title), "governance_scales": [], "methods": [],
         "climate_domains": ["evidence-and-learning"], "sectors": ["cross-sectoral"],
-        "connected_projects": [], "featured": False,
+        "connected_work_ids": [], "featured": False,
         "current_conversations_eligible": not mdpi, "mdpi_excluded": mdpi,
         "metadata_sources": ["orcid", item["provider"], "owner-override"] if mdpi else ["orcid", item["provider"]],
         "last_verified_date": verified_date,
@@ -104,11 +104,14 @@ def authoritative_record(item: dict, verified_date: str) -> dict:
         "url": item["url"],
         "citation": item.get("citation") or f"{', '.join(authors)}. ({date[:4]}). {title}. {item['venue']}.",
         "abstract_summary": "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations.",
-        "relationship_to_lab": "foundational-prior-work",
-        "relationship_note": "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.",
-        "primary_theme": theme_for(title), "secondary_themes": [], "geographies": geographies_for(title),
+        "relationship_to_lab": item.get("relationship_to_lab", "foundational-prior-work"),
+        "relationship_note": item.get("relationship_note", "Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab."),
+        "primary_theme": item.get("primary_theme", theme_for(title)),
+        "secondary_themes": item.get("secondary_themes", []),
+        "theme_relationships": item.get("theme_relationships", []),
+        "geographies": geographies_for(title),
         "governance_scales": [], "methods": [], "climate_domains": ["evidence-and-learning"], "sectors": ["cross-sectoral"],
-        "connected_projects": [], "featured": False, "current_conversations_eligible": True, "mdpi_excluded": False,
+        "connected_work_ids": item.get("connected_work_ids", []), "featured": False, "current_conversations_eligible": True, "mdpi_excluded": False,
         "metadata_sources": ["orcid", "repository"] if item.get("put_code") else ["publisher"],
         "last_verified_date": verified_date,
         "authoritative_sources": [
@@ -154,6 +157,14 @@ def main() -> int:
         if doi not in seen:
             value = dict(record); value["current_conversations_eligible"] = True; value["mdpi_excluded"] = False
             records.append(value); seen.add(doi)
+    theme_examples = load_yaml(ROOT / "config/publication_theme_examples.yml")
+    relationships_by_id = {item["record_id"]: item for item in theme_examples["records"]}
+    for record in records:
+        relationship = relationships_by_id.get(record["record_id"])
+        if relationship:
+            record["primary_theme"] = relationship["primary_theme"]
+            record["secondary_themes"] = relationship["secondary_themes"]
+            record["theme_relationships"] = relationship["theme_relationships"]
     records.sort(key=lambda item: (item["publication_date"], item["title"]), reverse=True)
     output_dir = ROOT / "reports/content"
     (output_dir / "publication-complete-inventory.json").write_text(json.dumps({"verified_at": verified_date, "orcid": "0000-0001-8650-8419", "records": records}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

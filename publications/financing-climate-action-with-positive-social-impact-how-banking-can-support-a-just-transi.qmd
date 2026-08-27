@@ -9,7 +9,7 @@ description: "Verified bibliographic record. Consult the original source for its
 
 **Authors:** Nick Robins, Sophia Tickell, William Irwin, Andrew Sudmant<br>
 **Published:** 2020-07-14 · Grantham Research Institute on Climate Change and the Environment · Report<br>
-**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.<br>
+**Relationship to the lab:** Foundational prior work — Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.<br>
 **Stable identifier:** none assigned by the authoritative source; use the original-source URL.
 
 > Nick Robins, Sophia Tickell, William Irwin, Andrew Sudmant. (2020). Financing climate action with positive social impact: How banking can support a just transition in the UK. Grantham Research Institute on Climate Change and the Environment.
@@ -18,4 +18,4 @@ description: "Verified bibliographic record. Consult the original source for its
 
 ## Metadata provenance
 
-Metadata sources: orcid, repository · last verified 2026-08-17 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.
+Metadata sources: orcid, repository · last verified 2026-08-27 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.

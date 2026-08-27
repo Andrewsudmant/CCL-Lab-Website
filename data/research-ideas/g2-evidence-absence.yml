@@ -1,0 +1,12 @@
+idea_id: g2-evidence-absence
+theme_id: geographies-of-climate-learning
+question: Which cities and populations are structurally absent from influential urban climate evidence?
+why_it_may_matter: >-
+  Systematic absence may narrow what is treated as general knowledge and leave important conditions invisible to research and policy.
+suggested_methods: [bibliometric-mapping, natural-language-processing, geocoding, citation-network-analysis, population-vulnerability-comparison]
+possible_geographies: [global]
+possible_sectors: [cross-sectoral]
+possible_climate_domains: [mitigation, adaptation, resilience]
+display_order: 2
+owner_review_status: draft-owner-review
+disclaimer: Research idea · not currently an active or funded project

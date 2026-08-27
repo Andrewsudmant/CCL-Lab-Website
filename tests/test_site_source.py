@@ -12,7 +12,7 @@ def test_required_navigation_pages_exist() -> None:
     hrefs |= {child["href"] for item in nav for child in item.get("menu", [])}
     required = {
         "research.qmd",
-        "projects.qmd",
+        "work.qmd",
         "people.qmd",
         "publications.qmd",
         "current-conversations/index.qmd",
@@ -24,6 +24,7 @@ def test_required_navigation_pages_exist() -> None:
     }
     assert required <= hrefs
     assert (ROOT / "index.qmd").exists()
+    assert (ROOT / "projects.qmd").exists()
     for source in required:
         assert (ROOT / source).exists()
 

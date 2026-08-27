@@ -1,21 +1,24 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Canonical project record",
+  "title": "Canonical research-work record",
   "type": "object",
   "additionalProperties": false,
-  "required": ["record_id", "title", "status", "relationship_to_lab", "relationship_note", "summary", "research_questions", "start_date", "end_date", "primary_theme", "secondary_themes", "geographies", "governance_scales", "methods", "climate_domains", "sectors", "collaborators", "connected_publications", "outputs", "data_tools", "last_verified_date", "authoritative_sources", "verification_status"],
+  "required": ["work_id", "title", "work_type", "work_status", "relationship_to_lab", "relationship_note", "summary", "research_questions", "primary_theme", "secondary_themes", "parent_work_id", "connected_work_ids", "connected_publication_ids", "connected_tool_ids", "geographies", "governance_scales", "methods", "sectors", "climate_domains", "evidence_status", "claim_boundaries", "authoritative_sources", "last_verified_date", "verification_status", "featured"],
   "properties": {
-    "record_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
-    "title": {"type": "string", "minLength": 8},
-    "status": {"enum": ["in-development", "active", "completed", "on-hold", "status-unconfirmed"]},
-    "relationship_to_lab": {"enum": ["current-lab-research", "foundational-prior-work", "associated-collaboration"]},
+    "work_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "title": {"type": ["string", "null"], "minLength": 8},
+    "work_type": {"enum": ["research-programme", "research-line", "project", "study", "paper", "report", "tool", "dataset"]},
+    "work_status": {"enum": ["ongoing", "completed"]},
+    "relationship_to_lab": {"enum": ["current-ccll-work", "pre-ccll-work-continuing", "foundational-prior-work", "associated-collaboration"]},
     "relationship_note": {"type": "string", "minLength": 20},
     "summary": {"type": "string", "minLength": 40},
     "research_questions": {"type": "array", "items": {"type": "string", "minLength": 12}, "maxItems": 6},
-    "start_date": {"type": ["string", "null"], "pattern": "^[0-9]{4}(?:-[0-9]{2}(?:-[0-9]{2})?)?$"},
-    "end_date": {"type": ["string", "null"], "pattern": "^[0-9]{4}(?:-[0-9]{2}(?:-[0-9]{2})?)?$"},
     "primary_theme": {"type": "string"},
     "secondary_themes": {"type": "array", "maxItems": 3, "uniqueItems": true, "items": {"type": "string"}},
+    "parent_work_id": {"type": ["string", "null"], "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "connected_work_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "connected_publication_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "connected_tool_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
     "decision_or_problem": {"type": "string", "minLength": 20},
     "existing_evidence": {"type": "string", "minLength": 20},
     "transfer_conditions": {"type": "string", "minLength": 20},
@@ -30,24 +33,12 @@
     "methods": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
     "climate_domains": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
     "sectors": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
-    "collaborators": {"type": "array", "items": {"type": "string"}},
-    "connected_publications": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
-    "outputs": {"type": "array", "items": {"$ref": "#/$defs/link"}},
-    "data_tools": {"type": "array", "items": {"$ref": "#/$defs/link"}},
-    "last_verified_date": {"type": "string", "format": "date"},
     "authoritative_sources": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/source"}},
-    "verification_status": {"enum": ["owner-approved", "verified", "partially-verified"]}
+    "last_verified_date": {"type": "string", "format": "date"},
+    "verification_status": {"enum": ["owner-approved", "verified", "partially-verified"]},
+    "featured": {"type": "boolean"}
   },
   "$defs": {
-    "link": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["title", "url"],
-      "properties": {
-        "title": {"type": "string"},
-        "url": {"type": ["string", "null"], "format": "uri"}
-      }
-    },
     "source": {
       "type": "object",
       "additionalProperties": false,

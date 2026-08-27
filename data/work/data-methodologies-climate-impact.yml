@@ -1,20 +1,22 @@
-record_id: data-methodologies-climate-impact
+work_id: data-methodologies-climate-impact
 title: Data Methodologies for Climate Impact Assessment
-status: completed
+work_type: project
+work_status: completed
 relationship_to_lab: foundational-prior-work
 relationship_note: >-
-  Work completed at the University of Edinburgh before the lab was established;
-  it provides a methodological foundation for the lab's research on evidence across places.
+  Completed at the University of Edinburgh before CCLL was established; it provides a methodological foundation for current research.
 summary: >-
-  Research on scaling and combining data for place-based climate-impact assessment,
-  including methods that connect national evidence with local decision contexts.
+  A completed project on scaling and combining data for place-based climate-impact assessment, including
+  relationships between national evidence and local decision contexts.
 research_questions:
   - How can national evidence be scaled for local climate-impact assessment?
-start_date: 2023-10-03
-end_date: 2025-04-02
 primary_theme: geographies-of-climate-learning
 secondary_themes: [consequences-for-people-and-places]
-decision_or_problem: How national evidence can be scaled without losing the information needed for local climate-impact assessment.
+parent_work_id: null
+connected_work_ids: []
+connected_publication_ids: [data-scaling-climate-action-governance-uk]
+connected_tool_ids: []
+decision_or_problem: How national evidence can be scaled without losing information needed for local climate-impact assessment.
 existing_evidence: Verified University of Edinburgh project material and its connected publication.
 transfer_conditions: Scale, spatial resolution and local decision context affect whether national evidence is relevant locally.
 consequential_uncertainty: Scaling choices can alter the impacts and governance implications visible to decision-makers.
@@ -23,16 +25,13 @@ claim_boundaries: The project does not establish one universally valid data-scal
 geographies: [united-kingdom]
 governance_scales: [federal-national, municipal, neighbourhood]
 methods: [place-based-modelling, spatial-analysis, economic-appraisal]
-climate_domains: [mitigation]
 sectors: [cross-sectoral]
-collaborators: [University of Edinburgh]
-connected_publications: [data-scaling-climate-action-governance-uk]
-outputs: []
-data_tools: []
-last_verified_date: 2026-08-14
+climate_domains: [mitigation]
 authoritative_sources:
   - label: University of Edinburgh project record
     url: https://www.research.ed.ac.uk/en/projects/data-methodologies-for-climate-impact-assessment/
-    retrieved_date: 2026-08-14
+    retrieved_date: 2026-08-27
     source_type: public-web
+last_verified_date: 2026-08-27
 verification_status: verified
+featured: false

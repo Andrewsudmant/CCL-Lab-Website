@@ -119,7 +119,7 @@ def test_current_conversations_disclosure_and_lab_source_separation() -> None:
     assert "validated evidence base" in landing
     assert "not evidence of a live retrieval" in landing
     home = (ROOT / "index.qmd").read_text(encoding="utf-8")
-    assert home.index("Featured projects and outputs") < home.index("External horizon scanning")
+    assert home.index("Featured work") < home.index("External horizon scanning")
     assert "Lab research" in home
     assert "External horizon scanning" in home
 
@@ -127,7 +127,7 @@ def test_current_conversations_disclosure_and_lab_source_separation() -> None:
 def test_public_theme_registry_has_four_equal_intellectual_stages() -> None:
     themes = research_scope()["themes"]
     assert [(item["id"], item["name"]) for item in themes] == CANONICAL_THEME_ORDER
-    assert all("portfolio_maturity" in item for item in themes)
+    assert all("portfolio_maturity" not in item for item in themes)
     generate_all()
     principal = "\n".join(
         (ROOT / path).read_text(encoding="utf-8")
@@ -138,10 +138,10 @@ def test_public_theme_registry_has_four_equal_intellectual_stages() -> None:
     assert "Developing" not in principal
 
 
-def test_project_records_are_canonical_and_match_owner_mapping() -> None:
-    projects = load_records("data/projects")
-    assert len(projects) == len({project["record_id"] for project in projects}) == 6
-    mapping = {project["record_id"]: (project["primary_theme"], project["secondary_themes"]) for project in projects}
+def test_research_work_records_are_canonical_and_match_owner_mapping() -> None:
+    works = load_records("data/work")
+    assert len(works) == len({work["work_id"] for work in works}) == 7
+    mapping = {work["work_id"]: (work["primary_theme"], work["secondary_themes"]) for work in works}
     assert mapping == {
         "climate-delivery-modes": ("modes-of-climate-delivery", ["geographies-of-climate-learning"]),
         "coben-place-based-model": ("consequences-for-people-and-places", ["where-new-evidence-matters", "modes-of-climate-delivery"]),
@@ -149,4 +149,5 @@ def test_project_records_are_canonical_and_match_owner_mapping() -> None:
         "geography-urban-climate-evidence": ("geographies-of-climate-learning", ["where-new-evidence-matters"]),
         "occupational-transition-requirements": ("consequences-for-people-and-places", ["where-new-evidence-matters", "modes-of-climate-delivery"]),
         "uk-co-benefits-atlas": ("consequences-for-people-and-places", ["geographies-of-climate-learning"]),
+        "uk-co-benefits-atlas-tool": ("consequences-for-people-and-places", ["geographies-of-climate-learning"]),
     }

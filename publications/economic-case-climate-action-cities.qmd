@@ -9,7 +9,7 @@ description: "The article examines the economic rationale for city-level climate
 
 **Authors:** Andy Gouldson, Sarah Colenbrander, Andrew Sudmant, Faye McAnulla, Niall Kerr, Paola Sakai, Stephen Hall, Effie Papargyropoulou, Johan Kuylenstierna<br>
 **Published:** 2015-11 · Global Environmental Change · Article<br>
-**Relationship to the lab:** Foundational Prior Work — Prior collaborative research included as an intellectual foundation for climate appraisal and delivery.<br>
+**Relationship to the lab:** Foundational prior work — Prior collaborative research included as an intellectual foundation for climate appraisal and delivery.<br>
 **DOI:** [10.1016/j.gloenvcha.2015.07.009](https://doi.org/10.1016/j.gloenvcha.2015.07.009)
 
 > Gouldson, A., Colenbrander, S., Sudmant, A., McAnulla, F., Kerr, N., Sakai, P., Hall, S., Papargyropoulou, E., & Kuylenstierna, J. (2015). Exploring the economic case for climate action in cities. Global Environmental Change, 35, 93–105.

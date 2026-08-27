@@ -49,19 +49,19 @@ page-layout: full
 {{< include generated/home-themes.qmd >}}
 
 ```{=html}
-  <p class="small-note cycle-entry-note">Projects and cities can enter this cycle at different points; the sequence organises connected questions rather than prescribing a universal linear process.</p>
+  <p class="small-note cycle-entry-note">Research work and cities can enter this cycle at different points; the sequence organises connected questions rather than prescribing a universal linear process.</p>
 </section>
 ```
 
 ```{=html}
-<section class="section-shell" aria-labelledby="projects-heading">
-  <div class="section-header"><div><p class="eyebrow">Lab research</p><h2 id="projects-heading">Featured projects and outputs</h2></div><a href="projects.html">View all projects →</a></div>
+<section class="section-shell" aria-labelledby="work-heading">
+  <div class="section-header"><div><p class="eyebrow">Lab research</p><h2 id="work-heading">Featured work</h2></div><a href="work.html">View all work →</a></div>
   <div class="theme-grid featured-work-grid">
-    <article class="theme-card"><h3><a href="projects/geography-urban-climate-evidence.html">Geography of urban climate evidence</a></h3><p>Where evidence is produced, and which cities can plausibly learn from it.</p></article>
-    <article class="theme-card"><h3><a href="projects/climate-delivery-modes.html">Climate delivery modes</a></h3><p>How authority, finance, coordination and capability combine to make action operable.</p></article>
-    <article class="theme-card"><h3><a href="projects/coben-place-based-model.html">CoBen</a></h3><p>Place-based appraisal of benefits, burdens, costs and distributional outcomes.</p></article>
+    <article class="theme-card"><p class="record-kicker">Ongoing paper</p><h3><a href="work/geography-urban-climate-evidence.html">Who can learn from whom? The geography of urban climate evidence</a></h3><p>The conditions under which documented urban climate evidence may be relevant to other cities.</p></article>
+    <article class="theme-card"><p class="record-kicker">Ongoing research programme</p><h3><a href="work/climate-delivery-modes.html">Climate delivery modes</a></h3><p>How authority, finance, coordination and capability combine to make action operable.</p></article>
+    <article class="theme-card"><p class="record-kicker">Ongoing research programme</p><h3><a href="work/coben-place-based-model.html">CoBen</a></h3><p>Place-based appraisal of benefits, burdens, costs and distributional outcomes.</p></article>
   </div>
-  <p class="small-note"><strong>Foundational prior work:</strong> the <a href="projects/uk-co-benefits-atlas.html">UK Co-Benefits Atlas</a> makes place-based benefits and costs visible across UK communities; its estimates are not assumed to transfer unchanged elsewhere.</p>
+  <p class="small-note"><strong>Foundational prior work:</strong> the completed <a href="work/uk-co-benefits-atlas.html">UK Co-Benefits Atlas project</a> makes place-based benefits and costs visible across UK communities; its <a href="work/uk-co-benefits-atlas-tool.html">public tool</a> remains available. Neither was developed at SFU.</p>
   <p><a href="outputs.html">Explore publications, outputs, data and tools →</a></p>
 </section>
 ```

@@ -1,0 +1,12 @@
+idea_id: c3-durable-co-benefits
+theme_id: consequences-for-people-and-places
+question: Which co-benefits persist over time, and which depend on particular delivery arrangements?
+why_it_may_matter: >-
+  Longitudinal evidence could distinguish durable outcomes from short-term effects and clarify how delivery mechanisms shape them.
+suggested_methods: [longitudinal-evaluation, causal-inference, linked-administrative-data, mixed-method-process-evaluation, mediation-or-mechanism-analysis]
+possible_geographies: [canada, global]
+possible_sectors: [buildings, transport, health]
+possible_climate_domains: [mitigation]
+display_order: 3
+owner_review_status: draft-owner-review
+disclaimer: Research idea · not currently an active or funded project

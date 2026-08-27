@@ -9,7 +9,7 @@ description: "The article evaluates the economic case for low-carbon development
 
 **Authors:** Sarah Colenbrander, Andrew Sudmant, Natasha Chilundika, Andy Gouldson<br>
 **Published:** 2018-11-28 · Sustainable Development · Article<br>
-**Relationship to the lab:** Foundational Prior Work — Prior collaborative research included as an intellectual foundation for place-based appraisal.<br>
+**Relationship to the lab:** Foundational prior work — Prior collaborative research included as an intellectual foundation for place-based appraisal.<br>
 **DOI:** [10.1002/sd.1906](https://doi.org/10.1002/sd.1906)
 
 > Colenbrander, S., Sudmant, A., Chilundika, N., & Gouldson, A. (2019). The scope for low-carbon development in Kigali, Rwanda: An economic appraisal. Sustainable Development, 27(3), 349–365.

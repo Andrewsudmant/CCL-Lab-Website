@@ -9,7 +9,7 @@ description: "Verified bibliographic record. Consult the original source for its
 
 **Authors:** Andrew Sudmant, Géraldine Pflieger, Samantha Sharpe, Harriet Bulkeley, Sarah Burch, Minal Pathak, Debra C. Roberts, William Solecki<br>
 **Published:** 2026-08-03 · npj Climate Action · Article<br>
-**Relationship to the lab:** Foundational Prior Work — Verified work by Andrew Sudmant; the record does not imply that historic work was produced by the Cities & Climate Learning Lab.<br>
+**Relationship to the lab:** Work begun before CCLL and continuing — Research developed before CCLL was established and published after Andrew joined Simon Fraser University; foundational to the current delivery programme.<br>
 **DOI:** [10.1038/s44168-026-00408-9](https://doi.org/10.1038/s44168-026-00408-9)
 
 > Sudmant, A., Pflieger, G., Sharpe, S., Bulkeley, H., Burch, S., Pathak, M., Roberts, D. C., & Solecki, W. (2026). From urban climate ambition to delivery: a framework of climate delivery modes. npj Climate Action. https://doi.org/10.1038/s44168-026-00408-9
@@ -18,4 +18,4 @@ description: "Verified bibliographic record. Consult the original source for its
 
 ## Metadata provenance
 
-Metadata sources: publisher · last verified 2026-08-17 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.
+Metadata sources: publisher · last verified 2026-08-27 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.

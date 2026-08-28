@@ -1,4 +1,4 @@
-scope_version: "1.2.0"
+scope_version: "1.3.0"
 owner_review_required: true
 notice: >-
   The four theme titles, questions, descriptions and analytical boundaries are
@@ -12,19 +12,25 @@ themes:
       How does place shape which urban climate knowledge is produced, recognised and useful elsewhere?
     long_description:
       - >-
-        Cities rarely possess complete local evidence for every climate decision, so they draw on studies,
-        cases, models and practical experience produced elsewhere. Yet the relevance of that knowledge depends
-        on more than geographical proximity or superficial similarity. Institutional arrangements,
-        infrastructure, climate, political authority, data systems and social conditions may all affect
-        whether a finding remains useful in another setting.
+        Cities cannot investigate every climate question independently, so urban climate decisions necessarily
+        draw on studies, models, cases and practical experience produced elsewhere. Yet research and policy
+        often treat the existence of a precedent, or a visible resemblance between two cities, as evidence that
+        its lessons will travel. That inference is uncertain. Institutional arrangements, infrastructure,
+        climate, political authority, fiscal capacity, data systems and social conditions may alter what
+        another city can plausibly learn.
       - >-
-        This theme studies the geography of urban climate knowledge: where evidence is produced, which cities
-        and populations are made visible, how particular cases become reference points, and under what
-        conditions findings may inform decisions beyond their original location. We examine not only whether
-        knowledge travels, but also how it is interpreted, adapted, combined or rejected as it moves between places.
+        Geographies of Climate Learning examines where urban climate knowledge is produced, which cities and
+        populations are made visible, how particular places become influential reference cases, and which
+        institutions recognise some forms of evidence as authoritative. It also follows evidence as it moves:
+        how findings are interpreted, adapted, combined, contested or rejected in new settings. The aim is not
+        to identify universally transferable lessons, but to understand what would have to be true for evidence
+        produced in one place to become informative in another.
     analytical_boundary: >-
-      This theme concerns existing knowledge and the conditions under which it may be relevant elsewhere. It
-      does not assume that findings transfer unchanged between cities.
+      This theme concerns existing knowledge and the conditions under which it may be relevant elsewhere. It does
+      not presume that proximity, similarity or the volume of available research establishes applicability.
+    what_this_changes: >-
+      Cross-city learning is not simply a search for the most similar city. It is a judgement about which
+      contextual differences matter for the decision at hand.
     cycle_role: Existing knowledge and its relevance across places.
     connection_to_next: >-
       Mapping the reach and limits of existing knowledge reveals which unresolved questions could be
@@ -55,18 +61,23 @@ themes:
     guiding_question: Which new evidence would most improve urban climate decisions?
     long_description:
       - >-
-        Once the limits of existing evidence become visible, a further question follows: which additional
-        evidence would materially improve decisions? The absence of a study does not, by itself, establish a
-        research priority. Some gaps may have little consequence, while a carefully chosen new case, evaluation,
-        dataset or causal test may resolve uncertainty for many cities.
+        Once the limits of existing evidence become visible, a further problem arises: deciding what evidence
+        should be produced next. Urban climate research often treats an unstudied place, population or
+        intervention as a research gap. Yet absence alone does not establish value. Some gaps may have little
+        bearing on current decisions, while a strategically chosen case, causal evaluation, comparison or
+        dataset may resolve uncertainty for many cities.
       - >-
-        This theme examines where new evidence could alter an appraisal, clarify an important mechanism,
-        correct systematic exclusion or expand the range of cities able to learn. It connects evidence mapping
-        with choices about research design, asking not only where knowledge is missing, but where producing new
-        knowledge could make a consequential difference.
+        Where New Evidence Matters examines which additional knowledge could alter an appraisal, distinguish
+        between competing explanations, clarify a mechanism, correct a consequential exclusion or expand the
+        range of cities able to learn. It connects evidence mapping with research design and decision analysis,
+        asking not simply where knowledge is missing, but where producing it could change what cities understand
+        or do. The theme does not seek a universal ranking of research priorities; the value of new evidence
+        depends on the decision, uncertainty and community it is intended to serve.
     analytical_boundary: >-
-      This theme concerns prospective choices about what evidence should be produced next. A data gap, new tool
-      or under-studied location is not automatically a research priority.
+      A data gap, new tool or under-studied location is not automatically a research priority. New evidence
+      matters where its production could materially change understanding, appraisal or action.
+    what_this_changes: >-
+      The size of an evidence gap and the value of filling it are different questions.
     cycle_role: Choices about which uncertainties and evidence gaps merit investigation.
     connection_to_next: >-
       New evidence matters most when it changes what decision-makers understand about how climate action can be
@@ -99,19 +110,24 @@ themes:
       Through which institutional arrangements does urban climate action become possible and durable?
     long_description:
       - >-
-        Evidence and ambition do not implement themselves. Urban climate action becomes possible through
-        particular configurations of authority, finance, organisational capability, infrastructure provision,
-        participation, coordination, sequencing and maintenance. Similar interventions may therefore follow
-        very different delivery routes across cities.
+        Urban climate policy is often described through its targets, technologies or formal instruments, as
+        though implementation follows once an appropriate intervention has been selected. Yet evidence and
+        ambition do not implement themselves. Climate action becomes operable through particular configurations
+        of authority, finance, organisational capability, infrastructure provision, participation, coordination,
+        sequencing and maintenance.
       - >-
-        This theme compares how these configurations are assembled across city types, sectors and institutional
-        settings. We examine which mechanisms make action operable, how responsibilities and resources are
-        combined over time, why delivery arrangements endure or fail, and how they change as political, fiscal
-        and social conditions shift. The aim is not to identify one universal delivery model, but to distinguish
-        recurring patterns from context-dependent arrangements.
+        Modes of Climate Delivery compares how these configurations are assembled across city types, sectors and
+        institutional settings. It asks why nominally similar policies follow different implementation
+        trajectories, how responsibilities and resources shift over time, and which arrangements endure through
+        political, fiscal or organisational change. The purpose is not to identify one preferred delivery model.
+        It is to distinguish recurring mechanisms from context-dependent arrangements, so that apparent policy
+        similarity does not conceal the institutions through which action actually occurs.
     analytical_boundary: >-
-      A delivery mode is a configuration through which change becomes operable. It is not merely a technology,
-      sector, policy instrument or list of actors.
+      A delivery mode is a configuration through which change becomes operable and durable. It is not simply a
+      technology, policy instrument, sector or list of participating actors.
+    what_this_changes: >-
+      The same intervention can represent a different form of climate action when authority, resources and
+      responsibility are organised differently.
     cycle_role: The arrangements through which climate action becomes operable.
     connection_to_next: >-
       Delivery arrangements shape which consequences occur, who experiences them and whether climate action can
@@ -142,17 +158,23 @@ themes:
     guiding_question: What does climate action change, for whom, where and over what period?
     long_description:
       - >-
-        Climate action changes more than greenhouse-gas emissions. It may affect health, affordability, mobility,
-        employment, social cohesion, local economies, public services and exposure to risk. These effects can be
-        beneficial or adverse, intended or unexpected, and distributed unevenly across populations and places.
+        Climate action changes more than greenhouse-gas emissions. It may alter health, affordability, mobility,
+        employment, social cohesion, local economies, public services and exposure to risk. Yet appraisal often
+        reports average benefits or total economic value, obscuring whether the same action produces different
+        consequences across neighbourhoods, populations and periods.
       - >-
-        This theme examines co-benefits, co-costs, trade-offs, burdens and distributional consequences over
-        different periods. It also investigates how appraisal methods make some outcomes visible while leaving
-        others outside the analysis. These consequences return evidence to the wider learning cycle: they test
-        prior assumptions, reveal new inequalities and change what other cities may plausibly infer.
+        Consequences for People and Places examines benefits, co-costs, burdens, adverse effects, trade-offs and
+        distributional change. It asks who gains, who pays, where effects occur, how they develop over time and
+        which consequences remain outside conventional appraisal. It also examines how delivery arrangements
+        shape these outcomes. Consequences complete the learning cycle because they test prior assumptions,
+        reveal unanticipated inequalities and change what other cities may plausibly infer from the intervention.
     analytical_boundary: >-
-      The term consequences includes benefits, burdens, risks, adverse effects and distributional change. The
-      website must not presume that all outcomes are positive or equally shared.
+      Consequences include intended and unintended effects, benefits and harms, and outcomes that cannot be
+      reduced to a single monetary measure. The theme does not presume that climate action is automatically
+      equitable or locally beneficial.
+    what_this_changes: >-
+      An intervention’s climate value cannot be separated from the distribution, timing and location of its
+      wider consequences.
     cycle_role: Observed outcomes, their distribution, and evidence that informs subsequent decisions.
     connection_to_next: >-
       Observed consequences generate new knowledge, expose the limits of earlier assumptions and change what

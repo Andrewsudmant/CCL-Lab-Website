@@ -108,20 +108,19 @@ def test_unclassified_fixtures_remain_unforced_and_non_ai_disclosure_is_truthful
     assert all(record["ai_provenance"]["used"] is False for record in clusters)
     feed = (ROOT / "generated/current-conversations-feed.qmd").read_text(encoding="utf-8")
     assert "Identified and summarized using AI" not in feed
-    assert "no AI generation recorded" in feed
-    assert "Cross-cutting or not classified by lab theme" in feed
+    assert "no public entries" in feed
 
 
 def test_current_conversations_disclosure_and_lab_source_separation() -> None:
     landing = (ROOT / "current-conversations/index.qmd").read_text(encoding="utf-8")
-    exact = "Items are collected, classified and summarised automatically to show where the lab’s topics are being discussed. Inclusion does not indicate endorsement, evidential quality or applicability to a particular city."
+    exact = "When Current Conversations launches, items will be collected, classified and summarised automatically. Inclusion will not indicate endorsement, evidential quality or applicability to a particular city."
     assert exact in landing
-    assert "validated evidence base" in landing
-    assert "not evidence of a live retrieval" in landing
+    assert "not be a systematic review" in landing
+    assert "live feed is not yet enabled" in landing
     home = (ROOT / "index.qmd").read_text(encoding="utf-8")
-    assert home.index("Featured work") < home.index("External horizon scanning")
+    assert home.index("Featured work") < home.index("Current Conversations · In development")
     assert "Lab research" in home
-    assert "External horizon scanning" in home
+    assert "Current Conversations · In development" in home
 
 
 def test_public_theme_registry_has_four_equal_intellectual_stages() -> None:

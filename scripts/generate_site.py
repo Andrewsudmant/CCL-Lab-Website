@@ -11,10 +11,10 @@ from pathlib import Path
 from typing import Any
 
 try:
-    from .content import ROOT, load_records, research_scope, theme_index
+    from .content import ROOT, load_records, load_yaml, research_scope, theme_index
     from .validate_content import validate_all
 except ImportError:
-    from content import ROOT, load_records, research_scope, theme_index
+    from content import ROOT, load_records, load_yaml, research_scope, theme_index
     from validate_content import validate_all
 
 OUT = ROOT / "generated"
@@ -211,12 +211,10 @@ def generate_themes(works: list[dict[str, Any]], ideas: list[dict[str, Any]], pu
             and any(item["theme_id"] == theme["id"] for item in record.get("theme_relationships", []))
         ]
         theme_ideas = sorted([record for record in ideas if record["theme_id"] == theme["id"] and record["owner_review_status"] != "withheld"], key=lambda item: item["display_order"])
-        recent = [record for record in clusters if record["publication_decision"] == "published" and (record["primary_theme"] == theme["id"] or theme["id"] in record["secondary_themes"])][:3]
         publications_by_id = {record["record_id"]: record for record in publications}
         ongoing_html = '<div class="record-list">' + ''.join(work_card(record, publications_by_id) for record in ongoing_work) + '</div>'
         completed_html = '<div class="record-list">' + ''.join(work_card(record, publications_by_id) for record in completed_work) + ''.join(publication_theme_card(record, theme["id"]) for record in selected_publications) + '</div>'
-        idea_html = '<div class="idea-grid">' + ''.join(f'''<article class="idea-card"><p class="idea-disclaimer">{esc(item['disclaimer'])}</p><h3>{esc(item['question'])}</h3><p>{esc(item['why_it_may_matter'])}</p><h4>Suggested methods</h4>{tags([method.replace('-', ' ') for method in item['suggested_methods']], 'method-list')}</article>''' for item in theme_ideas) + '</div>'
-        recent_html = '<div class="compact-list">' + ''.join(f'<p><a href="/current-conversations/{esc(item["slug"])}.html">{esc(item["public_title"])}</a><br><span>{esc(provenance_label(item))}</span></p>' for item in recent) + '</div>' if recent else '<p class="small-note">No fixture is currently classified to this theme.</p>'
+        idea_html = '<div class="idea-grid">' + ''.join(f'''<article class="idea-card"><p class="idea-disclaimer">{esc(item['disclaimer'])}</p><h3>{esc(item['working_title'])}</h3><p class="idea-question">{esc(item['question'])}</p><h4>Problem of understanding</h4><p>{esc(item['problem_of_understanding'])}</p><h4>Why it may matter</h4><p>{esc(item['why_it_may_matter'])}</p><h4>Possible research design</h4><p>{esc(item['possible_research_design'])}</p>{f'<p class="idea-qualification"><strong>Research governance qualification.</strong> {esc(item["required_qualification"])}</p>' if item.get('required_qualification') else ''}{f'<p class="idea-qualification"><strong>Analytical boundary.</strong> {esc(item["required_boundary"])}</p>' if item.get('required_boundary') else ''}<h4>Suggested methods</h4>{tags(item['suggested_methods'][:5], 'method-list')}</article>''' for item in theme_ideas) + '</div>'
         previous_theme = themes[index - 2] if index > 1 else themes[-1]
         next_theme = themes[index] if index < len(themes) else themes[0]
         connections = f'''- **Input from [{previous_theme['name']}](/research/{previous_theme['id']}.html):** {previous_theme['connection_to_next']}
@@ -237,6 +235,10 @@ def generate_themes(works: list[dict[str, Any]], ideas: list[dict[str, Any]], pu
 **Place in the learning cycle.** {theme['connection_to_next']}
 :::
 
+::: {{.what-this-changes}}
+**What this changes.** {theme['what_this_changes']}
+:::
+
 ## Questions the lab investigates
 
 {questions}
@@ -253,9 +255,9 @@ def generate_themes(works: list[dict[str, Any]], ideas: list[dict[str, Any]], pu
 {completed_html}
 ```
 
-## Research ideas
+## Questions this theme opens
 
-These are possible future research directions for owner review. They are not commitments, funded activity or open opportunities.
+The questions below are possible directions for future research. They are not currently active or funded projects.
 
 ```{{=html}}
 {idea_html}
@@ -267,13 +269,7 @@ These are possible future research directions for owner review. They are not com
 
 ## External horizon scanning: Current Conversations
 
-Items are collected, classified and summarised automatically to show where the lab’s topics are being discussed. Inclusion does not indicate endorsement, evidential quality or applicability to a particular city.
-
-These external records are separate from lab-authored work, completed and foundational work, and research ideas.
-
-```{{=html}}
-{recent_html}
-```
+Current Conversations is in development. No live public feed is operating, and no automatically identified item is presented on this page.
 
 [How Current Conversations works](/current-conversations/how-it-works.html).'''
         write_page(ROOT / "research" / f"{theme['id']}.qmd", theme["name"], theme["homepage_description"], body, canonical=f"/research/{theme['id']}.html")
@@ -404,64 +400,22 @@ Metadata sources: {', '.join(record['metadata_sources'])} · last verified {reco
 
 
 def generate_conversations(clusters: list[dict[str, Any]], source_list: list[dict[str, Any]]) -> None:
-    sources = {record["source_id"]: record for record in source_list}
-    published = sorted([record for record in clusters if record["publication_decision"] == "published"], key=lambda item: item["date_most_recently_observed"], reverse=True)
-    write_fragment("current-conversations-feed.qmd", '<div class="conversation-grid" id="conversation-results">' + ''.join(conversation_card(record, sources) for record in published) + '</div>')
-    home = select_home_clusters(published, sources)
-    write_fragment("home-current-conversations.qmd", '<div class="conversation-grid home-conversations">' + ''.join(conversation_card(record, sources) for record in home) + '</div>')
-    for cluster in published:
-        principal = sources[cluster["principal_source_id"]]
-        linked = [sources[source_id] for source_id in cluster["linked_source_ids"]]
-        def source_section(source: dict[str, Any], heading: str) -> str:
-            fixture = " Captured fixture for private calibration." if source["captured_fixture"] else ""
-            return f'''### {heading}: {source['title']}
+    # Fixture records remain available to schema and regression tests, but Gate 5E
+    # deliberately produces no public cards, detail pages or machine-readable feed.
+    write_fragment("current-conversations-feed.qmd", "<!-- Current Conversations is in development; no public entries. -->")
+    write_fragment("home-current-conversations.qmd", "<!-- Current Conversations is in development; no public entries. -->")
+    for feed in (ROOT / "current-conversations/feed.json", ROOT / "current-conversations/feed.xml"):
+        feed.unlink(missing_ok=True)
 
-- **Environment:** {ENV_LABELS[source['source_environment']]}
-- **Role:** {ROLE_LABELS.get(source['source_role'], source['source_role'])}
-- **Author or organisation:** {', '.join(source['authors_or_organisation'])}
-- **Published:** {source['publication_date']}
-- **Evidence accessed:** {', '.join(source['evidence_basis'])}
-- **Access limitation:** {source['evidence_limitations']}{fixture}
 
-[Open this original source]({source['original_url']})'''
-        sections = [source_section(principal, "Principal source")] + [source_section(source, "Also discussed in") for source in linked]
-        fixture_notice = "\n\n::: {.notice}\n**Private calibration fixture.** One or more sources were captured to test mixed-source presentation because the paid web adapter was unavailable. This entry is not evidence of a live automated retrieval.\n:::" if cluster["captured_fixture"] else ""
-        body = f'''<p class="page-deck">{cluster['discussion_statement']}</p>
-
-<p class="status-badge unreviewed">{provenance_label(cluster)}</p>
-{'<p class="grouped-label">Related sources grouped automatically</p>' if linked else ''}
-
-## What is being discussed
-
-{cluster['summary']}
-
-## Why it may be relevant
-
-{cluster['reason_for_relevance']}
-
-## Evidence, interpretation and uncertainty
-
-{cluster['limitations']}
-
-{cluster['agreement_disagreement_uncertainty']}{fixture_notice}
-
-## Sources
-
-{(chr(10) * 2).join(sections)}
-
-## Grouping provenance
-
-**Rationale:** {cluster['clustering']['rationale']}<br>
-**Principal-source choice:** {cluster['clustering']['principal_source_rationale']}<br>
-**Method/version:** {cluster['clustering']['method']} · {cluster['clustering']['version']}<br>
-**Confidence:** {cluster['clustering']['confidence']:.2f}
-
-[How Current Conversations works](/current-conversations/how-it-works.html) · [Request a correction](/contact.html)'''
-        write_page(ROOT / "current-conversations" / f"{cluster['slug']}.qmd", cluster["public_title"], cluster["discussion_statement"], body, canonical=f"/current-conversations/{cluster['slug']}.html")
-    feed_items = [{"id": cluster["cluster_id"], "url": f"/current-conversations/{cluster['slug']}.html", "title": cluster["public_title"], "content_text": cluster["summary"], "date_published": cluster["date_first_observed"], "date_modified": cluster["date_most_recently_observed"], "external_url": sources[cluster["principal_source_id"]]["original_url"], "tags": [item for item in [cluster["primary_theme"], *cluster["secondary_themes"]] if item]} for cluster in published]
-    (ROOT / "current-conversations/feed.json").write_text(json.dumps({"version": "https://jsonfeed.org/version/1.1", "title": "Cities & Climate Learning Lab — Current Conversations", "home_page_url": "/current-conversations/", "feed_url": "/current-conversations/feed.json", "items": feed_items}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    rss_items = "".join(f'<item><guid>{esc(item["id"])}</guid><title>{esc(item["title"])}</title><link>{esc(item["url"])}</link><description>{esc(item["content_text"])}</description><pubDate>{esc(item["date_published"])}</pubDate></item>' for item in feed_items)
-    (ROOT / "current-conversations/feed.xml").write_text('<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Cities &amp; Climate Learning Lab — Current Conversations</title><link>/current-conversations/</link><description>Recent conversations connected to the lab research themes.</description>' + rss_items + '</channel></rss>\n', encoding="utf-8")
+def generate_site_status() -> None:
+    config = load_yaml(ROOT / "config/site.yml")
+    banner = "<!-- Generated by scripts/generate_site.py from config/site.yml; do not edit. -->\n"
+    if config["site_status"] == "draft":
+        banner += '''<aside class="site-status-banner column-screen" role="status" aria-label="Draft website status">
+  <div><strong>Draft website</strong><span>The Cities and Climate Learning Lab is being established at Simon Fraser University. Some descriptions of developing research and possible future work will continue to be refined.</span></div>
+</aside>\n'''
+    (ROOT / "assets/site-status.html").write_text(banner, encoding="utf-8")
 
 
 def generate_all() -> None:
@@ -474,7 +428,7 @@ def generate_all() -> None:
     sources = load_json_records(ROOT / "data/current-conversations/generated/sources")
     clusters = load_json_records(ROOT / "data/current-conversations/generated/clusters")
     generate_themes(works, ideas, complete, clusters, {record["source_id"]: record for record in sources})
-    generate_people(); generate_work(works, complete); generate_publications(complete); generate_conversations(clusters, sources)
+    generate_people(); generate_work(works, complete); generate_publications(complete); generate_conversations(clusters, sources); generate_site_status()
     expected: dict[Path, set[str]] = {
         OUT: {
             "home-themes.qmd", "research-themes.qmd", "people.qmd", "work.qmd",
@@ -491,7 +445,7 @@ def generate_all() -> None:
             "just-transitions-workforce.qmd", "canadian-climate-policy.qmd",
         },
         ROOT / "current-conversations": {
-            "index.qmd", "how-it-works.qmd", *{f"{record['slug']}.qmd" for record in clusters if record["publication_decision"] == "published"},
+            "index.qmd", "how-it-works.qmd",
         },
     }
     # Cleanup happens only after every current page and feed has been written.
@@ -506,7 +460,7 @@ def main() -> int:
     try: generate_all()
     except ValueError as exc:
         print(exc); return 1
-    print("Generated canonical listings, publication views, conversation clusters, feeds and theme pages.")
+    print("Generated canonical listings, publication views, theme pages and the configured site-status banner.")
     return 0
 
 

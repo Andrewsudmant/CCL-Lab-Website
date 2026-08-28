@@ -10,3 +10,4 @@ _site/
 .env.*
 !.env.example
 /deliverables/*.zip
+/deliverables/*/

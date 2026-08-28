@@ -17,17 +17,17 @@ def test_generated_listing_counts_match_records() -> None:
     assert people.count('<article class="record-card') == len(load_records("data/people"))
     assert work.count('<article class="record-card') == len(load_records("data/work"))
     assert publications.count('<article class="record-card') == len(load_records("data/publications"))
-    clusters = [json.loads(path.read_text()) for path in (ROOT / "data/current-conversations/generated/clusters").glob("*.json")]
-    assert conversations.count('<article class="conversation-card') == len([x for x in clusters if x["publication_decision"] == "published"])
+    assert conversations.count('<article class="conversation-card') == 0
+    assert "no public entries" in conversations
 
 
 def test_automated_listing_has_full_non_endorsement_language() -> None:
     generate_all()
     page = (ROOT / "current-conversations/index.qmd").read_text(encoding="utf-8")
-    assert "inclusion does not imply endorsement" in page
-    assert "summaries may contain errors" in page
+    assert "In development" in page
+    assert "Inclusion will not indicate endorsement" in page
     generated = (ROOT / "generated/current-conversations-feed.qmd").read_text()
-    assert "Captured fixture · no AI generation recorded" in generated
+    assert "no public entries" in generated
     assert "Identified and summarized using AI" not in generated
 
 

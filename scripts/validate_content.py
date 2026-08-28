@@ -63,6 +63,9 @@ def validate_all() -> list[str]:
     if observed_themes != CANONICAL_THEME_ORDER:
         errors.append("config/research_scope.yml: theme IDs and titles must match the four canonical themes in order")
 
+    site_config = load_yaml(ROOT / "config/site.yml")
+    errors.extend(schema_errors(site_config, load_schema("site-config.schema.json"), "config/site.yml"))
+
     vocab = load_yaml(ROOT / "config/vocabularies.yml")
     errors.extend(schema_errors(vocab, load_schema("vocabularies.schema.json"), "config/vocabularies.yml"))
     query_pack = load_yaml(ROOT / "config/query_packs/current-conversations-v2.yml")
@@ -119,6 +122,13 @@ def validate_all() -> list[str]:
         errors.append("data/people: public email must be andrew_sudmant@sfu.ca")
 
     errors.extend(unique_and_crosslink_errors(records))
+    ideas = records["research-ideas"]
+    if len(ideas) != 24:
+        errors.append(f"data/research-ideas: expected 24 active ideas, found {len(ideas)}")
+    for theme_id, _ in CANONICAL_THEME_ORDER:
+        count = sum(item.get("theme_id") == theme_id for item in ideas)
+        if count != 6:
+            errors.append(f"data/research-ideas: {theme_id} must have exactly six active ideas, found {count}")
 
     complete_path = ROOT / "reports/content/publication-complete-inventory.json"
     if complete_path.exists():

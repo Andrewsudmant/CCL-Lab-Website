@@ -1,41 +1,17 @@
 ---
 title: "Current Conversations"
-description: "Where research, policy, practice, media and public discussion engage with the questions the lab studies."
+description: "An in-development view of where the lab’s research themes are being discussed."
 page-layout: full
 ---
 
 ```{=html}
 <div class="watch-intro section-shell-narrow">
-  <p class="page-deck">Where research, policy, practice, media and public discussion engage with the questions the lab studies.</p>
-  <p>Current Conversations is a selective horizon-scanning feature. It is not a validated evidence base, lab endorsement, transferability assessment or recommendation system.</p>
-  <div class="research-watch-disclosure" role="note" aria-label="Current Conversations automated discovery and non-endorsement disclosure">
-    <p class="eyebrow">How to read this page</p>
-    <p><strong>Items are collected, classified and summarised automatically to show where the lab’s topics are being discussed. Inclusion does not indicate endorsement, evidential quality or applicability to a particular city.</strong></p>
-    <p>For clarity, inclusion does not imply endorsement by the lab.</p>
-    <p>The entries currently shown are captured interface fixtures with <code>ai_provenance.used=false</code>; no AI generation is claimed for them and they are not evidence of a live retrieval. They have not been reviewed by the Cities and Climate Learning Lab, and summaries may contain errors or omit context. Please consult the original sources.</p>
+  <p class="status-badge in-development">In development</p>
+  <p class="page-deck">We are developing an automatically generated view of where the lab’s research themes are being discussed across research, policy, practice, media and public commentary. The live feed is not yet enabled.</p>
+  <div class="research-watch-disclosure" role="note" aria-label="Current Conversations development and non-endorsement disclosure">
+    <p><strong>When Current Conversations launches, items will be collected, classified and summarised automatically. Inclusion will not indicate endorsement, evidential quality or applicability to a particular city.</strong></p>
   </div>
-  <p><a href="how-it-works.html">How Current Conversations works, including methods and limitations →</a></p>
-  <p class="record-meta"><strong>Prototype fixture date:</strong> 17 August 2026 · <strong>Coverage:</strong> captured mixed-source examples for testing presentation and governance. These are not current discovery results or lab endorsements.</p>
-  <p><a href="feed.xml">RSS feed</a> · <a href="feed.json">JSON feed</a> · <a href="/contact.html">Request a correction or report a broken source</a></p>
+  <p>Current Conversations will provide selective horizon scanning. It will not be a systematic review, evidence-quality assessment, transferability assessment, recommendation system or comprehensive map of discussion.</p>
+  <p><a href="how-it-works.html">Read the planned methods, safeguards and limitations →</a></p>
 </div>
-```
-
-```{=html}
-<section class="section-shell" aria-labelledby="conversations-heading">
-  <div class="section-header"><div><p class="eyebrow">Recent discussion</p><h2 id="conversations-heading">Conversation clusters and standalone entries</h2></div><span class="status-badge unreviewed">Normally unreviewed</span></div>
-  <form class="watch-filters" data-conversation-filters aria-label="Filter Current Conversations">
-    <label>Keyword <input type="search" name="query" autocomplete="off"></label>
-    <label>Lab theme <select name="theme"><option value="">All theme states</option><option value="geographies-of-climate-learning">Geographies of Climate Learning</option><option value="where-new-evidence-matters">Where New Evidence Matters</option><option value="modes-of-climate-delivery">Modes of Climate Delivery</option><option value="consequences-for-people-and-places">Consequences for People and Places</option><option value="__unclassified__">Cross-cutting or unclassified</option></select></label>
-    <label>Source environment <select name="environment"><option value="">All environments</option><option value="academic-research">Academic research</option><option value="policy-and-institutions">Policy and institutions</option><option value="news-and-analysis">News and analysis</option><option value="blogs-and-commentary">Blogs and commentary</option><option value="data-and-tools">Data and tools</option><option value="bluesky">Bluesky</option></select></label>
-    <label>Geography <select name="geography"><option value="">All geographies</option><option value="global">Global</option><option value="canada">Canada</option><option value="british-columbia">British Columbia</option><option value="europe">Europe</option><option value="united-kingdom">United Kingdom</option></select></label>
-    <label>Entry type <select name="kind"><option value="">Clusters and standalone</option><option value="cluster">Grouped clusters</option><option value="standalone">Standalone entries</option></select></label>
-    <label>Published since <input type="date" name="since"></label>
-    <button type="reset">Clear</button><output data-conversation-count aria-live="polite"></output>
-  </form>
-```
-
-{{< include ../generated/current-conversations-feed.qmd >}}
-
-```{=html}
-</section>
 ```

@@ -1,0 +1,14 @@
+idea_id: g4-evidence-translation
+theme_id: geographies-of-climate-learning
+working_title: Evidence in translation
+question: How is urban climate evidence changed as it moves through city networks, consultancies, policy guidance and local decision processes?
+problem_of_understanding: Cities rarely encounter research in its original scholarly form, yet little is known about how claims and limitations change as evidence is translated into guidance and plans.
+why_it_may_matter: Simplification or reframing may detach findings from the conditions under which they were produced and create stronger policy claims than the original evidence supports.
+possible_research_design: Document-lineage analysis and text-similarity methods could trace changes between papers, guidance, consultancy reports and municipal plans, while interviews could explain why particular claims were retained or altered.
+suggested_methods: [document-lineage analysis, text similarity, natural-language processing, interviews, policy-document analysis]
+possible_geographies: [British Columbia, Canada, comparative international cities]
+possible_sectors: [urban governance]
+possible_climate_domains: [mitigation, adaptation]
+display_order: 4
+owner_review_status: owner-approved
+disclaimer: Research idea · not currently an active or funded project

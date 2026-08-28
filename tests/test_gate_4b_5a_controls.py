@@ -34,19 +34,16 @@ def test_source_cluster_relationships_are_complete() -> None:
 def test_public_disclosure_and_moved_routes() -> None:
     page = (ROOT / "current-conversations/index.qmd").read_text()
     generated = (ROOT / "generated/current-conversations-feed.qmd").read_text()
-    assert "inclusion does not imply endorsement" in page
-    assert "Captured fixture · no AI generation recorded · not reviewed by the lab" in generated
+    assert "Inclusion will not indicate endorsement" in page
+    assert "no public entries" in generated
     assert "Continue to Current Conversations" in (ROOT / "research-watch/index.qmd").read_text()
-    detail = (ROOT / "current-conversations/sustainable-urban-data-centres.qmd").read_text()
-    assert "\n\n### Also discussed in:" in detail
+    assert {path.name for path in (ROOT / "current-conversations").glob("*.qmd")} == {"index.qmd", "how-it-works.qmd"}
 
 
-def test_feeds_preserve_original_source_links() -> None:
-    feed = json.loads((ROOT / "current-conversations/feed.json").read_text())
-    assert feed["version"] == "https://jsonfeed.org/version/1.1"
-    assert len(feed["items"]) == 25
-    assert all(item["url"].startswith("/current-conversations/") for item in feed["items"])
-    assert "<rss version=\"2.0\">" in (ROOT / "current-conversations/feed.xml").read_text()
+def test_public_feeds_are_absent_while_in_development() -> None:
+    assert not (ROOT / "current-conversations/feed.json").exists()
+    assert not (ROOT / "current-conversations/feed.xml").exists()
+    assert "feed.json" not in (ROOT / "_quarto.yml").read_text()
 
 
 def test_complete_and_selected_publication_controls() -> None:

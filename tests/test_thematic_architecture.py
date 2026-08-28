@@ -91,18 +91,15 @@ def test_work_theme_relationships_and_optional_learning_fields() -> None:
     assert "**Next learning question:**" not in atlas_page
 
 
-def test_current_conversations_filters_disclosure_and_unclassified_state() -> None:
+def test_current_conversations_in_development_and_unclassified_fixtures_remain_internal() -> None:
     page = (ROOT / "current-conversations/index.qmd").read_text()
-    for theme_id, title in THEMES:
-        assert f'value="{theme_id}"' in page
-        assert title in page
-    required = "Items are collected, classified and summarised automatically to show where the lab’s topics are being discussed. Inclusion does not indicate endorsement, evidential quality or applicability to a particular city."
+    required = "When Current Conversations launches, items will be collected, classified and summarised automatically. Inclusion will not indicate endorsement, evidential quality or applicability to a particular city."
     assert required in page
-    assert '__unclassified__' in page
+    assert "watch-filters" not in page and "data-conversation-count" not in page
     clusters = [json.loads(path.read_text()) for path in (ROOT / "data/current-conversations/generated/clusters").glob("*.json")]
     assert any(item["primary_theme"] is None for item in clusters)
     generated = (ROOT / "generated/current-conversations-feed.qmd").read_text()
-    assert "Cross-cutting or not classified by lab theme" in generated
+    assert "no public entries" in generated
 
 
 def test_old_routes_are_transition_pages_and_internal_links_use_new_routes() -> None:

@@ -50,10 +50,10 @@ def test_no_photo_is_supported() -> None:
 
 def test_homepage_watch_limit_and_disclosures() -> None:
     generated = (ROOT / "generated/home-current-conversations.qmd").read_text()
-    assert generated.count('<article class="conversation-card') <= 6
+    assert generated.count('<article class="conversation-card') == 0
     homepage = (ROOT / "index.qmd").read_text()
-    assert "Inclusion does not indicate endorsement" in homepage
-    assert "Captured fixture · no AI generation recorded" in generated
+    assert "inclusion will not indicate endorsement" in homepage.casefold()
+    assert "no public entries" in generated
 
 
 def test_publications_have_exact_relationship_and_provenance() -> None:

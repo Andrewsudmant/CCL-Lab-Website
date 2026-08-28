@@ -1,0 +1,14 @@
+idea_id: g6-ai-urban-analogues
+theme_id: geographies-of-climate-learning
+working_title: AI-selected urban analogues
+question: When AI systems are asked which cities are comparable, which places do they recommend and which contextual differences do they ignore?
+problem_of_understanding: AI-assisted discovery may increasingly shape which urban precedents researchers and practitioners encounter, but the geographical and contextual biases of those comparisons remain poorly understood.
+why_it_may_matter: AI-generated analogues may reproduce existing evidence concentrations or recommend superficially similar cities while overlooking the conditions that determine relevance.
+possible_research_design: Controlled prompt experiments, counterfactual city profiles and expert assessment could test the stability, geographical concentration and contextual adequacy of AI-generated city comparisons.
+suggested_methods: [controlled model experiments, counterfactual city profiles, audit studies, expert elicitation, geospatial analysis]
+possible_geographies: [Canada, comparative international cities]
+possible_sectors: [urban governance]
+possible_climate_domains: [mitigation, adaptation]
+display_order: 6
+owner_review_status: owner-approved
+disclaimer: Research idea · not currently an active or funded project

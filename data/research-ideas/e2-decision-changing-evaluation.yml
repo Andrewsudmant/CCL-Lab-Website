@@ -1,0 +1,14 @@
+idea_id: e2-decision-changing-evaluation
+theme_id: where-new-evidence-matters
+working_title: When evaluation could change the decision
+question: Which urban climate policies sit close enough to an adoption, design or investment threshold that stronger causal evidence could change the decision?
+problem_of_understanding: Evaluation resources are often directed toward visible programmes rather than decisions where uncertainty is actually pivotal.
+why_it_may_matter: A rigorous evaluation has greater practical value when its result could alter a live choice, rather than merely produce a better estimate after the decision is effectively settled.
+possible_research_design: Decision-pathway mapping and threshold analysis could identify consequential uncertainties, followed by an assessment of where natural experiments, matched comparisons or synthetic controls are feasible.
+suggested_methods: [decision-pathway mapping, threshold analysis, natural experiments, difference-in-differences, synthetic controls]
+possible_geographies: [British Columbia, Canada, comparative international cities]
+possible_sectors: [buildings, transport, energy]
+possible_climate_domains: [mitigation, adaptation]
+display_order: 2
+owner_review_status: owner-approved
+disclaimer: Research idea · not currently an active or funded project

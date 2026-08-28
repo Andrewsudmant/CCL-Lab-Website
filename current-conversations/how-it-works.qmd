@@ -1,42 +1,34 @@
 ---
-title: "How Current Conversations works"
-description: "How Current Conversations discovers, groups, summarizes and publishes source-linked entries."
+title: "How Current Conversations will work"
+description: "Planned methods, safeguards and limitations for Current Conversations."
 ---
 
-<p class="page-deck">Where research, policy, practice, media and public discussion engage with the questions the lab studies.</p>
+<p class="status-badge in-development">In development</p>
 
-> When live discovery is enabled, Current Conversations may use automated searches and AI-assisted classification, grouping and summaries. Public disclosure follows each record's actual provenance. The current captured fixtures record `ai_provenance.used=false`, do not claim AI generation or live retrieval, have not been reviewed by the lab and are not endorsements.
+<p class="page-deck">Current Conversations is not yet operating as a live public feed.</p>
 
-Current Conversations is selective horizon scanning—not a validated evidence base, systematic review, recommendation system, transferability assessment or comprehensive map of public discussion.
+When enabled in a later gate, Current Conversations is intended to show where the lab’s questions are being discussed across research, policy, practice, media and public commentary. It will be selective horizon scanning—not a validated evidence base, systematic review, evidence-quality assessment, recommendation system, transferability assessment or comprehensive map of discussion.
 
-## Discovery and source environments
+## Planned discovery and source environments
 
-Bounded, versioned queries search academic indexes and, when configured, current web material and the official public Bluesky API. Sources are classified separately by environment—academic research, policy and institutions, news and analysis, blogs and commentary, data and tools, or Bluesky—and by the role they play, such as original research, official policy, reporting, analysis or public discussion. Environments do not carry equal evidentiary weight.
+Bounded, versioned queries may search academic indexes and, when separately authorised and configured, current web material and public social-media sources. Sources will be classified by environment and by the role they play. Source environments will not be treated as carrying equal evidentiary weight.
 
-Coverage is selective, incomplete and shaped by indexing, platform access, language and geography. English-language and well-indexed sources are likely to be overrepresented. Bluesky and paywalled material may be absent. The feature is not a systematic evidence review.
+Coverage will remain selective, incomplete and shaped by indexing, platform access, language and geography. English-language and well-indexed sources are likely to be overrepresented. This limitation will be stated wherever entries eventually appear.
 
 ## Evidence access and source integrity
 
-Each source records what the process actually accessed: metadata, abstract, licensed full text, official page body, executive summary, permitted excerpt, tool description, public post, linked source or search annotation. Titles and snippets cannot support findings claims. Full copyrighted articles, paywalled text and raw provider payloads are not stored.
+Every record will retain the original source, publication date, stable identifier where available, retrieval date and actual evidence accessed. Titles and snippets will not support findings claims. Full copyrighted articles, paywalled text and raw provider payloads will not be stored in public records.
 
-Redirects, broken links, corrections, retractions and material page changes can alter availability. Records are marked, corrected or archived rather than silently deleted.
+Source content will be treated as untrusted data. Embedded instructions will not be allowed to alter prompts, policy, budgets, repository behaviour or publication decisions.
 
-## Classification, grouping and summaries
+## Planned classification, grouping and summaries
 
-Source content is untrusted data. Embedded instructions cannot change the prompt, policy, budget, repository or publication decision. AI may propose themes, summaries, relevance and grouping, but strict schemas and deterministic controls make the final decision.
+AI may propose themes, summaries, relevance and grouping, subject to strict schemas and deterministic controls. Grouping will begin with DOI and other stable identifiers, canonical URLs, underlying-source links, explicit citation relationships, platform identifiers, and corroborated title-and-organisation evidence. A bounded model may propose a pair, but deterministic evidence must independently accept it. Topic similarity or model confidence alone will not be sufficient.
 
-Grouping proceeds from DOI and other stable identifiers, canonical URLs, underlying-source links, explicit citation relationships, platform identifiers, and corroborated normalized titles plus organisations. A bounded model may propose a pair, but deterministic evidence must independently accept it. Broad topic words and model similarity alone are never sufficient. A principal source is normally the most original evidence or official source; reporting, analysis, commentary and public discussion remain separately attributed. Disagreement is stated rather than averaged.
+Public disclosure will follow each record’s actual provenance. A record will claim AI assistance only when its provenance says AI was used. Original sources will remain authoritative, and disagreement or uncertainty will be retained rather than averaged away.
 
-## Ranking and automated publication
+## Publication, review and corrections
 
-Ranking considers thematic relevance, evidence sufficiency, originality, recency, policy or methodological significance, source-environment diversity, geography, domain concentration and duplicate clusters. It does not principally use citations, likes, reposts, followers or popularity.
+Staging writes and public feeds remain disabled. A later launch decision will require validation, allowed-path controls, budget controls where paid services are involved, and explicit owner approval. Inclusion will not indicate endorsement, evidential quality or applicability to a particular city. Human-review badges will appear only when a named review actually occurred.
 
-At most 12 new entries may publish in one run and six appear on the homepage. Homepage controls permit no more than two entries with the same principal domain, one entry from a cluster and one lab-affiliated entry. Weak records remain withheld. Human review is optional; a review badge appears only with reviewer identity and review date.
-
-## AI and provider limitations
-
-AI summaries can be wrong, incomplete or overconfident. Source access may be unequal, provider indexing may change, and model-assisted grouping may miss or over-connect discussions. A failed provider does not erase the last valid state. Paid web discovery is disabled unless credentials, current exchange-rate information, a valid budget ledger and hard CAD 2 per-run/CAD 20 monthly controls are all present.
-
-## Corrections, removal, privacy and copyright
-
-Use the [public correction route](/contact.html) for factual errors, grouping problems, broken sources or removal requests. Corrections and cluster merge/split history remain traceable. Only the minimum public-post text needed for identification is retained. Original links, metadata and concise annotations are stored; copyrighted bodies and unnecessary personal data are not.
+The [public correction route](/contact.html) will accept factual corrections, grouping concerns, broken-source reports and removal requests. Correction and merge/split history will remain traceable.

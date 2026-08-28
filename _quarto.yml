@@ -72,11 +72,8 @@ format:
     link-external-newwindow: false
     anchor-sections: true
     smooth-scroll: true
+    include-before-body: assets/site-status.html
     include-after-body: assets/site-scripts.html
-
-resources:
-  - current-conversations/feed.json
-  - current-conversations/feed.xml
 
 execute:
   freeze: auto

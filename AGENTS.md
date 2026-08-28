@@ -4,7 +4,7 @@ These instructions apply to the entire repository.
 
 ## Project purpose
 
-This repository contains the public website and the transactional private-staging prototype of Cities & Climate Learning Lab Current Conversations. The lab is based in Simon Fraser University's School of Resource and Environmental Management and studies how cities generate, transfer, and use evidence for climate action.
+This repository contains the public website and the transactional private-staging prototype of Cities & Climate Learning Lab Current Conversations. The lab is based in Simon Fraser University's School of Resource and Environmental Management and studies how cities generate, transfer, and use evidence for climate action. `config/site.yml` is the single source for public draft/live state and Current Conversations availability.
 
 The public research architecture has four canonical themes, in this order: **Geographies of Climate Learning**, **Where New Evidence Matters**, **Modes of Climate Delivery**, and **Consequences for People and Places**. Treat them as connected questions in an iterative learning cycle, not independent topic buckets. Keep climate domains, sectors, geographies and methods as separate facets. `config/research_scope.yml` is the authoritative registry for titles, questions, descriptions and analytical boundaries.
 
@@ -14,6 +14,7 @@ The public research architecture has four canonical themes, in this order: **Geo
 - Preserve source and cluster IDs, the original URL, publication and retrieval dates, stable identifiers when they exist, evidence basis, discovery run, adapter/query version, prompt/model provenance, review state and correction history.
 - Automatically generated Current Conversations items may publish without routine human review only when deterministic publication controls pass.
 - Public disclosure must follow actual provenance. Use `Identified and summarized using AI · not reviewed by the lab` only when `ai_provenance.used=true`; non-AI fixtures must say that no AI generation was recorded and must never imply a live retrieval.
+- While `current_conversations.status` is `in-development`, fixtures are test/regression data only. Generate no public fixture cards, detail pages, filters, counts, timestamps or JSON/RSS feeds.
 - Never present automatically identified material as endorsed, recommended, approved, expert-selected, or reviewed by the lab.
 - Current Conversations is horizon scanning, not a validated evidence base, transferability assessment or recommendation system. A source may remain cross-cutting or unclassified when thematic evidence is insufficient.
 - Do not invent citations, quotations, authors, dates, identifiers, review decisions, or evidence access.
@@ -52,9 +53,11 @@ The thematic-architecture reframe authorizes copy, taxonomy, schema, fixture, ro
 
 Gate 5C made the four-theme programme intellectually consistent; its historical records may retain the former `portfolio_maturity` field. Gate 5D removes all status and maturity fields from the active theme model because all four themes are current and equally important. Status belongs to research work beneath a theme.
 
+Gate 5E requires theme copy to communicate a problem of understanding, consequence, analytical intervention, changed understanding and boundary. Follow `docs/editorial/reader-value-and-problems-of-understanding.md`; an evidence gap alone does not establish research value. The active idea portfolio contains exactly 24 owner-approved possible directions, six per theme, and each idea must connect its methods to a possible research design. The Gate 5D selected previous-work records and relationships are frozen by `tests/fixtures/gate-5d-previous-work-freeze.yml` until a separate owner review.
+
 The active public content model distinguishes four things: themes (enduring questions), research work (actual ongoing or completed activity), publications/outputs (canonical bibliographic records), and research ideas (possible future questions). Use `data/work/`, never `data/projects/`, for active research work. A paper may have `parent_work_id: null`; never invent a programme or project to make it appear. Research ideas must use the exact disclaimer `Research idea · not currently an active or funded project` and must never enter Work, publication, Current Conversations, RSS or active/funded counts. Previous work may illustrate a current theme without becoming a CCLL output; retain `relationship_to_lab` and authoritative-source evidence. `/work/` is canonical and `/projects/` is transition-only.
 
-`Where New Evidence Matters` requires a prospective consequential evidence question, not a generic gap, tool, dataset, method or under-represented place. Current Conversations query intent never forces final classification; geography, sector, method, climate domain and source environment remain facets, and null classification is valid. Gate 5D does not authorize paid calls, merge, deployment, Pages, secret/environment changes, repository permission changes or history rewriting.
+`Where New Evidence Matters` requires a prospective consequential evidence question, not a generic gap, tool, dataset, method or under-represented place. Current Conversations query intent never forces final classification; geography, sector, method, climate domain and source environment remain facets, and null classification is valid. Gate 5E does not authorize paid calls, merge, deployment, Pages, secret/environment changes, repository permission changes, staging writes or history rewriting.
 
 ## Shareable handoff package
 

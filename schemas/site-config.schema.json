@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public site state",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["site_status", "site_version", "current_conversations"],
+  "properties": {
+    "site_status": {"enum": ["draft", "live"]},
+    "site_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+$"},
+    "current_conversations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "public_feed_enabled"],
+      "properties": {
+        "status": {"enum": ["in-development", "live"]},
+        "public_feed_enabled": {"type": "boolean"}
+      }
+    }
+  }
+}

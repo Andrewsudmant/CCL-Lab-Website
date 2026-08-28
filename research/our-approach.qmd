@@ -5,6 +5,8 @@ description: "How the lab distinguishes evidence, contextual relevance, interpre
 
 <p class="page-deck">Urban climate learning depends on several connected states. The lab does not treat them as interchangeable or presume a universal path through them.</p>
 
+The lab's purpose is to study how urban climate knowledge is produced, compared, used and revised, so that cities can make better-grounded decisions without assuming that evidence applies unchanged across places.
+
 <ol class="approach-states">
   <li><strong>Evidence exists.</strong> Research, administrative, professional, community, local or Indigenous knowledge has been produced.</li>
   <li><strong>Evidence is visible or reachable.</strong> People and institutions can find it, access it and understand its provenance and limits.</li>

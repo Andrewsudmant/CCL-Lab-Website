@@ -83,17 +83,18 @@ def test_six_record_migration_matches_owner_decisions() -> None:
 
 def test_research_ideas_validate_and_have_no_work_claims() -> None:
     ideas = load_records("data/research-ideas")
-    assert len(ideas) == 13
+    assert len(ideas) == 24
     schema = load_schema("research-idea.schema.json")
     validator = Draft202012Validator(schema)
     forbidden = {"work_status", "status", "funders", "partners", "start_date", "end_date", "outputs", "connected_publication_ids"}
     for idea in ideas:
         assert not list(validator.iter_errors(idea))
-        assert idea["question"] and idea["suggested_methods"]
+        assert idea["working_title"] and idea["question"] and idea["problem_of_understanding"]
+        assert idea["possible_research_design"] and idea["suggested_methods"]
         assert idea["disclaimer"] == DISCLAIMER
         assert not forbidden.intersection(idea)
     counts = {theme_id: sum(item["theme_id"] == theme_id for item in ideas) for theme_id, _ in CANONICAL_THEME_ORDER}
-    assert list(counts.values()) == [3, 3, 3, 4]
+    assert list(counts.values()) == [6, 6, 6, 6]
 
 
 def test_ideas_are_excluded_from_work_publications_conversations_and_feeds() -> None:
@@ -104,8 +105,6 @@ def test_ideas_are_excluded_from_work_publications_conversations_and_feeds() -> 
         ROOT / "generated/publications-selected.qmd",
         ROOT / "generated/publications-complete.qmd",
         ROOT / "generated/current-conversations-feed.qmd",
-        ROOT / "current-conversations/feed.json",
-        ROOT / "current-conversations/feed.xml",
     ]
     combined = "\n".join(path.read_text() for path in surfaces)
     assert not any(idea_id in combined for idea_id in idea_ids)
@@ -117,13 +116,13 @@ def test_every_theme_page_uses_required_order_and_distinct_idea_treatment() -> N
     generate_all()
     for theme_id, _ in CANONICAL_THEME_ORDER:
         page = theme_page(theme_id)
-        headings = ["## Ongoing work", "## Selected completed and foundational work", "## Research ideas", "## Connections across the learning cycle", "## External horizon scanning: Current Conversations"]
+        headings = ["## Ongoing work", "## Selected completed and foundational work", "## Questions this theme opens", "## Connections across the learning cycle", "## External horizon scanning: Current Conversations"]
         positions = [page.index(heading) for heading in headings]
         assert positions == sorted(positions)
-        assert "Analytical boundary" in page and "Place in the learning cycle" in page
+        assert "Analytical boundary" in page and "What this changes" in page and "Place in the learning cycle" in page
         assert DISCLAIMER in page and 'class="idea-card"' in page
         assert "No verified records are published in this view yet" not in page
-        assert "Items are collected, classified and summarised automatically" in page
+        assert "Current Conversations is in development" in page
 
 
 def test_selected_theme_examples_are_canonical_supported_deduplicated_and_not_mdpi() -> None:
@@ -184,11 +183,10 @@ def test_former_project_routes_are_transitions_and_only_work_is_canonical() -> N
 
 
 def test_current_conversations_remains_external_last_and_ideas_never_enter() -> None:
-    exact = "Items are collected, classified and summarised automatically to show where the lab’s topics are being discussed. Inclusion does not indicate endorsement, evidential quality or applicability to a particular city."
     for theme_id, _ in CANONICAL_THEME_ORDER:
         page = theme_page(theme_id)
-        assert exact in page
-        assert page.index("## Research ideas") < page.index("## External horizon scanning: Current Conversations")
+        assert "Current Conversations is in development" in page
+        assert page.index("## Questions this theme opens") < page.index("## External horizon scanning: Current Conversations")
     clusters = [json.loads(path.read_text()) for path in (ROOT / "data/current-conversations/generated/clusters").glob("*.json")]
     assert any(item["primary_theme"] is None for item in clusters)
     assert all("idea_id" not in item and "work_id" not in item for item in clusters)

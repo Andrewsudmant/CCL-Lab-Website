@@ -4,7 +4,7 @@
 
 Source: `config/research_scope.yml`; schema: `schemas/research-theme.schema.json`.
 
-Themes define the current intellectual programme. Required public fields are the exact ID/title, homepage description, guiding question, two-paragraph long description, analytical boundary, cycle role and connection to the next stage. Search concepts, included questions, exclusions, geographical priorities, methodological interests and clearly marked placeholder examples support governance and discovery. Active theme records have no status or maturity field.
+Themes define the current intellectual programme. Required public fields are the exact ID/title, homepage description, guiding question, two-paragraph long description, analytical boundary, `what_this_changes`, cycle role and connection to the next stage. The argument must expose an instability, its consequence and a changed understanding; it must not merely list topics. Search concepts, included questions, exclusions, geographical priorities, methodological interests and clearly marked internal placeholder examples support governance and discovery. Active theme records have no status or maturity field.
 
 ## Research work
 
@@ -33,4 +33,10 @@ Bibliographic identity, authors, dates, identifiers, venue and verification sour
 
 Source: `data/research-ideas/*.yml`; schema: `schemas/research-idea.schema.json`.
 
-Each idea has a stable ID, one theme, a question, why it may matter, at least one suggested method, optional settings/facets, display order, owner-review state and the exact disclaimer `Research idea · not currently an active or funded project`. Idea records have no work status, parent, funder, partner, date, output or publication field.
+Each idea has a stable ID, one theme, working title, question, problem of understanding, consequence, coherent possible research design, at least one suggested method, optional settings/facets, display order, owner-review state and the exact disclaimer `Research idea · not currently an active or funded project`. Methods must be linked to how evidence could address the problem. Idea records have no work status, parent, funder, partner, date, output or publication field. The active Gate 5E portfolio contains six ideas per theme.
+
+## Public site and Current Conversations state
+
+Source: `config/site.yml`; schema: `schemas/site-config.schema.json`.
+
+`site_status` and `site_version` control the public Draft 0.1 notice from one source. `current_conversations.status: in-development` and `public_feed_enabled: false` mean that the fixture records are available only to tests and regression tooling; the site generator must create no cards, detail pages, filters, counts or feeds from them.

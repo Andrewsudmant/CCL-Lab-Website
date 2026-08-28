@@ -78,23 +78,14 @@ page-layout: full
 
 ```{=html}
 <section class="section-shell watch-callout" aria-labelledby="watch-heading">
-  <div><p class="eyebrow eyebrow-light">Current Conversations</p><h2 id="watch-heading">Where the lab's questions are being discussed.</h2></div>
+  <div><p class="eyebrow eyebrow-light">Current Conversations · In development</p><h2 id="watch-heading">A future view of where the lab's questions are being discussed.</h2></div>
   <div>
-    <p>Where research, policy, practice, media and public discussion engage with the questions the lab studies.</p>
-    <p class="watch-rule"><strong>Automated horizon scanning, not evaluated evidence.</strong> Inclusion does not indicate endorsement, evidential quality or applicability to a particular city.</p>
-    <a class="button button-on-dark" href="current-conversations/index.html">View Current Conversations</a>
+    <p>We are developing an automatically generated view across research, policy, practice, media and public commentary. The live feed is not yet enabled.</p>
+    <p class="watch-rule"><strong>When launched, inclusion will not indicate endorsement, evidential quality or applicability to a particular city.</strong></p>
+    <a class="button button-on-dark" href="current-conversations/index.html">Read about Current Conversations</a>
   </div>
 </section>
 ```
-
-```{=html}
-<section class="section-shell" aria-labelledby="recent-watch-heading">
-  <div class="section-header"><div><p class="eyebrow">External horizon scanning</p><h2 id="recent-watch-heading">Recent Current Conversations fixtures</h2></div><a href="current-conversations/index.html">View all →</a></div>
-  <div class="candidate-warning" role="note" aria-label="Current Conversations disclosure"><strong>How to read these items.</strong><span>Items are collected, classified and summarised automatically to show where the lab’s topics are being discussed. Inclusion does not indicate endorsement, evidential quality or applicability to a particular city. The captured fixtures currently displayed record no AI generation and are not live discovery results.</span></div>
-</section>
-```
-
-{{< include generated/home-current-conversations.qmd >}}
 
 ```{=html}
 <section class="section-shell" aria-labelledby="people-heading">

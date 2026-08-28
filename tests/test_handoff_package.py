@@ -7,6 +7,7 @@ from scripts.package_handoff import package
 from scripts.package_owner_review import package as package_owner_review
 from scripts.package_gate_5c_review import package as package_gate_5c_review
 from scripts.package_gate_5d_review import package as package_gate_5d_review
+from scripts.package_gate_5e_review import package as package_gate_5e_review
 
 
 def test_handoff_package_contains_summary_and_governance(tmp_path) -> None:
@@ -77,3 +78,22 @@ def test_gate_5d_owner_review_contains_work_ideas_migration_and_site(tmp_path) -
                 assert f"review/screenshots/gate-5d/{viewport}/theme-{theme}.png" in names
                 assert f"review/screenshots/gate-5d/{viewport}/ideas-{theme}.png" in names
         assert not any("gate-5c" in name for name in names)
+
+
+def test_gate_5e_owner_review_contains_draft_site_ideas_audits_and_fresh_screenshots(tmp_path) -> None:
+    destination = tmp_path / "gate-5e-owner-review.zip"
+    package_gate_5e_review(destination)
+    with zipfile.ZipFile(destination) as archive:
+        names = set(archive.namelist())
+        assert "00_READ_ME_FIRST.md" in names and "MANIFEST.txt" in names
+        assert "rendered-site/index.html" in names
+        assert "rendered-site/current-conversations/index.html" in names
+        assert "review/theme-reader-value-audit.md" in names
+        assert "review/research-ideas-reader-value-audit.md" in names
+        assert "review/research-idea-migration.md" in names
+        assert "review/previous-work-examples-freeze-audit.md" in names
+        assert "source/config/site.yml" in names
+        assert len([name for name in names if name.startswith("source/data/research-ideas/")]) == 24
+        for viewport in ("desktop", "mobile", "zoom"):
+            assert any(name.startswith(f"review/screenshots/gate-5e/{viewport}/") for name in names)
+        assert not any("gate-5d" in name for name in names)

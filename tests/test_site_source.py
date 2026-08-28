@@ -29,9 +29,12 @@ def test_required_navigation_pages_exist() -> None:
         assert (ROOT / source).exists()
 
 
-def test_site_does_not_configure_deployment() -> None:
+def test_site_has_no_active_or_automatic_deployment() -> None:
     assert not (ROOT / ".openai/hosting.json").exists()
     workflow_text = "\n".join(path.read_text(encoding="utf-8") for path in (ROOT / ".github/workflows").glob("*.yml"))
     assert "quarto publish" not in workflow_text.lower()
-    assert "pages: write" not in workflow_text.lower()
-    assert "deploy-pages" not in workflow_text.lower()
+    pages = (ROOT / ".github/workflows/public-draft-pages.yml").read_text(encoding="utf-8")
+    assert "workflow_dispatch:" in pages
+    assert "PUBLIC_DRAFT_DEPLOY_ENABLED" in pages
+    assert "confirm_draft_0_1" in pages
+    assert "pages: write" in pages and "deploy-pages" in pages

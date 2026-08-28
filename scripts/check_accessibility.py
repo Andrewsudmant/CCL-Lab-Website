@@ -3,12 +3,13 @@
 
 from __future__ import annotations
 
+import argparse
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SITE = ROOT / "_site"
+DEFAULT_SITE = ROOT / "_site"
 
 
 class AccessibilityParser(HTMLParser):
@@ -50,15 +51,19 @@ class AccessibilityParser(HTMLParser):
 
 
 def main() -> int:
-    if not SITE.exists():
-        print("_site does not exist; run a build first.")
+    argument_parser = argparse.ArgumentParser()
+    argument_parser.add_argument("--site-dir", type=Path, default=DEFAULT_SITE, help="Rendered site directory")
+    args = argument_parser.parse_args()
+    site = args.site_dir.resolve()
+    if not site.exists():
+        print(f"{site} does not exist; run a build first.")
         return 1
     errors: list[str] = []
-    pages = sorted(SITE.rglob("*.html"))
+    pages = sorted(site.rglob("*.html"))
     for page in pages:
         parser = AccessibilityParser()
         parser.feed(page.read_text(encoding="utf-8"))
-        label = page.relative_to(SITE)
+        label = page.relative_to(site)
         if not parser.html_lang:
             errors.append(f"{label}: missing document language")
         if parser.main_count != 1:

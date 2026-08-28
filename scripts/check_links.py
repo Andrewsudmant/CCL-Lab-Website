@@ -12,7 +12,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
-SITE = ROOT / "_site"
+DEFAULT_SITE = ROOT / "_site"
 
 
 class LinkParser(HTMLParser):
@@ -37,39 +37,45 @@ def parsed(path: Path) -> LinkParser:
     return parser
 
 
-def check_internal() -> list[str]:
+def check_internal(site: Path = DEFAULT_SITE, base_path: str = "") -> list[str]:
     errors: list[str] = []
-    pages = {path: parsed(path) for path in SITE.rglob("*.html")}
+    pages = {path: parsed(path) for path in site.rglob("*.html")}
     for page, parser in pages.items():
         for link in parser.links:
             url = urlparse(link)
             if url.scheme in {"http", "https", "mailto", "tel", "data"} or link.startswith("//"):
                 continue
             raw_path = unquote(url.path)
-            target = (SITE / raw_path.lstrip("/")) if raw_path.startswith("/") else (page.parent / raw_path)
+            if raw_path.startswith("/"):
+                normalized_base = "/" + base_path.strip("/") if base_path.strip("/") else ""
+                if normalized_base and (raw_path == normalized_base or raw_path.startswith(normalized_base + "/")):
+                    raw_path = raw_path[len(normalized_base):] or "/"
+                target = site / raw_path.lstrip("/")
+            else:
+                target = page.parent / raw_path
             target = target.resolve()
             if not raw_path:
                 target = page
             if target.is_dir():
                 target = target / "index.html"
             if not target.exists():
-                errors.append(f"{page.relative_to(SITE)}: missing target {link}")
+                errors.append(f"{page.relative_to(site)}: missing target {link}")
                 continue
             if url.fragment and target.suffix == ".html":
                 target_parser = pages.get(target, parsed(target))
                 if url.fragment not in target_parser.ids:
-                    errors.append(f"{page.relative_to(SITE)}: missing fragment #{url.fragment} in {target.relative_to(SITE)}")
+                    errors.append(f"{page.relative_to(site)}: missing fragment #{url.fragment} in {target.relative_to(site)}")
     return errors
 
 
 AUTOMATION_LIMITED_DOMAINS = {"doi.org", "www.doi.org", "bsky.app", "www.linkedin.com", "uk.linkedin.com"}
 
 
-def check_external() -> tuple[list[str], list[str]]:
+def check_external(site: Path = DEFAULT_SITE) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     warnings: list[str] = []
     urls: set[str] = set()
-    for path in SITE.rglob("*.html"):
+    for path in site.rglob("*.html"):
         for link in parsed(path).links:
             if urlparse(link).scheme in {"http", "https"}:
                 urls.add(link)
@@ -100,14 +106,17 @@ def check_external() -> tuple[list[str], list[str]]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--external", action="store_true", help="Also make network requests to external links")
+    parser.add_argument("--site-dir", type=Path, default=DEFAULT_SITE, help="Rendered site directory")
+    parser.add_argument("--base-path", default="", help="Deployment mount path to strip when resolving absolute links")
     args = parser.parse_args()
-    if not SITE.exists():
-        print("_site does not exist; run a build first.")
+    site = args.site_dir.resolve()
+    if not site.exists():
+        print(f"{site} does not exist; run a build first.")
         return 1
-    errors = check_internal()
+    errors = check_internal(site, args.base_path)
     warnings: list[str] = []
     if args.external:
-        external_errors, warnings = check_external()
+        external_errors, warnings = check_external(site)
         errors.extend(external_errors)
     if errors:
         print("Link checks failed:")

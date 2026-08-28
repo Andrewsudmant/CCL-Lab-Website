@@ -60,6 +60,14 @@ The build output is static. Discovery and benchmark jobs have repository read pe
 
 Quarto cannot create server-side HTTP redirects in a static local build. The generator therefore preserves six former theme URLs and the former project routes as accessible transition pages with canonical links and direct destinations. Internal navigation and generated record links use only the four current theme routes and `/work/`.
 
+### Draft 0.1 profiles and curation
+
+The normal Quarto profile renders a domain-root site to `_site/`. The `project-path` profile sets `website.site-path: /CCL-Lab-Website/` and renders to `_site-project-path/CCL-Lab-Website/`. Quarto therefore rewrites navigation, generated project-root links, assets, search and transition routes for the mount without duplicate source pages or a hardcoded future domain.
+
+Theme-page prominence is a separate editorial layer. `config/theme_featured_examples.yml` selects four to six Work or publication records per theme and stores a theme-specific contribution statement, evidence reviewed, display order and optional boundary. Canonical identity and broader theme relationships remain in Work records, `config/publication_theme_examples.yml` and the complete publication inventory.
+
+The prepared Pages workflow is manual only. A read-only build job produces and checks the project-path artifact; a separate `public-draft` environment job alone receives `pages: write` and `id-token: write`. Missing confirmation or `PUBLIC_DRAFT_DEPLOY_ENABLED` causes the workflow to stop before build or deployment.
+
 ### Query intent, facets and classification
 
 `config/query_packs/current-conversations-v2.yml` is the active discovery configuration. A query is explicitly a theme, facet or exploratory query. Theme queries record an intended analytical question; facet and exploratory queries keep `theme_intent: null`. Geography, sector, method, climate domain, source environment, tools, datasets and models do not force classification. Every retrieved source still undergoes content-based classification, and a null primary theme remains valid. The v1 pack is retained as superseded migration evidence rather than overwritten.

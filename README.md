@@ -18,14 +18,15 @@ The static site is written to `_site/`. `make preview` serves it locally. Normal
 
 ## Maintenance commands
 
-- `make validate`, `make test`, `make build`, `make check`: offline quality controls.
+- `make validate`, `make test`, `make build`, `make check`: offline root-site quality controls.
+- `make build-project-path`, `make linkcheck-project-path`, `make release-check`: build and inspect the provisional `/CCL-Lab-Website/` mount as well as the root site.
 - `make publications-refresh`: explicit live ORCID reconciliation followed by the complete publication inventory build.
 - `make current-conversations-fixture`: show the captured mixed-source fixture with zero network calls.
 - `make current-conversations-pilot`: rebuild private staging and the clearly non-final calibration-generator preview from fixtures.
 - `make current-conversations-discover`: run one explicit bounded OpenAlex query; this uses the network.
 - `make openalex-diagnostics`: run the four-theme, no-key OpenAlex query diagnostic.
 - `make model-benchmark`: evaluate the captured structured-output benchmark without credentials.
-- `make calibration-pack`, `make gate-5f-owner-review`, `make handoff`: create bounded owner deliverables.
+- `make calibration-pack`, `make gate-5g-owner-review`, `make handoff`: create bounded owner deliverables.
 - `make thematic-owner-review`: create `CCLL_thematic_architecture_reframe_v1_OWNER_REVIEW_REQUIRED.zip` from the final local review materials.
 
 Paid OpenAI web search is disabled unless credentials, model, call/item limits, fresh USD/CAD conversion and the owner’s CAD 2/run and CAD 20/month ceilings are all present. Discovery modes never run during a website build. The protected manual benchmark is artifact-only and read-only. The scheduled workflow’s separate write job is disabled unless explicitly enabled and can target only `automation/current-conversations-staging` after validation and an allowlist check. See the [owner live-benchmark runbook](docs/current-conversations-live-runbook.md).
@@ -34,6 +35,6 @@ Generated files under `generated/` are reproducible. The JSON under `data/curren
 
 Theme copy must be changed in `config/research_scope.yml`, not duplicated in pages. `scripts/generate_site.py` creates the homepage cycle, research overview, theme pages, work detail pages and theme links from that registry. Public pages use the Gate 5F reader-value hierarchy while structured editorial fields remain auditable in YAML. Old `/research/themes/...` and `/projects/...` URLs are retained as generated transition pages; new internal links use `/research/<theme>.html` and `/work/<record>.html`. See the [site-level reader-value standard](docs/editorial/site-level-reader-value.md).
 
-## Draft 0.1 gate boundary
+## Draft 0.1 release boundary
 
-Gate 5F does not authorize paid API calls, staging writes, merge, public deployment, GitHub Pages, DNS changes, analytics, subscriptions, unrestricted crawling or production scheduled writes. Previous-work curation and public-release hardening remain later gates. Historical documents retain the former “Research Watch” name as evidence; the public and active system name is Current Conversations. See the [Draft 0.1 publication runbook](docs/runbooks/publish-public-draft-0-1.md) for later owner-controlled steps.
+Gate 5G prepares a release candidate but does not authorize paid API calls, staging writes, merge, public deployment, GitHub Pages enablement, DNS changes, analytics, subscriptions, unrestricted crawling or production scheduled writes. `config/theme_featured_examples.yml` controls the illustrative theme-page selection; the verified 46-record inventory remains complete and separate. The default Quarto build targets a domain root, while `_quarto-project-path.yml` configures the provisional GitHub Pages project mount. The workflow in `.github/workflows/public-draft-pages.yml` is manual and fail-closed until the owner later configures the protected environment and enabling variable. Historical documents retain the former “Research Watch” name as evidence; the public and active system name is Current Conversations. See the [Draft 0.1 GitHub Pages runbook](docs/runbooks/publish-draft-0-1-github-pages.md).

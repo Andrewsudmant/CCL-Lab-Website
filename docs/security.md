@@ -34,3 +34,9 @@ Gate 5B does not configure hosting, production secrets, deployment credentials o
 ## Gate 5F integrity boundary
 
 Gate 5F is an offline editorial and presentation pass. Builds, tests, screenshots and packages must not call discovery providers or models, read secrets, enable staging writes, change environments, alter Pages or deploy. The Current Conversations problem statement is public copy only and does not activate the system. Owner-review archives stay ignored outside Git, and the private previous-work proposal must not enter generated public routes. Hypothetical examples are tested for explicit status so they cannot be mistaken for empirical evidence, rankings or advice.
+
+## Draft 0.1 Pages boundary
+
+`.github/workflows/public-draft-pages.yml` is inert until the owner later merges it, configures Pages, creates the protected `public-draft` environment and sets `PUBLIC_DRAFT_DEPLOY_ENABLED=true`. It has only `workflow_dispatch`; no push, pull-request or scheduled event can invoke it. The build job has `contents: read`. Only the environment-gated deployment job has `pages: write` and `id-token: write`. The workflow requires a boolean publication confirmation and fails closed when the repository variable is absent or false. It requires no secret and must never receive an OpenAI or discovery credential.
+
+Gate 5G does not run this workflow or alter Pages settings. Owner-review archives and rendered sites remain ignored. A repository/history scan is required before the final push, and a credible credential finding blocks the release candidate.

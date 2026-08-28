@@ -4,6 +4,7 @@ import hashlib
 import json
 import re
 import subprocess
+import sys
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -170,7 +171,7 @@ def test_56_61_diagnostic_and_term_map_are_deterministic_advisory_only() -> None
     assert not list(Draft202012Validator(schema).iter_errors(term_map)) and len(term_map["terms"]) == 9
     tracked = [ROOT / "index.qmd", ROOT / "research/our-approach.qmd", ROOT / "current-conversations/index.qmd"]
     before = {p: hashlib.sha256(p.read_bytes()).hexdigest() for p in tracked}
-    command = [str(ROOT / ".venv/bin/python"), str(ROOT / "scripts/audit_public_voice.py")]
+    command = [sys.executable, str(ROOT / "scripts/audit_public_voice.py")]
     subprocess.run(command, cwd=ROOT, check=True, capture_output=True, text=True)
     first = (ROOT / "reports/editorial/gate-5h-public-voice-diagnostic.md").read_bytes()
     subprocess.run(command, cwd=ROOT, check=True, capture_output=True, text=True)

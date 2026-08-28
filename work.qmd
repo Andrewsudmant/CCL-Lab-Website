@@ -15,9 +15,9 @@ Status and relationship labels distinguish current CCLL work, work begun before 
   <label>Status <select name="status"><option value="">Ongoing and completed</option><option value="ongoing">Ongoing</option><option value="completed">Completed</option></select></label>
   <label>Work type <select name="type"><option value="">All work types</option><option value="research-programme">Programme</option><option value="research-line">Research line</option><option value="project">Project</option><option value="study">Study</option><option value="paper">Paper</option><option value="report">Report</option><option value="tool">Tool</option><option value="dataset">Dataset</option></select></label>
   <label>Theme <select name="theme"><option value="">All themes</option><option value="geographies-of-climate-learning">Geographies of Climate Learning</option><option value="where-new-evidence-matters">Where New Evidence Matters</option><option value="modes-of-climate-delivery">Modes of Climate Delivery</option><option value="consequences-for-people-and-places">Consequences for People and Places</option></select></label>
-  <label>Geography <input type="search" name="geography" placeholder="e.g. Canada"></label>
-  <label>Method <input type="search" name="method" placeholder="e.g. comparative"></label>
-  <label>Sector <input type="search" name="sector" placeholder="e.g. transport"></label>
+  <label>Geography <input type="search" name="geography" aria-describedby="geography-hint"><span id="geography-hint" class="filter-hint">For example, Canada</span></label>
+  <label>Method <input type="search" name="method" aria-describedby="method-hint"><span id="method-hint" class="filter-hint">For example, comparative case study</span></label>
+  <label>Sector <input type="search" name="sector" aria-describedby="sector-hint"><span id="sector-hint" class="filter-hint">For example, transport and mobility</span></label>
   <button type="reset">Clear</button><output data-work-count aria-live="polite"></output>
 </form>
 ```

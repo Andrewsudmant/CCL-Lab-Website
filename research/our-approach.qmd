@@ -43,4 +43,4 @@ These six states are points at which the four-theme learning cycle can break dow
 - Questions about whose knowledge travels and whose outcomes are counted are questions of authority and justice.
 - The lab does not seek context-free lists of universal best practices.
 
-[Explore the four connected research questions](/research.html).
+[Explore the four connected research questions](../research.qmd).

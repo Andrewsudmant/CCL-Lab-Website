@@ -18,4 +18,4 @@ description: "Verified bibliographic record. Consult the original source for its
 
 ## Metadata provenance
 
-Metadata sources: orcid, repository · last verified 2026-08-27 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.
+Metadata sources: ORCID; Repository · last verified 2026-08-27 · status: Verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.

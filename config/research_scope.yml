@@ -1,8 +1,8 @@
-scope_version: "1.3.0"
+scope_version: "1.4.0"
 owner_review_required: true
 notice: >-
-  The four theme titles, questions, descriptions and analytical boundaries are
-  owner-approved. Representative examples remain placeholders requiring owner review.
+  The four theme titles, questions, descriptions and analytical boundaries are settled.
+  Internal representative examples are excluded from public generation.
 themes:
   - id: geographies-of-climate-learning
     name: Geographies of Climate Learning
@@ -51,8 +51,8 @@ themes:
     geographical_priorities: [British Columbia, Canada, Comparative international cities]
     methodological_interests: [Comparative research, Evidence mapping, Evidence synthesis, Spatial analysis]
     representative_placeholder_examples:
-      - {title: "PLACEHOLDER — Comparative study of municipal heat-policy learning", placeholder: true}
-      - {title: "PLACEHOLDER — Geography of evidence available to cities", placeholder: true}
+      - {title: "PLACEHOLDER — Comparative study of municipal heat-policy learning", placeholder: true, public: false}
+      - {title: "PLACEHOLDER — Geography of evidence available to cities", placeholder: true, public: false}
 
   - id: where-new-evidence-matters
     name: Where New Evidence Matters
@@ -99,8 +99,8 @@ themes:
     geographical_priorities: [British Columbia, Canada, Comparative international cities]
     methodological_interests: [Research prioritisation, Case selection, Causal inference, Evidence synthesis]
     representative_placeholder_examples:
-      - {title: "PLACEHOLDER — Consequential evidence gaps in municipal retrofit decisions", placeholder: true}
-      - {title: "PLACEHOLDER — Strategic selection of new urban climate cases", placeholder: true}
+      - {title: "PLACEHOLDER — Consequential evidence gaps in municipal retrofit decisions", placeholder: true, public: false}
+      - {title: "PLACEHOLDER — Strategic selection of new urban climate cases", placeholder: true, public: false}
 
   - id: modes-of-climate-delivery
     name: Modes of Climate Delivery
@@ -148,8 +148,8 @@ themes:
     geographical_priorities: [British Columbia, Canada, Comparative international cities]
     methodological_interests: [Institutional analysis, Implementation research, Comparative governance, Public administration]
     representative_placeholder_examples:
-      - {title: "PLACEHOLDER — Municipal retrofit delivery configurations", placeholder: true}
-      - {title: "PLACEHOLDER — Intergovernmental arrangements for urban adaptation", placeholder: true}
+      - {title: "PLACEHOLDER — Municipal retrofit delivery configurations", placeholder: true, public: false}
+      - {title: "PLACEHOLDER — Intergovernmental arrangements for urban adaptation", placeholder: true, public: false}
 
   - id: consequences-for-people-and-places
     name: Consequences for People and Places
@@ -195,5 +195,5 @@ themes:
     geographical_priorities: [British Columbia, Canada, Comparative international cities]
     methodological_interests: [Distributional analysis, Place-based appraisal, Health impact assessment, Mixed-method evaluation]
     representative_placeholder_examples:
-      - {title: "PLACEHOLDER — Distributional consequences of building decarbonisation", placeholder: true}
-      - {title: "PLACEHOLDER — Place-based health and social effects of active travel", placeholder: true}
+      - {title: "PLACEHOLDER — Distributional consequences of building decarbonisation", placeholder: true, public: false}
+      - {title: "PLACEHOLDER — Place-based health and social effects of active travel", placeholder: true, public: false}

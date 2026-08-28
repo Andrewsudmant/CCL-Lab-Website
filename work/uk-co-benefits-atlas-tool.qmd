@@ -39,9 +39,9 @@ The tool allows users to inspect how represented benefits and costs vary across 
 - [UK Co-Benefits Atlas](/work/uk-co-benefits-atlas.html)
 
 ```{=html}
-<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>Active tool</dd><dt>Status</dt><dd>Ongoing</dd><dt>Relationship to the lab</dt><dd>Foundational prior work — The public tool remains available, but it was developed before CCLL through the University of Edinburgh and collaborators.</dd><dt>Primary theme</dt><dd><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a></dd><dt>Secondary themes</dt><dd><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a></dd><dt>Geographies</dt><dd>united-kingdom</dd><dt>Climate domains</dt><dd>mitigation</dd><dt>Sectors</dt><dd>cross-sectoral</dd><dt>Methods</dt><dd>place-based-modelling, spatial-analysis, data-visualization</dd></dl></section>
+<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>Active tool</dd><dt>Status</dt><dd>Ongoing</dd><dt>Relationship to the lab</dt><dd>Foundational prior work — The public tool remains available, but it was developed before CCLL through the University of Edinburgh and collaborators.</dd><dt>Primary theme</dt><dd><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a></dd><dt>Secondary themes</dt><dd><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a></dd><dt>Geographies</dt><dd>United Kingdom</dd><dt>Climate domains</dt><dd>Mitigation</dd><dt>Sectors</dt><dd>Cross-sectoral</dd><dt>Methods</dt><dd>Place-based modelling; Spatial analysis; Data visualization</dd></dl></section>
 ```
 
 ## Authoritative sources
 
-- [UK Co-Benefits Atlas](https://ukcobenefitsatlas.net/) — verified 2026-08-27
+- [UK Co-Benefits Atlas](https://ukcobenefitsatlas.net/) — accessed 2026-08-27

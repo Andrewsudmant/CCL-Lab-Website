@@ -40,38 +40,46 @@ Geographies of Climate Learning examines where urban climate knowledge is produc
 ## Selected completed and foundational work
 
 ```{=html}
-<div class="record-list"><article class="record-card work-card" data-status="completed" data-type="project" data-themes="geographies-of-climate-learning consequences-for-people-and-places" data-geography="united-kingdom" data-method="place-based-modelling spatial-analysis economic-appraisal" data-sector="cross-sectoral">
-  <p class="record-kicker">Project · Foundational prior work</p>
-  <h3><a href="/work/data-methodologies-climate-impact.html">Data Methodologies for Climate Impact Assessment</a></h3>
-  <p>A completed project on scaling and combining data for place-based climate-impact assessment, including relationships between national evidence and local decision contexts.</p>
-  <ul class="tag-list"><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Related)</span></li></ul>
-</article><article class="record-card work-card" data-status="completed" data-type="project" data-themes="consequences-for-people-and-places geographies-of-climate-learning" data-geography="united-kingdom" data-method="place-based-modelling spatial-analysis data-visualization" data-sector="cross-sectoral">
-  <p class="record-kicker">Project · Foundational prior work</p>
-  <h3><a href="/work/uk-co-benefits-atlas.html">UK Co-Benefits Atlas</a></h3>
-  <p>A completed project that developed a place-based atlas for examining how estimated benefits and costs of climate action vary across UK communities.</p>
-  <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Related)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="geographies-of-climate-learning where-new-evidence-matters">
+<div class="record-list featured-example-list"><article class="record-card featured-example" data-record-type="publication" data-record-id="replicate-generalize-urban-research" data-group="Comparison and generalisability">
   <p class="record-kicker">Article · Foundational prior work · 2024</p>
   <h3><a href="/publications/replicate-generalize-urban-research.html">Replicate and generalize to make urban research coherent</a></h3>
-  <p>The publisher abstract centres replication, generalisability and whether urban findings remain useful across contexts.</p>
+  <p>Shows why cross-city replication requires explicit attention to the contextual conditions under which findings were produced, rather than assuming that a result will remain informative wherever a superficially similar case can be found.</p>
+  
   <ul class="tag-list"><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a><span class="sr-only"> (Related)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="geographies-of-climate-learning">
+</article><article class="record-card featured-example" data-record-type="publication" data-record-id="using-crowdsourced-data-to-estimate-the-carbon-footprints-of-global-cities" data-group="Which places, emissions and populations become visible">
   <p class="record-kicker">Article · Foundational prior work · 2022</p>
   <h3><a href="/publications/using-crowdsourced-data-to-estimate-the-carbon-footprints-of-global-cities.html">Using crowdsourced data to estimate the carbon footprints of global cities</a></h3>
-  <p>The institutional full-text record supports global city comparison and responsibility allocation using a common estimation method.</p>
+  <p>Demonstrates how a common estimation method can widen comparative coverage of city carbon footprints while making responsibility allocation and the limits of uneven underlying data part of the comparison.</p>
+  
   <ul class="tag-list"><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Primary)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="modes-of-climate-delivery geographies-of-climate-learning">
-  <p class="record-kicker">Article · Foundational prior work · 2020</p>
-  <h3><a href="/publications/integration-mitigation-adaptation-europe.html">Integration of mitigation and adaptation in urban climate change action plans in Europe: A systematic assessment</a></h3>
-  <p>Its cross-city systematic comparison supports analysis of recurring and place-dependent planning arrangements.</p>
-  <ul class="tag-list"><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Related)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="geographies-of-climate-learning">
+</article><article class="record-card featured-example" data-record-type="publication" data-record-id="producer-cities-and-consumer-cities-using-production-and-consumption-based-carbon-accounts" data-group="Evidence boundaries and spatial scaling">
   <p class="record-kicker">Article · Foundational prior work · 2018</p>
   <h3><a href="/publications/producer-cities-and-consumer-cities-using-production-and-consumption-based-carbon-accounts.html">Producer cities and consumer cities: Using production- and consumption-based carbon accounts to guide climate action in China, the UK, and the US</a></h3>
-  <p>The paper compares production- and consumption-based city accounts across China, the UK and the United States.</p>
+  <p>Reveals how changing from production- to consumption-based carbon accounting changes which emissions, responsibilities and policy options become visible across cities in China, the United Kingdom and the United States.</p>
+  
   <ul class="tag-list"><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Primary)</span></li></ul>
+</article><article class="record-card featured-example" data-record-type="work" data-record-id="data-methodologies-climate-impact" data-group="Evidence boundaries and spatial scaling">
+  <p class="record-kicker">Project · Foundational prior work</p>
+  <h3><a href="/work/data-methodologies-climate-impact.html">Data Methodologies for Climate Impact Assessment</a></h3>
+  <p>Shows how choices about spatial scale and the combination of national and local evidence shape what a place-based climate assessment can tell decision-makers in different local contexts.</p>
+  <p class="example-boundary">The project does not establish one universally valid data-scaling method.</p>
+  <ul class="tag-list"><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Related)</span></li></ul>
+</article><article class="record-card featured-example" data-record-type="publication" data-record-id="integration-mitigation-adaptation-europe" data-group="Comparison and generalisability">
+  <p class="record-kicker">Article · Foundational prior work · 2020</p>
+  <h3><a href="/publications/integration-mitigation-adaptation-europe.html">Integration of mitigation and adaptation in urban climate change action plans in Europe: A systematic assessment</a></h3>
+  <p>Uses a systematic cross-city assessment to distinguish recurring from place-dependent ways of integrating mitigation and adaptation in European urban plans.</p>
+  <p class="example-boundary">The comparison identifies planning arrangements but does not establish implementation success.</p>
+  <ul class="tag-list"><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Related)</span></li></ul>
+</article><article class="record-card featured-example" data-record-type="work" data-record-id="uk-co-benefits-atlas" data-group="Which places, emissions and populations become visible">
+  <p class="record-kicker">Project · Foundational prior work</p>
+  <h3><a href="/work/uk-co-benefits-atlas.html">UK Co-Benefits Atlas</a></h3>
+  <p>Makes locally varying climate benefits and costs visible across United Kingdom communities, illustrating how place-based evidence can reveal differences hidden by national averages.</p>
+  <p class="example-boundary">Atlas estimates are conditional and do not establish suitability for another place.</p>
+  <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Related)</span></li></ul>
 </article></div>
 ```
+
+[Explore all verified publications and outputs related to this theme →](/publications/complete.html)
 
 ## Questions this theme opens
 

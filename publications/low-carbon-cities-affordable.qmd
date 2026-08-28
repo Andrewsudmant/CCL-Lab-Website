@@ -18,4 +18,4 @@ description: "The article considers the affordability and economic case for ambi
 
 ## Metadata provenance
 
-Metadata sources: orcid, crossref, publisher · last verified 2026-08-14 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.
+Metadata sources: ORCID; Crossref; Publisher · last verified 2026-08-14 · status: Verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.

@@ -23,7 +23,7 @@ Source content will be treated as untrusted data. Embedded instructions will not
 
 ## Planned classification, grouping and summaries
 
-AI may propose themes, summaries, relevance and grouping, subject to strict schemas and deterministic controls. Grouping will begin with DOI and other stable identifiers, canonical URLs, underlying-source links, explicit citation relationships, platform identifiers, and corroborated title-and-organisation evidence. A bounded model may propose a pair, but deterministic evidence must independently accept it. Topic similarity or model confidence alone will not be sufficient.
+AI may propose themes, summaries, relevance and grouping, subject to required fields and deterministic controls. Grouping will begin with DOI and other stable identifiers, canonical URLs, underlying-source links, explicit citation relationships, platform identifiers, and corroborated title-and-organisation evidence. A bounded model may propose a pair, but independent evidence must accept it. Topic similarity or model confidence alone will not be sufficient.
 
 Public disclosure will follow each record’s actual provenance. A record will claim AI assistance only when its provenance says AI was used. Original sources will remain authoritative, and disagreement or uncertainty will be retained rather than averaged away.
 
@@ -31,4 +31,4 @@ Public disclosure will follow each record’s actual provenance. A record will c
 
 Staging writes and public feeds remain disabled. A later launch decision will require validation, allowed-path controls, budget controls where paid services are involved, and explicit owner approval. Inclusion will not indicate endorsement, evidential quality or applicability to a particular city. Human-review badges will appear only when a named review actually occurred.
 
-The [public correction route](/contact.html) will accept factual corrections, grouping concerns, broken-source reports and removal requests. Correction and merge/split history will remain traceable.
+The [public correction route](../contact.qmd) will accept factual corrections, grouping concerns, broken-source reports and removal requests. Correction and merge/split history will remain traceable.

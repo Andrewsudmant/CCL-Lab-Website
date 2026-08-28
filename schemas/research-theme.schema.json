@@ -26,10 +26,11 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["title", "placeholder"],
+        "required": ["title", "placeholder", "public"],
         "properties": {
           "title": {"type": "string", "pattern": "^PLACEHOLDER"},
-          "placeholder": {"const": true}
+          "placeholder": {"const": true},
+          "public": {"const": false}
         }
       }
     }

@@ -1,0 +1,169 @@
+version: "1.0.0"
+reviewed_date: 2026-08-28
+policy: >-
+  Theme pages present a small illustrative selection. Selection is an editorial decision about reader value,
+  not a reclassification of the complete verified bibliography or a claim that prior work was produced by CCLL.
+entries:
+  - theme_id: geographies-of-climate-learning
+    record_type: publication
+    record_id: replicate-generalize-urban-research
+    conceptual_grouping: Comparison and generalisability
+    contribution: >-
+      Shows why cross-city replication requires explicit attention to the contextual conditions under which findings were produced, rather than assuming that a result will remain informative wherever a superficially similar case can be found.
+    evidence_reviewed: [https://www.tandfonline.com/doi/full/10.1080/12265934.2024.2382706]
+  - theme_id: geographies-of-climate-learning
+    record_type: publication
+    record_id: using-crowdsourced-data-to-estimate-the-carbon-footprints-of-global-cities
+    conceptual_grouping: Which places, emissions and populations become visible
+    contribution: >-
+      Demonstrates how a common estimation method can widen comparative coverage of city carbon footprints while making responsibility allocation and the limits of uneven underlying data part of the comparison.
+    evidence_reviewed: [https://www.research.ed.ac.uk/en/publications/using-crowdsourced-data-to-estimate-the-carbon-footprints-of-glob/]
+  - theme_id: geographies-of-climate-learning
+    record_type: publication
+    record_id: producer-cities-and-consumer-cities-using-production-and-consumption-based-carbon-accounts
+    conceptual_grouping: Evidence boundaries and spatial scaling
+    contribution: >-
+      Reveals how changing from production- to consumption-based carbon accounting changes which emissions, responsibilities and policy options become visible across cities in China, the United Kingdom and the United States.
+    evidence_reviewed: [https://doi.org/10.1016/j.jclepro.2017.12.139]
+  - theme_id: geographies-of-climate-learning
+    record_type: work
+    record_id: data-methodologies-climate-impact
+    conceptual_grouping: Evidence boundaries and spatial scaling
+    contribution: >-
+      Shows how choices about spatial scale and the combination of national and local evidence shape what a place-based climate assessment can tell decision-makers in different local contexts.
+    qualification: The project does not establish one universally valid data-scaling method.
+    evidence_reviewed: [https://www.research.ed.ac.uk/en/projects/data-methodologies-for-climate-impact-assessment/]
+  - theme_id: geographies-of-climate-learning
+    record_type: publication
+    record_id: integration-mitigation-adaptation-europe
+    conceptual_grouping: Comparison and generalisability
+    contribution: >-
+      Uses a systematic cross-city assessment to distinguish recurring from place-dependent ways of integrating mitigation and adaptation in European urban plans.
+    qualification: The comparison identifies planning arrangements but does not establish implementation success.
+    evidence_reviewed: [https://doi.org/10.1016/j.rser.2019.109623]
+  - theme_id: geographies-of-climate-learning
+    record_type: work
+    record_id: uk-co-benefits-atlas
+    conceptual_grouping: Which places, emissions and populations become visible
+    contribution: >-
+      Makes locally varying climate benefits and costs visible across United Kingdom communities, illustrating how place-based evidence can reveal differences hidden by national averages.
+    qualification: Atlas estimates are conditional and do not establish suitability for another place.
+    evidence_reviewed: [https://ukcobenefitsatlas.net/about]
+
+  - theme_id: where-new-evidence-matters
+    record_type: publication
+    record_id: replicate-generalize-urban-research
+    conceptual_grouping: Replication and unresolved disagreement
+    contribution: >-
+      Frames replication as valuable when it tests whether an urban finding survives changed contexts and thereby helps cumulative research distinguish a recurring mechanism from a result tied to one setting.
+    evidence_reviewed: [https://www.tandfonline.com/doi/full/10.1080/12265934.2024.2382706]
+  - theme_id: where-new-evidence-matters
+    record_type: publication
+    record_id: data-scaling-climate-action-governance-uk
+    conceptual_grouping: Omissions that change appraisal or policy inference
+    contribution: >-
+      Shows that additional analysis becomes consequential when different spatial scales change conclusions about policy efficacy and equity, not simply because finer-grained data could be collected.
+    evidence_reviewed: [https://link.springer.com/article/10.1007/s00267-024-01991-5]
+  - theme_id: where-new-evidence-matters
+    record_type: publication
+    record_id: fair-weather-forecasting-the-shortcomings-of-big-data-for-sustainable-development-a-case-s
+    conceptual_grouping: Consequential evidence gaps
+    contribution: >-
+      Demonstrates how systematic omissions in big-data transport evidence can bias evaluation and planning, making the case for new evidence where excluded journeys or populations could change the decision.
+    evidence_reviewed: [https://ideas.repec.org/p/hal/journl/hal-04501697.html]
+  - theme_id: where-new-evidence-matters
+    record_type: publication
+    record_id: uncovering-blind-spots-in-urban-carbon-management-the-role-of-consumption-based-carbon-acc
+    conceptual_grouping: Omissions that change appraisal or policy inference
+    contribution: >-
+      Shows how omitting consumption emissions can conceal mitigation opportunities and alter what a city understands to be within the scope of carbon management.
+    evidence_reviewed: [https://link.springer.com/article/10.1007/s10113-017-1112-x]
+
+  - theme_id: modes-of-climate-delivery
+    record_type: publication
+    record_id: infrastructure-transitions-southern-cities
+    conceptual_grouping: Authority and organisational capability
+    contribution: >-
+      Shows how the organisation of urban service delivery shapes infrastructure transitions, making institutional capability and service provision central to climate and development outcomes in Southern cities.
+    evidence_reviewed: [https://doi.org/10.17645/up.8302]
+  - theme_id: modes-of-climate-delivery
+    record_type: publication
+    record_id: missing-the-target-are-local-climate-targets-aligned-with-national-net-zero-ambitions
+    conceptual_grouping: Authority and organisational capability
+    contribution: >-
+      Reveals how divisions of responsibility, capacity and coordination across national, regional and local government condition whether local climate targets can contribute to national net-zero ambitions.
+    evidence_reviewed: ["https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4021672"]
+  - theme_id: modes-of-climate-delivery
+    record_type: publication
+    record_id: supportive-governance-for-city-scale-low-carbon-building-retrofits-a-case-study-from-shang
+    conceptual_grouping: Participation, implementation and institutional durability
+    contribution: >-
+      Demonstrates how governance arrangements, coordination and enabling capacity combine to make city-scale building retrofit implementable in Shanghai, beyond the choice of retrofit technology itself.
+    evidence_reviewed: [https://doi.org/10.1080/14693062.2021.1948383]
+  - theme_id: modes-of-climate-delivery
+    record_type: publication
+    record_id: financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transi
+    conceptual_grouping: Finance, ownership and coordination
+    contribution: >-
+      Shows how banking and place-based finance can be organised around social as well as climate objectives, treating finance as part of the institutional configuration of a just transition.
+    evidence_reviewed: [https://www.lse.ac.uk/granthaminstitute/publication/financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transition-in-the-uk/]
+  - theme_id: modes-of-climate-delivery
+    record_type: publication
+    record_id: integration-mitigation-adaptation-europe
+    conceptual_grouping: Participation, implementation and institutional durability
+    contribution: >-
+      Compares the planning arrangements through which European cities bring mitigation and adaptation together, showing that formal integration depends on institutional design rather than shared terminology alone.
+    qualification: The assessment concerns plan integration and does not establish implementation success.
+    evidence_reviewed: [https://doi.org/10.1016/j.rser.2019.109623]
+  - theme_id: modes-of-climate-delivery
+    record_type: publication
+    record_id: low-carbon-cities-affordable
+    conceptual_grouping: Finance, ownership and coordination
+    contribution: >-
+      Clarifies how investment requirements, costs and returns condition the affordability of ambitious urban climate action and therefore the financial arrangements through which it may be delivered.
+    qualification: The appraisal is conditional on its data, scenarios and valuation assumptions.
+    evidence_reviewed: [https://doi.org/10.1007/s10584-016-1751-9]
+
+  - theme_id: consequences-for-people-and-places
+    record_type: work
+    record_id: uk-co-benefits-atlas
+    conceptual_grouping: Appraisal boundaries and displaced consequences
+    contribution: >-
+      Shows how estimated benefits and costs of climate action vary across United Kingdom communities, making local distribution visible where aggregate appraisal would otherwise conceal it.
+    qualification: Atlas estimates are conditional and do not establish suitability for another place.
+    evidence_reviewed: [https://ukcobenefitsatlas.net/about]
+  - theme_id: consequences-for-people-and-places
+    record_type: publication
+    record_id: climate-policy-social-policy
+    conceptual_grouping: Affordability and distribution
+    contribution: >-
+      Reframes climate policy as social policy by examining economic and social consequences together, making it possible to ask how the gains and costs of United Kingdom climate action are distributed.
+    evidence_reviewed: [https://doi.org/10.1007/s13412-024-00955-9]
+  - theme_id: consequences-for-people-and-places
+    record_type: publication
+    record_id: the-social-environmental-health-and-economic-impacts-of-low-carbon-transport-policy-a-revi
+    conceptual_grouping: Health and mobility
+    contribution: >-
+      Brings social, environmental, health and economic effects into one review, showing why low-carbon transport cannot be appraised through emissions outcomes alone.
+    evidence_reviewed: [https://doi.org/10.1016/B978-0-12-818122-5.00019-3]
+  - theme_id: consequences-for-people-and-places
+    record_type: publication
+    record_id: workers-perceptions-of-climate-change-and-the-green-transition-in-yorkshire-and-the-humber
+    conceptual_grouping: Employment, social cohesion and local economic effects
+    contribution: >-
+      Centres workers’ perceptions of climate change and transition, showing how regional employment consequences and lived expectations can differ from aggregate accounts of a green economy.
+    evidence_reviewed: [https://eprints.whiterose.ac.uk/183447/]
+  - theme_id: consequences-for-people-and-places
+    record_type: publication
+    record_id: can-low-carbon-urban-development-be-pro-poor-the-case-of-kolkata-india
+    conceptual_grouping: Affordability and distribution
+    contribution: >-
+      Tests whether low-carbon urban development can be pro-poor in Kolkata, making distributional outcomes a question to investigate rather than a benefit to assume.
+    evidence_reviewed: [https://doi.org/10.1177/0956247816677775]
+  - theme_id: consequences-for-people-and-places
+    record_type: publication
+    record_id: financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transi
+    conceptual_grouping: Employment, social cohesion and local economic effects
+    contribution: >-
+      Shows how financing choices can make place-based social outcomes an explicit objective of climate action, rather than treating them as automatic consequences of investment.
+    evidence_reviewed: [https://www.lse.ac.uk/granthaminstitute/publication/financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transition-in-the-uk/]

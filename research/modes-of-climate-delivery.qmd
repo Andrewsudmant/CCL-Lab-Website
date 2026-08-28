@@ -40,48 +40,46 @@ Modes of Climate Delivery compares how these configurations are assembled across
 ## Selected completed and foundational work
 
 ```{=html}
-<div class="record-list"><article class="record-card publication-example" data-themes="modes-of-climate-delivery consequences-for-people-and-places">
+<div class="record-list featured-example-list"><article class="record-card featured-example" data-record-type="publication" data-record-id="infrastructure-transitions-southern-cities" data-group="Authority and organisational capability">
   <p class="record-kicker">Article · Foundational prior work · 2024</p>
   <h3><a href="/publications/infrastructure-transitions-southern-cities.html">Infrastructure Transitions in Southern Cities: Organising Urban Service Delivery for Climate and Development</a></h3>
-  <p>The article examines the institutional organisation of urban service delivery and infrastructure transitions in Southern cities.</p>
+  <p>Shows how the organisation of urban service delivery shapes infrastructure transitions, making institutional capability and service provision central to climate and development outcomes in Southern cities.</p>
+  
   <ul class="tag-list"><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Related)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="modes-of-climate-delivery">
+</article><article class="record-card featured-example" data-record-type="publication" data-record-id="missing-the-target-are-local-climate-targets-aligned-with-national-net-zero-ambitions" data-group="Authority and organisational capability">
   <p class="record-kicker">Preprint · Foundational prior work · 2022</p>
   <h3><a href="/publications/missing-the-target-are-local-climate-targets-aligned-with-national-net-zero-ambitions.html">Missing the target: Are local climate targets aligned with national net zero ambitions?</a></h3>
-  <p>The repository abstract examines divisions of responsibility, capacity and coordination across national, regional and local governance.</p>
+  <p>Reveals how divisions of responsibility, capacity and coordination across national, regional and local government condition whether local climate targets can contribute to national net-zero ambitions.</p>
+  
   <ul class="tag-list"><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Primary)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="modes-of-climate-delivery">
+</article><article class="record-card featured-example" data-record-type="publication" data-record-id="supportive-governance-for-city-scale-low-carbon-building-retrofits-a-case-study-from-shang" data-group="Participation, implementation and institutional durability">
   <p class="record-kicker">Article · Foundational prior work · 2021</p>
   <h3><a href="/publications/supportive-governance-for-city-scale-low-carbon-building-retrofits-a-case-study-from-shang.html">Supportive governance for city-scale low carbon building retrofits: a case study from Shanghai</a></h3>
-  <p>The publisher record examines governance arrangements enabling city-scale low-carbon building retrofit in Shanghai.</p>
+  <p>Demonstrates how governance arrangements, coordination and enabling capacity combine to make city-scale building retrofit implementable in Shanghai, beyond the choice of retrofit technology itself.</p>
+  
   <ul class="tag-list"><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Primary)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="modes-of-climate-delivery consequences-for-people-and-places">
+</article><article class="record-card featured-example" data-record-type="publication" data-record-id="financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transi" data-group="Finance, ownership and coordination">
   <p class="record-kicker">Report · Foundational prior work · 2020</p>
   <h3><a href="/publications/financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transi.html">Financing climate action with positive social impact: How banking can support a just transition in the UK</a></h3>
-  <p>The commissioning institution describes how banking and place-based finance can support delivery of a just transition.</p>
+  <p>Shows how banking and place-based finance can be organised around social as well as climate objectives, treating finance as part of the institutional configuration of a just transition.</p>
+  
   <ul class="tag-list"><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Related)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="modes-of-climate-delivery geographies-of-climate-learning">
+</article><article class="record-card featured-example" data-record-type="publication" data-record-id="integration-mitigation-adaptation-europe" data-group="Participation, implementation and institutional durability">
   <p class="record-kicker">Article · Foundational prior work · 2020</p>
   <h3><a href="/publications/integration-mitigation-adaptation-europe.html">Integration of mitigation and adaptation in urban climate change action plans in Europe: A systematic assessment</a></h3>
-  <p>The systematic assessment compares how European city plans institutionally integrate mitigation and adaptation.</p>
+  <p>Compares the planning arrangements through which European cities bring mitigation and adaptation together, showing that formal integration depends on institutional design rather than shared terminology alone.</p>
+  <p class="example-boundary">The assessment concerns plan integration and does not establish implementation success.</p>
   <ul class="tag-list"><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Related)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="consequences-for-people-and-places modes-of-climate-delivery">
-  <p class="record-kicker">Article · Foundational prior work · 2018</p>
-  <h3><a href="/publications/kigali-economic-appraisal.html">The scope for low-carbon development in Kigali, Rwanda: An economic appraisal</a></h3>
-  <p>The appraisal examines investment and governance implications that condition the delivery of low-carbon options in Kigali.</p>
-  <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Related)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="consequences-for-people-and-places modes-of-climate-delivery">
+</article><article class="record-card featured-example" data-record-type="publication" data-record-id="low-carbon-cities-affordable" data-group="Finance, ownership and coordination">
   <p class="record-kicker">Article · Foundational prior work · 2016</p>
   <h3><a href="/publications/low-carbon-cities-affordable.html">Low carbon cities: is ambitious action affordable?</a></h3>
-  <p>The article&#x27;s investment and affordability analysis bears on the financial conditions through which ambitious action can be delivered.</p>
-  <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Related)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="consequences-for-people-and-places modes-of-climate-delivery">
-  <p class="record-kicker">Article · Foundational prior work · 2015</p>
-  <h3><a href="/publications/economic-case-climate-action-cities.html">Exploring the economic case for climate action in cities</a></h3>
-  <p>The analysis considers investment requirements and economic conditions shaping how city action may be financed and delivered.</p>
+  <p>Clarifies how investment requirements, costs and returns condition the affordability of ambitious urban climate action and therefore the financial arrangements through which it may be delivered.</p>
+  <p class="example-boundary">The appraisal is conditional on its data, scenarios and valuation assumptions.</p>
   <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Related)</span></li></ul>
 </article></div>
 ```
+
+[Explore all verified publications and outputs related to this theme →](/publications/complete.html)
 
 ## Questions this theme opens
 

@@ -37,9 +37,9 @@ The work helps researchers and practitioners inspect how scale and spatial resol
 - [Data Scaling: Implications for Climate Action and Governance in the UK](/publications/data-scaling-climate-action-governance-uk.html)
 
 ```{=html}
-<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>Project</dd><dt>Status</dt><dd>Completed</dd><dt>Relationship to the lab</dt><dd>Foundational prior work — Completed at the University of Edinburgh before CCLL was established; it provides a methodological foundation for current research.</dd><dt>Primary theme</dt><dd><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a></dd><dt>Secondary themes</dt><dd><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a></dd><dt>Geographies</dt><dd>united-kingdom</dd><dt>Climate domains</dt><dd>mitigation</dd><dt>Sectors</dt><dd>cross-sectoral</dd><dt>Methods</dt><dd>place-based-modelling, spatial-analysis, economic-appraisal</dd></dl></section>
+<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>Project</dd><dt>Status</dt><dd>Completed</dd><dt>Relationship to the lab</dt><dd>Foundational prior work — Completed at the University of Edinburgh before CCLL was established; it provides a methodological foundation for current research.</dd><dt>Primary theme</dt><dd><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a></dd><dt>Secondary themes</dt><dd><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a></dd><dt>Geographies</dt><dd>United Kingdom</dd><dt>Climate domains</dt><dd>Mitigation</dd><dt>Sectors</dt><dd>Cross-sectoral</dd><dt>Methods</dt><dd>Place-based modelling; Spatial analysis; Economic appraisal</dd></dl></section>
 ```
 
 ## Authoritative sources
 
-- [University of Edinburgh project record](https://www.research.ed.ac.uk/en/projects/data-methodologies-for-climate-impact-assessment/) — verified 2026-08-27
+- [University of Edinburgh project record](https://www.research.ed.ac.uk/en/projects/data-methodologies-for-climate-impact-assessment/) — accessed 2026-08-27

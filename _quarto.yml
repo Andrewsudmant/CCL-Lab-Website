@@ -55,10 +55,14 @@ website:
     left: |
       **Cities & Climate Learning Lab**<br>
       School of Resource and Environmental Management, Simon Fraser University
-    right: |
-      [andrew_sudmant@sfu.ca](mailto:andrew_sudmant@sfu.ca) · [Current Conversations method](/current-conversations/how-it-works.html)<br>
-      [Report a correction or broken source](/contact.html) ·
-      AI-assisted discovery; original sources remain authoritative.
+    center: "AI-assisted discovery; original sources remain authoritative."
+    right:
+      - text: andrew_sudmant@sfu.ca
+        href: mailto:andrew_sudmant@sfu.ca
+      - text: Current Conversations method
+        href: current-conversations/how-it-works.qmd
+      - text: Report a correction
+        href: contact.qmd
   search: true
   reader-mode: false
   back-to-top-navigation: true

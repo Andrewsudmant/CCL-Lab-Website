@@ -18,4 +18,4 @@ description: "The preprint reflects on the design process for the UK Co-Benefits
 
 ## Metadata provenance
 
-Metadata sources: datacite, repository · last verified 2026-08-14 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.
+Metadata sources: DataCite; Repository · last verified 2026-08-14 · status: Verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.

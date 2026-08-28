@@ -77,14 +77,11 @@ def test_previous_work_selection_source_is_byte_for_byte_frozen() -> None:
     assert set(fixture["source_file_hashes"]) == {"config/publication_theme_examples.yml"}
 
 
-def test_previous_work_ids_and_display_order_are_frozen() -> None:
-    generate_all()
+def test_gate_5d_previous_work_freeze_remains_as_historical_evidence() -> None:
     fixture = yaml.safe_load((ROOT / "tests/fixtures/gate-5d-previous-work-freeze.yml").read_text())
-    for theme_id, expected in fixture["selected_previous_work"].items():
-        page = (ROOT / "research" / f"{theme_id}.qmd").read_text()
-        section = page.split("## Selected completed and foundational work", 1)[1].split("## Questions this theme opens", 1)[0]
-        observed = [f"{kind}/{slug[:-5]}" for kind, slug in re.findall(r'href="/(work|publications)/([^\"]+\.html)', section)]
-        assert observed == expected
+    assert set(fixture["selected_previous_work"]) == {theme_id for theme_id, _ in CANONICAL_THEME_ORDER}
+    assert all(fixture["selected_previous_work"][theme_id] for theme_id, _ in CANONICAL_THEME_ORDER)
+    assert (ROOT / "config/theme_featured_examples.yml").is_file()
 
 
 def test_current_conversations_is_in_development_and_has_no_public_entries() -> None:
@@ -122,13 +119,15 @@ def test_public_sources_do_not_contain_internal_gate_or_owner_review_copy() -> N
     assert "owner review" not in text and "owner-review" not in text
 
 
-def test_no_build_or_test_api_side_effect_and_no_deployment_workflow() -> None:
+def test_no_build_or_test_api_side_effect_and_pages_workflow_is_manual() -> None:
     makefile = (ROOT / "Makefile").read_text().casefold()
     build_recipe = makefile.split("build: generate", 1)[1].split("linkcheck:", 1)[0]
     normal = build_recipe + (ROOT / "scripts/pre-render.sh").read_text().casefold()
     assert "curl " not in normal and "openai_api_key" not in normal and "discover" not in normal
     workflows = "\n".join(path.read_text() for path in sorted((ROOT / ".github/workflows").glob("*.yml"))).casefold()
-    assert "quarto publish" not in workflows and "pages: write" not in workflows and "deploy-pages" not in workflows
+    pages = (ROOT / ".github/workflows/public-draft-pages.yml").read_text().casefold()
+    assert "quarto publish" not in workflows
+    assert "workflow_dispatch" in pages and "public_draft_deploy_enabled" in pages
 
 
 def test_fixture_directory_is_explicitly_non_public() -> None:

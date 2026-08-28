@@ -27,16 +27,12 @@ The work could help workforce researchers and practitioners identify which occup
 
 ## Evidence status and boundaries
 
-**Evidence status.** Owner-approved research-line description; the methodology is in development.
+**Evidence status.** Current lab research line; the methodology is in development.
 
 **Claim boundaries.** The work does not predict individual employment outcomes or presume that all green employment is accessible or good work.
 
 
 
 ```{=html}
-<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>Ongoing research line</dd><dt>Status</dt><dd>Ongoing</dd><dt>Relationship to the lab</dt><dd>Current CCLL work — Owner-approved current CCLL research line; the recurring methodological questions are broader than one bounded project.</dd><dt>Primary theme</dt><dd><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a></dd><dt>Secondary themes</dt><dd><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a>, <a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a></dd><dt>Geographies</dt><dd>united-kingdom</dd><dt>Climate domains</dt><dd>just-transition</dd><dt>Sectors</dt><dd>labour-workforce</dd><dt>Methods</dt><dd>occupational-analysis, evidence-synthesis, taxonomy-development, network-analysis, calibration</dd></dl></section>
+<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>Ongoing research line</dd><dt>Status</dt><dd>Ongoing</dd><dt>Relationship to the lab</dt><dd>Current CCLL work — Current CCLL research line; the recurring methodological questions are broader than one bounded project.</dd><dt>Primary theme</dt><dd><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a></dd><dt>Secondary themes</dt><dd><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a>, <a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a></dd><dt>Geographies</dt><dd>United Kingdom</dd><dt>Climate domains</dt><dd>Just transition</dd><dt>Sectors</dt><dd>Labour and workforce</dd><dt>Methods</dt><dd>Occupational analysis; Evidence synthesis; Taxonomy development; Network analysis; Calibration</dd></dl></section>
 ```
-
-## Authoritative sources
-
-- Owner-approved Gate 5D research-line description — verified 2026-08-27

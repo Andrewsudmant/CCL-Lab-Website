@@ -101,6 +101,36 @@ def validate_all() -> list[str]:
         if assigned != set(relationship_themes):
             errors.append(f"{label}: every assigned theme requires exactly one rationale")
 
+    featured_examples = load_yaml(ROOT / "config/theme_featured_examples.yml")
+    errors.extend(schema_errors(featured_examples, load_schema("theme-featured-examples.schema.json"), "config/theme_featured_examples.yml"))
+    featured_keys: list[tuple[str, str, str]] = []
+    featured_counts = {theme_id: 0 for theme_id in CANONICAL_THEMES}
+    featured_appearances: dict[tuple[str, str], set[str]] = {}
+    for example in featured_examples.get("entries", []):
+        theme_id = example.get("theme_id")
+        record_type = example.get("record_type")
+        record_id = example.get("record_id")
+        label = f"featured theme example {theme_id}/{record_type}/{record_id}"
+        errors.extend(theme_reference_errors([theme_id], label, CANONICAL_THEMES))
+        featured_keys.append((theme_id, record_type, record_id))
+        if theme_id in featured_counts:
+            featured_counts[theme_id] += 1
+        featured_appearances.setdefault((record_type, record_id), set()).add(theme_id)
+        public_words = example.get("contribution", "").split()
+        if not 20 <= len(public_words) <= 65:
+            errors.append(f"{label}: contribution should contain 20–65 words, found {len(public_words)}")
+        audit_terms = ("publisher abstract", "institutional record", "full-text record", "verified relationship", "evidence source")
+        if any(term in example.get("contribution", "").casefold() for term in audit_terms):
+            errors.append(f"{label}: contribution contains source-verification language")
+    if len(featured_keys) != len(set(featured_keys)):
+        errors.append("config/theme_featured_examples.yml: duplicate theme/type/record selection")
+    for theme_id, count in featured_counts.items():
+        if not 4 <= count <= 6:
+            errors.append(f"config/theme_featured_examples.yml: {theme_id} must contain 4–6 examples, found {count}")
+    for key, themes in featured_appearances.items():
+        if len(themes) > 2:
+            errors.append(f"config/theme_featured_examples.yml: {key[0]} {key[1]} appears under more than two themes")
+
     records: dict[str, list[dict[str, Any]]] = {}
     for kind, schema_name in (
         ("people", "person.schema.json"),
@@ -122,6 +152,15 @@ def validate_all() -> list[str]:
         errors.append("data/people: public email must be andrew_sudmant@sfu.ca")
 
     errors.extend(unique_and_crosslink_errors(records))
+    known_work_ids = {item.get("work_id") for item in records["work"]}
+    complete_ids: set[str] = set()
+    complete_path = ROOT / "reports/content/publication-complete-inventory.json"
+    if complete_path.is_file():
+        complete_ids = {item.get("record_id") for item in json.loads(complete_path.read_text(encoding="utf-8")).get("records", [])}
+    for example in featured_examples.get("entries", []):
+        known = known_work_ids if example.get("record_type") == "work" else complete_ids
+        if example.get("record_id") not in known:
+            errors.append(f"config/theme_featured_examples.yml: unknown {example.get('record_type')} {example.get('record_id')}")
     ideas = records["research-ideas"]
     if len(ideas) != 24:
         errors.append(f"data/research-ideas: expected 24 active ideas, found {len(ideas)}")

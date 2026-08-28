@@ -40,28 +40,34 @@ Where New Evidence Matters examines which additional knowledge could alter an ap
 ## Selected completed and foundational work
 
 ```{=html}
-<div class="record-list"><article class="record-card publication-example" data-themes="geographies-of-climate-learning where-new-evidence-matters">
+<div class="record-list featured-example-list"><article class="record-card featured-example" data-record-type="publication" data-record-id="replicate-generalize-urban-research" data-group="Replication and unresolved disagreement">
   <p class="record-kicker">Article · Foundational prior work · 2024</p>
   <h3><a href="/publications/replicate-generalize-urban-research.html">Replicate and generalize to make urban research coherent</a></h3>
-  <p>The paper calls for future testing of replication and generalisability where it could improve cumulative urban research.</p>
+  <p>Frames replication as valuable when it tests whether an urban finding survives changed contexts and thereby helps cumulative research distinguish a recurring mechanism from a result tied to one setting.</p>
+  
   <ul class="tag-list"><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a><span class="sr-only"> (Related)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="geographies-of-climate-learning where-new-evidence-matters consequences-for-people-and-places">
+</article><article class="record-card featured-example" data-record-type="publication" data-record-id="data-scaling-climate-action-governance-uk" data-group="Omissions that change appraisal or policy inference">
   <p class="record-kicker">Article · Foundational prior work · 2024</p>
   <h3><a href="/publications/data-scaling-climate-action-governance-uk.html">Data Scaling: Implications for Climate Action and Governance in the UK</a></h3>
-  <p>The paper identifies specific future analysis needed because scaling choices may affect efficacy and equity interpretations.</p>
+  <p>Shows that additional analysis becomes consequential when different spatial scales change conclusions about policy efficacy and equity, not simply because finer-grained data could be collected.</p>
+  
   <ul class="tag-list"><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a><span class="sr-only"> (Related)</span></li><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Related)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="where-new-evidence-matters">
+</article><article class="record-card featured-example" data-record-type="publication" data-record-id="fair-weather-forecasting-the-shortcomings-of-big-data-for-sustainable-development-a-case-s" data-group="Consequential evidence gaps">
   <p class="record-kicker">Article · Foundational prior work · 2021</p>
   <h3><a href="/publications/fair-weather-forecasting-the-shortcomings-of-big-data-for-sustainable-development-a-case-s.html">Fair weather forecasting? The shortcomings of big data for sustainable development, a case study from Hubballi‐Dharwad, India</a></h3>
-  <p>The abstract identifies systematic omissions in big-data transport evidence that could bias evaluation and planning decisions.</p>
+  <p>Demonstrates how systematic omissions in big-data transport evidence can bias evaluation and planning, making the case for new evidence where excluded journeys or populations could change the decision.</p>
+  
   <ul class="tag-list"><li><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a><span class="sr-only"> (Primary)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="where-new-evidence-matters">
+</article><article class="record-card featured-example" data-record-type="publication" data-record-id="uncovering-blind-spots-in-urban-carbon-management-the-role-of-consumption-based-carbon-acc" data-group="Omissions that change appraisal or policy inference">
   <p class="record-kicker">Article · Foundational prior work · 2017</p>
   <h3><a href="/publications/uncovering-blind-spots-in-urban-carbon-management-the-role-of-consumption-based-carbon-acc.html">Uncovering blind spots in urban carbon management: the role of consumption-based carbon accounting in Bristol, UK</a></h3>
-  <p>The publisher abstract shows how omitted consumption emissions conceal mitigation opportunities and alter city decision-making.</p>
+  <p>Shows how omitting consumption emissions can conceal mitigation opportunities and alter what a city understands to be within the scope of carbon management.</p>
+  
   <ul class="tag-list"><li><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a><span class="sr-only"> (Primary)</span></li></ul>
 </article></div>
 ```
+
+[Explore all verified publications and outputs related to this theme →](/publications/complete.html)
 
 ## Questions this theme opens
 

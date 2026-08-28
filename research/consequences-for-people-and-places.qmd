@@ -40,68 +40,46 @@ Consequences for People and Places examines benefits, co-costs, burdens, adverse
 ## Selected completed and foundational work
 
 ```{=html}
-<div class="record-list"><article class="record-card work-card" data-status="completed" data-type="project" data-themes="geographies-of-climate-learning consequences-for-people-and-places" data-geography="united-kingdom" data-method="place-based-modelling spatial-analysis economic-appraisal" data-sector="cross-sectoral">
-  <p class="record-kicker">Project · Foundational prior work</p>
-  <h3><a href="/work/data-methodologies-climate-impact.html">Data Methodologies for Climate Impact Assessment</a></h3>
-  <p>A completed project on scaling and combining data for place-based climate-impact assessment, including relationships between national evidence and local decision contexts.</p>
-  <ul class="tag-list"><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Related)</span></li></ul>
-</article><article class="record-card work-card" data-status="completed" data-type="project" data-themes="consequences-for-people-and-places geographies-of-climate-learning" data-geography="united-kingdom" data-method="place-based-modelling spatial-analysis data-visualization" data-sector="cross-sectoral">
+<div class="record-list featured-example-list"><article class="record-card featured-example" data-record-type="work" data-record-id="uk-co-benefits-atlas" data-group="Appraisal boundaries and displaced consequences">
   <p class="record-kicker">Project · Foundational prior work</p>
   <h3><a href="/work/uk-co-benefits-atlas.html">UK Co-Benefits Atlas</a></h3>
-  <p>A completed project that developed a place-based atlas for examining how estimated benefits and costs of climate action vary across UK communities.</p>
+  <p>Shows how estimated benefits and costs of climate action vary across United Kingdom communities, making local distribution visible where aggregate appraisal would otherwise conceal it.</p>
+  <p class="example-boundary">Atlas estimates are conditional and do not establish suitability for another place.</p>
   <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Related)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="modes-of-climate-delivery consequences-for-people-and-places">
-  <p class="record-kicker">Article · Foundational prior work · 2024</p>
-  <h3><a href="/publications/infrastructure-transitions-southern-cities.html">Infrastructure Transitions in Southern Cities: Organising Urban Service Delivery for Climate and Development</a></h3>
-  <p>The paper connects urban service-delivery arrangements to climate and development consequences in Southern cities.</p>
-  <ul class="tag-list"><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Related)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="consequences-for-people-and-places">
+</article><article class="record-card featured-example" data-record-type="publication" data-record-id="climate-policy-social-policy" data-group="Affordability and distribution">
   <p class="record-kicker">Article · Foundational prior work · 2024</p>
   <h3><a href="/publications/climate-policy-social-policy.html">Climate policy as social policy? A comprehensive assessment of the economic impact of climate action in the UK</a></h3>
-  <p>The publisher abstract assesses wider economic and social consequences of UK climate action.</p>
+  <p>Reframes climate policy as social policy by examining economic and social consequences together, making it possible to ask how the gains and costs of United Kingdom climate action are distributed.</p>
+  
   <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="consequences-for-people-and-places">
-  <p class="record-kicker">Report · Foundational prior work · 2021</p>
-  <h3><a href="/publications/workers-perceptions-of-climate-change-and-the-green-transition-in-yorkshire-and-the-humber.html">Workers’ perceptions of climate change and the green transition in Yorkshire and the Humber: Building the evidence base for the just transition in the region</a></h3>
-  <p>The institutional report centres workers&#x27; perceptions and place-based employment consequences of the green transition.</p>
-  <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="modes-of-climate-delivery consequences-for-people-and-places">
-  <p class="record-kicker">Report · Foundational prior work · 2020</p>
-  <h3><a href="/publications/financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transi.html">Financing climate action with positive social impact: How banking can support a just transition in the UK</a></h3>
-  <p>The report makes positive social impact and place-based just-transition consequences explicit objectives of financing.</p>
-  <ul class="tag-list"><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Related)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="consequences-for-people-and-places">
+</article><article class="record-card featured-example" data-record-type="publication" data-record-id="the-social-environmental-health-and-economic-impacts-of-low-carbon-transport-policy-a-revi" data-group="Health and mobility">
   <p class="record-kicker">Chapter · Foundational prior work · 2020</p>
   <h3><a href="/publications/the-social-environmental-health-and-economic-impacts-of-low-carbon-transport-policy-a-revi.html">The social, environmental, health, and economic impacts of low carbon transport policy: A review of the evidence</a></h3>
-  <p>The review examines social, environmental, health and economic consequences of low-carbon transport policy.</p>
+  <p>Brings social, environmental, health and economic effects into one review, showing why low-carbon transport cannot be appraised through emissions outcomes alone.</p>
+  
   <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="consequences-for-people-and-places">
-  <p class="record-kicker">Report · Foundational prior work · 2019</p>
-  <h3><a href="/publications/investing-in-a-just-transition-in-the-uk-how-investors-can-integrate-social-impact-and-pla.html">Investing in a just transition in the UK: How investors can integrate social impact and place-based financing into climate strategies</a></h3>
-  <p>The commissioning institution frames investment choices around social impact and place-based consequences of transition.</p>
+</article><article class="record-card featured-example" data-record-type="publication" data-record-id="workers-perceptions-of-climate-change-and-the-green-transition-in-yorkshire-and-the-humber" data-group="Employment, social cohesion and local economic effects">
+  <p class="record-kicker">Report · Foundational prior work · 2021</p>
+  <h3><a href="/publications/workers-perceptions-of-climate-change-and-the-green-transition-in-yorkshire-and-the-humber.html">Workers’ perceptions of climate change and the green transition in Yorkshire and the Humber: Building the evidence base for the just transition in the region</a></h3>
+  <p>Centres workers’ perceptions of climate change and transition, showing how regional employment consequences and lived expectations can differ from aggregate accounts of a green economy.</p>
+  
   <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="consequences-for-people-and-places modes-of-climate-delivery">
-  <p class="record-kicker">Article · Foundational prior work · 2018</p>
-  <h3><a href="/publications/kigali-economic-appraisal.html">The scope for low-carbon development in Kigali, Rwanda: An economic appraisal</a></h3>
-  <p>The article evaluates the local economic consequences and investment implications of low-carbon options in Kigali.</p>
-  <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Related)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="consequences-for-people-and-places">
+</article><article class="record-card featured-example" data-record-type="publication" data-record-id="can-low-carbon-urban-development-be-pro-poor-the-case-of-kolkata-india" data-group="Affordability and distribution">
   <p class="record-kicker">Article · Foundational prior work · 2016</p>
   <h3><a href="/publications/can-low-carbon-urban-development-be-pro-poor-the-case-of-kolkata-india.html">Can low-carbon urban development be pro-poor? The case of Kolkata, India</a></h3>
-  <p>The paper directly examines whether low-carbon urban development produces pro-poor distributional outcomes in Kolkata.</p>
+  <p>Tests whether low-carbon urban development can be pro-poor in Kolkata, making distributional outcomes a question to investigate rather than a benefit to assume.</p>
+  
   <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="consequences-for-people-and-places modes-of-climate-delivery">
-  <p class="record-kicker">Article · Foundational prior work · 2016</p>
-  <h3><a href="/publications/low-carbon-cities-affordable.html">Low carbon cities: is ambitious action affordable?</a></h3>
-  <p>The article directly examines the affordability and economic consequences of ambitious low-carbon city action.</p>
-  <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Related)</span></li></ul>
-</article><article class="record-card publication-example" data-themes="consequences-for-people-and-places modes-of-climate-delivery">
-  <p class="record-kicker">Article · Foundational prior work · 2015</p>
-  <h3><a href="/publications/economic-case-climate-action-cities.html">Exploring the economic case for climate action in cities</a></h3>
-  <p>The article appraises investment costs and wider economic benefits of city-level climate action.</p>
-  <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Related)</span></li></ul>
+</article><article class="record-card featured-example" data-record-type="publication" data-record-id="financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transi" data-group="Employment, social cohesion and local economic effects">
+  <p class="record-kicker">Report · Foundational prior work · 2020</p>
+  <h3><a href="/publications/financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transi.html">Financing climate action with positive social impact: How banking can support a just transition in the UK</a></h3>
+  <p>Shows how financing choices can make place-based social outcomes an explicit objective of climate action, rather than treating them as automatic consequences of investment.</p>
+  
+  <ul class="tag-list"><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Related)</span></li></ul>
 </article></div>
 ```
+
+[Explore all verified publications and outputs related to this theme →](/publications/complete.html)
 
 ## Questions this theme opens
 

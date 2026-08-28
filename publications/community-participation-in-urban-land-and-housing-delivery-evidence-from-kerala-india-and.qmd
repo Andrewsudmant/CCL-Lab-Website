@@ -22,4 +22,4 @@ This verified MDPI-authored work is retained in the complete scholarly record. B
 
 ## Metadata provenance
 
-Metadata sources: orcid, crossref, owner-override · last verified 2026-08-27 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.
+Metadata sources: ORCID; Crossref; Owner override · last verified 2026-08-27 · status: Verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.

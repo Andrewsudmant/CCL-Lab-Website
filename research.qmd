@@ -9,7 +9,7 @@ description: "Four connected questions about how urban climate knowledge becomes
 **One connected programme.** The themes are ordered questions, not independent subject areas. Consequences generate new evidence, revise judgements and shape what cities investigate next. Research work may enter the cycle at different points.
 :::
 
-[Read our approach to evidence, relevance, use, delivery and consequences →](/research/our-approach.html)
+[Read our approach to evidence, relevance, use, delivery and consequences →](research/our-approach.qmd)
 
 {{< include generated/research-themes.qmd >}}
 

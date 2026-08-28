@@ -38,9 +38,9 @@ The work could help comparative researchers distinguish the visibility of a prec
 - [Who can learn from whom? The geography of urban climate evidence](/publications/who-can-learn-geography-urban-climate-evidence.html)
 
 ```{=html}
-<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>Paper</dd><dt>Status</dt><dd>Ongoing</dd><dt>Relationship to the lab</dt><dd>Work begun before CCLL and continuing — The preprint began before CCLL was established and the research questions continue to inform the lab&#x27;s current programme.</dd><dt>Primary theme</dt><dd><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a></dd><dt>Secondary themes</dt><dd><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a></dd><dt>Geographies</dt><dd>global</dd><dt>Climate domains</dt><dd>evidence-and-learning</dd><dt>Sectors</dt><dd>cross-sectoral</dd><dt>Methods</dt><dd>evidence-mapping, literature-review, spatial-analysis</dd></dl></section>
+<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>Paper</dd><dt>Status</dt><dd>Ongoing</dd><dt>Relationship to the lab</dt><dd>Work begun before CCLL and continuing — The preprint began before CCLL was established and the research questions continue to inform the lab&#x27;s current programme.</dd><dt>Primary theme</dt><dd><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a></dd><dt>Secondary themes</dt><dd><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a></dd><dt>Geographies</dt><dd>Global</dd><dt>Climate domains</dt><dd>Evidence and learning</dd><dt>Sectors</dt><dd>Cross-sectoral</dd><dt>Methods</dt><dd>Evidence mapping; Literature review; Spatial analysis</dd></dl></section>
 ```
 
 ## Authoritative sources
 
-- [Research Square preprint record](https://doi.org/10.21203/rs.3.rs-9268986/v1) — verified 2026-08-27
+- [Research Square preprint record](https://doi.org/10.21203/rs.3.rs-9268986/v1) — accessed 2026-08-27

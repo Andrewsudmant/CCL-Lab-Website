@@ -40,9 +40,9 @@ The work provides a source-backed example of how place-based evidence can expose
 - [Interactive UK Co-Benefits Atlas](/work/uk-co-benefits-atlas-tool.html)
 
 ```{=html}
-<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>Project</dd><dt>Status</dt><dd>Completed</dd><dt>Relationship to the lab</dt><dd>Foundational prior work — Completed through the University of Edinburgh and collaborators before CCLL was established; it was not developed at SFU.</dd><dt>Primary theme</dt><dd><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a></dd><dt>Secondary themes</dt><dd><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a></dd><dt>Geographies</dt><dd>united-kingdom</dd><dt>Climate domains</dt><dd>mitigation</dd><dt>Sectors</dt><dd>cross-sectoral</dd><dt>Methods</dt><dd>place-based-modelling, spatial-analysis, data-visualization</dd></dl></section>
+<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>Project</dd><dt>Status</dt><dd>Completed</dd><dt>Relationship to the lab</dt><dd>Foundational prior work — Completed through the University of Edinburgh and collaborators before CCLL was established; it was not developed at SFU.</dd><dt>Primary theme</dt><dd><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a></dd><dt>Secondary themes</dt><dd><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a></dd><dt>Geographies</dt><dd>United Kingdom</dd><dt>Climate domains</dt><dd>Mitigation</dd><dt>Sectors</dt><dd>Cross-sectoral</dd><dt>Methods</dt><dd>Place-based modelling; Spatial analysis; Data visualization</dd></dl></section>
 ```
 
 ## Authoritative sources
 
-- [Atlas team and methods page](https://ukcobenefitsatlas.net/about) — verified 2026-08-27
+- [Atlas team and methods page](https://ukcobenefitsatlas.net/about) — accessed 2026-08-27

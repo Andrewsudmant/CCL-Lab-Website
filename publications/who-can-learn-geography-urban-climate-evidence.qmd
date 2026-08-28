@@ -18,4 +18,4 @@ description: "The preprint examines the uneven geography of urban climate eviden
 
 ## Metadata provenance
 
-Metadata sources: crossref, repository · last verified 2026-08-14 · status: verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.
+Metadata sources: Crossref; Repository · last verified 2026-08-14 · status: Verified. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.

@@ -27,16 +27,12 @@ The work could clarify which local evidence and modelling choices materially alt
 
 ## Evidence status and boundaries
 
-**Evidence status.** Owner-approved programme description; the model remains in development and provisional internal findings are not public conclusions.
+**Evidence status.** Current lab programme; the model remains in development and provisional findings are not presented as public conclusions.
 
 **Claim boundaries.** Scenarios are conditional appraisals, not forecasts, predictions or universal transferability claims.
 
 
 
 ```{=html}
-<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>Ongoing research programme</dd><dt>Status</dt><dd>Ongoing</dd><dt>Relationship to the lab</dt><dd>Current CCLL work — Owner-approved current programme of the Cities and Climate Learning Lab.</dd><dt>Primary theme</dt><dd><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a></dd><dt>Secondary themes</dt><dd><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a>, <a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a></dd><dt>Geographies</dt><dd>canada, united-kingdom</dd><dt>Climate domains</dt><dd>mitigation</dd><dt>Sectors</dt><dd>buildings, transport, health</dd><dt>Methods</dt><dd>place-based-modelling, economic-appraisal, distributional-analysis</dd></dl></section>
+<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>Ongoing research programme</dd><dt>Status</dt><dd>Ongoing</dd><dt>Relationship to the lab</dt><dd>Current CCLL work — Current programme of the Cities and Climate Learning Lab.</dd><dt>Primary theme</dt><dd><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a></dd><dt>Secondary themes</dt><dd><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a>, <a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a></dd><dt>Geographies</dt><dd>Canada; United Kingdom</dd><dt>Climate domains</dt><dd>Mitigation</dd><dt>Sectors</dt><dd>Buildings and housing; Transport and mobility; Health</dd><dt>Methods</dt><dd>Place-based modelling; Economic appraisal; Distributional analysis</dd></dl></section>
 ```
-
-## Authoritative sources
-
-- Owner-approved Gate 5D programme description — verified 2026-08-27

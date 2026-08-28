@@ -27,7 +27,7 @@ A clearer account of delivery modes could allow researchers and practitioners to
 
 ## Evidence status and boundaries
 
-**Evidence status.** Owner-approved current programme connected to a verified peer-reviewed framework paper.
+**Evidence status.** Current lab programme connected to a verified peer-reviewed framework paper.
 
 **Claim boundaries.** No delivery configuration is presented as universally suitable or effective, and no unpublished IPCC material is used.
 
@@ -38,10 +38,9 @@ A clearer account of delivery modes could allow researchers and practitioners to
 - [From urban climate ambition to delivery: a framework of climate delivery modes](/publications/from-urban-climate-ambition-to-delivery.html)
 
 ```{=html}
-<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>Ongoing research programme</dd><dt>Status</dt><dd>Ongoing</dd><dt>Relationship to the lab</dt><dd>Current CCLL work — Research developed before the lab was established and published after Andrew joined Simon Fraser University; foundational to the lab&#x27;s current delivery programme.</dd><dt>Primary theme</dt><dd><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a></dd><dt>Secondary themes</dt><dd><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a></dd><dt>Geographies</dt><dd>canada, global</dd><dt>Climate domains</dt><dd>mitigation, adaptation</dd><dt>Sectors</dt><dd>cross-sectoral, urban-infrastructure</dd><dt>Methods</dt><dd>comparative-case-study, institutional-analysis, policy-analysis</dd></dl></section>
+<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>Ongoing research programme</dd><dt>Status</dt><dd>Ongoing</dd><dt>Relationship to the lab</dt><dd>Current CCLL work — Research developed before the lab was established and published after Andrew joined Simon Fraser University; foundational to the lab&#x27;s current delivery programme.</dd><dt>Primary theme</dt><dd><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a></dd><dt>Secondary themes</dt><dd><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a></dd><dt>Geographies</dt><dd>Canada; Global</dd><dt>Climate domains</dt><dd>Mitigation; Adaptation</dd><dt>Sectors</dt><dd>Cross-sectoral; Urban infrastructure</dd><dt>Methods</dt><dd>Comparative case study; Institutional analysis; Policy analysis</dd></dl></section>
 ```
 
 ## Authoritative sources
 
-- Owner-approved Gate 5D programme description — verified 2026-08-27
-- [Nature publisher record for the delivery-modes framework](https://www.nature.com/articles/s44168-026-00408-9) — verified 2026-08-27
+- [Nature publisher record for the delivery-modes framework](https://www.nature.com/articles/s44168-026-00408-9) — accessed 2026-08-27

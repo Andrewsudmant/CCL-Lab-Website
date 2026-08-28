@@ -18,8 +18,9 @@ The static site is written to `_site/`. `make preview` serves it locally. Normal
 
 ## Maintenance commands
 
-- `make validate`, `make test`, `make build`, `make check`: offline root-site quality controls.
-- `make build-project-path`, `make linkcheck-project-path`, `make release-check`: build and inspect the provisional `/CCL-Lab-Website/` mount as well as the root site.
+- `make validate`, `make build`: offline validation and root-site generation.
+- `make test`, `make check`: deterministically build both root and provisional `/CCL-Lab-Website/` profiles before tests; `make check` then inspects root links and accessibility.
+- `make build-project-path`, `make linkcheck-project-path`, `make release-check`: explicit project-path build and full two-profile release inspection.
 - `make publications-refresh`: explicit live ORCID reconciliation followed by the complete publication inventory build.
 - `make current-conversations-fixture`: show the captured mixed-source fixture with zero network calls.
 - `make current-conversations-pilot`: rebuild private staging and the clearly non-final calibration-generator preview from fixtures.

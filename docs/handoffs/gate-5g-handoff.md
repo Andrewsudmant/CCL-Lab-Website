@@ -14,6 +14,7 @@ The same source now builds for a domain root and for GitHub’s `/CCL-Lab-Websit
 - Cross-listing risked making examples look generic. Each cross-listed item is capped at two themes and has distinct theme-specific contribution copy.
 - Internal provenance phrases were useful for audits but awkward in public prose. They remain in YAML/configuration and review documents while public pages use factual, reader-facing language.
 - Root-relative URLs can fail on project Pages. A second Quarto profile, path-aware generated links and two independent link/accessibility passes now test both mount points.
+- The first pushed CI run exposed that the new owner-package test could inspect the project-path artifact before the standard CI target built it. `make test` and `make check` now build both profiles before pytest, and the correction is verified from a clean temporary worktree.
 - External automated link checks encountered temporary or access-controlled responses. No restriction was bypassed; the official stable links were retained and the exact results are recorded for human recheck.
 - Browser screenshots needed genuine breakpoint validation. The final build was inspected at 1280×720, 390×844 and 720×900, with zero horizontal overflow or broken images in the tested pages.
 

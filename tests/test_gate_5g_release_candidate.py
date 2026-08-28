@@ -132,6 +132,9 @@ def test_project_path_profile_and_generated_paths_are_portable() -> None:
     assert profile["project"]["output-dir"] == "_site-project-path/CCL-Lab-Website"
     assert "example.com" not in (ROOT / "_quarto.yml").read_text()
     assert "site-path" not in yaml.safe_load((ROOT / "_quarto.yml").read_text())["website"]
+    makefile = (ROOT / "Makefile").read_text()
+    assert "test: build build-project-path" in makefile
+    assert "check: validate build build-project-path" in makefile
 
 
 def test_pages_workflow_is_manual_fail_closed_and_permission_isolated() -> None:

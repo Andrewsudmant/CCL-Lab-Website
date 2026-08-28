@@ -9,7 +9,7 @@ validate:
 	$(PYTHON) scripts/validate_content.py
 generate:
 	$(PYTHON) scripts/generate_site.py
-test: build
+test: build build-project-path
 	$(PYTHON) -m pytest
 build: generate
 	./scripts/quarto.sh render
@@ -23,7 +23,7 @@ linkcheck-external: build
 	$(PYTHON) scripts/check_links.py --external
 accessibility: build
 	$(PYTHON) scripts/check_accessibility.py
-check: validate build
+check: validate build build-project-path
 	$(PYTHON) -m pytest
 	$(PYTHON) scripts/check_links.py
 	$(PYTHON) scripts/check_accessibility.py

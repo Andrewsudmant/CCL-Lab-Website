@@ -26,7 +26,7 @@ This summary groups generated publication detail pages rather than repeating 46 
 ## Root/project-path portability and release automation
 
 - `_quarto-project-path.yml` — deterministic `/CCL-Lab-Website/` profile and output directory.
-- `_quarto.yml`, `.gitignore`, `Makefile` — path-aware footer/navigation, ignored test output, and root/project release-check/package commands.
+- `_quarto.yml`, `.gitignore`, `Makefile` — path-aware footer/navigation, ignored test output, root/project release commands, and deterministic two-profile builds before site-inspecting tests.
 - `scripts/check_links.py`, `scripts/check_accessibility.py` — accept explicit site directories; the link checker also accepts a repository base path.
 - `.github/workflows/public-draft-pages.yml` — manual, variable-guarded, environment-approved Pages workflow; build remains read-only and deployment permissions are isolated.
 

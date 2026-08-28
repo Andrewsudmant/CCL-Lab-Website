@@ -976,6 +976,16 @@ main.page-columns > .site-status-banner {
   text-transform: uppercase;
 }
 
+.filter-hint {
+  display: block;
+  color: var(--ccl-muted);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1.35;
+  text-transform: none;
+}
+
 .watch-filters input,
 .watch-filters select,
 .watch-filters button,

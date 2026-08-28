@@ -71,7 +71,9 @@ def test_work_theme_relationships_and_optional_learning_fields() -> None:
         assert work["primary_theme"] not in work["secondary_themes"]
         assert work.get("evidence_status")
         page = (ROOT / "work" / f'{work["work_id"]}.qmd').read_text()
-        assert "How this work contributes to climate learning" in page
+        assert "## The problem" in page
+        assert "## What this work asks" in page
+        assert "## Evidence status and boundaries" in page
 
     mapping = {record["work_id"]: record for record in works}
     assert mapping["geography-urban-climate-evidence"]["primary_theme"] == "geographies-of-climate-learning"

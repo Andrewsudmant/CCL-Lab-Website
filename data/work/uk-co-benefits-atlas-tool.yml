@@ -15,6 +15,14 @@ parent_work_id: uk-co-benefits-atlas
 connected_work_ids: [uk-co-benefits-atlas]
 connected_publication_ids: [designing-visualization-atlas-uk-cobenefits]
 connected_tool_ids: []
+problem_of_understanding: >-
+  Place-based estimates can be difficult to inspect or compare when the underlying spatial variation and documented methods are not available through an accessible interface.
+central_question: >-
+  How can users explore the place-based estimates and methods developed through the UK Co-Benefits Atlas?
+how_it_investigates: >-
+  The active public interface exposes the completed Atlas outputs and documented methods for exploration; it does not itself establish new findings.
+reader_value: >-
+  The tool allows users to inspect how represented benefits and costs vary across UK communities while retaining the limits of the underlying estimates.
 evidence_status: Public tool verified as available on 27 August 2026.
 claim_boundaries: Availability does not make the underlying estimates current, universal or transferable to another place.
 geographies: [united-kingdom]

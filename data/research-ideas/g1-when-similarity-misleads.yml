@@ -6,6 +6,9 @@ problem_of_understanding: Cities often select precedents through visible similar
 why_it_may_matter: Analogue-based learning can create misplaced confidence when the characteristics used to define similarity are not the characteristics that govern the intervention or outcome.
 possible_research_design: Matched-city comparisons could be combined with causal transportability analysis and sensitivity testing to identify which contextual variables alter the direction or magnitude of an inference.
 suggested_methods: [matched-city comparison, transportability analysis, causal generalisability, sensitivity analysis, hierarchical modelling]
+public_method_tags: [matched-city comparison, transportability analysis, causal generalisability]
+narrative_tier: signature
+reader_or_decision_at_stake: Comparative researchers selecting cases.
 possible_geographies: [British Columbia, Canada, comparative international cities]
 possible_sectors: [buildings, transport, urban planning]
 possible_climate_domains: [mitigation, adaptation]

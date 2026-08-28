@@ -16,6 +16,14 @@ parent_work_id: null
 connected_work_ids: []
 connected_publication_ids: []
 connected_tool_ids: []
+problem_of_understanding: >-
+  Co-benefit appraisals often report aggregate gains while leaving the causal, geographical, delivery and valuation assumptions behind those estimates difficult to inspect. This can make locally contingent scenarios appear more certain or transferable than they are.
+central_question: >-
+  How can place-based climate scenarios represent benefits, burdens, costs and distribution without obscuring the assumptions that connect an intervention to those consequences?
+how_it_investigates: >-
+  The programme develops a conditional model that keeps baseline evidence, scenario actions, causal pathways, endpoints, delivery assumptions and valuation choices distinct and traceable.
+reader_value: >-
+  The work could clarify which local evidence and modelling choices materially alter an appraisal, allowing scenario users to distinguish conditional consequences from forecasts or universal claims.
 decision_or_problem: How to represent locally varying benefits, burdens and costs without obscuring causal, geographic or valuation assumptions.
 existing_evidence: The model separates baseline evidence, scenario actions, causal pathways, endpoints and valuation for traceable review.
 consequential_uncertainty: Local evidence availability, causal assignment and valuation choices may materially change represented consequences.

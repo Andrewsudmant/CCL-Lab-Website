@@ -8,37 +8,41 @@ canonical-url: "/work/uk-co-benefits-atlas-tool.html"
 
 <p class="page-deck">The active public interface associated with the completed UK Co-Benefits Atlas project, providing access to place-based estimates and documented methods.</p>
 
-**Work type:** Active tool<br>
-**Status:** Ongoing<br>
-**Relationship to the lab:** Foundational prior work — The public tool remains available, but it was developed before CCLL through the University of Edinburgh and collaborators.<br>
-**Primary theme:** [Consequences for People and Places](/research/consequences-for-people-and-places.html)
+## The problem
 
-## How this work contributes to climate learning
+Place-based estimates can be difficult to inspect or compare when the underlying spatial variation and documented methods are not available through an accessible interface.
 
-**Primary theme:** [Consequences for People and Places](/research/consequences-for-people-and-places.html)
+## What this work asks
 
-**Secondary connections:** [Geographies of Climate Learning](/research/geographies-of-climate-learning.html)
-
-**Evidence status:** Public tool verified as available on 27 August 2026.
-
-**Claim boundaries:** Availability does not make the underlying estimates current, universal or transferable to another place.
-
-### Research facets
-
-**Geographies:** united-kingdom<br>
-**Climate domains:** mitigation<br>
-**Sectors:** cross-sectoral<br>
-**Methods:** place-based-modelling, spatial-analysis, data-visualization
+How can users explore the place-based estimates and methods developed through the UK Co-Benefits Atlas?
 
 
 
-## Connected publications
+## How the work investigates it
+
+The active public interface exposes the completed Atlas outputs and documented methods for exploration; it does not itself establish new findings.
+
+## What better understanding could make possible
+
+The tool allows users to inspect how represented benefits and costs vary across UK communities while retaining the limits of the underlying estimates.
+
+## Evidence status and boundaries
+
+**Evidence status.** Public tool verified as available on 27 August 2026.
+
+**Claim boundaries.** Availability does not make the underlying estimates current, universal or transferable to another place.
+
+
+
+## Publications, outputs and tools
 
 - [Designing a Visualization Atlas: Lessons & Reflections from The UK Co-Benefits Atlas for Climate Mitigation](/publications/designing-visualization-atlas-uk-cobenefits.html)
 
-## Connected work and tools
-
 - [UK Co-Benefits Atlas](/work/uk-co-benefits-atlas.html)
+
+```{=html}
+<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>Active tool</dd><dt>Status</dt><dd>Ongoing</dd><dt>Relationship to the lab</dt><dd>Foundational prior work — The public tool remains available, but it was developed before CCLL through the University of Edinburgh and collaborators.</dd><dt>Primary theme</dt><dd><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a></dd><dt>Secondary themes</dt><dd><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a></dd><dt>Geographies</dt><dd>united-kingdom</dd><dt>Climate domains</dt><dd>mitigation</dd><dt>Sectors</dt><dd>cross-sectoral</dd><dt>Methods</dt><dd>place-based-modelling, spatial-analysis, data-visualization</dd></dl></section>
+```
 
 ## Authoritative sources
 

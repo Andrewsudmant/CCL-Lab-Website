@@ -6,6 +6,9 @@ problem_of_understanding: Policies are usually appraised individually even thoug
 why_it_may_matter: A package that appears equitable policy by policy may produce concentrated cumulative burdens or benefits.
 possible_research_design: Integrated household microsimulation and geospatial policy-package scenarios could estimate cumulative incidence and identify combinations that amplify or offset burdens.
 suggested_methods: [integrated microsimulation, geospatial incidence analysis, policy-package modelling, distributional appraisal, household scenario analysis]
+public_method_tags: [integrated microsimulation, geospatial incidence analysis, policy-package modelling]
+narrative_tier: signature
+reader_or_decision_at_stake: Policy appraisers assessing interacting household and neighbourhood effects.
 possible_geographies: [British Columbia, Canada, comparative international cities]
 possible_sectors: [buildings, transport, energy]
 possible_climate_domains: [mitigation]

@@ -20,6 +20,7 @@ except ImportError:
 OUT = ROOT / "generated"
 FULL_DISCLOSURE = "Current Conversations uses automated searches and AI-generated classification, grouping and summaries to identify recent material connected to the lab's research themes. Sources may include academic papers, policy reports, news, blogs, data tools and public posts. Items have not normally been reviewed by a member of the Cities and Climate Learning Lab, and inclusion does not imply endorsement. Coverage is selective and uneven, and summaries may contain errors or omit important context. Please consult the original sources."
 FIXTURE_DISCLOSURE = "This captured fixture was assembled without AI generation to test presentation and governance controls. It has not been reviewed by the lab, is not endorsed, and is not evidence of a live retrieval. Consult the original source."
+IDEA_DISCLAIMER = "Research idea · not currently an active or funded project"
 ENV_LABELS = {
     "academic-research": "Academic research", "policy-and-institutions": "Policy and institutions",
     "news-and-analysis": "News and analysis", "blogs-and-commentary": "Blogs and commentary",
@@ -31,6 +32,12 @@ ROLE_LABELS = {
     "news-reporting": "Reporting", "independent-analysis": "Independent analysis",
     "research-commentary": "Research commentary", "practitioner-commentary": "Practitioner commentary",
     "public-discussion": "Public discussion",
+}
+HOME_THEME_PROPOSITIONS = {
+    "geographies-of-climate-learning": "A visible precedent does not by itself show that its lessons will travel.",
+    "where-new-evidence-matters": "An evidence gap does not by itself establish the value of filling it.",
+    "modes-of-climate-delivery": "A policy label does not reveal the institutional configuration required to make it work.",
+    "consequences-for-people-and-places": "Aggregate benefits do not show who gains, who bears costs, where or when.",
 }
 
 
@@ -198,7 +205,7 @@ def generate_themes(works: list[dict[str, Any]], ideas: list[dict[str, Any]], pu
         "canadian-climate-policy": "modes-of-climate-delivery",
     }
     for index, theme in enumerate(themes, 1):
-        home.append(f'''<li class="cycle-stage"><article><span class="theme-number">0{index}</span><p class="cycle-role">{esc(theme['cycle_role'])}</p><h3><a href="/research/{esc(theme['id'])}.html">{esc(theme['name'])}</a></h3><p class="guiding-question">{esc(theme['guiding_question'])}</p><p>{esc(theme['homepage_description'])}</p><p><a class="text-link" href="/research/{esc(theme['id'])}.html">Explore this question <span aria-hidden="true">→</span></a></p></article></li>''')
+        home.append(f'''<li class="cycle-stage"><article aria-labelledby="home-theme-{index}"><span class="theme-number">0{index}</span><p class="cycle-role">{esc(theme['cycle_role'])}</p><h3 id="home-theme-{index}"><a href="/research/{esc(theme['id'])}.html" aria-label="Explore {esc(theme['name'])}">{esc(theme['name'])}</a></h3><p class="theme-proposition">{esc(HOME_THEME_PROPOSITIONS[theme['id']])}</p><p><a class="text-link" href="/research/{esc(theme['id'])}.html" aria-label="Explore this question: {esc(theme['name'])}">Explore this question <span aria-hidden="true">→</span></a></p></article></li>''')
         details.append(f'''<article class="detail-card" id="{esc(theme['id'])}"><div class="detail-index">0{index}</div><div><p class="cycle-role">{esc(theme['cycle_role'])}</p><h2><a href="/research/{esc(theme['id'])}.html">{esc(theme['name'])}</a></h2><p class="guiding-question">{esc(theme['guiding_question'])}</p><p>{esc(theme['homepage_description'])}</p><p><a class="text-link" href="/research/{esc(theme['id'])}.html">View the theme programme →</a></p></div><aside class="detail-meta"><strong>Geographic priorities</strong><span>{esc(', '.join(theme['geographical_priorities']))}</span><strong>Methods of interest</strong><span>{esc(', '.join(theme['methodological_interests']))}</span></aside></article>''')
         relevant_work = [record for record in works if record["primary_theme"] == theme["id"] or theme["id"] in record["secondary_themes"]]
         ongoing_work = [record for record in relevant_work if record["work_status"] == "ongoing"]
@@ -214,34 +221,27 @@ def generate_themes(works: list[dict[str, Any]], ideas: list[dict[str, Any]], pu
         publications_by_id = {record["record_id"]: record for record in publications}
         ongoing_html = '<div class="record-list">' + ''.join(work_card(record, publications_by_id) for record in ongoing_work) + '</div>'
         completed_html = '<div class="record-list">' + ''.join(work_card(record, publications_by_id) for record in completed_work) + ''.join(publication_theme_card(record, theme["id"]) for record in selected_publications) + '</div>'
-        idea_html = '<div class="idea-grid">' + ''.join(f'''<article class="idea-card"><p class="idea-disclaimer">{esc(item['disclaimer'])}</p><h3>{esc(item['working_title'])}</h3><p class="idea-question">{esc(item['question'])}</p><h4>Problem of understanding</h4><p>{esc(item['problem_of_understanding'])}</p><h4>Why it may matter</h4><p>{esc(item['why_it_may_matter'])}</p><h4>Possible research design</h4><p>{esc(item['possible_research_design'])}</p>{f'<p class="idea-qualification"><strong>Research governance qualification.</strong> {esc(item["required_qualification"])}</p>' if item.get('required_qualification') else ''}{f'<p class="idea-qualification"><strong>Analytical boundary.</strong> {esc(item["required_boundary"])}</p>' if item.get('required_boundary') else ''}<h4>Suggested methods</h4>{tags(item['suggested_methods'][:5], 'method-list')}</article>''' for item in theme_ideas) + '</div>'
+        def idea_card(item: dict[str, Any], signature: bool) -> str:
+            qualifiers = (f'<p class="idea-qualification"><strong>Research governance qualification.</strong> {esc(item["required_qualification"])}</p>' if item.get("required_qualification") else "") + (f'<p class="idea-qualification"><strong>Analytical boundary.</strong> {esc(item["required_boundary"])}</p>' if item.get("required_boundary") else "")
+            reader = f'<p class="idea-reader"><strong>Reader or decision at stake:</strong> {esc(item["reader_or_decision_at_stake"])}</p>' if item.get("reader_or_decision_at_stake") else ""
+            return f'''<article class="idea-card{' signature-idea' if signature else ''}" data-narrative-tier="{esc(item['narrative_tier'])}"><p class="idea-badge">Research idea</p><p class="sr-only">{esc(item['disclaimer'])}</p><h3>{esc(item['working_title'])}</h3><p class="idea-question">{esc(item['question'])}</p><h4>Why this question matters</h4><p>{esc(item['problem_of_understanding'])} {esc(item['why_it_may_matter'])}</p><h4>How we might study it</h4><p>{esc(item['possible_research_design'])}</p>{qualifiers}{tags(item['public_method_tags'], 'method-list')}{reader}</article>'''
+        signature_ideas = [item for item in theme_ideas if item["narrative_tier"] == "signature"]
+        additional_ideas = [item for item in theme_ideas if item["narrative_tier"] == "additional"]
+        idea_html = f'''<h3 class="idea-group-heading">Questions at the centre of this theme</h3><div class="idea-grid signature-grid">{''.join(idea_card(item, True) for item in signature_ideas)}</div><h3 class="idea-group-heading">Additional directions</h3><div class="idea-grid">{''.join(idea_card(item, False) for item in additional_ideas)}</div>'''
         previous_theme = themes[index - 2] if index > 1 else themes[-1]
         next_theme = themes[index] if index < len(themes) else themes[0]
         connections = f'''- **Input from [{previous_theme['name']}](/research/{previous_theme['id']}.html):** {previous_theme['connection_to_next']}
 - **Next stage — [{next_theme['name']}](/research/{next_theme['id']}.html):** {theme['connection_to_next']}
 - **Return loop:** Consequences generate new evidence, reveal unresolved questions and revise what other cities may plausibly learn.'''
-        questions = "\n".join(f"- {item}" for item in theme["included_questions"])
-        body = f'''<p class="cycle-role">{theme['cycle_role']}</p>
-
-<p class="page-deck"><strong>{theme['guiding_question']}</strong></p>
-
-{theme['long_description'][0]}
+        body = f'''{theme['long_description'][0]}
 
 {theme['long_description'][1]}
 
-::: {{.notice}}
-**Analytical boundary.** {theme['analytical_boundary']}
-
-**Place in the learning cycle.** {theme['connection_to_next']}
-:::
-
 ::: {{.what-this-changes}}
-**What this changes.** {theme['what_this_changes']}
+**The proposition.** {theme['what_this_changes']}
 :::
 
-## Questions the lab investigates
-
-{questions}
+**What this theme does not assume.** {theme['analytical_boundary']}
 
 ## Ongoing work
 
@@ -257,22 +257,26 @@ def generate_themes(works: list[dict[str, Any]], ideas: list[dict[str, Any]], pu
 
 ## Questions this theme opens
 
-The questions below are possible directions for future research. They are not currently active or funded projects.
+These are possible directions for future research, not active or funded projects.
+
+<span class="sr-only">Each card retains the full status: {IDEA_DISCLAIMER}</span>
+
+This layout provides a reading hierarchy; it is not a ranking of research priority, funding readiness or importance.
 
 ```{{=html}}
 {idea_html}
 ```
 
-## Connections across the learning cycle
+## How this connects
 
 {connections}
 
-## External horizon scanning: Current Conversations
+## Current Conversations
 
 Current Conversations is in development. No live public feed is operating, and no automatically identified item is presented on this page.
 
 [How Current Conversations works](/current-conversations/how-it-works.html).'''
-        write_page(ROOT / "research" / f"{theme['id']}.qmd", theme["name"], theme["homepage_description"], body, canonical=f"/research/{theme['id']}.html")
+        write_page(ROOT / "research" / f"{theme['id']}.qmd", theme["name"], theme["guiding_question"], body, canonical=f"/research/{theme['id']}.html")
     for old_id, new_id in legacy_routes.items():
         destination = theme_index()[new_id]
         redirect_body = f'''<p class="page-deck">This former theme route has moved into the lab's four-theme research programme.</p>
@@ -304,37 +308,45 @@ def generate_work(works: list[dict[str, Any]], publications: list[dict[str, Any]
         sources = "\n".join((f'- [{item["label"]}]({item["url"]})' if item.get("url") else f'- {item["label"]}') + f' — verified {item["retrieved_date"]}' for item in record["authoritative_sources"])
         publication_connections = "\n".join(f'- [{publications_by_id[item]["title"]}](/publications/{item}.html)' for item in record["connected_publication_ids"] if item in publications_by_id)
         work_connections = "\n".join(f'- [{work_title(work_by_id[item], publications_by_id)}](/work/{item}.html)' for item in record["connected_work_ids"] if item in work_by_id)
-        learning_fields = [
-            ("Decision or problem", "decision_or_problem"),
-            ("Existing evidence", "existing_evidence"),
-            ("Transfer conditions", "transfer_conditions"),
-            ("Consequential uncertainty", "consequential_uncertainty"),
-            ("Delivery conditions", "delivery_conditions"),
-            ("Consequences examined", "consequences_examined"),
-            ("Evidence status", "evidence_status"),
-            ("Claim boundaries", "claim_boundaries"),
-            ("Next learning question", "next_learning_question"),
-        ]
-        learning = "\n\n".join(f"**{label}:** {record[key]}" for label, key in learning_fields if record.get(key))
-        secondary = ", ".join(f'[{theme_index()[item]["name"]}](/research/{item}.html)' for item in record["secondary_themes"]) or "No secondary theme assigned."
-        facets = f"**Geographies:** {', '.join(record['geographies'])}<br>\n**Climate domains:** {', '.join(record['climate_domains'])}<br>\n**Sectors:** {', '.join(record['sectors'])}<br>\n**Methods:** {', '.join(record['methods'])}"
-        learning_section = f"## How this work contributes to climate learning\n\n**Primary theme:** [{theme_index()[record['primary_theme']]['name']}](/research/{record['primary_theme']}.html)\n\n**Secondary connections:** {secondary}\n\n{learning}\n\n### Research facets\n\n{facets}" if learning else ""
-        questions = f"## Research questions\n\n{chr(10).join('- ' + item for item in record['research_questions'])}" if record["research_questions"] else ""
+        secondary_html = ", ".join(f'<a href="/research/{esc(item)}.html">{esc(theme_index()[item]["name"])}</a>' for item in record["secondary_themes"]) or "No secondary theme assigned."
         connected_sections = ""
         if publication_connections:
-            connected_sections += f"\n\n## Connected publications\n\n{publication_connections}"
+            connected_sections += f"\n\n## Publications, outputs and tools\n\n{publication_connections}"
         if work_connections:
-            connected_sections += f"\n\n## Connected work and tools\n\n{work_connections}"
-        body = f'''<p class="page-deck">{record['summary']}</p>
+            if not connected_sections:
+                connected_sections = "\n\n## Publications, outputs and tools"
+            connected_sections += f"\n\n{work_connections}"
+        questions = chr(10).join("- " + item for item in record["research_questions"])
+        metadata = f'''<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>{esc(work_type_label(record))}</dd><dt>Status</dt><dd>{esc(record['work_status'].title())}</dd><dt>Relationship to the lab</dt><dd>{esc(relationship_label(record['relationship_to_lab']))} — {esc(record['relationship_note'])}</dd><dt>Primary theme</dt><dd><a href="/research/{esc(record['primary_theme'])}.html">{esc(theme_index()[record['primary_theme']]['name'])}</a></dd><dt>Secondary themes</dt><dd>{secondary_html}</dd><dt>Geographies</dt><dd>{esc(', '.join(record['geographies']))}</dd><dt>Climate domains</dt><dd>{esc(', '.join(record['climate_domains']))}</dd><dt>Sectors</dt><dd>{esc(', '.join(record['sectors']))}</dd><dt>Methods</dt><dd>{esc(', '.join(record['methods']))}</dd></dl></section>'''
+        body = f'''## The problem
 
-**Work type:** {work_type_label(record)}<br>
-**Status:** {record['work_status'].title()}<br>
-**Relationship to the lab:** {relationship_label(record['relationship_to_lab'])} — {record['relationship_note']}<br>
-**Primary theme:** [{theme_index()[record['primary_theme']]['name']}](/research/{record['primary_theme']}.html)
+{record['problem_of_understanding']}
 
-{learning_section}
+## What this work asks
 
-{questions}{connected_sections}
+{record['central_question']}
+
+{questions}
+
+## How the work investigates it
+
+{record['how_it_investigates']}
+
+## What better understanding could make possible
+
+{record['reader_value']}
+
+## Evidence status and boundaries
+
+**Evidence status.** {record['evidence_status']}
+
+**Claim boundaries.** {record['claim_boundaries']}
+
+{connected_sections}
+
+```{{=html}}
+{metadata}
+```
 
 ## Authoritative sources
 

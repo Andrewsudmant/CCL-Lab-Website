@@ -6,6 +6,9 @@ problem_of_understanding: Research fields may continue accumulating similar case
 why_it_may_matter: Without defensible stopping rules, research may reproduce well-covered questions while more consequential uncertainties remain unresolved.
 possible_research_design: Sequential meta-analysis and explicit stopping rules could estimate diminishing informational returns, while sensitivity analysis could test whether apparent saturation hides neglected contexts.
 suggested_methods: [sequential meta-analysis, stopping-rule analysis, evidence-saturation analysis, sensitivity analysis, research-portfolio analysis]
+public_method_tags: [sequential meta-analysis, stopping-rule analysis, evidence-saturation analysis]
+narrative_tier: signature
+reader_or_decision_at_stake: Research funders and evidence-synthesis teams.
 possible_geographies: [Canada, comparative international cities]
 possible_sectors: [urban governance]
 possible_climate_domains: [mitigation, adaptation]

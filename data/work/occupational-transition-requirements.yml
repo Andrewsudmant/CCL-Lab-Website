@@ -17,6 +17,14 @@ parent_work_id: null
 connected_work_ids: []
 connected_publication_ids: []
 connected_tool_ids: []
+problem_of_understanding: >-
+  Workforce planning can treat a change of sector as equivalent to a change of occupation, obscuring differences in skills, access and transition burdens.
+central_question: >-
+  Which requirements distinguish same-occupation sector changes from transitions between occupations in low-carbon workforce planning?
+how_it_investigates: >-
+  The research line develops transparent methods based on public occupational evidence to examine relatedness and calibrate possible transition requirements.
+reader_value: >-
+  The work could help workforce researchers and practitioners identify which occupational changes create consequential requirements for workers and places.
 decision_or_problem: How to distinguish sector changes from occupation transitions in place-based low-carbon workforce planning.
 existing_evidence: Public occupational evidence used to examine relatedness and transition requirements.
 consequential_uncertainty: Calibration choices affect which transition requirements and workforce burdens become visible.

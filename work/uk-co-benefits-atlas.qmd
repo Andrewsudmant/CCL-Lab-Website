@@ -8,48 +8,42 @@ canonical-url: "/work/uk-co-benefits-atlas.html"
 
 <p class="page-deck">A completed project that developed a place-based atlas for examining how estimated benefits and costs of climate action vary across UK communities.</p>
 
-**Work type:** Project<br>
-**Status:** Completed<br>
-**Relationship to the lab:** Foundational prior work — Completed through the University of Edinburgh and collaborators before CCLL was established; it was not developed at SFU.<br>
-**Primary theme:** [Consequences for People and Places](/research/consequences-for-people-and-places.html)
+## The problem
 
-## How this work contributes to climate learning
+National or aggregate climate appraisals can hide how estimated benefits and costs vary among communities and depend on place-specific evidence and valuation choices.
 
-**Primary theme:** [Consequences for People and Places](/research/consequences-for-people-and-places.html)
+## What this work asks
 
-**Secondary connections:** [Geographies of Climate Learning](/research/geographies-of-climate-learning.html)
-
-**Decision or problem:** How place-based evidence can make locally varying benefits and costs of climate action visible.
-
-**Existing evidence:** Verified Atlas methods, public output and a connected publication from foundational prior work.
-
-**Transfer conditions:** Estimates are specific to UK data, communities, scenarios and valuation choices.
-
-**Consequences examined:** Eleven categories of benefits and costs across more than 46,000 UK communities.
-
-**Evidence status:** Completed foundational project associated with a separately represented public tool that remains available.
-
-**Claim boundaries:** Atlas estimates are not universal predictions and do not establish suitability for another place.
-
-### Research facets
-
-**Geographies:** united-kingdom<br>
-**Climate domains:** mitigation<br>
-**Sectors:** cross-sectoral<br>
-**Methods:** place-based-modelling, spatial-analysis, data-visualization
-
-## Research questions
+How do estimated benefits and costs of climate action vary between UK communities, and how can those differences be made more transparent?
 
 - How do the estimated benefits and costs of climate action vary between UK communities?
 - How can place-based evidence make local climate choices more transparent?
 
-## Connected publications
+## How the work investigates it
+
+The completed project combined place-based modelling, spatial analysis and visualisation to represent eleven categories of benefits and costs across UK communities.
+
+## What better understanding could make possible
+
+The work provides a source-backed example of how place-based evidence can expose local variation without presenting the estimates as universal predictions.
+
+## Evidence status and boundaries
+
+**Evidence status.** Completed foundational project associated with a separately represented public tool that remains available.
+
+**Claim boundaries.** Atlas estimates are not universal predictions and do not establish suitability for another place.
+
+
+
+## Publications, outputs and tools
 
 - [Designing a Visualization Atlas: Lessons & Reflections from The UK Co-Benefits Atlas for Climate Mitigation](/publications/designing-visualization-atlas-uk-cobenefits.html)
 
-## Connected work and tools
-
 - [Interactive UK Co-Benefits Atlas](/work/uk-co-benefits-atlas-tool.html)
+
+```{=html}
+<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>Project</dd><dt>Status</dt><dd>Completed</dd><dt>Relationship to the lab</dt><dd>Foundational prior work — Completed through the University of Edinburgh and collaborators before CCLL was established; it was not developed at SFU.</dd><dt>Primary theme</dt><dd><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a></dd><dt>Secondary themes</dt><dd><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a></dd><dt>Geographies</dt><dd>united-kingdom</dd><dt>Climate domains</dt><dd>mitigation</dd><dt>Sectors</dt><dd>cross-sectoral</dd><dt>Methods</dt><dd>place-based-modelling, spatial-analysis, data-visualization</dd></dl></section>
+```
 
 ## Authoritative sources
 

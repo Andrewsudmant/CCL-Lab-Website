@@ -8,44 +8,36 @@ canonical-url: "/work/coben-place-based-model.html"
 
 <p class="page-deck">An ongoing conditional, place-based scenario programme for assessing co-benefits and co-costs of climate action while retaining causal, geographical, delivery and valuation assumptions.</p>
 
-**Work type:** Ongoing research programme<br>
-**Status:** Ongoing<br>
-**Relationship to the lab:** Current CCLL work — Owner-approved current programme of the Cities and Climate Learning Lab.<br>
-**Primary theme:** [Consequences for People and Places](/research/consequences-for-people-and-places.html)
+## The problem
 
-## How this work contributes to climate learning
+Co-benefit appraisals often report aggregate gains while leaving the causal, geographical, delivery and valuation assumptions behind those estimates difficult to inspect. This can make locally contingent scenarios appear more certain or transferable than they are.
 
-**Primary theme:** [Consequences for People and Places](/research/consequences-for-people-and-places.html)
+## What this work asks
 
-**Secondary connections:** [Where New Evidence Matters](/research/where-new-evidence-matters.html), [Modes of Climate Delivery](/research/modes-of-climate-delivery.html)
-
-**Decision or problem:** How to represent locally varying benefits, burdens and costs without obscuring causal, geographic or valuation assumptions.
-
-**Existing evidence:** The model separates baseline evidence, scenario actions, causal pathways, endpoints and valuation for traceable review.
-
-**Consequential uncertainty:** Local evidence availability, causal assignment and valuation choices may materially change represented consequences.
-
-**Delivery conditions:** Delivery and response assumptions remain separate so implementation conditions are not mistaken for outcome evidence.
-
-**Consequences examined:** Health, equity and other place-based co-benefits, co-costs and distributional outcomes.
-
-**Evidence status:** Owner-approved programme description; the model remains in development and provisional internal findings are not public conclusions.
-
-**Claim boundaries:** Scenarios are conditional appraisals, not forecasts, predictions or universal transferability claims.
-
-**Next learning question:** Which local evidence, delivery and valuation choices most alter scenario conclusions?
-
-### Research facets
-
-**Geographies:** canada, united-kingdom<br>
-**Climate domains:** mitigation<br>
-**Sectors:** buildings, transport, health<br>
-**Methods:** place-based-modelling, economic-appraisal, distributional-analysis
-
-## Research questions
+How can place-based climate scenarios represent benefits, burdens, costs and distribution without obscuring the assumptions that connect an intervention to those consequences?
 
 - How can local climate scenarios represent co-benefits and co-costs without obscuring causal assumptions?
 - How should evidence, geography and valuation choices be governed and traced?
+
+## How the work investigates it
+
+The programme develops a conditional model that keeps baseline evidence, scenario actions, causal pathways, endpoints, delivery assumptions and valuation choices distinct and traceable.
+
+## What better understanding could make possible
+
+The work could clarify which local evidence and modelling choices materially alter an appraisal, allowing scenario users to distinguish conditional consequences from forecasts or universal claims.
+
+## Evidence status and boundaries
+
+**Evidence status.** Owner-approved programme description; the model remains in development and provisional internal findings are not public conclusions.
+
+**Claim boundaries.** Scenarios are conditional appraisals, not forecasts, predictions or universal transferability claims.
+
+
+
+```{=html}
+<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>Ongoing research programme</dd><dt>Status</dt><dd>Ongoing</dd><dt>Relationship to the lab</dt><dd>Current CCLL work — Owner-approved current programme of the Cities and Climate Learning Lab.</dd><dt>Primary theme</dt><dd><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a></dd><dt>Secondary themes</dt><dd><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a>, <a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a></dd><dt>Geographies</dt><dd>canada, united-kingdom</dd><dt>Climate domains</dt><dd>mitigation</dd><dt>Sectors</dt><dd>buildings, transport, health</dd><dt>Methods</dt><dd>place-based-modelling, economic-appraisal, distributional-analysis</dd></dl></section>
+```
 
 ## Authoritative sources
 

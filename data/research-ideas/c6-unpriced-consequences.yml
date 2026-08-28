@@ -6,6 +6,9 @@ problem_of_understanding: Excluding difficult-to-price outcomes can make analysi
 why_it_may_matter: Appraisal methods shape which consequences enter a decision and which are rendered invisible.
 possible_research_design: Probabilistic sensitivity analysis, robust decision-making, multi-criteria appraisal and deliberative valuation could be compared to determine what each reveals or conceals.
 suggested_methods: [probabilistic sensitivity analysis, robust decision-making, multi-criteria appraisal, deliberative valuation, threshold analysis]
+public_method_tags: [probabilistic sensitivity analysis, robust decision-making, multi-criteria appraisal]
+narrative_tier: additional
+reader_or_decision_at_stake: Policy appraisers working with consequences that resist monetisation.
 possible_geographies: [British Columbia, Canada, comparative international cities]
 possible_sectors: [buildings, transport, energy]
 possible_climate_domains: [mitigation, adaptation]

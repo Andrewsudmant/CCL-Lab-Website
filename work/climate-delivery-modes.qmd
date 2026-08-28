@@ -8,42 +8,40 @@ canonical-url: "/work/climate-delivery-modes.html"
 
 <p class="page-deck">An ongoing comparative programme examining how authority, finance, organisational capability, infrastructure provision, participation, coordination, sequencing and maintenance combine to deliver urban climate action.</p>
 
-**Work type:** Ongoing research programme<br>
-**Status:** Ongoing<br>
-**Relationship to the lab:** Current CCLL work — Research developed before the lab was established and published after Andrew joined Simon Fraser University; foundational to the lab's current delivery programme.<br>
-**Primary theme:** [Modes of Climate Delivery](/research/modes-of-climate-delivery.html)
+## The problem
 
-## How this work contributes to climate learning
+Urban climate policies are often compared through their targets, technologies or formal instruments. That comparison can conceal the institutional arrangements that make the same intervention operable in one city and fragile in another.
 
-**Primary theme:** [Modes of Climate Delivery](/research/modes-of-climate-delivery.html)
+## What this work asks
 
-**Secondary connections:** [Geographies of Climate Learning](/research/geographies-of-climate-learning.html)
-
-**Decision or problem:** How cities can make climate action operable and durable through configurations of authority, finance and coordination.
-
-**Delivery conditions:** The programme studies configurations rather than treating a delivery mode as an intervention, technology or sector label.
-
-**Evidence status:** Owner-approved current programme connected to a verified peer-reviewed framework paper.
-
-**Claim boundaries:** No delivery configuration is presented as universally suitable or effective, and no unpublished IPCC material is used.
-
-**Next learning question:** Which delivery conditions recur across places, and which remain context dependent?
-
-### Research facets
-
-**Geographies:** canada, global<br>
-**Climate domains:** mitigation, adaptation<br>
-**Sectors:** cross-sectoral, urban-infrastructure<br>
-**Methods:** comparative-case-study, institutional-analysis, policy-analysis
-
-## Research questions
+How do configurations of authority, finance, organisational capability, participation, coordination, sequencing and maintenance shape whether urban climate action becomes possible and durable?
 
 - Which configurations of authority, finance, capability and participation make urban climate action possible and durable?
 - How do delivery arrangements vary across city types, sectors and institutional settings?
 
-## Connected publications
+## How the work investigates it
+
+The programme develops and tests a comparative framework for distinguishing recurring delivery mechanisms from arrangements that remain dependent on particular city types, sectors or institutional conditions.
+
+## What better understanding could make possible
+
+A clearer account of delivery modes could allow researchers and practitioners to compare climate action through the arrangements that make it work, rather than through policy labels alone.
+
+## Evidence status and boundaries
+
+**Evidence status.** Owner-approved current programme connected to a verified peer-reviewed framework paper.
+
+**Claim boundaries.** No delivery configuration is presented as universally suitable or effective, and no unpublished IPCC material is used.
+
+
+
+## Publications, outputs and tools
 
 - [From urban climate ambition to delivery: a framework of climate delivery modes](/publications/from-urban-climate-ambition-to-delivery.html)
+
+```{=html}
+<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>Ongoing research programme</dd><dt>Status</dt><dd>Ongoing</dd><dt>Relationship to the lab</dt><dd>Current CCLL work — Research developed before the lab was established and published after Andrew joined Simon Fraser University; foundational to the lab&#x27;s current delivery programme.</dd><dt>Primary theme</dt><dd><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a></dd><dt>Secondary themes</dt><dd><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a></dd><dt>Geographies</dt><dd>canada, global</dd><dt>Climate domains</dt><dd>mitigation, adaptation</dd><dt>Sectors</dt><dd>cross-sectoral, urban-infrastructure</dd><dt>Methods</dt><dd>comparative-case-study, institutional-analysis, policy-analysis</dd></dl></section>
+```
 
 ## Authoritative sources
 

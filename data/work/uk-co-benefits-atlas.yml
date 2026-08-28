@@ -17,6 +17,14 @@ parent_work_id: null
 connected_work_ids: [uk-co-benefits-atlas-tool]
 connected_publication_ids: [designing-visualization-atlas-uk-cobenefits]
 connected_tool_ids: [uk-co-benefits-atlas-tool]
+problem_of_understanding: >-
+  National or aggregate climate appraisals can hide how estimated benefits and costs vary among communities and depend on place-specific evidence and valuation choices.
+central_question: >-
+  How do estimated benefits and costs of climate action vary between UK communities, and how can those differences be made more transparent?
+how_it_investigates: >-
+  The completed project combined place-based modelling, spatial analysis and visualisation to represent eleven categories of benefits and costs across UK communities.
+reader_value: >-
+  The work provides a source-backed example of how place-based evidence can expose local variation without presenting the estimates as universal predictions.
 decision_or_problem: How place-based evidence can make locally varying benefits and costs of climate action visible.
 existing_evidence: Verified Atlas methods, public output and a connected publication from foundational prior work.
 transfer_conditions: Estimates are specific to UK data, communities, scenarios and valuation choices.

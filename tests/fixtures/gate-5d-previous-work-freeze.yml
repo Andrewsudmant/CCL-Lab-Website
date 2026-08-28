@@ -1,12 +1,5 @@
 source_file_hashes:
   config/publication_theme_examples.yml: 661707342de6fa63ae12c461f7e81736add74ad6bacc561adc83463675d5f9df
-  data/work/climate-delivery-modes.yml: 311e29481e2e2130dc07f6ef2812f08a61dd0861f66536f7153583309d0bdc03
-  data/work/coben-place-based-model.yml: a6f68d7cc6658b17abdaa2b7ca2d4f501ecdd50a648b920dcdfbcf4e8fcbd491
-  data/work/data-methodologies-climate-impact.yml: 0dd716255ddde2a15c8239057023153025c9722597cb6a399c43af4b78ea6d83
-  data/work/geography-urban-climate-evidence.yml: 577bc3adf8f2ae15f459c2284f901ee814c705659b40723dcc1b9c49bd9485c6
-  data/work/occupational-transition-requirements.yml: bae88231238f66e63584be310cf2dbebd572b1b4ad813c04572daf108cd757d7
-  data/work/uk-co-benefits-atlas-tool.yml: 4a445aa62f47fe9028c2a035b23368a3d21c59ae0771c1f50183ab0fded68830
-  data/work/uk-co-benefits-atlas.yml: 230a12180765d8537e1a34ef6b8ddac77ee108757e8c27aa080f9e4a1ea6bd25
 selected_previous_work:
   geographies-of-climate-learning:
     - work/data-methodologies-climate-impact

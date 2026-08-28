@@ -116,10 +116,11 @@ def test_every_theme_page_uses_required_order_and_distinct_idea_treatment() -> N
     generate_all()
     for theme_id, _ in CANONICAL_THEME_ORDER:
         page = theme_page(theme_id)
-        headings = ["## Ongoing work", "## Selected completed and foundational work", "## Questions this theme opens", "## Connections across the learning cycle", "## External horizon scanning: Current Conversations"]
+        headings = ["## Ongoing work", "## Selected completed and foundational work", "## Questions this theme opens", "## How this connects", "## Current Conversations"]
         positions = [page.index(heading) for heading in headings]
         assert positions == sorted(positions)
-        assert "Analytical boundary" in page and "What this changes" in page and "Place in the learning cycle" in page
+        assert "What this theme does not assume" in page and "The proposition" in page
+        assert "Place in the learning cycle" not in page and "Questions the lab investigates" not in page
         assert DISCLAIMER in page and 'class="idea-card"' in page
         assert "No verified records are published in this view yet" not in page
         assert "Current Conversations is in development" in page
@@ -155,7 +156,7 @@ def test_work_navigation_route_and_homepage_labels() -> None:
     navigation = config["website"]["navbar"]["left"]
     assert any(item.get("href") == "work.qmd" and item.get("text") == "Work" for item in navigation)
     assert not any(item.get("text") == "Projects" for item in navigation)
-    assert "Research programmes, projects and studies" in (ROOT / "work.qmd").read_text()
+    assert 'title: "Work"' in (ROOT / "work.qmd").read_text()
     assert "does not maintain a second canonical listing" in (ROOT / "projects.qmd").read_text()
     homepage = (ROOT / "index.qmd").read_text()
     assert "Featured work" in homepage
@@ -186,7 +187,7 @@ def test_current_conversations_remains_external_last_and_ideas_never_enter() -> 
     for theme_id, _ in CANONICAL_THEME_ORDER:
         page = theme_page(theme_id)
         assert "Current Conversations is in development" in page
-        assert page.index("## Questions this theme opens") < page.index("## External horizon scanning: Current Conversations")
+        assert page.index("## Questions this theme opens") < page.index("## Current Conversations")
     clusters = [json.loads(path.read_text()) for path in (ROOT / "data/current-conversations/generated/clusters").glob("*.json")]
     assert any(item["primary_theme"] is None for item in clusters)
     assert all("idea_id" not in item and "work_id" not in item for item in clusters)

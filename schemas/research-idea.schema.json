@@ -3,7 +3,7 @@
   "title": "Research idea",
   "type": "object",
   "additionalProperties": false,
-  "required": ["idea_id", "theme_id", "working_title", "question", "problem_of_understanding", "why_it_may_matter", "possible_research_design", "suggested_methods", "possible_geographies", "possible_sectors", "possible_climate_domains", "display_order", "owner_review_status", "disclaimer"],
+  "required": ["idea_id", "theme_id", "working_title", "question", "problem_of_understanding", "why_it_may_matter", "possible_research_design", "suggested_methods", "public_method_tags", "narrative_tier", "possible_geographies", "possible_sectors", "possible_climate_domains", "display_order", "owner_review_status", "disclaimer"],
   "properties": {
     "idea_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
     "theme_id": {"type": "string"},
@@ -13,6 +13,9 @@
     "why_it_may_matter": {"type": "string", "minLength": 35, "maxLength": 360},
     "possible_research_design": {"type": "string", "minLength": 50},
     "suggested_methods": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 3}},
+    "public_method_tags": {"type": "array", "minItems": 1, "maxItems": 3, "uniqueItems": true, "items": {"type": "string", "minLength": 3}},
+    "narrative_tier": {"enum": ["signature", "additional"]},
+    "reader_or_decision_at_stake": {"type": ["string", "null"], "minLength": 8},
     "possible_geographies": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
     "possible_sectors": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
     "possible_climate_domains": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},

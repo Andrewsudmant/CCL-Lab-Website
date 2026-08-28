@@ -6,6 +6,9 @@ problem_of_understanding: A programme may appear locally beneficial while relyin
 why_it_may_matter: Appraisal boundaries can make local gains visible while hiding consequences outside the city.
 possible_research_design: Multi-regional input–output analysis, supply-chain tracing, ownership mapping and geospatial incidence analysis could connect local outcomes to consequences elsewhere.
 suggested_methods: [multi-regional input–output analysis, supply-chain tracing, ownership mapping, geospatial incidence analysis, territorial and consumption accounting]
+public_method_tags: [multi-regional input–output analysis, supply-chain tracing, ownership mapping]
+narrative_tier: additional
+reader_or_decision_at_stake: Policy appraisers defining geographical and supply-chain boundaries.
 possible_geographies: [British Columbia, Canada, comparative international cities]
 possible_sectors: [buildings, transport, energy]
 possible_climate_domains: [mitigation]

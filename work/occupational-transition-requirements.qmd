@@ -8,44 +8,36 @@ canonical-url: "/work/occupational-transition-requirements.html"
 
 <p class="page-deck">An ongoing research line developing transparent public-evidence methods for distinguishing same-occupation sector changes from transitions between occupations in low-carbon workforce planning.</p>
 
-**Work type:** Ongoing research line<br>
-**Status:** Ongoing<br>
-**Relationship to the lab:** Current CCLL work — Owner-approved current CCLL research line; the recurring methodological questions are broader than one bounded project.<br>
-**Primary theme:** [Consequences for People and Places](/research/consequences-for-people-and-places.html)
+## The problem
 
-## How this work contributes to climate learning
+Workforce planning can treat a change of sector as equivalent to a change of occupation, obscuring differences in skills, access and transition burdens.
 
-**Primary theme:** [Consequences for People and Places](/research/consequences-for-people-and-places.html)
+## What this work asks
 
-**Secondary connections:** [Where New Evidence Matters](/research/where-new-evidence-matters.html), [Modes of Climate Delivery](/research/modes-of-climate-delivery.html)
-
-**Decision or problem:** How to distinguish sector changes from occupation transitions in place-based low-carbon workforce planning.
-
-**Existing evidence:** Public occupational evidence used to examine relatedness and transition requirements.
-
-**Consequential uncertainty:** Calibration choices affect which transition requirements and workforce burdens become visible.
-
-**Delivery conditions:** Workforce institutions, skills systems and employers shape whether occupational transitions are feasible.
-
-**Consequences examined:** Changes in occupations, skills requirements and access to low-carbon work.
-
-**Evidence status:** Owner-approved research-line description; the methodology is in development.
-
-**Claim boundaries:** The work does not predict individual employment outcomes or presume that all green employment is accessible or good work.
-
-**Next learning question:** Which transition requirements are most consequential for workers and places?
-
-### Research facets
-
-**Geographies:** united-kingdom<br>
-**Climate domains:** just-transition<br>
-**Sectors:** labour-workforce<br>
-**Methods:** occupational-analysis, evidence-synthesis, taxonomy-development, network-analysis, calibration
-
-## Research questions
+Which requirements distinguish same-occupation sector changes from transitions between occupations in low-carbon workforce planning?
 
 - Which requirements distinguish sector changes from transitions between occupations?
 - How can occupational relatedness and transition requirements be calibrated from public evidence?
+
+## How the work investigates it
+
+The research line develops transparent methods based on public occupational evidence to examine relatedness and calibrate possible transition requirements.
+
+## What better understanding could make possible
+
+The work could help workforce researchers and practitioners identify which occupational changes create consequential requirements for workers and places.
+
+## Evidence status and boundaries
+
+**Evidence status.** Owner-approved research-line description; the methodology is in development.
+
+**Claim boundaries.** The work does not predict individual employment outcomes or presume that all green employment is accessible or good work.
+
+
+
+```{=html}
+<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>Ongoing research line</dd><dt>Status</dt><dd>Ongoing</dd><dt>Relationship to the lab</dt><dd>Current CCLL work — Owner-approved current CCLL research line; the recurring methodological questions are broader than one bounded project.</dd><dt>Primary theme</dt><dd><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a></dd><dt>Secondary themes</dt><dd><a href="/research/where-new-evidence-matters.html">Where New Evidence Matters</a>, <a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a></dd><dt>Geographies</dt><dd>united-kingdom</dd><dt>Climate domains</dt><dd>just-transition</dd><dt>Sectors</dt><dd>labour-workforce</dd><dt>Methods</dt><dd>occupational-analysis, evidence-synthesis, taxonomy-development, network-analysis, calibration</dd></dl></section>
+```
 
 ## Authoritative sources
 

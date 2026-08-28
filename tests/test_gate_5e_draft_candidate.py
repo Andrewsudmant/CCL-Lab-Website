@@ -69,11 +69,12 @@ def test_ideas_do_not_enter_other_public_models() -> None:
     assert len(load_records("data/work")) == 7
 
 
-def test_previous_work_source_records_are_byte_for_byte_frozen() -> None:
+def test_previous_work_selection_source_is_byte_for_byte_frozen() -> None:
     fixture = yaml.safe_load((ROOT / "tests/fixtures/gate-5d-previous-work-freeze.yml").read_text())
     for relative, expected in fixture["source_file_hashes"].items():
         observed = hashlib.sha256((ROOT / relative).read_bytes()).hexdigest()
         assert observed == expected, relative
+    assert set(fixture["source_file_hashes"]) == {"config/publication_theme_examples.yml"}
 
 
 def test_previous_work_ids_and_display_order_are_frozen() -> None:

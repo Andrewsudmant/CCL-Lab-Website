@@ -17,6 +17,14 @@ parent_work_id: null
 connected_work_ids: []
 connected_publication_ids: [who-can-learn-geography-urban-climate-evidence]
 connected_tool_ids: []
+problem_of_understanding: >-
+  Urban climate research is unevenly distributed, while the visibility or apparent similarity of a city does not establish that its evidence applies elsewhere.
+central_question: >-
+  Where is urban climate evidence produced, and under which contextual conditions may documented findings be informative to other cities?
+how_it_investigates: >-
+  The ongoing paper maps the geography of documented urban climate evidence and examines contextual conditions that may shape relevance across places.
+reader_value: >-
+  The work could help comparative researchers distinguish the visibility of a precedent from the conditions under which another city might plausibly learn from it.
 decision_or_problem: Which existing urban climate evidence is visible and plausibly relevant beyond the places where it was produced.
 existing_evidence: A verified preprint and a related external evidence-map article.
 transfer_conditions: Institutional, infrastructural, climatic, political, data and social conditions may shape relevance across places.

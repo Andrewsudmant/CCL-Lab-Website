@@ -30,3 +30,7 @@ Research-work and research-idea records are editorial content, not a place for p
 - require incident response for credential exposure or repeated quality failures.
 
 Gate 5B does not configure hosting, production secrets, deployment credentials or public scheduled writes. Repository write permission exists only in the separately guarded private-staging job, after validation and an allowed-path diff check, and remains disabled unless `CURRENT_CONVERSATIONS_STAGING_WRITE_ENABLED` is exactly `true`.
+
+## Gate 5F integrity boundary
+
+Gate 5F is an offline editorial and presentation pass. Builds, tests, screenshots and packages must not call discovery providers or models, read secrets, enable staging writes, change environments, alter Pages or deploy. The Current Conversations problem statement is public copy only and does not activate the system. Owner-review archives stay ignored outside Git, and the private previous-work proposal must not enter generated public routes. Hypothetical examples are tested for explicit status so they cannot be mistaken for empirical evidence, rankings or advice.

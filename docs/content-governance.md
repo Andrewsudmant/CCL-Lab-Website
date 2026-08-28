@@ -43,3 +43,11 @@ Never silently rewrite or delete a public item. Record changed fields, date and 
 ### Themes and discovery facets
 
 Current Conversations classification connects a source to one or more of the four analytical questions; it does not rate evidence or recommend action. The discovery query, source environment and location cannot determine the classification. Geography, sector, method and climate domain remain separate facets. A data tool, model, Canadian source or workforce source may relate to any theme—or remain unclassified—depending on the evidence actually available. `Where New Evidence Matters` is used only for a prospective, consequential evidence question, not for a generic gap, new dataset or new tool.
+
+## Reader-value presentation
+
+Gate 5F separates stored editorial structure from visible public scaffolding. Theme, idea and Work records retain distinct problem, consequence, approach, evidence-status and boundary fields even when templates combine them into fewer reader-facing sections. This preserves provenance and makes later corrections field-specific.
+
+Signature research questions are a reading hierarchy, not a statement of priority, funding readiness or importance. Public method tags are a reviewed subset of the unchanged full method list. Reader or decision-at-stake fields may identify a class of reader already supported by the approved idea, but must not invent users, funders, partners or demand.
+
+Ongoing Work uses prospective language and completed Work uses source-backed language. A missing section is preferable to generic or unsupported prose. The active-travel example is a hypothetical illustration and must remain visibly labelled as neither a finding nor a recommendation. Previous-work proposals remain private until owner curation; selection, order, theme relationships and current public rationales remain frozen in Gate 5F.

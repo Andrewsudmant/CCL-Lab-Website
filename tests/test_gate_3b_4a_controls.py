@@ -52,7 +52,7 @@ def test_homepage_watch_limit_and_disclosures() -> None:
     generated = (ROOT / "generated/home-current-conversations.qmd").read_text()
     assert generated.count('<article class="conversation-card') == 0
     homepage = (ROOT / "index.qmd").read_text()
-    assert "inclusion will not indicate endorsement" in homepage.casefold()
+    assert "appearing here will not mean that the lab endorses a source" in homepage.casefold()
     assert "no public entries" in generated
 
 

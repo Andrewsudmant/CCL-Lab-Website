@@ -3,22 +3,11 @@ title: "Our approach"
 description: "Where urban climate learning can break down and how the four questions connect."
 ---
 
-<p class="page-deck">Urban climate knowledge is often represented as a linear path from evidence to action. In practice, evidence can fail to become visible, relevant, usable or deliverable, and its consequences may be measured in ways that prevent later learning.</p>
+<p class="page-deck">Cities often talk about moving from evidence to action. The path is rarely that simple. Research can be hard to find, poorly matched to local circumstances or interpreted differently by the people making a decision. A policy may then stall in delivery, or an assessment may overlook its wider effects.</p>
 
-The lab's purpose is to study how urban climate knowledge is produced, compared, used and revised, so that cities can make better-grounded decisions without assuming that evidence applies unchanged across places.
+The lab studies how people produce, compare, use and revise urban climate knowledge. We ask how cities can make better-grounded decisions without assuming that evidence applies unchanged across places.
 
-## Where urban climate learning can break down
-
-These six states are points at which the four-theme learning cycle can break down; they are not a second framework or a universal linear sequence.
-
-<ol class="approach-states">
-  <li><strong>Evidence is produced and made visible.</strong> Research, administrative, professional, community, local or Indigenous knowledge must exist and be reachable before it can enter a decision.</li>
-  <li><strong>Relevance is judged rather than inferred.</strong> Visibility, popularity, proximity or apparent similarity does not by itself establish that evidence is informative for another setting.</li>
-  <li><strong>New evidence is chosen for its potential to change understanding or decisions.</strong> Missing knowledge matters most where resolving it could alter an appraisal, distinguish mechanisms or expand who can learn.</li>
-  <li><strong>Actors interpret evidence and institutions organise delivery.</strong> Professional judgement, values, authority, finance, capability, participation and coordination shape how evidence becomes action.</li>
-  <li><strong>Consequences are distributed and evaluated.</strong> Benefits, burdens, risks and unintended effects occur across different people, places and periods, while appraisal determines which of them are counted.</li>
-  <li><strong>Resulting knowledge revises later decisions.</strong> Outcomes expose unresolved questions, qualify prior assumptions and change what other places can plausibly learn.</li>
-</ol>
+<p class="term-first-use">How a policy's costs, benefits and wider effects are assessed is its <strong>appraisal</strong>. The data, institutions and tools through which evidence is produced and used form its <strong>evidence infrastructure</strong>.</p>
 
 ## Illustration: expanding active travel {#illustration-expanding-active-travel}
 
@@ -27,10 +16,23 @@ These six states are points at which the four-theme learning cycle can break dow
 :::
 
 <ol class="cycle-illustration">
-  <li><strong>Relevance across places.</strong> Evidence from other cities may be less relevant where travel patterns, street governance or climate differ.</li>
-  <li><strong>New evidence.</strong> The most valuable new evidence may concern local uptake or distribution rather than another general case study.</li>
-  <li><strong>Delivery.</strong> Outcomes depend on how authority, funding, maintenance and participation are organised.</li>
-  <li><strong>Consequences and further learning.</strong> The programme could produce uneven effects on health, access, safety and affordability. Those consequences would revise what the first city, and other cities, can learn next.</li>
+  <li><strong>Relevance across places.</strong> City staff examine evidence from elsewhere, but travel patterns, street rules or climate may change the lesson.</li>
+  <li><strong>New evidence.</strong> Researchers might learn more by studying local uptake or distribution than by adding another general case study.</li>
+  <li><strong>Delivery.</strong> Transport agencies, local government and communities have to organise authority, funding, maintenance and participation.</li>
+  <li><strong>Consequences and further learning.</strong> Different residents could experience changes in health, access, safety or affordability. Those results would shape what cities learn next.</li>
+</ol>
+
+## Where urban climate learning can break down
+
+These six states show why a linear sequence is too simple. They mark places where the four-theme learning cycle can break down, not a second framework or a universal sequence.
+
+<ol class="approach-states">
+  <li><strong>People produce evidence and make it visible.</strong> Researchers, public agencies, professionals, communities and Indigenous knowledge holders need routes through which their knowledge can reach a decision.</li>
+  <li><strong>Decision-makers judge relevance.</strong> A well-known or nearby example may still be a poor guide if the important local conditions differ.</li>
+  <li><strong>Researchers choose new evidence for what it could change.</strong> Missing knowledge matters most when resolving it could alter how a policy is assessed, distinguish between explanations or expand who can learn.</li>
+  <li><strong>People interpret evidence and organise delivery.</strong> Public officials, utilities, community organisations and others bring different judgement, authority, resources and capabilities to the work.</li>
+  <li><strong>Communities experience consequences.</strong> Benefits, burdens, risks and unintended effects fall across different people, places and periods. How a policy's costs, benefits and wider effects are assessed—its <strong>appraisal</strong>—determines which effects count.</li>
+  <li><strong>People use the results to revise later decisions.</strong> Outcomes expose unanswered questions, test prior assumptions and change what another place might learn.</li>
 </ol>
 
 ## Commitments

@@ -91,7 +91,7 @@ def test_current_conversations_is_in_development_and_has_no_public_entries() -> 
     assert "In development" in landing
     assert "The live feed is not yet enabled" in landing
     assert "Inclusion will not indicate endorsement" in landing
-    assert "Current Conversations is not yet operating as a live public feed." in methods
+    assert "Current Conversations is not yet a live public feed." in methods
     for forbidden in ("watch-filters", "data-conversation-count", "feed.xml", "feed.json", "last updated"):
         assert forbidden.casefold() not in landing.casefold()
     assert not list((ROOT / "current-conversations").glob("*.json"))

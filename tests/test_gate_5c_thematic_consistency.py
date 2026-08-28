@@ -115,7 +115,7 @@ def test_current_conversations_disclosure_and_lab_source_separation() -> None:
     landing = (ROOT / "current-conversations/index.qmd").read_text(encoding="utf-8")
     exact = "When Current Conversations launches, items will be collected, classified and summarised automatically. Inclusion will not indicate endorsement, evidential quality or applicability to a particular city."
     assert exact in landing
-    assert "not be a systematic review" in landing
+    assert "not a systematic review" in landing
     assert "live feed is not yet enabled" in landing
     home = (ROOT / "index.qmd").read_text(encoding="utf-8")
     assert home.index("Featured work") < home.index("Current Conversations · In development")

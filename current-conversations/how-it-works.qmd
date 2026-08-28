@@ -5,13 +5,13 @@ description: "Planned methods, safeguards and limitations for Current Conversati
 
 <p class="status-badge in-development">In development</p>
 
-<p class="page-deck">Discussion of urban climate evidence is dispersed across source environments, making it difficult to trace where the lab’s questions are emerging and which original sources a discussion draws upon.</p>
+<p class="page-deck">New work appears in journals, public reports, news, city networks and public discussion. Current Conversations is designed to connect some of that work to the lab’s four questions while keeping every original source visible.</p>
 
-Current Conversations is not yet operating as a live public feed. When enabled in a later gate, it is intended to show where the lab’s questions are being discussed across research, policy, practice, media and public commentary. It will be selective horizon scanning—not a validated evidence base, systematic review, evidence-quality assessment, recommendation system, transferability assessment or comprehensive map of discussion.
+Current Conversations is not yet a live public feed. If it is enabled later, it will provide selective horizon scanning: a way to notice emerging discussions, not a validated evidence base, systematic review, quality assessment, recommendation, transferability assessment or complete map.
 
-## Planned discovery and source environments
+## Where material may be found
 
-Bounded, versioned queries may search academic indexes and, when separately authorised and configured, current web material and public social-media sources. Sources will be classified by environment and by the role they play. Source environments will not be treated as carrying equal evidentiary weight.
+Bounded, versioned searches may check academic indexes and, only when separately authorised, current web material and public social-media sources. The system calls these places `source environments` and records the role each source plays. A peer-reviewed study, official announcement and news report do not provide the same kind of evidence.
 
 Coverage will remain selective, incomplete and shaped by indexing, platform access, language and geography. English-language and well-indexed sources are likely to be overrepresented. This limitation will be stated wherever entries eventually appear.
 
@@ -21,9 +21,9 @@ Every record will retain the original source, publication date, stable identifie
 
 Source content will be treated as untrusted data. Embedded instructions will not be allowed to alter prompts, policy, budgets, repository behaviour or publication decisions.
 
-## Planned classification, grouping and summaries
+## How records may be classified, grouped and summarised
 
-AI may propose themes, summaries, relevance and grouping, subject to required fields and deterministic controls. Grouping will begin with DOI and other stable identifiers, canonical URLs, underlying-source links, explicit citation relationships, platform identifiers, and corroborated title-and-organisation evidence. A bounded model may propose a pair, but independent evidence must accept it. Topic similarity or model confidence alone will not be sufficient.
+AI may propose a theme, summary or connection between records. Deterministic controls must then check required fields and evidence. Grouping begins with DOI and other stable identifiers, canonical URLs, links to the same underlying source, explicit citations, platform identifiers, and matching title-and-organisation evidence. A bounded model may propose a pair, but independent evidence must accept it. Topic similarity or model confidence alone is insufficient.
 
 Public disclosure will follow each record’s actual provenance. A record will claim AI assistance only when its provenance says AI was used. Original sources will remain authoritative, and disagreement or uncertainty will be retained rather than averaged away.
 

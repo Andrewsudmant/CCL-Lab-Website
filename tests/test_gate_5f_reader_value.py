@@ -15,7 +15,7 @@ def test_homepage_claim_reader_paths_and_order() -> None:
     assert "Cities <span>&</span> Climate<br>Learning Lab" in source
     assert "How cities find, generate and use evidence for climate action." in source
     assert "Urban climate evidence does not become useful merely because it exists." in source
-    assert "Treating these questions separately can make evidence appear more transferable" in source
+    assert "Treating those questions separately can make a lesson look more portable" in source
     for heading, destination in {
         "For researchers": "research.html",
         "For policy and practice": "work.html",
@@ -94,10 +94,16 @@ def test_work_landing_and_all_detail_arguments() -> None:
     assert "invented parent" not in landing and "data model" not in landing
     for work in load_records("data/work"):
         page = (ROOT / "work" / f"{work['work_id']}.qmd").read_text()
-        headings = ["## The problem", "## What this work asks", "## How the work investigates it", "## What better understanding could make possible", "## Evidence status and boundaries"]
-        assert [page.index(h) for h in headings] == sorted(page.index(h) for h in headings)
-        assert page.count("Primary theme") == 1
-        assert "Work at a glance" in page
+        expected = {
+            "research-programme": "## Why this work began",
+            "research-line": "## Why this work began",
+            "paper": "## The question",
+            "project": "## The problem the project addressed",
+            "tool": "## What the tool shows",
+        }
+        assert expected[work["work_type"]] in page
+        assert page.count("Main theme") == 1
+        assert "at a glance" in page.casefold()
         if any(source.get("url") and source.get("source_type") == "public-web" for source in work["authoritative_sources"]):
             assert "## Authoritative sources" in page
         for field in ("problem_of_understanding", "central_question", "how_it_investigates", "reader_value", "evidence_status", "claim_boundaries"):
@@ -108,7 +114,7 @@ def test_work_landing_and_all_detail_arguments() -> None:
 
 def test_our_approach_is_six_state_and_hypothetical() -> None:
     source = (ROOT / "research/our-approach.qmd").read_text()
-    assert "linear path from evidence to action" in source
+    assert "moving from evidence to action" in source
     ordered = source.split('<ol class="approach-states">', 1)[1].split("</ol>", 1)[0]
     assert ordered.count("<li>") == 6
     assert "This is a hypothetical illustration of the four questions, not a finding or policy recommendation." in source
@@ -119,12 +125,12 @@ def test_our_approach_is_six_state_and_hypothetical() -> None:
 def test_current_conversations_problem_state_and_no_public_fixture() -> None:
     landing = (ROOT / "current-conversations/index.qmd").read_text()
     methods = (ROOT / "current-conversations/how-it-works.qmd").read_text()
-    assert "Discussion of urban climate evidence is dispersed" in landing
+    assert "New work on cities and climate appears in many places" in landing
     assert "In development" in landing and "The live feed is not yet enabled" in landing
-    assert "visibility as evidence quality, endorsement or applicability" in landing
+    assert "Appearing here will not mean that the lab endorses a source" in landing
     for forbidden in ("watch-filters", "data-conversation-count", "feed.json", "feed.xml", "last-updated"):
         assert forbidden not in landing
-    assert "dispersed across source environments" in methods
+    assert "The system calls these places `source environments`" in methods
 
 
 def test_previous_work_gate_5f_proposal_remains_private_historical_evidence() -> None:

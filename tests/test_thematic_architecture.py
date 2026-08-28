@@ -30,7 +30,7 @@ def test_learning_cycle_is_semantic_and_returns_to_evidence() -> None:
     assert positions == sorted(positions)
     assert '<ol class="learning-cycle"' in fragment
     assert "Consequences generate further learning" in fragment
-    assert "new evidence and revised judgements" in fragment
+    assert "Results change what cities ask next" in fragment
 
 
 def test_homepage_establishes_programme_before_current_conversations() -> None:
@@ -71,9 +71,9 @@ def test_work_theme_relationships_and_optional_learning_fields() -> None:
         assert work["primary_theme"] not in work["secondary_themes"]
         assert work.get("evidence_status")
         page = (ROOT / "work" / f'{work["work_id"]}.qmd').read_text()
-        assert "## The problem" in page
-        assert "## What this work asks" in page
-        assert "## Evidence status and boundaries" in page
+        assert any(heading in page for heading in ("## Why this work began", "## The question", "## The problem the project addressed", "## What the tool shows"))
+        assert any(heading in page for heading in ("## What we are trying to understand", "## The question", "## The problem the project addressed", "## What the tool shows"))
+        assert any(heading in page for heading in ("## Where the work stands", "## Evidence and status", "## Limits and context", "## Data and methods"))
 
     mapping = {record["work_id"]: record for record in works}
     assert mapping["geography-urban-climate-evidence"]["primary_theme"] == "geographies-of-climate-learning"

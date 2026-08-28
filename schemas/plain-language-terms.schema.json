@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Controlled plain-language terminology map",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "terms"],
+  "properties": {
+    "version": {"type": "string", "minLength": 1},
+    "terms": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["term", "plain_first_use", "technical_term", "longer_definition", "pages"],
+        "properties": {
+          "term": {"type": "string", "minLength": 2},
+          "plain_first_use": {"type": "string", "minLength": 12},
+          "technical_term": {"type": "string", "minLength": 2},
+          "longer_definition": {"type": "string", "minLength": 20},
+          "pages": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z0-9/.-]+\\.html$"}}
+        }
+      }
+    }
+  }
+}

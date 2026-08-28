@@ -34,10 +34,22 @@ ROLE_LABELS = {
     "public-discussion": "Public discussion",
 }
 HOME_THEME_PROPOSITIONS = {
-    "geographies-of-climate-learning": "A visible precedent does not by itself show that its lessons will travel.",
-    "where-new-evidence-matters": "An evidence gap does not by itself establish the value of filling it.",
-    "modes-of-climate-delivery": "A policy label does not reveal the institutional configuration required to make it work.",
-    "consequences-for-people-and-places": "Aggregate benefits do not show who gains, who bears costs, where or when.",
+    "geographies-of-climate-learning": "Cities often learn from elsewhere. Similarity does not guarantee that the lesson fits.",
+    "where-new-evidence-matters": "Not every research gap is worth filling. The useful question is whether new evidence could change a decision.",
+    "modes-of-climate-delivery": "A policy is only a starting point. Authority, money, capability and trust determine whether it can be carried through.",
+    "consequences-for-people-and-places": "Climate action changes daily life as well as emissions, and its gains and burdens rarely fall evenly.",
+}
+THEME_PRACTICAL_EXAMPLES = {
+    "geographies-of-climate-learning": "A city preparing for more extreme heat might look to Phoenix, Paris or Ahmedabad. The difficult question is not which city looks most similar, but which differences would change the lesson.",
+    "where-new-evidence-matters": "A city can always commission another study. The harder question is whether the new evidence would alter its choice or simply add another case to an already crowded field.",
+    "modes-of-climate-delivery": "Two cities may adopt the same retrofit policy. In one, a public utility finances and manages the work; in another, individual households must organise it themselves. The policy label is the same, but the form of action is not.",
+    "consequences-for-people-and-places": "A transport policy may reduce emissions and improve health while making some journeys more difficult or increasing costs for particular households. Average benefits do not reveal those differences.",
+}
+THEME_TERM_NOTES = {
+    "geographies-of-climate-learning": "Whether a finding is likely to hold beyond the place where it was produced is its <strong>generalisability</strong>. Whether an estimate can be carried to another setting under stated conditions is its <strong>transportability</strong>.",
+    "where-new-evidence-matters": "Uncertainty that could change a decision is <strong>consequential uncertainty</strong>. Methods used to judge whether an intervention caused an observed change are called <strong>causal inference</strong>. An estimate of whether resolving uncertainty could improve a decision is the <strong>value of information</strong>. How a policy's costs, benefits and wider effects are assessed is its <strong>appraisal</strong>.",
+    "modes-of-climate-delivery": "The way authority, money, capability and responsibility are arranged is a <strong>delivery configuration</strong>.",
+    "consequences-for-people-and-places": "How a policy's costs, benefits and wider effects are assessed is its <strong>appraisal</strong>. Wider gains and harms that occur alongside emissions reductions are its <strong>co-benefits and co-costs</strong>.",
 }
 PUBLIC_METADATA_LABELS = {
     "crossref": "Crossref",
@@ -261,8 +273,8 @@ def generate_themes(works: list[dict[str, Any]], ideas: list[dict[str, Any]], pu
         completed_html = '<div class="record-list featured-example-list">' + ''.join(featured_example_card(entry, works_by_id, publications_by_id) for entry in selected_examples) + '</div>'
         def idea_card(item: dict[str, Any], signature: bool) -> str:
             qualifiers = (f'<p class="idea-qualification"><strong>Research governance qualification.</strong> {esc(item["required_qualification"])}</p>' if item.get("required_qualification") else "") + (f'<p class="idea-qualification"><strong>Analytical boundary.</strong> {esc(item["required_boundary"])}</p>' if item.get("required_boundary") else "")
-            reader = f'<p class="idea-reader"><strong>Reader or decision at stake:</strong> {esc(item["reader_or_decision_at_stake"])}</p>' if item.get("reader_or_decision_at_stake") else ""
-            return f'''<article class="idea-card{' signature-idea' if signature else ''}" data-narrative-tier="{esc(item['narrative_tier'])}"><p class="idea-badge">Research idea</p><p class="sr-only">{esc(item['disclaimer'])}</p><h3>{esc(item['working_title'])}</h3><p class="idea-question">{esc(item['question'])}</p><h4>Why this question matters</h4><p>{esc(item['problem_of_understanding'])} {esc(item['why_it_may_matter'])}</p><h4>How we might study it</h4><p>{esc(item['possible_research_design'])}</p>{qualifiers}{tags(item['public_method_tags'], 'method-list')}{reader}</article>'''
+            reader = f'<p class="idea-reader"><strong>Who might use the answer</strong><br>{esc(item["reader_or_decision_at_stake"])}</p>' if signature and item.get("reader_or_decision_at_stake") else ""
+            return f'''<article class="idea-card{' signature-idea' if signature else ''}" data-narrative-tier="{esc(item['narrative_tier'])}"><p class="idea-badge">Research idea</p><p class="sr-only">{esc(item['disclaimer'])}</p><h3>{esc(item['working_title'])}</h3><p class="idea-question">{esc(item['question'])}</p><p class="idea-narrative">{esc(item['problem_of_understanding'])} {esc(item['why_it_may_matter'])}</p><p class="idea-approach"><strong>One possible approach</strong><br>{esc(item['possible_research_design'])}</p>{qualifiers}{tags(item['public_method_tags'], 'method-list')}{reader}</article>'''
         signature_ideas = [item for item in theme_ideas if item["narrative_tier"] == "signature"]
         additional_ideas = [item for item in theme_ideas if item["narrative_tier"] == "additional"]
         idea_html = f'''<h3 class="idea-group-heading">Questions at the centre of this theme</h3><div class="idea-grid signature-grid">{''.join(idea_card(item, True) for item in signature_ideas)}</div><h3 class="idea-group-heading">Additional directions</h3><div class="idea-grid">{''.join(idea_card(item, False) for item in additional_ideas)}</div>'''
@@ -271,7 +283,15 @@ def generate_themes(works: list[dict[str, Any]], ideas: list[dict[str, Any]], pu
         connections = f'''- **Input from [{previous_theme['name']}]({site_path(f"/research/{previous_theme['id']}.html")}):** {previous_theme['connection_to_next']}
 - **Next stage — [{next_theme['name']}]({site_path(f"/research/{next_theme['id']}.html")}):** {theme['connection_to_next']}
 - **Return loop:** Consequences generate new evidence, reveal unresolved questions and revise what other cities may plausibly learn.'''
-        body = f'''{theme['long_description'][0]}
+        body = f'''::: {{.practical-example}}
+**A practical example**
+
+{THEME_PRACTICAL_EXAMPLES[theme['id']]}
+:::
+
+<p class="term-first-use">{THEME_TERM_NOTES[theme['id']]}</p>
+
+{theme['long_description'][0]}
 
 {theme['long_description'][1]}
 
@@ -325,7 +345,7 @@ Current Conversations is in development. No live public feed is operating, and n
 
 This transition page preserves older internal and shared links. It does not define a separate research theme.'''
         write_page(ROOT / "research/themes" / f"{old_id}.qmd", "Research theme route updated", destination["homepage_description"], redirect_body, canonical=f"/research/{new_id}.html")
-    home.append('<li class="cycle-return"><strong>Consequences generate further learning.</strong> Outcomes, burdens and unresolved questions return to the first two stages as new evidence and revised judgements.</li></ol>')
+    home.append('<li class="cycle-return"><strong>Consequences generate further learning.</strong> Results change what cities ask next.</li></ol>')
     details.append('<div class="cycle-return-note"><strong>The return matters:</strong> consequences generate new evidence, expose unresolved questions and change what other places can plausibly learn.</div></div>')
     write_fragment("home-themes.qmd", "\n".join(home)); write_fragment("research-themes.qmd", "\n".join(details))
 
@@ -350,43 +370,119 @@ def generate_work(works: list[dict[str, Any]], publications: list[dict[str, Any]
         publication_connections = "\n".join(f'- [{publications_by_id[item]["title"]}]({site_path(f"/publications/{item}.html")})' for item in record["connected_publication_ids"] if item in publications_by_id)
         work_connections = "\n".join(f'- [{work_title(work_by_id[item], publications_by_id)}]({site_path(f"/work/{item}.html")})' for item in record["connected_work_ids"] if item in work_by_id)
         secondary_html = ", ".join(f'<a href="{esc(site_path(f"/research/{item}.html"))}">{esc(theme_index()[item]["name"])}</a>' for item in record["secondary_themes"]) or "No secondary theme assigned."
-        connected_sections = ""
-        if publication_connections:
-            connected_sections += f"\n\n## Publications, outputs and tools\n\n{publication_connections}"
-        if work_connections:
-            if not connected_sections:
-                connected_sections = "\n\n## Publications, outputs and tools"
-            connected_sections += f"\n\n{work_connections}"
+        tool_connections = "\n".join(f'- [{work_title(work_by_id[item], publications_by_id)}]({site_path(f"/work/{item}.html")})' for item in record["connected_tool_ids"] if item in work_by_id)
+        connected_items = "\n".join(value for value in (publication_connections, work_connections, tool_connections) if value)
         questions = chr(10).join("- " + item for item in record["research_questions"])
-        metadata = f'''<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">Work at a glance</h2><dl><dt>Work type</dt><dd>{esc(work_type_label(record))}</dd><dt>Status</dt><dd>{esc(record['work_status'].title())}</dd><dt>Relationship to the lab</dt><dd>{esc(relationship_label(record['relationship_to_lab']))} — {esc(record['relationship_note'])}</dd><dt>Primary theme</dt><dd><a href="{esc(site_path(f"/research/{record['primary_theme']}.html"))}">{esc(theme_index()[record['primary_theme']]['name'])}</a></dd><dt>Secondary themes</dt><dd>{secondary_html}</dd><dt>Geographies</dt><dd>{esc(display_list('geographies', record['geographies']))}</dd><dt>Climate domains</dt><dd>{esc(display_list('climate_domains', record['climate_domains']))}</dd><dt>Sectors</dt><dd>{esc(display_list('sectors', record['sectors']))}</dd><dt>Methods</dt><dd>{esc(display_list('methods', record['methods']))}</dd></dl></section>'''
-        body = f'''## The problem
+        panel_title = "Project at a glance" if record["work_type"] == "project" and record["work_status"] == "completed" else "Work at a glance"
+        metadata = f'''<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">{panel_title}</h2><dl><dt>Work type</dt><dd>{esc(work_type_label(record))}</dd><dt>Status</dt><dd>{esc(record['work_status'].title())}</dd><dt>Main theme</dt><dd><a href="{esc(site_path(f"/research/{record['primary_theme']}.html"))}">{esc(theme_index()[record['primary_theme']]['name'])}</a></dd><dt>Geographical focus</dt><dd>{esc(display_list('geographies', record['geographies']))}</dd><dt>Key methods</dt><dd>{esc(display_list('methods', record['methods']))}</dd></dl></section>'''
+        provenance = f'''<details class="work-provenance"><summary>Relationship and record context</summary><p>{esc(relationship_label(record['relationship_to_lab']))} — {esc(record['relationship_note'])}</p><p><strong>Related themes:</strong> {secondary_html}</p></details>'''
+        outputs = connected_items or "No separate public output is listed for this record."
+        if record["work_type"] in {"research-programme", "research-line"}:
+            body = f'''## Why this work began
 
 {record['problem_of_understanding']}
 
-## What this work asks
+## What we are trying to understand
 
 {record['central_question']}
 
 {questions}
 
-## How the work investigates it
+## How we are approaching it
 
 {record['how_it_investigates']}
 
-## What better understanding could make possible
+{record['reader_value']}
+
+## Where the work stands
+
+{record['evidence_status']}
+
+**What not to infer.** {record['claim_boundaries']}
+
+## Publications and outputs
+
+{outputs}'''
+        elif record["work_type"] in {"paper", "study", "report"}:
+            body = f'''## The question
+
+{record['central_question']}
+
+{record['problem_of_understanding']}
+
+## What the paper examines
+
+{record['how_it_investigates']}
+
+{questions}
+
+## Why the answer matters
 
 {record['reader_value']}
 
-## Evidence status and boundaries
+## Evidence and status
 
-**Evidence status.** {record['evidence_status']}
+{record['evidence_status']}
 
-**Claim boundaries.** {record['claim_boundaries']}
+**What not to infer.** {record['claim_boundaries']}
 
-{connected_sections}
+## Publication
 
-```{{=html}}
+{outputs}'''
+        elif record["work_type"] == "project" and record["work_status"] == "completed":
+            body = f'''## The problem the project addressed
+
+{record['problem_of_understanding']}
+
+{record['central_question']}
+
+## What the project produced
+
+{record['how_it_investigates']}
+
+## What it helps us understand
+
+{record['reader_value']}
+
+## Limits and context
+
+{record['evidence_status']}
+
+**What not to infer.** {record['claim_boundaries']}
+
+## Outputs and tools
+
+{outputs}'''
+        else:
+            body = f'''## What the tool shows
+
+{record['summary']}
+
+{record['problem_of_understanding']}
+
+{record['central_question']}
+
+## How it can be used
+
+{record['reader_value']}
+
+## What users should not infer
+
+{record['claim_boundaries']}
+
+## Data and methods
+
+{record['how_it_investigates']}
+
+{record['evidence_status']}
+
+## Related project and publications
+
+{outputs}'''
+        body += f'''\n\n```{{=html}}
 {metadata}
+
+{provenance}
 ```
 
 {f'''## Authoritative sources

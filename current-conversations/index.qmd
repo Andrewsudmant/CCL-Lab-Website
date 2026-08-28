@@ -7,13 +7,14 @@ page-layout: full
 ```{=html}
 <div class="watch-intro section-shell-narrow">
   <p class="status-badge in-development">In development</p>
-  <p class="page-deck">Discussion of urban climate evidence is dispersed across journals, policy institutions, city networks, media and public commentary. This makes it difficult to see where the lab’s questions are emerging, how they are framed in different settings and which underlying sources those discussions draw upon.</p>
-  <p>Current Conversations is being developed as a selective, automatically generated view of those discussions. It will show where the themes are being debated without treating visibility as evidence quality, endorsement or applicability to another city.</p>
+  <p class="page-deck">New work on cities and climate appears in many places: academic journals, government reports, city networks, news coverage and public discussion. Current Conversations will bring some of those discussions together and show how they connect to the lab’s four questions.</p>
+  <p>The feature is still being developed. When it launches, items will be found and summarised automatically. Appearing here will not mean that the lab endorses a source or believes that its findings apply to another city.</p>
   <p><strong>The live feed is not yet enabled.</strong></p>
   <div class="research-watch-disclosure" role="note" aria-label="Current Conversations development and non-endorsement disclosure">
     <p><strong>When Current Conversations launches, items will be collected, classified and summarised automatically. Inclusion will not indicate endorsement, evidential quality or applicability to a particular city.</strong></p>
+    <p>Automated discovery can miss context or make mistakes. Readers will always be able to follow a link to the original source.</p>
   </div>
-  <p>Current Conversations will provide selective horizon scanning. It will not be a systematic review, evidence-quality assessment, transferability assessment, recommendation system or comprehensive map of discussion.</p>
+  <p>The feature will offer a selective view, not a systematic review, quality assessment, recommendation or complete map of discussion.</p>
   <p><a href="how-it-works.html">Read the planned methods, safeguards and limitations →</a></p>
 </div>
 ```

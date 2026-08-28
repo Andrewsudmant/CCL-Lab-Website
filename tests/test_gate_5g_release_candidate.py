@@ -100,7 +100,7 @@ def test_public_copy_has_no_internal_gate_language_or_machine_slugs() -> None:
         assert forbidden not in text
     for raw in ("united-kingdom", "comparative-case-study", "institutional-analysis", "urban-infrastructure", "canada, global"):
         assert raw not in text
-    for label in ("United Kingdom", "Comparative case study", "Institutional analysis", "Urban infrastructure", "Cross-sectoral", "Canada; Global"):
+    for label in ("United Kingdom", "Comparative case study", "Institutional analysis", "Canada; Global"):
         assert label in visible_site_text()
 
 

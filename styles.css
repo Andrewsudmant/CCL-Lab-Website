@@ -788,6 +788,14 @@ li {
   text-transform: uppercase;
 }
 
+.idea-narrative {
+  line-height: 1.65;
+}
+
+.idea-approach {
+  margin-top: 1.25rem;
+}
+
 .idea-badge {
   margin: 0;
   color: #6c5416;
@@ -880,6 +888,37 @@ li {
   padding: 1rem 1.2rem;
   border-left: 4px solid var(--ccl-red);
   background: var(--ccl-red-soft);
+}
+
+.practical-example {
+  margin: 0 0 1.5rem;
+  padding: 1.2rem 1.35rem;
+  border-left: 4px solid var(--ccl-red);
+  background: var(--ccl-paper);
+}
+
+.practical-example p:last-child,
+.term-first-use {
+  margin-bottom: 0;
+}
+
+.term-first-use {
+  padding-bottom: 1.5rem;
+  color: var(--ccl-muted);
+  font-size: 0.92rem;
+}
+
+.work-provenance {
+  margin-top: -2rem;
+  margin-bottom: 3rem;
+  padding: 0.8rem 1.5rem 1rem;
+  border: 1px solid var(--ccl-line);
+  background: var(--ccl-white);
+}
+
+.work-provenance summary {
+  cursor: pointer;
+  font-weight: 750;
 }
 
 .site-status-banner {

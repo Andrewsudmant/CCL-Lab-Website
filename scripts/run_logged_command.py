@@ -8,7 +8,10 @@ import subprocess
 import sys
 from pathlib import Path
 
-from scripts.content import ROOT
+try:
+    from .content import ROOT
+except ImportError:
+    from content import ROOT
 
 
 def main() -> int:

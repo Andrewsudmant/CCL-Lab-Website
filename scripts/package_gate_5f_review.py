@@ -28,6 +28,7 @@ BOUNDED_FILES = {
     Path("docs/reviews/gate-5f/current-conversations-reader-problem-audit.md"): Path("review/current-conversations-reader-problem-audit.md"),
     Path("docs/reviews/gate-5f/previous-work-reader-value-proposal.md"): Path("review/PRIVATE_NOT_IMPLEMENTED-previous-work-reader-value-proposal.md"),
     Path("reports/browser-qa-gate-5f.md"): Path("review/browser-qa.md"),
+    Path("reports/security/gate-5f-secret-scan.md"): Path("review/security/secret-scan.md"),
     Path("reports/file-by-file-summary-gate-5f.md"): Path("review/file-by-file-summary.md"),
     Path("reports/qa/gate-5f-final/validate.log"): Path("review/tests/validate.log"),
     Path("reports/qa/gate-5f-final/test.log"): Path("review/tests/test.log"),

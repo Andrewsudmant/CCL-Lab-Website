@@ -100,6 +100,7 @@ CONTEXT_FILES = [
     Path("reports/security/gate-5c-secret-scan.md"),
     Path("reports/security/gate-5d-secret-scan.md"),
     Path("reports/security/gate-5e-secret-scan.md"),
+    Path("reports/security/gate-5f-secret-scan.md"),
     Path("reports/browser-qa-gate-5c.md"),
     Path("reports/browser-qa-gate-5d.md"),
     Path("reports/browser-qa-gate-5e.md"),

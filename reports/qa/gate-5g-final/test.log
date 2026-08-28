@@ -3,11 +3,11 @@ Exit code: 0
 
 ........................................................................ [ 47%]
 ........................................................................ [ 94%]
-........                                                                 [100%]
+.........                                                                [100%]
 =============================== warnings summary ===============================
 tests/test_gate_3b_4a_controls.py:7
   /Users/andrewsudmant/Documents/ChatGPT/CCL Webpage/tests/test_gate_3b_4a_controls.py:7: DeprecationWarning: research_watch is deprecated; import current_conversations instead
     from research_watch.adapters.base import AdapterError
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-152 passed, 1 warning in 16.29s
+153 passed, 1 warning in 16.98s

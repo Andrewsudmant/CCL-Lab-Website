@@ -32,7 +32,7 @@ The same source now builds for a domain root and for GitHub’s `/CCL-Lab-Websit
 ## Verification completed
 
 - 95 structured records validated against 19 schemas.
-- 152 automated tests passed; one pre-existing compatibility deprecation warning remains.
+- 153 automated tests passed; one pre-existing compatibility deprecation warning remains.
 - Both 87-page builds passed internal-link and static accessibility checks.
 - Browser review covered the homepage, four themes, Work plus all seven detail pages, Verified publications and outputs, Our Approach, Current Conversations, search, and project-path navigation.
 - No public deployment, Pages setting, domain/DNS change, API call, paid-model call, staging write or secret handling occurred.

@@ -34,10 +34,9 @@ This summary groups generated publication detail pages rather than repeating 46 
 
 - `tests/test_gate_5g_release_candidate.py` and adjusted Gate 5E/5F/site tests — cover curation, inventory integrity, public language, placeholders, profiles, workflow permissions and closed Current Conversations state.
 - `scripts/run_logged_command.py` — records exact QA commands, outputs and exit codes.
-- `reports/qa/gate-5g-final/*` — validation, full build, 152-test suite, root checks and project-path release checks.
+- `reports/qa/gate-5g-final/*` — validation, full build, 153-test suite, root checks and project-path release checks.
 - `reports/screenshots/gate-5g/*`, `reports/browser-qa-gate-5g.md` — fresh desktop, mobile, reflow and project-path evidence.
 - `docs/reviews/gate-5g/*`, `reports/release/*` — owner decision table plus curation, public-copy, metadata, placeholder, link, base-path and hardening audits.
 - `scripts/package_gate_5g_review.py` — complete root/project rendered sites and review evidence in an owner-review ZIP.
 - `scripts/package_handoff.py`, `docs/handoffs/gate-5g-handoff.md` — compact, governance-focused shareable context package.
 - `reports/security/gate-5g-secret-scan.md` — present-tree and reachable-history secret-scan evidence.
-

@@ -118,6 +118,8 @@ def test_26_35_idea_cards_are_lighter_without_losing_source_fields() -> None:
         assert text.count("One possible approach") == 6
         assert "<h4>Why this question matters</h4>" not in text and "<h4>How we might study it</h4>" not in text
         assert all(len(x["public_method_tags"]) <= 3 and x["suggested_methods"] for x in subset)
+        visible_counts = [len(re.findall(r"<li>", card.split('</ul>', 1)[0].split('<ul class=\"method-list\">', 1)[1])) for card in text.split('<article class=\"idea-card')[1:]]
+        assert sorted(visible_counts) == [2, 2, 2, 2, 3, 3]
     joined = "\n".join(page(x) for x, _ in CANONICAL_THEME_ORDER)
     assert "developed with appropriate Indigenous or community partners" in joined
     assert "not a proposal for a single public city-ranking" in joined

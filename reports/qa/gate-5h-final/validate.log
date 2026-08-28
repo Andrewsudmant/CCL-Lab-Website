@@ -1,0 +1,5 @@
+Command: make validate
+Exit code: 0
+
+.venv/bin/python scripts/validate_content.py
+Validated 95 records and 20 schemas.

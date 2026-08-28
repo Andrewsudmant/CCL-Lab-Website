@@ -7,7 +7,9 @@ page-layout: full
 ```{=html}
 <div class="watch-intro section-shell-narrow">
   <p class="status-badge in-development">In development</p>
-  <p class="page-deck">We are developing an automatically generated view of where the lab’s research themes are being discussed across research, policy, practice, media and public commentary. The live feed is not yet enabled.</p>
+  <p class="page-deck">Discussion of urban climate evidence is dispersed across journals, policy institutions, city networks, media and public commentary. This makes it difficult to see where the lab’s questions are emerging, how they are framed in different settings and which underlying sources those discussions draw upon.</p>
+  <p>Current Conversations is being developed as a selective, automatically generated view of those discussions. It will show where the themes are being debated without treating visibility as evidence quality, endorsement or applicability to another city.</p>
+  <p><strong>The live feed is not yet enabled.</strong></p>
   <div class="research-watch-disclosure" role="note" aria-label="Current Conversations development and non-endorsement disclosure">
     <p><strong>When Current Conversations launches, items will be collected, classified and summarised automatically. Inclusion will not indicate endorsement, evidential quality or applicability to a particular city.</strong></p>
   </div>

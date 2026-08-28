@@ -1,21 +1,36 @@
 ---
 title: "Our approach"
-description: "How the lab distinguishes evidence, contextual relevance, interpretation, delivery, consequences and further learning."
+description: "Where urban climate learning can break down and how the four questions connect."
 ---
 
-<p class="page-deck">Urban climate learning depends on several connected states. The lab does not treat them as interchangeable or presume a universal path through them.</p>
+<p class="page-deck">Urban climate knowledge is often represented as a linear path from evidence to action. In practice, evidence can fail to become visible, relevant, usable or deliverable, and its consequences may be measured in ways that prevent later learning.</p>
 
 The lab's purpose is to study how urban climate knowledge is produced, compared, used and revised, so that cities can make better-grounded decisions without assuming that evidence applies unchanged across places.
 
+## Where urban climate learning can break down
+
+These six states are points at which the four-theme learning cycle can break down; they are not a second framework or a universal linear sequence.
+
 <ol class="approach-states">
-  <li><strong>Evidence exists.</strong> Research, administrative, professional, community, local or Indigenous knowledge has been produced.</li>
-  <li><strong>Evidence is visible or reachable.</strong> People and institutions can find it, access it and understand its provenance and limits.</li>
-  <li><strong>Evidence may be relevant to a context.</strong> Relevance is examined rather than inferred from visibility, popularity or proximity.</li>
-  <li><strong>Actors interpret and use it.</strong> Knowledge is weighed through professional judgement, authority, values and practical constraints.</li>
-  <li><strong>Institutions organise and deliver action.</strong> Authority, finance, coordination, participation, capability and maintenance make action operable.</li>
-  <li><strong>Consequences occur.</strong> Benefits, burdens, risks and unintended effects emerge over different periods and in different places.</li>
-  <li><strong>Consequences are evaluated and distributed.</strong> Which outcomes are counted—and for whom—shapes what is learned.</li>
-  <li><strong>Resulting knowledge changes later decisions.</strong> Outcomes reveal unresolved questions and revise what other places can plausibly learn.</li>
+  <li><strong>Evidence is produced and made visible.</strong> Research, administrative, professional, community, local or Indigenous knowledge must exist and be reachable before it can enter a decision.</li>
+  <li><strong>Relevance is judged rather than inferred.</strong> Visibility, popularity, proximity or apparent similarity does not by itself establish that evidence is informative for another setting.</li>
+  <li><strong>New evidence is chosen for its potential to change understanding or decisions.</strong> Missing knowledge matters most where resolving it could alter an appraisal, distinguish mechanisms or expand who can learn.</li>
+  <li><strong>Actors interpret evidence and institutions organise delivery.</strong> Professional judgement, values, authority, finance, capability, participation and coordination shape how evidence becomes action.</li>
+  <li><strong>Consequences are distributed and evaluated.</strong> Benefits, burdens, risks and unintended effects occur across different people, places and periods, while appraisal determines which of them are counted.</li>
+  <li><strong>Resulting knowledge revises later decisions.</strong> Outcomes expose unresolved questions, qualify prior assumptions and change what other places can plausibly learn.</li>
+</ol>
+
+## Illustration: expanding active travel {#illustration-expanding-active-travel}
+
+::: {.notice}
+**Hypothetical illustration.** This is a hypothetical illustration of the four questions, not a finding or policy recommendation.
+:::
+
+<ol class="cycle-illustration">
+  <li><strong>Relevance across places.</strong> Evidence from other cities may be less relevant where travel patterns, street governance or climate differ.</li>
+  <li><strong>New evidence.</strong> The most valuable new evidence may concern local uptake or distribution rather than another general case study.</li>
+  <li><strong>Delivery.</strong> Outcomes depend on how authority, funding, maintenance and participation are organised.</li>
+  <li><strong>Consequences and further learning.</strong> The programme could produce uneven effects on health, access, safety and affordability. Those consequences would revise what the first city, and other cities, can learn next.</li>
 </ol>
 
 ## Commitments

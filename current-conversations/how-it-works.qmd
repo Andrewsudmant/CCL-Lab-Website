@@ -5,9 +5,9 @@ description: "Planned methods, safeguards and limitations for Current Conversati
 
 <p class="status-badge in-development">In development</p>
 
-<p class="page-deck">Current Conversations is not yet operating as a live public feed.</p>
+<p class="page-deck">Discussion of urban climate evidence is dispersed across source environments, making it difficult to trace where the lab’s questions are emerging and which original sources a discussion draws upon.</p>
 
-When enabled in a later gate, Current Conversations is intended to show where the lab’s questions are being discussed across research, policy, practice, media and public commentary. It will be selective horizon scanning—not a validated evidence base, systematic review, evidence-quality assessment, recommendation system, transferability assessment or comprehensive map of discussion.
+Current Conversations is not yet operating as a live public feed. When enabled in a later gate, it is intended to show where the lab’s questions are being discussed across research, policy, practice, media and public commentary. It will be selective horizon scanning—not a validated evidence base, systematic review, evidence-quality assessment, recommendation system, transferability assessment or comprehensive map of discussion.
 
 ## Planned discovery and source environments
 

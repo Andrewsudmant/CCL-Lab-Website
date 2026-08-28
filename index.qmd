@@ -11,8 +11,9 @@ page-layout: full
     <div class="hero-copy">
       <p class="eyebrow">Simon Fraser University · School of Resource and Environmental Management</p>
       <h1 id="home-title">Cities <span>&</span> Climate<br>Learning Lab</h1>
-      <p class="hero-proposition">How cities find, generate and use evidence for climate action.</p>
-      <p class="hero-subtitle">Cities cannot investigate every climate problem independently, but evidence produced in one place cannot be assumed to apply unchanged elsewhere. The Cities and Climate Learning Lab studies how urban climate knowledge is compared across places, where new evidence would matter, how action is organised, and what it changes for people and places.</p>
+      <p class="hero-tagline">How cities find, generate and use evidence for climate action.</p>
+      <p class="hero-proposition">Urban climate evidence does not become useful merely because it exists.</p>
+      <p class="hero-subtitle">Cities cannot investigate every climate problem independently. But evidence from elsewhere becomes useful only when cities can judge where it applies, which uncertainty is worth resolving, how action can be delivered, and whose outcomes count.</p>
       <div class="hero-actions">
         <a class="button button-primary" href="research.html">Explore our research</a>
         <a class="button button-quiet" href="research/our-approach.html">Read our approach <span aria-hidden="true">→</span></a>
@@ -31,8 +32,8 @@ page-layout: full
 <section class="section-shell intro-band" aria-labelledby="problem-heading">
   <p class="eyebrow">The urban climate learning problem</p>
   <div class="split-heading">
-    <h2 id="problem-heading">Useful knowledge must be compared, produced, organised and reconsidered.</h2>
-    <p>Context shapes whether existing evidence is relevant. Choices about new evidence shape what cities can know. Institutions shape what becomes operable. Consequences reveal benefits, burdens and questions that change later decisions.</p>
+    <h2 id="problem-heading">Four judgements shape whether evidence can inform action.</h2>
+    <div><p>Treating these questions separately can make evidence appear more transferable, research gaps more valuable, policies more implementable and benefits more evenly shared than they are.</p><p>The lab connects judgements about relevance across places, consequential uncertainty, institutional delivery and consequences for people and places.</p></div>
   </div>
 </section>
 ```
@@ -50,6 +51,18 @@ page-layout: full
 
 ```{=html}
   <p class="small-note cycle-entry-note">Research work and cities can enter this cycle at different points; the sequence organises connected questions rather than prescribing a universal linear process.</p>
+  <p><a href="research/our-approach.html#illustration-expanding-active-travel">See how the four questions connect in practice →</a></p>
+</section>
+```
+
+```{=html}
+<section class="section-shell reader-pathways" aria-labelledby="reader-pathways-heading">
+  <div class="section-header"><div><p class="eyebrow">Reader pathways</p><h2 id="reader-pathways-heading">Who this programme is for</h2></div></div>
+  <div class="pathway-grid">
+    <article><h3>For researchers</h3><p>Examine how comparison, case selection, evaluation and appraisal could produce more cumulative urban climate knowledge.</p><p><a href="research.html">Explore the research programme →</a></p></article>
+    <article><h3>For policy and practice</h3><p>Consider when evidence from elsewhere is relevant, which uncertainties matter for a live decision, how delivery arrangements shape implementation and whose consequences enter appraisal.</p><p><a href="work.html">Explore ongoing and completed work →</a></p></article>
+    <article><h3>For prospective students and collaborators</h3><p>Explore ongoing work, open research questions and the methods through which the lab is developing its programme.</p><p><a href="opportunities.html">See opportunities and ways to connect →</a></p></article>
+  </div>
 </section>
 ```
 

@@ -1,11 +1,13 @@
 ---
-title: "Research programmes, projects and studies"
-description: "Ongoing and completed research work connected to the Cities & Climate Learning Lab."
+title: "Work"
+description: "Ongoing and foundational research across the four themes."
 ---
 
-<p class="page-deck">Programmes, research lines, bounded projects, studies, papers and tools—without requiring every output to have an invented parent project.</p>
+<p class="page-deck">Our ongoing and completed work examines how evidence travels across places, which uncertainties are worth resolving, how climate action is delivered and what consequences follow for different people and places.</p>
 
-The status and relationship labels distinguish current CCLL work, work begun before CCLL and continuing, completed foundational work, and associated collaborations. Research ideas are shown separately on theme pages and are not counted here.
+The programme includes multi-year research programmes, bounded projects, standalone papers, reports and public tools. Each is presented according to the question it addresses rather than being forced into a single project structure.
+
+Status and relationship labels distinguish current CCLL work, work begun before CCLL and continuing, completed foundational work, and associated collaborations. Research ideas are shown separately on theme pages and are not counted here.
 
 ```{=html}
 <form class="work-filters" data-work-filters aria-label="Filter research work">

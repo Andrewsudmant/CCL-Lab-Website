@@ -7,10 +7,10 @@
       "output": {
         "source_environment": "policy-and-institutions",
         "source_role": "official-policy-source",
-        "primary_theme": "climate-governance-delivery",
+        "primary_theme": "modes-of-climate-delivery",
         "secondary_themes": [],
-        "theme_scores": {"climate-governance-delivery": 0.84},
-        "theme_rationales": {"climate-governance-delivery": "The fixture concerns municipal implementation arrangements."},
+        "theme_scores": {"modes-of-climate-delivery": 0.84},
+        "theme_rationales": {"modes-of-climate-delivery": "The fixture concerns municipal implementation arrangements."},
         "geographies": ["canada"],
         "source_summary": "Captured response used only to exercise strict schema handling.",
         "discussion_statement": "The fixture tests whether a policy source remains linked and separately classified.",

@@ -16,12 +16,19 @@ try:
 except ImportError:
     from content import ROOT, load_yaml, research_scope
 
-CANONICAL_THEMES = {
+CANONICAL_THEME_ORDER = [
+    ("geographies-of-climate-learning", "Geographies of Climate Learning"),
+    ("where-new-evidence-matters", "Where New Evidence Matters"),
+    ("modes-of-climate-delivery", "Modes of Climate Delivery"),
+    ("consequences-for-people-and-places", "Consequences for People and Places"),
+]
+CANONICAL_THEMES = {item[0] for item in CANONICAL_THEME_ORDER}
+RETIRED_THEMES = {
     "urban-climate-learning", "climate-governance-delivery",
     "co-benefits-place-based-valuation", "just-transitions-workforce",
     "evidence-infrastructure-tools", "canadian-climate-policy",
+    "canadian-comparative-policy",
 }
-RETIRED_THEME = "canadian-comparative-policy"
 CRITICAL_FLAGS = {"title-only", "prompt-injection", "suspicious-url", "unsupported-claim"}
 
 
@@ -52,19 +59,85 @@ def validate_all() -> list[str]:
     scope = research_scope()
     errors.extend(schema_errors(scope, scope_schema, "config/research_scope.yml"))
     theme_ids = [item.get("id") for item in scope.get("themes", [])]
-    if set(theme_ids) != CANONICAL_THEMES or len(theme_ids) != len(set(theme_ids)):
-        errors.append("config/research_scope.yml: theme IDs must be the six canonical unique IDs")
+    observed_themes = [(item.get("id"), item.get("name")) for item in scope.get("themes", [])]
+    if observed_themes != CANONICAL_THEME_ORDER:
+        errors.append("config/research_scope.yml: theme IDs and titles must match the four canonical themes in order")
+
+    site_config = load_yaml(ROOT / "config/site.yml")
+    errors.extend(schema_errors(site_config, load_schema("site-config.schema.json"), "config/site.yml"))
 
     vocab = load_yaml(ROOT / "config/vocabularies.yml")
     errors.extend(schema_errors(vocab, load_schema("vocabularies.schema.json"), "config/vocabularies.yml"))
-    query_pack = load_yaml(ROOT / "config/query_packs/current-conversations-v1.yml")
-    errors.extend(schema_errors(query_pack, load_schema("current-conversations-query-pack.schema.json"), "config/query_packs/current-conversations-v1.yml"))
+    query_pack = load_yaml(ROOT / "config/query_packs/current-conversations-v2.yml")
+    errors.extend(schema_errors(query_pack, load_schema("current-conversations-query-pack.schema.json"), "config/query_packs/current-conversations-v2.yml"))
     for query_group in query_pack.get("queries", {}).values():
         for query in query_group:
-            errors.extend(theme_reference_errors([query.get("theme")], "query pack", CANONICAL_THEMES))
+            label = f"query pack {query.get('id')}"
+            errors.extend(theme_reference_errors([query.get("theme_intent"), *query.get("candidate_themes", [])], label, CANONICAL_THEMES, allow_unclassified=True))
+            if query.get("query_type") == "theme" and not query.get("theme_intent"):
+                errors.append(f"{label}: theme queries require theme_intent")
+            if query.get("query_type") != "theme" and query.get("theme_intent") is not None:
+                errors.append(f"{label}: facet and exploratory queries cannot force theme_intent")
+            if query.get("classification_required") is not True:
+                errors.append(f"{label}: every retrieved item requires content-based classification")
+            facets = query.get("facets", {})
+            for field, vocabulary in (("geographies", "geographies"), ("sectors", "sectors"), ("methods", "methods"), ("climate_domains", "climate_domains")):
+                invalid = sorted(set(facets.get(field, [])) - set(vocab[vocabulary]))
+                if invalid:
+                    errors.append(f"{label}: invalid facet {field}: {', '.join(invalid)}")
+            if query.get("theme_intent") == "where-new-evidence-matters":
+                lowered = query.get("query", "").casefold()
+                consequential = ("consequential", "value of", "could change", "evaluation priorit", "research priorit")
+                if not any(term in lowered for term in consequential):
+                    errors.append(f"{label}: Theme 2 query lacks a consequential evidence or uncertainty concept")
+
+    publication_examples = load_yaml(ROOT / "config/publication_theme_examples.yml")
+    errors.extend(schema_errors(publication_examples, load_schema("publication-theme-examples.schema.json"), "config/publication_theme_examples.yml"))
+    for example in publication_examples.get("records", []):
+        label = f"publication theme example {example.get('record_id')}"
+        relationship_themes = [item.get("theme_id") for item in example.get("theme_relationships", [])]
+        errors.extend(theme_reference_errors([example.get("primary_theme"), *example.get("secondary_themes", []), *relationship_themes], label, CANONICAL_THEMES))
+        assigned = {example.get("primary_theme"), *example.get("secondary_themes", [])}
+        if assigned != set(relationship_themes):
+            errors.append(f"{label}: every assigned theme requires exactly one rationale")
+
+    featured_examples = load_yaml(ROOT / "config/theme_featured_examples.yml")
+    errors.extend(schema_errors(featured_examples, load_schema("theme-featured-examples.schema.json"), "config/theme_featured_examples.yml"))
+    featured_keys: list[tuple[str, str, str]] = []
+    featured_counts = {theme_id: 0 for theme_id in CANONICAL_THEMES}
+    featured_appearances: dict[tuple[str, str], set[str]] = {}
+    for example in featured_examples.get("entries", []):
+        theme_id = example.get("theme_id")
+        record_type = example.get("record_type")
+        record_id = example.get("record_id")
+        label = f"featured theme example {theme_id}/{record_type}/{record_id}"
+        errors.extend(theme_reference_errors([theme_id], label, CANONICAL_THEMES))
+        featured_keys.append((theme_id, record_type, record_id))
+        if theme_id in featured_counts:
+            featured_counts[theme_id] += 1
+        featured_appearances.setdefault((record_type, record_id), set()).add(theme_id)
+        public_words = example.get("contribution", "").split()
+        if not 20 <= len(public_words) <= 65:
+            errors.append(f"{label}: contribution should contain 20–65 words, found {len(public_words)}")
+        audit_terms = ("publisher abstract", "institutional record", "full-text record", "verified relationship", "evidence source")
+        if any(term in example.get("contribution", "").casefold() for term in audit_terms):
+            errors.append(f"{label}: contribution contains source-verification language")
+    if len(featured_keys) != len(set(featured_keys)):
+        errors.append("config/theme_featured_examples.yml: duplicate theme/type/record selection")
+    for theme_id, count in featured_counts.items():
+        if not 4 <= count <= 6:
+            errors.append(f"config/theme_featured_examples.yml: {theme_id} must contain 4–6 examples, found {count}")
+    for key, themes in featured_appearances.items():
+        if len(themes) > 2:
+            errors.append(f"config/theme_featured_examples.yml: {key[0]} {key[1]} appears under more than two themes")
 
     records: dict[str, list[dict[str, Any]]] = {}
-    for kind, schema_name in (("people", "person.schema.json"), ("projects", "project.schema.json"), ("publications", "publication.schema.json")):
+    for kind, schema_name in (
+        ("people", "person.schema.json"),
+        ("work", "research-work.schema.json"),
+        ("research-ideas", "research-idea.schema.json"),
+        ("publications", "publication.schema.json"),
+    ):
         records[kind] = []
         schema = load_schema(schema_name)
         for path in sorted((ROOT / "data" / kind).glob("*.yml")):
@@ -79,6 +152,22 @@ def validate_all() -> list[str]:
         errors.append("data/people: public email must be andrew_sudmant@sfu.ca")
 
     errors.extend(unique_and_crosslink_errors(records))
+    known_work_ids = {item.get("work_id") for item in records["work"]}
+    complete_ids: set[str] = set()
+    complete_path = ROOT / "reports/content/publication-complete-inventory.json"
+    if complete_path.is_file():
+        complete_ids = {item.get("record_id") for item in json.loads(complete_path.read_text(encoding="utf-8")).get("records", [])}
+    for example in featured_examples.get("entries", []):
+        known = known_work_ids if example.get("record_type") == "work" else complete_ids
+        if example.get("record_id") not in known:
+            errors.append(f"config/theme_featured_examples.yml: unknown {example.get('record_type')} {example.get('record_id')}")
+    ideas = records["research-ideas"]
+    if len(ideas) != 24:
+        errors.append(f"data/research-ideas: expected 24 active ideas, found {len(ideas)}")
+    for theme_id, _ in CANONICAL_THEME_ORDER:
+        count = sum(item.get("theme_id") == theme_id for item in ideas)
+        if count != 6:
+            errors.append(f"data/research-ideas: {theme_id} must have exactly six active ideas, found {count}")
 
     complete_path = ROOT / "reports/content/publication-complete-inventory.json"
     if complete_path.exists():
@@ -129,17 +218,23 @@ def validate_all() -> list[str]:
             errors.append(f"{label}: missing linked sources: {', '.join(sorted(missing))}")
         if principal in linked or len(linked) != len(set(linked)):
             errors.append(f"{label}: principal/linked source IDs must be unique")
-        errors.extend(theme_reference_errors([record.get("primary_theme"), *record.get("secondary_themes", [])], label, CANONICAL_THEMES))
+        errors.extend(theme_reference_errors([record.get("primary_theme"), *record.get("secondary_themes", [])], label, CANONICAL_THEMES, allow_unclassified=True))
 
-    # Retired IDs must not survive in controlled content or site source.
+    # Retired IDs must not survive in controlled content. Generated transition
+    # routes retain old slugs only so shared URLs resolve to an explanatory page.
     for base in (ROOT / "config", ROOT / "data", ROOT / "schemas"):
         for path in base.rglob("*"):
-            if path.is_file() and RETIRED_THEME in path.read_text(encoding="utf-8", errors="ignore"):
-                errors.append(f"{path.relative_to(ROOT)}: contains retired theme ID {RETIRED_THEME}")
+            if path.is_file():
+                text = path.read_text(encoding="utf-8", errors="ignore")
+                for retired in RETIRED_THEMES:
+                    if retired in text:
+                        errors.append(f"{path.relative_to(ROOT)}: contains retired theme ID {retired}")
     return errors
 
 
-def theme_reference_errors(values: list[str], label: str, theme_ids: set[str]) -> list[str]:
+def theme_reference_errors(values: list[str | None], label: str, theme_ids: set[str], *, allow_unclassified: bool = False) -> list[str]:
+    if allow_unclassified:
+        values = [value for value in values if value is not None]
     unknown = sorted(set(values) - theme_ids)
     return [f"{label}: unknown theme IDs: {', '.join(unknown)}"] if unknown else []
 
@@ -156,6 +251,8 @@ def content_policy_errors(record: dict[str, Any], label: str, vocab: dict[str, A
             invalid = sorted(set(record.get(field, [])) - set(vocab[vocabulary]))
             if invalid:
                 errors.append(f"{label}: invalid {field}: {', '.join(invalid)}")
+    elif "theme_id" in record:
+        errors.extend(theme_reference_errors([record.get("theme_id")], label, CANONICAL_THEMES))
     else:
         errors.extend(theme_reference_errors(record.get("themes", []), label, CANONICAL_THEMES))
     if "authors" in record:
@@ -174,12 +271,18 @@ def content_policy_errors(record: dict[str, Any], label: str, vocab: dict[str, A
 
 def unique_and_crosslink_errors(records: dict[str, list[dict[str, Any]]]) -> list[str]:
     errors = []
-    project_ids = {r.get("record_id") for r in records["projects"]}
+    work_ids = {r.get("work_id") for r in records["work"]}
     publication_ids = {r.get("record_id") for r in records["publications"]}
-    for kind in ("projects", "publications"):
-        ids = [r.get("record_id") for r in records[kind]]
+    complete_path = ROOT / "reports/content/publication-complete-inventory.json"
+    if complete_path.is_file():
+        publication_ids |= {
+            item.get("record_id")
+            for item in json.loads(complete_path.read_text(encoding="utf-8")).get("records", [])
+        }
+    for kind, id_field in (("work", "work_id"), ("research-ideas", "idea_id"), ("publications", "record_id")):
+        ids = [r.get(id_field) for r in records[kind]]
         if len(ids) != len(set(ids)):
-            errors.append(f"data/{kind}: record_id values must be unique")
+            errors.append(f"data/{kind}: {id_field} values must be unique")
     dois = [r.get("doi", "").lower() for r in records["publications"] if r.get("doi")]
     urls = [r.get("url") for r in records["publications"]]
     if len(dois) != len(set(dois)):
@@ -189,14 +292,41 @@ def unique_and_crosslink_errors(records: dict[str, list[dict[str, Any]]]) -> lis
     for publication in records["publications"]:
         if publication.get("doi", "").lower() == "10.1038/s44284-025-00260-8":
             errors.append("data/publications: Nature Cities global stocktake is not an Andrew Sudmant publication")
-    for project in records["projects"]:
-        missing = set(project.get("connected_publications", [])) - publication_ids
+    for work in records["work"]:
+        work_id = work.get("work_id")
+        missing = set(work.get("connected_publication_ids", [])) - publication_ids
         if missing:
-            errors.append(f"project {project.get('record_id')}: missing publication links: {', '.join(sorted(missing))}")
+            errors.append(f"work {work_id}: missing publication links: {', '.join(sorted(missing))}")
+        missing_work = set(work.get("connected_work_ids", [])) - work_ids
+        if missing_work:
+            errors.append(f"work {work_id}: missing work links: {', '.join(sorted(missing_work))}")
+        missing_tools = set(work.get("connected_tool_ids", [])) - work_ids
+        if missing_tools:
+            errors.append(f"work {work_id}: missing tool links: {', '.join(sorted(missing_tools))}")
+        parent = work.get("parent_work_id")
+        if parent is not None and parent not in work_ids:
+            errors.append(f"work {work_id}: missing parent work: {parent}")
+        if parent == work_id or work_id in work.get("connected_work_ids", []):
+            errors.append(f"work {work_id}: cannot link to itself")
+        if work.get("work_type") in {"paper", "report"} and work.get("title") is None and len(work.get("connected_publication_ids", [])) != 1:
+            errors.append(f"work {work_id}: publication-derived title requires exactly one connected publication")
+        if work.get("work_type") not in {"paper", "report"} and work.get("title") is None:
+            errors.append(f"work {work_id}: only paper/report records may derive a title from a publication")
+        for tool_id in work.get("connected_tool_ids", []):
+            tool = next((item for item in records["work"] if item.get("work_id") == tool_id), None)
+            if tool and tool.get("work_type") not in {"tool", "dataset"}:
+                errors.append(f"work {work_id}: connected_tool_ids must reference tool or dataset work")
     for publication in records["publications"]:
-        missing = set(publication.get("connected_projects", [])) - project_ids
+        missing = set(publication.get("connected_work_ids", [])) - work_ids
         if missing:
-            errors.append(f"publication {publication.get('record_id')}: missing project links: {', '.join(sorted(missing))}")
+            errors.append(f"publication {publication.get('record_id')}: missing work links: {', '.join(sorted(missing))}")
+        relationship_themes = [item.get("theme_id") for item in publication.get("theme_relationships", [])]
+        errors.extend(theme_reference_errors(relationship_themes, f"publication {publication.get('record_id')} relationships", CANONICAL_THEMES))
+        if len(relationship_themes) != len(set(relationship_themes)):
+            errors.append(f"publication {publication.get('record_id')}: theme relationships must be unique")
+        assigned = {publication.get("primary_theme"), *publication.get("secondary_themes", [])}
+        if publication.get("theme_relationships") and assigned != set(relationship_themes):
+            errors.append(f"publication {publication.get('record_id')}: every assigned selected-example theme requires a rationale")
     return errors
 
 

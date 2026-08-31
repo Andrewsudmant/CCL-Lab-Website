@@ -26,15 +26,15 @@
   "content_hash": "b247ab05dc0f28e5a5038ac1a3219847647e89082d709708647316a4c254353a",
   "discovery": {
     "adapter": "captured-web-fixture",
-    "query_id": "cc-fixture-evidence-infrastructure-tools",
-    "query_version": "current-conversations-v1.0.0",
-    "run_id": "gate-4b-5a-mixed-source-captured"
+    "query_id": "cc-fixture-unclassified",
+    "query_version": "current-conversations-fixture-v3.0.0",
+    "run_id": "gate-5c-mixed-source-captured"
   },
   "ai_annotation": {
     "model": "captured-deterministic-annotation",
     "prompt_version": "current-conversations-classification-v1-fixture",
     "summary": "The platform provides preliminary city emissions data and export functions intended to help local governments build inventories and set priorities.",
-    "reason_for_relevance": "It is an example of shared evidence infrastructure intended to fill local data gaps and support municipal reporting."
+    "reason_for_relevance": "It is a technical fixture for a shared data portal; the developer description does not establish a consequential evidence priority or delivery relationship."
   },
   "risk_flags": [],
   "correction_status": "none",

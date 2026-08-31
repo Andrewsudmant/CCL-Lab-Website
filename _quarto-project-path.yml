@@ -1,0 +1,5 @@
+project:
+  output-dir: _site-project-path/CCL-Lab-Website
+
+website:
+  site-path: /CCL-Lab-Website/

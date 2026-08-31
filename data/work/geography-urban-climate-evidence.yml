@@ -1,0 +1,47 @@
+work_id: geography-urban-climate-evidence
+title: null
+work_type: paper
+work_status: ongoing
+relationship_to_lab: pre-ccll-work-continuing
+relationship_note: >-
+  The preprint began before CCLL was established and the research questions continue to inform the lab's current programme.
+summary: >-
+  An ongoing paper mapping where urban climate evidence is produced and examining the conditions under which
+  documented findings may be relevant to other cities.
+research_questions:
+  - How is urban climate evidence distributed across cities and regions?
+  - Under what conditions may evidence be relevant to other cities?
+primary_theme: geographies-of-climate-learning
+secondary_themes: [where-new-evidence-matters]
+parent_work_id: null
+connected_work_ids: []
+connected_publication_ids: [who-can-learn-geography-urban-climate-evidence]
+connected_tool_ids: []
+problem_of_understanding: >-
+  Urban climate research is unevenly distributed, while the visibility or apparent similarity of a city does not establish that its evidence applies elsewhere.
+central_question: >-
+  Where is urban climate evidence produced, and under which contextual conditions may documented findings be informative to other cities?
+how_it_investigates: >-
+  The ongoing paper maps the geography of documented urban climate evidence and examines contextual conditions that may shape relevance across places.
+reader_value: >-
+  The work could help comparative researchers distinguish the visibility of a precedent from the conditions under which another city might plausibly learn from it.
+decision_or_problem: Which existing urban climate evidence is visible and plausibly relevant beyond the places where it was produced.
+existing_evidence: A verified preprint and a related external evidence-map article.
+transfer_conditions: Institutional, infrastructural, climatic, political, data and social conditions may shape relevance across places.
+consequential_uncertainty: Evidence gaps may limit comparison, but their importance depends on the decisions and mechanisms at issue.
+evidence_status: Ongoing research grounded in a verified preprint; ongoing findings are not inferred here.
+claim_boundaries: Geographic proximity, similarity or evidence volume alone does not establish applicability or transferability.
+next_learning_question: Which unresolved evidence questions could materially improve decisions across several cities?
+geographies: [global]
+governance_scales: [international, municipal]
+methods: [evidence-mapping, literature-review, spatial-analysis]
+sectors: [cross-sectoral]
+climate_domains: [evidence-and-learning]
+authoritative_sources:
+  - label: Research Square preprint record
+    url: https://doi.org/10.21203/rs.3.rs-9268986/v1
+    retrieved_date: 2026-08-27
+    source_type: public-web
+last_verified_date: 2026-08-27
+verification_status: verified
+featured: true

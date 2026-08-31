@@ -26,9 +26,9 @@
   "content_hash": "d69b1ce287d7ab67264b818b500cc78ff8dbc29bb870639e6949876ec8c04d64",
   "discovery": {
     "adapter": "captured-web-fixture",
-    "query_id": "cc-fixture-climate-governance-delivery",
-    "query_version": "current-conversations-v1.0.0",
-    "run_id": "gate-4b-5a-mixed-source-captured"
+    "query_id": "cc-fixture-modes-of-climate-delivery",
+    "query_version": "current-conversations-fixture-v3.0.0",
+    "run_id": "gate-5c-mixed-source-captured"
   },
   "ai_annotation": {
     "model": "captured-deterministic-annotation",

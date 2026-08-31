@@ -8,8 +8,8 @@
   "properties": {
     "source_environment": {"enum": ["academic-research", "policy-and-institutions", "news-and-analysis", "blogs-and-commentary", "data-and-tools", "bluesky"]},
     "source_role": {"type": "string"},
-    "primary_theme": {"type": "string"},
-    "secondary_themes": {"type": "array", "maxItems": 2, "uniqueItems": true, "items": {"type": "string"}},
+    "primary_theme": {"oneOf": [{"$ref": "#/$defs/theme"}, {"type": "null"}]},
+    "secondary_themes": {"type": "array", "maxItems": 2, "uniqueItems": true, "items": {"$ref": "#/$defs/theme"}},
     "theme_scores": {"type": "object", "additionalProperties": {"type": "number", "minimum": 0, "maximum": 1}},
     "theme_rationales": {"type": "object", "additionalProperties": {"type": "string"}},
     "geographies": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
@@ -25,5 +25,10 @@
     "clustering_rationale": {"type": "string"},
     "risk_flags": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
     "recommendation": {"enum": ["publish", "withhold", "quarantine"]}
+  },
+  "$defs": {
+    "theme": {
+      "enum": ["geographies-of-climate-learning", "where-new-evidence-matters", "modes-of-climate-delivery", "consequences-for-people-and-places"]
+    }
   }
 }

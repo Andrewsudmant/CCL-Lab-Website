@@ -9,9 +9,9 @@
   "linked_source_ids": [
     "ccs-ap-data-centres-reporting"
   ],
-  "primary_theme": "climate-governance-delivery",
+  "primary_theme": "modes-of-climate-delivery",
   "secondary_themes": [
-    "co-benefits-place-based-valuation"
+    "consequences-for-people-and-places"
   ],
   "geographies": [
     "global"
@@ -40,7 +40,7 @@
     "used": false,
     "model": null,
     "prompt_version": "current-conversations-classification-v1-fixture",
-    "run_id": "gate-4b-5a-mixed-source-captured"
+    "run_id": "gate-5c-mixed-source-captured"
   },
   "publication_decision": "published",
   "correction_status": "none",

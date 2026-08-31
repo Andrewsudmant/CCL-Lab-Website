@@ -3,10 +3,11 @@
   "title": "Current Conversations query pack",
   "type": "object",
   "additionalProperties": false,
-  "required": ["query_pack_id", "version", "default_lookback_days", "global_exclusions", "queries", "controls"],
+  "required": ["query_pack_id", "version", "supersedes", "default_lookback_days", "global_exclusions", "queries", "controls"],
   "properties": {
-    "query_pack_id": {"const": "current-conversations-v1"},
-    "version": {"type": "string"},
+    "query_pack_id": {"const": "current-conversations-v2"},
+    "version": {"const": "3.0.0"},
+    "supersedes": {"const": "current-conversations-v1@2.0.0"},
     "default_lookback_days": {"type": "integer", "minimum": 1, "maximum": 30},
     "global_exclusions": {"type": "array", "minItems": 5, "items": {"type": "string"}},
     "queries": {"type": "object", "additionalProperties": {"type": "array", "items": {"$ref": "#/$defs/query"}}},
@@ -15,15 +16,32 @@
   "$defs": {
     "query": {
       "type": "object", "additionalProperties": false,
-      "required": ["id", "query_version", "source_environment", "theme", "query", "provider_parameters", "lookback_days", "languages", "geographies", "exclusions", "result_limit", "priority", "last_run"],
+      "required": ["id", "query_version", "source_environment", "query_type", "theme_intent", "candidate_themes", "facets", "classification_required", "query", "provider_parameters", "lookback_days", "languages", "exclusions", "result_limit", "priority", "last_run"],
       "properties": {
         "id": {"type": "string"}, "query_version": {"type": "string"}, "source_environment": {"type": "string"},
-        "theme": {"type": "string"}, "query": {"type": "string"}, "provider_parameters": {"type": "object"},
+        "query_type": {"enum": ["theme", "facet", "exploratory"]},
+        "theme_intent": {"oneOf": [{"$ref": "#/$defs/theme"}, {"type": "null"}]},
+        "candidate_themes": {"type": "array", "maxItems": 4, "uniqueItems": true, "items": {"$ref": "#/$defs/theme"}},
+        "facets": {
+          "type": "object", "additionalProperties": false,
+          "required": ["geographies", "sectors", "methods", "climate_domains"],
+          "properties": {
+            "geographies": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+            "sectors": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+            "methods": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+            "climate_domains": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}
+          }
+        },
+        "classification_required": {"const": true},
+        "query": {"type": "string", "minLength": 12}, "provider_parameters": {"type": "object"},
         "lookback_days": {"type": "integer", "maximum": 30}, "languages": {"type": "array", "items": {"type": "string"}},
         "geographies": {"type": "array", "items": {"type": "string"}}, "exclusions": {"type": "array", "items": {"type": "string"}},
         "result_limit": {"type": "integer", "minimum": 1, "maximum": 25}, "priority": {"enum": ["high", "medium", "low"]},
         "last_run": {"type": ["string", "null"], "format": "date-time"}
       }
+    },
+    "theme": {
+      "enum": ["geographies-of-climate-learning", "where-new-evidence-matters", "modes-of-climate-delivery", "consequences-for-people-and-places"]
     }
   }
 }

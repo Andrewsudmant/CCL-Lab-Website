@@ -5,22 +5,22 @@ from __future__ import annotations
 
 import html
 import json
-import shutil
 import sys
 from collections import Counter
 from pathlib import Path
 from typing import Any
 
 try:
-    from .content import ROOT, load_records, research_scope, theme_index
+    from .content import ROOT, load_records, load_yaml, research_scope, theme_index
     from .validate_content import validate_all
 except ImportError:
-    from content import ROOT, load_records, research_scope, theme_index
+    from content import ROOT, load_records, load_yaml, research_scope, theme_index
     from validate_content import validate_all
 
 OUT = ROOT / "generated"
 FULL_DISCLOSURE = "Current Conversations uses automated searches and AI-generated classification, grouping and summaries to identify recent material connected to the lab's research themes. Sources may include academic papers, policy reports, news, blogs, data tools and public posts. Items have not normally been reviewed by a member of the Cities and Climate Learning Lab, and inclusion does not imply endorsement. Coverage is selective and uneven, and summaries may contain errors or omit important context. Please consult the original sources."
 FIXTURE_DISCLOSURE = "This captured fixture was assembled without AI generation to test presentation and governance controls. It has not been reviewed by the lab, is not endorsed, and is not evidence of a live retrieval. Consult the original source."
+IDEA_DISCLAIMER = "Research idea · not currently an active or funded project"
 ENV_LABELS = {
     "academic-research": "Academic research", "policy-and-institutions": "Policy and institutions",
     "news-and-analysis": "News and analysis", "blogs-and-commentary": "Blogs and commentary",
@@ -33,10 +33,56 @@ ROLE_LABELS = {
     "research-commentary": "Research commentary", "practitioner-commentary": "Practitioner commentary",
     "public-discussion": "Public discussion",
 }
+HOME_THEME_PROPOSITIONS = {
+    "geographies-of-climate-learning": "Cities often learn from elsewhere. Similarity does not guarantee that the lesson fits.",
+    "where-new-evidence-matters": "Not every research gap is worth filling. The useful question is whether new evidence could change a decision.",
+    "modes-of-climate-delivery": "A policy is only a starting point. Authority, money, capability and trust determine whether it can be carried through.",
+    "consequences-for-people-and-places": "Climate action changes daily life as well as emissions, and its gains and burdens rarely fall evenly.",
+}
+THEME_PRACTICAL_EXAMPLES = {
+    "geographies-of-climate-learning": "A city preparing for more extreme heat might look to Phoenix, Paris or Ahmedabad. The difficult question is not which city looks most similar, but which differences would change the lesson.",
+    "where-new-evidence-matters": "A city can always commission another study. The harder question is whether the new evidence would alter its choice or simply add another case to an already crowded field.",
+    "modes-of-climate-delivery": "Two cities may adopt the same retrofit policy. In one, a public utility finances and manages the work; in another, individual households must organise it themselves. The policy label is the same, but the form of action is not.",
+    "consequences-for-people-and-places": "A transport policy may reduce emissions and improve health while making some journeys more difficult or increasing costs for particular households. Average benefits do not reveal those differences.",
+}
+THEME_TERM_NOTES = {
+    "geographies-of-climate-learning": "Whether a finding is likely to hold beyond the place where it was produced is its <strong>generalisability</strong>. Whether an estimate can be carried to another setting under stated conditions is its <strong>transportability</strong>.",
+    "where-new-evidence-matters": "Uncertainty that could change a decision is <strong>consequential uncertainty</strong>. Methods used to judge whether an intervention caused an observed change are called <strong>causal inference</strong>. An estimate of whether resolving uncertainty could improve a decision is the <strong>value of information</strong>. How a policy's costs, benefits and wider effects are assessed is its <strong>appraisal</strong>.",
+    "modes-of-climate-delivery": "The way authority, money, capability and responsibility are arranged is a <strong>delivery configuration</strong>.",
+    "consequences-for-people-and-places": "How a policy's costs, benefits and wider effects are assessed is its <strong>appraisal</strong>. Wider gains and harms that occur alongside emissions reductions are its <strong>co-benefits and co-costs</strong>.",
+}
+PUBLIC_METADATA_LABELS = {
+    "crossref": "Crossref",
+    "datacite": "DataCite",
+    "orcid": "ORCID",
+    "publisher": "Publisher",
+    "institutional-repository": "Institutional repository",
+    "institutional-profile": "Institutional profile",
+    "owner-verified": "Lab-verified record",
+}
 
 
 def esc(value: Any) -> str:
     return html.escape(str(value), quote=True)
+
+
+def site_path(path: str) -> str:
+    """Return a project-root path; Quarto applies the configured website site-path."""
+    return "/" + path.lstrip("/")
+
+
+def vocabulary_labels(section: str, values: list[str]) -> list[str]:
+    vocabulary = load_yaml(ROOT / "config/vocabularies.yml")
+    labels_by_value = vocabulary.get(section, {})
+    return [labels_by_value.get(value, value.replace("-", " ").capitalize()) for value in values]
+
+
+def display_list(section: str, values: list[str]) -> str:
+    return "; ".join(vocabulary_labels(section, values))
+
+
+def public_metadata_labels(values: list[str]) -> str:
+    return "; ".join(PUBLIC_METADATA_LABELS.get(value, value.replace("-", " ").capitalize()) for value in values)
 
 
 def write_fragment(name: str, body: str) -> None:
@@ -45,10 +91,11 @@ def write_fragment(name: str, body: str) -> None:
     path.write_text("<!-- Generated by scripts/generate_site.py; do not edit. -->\n```{=html}\n" + body.rstrip() + "\n```\n", encoding="utf-8")
 
 
-def write_page(path: Path, title: str, description: str, body: str, *, canonical: str | None = None) -> None:
+def write_page(path: Path, title: str, description: str, body: str, *, canonical: str | None = None, metadata_only_description: bool = False) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    canonical_line = f'canonical-url: "{canonical}"\n' if canonical else ""
-    path.write_text(f'---\ntitle: "{title.replace(chr(34), chr(39))}"\ndescription: "{description.replace(chr(34), chr(39))}"\n{canonical_line}---\n\n<!-- Generated by scripts/generate_site.py; do not edit. -->\n\n{body.rstrip()}\n', encoding="utf-8")
+    canonical_line = f'canonical-url: "{site_path(canonical)}"\n' if canonical else ""
+    description_key = "description-meta" if metadata_only_description else "description"
+    path.write_text(f'---\ntitle: "{title.replace(chr(34), chr(39))}"\n{description_key}: "{description.replace(chr(34), chr(39))}"\n{canonical_line}---\n\n<!-- Generated by scripts/generate_site.py; do not edit. -->\n\n{body.rstrip()}\n', encoding="utf-8")
 
 
 def load_json_records(directory: Path) -> list[dict[str, Any]]:
@@ -64,10 +111,12 @@ def tags(items: list[str], css: str = "tag-list") -> str:
     return f'<ul class="{css}">' + "".join(f"<li>{esc(item)}</li>" for item in items) + "</ul>"
 
 
-def linked_tags(primary: str, secondary: list[str]) -> str:
+def linked_tags(primary: str | None, secondary: list[str]) -> str:
     themes = theme_index()
-    values = [(primary, "Primary")] + [(item, "Related") for item in secondary]
-    return '<ul class="tag-list">' + "".join(f'<li><a href="/research/themes/{esc(item)}.html">{esc(themes[item]["name"])}</a><span class="sr-only"> ({kind})</span></li>' for item, kind in values) + "</ul>"
+    values = ([(primary, "Primary")] if primary else []) + [(item, "Related") for item in secondary]
+    if not values:
+        return '<ul class="tag-list"><li>Cross-cutting or not classified by lab theme</li></ul>'
+    return '<ul class="tag-list">' + "".join(f'<li><a href="{esc(site_path(f"/research/{item}.html"))}">{esc(themes[item]["name"])}</a><span class="sr-only"> ({kind})</span></li>' for item, kind in values) + "</ul>"
 
 
 def provenance_label(cluster: dict[str, Any]) -> str:
@@ -83,12 +132,75 @@ def provenance_disclosure(cluster: dict[str, Any]) -> str:
 
 
 def record_card(record: dict[str, Any], kind: str) -> str:
-    relation = record.get("relationship_to_lab", "").replace("-", " ").title()
+    relation = relationship_label(record.get("relationship_to_lab", ""))
     meta = " · ".join(filter(None, [relation, record.get("status"), record.get("venue"), str(record.get("publication_date", ""))[:4]]))
     return f'''<article class="record-card" data-themes="{esc(' '.join([record['primary_theme'], *record['secondary_themes']]))}">
   <p class="record-kicker">{esc(meta.replace('-', ' ').title())}</p>
-  <h3><a href="/{kind}/{esc(record['record_id'])}.html">{esc(record['title'])}</a></h3>
+  <h3><a href="{esc(site_path(f"/{kind}/{record['record_id']}.html"))}">{esc(record['title'])}</a></h3>
   <p>{esc(record.get('summary') or record.get('abstract_summary'))}</p>
+  {linked_tags(record['primary_theme'], record['secondary_themes'])}
+</article>'''
+
+
+def work_title(record: dict[str, Any], publications: dict[str, dict[str, Any]]) -> str:
+    if record.get("title"):
+        return record["title"]
+    publication_id = record["connected_publication_ids"][0]
+    return publications[publication_id]["title"]
+
+
+def work_type_label(record: dict[str, Any]) -> str:
+    work_type = record["work_type"].replace("-", " ")
+    if record["work_status"] == "ongoing":
+        if record["work_type"] in {"research-programme", "project", "research-line"}:
+            return f"Ongoing {work_type}"
+        if record["work_type"] == "tool":
+            return "Active tool"
+    return work_type.title()
+
+
+def relationship_label(value: str) -> str:
+    return {
+        "current-ccll-work": "Current CCLL work",
+        "pre-ccll-work-continuing": "Work begun before CCLL and continuing",
+        "foundational-prior-work": "Foundational prior work",
+        "associated-collaboration": "Associated collaboration",
+    }.get(value, value.replace("-", " ").title())
+
+
+def work_card(record: dict[str, Any], publications: dict[str, dict[str, Any]]) -> str:
+    title = work_title(record, publications)
+    themes = [record["primary_theme"], *record["secondary_themes"]]
+    relation = relationship_label(record["relationship_to_lab"])
+    return f'''<article class="record-card work-card" data-status="{esc(record['work_status'])}" data-type="{esc(record['work_type'])}" data-themes="{esc(' '.join(themes))}" data-geography="{esc(' '.join(record['geographies']))}" data-method="{esc(' '.join(record['methods']))}" data-sector="{esc(' '.join(record['sectors']))}">
+  <p class="record-kicker">{esc(work_type_label(record))} · {esc(relation)}</p>
+  <h3><a href="{esc(site_path(f"/work/{record['work_id']}.html"))}">{esc(title)}</a></h3>
+  <p>{esc(record['summary'])}</p>
+  {linked_tags(record['primary_theme'], record['secondary_themes'])}
+</article>'''
+
+
+def featured_example_card(
+    selection: dict[str, Any],
+    works: dict[str, dict[str, Any]],
+    publications: dict[str, dict[str, Any]],
+) -> str:
+    if selection["record_type"] == "work":
+        record = works[selection["record_id"]]
+        title = work_title(record, publications)
+        kicker = f"{work_type_label(record)} · {relationship_label(record['relationship_to_lab'])}"
+        target = site_path(f"/work/{record['work_id']}.html")
+    else:
+        record = publications[selection["record_id"]]
+        title = record["title"]
+        kicker = " · ".join((record["publication_type"].replace("-", " ").title(), relationship_label(record["relationship_to_lab"]), record["publication_date"][:4]))
+        target = site_path(f"/publications/{record['record_id']}.html")
+    qualification = f'<p class="example-boundary">{esc(selection["qualification"])}</p>' if selection.get("qualification") else ""
+    return f'''<article class="record-card featured-example" data-record-type="{esc(selection['record_type'])}" data-record-id="{esc(selection['record_id'])}" data-group="{esc(selection['conceptual_grouping'])}">
+  <p class="record-kicker">{esc(kicker)}</p>
+  <h3><a href="{esc(target)}">{esc(title)}</a></h3>
+  <p>{esc(selection['contribution'])}</p>
+  {qualification}
   {linked_tags(record['primary_theme'], record['secondary_themes'])}
 </article>'''
 
@@ -102,9 +214,10 @@ def conversation_card(cluster: dict[str, Any], sources: dict[str, dict[str, Any]
     compact = provenance_label(cluster)
     fixture = '<span class="fixture-label">Captured fixture</span>' if cluster["captured_fixture"] else ""
     environments = " ".join(cluster["source_environments"])
-    return f'''<article class="conversation-card" data-theme="{esc(' '.join([cluster['primary_theme'], *cluster['secondary_themes']]))}" data-environment="{esc(environments)}" data-geography="{esc(' '.join(cluster['geographies']))}" data-date="{esc(cluster['date_most_recently_observed'])}" data-kind="{'cluster' if linked else 'standalone'}">
+    theme_values = [item for item in [cluster['primary_theme'], *cluster['secondary_themes']] if item]
+    return f'''<article class="conversation-card" data-theme="{esc(' '.join(theme_values))}" data-environment="{esc(environments)}" data-geography="{esc(' '.join(cluster['geographies']))}" data-date="{esc(cluster['date_most_recently_observed'])}" data-kind="{'cluster' if linked else 'standalone'}">
   <p class="conversation-flags"><span class="status-badge unreviewed">{esc(compact)}</span>{fixture}{grouped}</p>
-  <h3><a href="/current-conversations/{esc(cluster['slug'])}.html">{esc(cluster['public_title'])}</a></h3>
+  <h3><a href="{esc(site_path(f"/current-conversations/{cluster['slug']}.html"))}">{esc(cluster['public_title'])}</a></h3>
   <p class="record-meta">{esc(cluster['date_most_recently_observed'])} · {esc(ENV_LABELS[principal['source_environment']])} · {esc(ROLE_LABELS.get(principal['source_role'], principal['source_role']))}</p>
   <p>{esc(cluster['summary'])}</p>
   <p><strong>Why it may be relevant</strong><br>{esc(cluster['reason_for_relevance'])}</p>
@@ -134,55 +247,108 @@ def select_home_clusters(clusters: list[dict[str, Any]], sources: dict[str, dict
     return chosen
 
 
-def generate_themes(projects: list[dict[str, Any]], publications: list[dict[str, Any]], clusters: list[dict[str, Any]], sources: dict[str, dict[str, Any]]) -> None:
-    home = ['<div class="theme-grid">']; details = ['<div class="detail-grid">']
-    for index, theme in enumerate(research_scope()["themes"], 1):
-        badge = '<span class="theme-status developing">Developing</span>' if theme["status"] == "developing" else ""
-        home.append(f'''<article class="theme-card"><span class="theme-number">0{index}</span>{badge}<h3><a href="/research/themes/{esc(theme['id'])}.html">{esc(theme['name'])}</a></h3><p>{esc(theme['definition'])}</p></article>''')
-        details.append(f'''<article class="detail-card" id="{esc(theme['id'])}"><div class="detail-index">0{index}</div><div>{badge}<h2><a href="/research/themes/{esc(theme['id'])}.html">{esc(theme['name'])}</a></h2><p>{esc(theme['definition'])}</p><p><a class="text-link" href="/research/themes/{esc(theme['id'])}.html">View projects, publications and current conversations →</a></p></div><aside class="detail-meta"><strong>Status</strong><span>{esc(theme['status'].title())}</span><strong>Geographic priorities</strong><span>{esc(', '.join(theme['geographical_priorities']))}</span><strong>Methods of interest</strong><span>{esc(', '.join(theme['methodological_interests']))}</span></aside></article>''')
-        core_projects = [record for record in projects if record["primary_theme"] == theme["id"]]
-        related_projects = [record for record in projects if theme["id"] in record["secondary_themes"]]
-        core_pubs = [record for record in publications if record["primary_theme"] == theme["id"] and record["featured"]]
-        related_pubs = [record for record in publications if theme["id"] in record["secondary_themes"] and record["featured"]]
-        recent = [record for record in clusters if record["publication_decision"] == "published" and (record["primary_theme"] == theme["id"] or theme["id"] in record["secondary_themes"])][:3]
-        def links(items: list[dict[str, Any]], kind: str) -> str:
-            return '<div class="compact-list">' + ''.join(f'<p><a href="/{kind}/{esc(item["record_id"])}.html">{esc(item["title"])}</a></p>' for item in items) + '</div>' if items else '<p class="empty-compact">No verified records are published in this view yet.</p>'
-        recent_html = '<div class="compact-list">' + ''.join(f'<p><a href="/current-conversations/{esc(item["slug"])}.html">{esc(item["public_title"])}</a><br><span>{esc(provenance_label(item))}</span></p>' for item in recent) + '</div>' if recent else '<p class="empty-compact">No recent Current Conversations entry is assigned here.</p>'
-        body = f'''<p class="page-deck">{esc(theme['definition'])}</p>
+def generate_themes(works: list[dict[str, Any]], ideas: list[dict[str, Any]], publications: list[dict[str, Any]], clusters: list[dict[str, Any]], sources: dict[str, dict[str, Any]]) -> None:
+    themes = research_scope()["themes"]
+    featured = load_yaml(ROOT / "config/theme_featured_examples.yml")["entries"]
+    works_by_id = {record["work_id"]: record for record in works}
+    publications_by_id = {record["record_id"]: record for record in publications}
+    home = ['<ol class="learning-cycle" aria-label="Four connected research questions">']
+    details = ['<div class="detail-grid connected-theme-list">']
+    legacy_routes = {
+        "urban-climate-learning": "geographies-of-climate-learning",
+        "evidence-infrastructure-tools": "where-new-evidence-matters",
+        "climate-governance-delivery": "modes-of-climate-delivery",
+        "co-benefits-place-based-valuation": "consequences-for-people-and-places",
+        "just-transitions-workforce": "consequences-for-people-and-places",
+        "canadian-climate-policy": "modes-of-climate-delivery",
+    }
+    for index, theme in enumerate(themes, 1):
+        theme_href = site_path(f"/research/{theme['id']}.html")
+        home.append(f'''<li class="cycle-stage"><article aria-labelledby="home-theme-{index}"><span class="theme-number">0{index}</span><p class="cycle-role">{esc(theme['cycle_role'])}</p><h3 id="home-theme-{index}"><a href="{esc(theme_href)}" aria-label="Explore {esc(theme['name'])}">{esc(theme['name'])}</a></h3><p class="theme-proposition">{esc(HOME_THEME_PROPOSITIONS[theme['id']])}</p><p><a class="text-link" href="{esc(theme_href)}" aria-label="Explore this question: {esc(theme['name'])}">Explore this question <span aria-hidden="true">→</span></a></p></article></li>''')
+        details.append(f'''<article class="detail-card" id="{esc(theme['id'])}"><div class="detail-index">0{index}</div><div><p class="cycle-role">{esc(theme['cycle_role'])}</p><h2><a href="{esc(theme_href)}">{esc(theme['name'])}</a></h2><p class="guiding-question">{esc(theme['guiding_question'])}</p><p>{esc(theme['homepage_description'])}</p><p><a class="text-link" href="{esc(theme_href)}">View the theme programme →</a></p></div><aside class="detail-meta"><strong>Geographic priorities</strong><span>{esc('; '.join(theme['geographical_priorities']))}</span><strong>Methods of interest</strong><span>{esc('; '.join(theme['methodological_interests']))}</span></aside></article>''')
+        relevant_work = [record for record in works if record["primary_theme"] == theme["id"] or theme["id"] in record["secondary_themes"]]
+        ongoing_work = [record for record in relevant_work if record["work_status"] == "ongoing"]
+        selected_examples = [entry for entry in featured if entry["theme_id"] == theme["id"]]
+        theme_ideas = sorted([record for record in ideas if record["theme_id"] == theme["id"] and record["owner_review_status"] != "withheld"], key=lambda item: item["display_order"])
+        ongoing_html = '<div class="record-list">' + ''.join(work_card(record, publications_by_id) for record in ongoing_work) + '</div>'
+        completed_html = '<div class="record-list featured-example-list">' + ''.join(featured_example_card(entry, works_by_id, publications_by_id) for entry in selected_examples) + '</div>'
+        def idea_card(item: dict[str, Any], signature: bool) -> str:
+            qualifiers = (f'<p class="idea-qualification"><strong>Research governance qualification.</strong> {esc(item["required_qualification"])}</p>' if item.get("required_qualification") else "") + (f'<p class="idea-qualification"><strong>Analytical boundary.</strong> {esc(item["required_boundary"])}</p>' if item.get("required_boundary") else "")
+            reader = f'<p class="idea-reader"><strong>Who might use the answer</strong><br>{esc(item["reader_or_decision_at_stake"])}</p>' if signature and item.get("reader_or_decision_at_stake") else ""
+            visible_methods = item['public_method_tags'] if signature else item['public_method_tags'][:2]
+            return f'''<article class="idea-card{' signature-idea' if signature else ''}" data-narrative-tier="{esc(item['narrative_tier'])}"><p class="idea-badge">Research idea</p><p class="sr-only">{esc(item['disclaimer'])}</p><h3>{esc(item['working_title'])}</h3><p class="idea-question">{esc(item['question'])}</p><p class="idea-narrative">{esc(item['problem_of_understanding'])} {esc(item['why_it_may_matter'])}</p><p class="idea-approach"><strong>One possible approach</strong><br>{esc(item['possible_research_design'])}</p>{qualifiers}{tags(visible_methods, 'method-list')}{reader}</article>'''
+        signature_ideas = [item for item in theme_ideas if item["narrative_tier"] == "signature"]
+        additional_ideas = [item for item in theme_ideas if item["narrative_tier"] == "additional"]
+        idea_html = f'''<h3 class="idea-group-heading">Questions at the centre of this theme</h3><div class="idea-grid signature-grid">{''.join(idea_card(item, True) for item in signature_ideas)}</div><h3 class="idea-group-heading">Additional directions</h3><div class="idea-grid">{''.join(idea_card(item, False) for item in additional_ideas)}</div>'''
+        previous_theme = themes[index - 2] if index > 1 else themes[-1]
+        next_theme = themes[index] if index < len(themes) else themes[0]
+        connections = f'''- **Input from [{previous_theme['name']}]({site_path(f"/research/{previous_theme['id']}.html")}):** {previous_theme['connection_to_next']}
+- **Next stage — [{next_theme['name']}]({site_path(f"/research/{next_theme['id']}.html")}):** {theme['connection_to_next']}
+- **Return loop:** Consequences generate new evidence, reveal unresolved questions and revise what other cities may plausibly learn.'''
+        body = f'''::: {{.practical-example}}
+**A practical example**
 
-::: {{.notice}}
-**Theme status: {theme['status'].title()}.** Themes overlap. Records below are canonical entries cross-listed by primary or secondary relationship.
+{THEME_PRACTICAL_EXAMPLES[theme['id']]}
 :::
 
-## Core projects
+<p class="term-first-use">{THEME_TERM_NOTES[theme['id']]}</p>
+
+{theme['long_description'][0]}
+
+{theme['long_description'][1]}
+
+::: {{.what-this-changes}}
+**The proposition.** {theme['what_this_changes']}
+:::
+
+**What this theme does not assume.** {theme['analytical_boundary']}
+
+## Ongoing work
 
 ```{{=html}}
-{links(core_projects, 'projects')}
+{ongoing_html}
 ```
 
-## Related projects
+## Selected completed and foundational work
 
 ```{{=html}}
-{links(related_projects, 'projects')}
+{completed_html}
 ```
 
-## Selected publications
+[Explore all verified publications and outputs related to this theme →]({site_path('/publications/complete.html')})
+
+## Questions this theme opens
+
+These are possible directions for future research, not active or funded projects.
+
+<span class="sr-only">Each card retains the full status: {IDEA_DISCLAIMER}</span>
+
+This layout provides a reading hierarchy; it is not a ranking of research priority, funding readiness or importance.
 
 ```{{=html}}
-{links(core_pubs + related_pubs, 'publications')}
+{idea_html}
 ```
+
+## How this connects
+
+{connections}
 
 ## Current Conversations
 
-Current Conversations remains secondary to the lab's own work. These recent entries have this theme as a primary or related assignment.
+Current Conversations is in development. No live public feed is operating, and no automatically identified item is presented on this page.
 
-```{{=html}}
-{recent_html}
-```
+[How Current Conversations works]({site_path('/current-conversations/how-it-works.html')}).'''
+        write_page(ROOT / "research" / f"{theme['id']}.qmd", theme["name"], theme["guiding_question"], body, canonical=f"/research/{theme['id']}.html")
+    for old_id, new_id in legacy_routes.items():
+        destination = theme_index()[new_id]
+        redirect_body = f'''<p class="page-deck">This former theme route has moved into the lab's four-theme research programme.</p>
 
-[How Current Conversations works](/current-conversations/how-it-works.html).'''
-        write_page(ROOT / "research/themes" / f"{theme['id']}.qmd", theme["name"], theme["definition"], body)
-    home.append("</div>"); details.append("</div>")
+[Continue to **{destination['name']}**]({site_path(f'/research/{new_id}.html')}).
+
+This transition page preserves older internal and shared links. It does not define a separate research theme.'''
+        write_page(ROOT / "research/themes" / f"{old_id}.qmd", "Research theme route updated", destination["homepage_description"], redirect_body, canonical=f"/research/{new_id}.html")
+    home.append('<li class="cycle-return"><strong>Consequences generate further learning.</strong> Results change what cities ask next.</li></ol>')
+    details.append('<div class="cycle-return-note"><strong>The return matters:</strong> consequences generate new evidence, expose unresolved questions and change what other places can plausibly learn.</div></div>')
     write_fragment("home-themes.qmd", "\n".join(home)); write_fragment("research-themes.qmd", "\n".join(details))
 
 
@@ -194,36 +360,208 @@ def generate_people() -> None:
     cards.append("</div>"); write_fragment("people.qmd", "\n".join(cards))
 
 
-def generate_projects(projects: list[dict[str, Any]], publications: list[dict[str, Any]]) -> None:
-    groups = [("Current lab research", "current-lab-research"), ("Foundational and prior work", "foundational-prior-work"), ("Associated collaborations", "associated-collaboration")]
-    listing = []
-    for heading, key in groups:
-        items = [record for record in projects if record["relationship_to_lab"] == key]
-        if items: listing.append(f'<section class="relationship-group"><h2>{heading}</h2><div class="record-list">' + ''.join(record_card(item, "projects") for item in items) + '</div></section>')
-    write_fragment("projects.qmd", "".join(listing))
+def generate_work(works: list[dict[str, Any]], publications: list[dict[str, Any]]) -> None:
     publications_by_id = {record["record_id"]: record for record in publications}
-    for record in projects:
-        sources = "\n".join((f'- [{item["label"]}]({item["url"]})' if item.get("url") else f'- {item["label"]}') + f' — verified {item["retrieved_date"]}' for item in record["authoritative_sources"])
-        connections = "\n".join(f'- [{publications_by_id[item]["title"]}](/publications/{item}.html)' for item in record["connected_publications"] if item in publications_by_id) or "No connected publication is recorded."
-        body = f'''<p class="page-deck">{record['summary']}</p>
+    listing = '<div class="record-list" id="work-results">' + ''.join(work_card(record, publications_by_id) for record in works) + '</div>'
+    write_fragment("work.qmd", listing)
+    work_by_id = {record["work_id"]: record for record in works}
+    for record in works:
+        title = work_title(record, publications_by_id)
+        public_sources = [item for item in record["authoritative_sources"] if item.get("url") and item.get("source_type") == "public-web"]
+        sources = "\n".join(f'- [{item["label"]}]({item["url"]}) — accessed {item["retrieved_date"]}' for item in public_sources)
+        publication_connections = "\n".join(f'- [{publications_by_id[item]["title"]}]({site_path(f"/publications/{item}.html")})' for item in record["connected_publication_ids"] if item in publications_by_id)
+        work_connections = "\n".join(f'- [{work_title(work_by_id[item], publications_by_id)}]({site_path(f"/work/{item}.html")})' for item in record["connected_work_ids"] if item in work_by_id)
+        secondary_html = ", ".join(f'<a href="{esc(site_path(f"/research/{item}.html"))}">{esc(theme_index()[item]["name"])}</a>' for item in record["secondary_themes"]) or "No secondary theme assigned."
+        tool_connections = "\n".join(f'- [{work_title(work_by_id[item], publications_by_id)}]({site_path(f"/work/{item}.html")})' for item in record["connected_tool_ids"] if item in work_by_id)
+        connected_items = "\n".join(value for value in (publication_connections, work_connections, tool_connections) if value)
+        questions = chr(10).join("- " + item for item in record["research_questions"])
+        panel_title = "Project at a glance" if record["work_type"] == "project" and record["work_status"] == "completed" else "Work at a glance"
+        metadata = f'''<section class="work-at-a-glance" aria-labelledby="work-glance-heading"><h2 id="work-glance-heading">{panel_title}</h2><dl><dt>Work type</dt><dd>{esc(work_type_label(record))}</dd><dt>Status</dt><dd>{esc(record['work_status'].title())}</dd><dt>Main theme</dt><dd><a href="{esc(site_path(f"/research/{record['primary_theme']}.html"))}">{esc(theme_index()[record['primary_theme']]['name'])}</a></dd><dt>Geographical focus</dt><dd>{esc(display_list('geographies', record['geographies']))}</dd><dt>Key methods</dt><dd>{esc(display_list('methods', record['methods']))}</dd></dl></section>'''
+        provenance = f'''<details class="work-provenance"><summary>Relationship and record context</summary><p>{esc(relationship_label(record['relationship_to_lab']))} — {esc(record['relationship_note'])}</p><p><strong>Related themes:</strong> {secondary_html}</p></details>'''
+        outputs = connected_items or "No separate public output is listed for this record."
+        if record["work_type"] in {"research-programme", "research-line"}:
+            body = f'''## Why this work began
 
-**Status:** {record['status'].replace('-', ' ').title()}<br>
-**Relationship to the lab:** {record['relationship_to_lab'].replace('-', ' ').title()} — {record['relationship_note']}<br>
-**Primary theme:** [{theme_index()[record['primary_theme']]['name']}](/research/themes/{record['primary_theme']}.html)
+{record['problem_of_understanding']}
 
-## Research questions
+## What we are trying to understand
 
-{chr(10).join('- ' + item for item in record['research_questions'])}
+{record['central_question']}
 
-## Connected publications
+{questions}
 
-{connections}
+## How we are approaching it
 
-## Authoritative sources
+{record['how_it_investigates']}
 
-{sources}
+{record['reader_value']}
+
+## Where the work stands
+
+{record['evidence_status']}
+
+**What not to infer.** {record['claim_boundaries']}
+
+## Publications and outputs
+
+{outputs}'''
+        elif record["work_type"] in {"paper", "study", "report"}:
+            body = f'''## The question
+
+{record['central_question']}
+
+{record['problem_of_understanding']}
+
+## What the paper examines
+
+{record['how_it_investigates']}
+
+{questions}
+
+## Why the answer matters
+
+{record['reader_value']}
+
+## Evidence and status
+
+{record['evidence_status']}
+
+**What not to infer.** {record['claim_boundaries']}
+
+## Publication
+
+{outputs}'''
+        elif record["work_type"] == "project" and record["work_status"] == "completed":
+            body = f'''## The problem the project addressed
+
+{record['problem_of_understanding']}
+
+{record['central_question']}
+
+## What the project produced
+
+{record['how_it_investigates']}
+
+## What it helps us understand
+
+{record['reader_value']}
+
+## Limits and context
+
+{record['evidence_status']}
+
+**What not to infer.** {record['claim_boundaries']}
+
+## Outputs and tools
+
+{outputs}'''
+        else:
+            body = f'''## What the tool shows
+
+{record['summary']}
+
+{record['problem_of_understanding']}
+
+{record['central_question']}
+
+## How it can be used
+
+{record['reader_value']}
+
+## What users should not infer
+
+{record['claim_boundaries']}
+
+## Data and methods
+
+{record['how_it_investigates']}
+
+{record['evidence_status']}
+
+## Related project and publications
+
+{outputs}'''
+        body += f'''\n\n```{{=html}}
+{metadata}
+
+{provenance}
+```
+
+{f'''## Authoritative sources
+
+{sources}''' if sources else ''}
 '''
-        write_page(ROOT / "projects" / f"{record['record_id']}.qmd", record["title"], record["summary"], body)
+        write_page(ROOT / "work" / f"{record['work_id']}.qmd", title, record["summary"], body, canonical=f"/work/{record['work_id']}.html")
+        transition = f'''<p class="page-deck">This record now appears in the broader Work section.</p>
+
+[Continue to **{title}**]({site_path(f"/work/{record['work_id']}.html")}).
+
+The former Projects route is retained so older links continue to resolve. It is not a second canonical record.'''
+        write_page(ROOT / "projects" / f"{record['work_id']}.qmd", "Research work route updated", record["summary"], transition, canonical=f"/work/{record['work_id']}.html")
+
+
+GENERIC_PUBLICATION_SUMMARY = "Verified bibliographic record. Consult the original source for its scope, methods, findings and limitations."
+
+
+def publication_text(value: Any) -> str:
+    """Decode source entities for display, then escape; canonical bytes stay fixed."""
+    return esc(html.unescape(str(value)))
+
+
+def publication_status_label(value: str) -> str:
+    return {
+        "peer-reviewed": "Peer-reviewed",
+        "preprint": "Preprint · not peer-reviewed",
+        "working-paper": "Working paper · peer review not established",
+        "not-applicable": "Not applicable to this output type",
+        "unknown": "Peer-review status not verified",
+    }[value]
+
+
+def publication_relationship_label(value: str) -> str:
+    return "Current lab output" if value == "current-ccll-work" else relationship_label(value)
+
+
+def publication_body(record: dict[str, Any], works: dict[str, dict[str, Any]], publications: dict[str, dict[str, Any]]) -> str:
+    details = [("Authors", ", ".join(record["authors"])), ("Published", record["publication_date"]),
+               ("Venue or publisher", record["venue"]), ("Output type", record["publication_type"].replace("-", " ").capitalize()),
+               ("Peer-review status", publication_status_label(record["peer_review_status"]))]
+    for field, label in (("volume", "Volume"), ("issue", "Issue"), ("pages", "Pages"), ("article_number", "Article number"), ("version", "Version"), ("current_version_date", "Current version date")):
+        if record.get(field):
+            value = vocabulary_labels("publication_versions", [record[field]])[0] if field == "version" else record[field]
+            details.append((label, value))
+    bibliography = '<dl class="publication-details">' + ''.join(f'<dt>{label}</dt><dd>{publication_text(value)}</dd>' for label, value in details)
+    if record.get("doi"):
+        bibliography += f'<dt>DOI</dt><dd><a href="{esc("https://doi.org/" + record["doi"])}">{publication_text(record["doi"])}</a></dd>'
+    elif record.get("other_identifiers"):
+        bibliography += f'<dt>Stable identifier</dt><dd>{publication_text("; ".join(record["other_identifiers"]))}</dd>'
+    else:
+        bibliography += '<dt>Stable identifier</dt><dd>Original-source URL (no separate identifier recorded)</dd>'
+    bibliography += '</dl>'
+    relationship = f'<p class="publication-relationship"><strong>Relationship to the lab:</strong> {publication_relationship_label(record["relationship_to_lab"])}</p>'
+    # Only distinctive chronology/collaboration notes are public. Every full note
+    # remains untouched in the canonical record, including generic prior-work notes.
+    if record["relationship_to_lab"] != "foundational-prior-work" or record["record_id"] == "designing-visualization-atlas-uk-cobenefits":
+        relationship += f'<p>{publication_text(record["relationship_note"])}</p>'
+    summary = f'<p class="publication-description">{publication_text(record["abstract_summary"])}</p>' if record["abstract_summary"] != GENERIC_PUBLICATION_SUMMARY else ""
+    # A default classification alone is not a verified public theme relationship.
+    relationships = record.get("theme_relationships", [])
+    theme_links = '<p class="eyebrow">Related research themes</p>' + linked_tags(record["primary_theme"], record["secondary_themes"]) if relationships else ""
+    connections = ''.join(f'<li><a href="{site_path("/work/" + work_id + ".html")}">{publication_text(work_title(works[work_id], publications))}</a></li>' for work_id in record["connected_work_ids"] if work_id in works)
+    work_links = f'<p class="eyebrow">Connected work</p><ul>{connections}</ul>' if connections else ""
+    mdpi_note = '<p class="notice">Retained in the complete scholarly record; not selected, featured or eligible for Current Conversations.</p>' if record.get("mdpi_excluded") else ""
+    return f'''```{{=html}}
+{bibliography}
+{relationship}
+{summary}
+{theme_links}
+{work_links}
+<p><a class="publication-original-source" href="{esc(record['url'])}">Open the original source</a></p>
+<details class="publication-citation"><summary>Citation</summary><p>{publication_text(record['citation'])}</p></details>
+{mdpi_note}
+<p class="record-meta">Record last verified: {record['last_verified_date']}.</p>
+<p class="publication-record-links"><a href="{site_path('/publications/metadata-and-sources.html')}">Metadata and sources</a> · <a href="{site_path('/publications/metadata-and-sources.html#corrections')}">Report a correction</a></p>
+```'''
 
 
 def generate_publications(publications: list[dict[str, Any]]) -> None:
@@ -235,14 +573,15 @@ def generate_publications(publications: list[dict[str, Any]]) -> None:
     for year in sorted(by_year, reverse=True):
         complete.append(f'<section class="bibliography-year" id="year-{year}"><h2>{year}</h2><div class="bibliography-list">')
         for record in sorted(by_year[year], key=lambda item: item["title"]):
-            status = "Peer review not verified" if record["peer_review_status"] == "unknown" else record["peer_review_status"].replace("-", " ").title()
+            status = publication_status_label(record["peer_review_status"])
             mdpi = '<span class="status-badge neutral">Complete record only · not selected</span>' if record.get("mdpi_excluded") else ""
-            complete.append(f'<article class="bibliography-entry" data-year="{year}" data-type="{esc(record["publication_type"])}"><h3><a href="/publications/{esc(record["record_id"])}.html">{esc(record["title"])}</a></h3><p>{esc(", ".join(record["authors"]))}</p><p class="record-meta">{esc(record["venue"])} · {esc(record["publication_type"].replace("-", " ").title())} · {esc(status)} {mdpi}</p></article>')
+            themes = " ".join([record["primary_theme"], *record["secondary_themes"]])
+            complete.append(f'<article class="bibliography-entry" data-year="{year}" data-type="{esc(record["publication_type"])}" data-themes="{esc(themes)}"><h3><a href="{esc(site_path(f"/publications/{record['record_id']}.html"))}">{publication_text(record["title"])}</a></h3><p>{publication_text(", ".join(record["authors"]))}</p><p class="record-meta">{publication_text(record["venue"])} · {esc(record["publication_type"].replace("-", " ").title())} · {esc(status)} {mdpi}</p></article>')
         complete.append('</div></section>')
     write_fragment("publications-complete.qmd", "".join(complete))
     complete_body = '''<p class="page-deck">A complete verified record of Andrew Sudmant's publications and outputs, distinct from the smaller selected set.</p>
 
-Records are grouped by year. Historic outputs are labelled as foundational or prior work and are not presented as products of the new lab. Bibliographic metadata comes from authoritative identifier records, not AI generation.
+Records are grouped by year. Historic outputs are labelled as foundational or prior work and are not presented as products of the new lab. [Publication metadata and sources](/publications/metadata-and-sources.html) explains the records and their status.
 
 ```{=html}
 <form class="publication-filters" data-publication-filters aria-label="Filter verified publications and outputs">
@@ -254,110 +593,81 @@ Records are grouped by year. Historic outputs are labelled as foundational or pr
 
 {{< include ../generated/publications-complete.qmd >}}
 
-[Return to selected publications](/publications.html).'''
+[Return to selected publications](__PUBLICATIONS_RETURN__).'''.replace("__PUBLICATIONS_RETURN__", site_path("/publications.html"))
     write_page(ROOT / "publications/complete.qmd", "Verified publications and outputs", "Verified publications and outputs by Andrew Sudmant, with authoritative-source provenance.", complete_body)
+    works = {record["work_id"]: record for record in load_records("data/work")}
+    publications_by_id = {record["record_id"]: record for record in publications}
     for record in publications:
-        identifier = f'**DOI:** [{record["doi"]}](https://doi.org/{record["doi"]})' if record.get("doi") else f'**Other identifier:** {", ".join(record["other_identifiers"])}' if record.get("other_identifiers") else '**Stable identifier:** none assigned by the authoritative source; use the original-source URL.'
-        mdpi_note = "\n\n::: {.notice}\nThis verified MDPI-authored work is retained in the complete scholarly record. By owner policy it is not selected, featured or eligible for Current Conversations.\n:::" if record.get("mdpi_excluded") else ""
-        body = f'''<p class="page-deck">{record['abstract_summary']}</p>
-
-**Authors:** {', '.join(record['authors'])}<br>
-**Published:** {record['publication_date']} · {record['venue']} · {record['publication_type'].replace('-', ' ').title()}<br>
-**Relationship to the lab:** {record['relationship_to_lab'].replace('-', ' ').title()} — {record['relationship_note']}<br>
-{identifier}
-
-> {record['citation']}
-
-[Open the original source]({record['url']}){mdpi_note}
-
-## Metadata provenance
-
-Metadata sources: {', '.join(record['metadata_sources'])} · last verified {record['last_verified_date']} · status: {record['verification_status'].replace('-', ' ')}. Dates are displayed only to the precision supplied by the verified record. No AI-generated bibliographic metadata is used.'''
-        write_page(ROOT / "publications" / f"{record['record_id']}.qmd", record["title"], record["abstract_summary"], body)
+        body = publication_body(record, works, publications_by_id)
+        write_page(ROOT / "publications" / f"{record['record_id']}.qmd", record["title"], record["abstract_summary"], body, metadata_only_description=True)
 
 
 def generate_conversations(clusters: list[dict[str, Any]], source_list: list[dict[str, Any]]) -> None:
-    sources = {record["source_id"]: record for record in source_list}
-    published = sorted([record for record in clusters if record["publication_decision"] == "published"], key=lambda item: item["date_most_recently_observed"], reverse=True)
-    write_fragment("current-conversations-feed.qmd", '<div class="conversation-grid" id="conversation-results">' + ''.join(conversation_card(record, sources) for record in published) + '</div>')
-    home = select_home_clusters(published, sources)
-    write_fragment("home-current-conversations.qmd", '<div class="conversation-grid home-conversations">' + ''.join(conversation_card(record, sources) for record in home) + '</div>')
-    for cluster in published:
-        principal = sources[cluster["principal_source_id"]]
-        linked = [sources[source_id] for source_id in cluster["linked_source_ids"]]
-        def source_section(source: dict[str, Any], heading: str) -> str:
-            fixture = " Captured fixture for private calibration." if source["captured_fixture"] else ""
-            return f'''### {heading}: {source['title']}
+    # Fixture records remain available to schema and regression tests, but Gate 5E
+    # deliberately produces no public cards, detail pages or machine-readable feed.
+    write_fragment("current-conversations-feed.qmd", "<!-- Current Conversations is in development; no public entries. -->")
+    write_fragment("home-current-conversations.qmd", "<!-- Current Conversations is in development; no public entries. -->")
+    for feed in (ROOT / "current-conversations/feed.json", ROOT / "current-conversations/feed.xml"):
+        feed.unlink(missing_ok=True)
 
-- **Environment:** {ENV_LABELS[source['source_environment']]}
-- **Role:** {ROLE_LABELS.get(source['source_role'], source['source_role'])}
-- **Author or organisation:** {', '.join(source['authors_or_organisation'])}
-- **Published:** {source['publication_date']}
-- **Evidence accessed:** {', '.join(source['evidence_basis'])}
-- **Access limitation:** {source['evidence_limitations']}{fixture}
 
-[Open this original source]({source['original_url']})'''
-        sections = [source_section(principal, "Principal source")] + [source_section(source, "Also discussed in") for source in linked]
-        fixture_notice = "\n\n::: {.notice}\n**Private calibration fixture.** One or more sources were captured to test mixed-source presentation because the paid web adapter was unavailable. This entry is not evidence of a live automated retrieval.\n:::" if cluster["captured_fixture"] else ""
-        body = f'''<p class="page-deck">{cluster['discussion_statement']}</p>
-
-<p class="status-badge unreviewed">{provenance_label(cluster)}</p>
-{'<p class="grouped-label">Related sources grouped automatically</p>' if linked else ''}
-
-## What is being discussed
-
-{cluster['summary']}
-
-## Why it may be relevant
-
-{cluster['reason_for_relevance']}
-
-## Evidence, interpretation and uncertainty
-
-{cluster['limitations']}
-
-{cluster['agreement_disagreement_uncertainty']}{fixture_notice}
-
-## Sources
-
-{(chr(10) * 2).join(sections)}
-
-## Grouping provenance
-
-**Rationale:** {cluster['clustering']['rationale']}<br>
-**Principal-source choice:** {cluster['clustering']['principal_source_rationale']}<br>
-**Method/version:** {cluster['clustering']['method']} · {cluster['clustering']['version']}<br>
-**Confidence:** {cluster['clustering']['confidence']:.2f}
-
-[How Current Conversations works](/current-conversations/how-it-works.html) · [Request a correction](/contact.html)'''
-        write_page(ROOT / "current-conversations" / f"{cluster['slug']}.qmd", cluster["public_title"], cluster["discussion_statement"], body, canonical=f"/current-conversations/{cluster['slug']}.html")
-    feed_items = [{"id": cluster["cluster_id"], "url": f"/current-conversations/{cluster['slug']}.html", "title": cluster["public_title"], "content_text": cluster["summary"], "date_published": cluster["date_first_observed"], "date_modified": cluster["date_most_recently_observed"], "external_url": sources[cluster["principal_source_id"]]["original_url"], "tags": [cluster["primary_theme"], *cluster["secondary_themes"]]} for cluster in published]
-    (ROOT / "current-conversations/feed.json").write_text(json.dumps({"version": "https://jsonfeed.org/version/1.1", "title": "Cities & Climate Learning Lab — Current Conversations", "home_page_url": "/current-conversations/", "feed_url": "/current-conversations/feed.json", "items": feed_items}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    rss_items = "".join(f'<item><guid>{esc(item["id"])}</guid><title>{esc(item["title"])}</title><link>{esc(item["url"])}</link><description>{esc(item["content_text"])}</description><pubDate>{esc(item["date_published"])}</pubDate></item>' for item in feed_items)
-    (ROOT / "current-conversations/feed.xml").write_text('<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Cities &amp; Climate Learning Lab — Current Conversations</title><link>/current-conversations/</link><description>Recent conversations connected to the lab research themes.</description>' + rss_items + '</channel></rss>\n', encoding="utf-8")
+def generate_site_status() -> None:
+    config = load_yaml(ROOT / "config/site.yml")
+    banner = "<!-- Generated by scripts/generate_site.py from config/site.yml; do not edit. -->\n"
+    if config["site_status"] == "draft":
+        banner += '''<aside class="site-status-banner column-screen" role="status" aria-label="Draft website status">
+  <div><strong>Draft website</strong><span>The Cities and Climate Learning Lab is being established at Simon Fraser University. Some descriptions of developing research and possible future work will continue to be refined.</span></div>
+</aside>\n'''
+    (ROOT / "assets/site-status.html").write_text(banner, encoding="utf-8")
+    (ROOT / "assets/site-scripts.html").write_text(
+        f'<script src="{site_path("/assets/site.js")}" defer></script>\n',
+        encoding="utf-8",
+    )
 
 
 def generate_all() -> None:
     errors = validate_all()
     if errors: raise ValueError("content validation failed:\n" + "\n".join(errors))
     OUT.mkdir(exist_ok=True)
-    for directory in (ROOT / "projects", ROOT / "publications", ROOT / "research/themes"):
-        if directory.exists(): shutil.rmtree(directory)
-    for path in (ROOT / "current-conversations").glob("*.qmd"):
-        if path.name not in {"index.qmd", "how-it-works.qmd"}: path.unlink()
-    projects = load_records("data/projects")
+    works = load_records("data/work")
+    ideas = load_records("data/research-ideas")
     complete = json.loads((ROOT / "reports/content/publication-complete-inventory.json").read_text(encoding="utf-8"))["records"]
     sources = load_json_records(ROOT / "data/current-conversations/generated/sources")
     clusters = load_json_records(ROOT / "data/current-conversations/generated/clusters")
-    generate_themes(projects, complete, clusters, {record["source_id"]: record for record in sources})
-    generate_people(); generate_projects(projects, complete); generate_publications(complete); generate_conversations(clusters, sources)
+    generate_themes(works, ideas, complete, clusters, {record["source_id"]: record for record in sources})
+    generate_people(); generate_work(works, complete); generate_publications(complete); generate_conversations(clusters, sources); generate_site_status()
+    expected: dict[Path, set[str]] = {
+        OUT: {
+            "home-themes.qmd", "research-themes.qmd", "people.qmd", "work.qmd",
+            "publications-selected.qmd", "publications-complete.qmd",
+            "current-conversations-feed.qmd", "home-current-conversations.qmd",
+        },
+        ROOT / "work": {f"{record['work_id']}.qmd" for record in works},
+        ROOT / "projects": {f"{record['work_id']}.qmd" for record in works},
+        ROOT / "publications": {"complete.qmd", "metadata-and-sources.qmd", *{f"{record['record_id']}.qmd" for record in complete}},
+        ROOT / "research": {"our-approach.qmd", *{f"{theme['id']}.qmd" for theme in research_scope()["themes"]}},
+        ROOT / "research/themes": {
+            "urban-climate-learning.qmd", "evidence-infrastructure-tools.qmd",
+            "climate-governance-delivery.qmd", "co-benefits-place-based-valuation.qmd",
+            "just-transitions-workforce.qmd", "canadian-climate-policy.qmd",
+        },
+        ROOT / "current-conversations": {
+            "index.qmd", "how-it-works.qmd",
+        },
+    }
+    # Cleanup happens only after every current page and feed has been written.
+    # A generation failure therefore leaves the prior complete source tree intact.
+    for directory, names in expected.items():
+        for path in directory.glob("*.qmd"):
+            if path.name not in names:
+                path.unlink()
 
 
 def main() -> int:
     try: generate_all()
     except ValueError as exc:
         print(exc); return 1
-    print("Generated canonical listings, publication views, conversation clusters, feeds and theme pages.")
+    print("Generated canonical listings, publication views, theme pages and the configured site-status banner.")
     return 0
 
 

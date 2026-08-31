@@ -26,15 +26,15 @@
   "content_hash": "dee9cbcfb89d2f0f2720d3177bdfc7235213aa82f06d68f2c3b4085d0d9bcc39",
   "discovery": {
     "adapter": "captured-web-fixture",
-    "query_id": "cc-fixture-evidence-infrastructure-tools",
-    "query_version": "current-conversations-v1.0.0",
-    "run_id": "gate-4b-5a-mixed-source-captured"
+    "query_id": "cc-fixture-geographies-of-climate-learning",
+    "query_version": "current-conversations-fixture-v3.0.0",
+    "run_id": "gate-5c-mixed-source-captured"
   },
   "ai_annotation": {
     "model": "captured-deterministic-annotation",
     "prompt_version": "current-conversations-classification-v1-fixture",
     "summary": "The Covenant of Mayors describes a platform offering comparable Earth-observation data intended to support adaptation planning across European cities.",
-    "reason_for_relevance": "It is a live example of urban evidence infrastructure and the claims made about its decision-support use."
+    "reason_for_relevance": "It concerns access to comparable evidence across cities; the announcement does not establish a consequential future-evidence priority."
   },
   "risk_flags": [],
   "correction_status": "none",

@@ -1,0 +1,48 @@
+work_id: occupational-transition-requirements
+title: Occupational transition requirements and occupation switching
+work_type: research-line
+work_status: ongoing
+relationship_to_lab: current-ccll-work
+relationship_note: >-
+  Current CCLL research line; the recurring methodological questions are broader than one bounded project.
+summary: >-
+  An ongoing research line developing transparent public-evidence methods for distinguishing same-occupation
+  sector changes from transitions between occupations in low-carbon workforce planning.
+research_questions:
+  - Which requirements distinguish sector changes from transitions between occupations?
+  - How can occupational relatedness and transition requirements be calibrated from public evidence?
+primary_theme: consequences-for-people-and-places
+secondary_themes: [where-new-evidence-matters, modes-of-climate-delivery]
+parent_work_id: null
+connected_work_ids: []
+connected_publication_ids: []
+connected_tool_ids: []
+problem_of_understanding: >-
+  Workforce planning can treat a change of sector as equivalent to a change of occupation, obscuring differences in skills, access and transition burdens.
+central_question: >-
+  Which requirements distinguish same-occupation sector changes from transitions between occupations in low-carbon workforce planning?
+how_it_investigates: >-
+  The research line develops transparent methods based on public occupational evidence to examine relatedness and calibrate possible transition requirements.
+reader_value: >-
+  The work could help workforce researchers and practitioners identify which occupational changes create consequential requirements for workers and places.
+decision_or_problem: How to distinguish sector changes from occupation transitions in place-based low-carbon workforce planning.
+existing_evidence: Public occupational evidence used to examine relatedness and transition requirements.
+consequential_uncertainty: Calibration choices affect which transition requirements and workforce burdens become visible.
+delivery_conditions: Workforce institutions, skills systems and employers shape whether occupational transitions are feasible.
+consequences_examined: Changes in occupations, skills requirements and access to low-carbon work.
+evidence_status: Current lab research line; the methodology is in development.
+claim_boundaries: The work does not predict individual employment outcomes or presume that all green employment is accessible or good work.
+next_learning_question: Which transition requirements are most consequential for workers and places?
+geographies: [united-kingdom]
+governance_scales: [federal-national, regional]
+methods: [occupational-analysis, evidence-synthesis, taxonomy-development, network-analysis, calibration]
+sectors: [labour-workforce]
+climate_domains: [just-transition]
+authoritative_sources:
+  - label: Owner-approved Gate 5D research-line description
+    url: null
+    retrieved_date: 2026-08-27
+    source_type: owner-approved-programme
+last_verified_date: 2026-08-27
+verification_status: owner-approved
+featured: false

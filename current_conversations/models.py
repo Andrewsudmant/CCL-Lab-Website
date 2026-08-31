@@ -78,7 +78,7 @@ class ConversationCluster:
     date_most_recently_observed: str
     principal_source_id: str
     linked_source_ids: list[str]
-    primary_theme: str
+    primary_theme: str | None
     secondary_themes: list[str]
     geographies: list[str]
     source_environments: list[str]

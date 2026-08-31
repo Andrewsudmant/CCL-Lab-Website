@@ -26,11 +26,13 @@ Do not create `CURRENT_CONVERSATIONS_STAGING_WRITE_ENABLED` yet. The benchmark w
 
 Open Actions → **Current Conversations live benchmark** → **Run workflow**, select the merged `main` branch, and use:
 
-- `query_id`: `cc-w02-governance`
+- `query_id`: `cc3-w03-delivery`
 - `result_limit`: `2`
 - `artifacts_only`: checked / `true`
 
 The environment reviewer should confirm the branch/commit, variables, CAD ceilings and artifact-only input before approving access to the environment secret. Approval authorizes one bounded paid request; it does not authorize staging or publication.
+
+The selectable query IDs come from `current-conversations-v2@3.0.0`. Theme queries express discovery intent but do not force a classification; facet queries for tools and workforce use no theme intent. Do not select a facet query for the first benchmark unless the owner specifically wants to test null and cross-theme classifications.
 
 ## Review sequence
 

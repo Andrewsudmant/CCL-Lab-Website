@@ -26,15 +26,15 @@
   "content_hash": "9e208131dce8fd56596f4e0d35deee85bba36c932ad52875ba29a6eaf5a796fd",
   "discovery": {
     "adapter": "captured-web-fixture",
-    "query_id": "cc-fixture-evidence-infrastructure-tools",
-    "query_version": "current-conversations-v1.0.0",
-    "run_id": "gate-4b-5a-mixed-source-captured"
+    "query_id": "cc-fixture-unclassified",
+    "query_version": "current-conversations-fixture-v3.0.0",
+    "run_id": "gate-5c-mixed-source-captured"
   },
   "ai_annotation": {
     "model": "captured-deterministic-annotation",
     "prompt_version": "current-conversations-classification-v1-fixture",
     "summary": "The viewer provides filterable daily temperature records for US cities using open data from NOAA regional climate centres.",
-    "reason_for_relevance": "It is a concrete example of an urban-facing data interface whose design and provenance shape evidence use."
+    "reason_for_relevance": "It is a technical fixture for testing a data-tool source; available description evidence does not justify a theme assignment."
   },
   "risk_flags": [],
   "correction_status": "none",

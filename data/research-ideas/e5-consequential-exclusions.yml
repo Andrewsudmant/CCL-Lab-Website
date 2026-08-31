@@ -1,0 +1,17 @@
+idea_id: e5-consequential-exclusions
+theme_id: where-new-evidence-matters
+working_title: Which exclusions change the answer?
+question: Which absent places or populations would materially alter an appraisal, causal estimate or claim about generalisability if they were represented?
+problem_of_understanding: Evidence maps can identify exclusions, but the number of missing places or populations does not show whether their inclusion would change the answer.
+why_it_may_matter: Prioritising consequential exclusions could connect representational justice with the analytical effect of missing evidence.
+possible_research_design: Evidence-gap mapping could be combined with population, vulnerability and policy data, followed by counterfactual reweighting and participatory priority setting.
+suggested_methods: [evidence-gap mapping, counterfactual reweighting, distributional analysis, participatory priority setting, scenario analysis]
+public_method_tags: [evidence-gap mapping, counterfactual reweighting, participatory priority setting]
+narrative_tier: additional
+reader_or_decision_at_stake: Research funders and communities defining consequential exclusions.
+possible_geographies: [British Columbia, Canada, comparative international cities]
+possible_sectors: [urban governance]
+possible_climate_domains: [mitigation, adaptation]
+display_order: 5
+owner_review_status: owner-approved
+disclaimer: Research idea · not currently an active or funded project

@@ -1,8 +1,11 @@
 ---
-title: "Projects"
-description: "Current and planned projects of the Cities & Climate Learning Lab."
+title: "Projects has moved to Work"
+description: "Transition from the former Projects listing to the broader Work section."
+canonical-url: "work.html"
 ---
 
-<p class="page-deck">Selected current and prior work connecting careful research with the practical questions facing governments and communities.</p>
+<p class="page-deck">The lab now uses <strong>Work</strong> for research programmes, research lines, projects, studies, papers, reports, tools and datasets.</p>
 
-{{< include generated/projects.qmd >}}
+[Continue to Research programmes, projects and studies →](work.qmd)
+
+This accessible transition page preserves the former `/projects/` entry point. It does not maintain a second canonical listing.

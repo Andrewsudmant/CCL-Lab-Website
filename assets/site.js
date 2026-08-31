@@ -13,7 +13,7 @@
       let shown = 0;
       cards.forEach((card) => {
         const matches = (!query || card.textContent.toLowerCase().includes(query)) &&
-          (!theme || card.dataset.theme.split(" ").includes(theme)) &&
+          (!theme || (theme === "__unclassified__" ? !card.dataset.theme : card.dataset.theme.split(" ").includes(theme))) &&
           (!environment || card.dataset.environment.split(" ").includes(environment)) &&
           (!geography || card.dataset.geography.split(" ").includes(geography)) &&
           (!kind || card.dataset.kind === kind) && (!since || card.dataset.date >= since);
@@ -28,21 +28,51 @@
   }
 
   const publicationForm = document.querySelector("[data-publication-filters]");
-  if (!publicationForm) return;
-  const entries = [...document.querySelectorAll(".bibliography-entry")];
-  const publicationCount = document.querySelector("[data-publication-count]");
-  const updatePublications = () => {
-    const query = publicationForm.elements.query.value.trim().toLowerCase();
-    const type = publicationForm.elements.type.value;
-    let shown = 0;
-    entries.forEach((entry) => {
-      const matches = (!query || entry.textContent.toLowerCase().includes(query)) && (!type || entry.dataset.type === type);
-      entry.hidden = !matches;
-      if (matches) shown += 1;
-    });
-    publicationCount.textContent = `${shown} record${shown === 1 ? "" : "s"} shown`;
-  };
-  publicationForm.addEventListener("input", updatePublications);
-  publicationForm.addEventListener("reset", () => setTimeout(updatePublications));
-  updatePublications();
+  if (publicationForm) {
+    const entries = [...document.querySelectorAll(".bibliography-entry")];
+    const publicationCount = document.querySelector("[data-publication-count]");
+    const updatePublications = () => {
+      const query = publicationForm.elements.query.value.trim().toLowerCase();
+      const type = publicationForm.elements.type.value;
+      let shown = 0;
+      entries.forEach((entry) => {
+        const matches = (!query || entry.textContent.toLowerCase().includes(query)) && (!type || entry.dataset.type === type);
+        entry.hidden = !matches;
+        if (matches) shown += 1;
+      });
+      publicationCount.textContent = `${shown} record${shown === 1 ? "" : "s"} shown`;
+    };
+    publicationForm.addEventListener("input", updatePublications);
+    publicationForm.addEventListener("reset", () => setTimeout(updatePublications));
+    updatePublications();
+  }
+
+  const workForm = document.querySelector("[data-work-filters]");
+  if (workForm) {
+    const cards = [...document.querySelectorAll("#work-results .work-card")];
+    const workCount = document.querySelector("[data-work-count]");
+    const updateWork = () => {
+      const value = (name) => workForm.elements[name].value.trim().toLowerCase();
+      const query = value("query");
+      const status = value("status");
+      const type = value("type");
+      const theme = value("theme");
+      const geography = value("geography");
+      const method = value("method");
+      const sector = value("sector");
+      let shown = 0;
+      cards.forEach((card) => {
+        const contains = (field, wanted) => !wanted || (card.dataset[field] || "").toLowerCase().includes(wanted);
+        const matches = (!query || card.textContent.toLowerCase().includes(query)) &&
+          contains("status", status) && contains("type", type) && contains("themes", theme) &&
+          contains("geography", geography) && contains("method", method) && contains("sector", sector);
+        card.hidden = !matches;
+        if (matches) shown += 1;
+      });
+      workCount.textContent = `${shown} work item${shown === 1 ? "" : "s"} shown`;
+    };
+    workForm.addEventListener("input", updateWork);
+    workForm.addEventListener("reset", () => setTimeout(updateWork));
+    updateWork();
+  }
 })();

@@ -22,14 +22,23 @@ abstract_summary: >-
   mitigation and adaptation objectives and measures.
 relationship_to_lab: foundational-prior-work
 relationship_note: Prior collaborative work included for its direct relevance to urban climate governance and delivery.
-primary_theme: climate-governance-delivery
-secondary_themes: [urban-climate-learning]
+primary_theme: modes-of-climate-delivery
+secondary_themes: [geographies-of-climate-learning]
+theme_relationships:
+  - theme_id: modes-of-climate-delivery
+    relationship: primary
+    rationale: The systematic assessment compares how European city plans institutionally integrate mitigation and adaptation.
+    evidence_source: https://doi.org/10.1016/j.rser.2019.109623
+  - theme_id: geographies-of-climate-learning
+    relationship: secondary
+    rationale: Its cross-city systematic comparison supports analysis of recurring and place-dependent planning arrangements.
+    evidence_source: https://doi.org/10.1016/j.rser.2019.109623
 geographies: [europe]
 governance_scales: [municipal]
 methods: [literature-review, policy-analysis]
 climate_domains: [mitigation, adaptation]
 sectors: [cross-sectoral]
-connected_projects: []
+connected_work_ids: []
 featured: true
 metadata_sources: [orcid, crossref, publisher]
 last_verified_date: 2026-08-14

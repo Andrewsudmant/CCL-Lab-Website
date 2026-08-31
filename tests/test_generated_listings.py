@@ -9,36 +9,37 @@ def test_generated_listing_counts_match_records() -> None:
     generate_all()
     themes = (ROOT / "generated/home-themes.qmd").read_text(encoding="utf-8")
     people = (ROOT / "generated/people.qmd").read_text(encoding="utf-8")
-    projects = (ROOT / "generated/projects.qmd").read_text(encoding="utf-8")
-    publications = (ROOT / "generated/publications.qmd").read_text(encoding="utf-8")
+    work = (ROOT / "generated/work.qmd").read_text(encoding="utf-8")
+    publications = (ROOT / "generated/publications-selected.qmd").read_text(encoding="utf-8")
     conversations = (ROOT / "generated/current-conversations-feed.qmd").read_text(encoding="utf-8")
 
-    assert themes.count('<article class="theme-card">') == len(research_scope()["themes"])
+    assert themes.count('<li class="cycle-stage">') == len(research_scope()["themes"])
     assert people.count('<article class="record-card') == len(load_records("data/people"))
-    assert projects.count('<article class="record-card') == len(load_records("data/projects"))
+    assert work.count('<article class="record-card') == len(load_records("data/work"))
     assert publications.count('<article class="record-card') == len(load_records("data/publications"))
-    clusters = [json.loads(path.read_text()) for path in (ROOT / "data/current-conversations/generated/clusters").glob("*.json")]
-    assert conversations.count('<article class="conversation-card') == len([x for x in clusters if x["publication_decision"] == "published"])
+    assert conversations.count('<article class="conversation-card') == 0
+    assert "no public entries" in conversations
 
 
 def test_automated_listing_has_full_non_endorsement_language() -> None:
     generate_all()
     page = (ROOT / "current-conversations/index.qmd").read_text(encoding="utf-8")
-    assert "inclusion does not imply endorsement" in page
-    assert "summaries may contain errors" in page
+    assert "In development" in page
+    assert "Inclusion will not indicate endorsement" in page
     generated = (ROOT / "generated/current-conversations-feed.qmd").read_text()
-    assert "Captured fixture · no AI generation recorded" in generated
+    assert "no public entries" in generated
     assert "Identified and summarized using AI" not in generated
 
 
 def test_canonical_detail_pages_and_theme_views_exist() -> None:
     generate_all()
-    for record in load_records("data/projects"):
-        assert (ROOT / "projects" / f'{record["record_id"]}.qmd').exists()
+    for record in load_records("data/work"):
+        assert (ROOT / "work" / f'{record["work_id"]}.qmd').exists()
+        assert (ROOT / "projects" / f'{record["work_id"]}.qmd').exists()
     for record in load_records("data/publications"):
         assert (ROOT / "publications" / f'{record["record_id"]}.qmd').exists()
     for theme in research_scope()["themes"]:
-        assert (ROOT / "research/themes" / f'{theme["id"]}.qmd').exists()
+        assert (ROOT / "research" / f'{theme["id"]}.qmd').exists()
 
 
 def test_generated_fragments_are_marked() -> None:

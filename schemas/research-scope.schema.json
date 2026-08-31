@@ -10,8 +10,8 @@
     "notice": {"type": "string", "minLength": 20},
     "themes": {
       "type": "array",
-      "minItems": 6,
-      "maxItems": 6,
+      "minItems": 4,
+      "maxItems": 4,
       "items": {"$ref": "research-theme.schema.json"}
     }
   }

@@ -1,0 +1,46 @@
+work_id: uk-co-benefits-atlas
+title: UK Co-Benefits Atlas
+work_type: project
+work_status: completed
+relationship_to_lab: foundational-prior-work
+relationship_note: >-
+  Completed through the University of Edinburgh and collaborators before CCLL was established; it was not developed at SFU.
+summary: >-
+  A completed project that developed a place-based atlas for examining how estimated benefits and costs of
+  climate action vary across UK communities.
+research_questions:
+  - How do the estimated benefits and costs of climate action vary between UK communities?
+  - How can place-based evidence make local climate choices more transparent?
+primary_theme: consequences-for-people-and-places
+secondary_themes: [geographies-of-climate-learning]
+parent_work_id: null
+connected_work_ids: [uk-co-benefits-atlas-tool]
+connected_publication_ids: [designing-visualization-atlas-uk-cobenefits]
+connected_tool_ids: [uk-co-benefits-atlas-tool]
+problem_of_understanding: >-
+  National or aggregate climate appraisals can hide how estimated benefits and costs vary among communities and depend on place-specific evidence and valuation choices.
+central_question: >-
+  How do estimated benefits and costs of climate action vary between UK communities, and how can those differences be made more transparent?
+how_it_investigates: >-
+  The completed project combined place-based modelling, spatial analysis and visualisation to represent eleven categories of benefits and costs across UK communities.
+reader_value: >-
+  The work provides a source-backed example of how place-based evidence can expose local variation without presenting the estimates as universal predictions.
+decision_or_problem: How place-based evidence can make locally varying benefits and costs of climate action visible.
+existing_evidence: Verified Atlas methods, public output and a connected publication from foundational prior work.
+transfer_conditions: Estimates are specific to UK data, communities, scenarios and valuation choices.
+consequences_examined: Eleven categories of benefits and costs across more than 46,000 UK communities.
+evidence_status: Completed foundational project associated with a separately represented public tool that remains available.
+claim_boundaries: Atlas estimates are not universal predictions and do not establish suitability for another place.
+geographies: [united-kingdom]
+governance_scales: [municipal, neighbourhood]
+methods: [place-based-modelling, spatial-analysis, data-visualization]
+sectors: [cross-sectoral]
+climate_domains: [mitigation]
+authoritative_sources:
+  - label: Atlas team and methods page
+    url: https://ukcobenefitsatlas.net/about
+    retrieved_date: 2026-08-27
+    source_type: public-web
+last_verified_date: 2026-08-27
+verification_status: verified
+featured: false

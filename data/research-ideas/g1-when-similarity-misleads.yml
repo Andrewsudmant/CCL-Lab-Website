@@ -1,0 +1,17 @@
+idea_id: g1-when-similarity-misleads
+theme_id: geographies-of-climate-learning
+working_title: When similarity misleads
+question: Which contextual differences cause apparently comparable cities to draw different policy conclusions from the same evidence?
+problem_of_understanding: Cities often select precedents through visible similarities such as population, climate or income, even though less visible institutional and infrastructural differences may alter the result.
+why_it_may_matter: Analogue-based learning can create misplaced confidence when the characteristics used to define similarity are not the characteristics that govern the intervention or outcome.
+possible_research_design: Matched-city comparisons could be combined with causal transportability analysis and sensitivity testing to identify which contextual variables alter the direction or magnitude of an inference.
+suggested_methods: [matched-city comparison, transportability analysis, causal generalisability, sensitivity analysis, hierarchical modelling]
+public_method_tags: [matched-city comparison, transportability analysis, causal generalisability]
+narrative_tier: signature
+reader_or_decision_at_stake: Comparative researchers selecting cases.
+possible_geographies: [British Columbia, Canada, comparative international cities]
+possible_sectors: [buildings, transport, urban planning]
+possible_climate_domains: [mitigation, adaptation]
+display_order: 1
+owner_review_status: owner-approved
+disclaimer: Research idea · not currently an active or funded project

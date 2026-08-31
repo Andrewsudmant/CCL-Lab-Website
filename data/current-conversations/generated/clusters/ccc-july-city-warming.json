@@ -7,7 +7,7 @@
   "date_most_recently_observed": "2026-07-01",
   "principal_source_id": "ccs-climate-central-july-warming",
   "linked_source_ids": [],
-  "primary_theme": "evidence-infrastructure-tools",
+  "primary_theme": "geographies-of-climate-learning",
   "secondary_themes": [],
   "geographies": [
     "global"
@@ -17,7 +17,7 @@
   ],
   "principal_source_role": "research-commentary",
   "summary": "Climate Central presents city-level July temperature trends, downloadable data and methodology for more than 240 US cities.",
-  "reason_for_relevance": "The item demonstrates how analysis, local data and communication products are assembled for urban evidence use.",
+  "reason_for_relevance": "The item concerns geographically distributed city evidence and access to its data and methods; it does not establish a future research priority.",
   "limitations": "The analysis is outside the 30-day pilot window and is geographically limited to US cities.",
   "agreement_disagreement_uncertainty": "No source disagreement was established by the captured evidence.",
   "clustering": {
@@ -34,7 +34,7 @@
     "used": false,
     "model": null,
     "prompt_version": "current-conversations-classification-v1-fixture",
-    "run_id": "gate-4b-5a-mixed-source-captured"
+    "run_id": "gate-5c-mixed-source-captured"
   },
   "publication_decision": "published",
   "correction_status": "none",

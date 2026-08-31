@@ -1,0 +1,2 @@
+.venv/bin/python scripts/validate_content.py
+Validated 95 records and 18 schemas.

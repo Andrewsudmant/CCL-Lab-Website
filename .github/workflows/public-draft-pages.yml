@@ -1,0 +1,114 @@
+name: Publish Draft 0.1 to GitHub Pages
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm_draft_0_1:
+        description: "I confirm that the owner has approved publication of Draft 0.1"
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-draft-pages
+  cancel-in-progress: false
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    permissions:
+      contents: read
+    steps:
+      - name: Fail closed unless publication is explicitly enabled and confirmed
+        env:
+          CONFIRMED: ${{ inputs.confirm_draft_0_1 }}
+          ENABLED: ${{ vars.PUBLIC_DRAFT_DEPLOY_ENABLED }}
+        run: |
+          test "$CONFIRMED" = "true"
+          test "$ENABLED" = "true"
+
+  build:
+    needs: guard
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - name: Check out the reviewed commit
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements-dev.txt
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Validate records
+        run: make validate
+
+      - name: Build before tests that inspect the rendered site
+        run: make build
+
+      - name: Run the complete test suite
+        run: make test
+
+      - name: Run root-path link and accessibility checks
+        run: make check
+
+      - name: Build and check the GitHub Pages project path
+        run: make linkcheck-project-path
+
+      - name: Confirm Draft 0.1 and Current Conversations release boundaries
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import yaml
+          config = yaml.safe_load(Path("config/site.yml").read_text())
+          assert config["site_status"] == "draft"
+          assert config["site_version"] == "0.1"
+          assert config["current_conversations"] == {
+              "status": "in-development",
+              "public_feed_enabled": False,
+          }
+          site = Path("_site-project-path/CCL-Lab-Website")
+          public = "\n".join(
+              path.read_text(errors="ignore")
+              for path in site.rglob("*")
+              if path.is_file() and path.suffix in {".html", ".json", ".xml"}
+          )
+          for forbidden in ("captured-fixture", "global-stocktake-captured-fixture", "feed.xml", "feed.json"):
+              assert forbidden not in public
+          PY
+
+      - name: Upload the static Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site-project-path/CCL-Lab-Website
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: public-draft
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy the approved Pages artifact
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+# Manual only. The repository variable and protected environment are deliberately
+# absent until the owner completes the publication approval sequence.

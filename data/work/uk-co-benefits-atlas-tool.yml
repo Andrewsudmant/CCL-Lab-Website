@@ -1,0 +1,40 @@
+work_id: uk-co-benefits-atlas-tool
+title: Interactive UK Co-Benefits Atlas
+work_type: tool
+work_status: ongoing
+relationship_to_lab: foundational-prior-work
+relationship_note: >-
+  The public tool remains available, but it was developed before CCLL through the University of Edinburgh and collaborators.
+summary: >-
+  The active public interface associated with the completed UK Co-Benefits Atlas project, providing access to
+  place-based estimates and documented methods.
+research_questions: []
+primary_theme: consequences-for-people-and-places
+secondary_themes: [geographies-of-climate-learning]
+parent_work_id: uk-co-benefits-atlas
+connected_work_ids: [uk-co-benefits-atlas]
+connected_publication_ids: [designing-visualization-atlas-uk-cobenefits]
+connected_tool_ids: []
+problem_of_understanding: >-
+  Place-based estimates can be difficult to inspect or compare when the underlying spatial variation and documented methods are not available through an accessible interface.
+central_question: >-
+  How can users explore the place-based estimates and methods developed through the UK Co-Benefits Atlas?
+how_it_investigates: >-
+  The active public interface exposes the completed Atlas outputs and documented methods for exploration; it does not itself establish new findings.
+reader_value: >-
+  The tool allows users to inspect how represented benefits and costs vary across UK communities while retaining the limits of the underlying estimates.
+evidence_status: Public tool verified as available on 27 August 2026.
+claim_boundaries: Availability does not make the underlying estimates current, universal or transferable to another place.
+geographies: [united-kingdom]
+governance_scales: [municipal, neighbourhood]
+methods: [place-based-modelling, spatial-analysis, data-visualization]
+sectors: [cross-sectoral]
+climate_domains: [mitigation]
+authoritative_sources:
+  - label: UK Co-Benefits Atlas
+    url: https://ukcobenefitsatlas.net/
+    retrieved_date: 2026-08-27
+    source_type: public-web
+last_verified_date: 2026-08-27
+verification_status: verified
+featured: false

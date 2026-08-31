@@ -17,7 +17,7 @@ discovery:
   query_version: research-watch-v1.0.0
 theme_assignments:
   primary:
-    theme_id: evidence-infrastructure-tools
+    theme_id: where-new-evidence-matters
     score: 0.69
     rationale: The title appears to describe a municipal decision-support tool.
   secondary: []

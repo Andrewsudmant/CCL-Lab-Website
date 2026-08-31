@@ -1,6 +1,6 @@
 # Publication reconciliation — Gate 5B
 
-Verified: 2026-08-17
+Verified: 2026-08-27
 Identity: ORCID `0000-0001-8650-8419`
 
 ## Outcome

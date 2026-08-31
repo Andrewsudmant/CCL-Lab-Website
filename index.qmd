@@ -1,6 +1,6 @@
 ---
 title: ""
-description: "Research on how cities generate, transfer and use evidence for climate action."
+description: "How cities find, generate and use evidence for climate action."
 title-block-banner: false
 page-layout: full
 ---
@@ -11,99 +11,97 @@ page-layout: full
     <div class="hero-copy">
       <p class="eyebrow">Simon Fraser University · School of Resource and Environmental Management</p>
       <h1 id="home-title">Cities <span>&</span> Climate<br>Learning Lab</h1>
-      <p class="hero-subtitle">Research on how cities generate, transfer and use evidence for climate action.</p>
+      <p class="hero-tagline">How cities find, generate and use evidence for climate action.</p>
+      <p class="hero-proposition">Cities learn from one another. The hard part is knowing what can travel.</p>
+      <p class="hero-subtitle">No city can investigate every climate problem for itself. But a policy that worked elsewhere may depend on institutions, infrastructure or resources that are absent locally. Another study may fill a gap without changing a decision. The same intervention may produce different results depending on who delivers it and who bears its costs.</p>
+      <p class="hero-lab-statement">The Cities and Climate Learning Lab studies these connections: what cities can learn from existing evidence, where new evidence would make a difference, how action is organised, and what it changes for people and places.</p>
       <div class="hero-actions">
         <a class="button button-primary" href="research.html">Explore our research</a>
-        <a class="button button-quiet" href="current-conversations/index.html">Explore Current Conversations <span aria-hidden="true">→</span></a>
+        <a class="button button-quiet" href="research/our-approach.html">Read our approach <span aria-hidden="true">→</span></a>
       </div>
     </div>
-    <aside class="hero-aside" aria-label="Lab focus">
-      <p class="index-number">01—06</p>
-      <p>Six connected research areas spanning evidence, governance, valuation, work, infrastructure and policy.</p>
-      <p class="small-note">Research spanning institutions, evidence, place and implementation.</p>
+    <aside class="hero-aside" aria-label="Research programme">
+      <p class="index-number">01—04</p>
+      <p>Four connected questions.</p>
     </aside>
   </div>
 </section>
 ```
 
 ```{=html}
-<section class="section-shell intro-band" aria-labelledby="question-heading">
-  <p class="eyebrow">The organising question</p>
+<section class="section-shell intro-band" aria-labelledby="problem-heading">
+  <p class="eyebrow">The urban climate learning problem</p>
   <div class="split-heading">
-    <h2 id="question-heading">What helps cities turn evidence into climate action?</h2>
-    <p>We study the institutions, relationships, tools and place-based choices that shape how knowledge travels—and whether it changes what cities can deliver.</p>
+    <h2 id="problem-heading">Four questions decide whether evidence can help.</h2>
+    <div><p>First, cities have to judge whether evidence from somewhere else fits their circumstances. They also have to decide whether new research would change anything, who can carry a policy through, and what happens to different people once it is in place.</p><p>Treating those questions separately can make a lesson look more portable, a research gap more urgent, a policy easier to deliver or a benefit more widely shared than it really is.</p></div>
   </div>
+  <p class="small-note">Urban climate evidence does not become useful merely because it exists.</p>
 </section>
 ```
 
 ```{=html}
 <section class="section-shell" aria-labelledby="themes-heading">
   <div class="section-header">
-    <div>
-      <p class="eyebrow">Research programme</p>
-      <h2 id="themes-heading">Six initial research areas</h2>
-    </div>
-    <a class="text-link" href="research.html">See the full scope <span aria-hidden="true">→</span></a>
+    <div><p class="eyebrow">Research programme</p><h2 id="themes-heading">Four connected questions</h2></div>
+    <a class="text-link" href="research.html">See the full programme <span aria-hidden="true">→</span></a>
   </div>
+  <p class="learning-cycle-intro">Each answer changes what cities can learn next.</p>
 ```
 
 {{< include generated/home-themes.qmd >}}
+
 ```{=html}
+  <p><a href="research/our-approach.html#illustration-expanding-active-travel">See how the four questions connect in practice →</a></p>
 </section>
 ```
 
 ```{=html}
-<section class="section-shell" aria-labelledby="projects-heading">
-  <div class="section-header"><div><p class="eyebrow">Current research</p><h2 id="projects-heading">From evidence to implementation</h2></div><a href="projects.html">View all projects →</a></div>
-  <div class="theme-grid">
-    <article class="theme-card"><h3><a href="projects/coben-place-based-model.html">CoBen: place-based co-benefits and co-costs</a></h3><p>A conditional scenario model with explicit traceability, locality and valuation rules.</p></article>
-    <article class="theme-card"><h3><a href="projects/occupational-transition-requirements.html">Occupational transition requirements</a></h3><p>A public-evidence approach to occupation switching in the low-carbon transition.</p></article>
-    <article class="theme-card"><h3><a href="projects/climate-delivery-modes.html">Climate delivery modes</a></h3><p>Comparative research on the actors and arrangements that deliver urban climate action.</p></article>
+<section class="section-shell reader-pathways" aria-labelledby="reader-pathways-heading">
+  <div class="section-header"><div><p class="eyebrow">Reader pathways</p><h2 id="reader-pathways-heading">Who this programme is for</h2></div></div>
+  <div class="pathway-grid">
+    <article><h3>For researchers</h3><p>Compare cities, cases and methods.</p><p><a href="research.html">Explore the programme →</a></p></article>
+    <article><h3>For policy and practice</h3><p>Follow evidence through delivery to results.</p><p><a href="work.html">Explore the work →</a></p></article>
+    <article><h3>For prospective students and collaborators</h3><p>Find open questions and ways to connect.</p><p><a href="opportunities.html">See opportunities →</a></p></article>
   </div>
 </section>
-<section class="section-shell" aria-labelledby="outputs-heading">
-  <div class="section-header"><div><p class="eyebrow">Selected outputs</p><h2 id="outputs-heading">Research and tools</h2></div><a href="outputs.html">Explore outputs →</a></div>
-  <div class="theme-grid">
-    <article class="theme-card"><h3><a href="publications/data-scaling-climate-action-governance-uk.html">Data Scaling</a></h3><p>How evidence scale affects climate assessment and governance.</p></article>
-    <article class="theme-card"><h3><a href="publications/who-can-learn-geography-urban-climate-evidence.html">Who can learn from whom?</a></h3><p>The geography of urban climate evidence.</p></article>
-    <article class="theme-card"><h3><a href="data-tools.html">UK Co-Benefits Atlas</a></h3><p>Place-based evidence across more than 46,000 UK communities.</p></article>
+```
+
+```{=html}
+<section class="section-shell" aria-labelledby="work-heading">
+  <div class="section-header"><div><p class="eyebrow">Lab research</p><h2 id="work-heading">Featured work</h2></div><a href="work.html">View all work →</a></div>
+  <div class="theme-grid featured-work-grid">
+    <article class="theme-card"><p class="record-kicker">Ongoing paper</p><h3><a href="work/geography-urban-climate-evidence.html">Who can learn from whom? The geography of urban climate evidence</a></h3></article>
+    <article class="theme-card"><p class="record-kicker">Ongoing research programme</p><h3><a href="work/climate-delivery-modes.html">Climate delivery modes</a></h3></article>
+    <article class="theme-card"><p class="record-kicker">Ongoing research programme</p><h3><a href="work/coben-place-based-model.html">CoBen</a></h3></article>
+  </div>
+  <p class="small-note"><strong>Foundational prior work:</strong> the <a href="work/uk-co-benefits-atlas.html">UK Co-Benefits Atlas</a> and its <a href="work/uk-co-benefits-atlas-tool.html">public tool</a> predate the lab.</p>
+  <p><a href="outputs.html">Explore publications, outputs, data and tools →</a></p>
+</section>
+```
+
+```{=html}
+<section class="section-shell context-band" aria-labelledby="context-heading">
+  <p class="eyebrow">Located at SFU · connected across places</p>
+  <div class="split-heading">
+    <h2 id="context-heading">British Columbia, Canada and comparative international research</h2>
+    <p>Based at Simon Fraser University, the lab works in British Columbia, across Canada and with international comparisons.</p>
   </div>
 </section>
 ```
 
 ```{=html}
 <section class="section-shell watch-callout" aria-labelledby="watch-heading">
+  <div><p class="eyebrow eyebrow-light">Current Conversations · In development</p><h2 id="watch-heading">Following the lab's four questions in public discussion.</h2></div>
   <div>
-    <p class="eyebrow eyebrow-light">Current Conversations</p>
-    <h2 id="watch-heading">Where the themes we work on are being discussed.</h2>
-  </div>
-  <div>
-    <p>Recent research, policy analysis, reporting, tools and public discussion connected to the lab's research themes. Items are identified, grouped and summarized using AI and have not normally been reviewed by the lab.</p>
-    <p class="watch-rule"><strong>AI helps discover and annotate.</strong> Original sources remain authoritative.</p>
-    <a class="button button-on-dark" href="current-conversations/index.html">View Current Conversations</a>
+    <p>This feature is not live.</p>
+    <p class="watch-rule"><strong>Appearing here will not mean that the lab endorses a source or believes it applies to another city.</strong></p>
+    <a class="button button-on-dark" href="current-conversations/index.html">Read about Current Conversations</a>
   </div>
 </section>
 ```
-
-```{=html}
-<section class="section-shell" aria-labelledby="recent-watch-heading">
-  <div class="section-header"><div><p class="eyebrow">Recent discussion</p><h2 id="recent-watch-heading">Current Conversations</h2></div><a href="current-conversations/index.html">View all →</a></div>
-  <div class="candidate-warning" role="note" aria-label="Current Conversations automated discovery and non-endorsement disclosure"><strong>Automated discovery notice.</strong><span>Current Conversations uses automated searches and AI-generated classification, grouping and summaries to identify recent material connected to the lab's research themes. Sources may include academic papers, policy reports, news, blogs, data tools and public posts. Items have not normally been reviewed by a member of the Cities and Climate Learning Lab, and inclusion does not imply endorsement. Coverage is selective and uneven, and summaries may contain errors or omit important context. Please consult the original sources.</span></div>
-</section>
-```
-
-{{< include generated/home-current-conversations.qmd >}}
 
 ```{=html}
 <section class="section-shell" aria-labelledby="people-heading">
-  <div class="split-heading"><h2 id="people-heading">Led by Andrew Sudmant</h2><p>Assistant Professor at Simon Fraser University and Director of the Cities and Climate Learning Lab. <a href="people.html">Meet the lab →</a></p></div>
-</section>
-```
-
-```{=html}
-<section class="section-shell status-row" aria-label="Lab information">
-  <p><span class="status-dot" aria-hidden="true"></span><strong>Based at Simon Fraser University</strong></p>
-  <p>School of Resource and Environmental Management</p>
-  <p><a href="contact.html">Contact the lab →</a></p>
+  <div class="split-heading"><h2 id="people-heading">People, opportunities and contact</h2><p><a href="people.html">Meet the lab</a>, <a href="opportunities.html">see opportunities</a> or <a href="contact.html">get in touch</a>.</p></div>
 </section>
 ```

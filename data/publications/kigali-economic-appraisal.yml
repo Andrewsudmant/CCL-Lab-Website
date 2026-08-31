@@ -22,14 +22,23 @@ abstract_summary: >-
   Kigali and considers implications for urban investment and governance.
 relationship_to_lab: foundational-prior-work
 relationship_note: Prior collaborative research included as an intellectual foundation for place-based appraisal.
-primary_theme: co-benefits-place-based-valuation
-secondary_themes: [climate-governance-delivery]
+primary_theme: consequences-for-people-and-places
+secondary_themes: [modes-of-climate-delivery]
+theme_relationships:
+  - theme_id: consequences-for-people-and-places
+    relationship: primary
+    rationale: The article evaluates the local economic consequences and investment implications of low-carbon options in Kigali.
+    evidence_source: https://doi.org/10.1002/sd.1906
+  - theme_id: modes-of-climate-delivery
+    relationship: secondary
+    rationale: The appraisal examines investment and governance implications that condition the delivery of low-carbon options in Kigali.
+    evidence_source: https://doi.org/10.1002/sd.1906
 geographies: [rwanda, sub-saharan-africa]
 governance_scales: [municipal]
 methods: [economic-appraisal, place-based-modelling]
 climate_domains: [mitigation]
 sectors: [cross-sectoral]
-connected_projects: []
+connected_work_ids: []
 featured: true
 metadata_sources: [orcid, crossref, publisher]
 last_verified_date: 2026-08-14

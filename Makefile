@@ -1,6 +1,6 @@
-.PHONY: install validate generate test build linkcheck linkcheck-external accessibility check publications-refresh current-conversations-fixture current-conversations-discover openalex-diagnostics current-conversations-pilot current-conversations-recheck current-conversations-stage current-conversations-rollback-test model-benchmark calibration-pack browser-qa handoff owner-review owner-package research-watch-fixture research-watch-pilot research-watch-recheck preview clean
+.PHONY: install validate generate test build build-project-path linkcheck linkcheck-project-path linkcheck-external accessibility check release-check publications-refresh current-conversations-fixture current-conversations-discover openalex-diagnostics current-conversations-pilot current-conversations-recheck current-conversations-stage current-conversations-rollback-test model-benchmark calibration-pack browser-qa public-voice-audit handoff owner-review owner-package thematic-owner-review gate-5c-owner-review gate-5d-owner-review gate-5e-owner-review gate-5f-owner-review gate-5g-owner-review gate-5h-owner-review research-watch-fixture research-watch-pilot research-watch-recheck preview clean
 
-HANDOFF_SUMMARY ?= docs/handoffs/gate-5b-handoff.md
+HANDOFF_SUMMARY ?= docs/handoffs/gate-5e-handoff.md
 PYTHON ?= $(if $(wildcard .venv/bin/python),.venv/bin/python,python3)
 
 install:
@@ -9,20 +9,26 @@ validate:
 	$(PYTHON) scripts/validate_content.py
 generate:
 	$(PYTHON) scripts/generate_site.py
-test: generate
+test: build build-project-path
 	$(PYTHON) -m pytest
 build: generate
 	./scripts/quarto.sh render
+build-project-path: validate
+	./scripts/quarto.sh render --profile project-path
 linkcheck: build
 	$(PYTHON) scripts/check_links.py
+linkcheck-project-path: build-project-path
+	$(PYTHON) scripts/check_links.py --site-dir _site-project-path/CCL-Lab-Website --base-path /CCL-Lab-Website
 linkcheck-external: build
 	$(PYTHON) scripts/check_links.py --external
 accessibility: build
 	$(PYTHON) scripts/check_accessibility.py
-check: validate build
+check: validate build build-project-path
 	$(PYTHON) -m pytest
 	$(PYTHON) scripts/check_links.py
 	$(PYTHON) scripts/check_accessibility.py
+release-check: check linkcheck-project-path
+	$(PYTHON) scripts/check_accessibility.py --site-dir _site-project-path/CCL-Lab-Website
 publications-refresh:
 	PYTHONPATH=. $(PYTHON) scripts/refresh_publications.py --output-dir reports/content
 	$(PYTHON) scripts/build_complete_publications.py
@@ -47,11 +53,29 @@ calibration-pack: current-conversations-pilot
 	$(PYTHON) scripts/package_calibration.py
 browser-qa: build
 	$(PYTHON) scripts/check_browser_qa_artifacts.py
+public-voice-audit: build
+	$(PYTHON) scripts/audit_public_voice.py
 handoff:
 	$(PYTHON) scripts/package_handoff.py --summary "$(HANDOFF_SUMMARY)"
 owner-package:
 	$(PYTHON) scripts/package_owner_review.py
 owner-review: owner-package
+thematic-owner-review:
+	$(PYTHON) scripts/package_thematic_review.py
+gate-5c-owner-review:
+	$(PYTHON) scripts/package_gate_5c_review.py
+gate-5d-owner-review:
+	$(PYTHON) scripts/package_gate_5d_review.py
+gate-5e-owner-review:
+	$(PYTHON) scripts/package_gate_5e_review.py
+gate-5f-owner-review:
+	$(PYTHON) scripts/package_gate_5f_review.py
+gate-5g-owner-review:
+	$(PYTHON) scripts/package_gate_5g_review.py
+gate-5h-owner-review:
+	$(PYTHON) scripts/package_gate_5h_review.py
+gate-5i-owner-review:
+	$(PYTHON) scripts/package_gate_5i_review.py
 research-watch-fixture:
 	@echo "Deprecated: use current-conversations-fixture"
 	@$(MAKE) current-conversations-fixture

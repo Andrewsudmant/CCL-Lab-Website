@@ -26,9 +26,9 @@
   "content_hash": "95d8d95f8e89c129a6a785d45267731ed8bc2d86cd7d7865a006e664a5603283",
   "discovery": {
     "adapter": "captured-web-fixture",
-    "query_id": "cc-fixture-urban-climate-learning",
-    "query_version": "current-conversations-v1.0.0",
-    "run_id": "gate-4b-5a-mixed-source-captured"
+    "query_id": "cc-fixture-geographies-of-climate-learning",
+    "query_version": "current-conversations-fixture-v3.0.0",
+    "run_id": "gate-5c-mixed-source-captured"
   },
   "ai_annotation": {
     "model": "captured-deterministic-annotation",

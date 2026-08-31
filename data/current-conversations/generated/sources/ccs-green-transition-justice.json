@@ -29,9 +29,9 @@
   "content_hash": "43caa7bc167387c564c79cd456e251f3531a0a36169dc50e694041af4dbc71d9",
   "discovery": {
     "adapter": "openalex",
-    "query_id": "cc-fixture-just-transitions-workforce",
-    "query_version": "current-conversations-v1.0.0",
-    "run_id": "gate-4b-5a-mixed-source-captured"
+    "query_id": "cc-fixture-consequences-for-people-and-places",
+    "query_version": "current-conversations-fixture-v3.0.0",
+    "run_id": "gate-5c-mixed-source-captured"
   },
   "ai_annotation": {
     "model": "captured-deterministic-annotation",

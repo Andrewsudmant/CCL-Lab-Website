@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Canonical research-work record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["work_id", "title", "work_type", "work_status", "relationship_to_lab", "relationship_note", "summary", "research_questions", "primary_theme", "secondary_themes", "parent_work_id", "connected_work_ids", "connected_publication_ids", "connected_tool_ids", "problem_of_understanding", "central_question", "how_it_investigates", "reader_value", "geographies", "governance_scales", "methods", "sectors", "climate_domains", "evidence_status", "claim_boundaries", "authoritative_sources", "last_verified_date", "verification_status", "featured"],
+  "properties": {
+    "work_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "title": {"type": ["string", "null"], "minLength": 8},
+    "work_type": {"enum": ["research-programme", "research-line", "project", "study", "paper", "report", "tool", "dataset"]},
+    "work_status": {"enum": ["ongoing", "completed"]},
+    "relationship_to_lab": {"enum": ["current-ccll-work", "pre-ccll-work-continuing", "foundational-prior-work", "associated-collaboration"]},
+    "relationship_note": {"type": "string", "minLength": 20},
+    "summary": {"type": "string", "minLength": 40},
+    "research_questions": {"type": "array", "items": {"type": "string", "minLength": 12}, "maxItems": 6},
+    "primary_theme": {"type": "string"},
+    "secondary_themes": {"type": "array", "maxItems": 3, "uniqueItems": true, "items": {"type": "string"}},
+    "parent_work_id": {"type": ["string", "null"], "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "connected_work_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "connected_publication_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "connected_tool_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "problem_of_understanding": {"type": "string", "minLength": 40},
+    "central_question": {"type": "string", "minLength": 25},
+    "how_it_investigates": {"type": "string", "minLength": 40},
+    "reader_value": {"type": "string", "minLength": 40},
+    "decision_or_problem": {"type": "string", "minLength": 20},
+    "existing_evidence": {"type": "string", "minLength": 20},
+    "transfer_conditions": {"type": "string", "minLength": 20},
+    "consequential_uncertainty": {"type": "string", "minLength": 20},
+    "delivery_conditions": {"type": "string", "minLength": 20},
+    "consequences_examined": {"type": "string", "minLength": 20},
+    "evidence_status": {"type": "string", "minLength": 20},
+    "claim_boundaries": {"type": "string", "minLength": 20},
+    "next_learning_question": {"type": "string", "minLength": 20},
+    "geographies": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "governance_scales": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "methods": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "climate_domains": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "sectors": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "authoritative_sources": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/source"}},
+    "last_verified_date": {"type": "string", "format": "date"},
+    "verification_status": {"enum": ["owner-approved", "verified", "partially-verified"]},
+    "featured": {"type": "boolean"}
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "url", "retrieved_date", "source_type"],
+      "properties": {
+        "label": {"type": "string"},
+        "url": {"type": ["string", "null"], "format": "uri"},
+        "retrieved_date": {"type": "string", "format": "date"},
+        "source_type": {"enum": ["public-web", "owner-approved-programme"]}
+      }
+    }
+  }
+}

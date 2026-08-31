@@ -22,14 +22,23 @@ abstract_summary: >-
   identifies considerations for building large, interactive visualization atlases.
 relationship_to_lab: foundational-prior-work
 relationship_note: Produced through the UK Atlas collaboration before the lab was established at SFU.
-primary_theme: evidence-infrastructure-tools
-secondary_themes: [co-benefits-place-based-valuation]
+primary_theme: consequences-for-people-and-places
+secondary_themes: [geographies-of-climate-learning]
+theme_relationships:
+  - theme_id: consequences-for-people-and-places
+    relationship: primary
+    rationale: The preprint documents design choices for presenting place-based climate benefits and costs through the UK Atlas.
+    evidence_source: https://arxiv.org/abs/2604.20781v2
+  - theme_id: geographies-of-climate-learning
+    relationship: secondary
+    rationale: The design account concerns how highly localised evidence is organised and communicated across UK communities.
+    evidence_source: https://arxiv.org/abs/2604.20781v2
 geographies: [united-kingdom]
 governance_scales: [municipal, neighbourhood]
 methods: [data-visualization, co-design]
 climate_domains: [mitigation, evidence-and-learning]
 sectors: [cross-sectoral]
-connected_projects: [uk-co-benefits-atlas]
+connected_work_ids: [uk-co-benefits-atlas]
 featured: true
 metadata_sources: [datacite, repository]
 last_verified_date: 2026-08-14

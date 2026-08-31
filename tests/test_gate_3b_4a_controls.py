@@ -49,16 +49,16 @@ def test_no_photo_is_supported() -> None:
 
 
 def test_homepage_watch_limit_and_disclosures() -> None:
-    generated = (ROOT / "generated/home-watch.qmd").read_text()
-    assert generated.count('<article class="watch-card') <= 6
+    generated = (ROOT / "generated/home-current-conversations.qmd").read_text()
+    assert generated.count('<article class="conversation-card') == 0
     homepage = (ROOT / "index.qmd").read_text()
-    assert "inclusion does not imply endorsement" in homepage
-    assert "AI-selected and summarized" in generated
+    assert "appearing here will not mean that the lab endorses a source" in homepage.casefold()
+    assert "no public entries" in generated
 
 
 def test_publications_have_exact_relationship_and_provenance() -> None:
     pubs = load_records("data/publications")
-    assert all(p["relationship_to_lab"] in {"current-lab-research", "foundational-prior-work", "associated-collaboration"} for p in pubs)
+    assert all(p["relationship_to_lab"] in {"current-ccll-work", "pre-ccll-work-continuing", "foundational-prior-work", "associated-collaboration"} for p in pubs)
     assert all(p["metadata_sources"] and p["last_verified_date"] and p["authoritative_sources"] for p in pubs)
     assert all("and collaborators" not in " ".join(p["authors"]).lower() for p in pubs)
 
@@ -75,20 +75,19 @@ def test_known_publication_truth_constraints() -> None:
 
 def test_theme_statuses_and_separation() -> None:
     themes = {t["id"]: t for t in research_scope()["themes"]}
-    assert themes["evidence-infrastructure-tools"]["status"] == "established"
-    assert themes["just-transitions-workforce"]["status"] == "developing"
-    assert themes["canadian-climate-policy"]["status"] == "developing"
-    for record in load_records("data/projects") + load_records("data/publications"):
+    assert all("portfolio_maturity" not in theme for theme in themes.values())
+    for record in load_records("data/work") + load_records("data/publications"):
         assert record["primary_theme"] not in record["geographies"]
 
 
-def test_no_invented_canadian_project() -> None:
-    assert not any(p["primary_theme"] == "canadian-climate-policy" for p in load_records("data/projects"))
+def test_canada_is_a_geography_not_a_theme() -> None:
+    assert "canadian-climate-policy" not in {theme["id"] for theme in research_scope()["themes"]}
+    assert "canada" in yaml.safe_load((ROOT / "config/vocabularies.yml").read_text())["geographies"]
 
 
 def test_canonical_cross_listing_does_not_duplicate_records() -> None:
-    projects = load_records("data/projects")
-    ids = [p["record_id"] for p in projects]
+    projects = load_records("data/work")
+    ids = [p["work_id"] for p in projects]
     assert len(ids) == len(set(ids))
     assert any(p["secondary_themes"] for p in projects)
 
@@ -139,11 +138,11 @@ def test_pipeline_is_not_a_build_side_effect() -> None:
     assert "pilot" not in build_recipe and "discover" not in build_recipe
 
 
-@pytest.mark.parametrize("route", ["index.qmd", "research.qmd", "projects.qmd", "people.qmd", "outputs.qmd", "publications.qmd", "data-tools.qmd", "opportunities.qmd", "about-andrew.qmd", "contact.qmd", "current-conversations/index.qmd", "current-conversations/how-it-works.qmd", "research-watch/index.qmd", "research-watch/methods.qmd"])
+@pytest.mark.parametrize("route", ["index.qmd", "research.qmd", "work.qmd", "projects.qmd", "people.qmd", "outputs.qmd", "publications.qmd", "data-tools.qmd", "opportunities.qmd", "about-andrew.qmd", "contact.qmd", "current-conversations/index.qmd", "current-conversations/how-it-works.qmd", "research-watch/index.qmd", "research-watch/methods.qmd"])
 def test_important_public_routes_remain(route: str) -> None:
     assert (ROOT / route).is_file()
 
 
-@pytest.mark.parametrize("theme_id", ["urban-climate-learning", "climate-governance-delivery", "co-benefits-place-based-valuation", "just-transitions-workforce", "evidence-infrastructure-tools", "canadian-climate-policy"])
+@pytest.mark.parametrize("theme_id", ["geographies-of-climate-learning", "where-new-evidence-matters", "modes-of-climate-delivery", "consequences-for-people-and-places"])
 def test_each_theme_page_is_generated(theme_id: str) -> None:
-    assert (ROOT / "research/themes" / f"{theme_id}.qmd").is_file()
+    assert (ROOT / "research" / f"{theme_id}.qmd").is_file()

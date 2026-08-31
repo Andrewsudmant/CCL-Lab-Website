@@ -107,7 +107,7 @@ def test_last_known_good_survives_invalid_replacement(tmp_path: Path) -> None:
 
 def test_public_fixture_disclosure_uses_actual_provenance() -> None:
     generated = (ROOT / "generated/current-conversations-feed.qmd").read_text()
-    assert "Captured fixture · no AI generation recorded" in generated
+    assert "no public entries" in generated
     assert "Identified and summarized using AI" not in generated
 
 

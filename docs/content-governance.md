@@ -4,7 +4,19 @@
 
 Current Conversations uses automated discovery and AI-assisted annotation to surface material across research, policy, news, commentary and tools. AI is never treated as a source. Readers receive the original link, source identity/date, evidence limitation and review state. Inclusion does not imply endorsement.
 
+Current Conversations is horizon scanning around the questions the lab studies. A theme assignment records a bounded classification, not evidential quality, transferability or recommendation. Geography, source type and topic remain separate from lab theme. Records may be cross-cutting or unclassified when available evidence does not justify an assignment.
+
 The compact unreviewed label follows the record, not the system's potential capabilities. Use **Identified and summarized using AI · not reviewed by the lab** only when `ai_provenance.used=true`. Captured fixtures with `used=false` say **Captured fixture · no AI generation recorded · not reviewed by the lab**. The landing page also warns that summaries may contain errors or omit context and asks readers to consult original sources.
+
+The four research-theme titles, guiding questions, descriptions and analytical boundaries are owner-approved and canonical in `config/research_scope.yml`. Themes do not have active/completed or maturity status. Research-work relationships must be supported by project material, a canonical publication, an institutional record or an explicit owner-approved programme description; optional learning fields remain absent when evidence is insufficient. Methods and geographies must not be promoted into competing top-level themes.
+
+## Themes, work, outputs and ideas
+
+Themes are current intellectual questions. Research work records actual ongoing or completed activity and must identify its type and relationship to the lab. Prior work may appear as a defensible example of a current theme without being relabelled as a CCLL output. A standalone paper may connect directly to themes and must not receive an invented project parent. Bibliographic facts stay in the canonical publication record and are derived by work rendering rather than copied.
+
+Research ideas are a separate editorial class. Each must state a question, why it may matter, suggested methods, owner-review state and the exact non-active/non-funded disclaimer. Ideas contain no invented funders, partners, dates, deliverables, findings or recruitment claims. They are excluded from Work, publications, Current Conversations, RSS and active/funded counts.
+
+Selected publication examples require a recorded thematic rationale and the authoritative evidence source used to support it. Titles alone are insufficient. MDPI publications may remain in the complete verified bibliography under owner policy but cannot become selected thematic examples.
 
 ## Required provenance
 
@@ -27,3 +39,19 @@ Store bibliographic facts, minimal necessary excerpts and concise original annot
 ## Corrections, availability and removal
 
 Never silently rewrite or delete a public item. Record changed fields, date and reason; update availability after rechecks; archive stale discussions; and retain a correction/removal history unless legal or privacy duties require erasure. Critical errors, prompt-injection contamination, unsafe URLs, unsupported claims or identity conflicts are withheld or quarantined, leaving the last valid site intact.
+
+### Themes and discovery facets
+
+Current Conversations classification connects a source to one or more of the four analytical questions; it does not rate evidence or recommend action. The discovery query, source environment and location cannot determine the classification. Geography, sector, method and climate domain remain separate facets. A data tool, model, Canadian source or workforce source may relate to any theme—or remain unclassified—depending on the evidence actually available. `Where New Evidence Matters` is used only for a prospective, consequential evidence question, not for a generic gap, new dataset or new tool.
+
+## Reader-value presentation
+
+Gate 5F separates stored editorial structure from visible public scaffolding. Theme, idea and Work records retain distinct problem, consequence, approach, evidence-status and boundary fields even when templates combine them into fewer reader-facing sections. This preserves provenance and makes later corrections field-specific.
+
+Signature research questions are a reading hierarchy, not a statement of priority, funding readiness or importance. Public method tags are a reviewed subset of the unchanged full method list. Reader or decision-at-stake fields may identify a class of reader already supported by the approved idea, but must not invent users, funders, partners or demand.
+
+Ongoing Work uses prospective language and completed Work uses source-backed language. A missing section is preferable to generic or unsupported prose. The active-travel example is a hypothetical illustration and must remain visibly labelled as neither a finding nor a recommendation.
+
+Gate 5G separates underlying thematic relationship from featured display. A record may remain related to a theme without appearing among its four to six illustrative examples. Public copy states the conceptual contribution; internal records retain the source reviewed, selection basis, uncertainty and correction trail. Cross-listing requires a genuinely different contribution statement for each theme and normally stops at two themes. Removing an item from prominent display never deletes it from the verified inventory or changes authorship and relationship-to-lab provenance.
+
+Controlled-vocabulary values remain stable in data but render through `config/vocabularies.yml`. Internal representative examples are permitted only with `placeholder: true` and `public: false`; generation and regression tests exclude them. Internal Gate labels and owner-decision records remain in Git history and governance documents, not visible public pages or public search.

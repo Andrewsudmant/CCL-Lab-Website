@@ -1,0 +1,56 @@
+version: "1.0.0"
+terms:
+  - term: generalisability
+    plain_first_use: Whether a finding is likely to hold beyond the place where it was produced
+    technical_term: Generalisability
+    longer_definition: >-
+      The extent to which a finding can inform understanding beyond the people, place or conditions in which it was produced.
+    pages: [research/geographies-of-climate-learning.html]
+  - term: transportability
+    plain_first_use: Whether an estimate can be carried to another setting under stated conditions
+    technical_term: Transportability
+    longer_definition: >-
+      The conditions under which an estimate from one population or place can be applied to another.
+    pages: [research/geographies-of-climate-learning.html]
+  - term: appraisal
+    plain_first_use: How a policy's costs, benefits and wider effects are assessed
+    technical_term: Appraisal
+    longer_definition: >-
+      A structured assessment of a policy's expected costs, benefits, risks and wider consequences.
+    pages: [research/where-new-evidence-matters.html, research/consequences-for-people-and-places.html, research/our-approach.html]
+  - term: consequential uncertainty
+    plain_first_use: Uncertainty that could change a decision
+    technical_term: Consequential uncertainty
+    longer_definition: >-
+      Uncertainty whose resolution could alter a choice, an assessment or an understanding of who may be affected.
+    pages: [research/where-new-evidence-matters.html]
+  - term: delivery configuration
+    plain_first_use: The way authority, money, capability and responsibility are arranged
+    technical_term: Delivery configuration
+    longer_definition: >-
+      The institutional arrangement through which actors finance, authorise, organise and maintain climate action.
+    pages: [research/modes-of-climate-delivery.html]
+  - term: co-benefits and co-costs
+    plain_first_use: Wider gains and harms that occur alongside emissions reductions
+    technical_term: Co-benefits and co-costs
+    longer_definition: >-
+      Positive and negative effects of climate action beyond its direct effect on greenhouse-gas emissions.
+    pages: [research/consequences-for-people-and-places.html]
+  - term: evidence infrastructure
+    plain_first_use: The data, institutions and tools through which evidence is produced and used
+    technical_term: Evidence infrastructure
+    longer_definition: >-
+      The connected data systems, organisations, standards and decision tools that make evidence available and usable.
+    pages: [research/our-approach.html]
+  - term: causal inference
+    plain_first_use: Methods used to judge whether an intervention caused an observed change
+    technical_term: Causal inference
+    longer_definition: >-
+      Research methods for distinguishing the effects of an intervention from changes that would have happened anyway.
+    pages: [research/where-new-evidence-matters.html]
+  - term: value of information
+    plain_first_use: An estimate of whether resolving uncertainty could improve a decision
+    technical_term: Value of information
+    longer_definition: >-
+      An estimate of the benefit of obtaining new evidence before a decision is made.
+    pages: [research/where-new-evidence-matters.html]

@@ -1,16 +1,18 @@
 ---
 title: "Research"
-description: "The six initial research areas of the Cities & Climate Learning Lab."
+description: "Four connected questions about how urban climate knowledge becomes cumulative."
 ---
 
-<p class="page-deck">The lab studies climate action as a problem of learning and delivery: how evidence is made, moved, interpreted and put to work in particular places.</p>
+<p class="page-deck">The lab studies how urban climate knowledge becomes cumulative: what may be useful across places, where new evidence would matter, how action becomes operable, and what changes for people and places.</p>
 
 ::: {.notice}
-**Connected scope.** Themes overlap. Projects and publications have one primary theme and may be cross-listed under related themes; geography, method, domain and sector remain separate.
+**One connected programme.** The themes are ordered questions, not independent subject areas. Consequences generate new evidence, revise judgements and shape what cities investigate next. Research work may enter the cycle at different points.
 :::
+
+[Read our approach to evidence, relevance, use, delivery and consequences →](research/our-approach.qmd)
 
 {{< include generated/research-themes.qmd >}}
 
-## A connected programme
+## Research facets, not competing themes
 
-The themes are not silos. Evidence infrastructure shapes what can be known; governance determines what can be delivered; valuation affects which outcomes count; and workforce change determines who can participate and benefit. Canadian climate-policy research provides the institutional and place-based context connecting them.
+Climate domains such as mitigation and adaptation; empirical sectors such as buildings, transport, energy, food, heat and housing; geographies such as British Columbia, Canada and the United Kingdom; and methods such as comparative research, synthesis, modelling and data visualisation remain separately tagged. They support the four research themes rather than define the lab's public identity.

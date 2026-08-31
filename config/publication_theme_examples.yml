@@ -1,0 +1,98 @@
+version: "1.0.0"
+reviewed_date: 2026-08-27
+policy: >-
+  These relationships are selected for theme-page display only after review of an abstract, publisher description,
+  institutional record or lawful full text. A relationship does not change authorship, institutional provenance or canonical identity.
+records:
+  - record_id: using-crowdsourced-data-to-estimate-the-carbon-footprints-of-global-cities
+    primary_theme: geographies-of-climate-learning
+    secondary_themes: []
+    theme_relationships:
+      - theme_id: geographies-of-climate-learning
+        relationship: primary
+        rationale: The institutional full-text record supports global city comparison and responsibility allocation using a common estimation method.
+        evidence_source: https://www.research.ed.ac.uk/en/publications/using-crowdsourced-data-to-estimate-the-carbon-footprints-of-glob/
+  - record_id: producer-cities-and-consumer-cities-using-production-and-consumption-based-carbon-accounts
+    primary_theme: geographies-of-climate-learning
+    secondary_themes: []
+    theme_relationships:
+      - theme_id: geographies-of-climate-learning
+        relationship: primary
+        rationale: The paper compares production- and consumption-based city accounts across China, the UK and the United States.
+        evidence_source: https://doi.org/10.1016/j.jclepro.2017.12.139
+  - record_id: fair-weather-forecasting-the-shortcomings-of-big-data-for-sustainable-development-a-case-s
+    primary_theme: where-new-evidence-matters
+    secondary_themes: []
+    theme_relationships:
+      - theme_id: where-new-evidence-matters
+        relationship: primary
+        rationale: The abstract identifies systematic omissions in big-data transport evidence that could bias evaluation and planning decisions.
+        evidence_source: https://ideas.repec.org/p/hal/journl/hal-04501697.html
+  - record_id: uncovering-blind-spots-in-urban-carbon-management-the-role-of-consumption-based-carbon-acc
+    primary_theme: where-new-evidence-matters
+    secondary_themes: []
+    theme_relationships:
+      - theme_id: where-new-evidence-matters
+        relationship: primary
+        rationale: The publisher abstract shows how omitted consumption emissions conceal mitigation opportunities and alter city decision-making.
+        evidence_source: https://link.springer.com/article/10.1007/s10113-017-1112-x
+  - record_id: supportive-governance-for-city-scale-low-carbon-building-retrofits-a-case-study-from-shang
+    primary_theme: modes-of-climate-delivery
+    secondary_themes: []
+    theme_relationships:
+      - theme_id: modes-of-climate-delivery
+        relationship: primary
+        rationale: The publisher record examines governance arrangements enabling city-scale low-carbon building retrofit in Shanghai.
+        evidence_source: https://doi.org/10.1080/14693062.2021.1948383
+  - record_id: financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transi
+    primary_theme: modes-of-climate-delivery
+    secondary_themes: [consequences-for-people-and-places]
+    theme_relationships:
+      - theme_id: modes-of-climate-delivery
+        relationship: primary
+        rationale: The commissioning institution describes how banking and place-based finance can support delivery of a just transition.
+        evidence_source: https://www.lse.ac.uk/granthaminstitute/publication/financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transition-in-the-uk/
+      - theme_id: consequences-for-people-and-places
+        relationship: secondary
+        rationale: The report makes positive social impact and place-based just-transition consequences explicit objectives of financing.
+        evidence_source: https://www.lse.ac.uk/granthaminstitute/publication/financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transition-in-the-uk/
+  - record_id: missing-the-target-are-local-climate-targets-aligned-with-national-net-zero-ambitions
+    primary_theme: modes-of-climate-delivery
+    secondary_themes: []
+    theme_relationships:
+      - theme_id: modes-of-climate-delivery
+        relationship: primary
+        rationale: The repository abstract examines divisions of responsibility, capacity and coordination across national, regional and local governance.
+        evidence_source: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4021672
+  - record_id: workers-perceptions-of-climate-change-and-the-green-transition-in-yorkshire-and-the-humber
+    primary_theme: consequences-for-people-and-places
+    secondary_themes: []
+    theme_relationships:
+      - theme_id: consequences-for-people-and-places
+        relationship: primary
+        rationale: The institutional report centres workers' perceptions and place-based employment consequences of the green transition.
+        evidence_source: https://eprints.whiterose.ac.uk/183447/
+  - record_id: investing-in-a-just-transition-in-the-uk-how-investors-can-integrate-social-impact-and-pla
+    primary_theme: consequences-for-people-and-places
+    secondary_themes: []
+    theme_relationships:
+      - theme_id: consequences-for-people-and-places
+        relationship: primary
+        rationale: The commissioning institution frames investment choices around social impact and place-based consequences of transition.
+        evidence_source: https://www.lse.ac.uk/granthaminstitute/publication/investing-in-a-just-transition-in-the-uk/
+  - record_id: can-low-carbon-urban-development-be-pro-poor-the-case-of-kolkata-india
+    primary_theme: consequences-for-people-and-places
+    secondary_themes: []
+    theme_relationships:
+      - theme_id: consequences-for-people-and-places
+        relationship: primary
+        rationale: The paper directly examines whether low-carbon urban development produces pro-poor distributional outcomes in Kolkata.
+        evidence_source: https://doi.org/10.1177/0956247816677775
+  - record_id: the-social-environmental-health-and-economic-impacts-of-low-carbon-transport-policy-a-revi
+    primary_theme: consequences-for-people-and-places
+    secondary_themes: []
+    theme_relationships:
+      - theme_id: consequences-for-people-and-places
+        relationship: primary
+        rationale: The review examines social, environmental, health and economic consequences of low-carbon transport policy.
+        evidence_source: https://doi.org/10.1016/B978-0-12-818122-5.00019-3

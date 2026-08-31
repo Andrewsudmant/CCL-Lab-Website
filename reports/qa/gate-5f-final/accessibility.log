@@ -1,0 +1,98 @@
+.venv/bin/python scripts/generate_site.py
+Generated canonical listings, publication views, theme pages and the configured site-status banner.
+./scripts/quarto.sh render
+scripts/pre-render.sh
+Generated canonical listings, publication views, theme pages and the configured site-status banner.
+
+[ 1/87] about-andrew.qmd
+[ 2/87] current-conversations/how-it-works.qmd
+[ 3/87] projects.qmd
+[ 4/87] projects/climate-delivery-modes.qmd
+[ 5/87] projects/coben-place-based-model.qmd
+[ 6/87] projects/data-methodologies-climate-impact.qmd
+[ 7/87] projects/geography-urban-climate-evidence.qmd
+[ 8/87] projects/occupational-transition-requirements.qmd
+[ 9/87] projects/uk-co-benefits-atlas-tool.qmd
+[10/87] projects/uk-co-benefits-atlas.qmd
+[11/87] publications/a-net-zero-carbon-roadmap-for-belfast.qmd
+[12/87] publications/a-net-zero-carbon-roadmap-for-edinburgh.qmd
+[13/87] publications/a-net-zero-carbon-roadmap-for-leeds.qmd
+[14/87] publications/an-analysis-of-net-zero-carbon-options-for-the-belfast-region.qmd
+[15/87] publications/beyond-domain-led-conceptualizations-of-urban-zero-carbon-transitions.qmd
+[16/87] publications/bigger-cities-better-climate-results-from-an-analysis-of-urban-areas-in-china.qmd
+[17/87] publications/building-climate-resilience-and-water-security-in-cities-lessons-from-the-sponge-city-of-w.qmd
+[18/87] publications/can-low-carbon-urban-development-be-pro-poor-the-case-of-kolkata-india.qmd
+[19/87] publications/cities-and-climate-change-mitigation-economic-opportunities-and-governance-challenges-in-a.qmd
+[20/87] publications/climate-change-mitigation-in-chinese-megacities-a-measures-based-analysis-of-opportunities.qmd
+[21/87] publications/climate-policy-social-policy.qmd
+[22/87] publications/community-participation-in-urban-land-and-housing-delivery-evidence-from-kerala-india-and.qmd
+[23/87] publications/data-scaling-climate-action-governance-uk.qmd
+[24/87] publications/designing-visualization-atlas-uk-cobenefits.qmd
+[25/87] publications/economic-case-climate-action-cities.qmd
+[26/87] publications/exploring-the-economic-case-for-early-investment-in-climate-change-mitigation-in-middle-in.qmd
+[27/87] publications/fair-weather-forecasting-the-shortcomings-of-big-data-for-sustainable-development-a-case-s.qmd
+[28/87] publications/financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transi.qmd
+[29/87] publications/from-car-free-days-to-pollution-free-cities-reflections-on-clean-urban-transport-in-rwanda.qmd
+[30/87] publications/from-urban-climate-ambition-to-delivery.qmd
+[31/87] publications/heatwaves-amplify-air-pollution-risks-in-sub-saharan-africa.qmd
+[32/87] publications/infrastructure-transitions-southern-cities.qmd
+[33/87] publications/integration-mitigation-adaptation-europe.qmd
+[34/87] publications/investing-in-a-just-transition-in-the-uk-how-investors-can-integrate-social-impact-and-pla.qmd
+[35/87] publications/kigali-economic-appraisal.qmd
+[36/87] publications/low-carbon-cities-affordable.qmd
+[37/87] publications/machine-learning-for-air-quality-forecasting-insights-from-five-provinces-of-rwanda.qmd
+[38/87] publications/missing-the-target-are-local-climate-targets-aligned-with-national-net-zero-ambitions.qmd
+[39/87] publications/natural-experiments-in-urban-air-quality-lessons-from-car-free-days-and-covid-19-lockdowns.qmd
+[40/87] publications/pluralizing-the-urban-waste-economy-insights-from-community-based-enterprises-in-ahmedabad.qmd
+[41/87] publications/private-opportunities-public-benefits-the-scope-for-private-finance-to-deliver-low-carbon.qmd
+[42/87] publications/producer-cities-and-consumer-cities-using-production-and-consumption-based-carbon-accounts.qmd
+[43/87] publications/replicate-generalize-urban-research.qmd
+[44/87] publications/supportive-governance-for-city-scale-low-carbon-building-retrofits-a-case-study-from-shang.qmd
+[45/87] publications/the-economic-case-for-low-carbon-development-in-rapidly-growing-developing-world-cities-a.qmd
+[46/87] publications/the-economic-case-for-low-carbon-waste-management-in-rapidly-growing-cities-in-the-develop.qmd
+[47/87] publications/the-economics-of-climate-mitigation-exploring-the-relative-significance-of-the-incentives.qmd
+[48/87] publications/the-social-environmental-health-and-economic-impacts-of-low-carbon-transport-policy-a-revi.qmd
+[49/87] publications/towards-a-public-policy-of-cities-and-human-settlements-in-the-21st-century.qmd
+[50/87] publications/transport-policy-measures-for-climate-change-as-drivers-for-health-in-cities.qmd
+[51/87] publications/uncovering-blind-spots-in-urban-carbon-management-the-role-of-consumption-based-carbon-acc.qmd
+[52/87] publications/understanding-the-case-for-low-carbon-investment-through-bottom-up-assessments-of-city-sca.qmd
+[53/87] publications/using-crowdsourced-data-to-estimate-the-carbon-footprints-of-global-cities.qmd
+[54/87] publications/who-can-learn-geography-urban-climate-evidence.qmd
+[55/87] publications/workers-perceptions-of-climate-change-and-the-green-transition-in-yorkshire-and-the-humber.qmd
+[56/87] publications/yorkshire-and-humber-climate-action-plan.qmd
+[57/87] research-watch/index.qmd
+[58/87] research-watch/methods.qmd
+[59/87] research/our-approach.qmd
+[60/87] research/themes/canadian-climate-policy.qmd
+[61/87] research/themes/climate-governance-delivery.qmd
+[62/87] research/themes/co-benefits-place-based-valuation.qmd
+[63/87] research/themes/evidence-infrastructure-tools.qmd
+[64/87] research/themes/just-transitions-workforce.qmd
+[65/87] research/themes/urban-climate-learning.qmd
+[66/87] contact.qmd
+[67/87] current-conversations/index.qmd
+[68/87] data-tools.qmd
+[69/87] opportunities.qmd
+[70/87] outputs.qmd
+[71/87] work/climate-delivery-modes.qmd
+[72/87] work/coben-place-based-model.qmd
+[73/87] work/data-methodologies-climate-impact.qmd
+[74/87] work/geography-urban-climate-evidence.qmd
+[75/87] work/occupational-transition-requirements.qmd
+[76/87] work/uk-co-benefits-atlas-tool.qmd
+[77/87] work/uk-co-benefits-atlas.qmd
+[78/87] people.qmd
+[79/87] publications.qmd
+[80/87] research.qmd
+[81/87] publications/complete.qmd
+[82/87] work.qmd
+[83/87] research/consequences-for-people-and-places.qmd
+[84/87] research/geographies-of-climate-learning.qmd
+[85/87] research/modes-of-climate-delivery.qmd
+[86/87] research/where-new-evidence-matters.qmd
+[87/87] index.qmd
+
+Output created: _site/index.html
+
+.venv/bin/python scripts/check_accessibility.py
+Static accessibility checks passed for 87 HTML pages.

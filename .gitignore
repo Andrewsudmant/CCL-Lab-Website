@@ -4,9 +4,11 @@ __pycache__/
 .pytest_cache/
 *.py[cod]
 _site/
+_site-project-path/
 /.quarto/
 /.jupyter_cache/
 .env
 .env.*
 !.env.example
 /deliverables/*.zip
+/deliverables/*/

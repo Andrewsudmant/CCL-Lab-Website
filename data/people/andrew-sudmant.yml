@@ -70,12 +70,10 @@ profile_links:
 image: null
 image_rights_status: not-supplied
 themes:
-  - urban-climate-learning
-  - climate-governance-delivery
-  - co-benefits-place-based-valuation
-  - just-transitions-workforce
-  - evidence-infrastructure-tools
-  - canadian-climate-policy
+  - geographies-of-climate-learning
+  - where-new-evidence-matters
+  - modes-of-climate-delivery
+  - consequences-for-people-and-places
 last_verified_date: 2026-08-14
 authoritative_sources:
   - label: SFU faculty profile

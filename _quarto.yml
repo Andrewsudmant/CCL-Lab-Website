@@ -7,6 +7,8 @@ project:
     - "current-conversations/*.qmd"
     - "research-watch/*.qmd"
     - "research/themes/*.qmd"
+    - "research/*.qmd"
+    - "work/*.qmd"
     - "projects/*.qmd"
     - "publications/*.qmd"
     - "!generated/*.qmd"
@@ -25,8 +27,8 @@ website:
     left:
       - href: research.qmd
         text: Research
-      - href: projects.qmd
-        text: Projects
+      - href: work.qmd
+        text: Work
       - href: people.qmd
         text: People
       - text: Outputs
@@ -38,7 +40,7 @@ website:
           - href: data-tools.qmd
             text: Data & Tools
       - href: current-conversations/index.qmd
-        text: Conversations
+        text: Current Conversations
       - href: opportunities.qmd
         text: Opportunities
       - text: About
@@ -53,10 +55,14 @@ website:
     left: |
       **Cities & Climate Learning Lab**<br>
       School of Resource and Environmental Management, Simon Fraser University
-    right: |
-      [andrew_sudmant@sfu.ca](mailto:andrew_sudmant@sfu.ca) · [Current Conversations method](/current-conversations/how-it-works.html)<br>
-      [Report a correction or broken source](/contact.html) ·
-      AI-assisted discovery; original sources remain authoritative.
+    center: "AI-assisted discovery; original sources remain authoritative."
+    right:
+      - text: andrew_sudmant@sfu.ca
+        href: mailto:andrew_sudmant@sfu.ca
+      - text: Current Conversations method
+        href: current-conversations/how-it-works.qmd
+      - text: Report a correction
+        href: contact.qmd
   search: true
   reader-mode: false
   back-to-top-navigation: true
@@ -70,11 +76,8 @@ format:
     link-external-newwindow: false
     anchor-sections: true
     smooth-scroll: true
+    include-before-body: assets/site-status.html
     include-after-body: assets/site-scripts.html
-
-resources:
-  - current-conversations/feed.json
-  - current-conversations/feed.xml
 
 execute:
   freeze: auto

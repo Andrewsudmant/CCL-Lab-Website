@@ -1,0 +1,17 @@
+idea_id: e4-enough-evidence
+theme_id: where-new-evidence-matters
+working_title: When is there enough evidence?
+question: At what point does another case study add little to understanding, and when should research effort shift to a different mechanism, population or place?
+problem_of_understanding: Research fields may continue accumulating similar cases because data are accessible, even after the marginal contribution to understanding has declined.
+why_it_may_matter: Without defensible stopping rules, research may reproduce well-covered questions while more consequential uncertainties remain unresolved.
+possible_research_design: Sequential meta-analysis and explicit stopping rules could estimate diminishing informational returns, while sensitivity analysis could test whether apparent saturation hides neglected contexts.
+suggested_methods: [sequential meta-analysis, stopping-rule analysis, evidence-saturation analysis, sensitivity analysis, research-portfolio analysis]
+public_method_tags: [sequential meta-analysis, stopping-rule analysis, evidence-saturation analysis]
+narrative_tier: signature
+reader_or_decision_at_stake: Research funders and evidence-synthesis teams.
+possible_geographies: [Canada, comparative international cities]
+possible_sectors: [urban governance]
+possible_climate_domains: [mitigation, adaptation]
+display_order: 4
+owner_review_status: owner-approved
+disclaimer: Research idea · not currently an active or funded project

@@ -1,0 +1,18 @@
+idea_id: e1-next-city
+theme_id: where-new-evidence-matters
+working_title: The next city worth studying
+question: Which additional city case would most reduce decision-relevant uncertainty across a wider set of places?
+problem_of_understanding: Selecting an unstudied city because it fills a map gap may add little to collective understanding, while a strategically selected case could distinguish between competing mechanisms.
+why_it_may_matter: Research resources could generate more cumulative knowledge if case selection considered how much a new case might change inference for other cities.
+possible_research_design: Hierarchical models and value-of-information analysis, combined with active-learning approaches, could identify cases whose evidence would most change current estimates or classifications.
+suggested_methods: [hierarchical modelling, value-of-information analysis, active learning, optimal sample design, sensitivity analysis]
+public_method_tags: [hierarchical modelling, value-of-information analysis, active learning]
+narrative_tier: signature
+reader_or_decision_at_stake: Comparative researchers selecting cases.
+possible_geographies: [British Columbia, Canada, comparative international cities]
+possible_sectors: [urban governance]
+possible_climate_domains: [mitigation, adaptation]
+display_order: 1
+owner_review_status: owner-approved
+required_boundary: This is an academic research question, not a proposal for a single public city-ranking or marginal-learning-value score.
+disclaimer: Research idea · not currently an active or funded project

@@ -1,0 +1,17 @@
+idea_id: c2-cumulative-policy-burden
+theme_id: consequences-for-people-and-places
+working_title: The cumulative burden of policy packages
+question: How do several climate policies interact within the same households and neighbourhoods?
+problem_of_understanding: Policies are usually appraised individually even though households may experience overlapping transport costs, building requirements, energy-price changes and access benefits.
+why_it_may_matter: A package that appears equitable policy by policy may produce concentrated cumulative burdens or benefits.
+possible_research_design: Integrated household microsimulation and geospatial policy-package scenarios could estimate cumulative incidence and identify combinations that amplify or offset burdens.
+suggested_methods: [integrated microsimulation, geospatial incidence analysis, policy-package modelling, distributional appraisal, household scenario analysis]
+public_method_tags: [integrated microsimulation, geospatial incidence analysis, policy-package modelling]
+narrative_tier: signature
+reader_or_decision_at_stake: Policy appraisers assessing interacting household and neighbourhood effects.
+possible_geographies: [British Columbia, Canada, comparative international cities]
+possible_sectors: [buildings, transport, energy]
+possible_climate_domains: [mitigation]
+display_order: 2
+owner_review_status: owner-approved
+disclaimer: Research idea · not currently an active or funded project

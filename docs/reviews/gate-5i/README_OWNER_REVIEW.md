@@ -1,6 +1,6 @@
 # Final Draft 0.1 owner review — Gate 5I
 
-Start here. The website is ready **subject to your bounded manual keyboard check**. PR #1 can leave draft status under the instruction you supplied; this is not a merge, approval or deployment. Current Conversations stays in development.
+Start here. The website is ready **subject to your bounded manual keyboard check**. PR #1 has been marked ready for review under the instruction you supplied; this is not a merge, approval or deployment. Current Conversations stays in development. Confirm the exact final head's Site checks before merging.
 
 Gate 5H's voice and architecture are approved and not reopened. This gate removes one redundant prominent Delivery example, consolidates publication procedure in one page, preserves all 46 canonical records and fixes small focus/reflow issues found during review.
 

@@ -26,6 +26,8 @@ Evidence: final release log, Gate 5I browser measurements/screenshots, public-ou
 
 ## Required owner sequence
 
+Remote readiness recorded: PR #1 marked ready for review after successful push and pull-request CI on `5e8245f`; OPEN / MERGEABLE / CLEAN at that check. A final documentation-only commit records the outcome. The archive manifest and final task report identify its SHA; final-head CI must also pass. No merge or deployment occurred.
+
 Complete the bounded Gate 5I owner review and any manual keyboard checklist. Confirm the final CI run, merge PR #1 with a merge commit, protect `main`, configure the `public-draft` environment and enabling variable, and manually publish Draft 0.1 through the guarded GitHub Pages workflow. After inspecting the live site, disable the deployment variable again. Current Conversations should remain in development.
 
 The exact controls, approval sequence, post-publication record and rollback procedure are in `docs/runbooks/publish-draft-0-1-github-pages.md`. Custom domain, API calibration and feed activation are later decisions, not blockers for this public draft.

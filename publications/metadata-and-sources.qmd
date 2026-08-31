@@ -1,0 +1,53 @@
+---
+title: "Publication metadata and sources"
+description-meta: "How the lab maintains bibliographic identity, publication status, source records and corrections."
+---
+
+The publication list helps readers find an output and check what kind of work it is. A verified bibliographic record establishes its identity; it does not establish the quality of its findings or their relevance to another place.
+
+## What the list contains
+
+The [verified publications and outputs](complete.qmd) list includes articles, preprints, reports, chapters and other outputs. Datasets and tools can also be included when their records are sufficiently verified. Records that cannot yet be verified are withheld, not filled out with guessed details. The [selected publications](../publications.qmd) are a smaller set, not the complete bibliography.
+
+## Where the details come from
+
+We reconcile records from ORCID, Crossref and DataCite with publisher records, institutional repositories and authoritative project or report pages. A documented owner override can resolve a discrepancy when supported by evidence. Different sources supply different fields; inclusion here does not mean that every provider supplied or confirmed every detail.
+
+Titles and ordered author lists are retained from authoritative records. Dates are shown only to the available precision: a day, a month or a year. A year-only record is not assigned an invented month or day. Online publication, issue and version dates can differ; recorded version information is kept with the output.
+
+DOIs and other stable identifiers are normalised for matching and linking. An AI model does not generate or rewrite bibliographic identity. Conflicting provider values and the reasons for reconciliation are recorded internally, alongside verification dates and source links. Short explanatory summaries are maintained separately from bibliographic metadata.
+
+## Publication and peer-review status
+
+An output's type and peer-review status describe different things:
+
+- **Peer-reviewed article:** the record supports that status; this is not a lab assessment of the article's findings.
+- **Preprint:** a publicly shared manuscript that has not been established here as a peer-reviewed version of record.
+- **Report, chapter or dataset:** these labels describe the form of an output. They do not by themselves establish peer review.
+- **Peer-review status not verified:** the output's identity is verified, but the available record does not establish its review status.
+- **Not applicable to this output type:** the record does not use the article/preprint review classification for that output.
+
+Where a correction or retraction is confirmed, the record should link to the notice and make that change visible. Bibliographic verification must never be read as a guarantee that an output remains uncorrected or unretracted.
+
+## Relationship to the lab
+
+These labels describe an output's relationship to the current lab:
+
+- **Current lab output:** produced through the lab's current work.
+- **Work begun before CCLL and continuing:** begun before the lab was established, with related research continuing.
+- **Foundational prior work:** earlier research that informs the present programme.
+- **Associated collaboration:** collaborative work associated with the lab, without implying that the lab led it.
+
+The labels do not change authorship, publication history or institutional provenance. A short chronology note remains on individual pages when that distinction needs more explanation.
+
+## Summaries and research themes
+
+Short descriptions and thematic relationships are separate editorial annotations. A relationship does not imply that an entire output belongs exclusively to one theme. Selected examples on theme pages are curated illustrations of a question, not complete bibliographies or rankings of research quality.
+
+## Corrections
+
+Email [andrew_sudmant@sfu.ca](mailto:andrew_sudmant@sfu.ca) with the publication title, page URL, proposed correction and a supporting source where possible. We check the request against the original records and retain the decision and dated change in the project's review history. Removal is not silent: where a public correction or removal notice is needed, the record retains an audit trail. [Contact the lab](../contact.qmd) for other enquiries.
+
+## Read the original output
+
+Use the DOI, publisher or repository link on an individual page to inspect the original output, its current version, methods and limitations. The lab's short description is not a substitute for that source.

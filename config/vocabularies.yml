@@ -1,4 +1,4 @@
-vocabulary_version: "1.0.0"
+vocabulary_version: "1.1.0"
 geographies:
   global: Global
   canada: Canada
@@ -61,3 +61,7 @@ source_types:
   blog-commentary: Blog or commentary
   data-tool: Data or decision-support tool
   bluesky: Bluesky post or discussion
+publication_versions:
+  version-of-record-early-access: Version of record (early access)
+  v1: Version 1
+  v2: Version 2

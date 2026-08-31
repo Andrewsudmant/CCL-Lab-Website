@@ -7,7 +7,7 @@ description: "Verified publications and outputs by Andrew Sudmant, with authorit
 
 <p class="page-deck">A complete verified record of Andrew Sudmant's publications and outputs, distinct from the smaller selected set.</p>
 
-Records are grouped by year. Historic outputs are labelled as foundational or prior work and are not presented as products of the new lab. Bibliographic metadata comes from authoritative identifier records, not AI generation.
+Records are grouped by year. Historic outputs are labelled as foundational or prior work and are not presented as products of the new lab. [Publication metadata and sources](/publications/metadata-and-sources.html) explains the records and their status.
 
 ```{=html}
 <form class="publication-filters" data-publication-filters aria-label="Filter verified publications and outputs">

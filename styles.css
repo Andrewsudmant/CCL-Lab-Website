@@ -39,10 +39,33 @@ a:hover {
 
 a:focus-visible,
 button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
 [tabindex]:focus-visible {
-  outline: 3px solid var(--ccl-focus);
-  outline-offset: 4px;
+  /* Preserve the visible indicator over Bootstrap navigation focus resets. */
+  outline: 3px solid var(--ccl-focus) !important;
+  outline-offset: 4px !important;
   border-radius: 2px;
+}
+
+.publication-details {
+  display: grid;
+  grid-template-columns: minmax(8rem, 11rem) minmax(0, 1fr);
+  gap: .35rem 1.5rem;
+  margin: 1.5rem 0;
+}
+.publication-details dt { font-weight: 600; }
+.publication-details dd { margin: 0; overflow-wrap: anywhere; }
+
+.publication-relationship { margin: 1.5rem 0 1rem; }
+.publication-citation { margin: 1.25rem 0; }
+.publication-citation summary { cursor: pointer; width: fit-content; }
+.publication-record-links { margin-top: 1.5rem; }
+@media (max-width: 575px) {
+  .publication-details { grid-template-columns: minmax(0, 1fr); gap: .1rem; }
+  .publication-details dd { margin-bottom: .7rem; }
 }
 
 h1,
@@ -1007,6 +1030,7 @@ main.page-columns > .site-status-banner {
 .watch-filters label,
 .work-filters label {
   display: grid;
+  min-width: 0;
   gap: 0.35rem;
   color: var(--ccl-muted);
   font-size: 0.76rem;
@@ -1031,6 +1055,8 @@ main.page-columns > .site-status-banner {
 .work-filters input,
 .work-filters select,
 .work-filters button {
+  min-width: 0;
+  max-width: 100%;
   min-height: 44px;
   padding: 0.55rem 0.7rem;
   border: 1px solid #8e8983;
@@ -1633,7 +1659,7 @@ main.page-columns > .site-status-banner {
 
   .work-filters,
   .idea-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .publication-filters {
@@ -1660,6 +1686,11 @@ main.page-columns > .site-status-banner {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+}
+
+/* Keep long academic headings readable at a 320 CSS-pixel reflow width. */
+@media (max-width: 360px) {
+  .quarto-title h1.title { font-size: 2.5rem; overflow-wrap: anywhere; }
 }
 
 @media (prefers-reduced-motion: reduce) {

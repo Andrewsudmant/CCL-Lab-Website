@@ -78,12 +78,6 @@ Modes of Climate Delivery compares how these configurations are assembled across
   <p>The comparison traces how European cities bring mitigation and adaptation together in their plans. Shared terminology alone does not create institutional integration.</p>
   <p class="example-boundary">The assessment concerns plan integration and does not establish implementation success.</p>
   <ul class="tag-list"><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/geographies-of-climate-learning.html">Geographies of Climate Learning</a><span class="sr-only"> (Related)</span></li></ul>
-</article><article class="record-card featured-example" data-record-type="publication" data-record-id="low-carbon-cities-affordable" data-group="Finance, ownership and coordination">
-  <p class="record-kicker">Article · Foundational prior work · 2016</p>
-  <h3><a href="/publications/low-carbon-cities-affordable.html">Low carbon cities: is ambitious action affordable?</a></h3>
-  <p>Investment requirements, costs and returns shape whether ambitious urban climate action is affordable. They also shape the financial arrangements available for delivery.</p>
-  <p class="example-boundary">The appraisal is conditional on its data, scenarios and valuation assumptions.</p>
-  <ul class="tag-list"><li><a href="/research/consequences-for-people-and-places.html">Consequences for People and Places</a><span class="sr-only"> (Primary)</span></li><li><a href="/research/modes-of-climate-delivery.html">Modes of Climate Delivery</a><span class="sr-only"> (Related)</span></li></ul>
 </article></div>
 ```
 

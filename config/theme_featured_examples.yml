@@ -1,5 +1,5 @@
-version: "1.0.0"
-reviewed_date: 2026-08-28
+version: "1.1.0"
+reviewed_date: 2026-08-31
 policy: >-
   Theme pages present a small illustrative selection. Selection is an editorial decision about reader value,
   not a reclassification of the complete verified bibliography or a claim that prior work was produced by CCLL.
@@ -115,15 +115,6 @@ entries:
       The comparison traces how European cities bring mitigation and adaptation together in their plans. Shared terminology alone does not create institutional integration.
     qualification: The assessment concerns plan integration and does not establish implementation success.
     evidence_reviewed: [https://doi.org/10.1016/j.rser.2019.109623]
-  - theme_id: modes-of-climate-delivery
-    record_type: publication
-    record_id: low-carbon-cities-affordable
-    conceptual_grouping: Finance, ownership and coordination
-    contribution: >-
-      Investment requirements, costs and returns shape whether ambitious urban climate action is affordable. They also shape the financial arrangements available for delivery.
-    qualification: The appraisal is conditional on its data, scenarios and valuation assumptions.
-    evidence_reviewed: [https://doi.org/10.1007/s10584-016-1751-9]
-
   - theme_id: consequences-for-people-and-places
     record_type: work
     record_id: uk-co-benefits-atlas

@@ -74,6 +74,8 @@ gate-5g-owner-review:
 	$(PYTHON) scripts/package_gate_5g_review.py
 gate-5h-owner-review:
 	$(PYTHON) scripts/package_gate_5h_review.py
+gate-5i-owner-review:
+	$(PYTHON) scripts/package_gate_5i_review.py
 research-watch-fixture:
 	@echo "Deprecated: use current-conversations-fixture"
 	@$(MAKE) current-conversations-fixture

@@ -67,7 +67,7 @@ def test_01_10_fixed_content_is_preserved() -> None:
         ("modes-of-climate-delivery", "publication", "supportive-governance-for-city-scale-low-carbon-building-retrofits-a-case-study-from-shang"),
         ("modes-of-climate-delivery", "publication", "financing-climate-action-with-positive-social-impact-how-banking-can-support-a-just-transi"),
         ("modes-of-climate-delivery", "publication", "integration-mitigation-adaptation-europe"),
-        ("modes-of-climate-delivery", "publication", "low-carbon-cities-affordable"),
+        # Gate 5I owner decision removes only low-carbon-cities-affordable here.
         ("consequences-for-people-and-places", "work", "uk-co-benefits-atlas"),
         ("consequences-for-people-and-places", "publication", "climate-policy-social-policy"),
         ("consequences-for-people-and-places", "publication", "the-social-environmental-health-and-economic-impacts-of-low-carbon-transport-policy-a-revi"),
@@ -165,17 +165,18 @@ def test_51_55_current_conversations_is_plain_closed_and_offline() -> None:
     assert not list((ROOT / "current-conversations").glob("*.json")) and not list((ROOT / "current-conversations").glob("*.xml"))
 
 
-def test_56_61_diagnostic_and_term_map_are_deterministic_advisory_only() -> None:
+def test_56_61_diagnostic_and_term_map_are_deterministic_advisory_only(tmp_path: Path) -> None:
     term_map = yaml.safe_load((ROOT / "config/plain_language_terms.yml").read_text())
     schema = json.loads((ROOT / "schemas/plain-language-terms.schema.json").read_text())
     assert not list(Draft202012Validator(schema).iter_errors(term_map)) and len(term_map["terms"]) == 9
     tracked = [ROOT / "index.qmd", ROOT / "research/our-approach.qmd", ROOT / "current-conversations/index.qmd"]
     before = {p: hashlib.sha256(p.read_bytes()).hexdigest() for p in tracked}
-    command = [sys.executable, str(ROOT / "scripts/audit_public_voice.py")]
+    output = tmp_path / "public-voice-diagnostic.md"
+    command = [sys.executable, str(ROOT / "scripts/audit_public_voice.py"), "--output", str(output)]
     subprocess.run(command, cwd=ROOT, check=True, capture_output=True, text=True)
-    first = (ROOT / "reports/editorial/gate-5h-public-voice-diagnostic.md").read_bytes()
+    first = output.read_bytes()
     subprocess.run(command, cwd=ROOT, check=True, capture_output=True, text=True)
-    assert first == (ROOT / "reports/editorial/gate-5h-public-voice-diagnostic.md").read_bytes()
+    assert first == output.read_bytes()
     assert before == {p: hashlib.sha256(p.read_bytes()).hexdigest() for p in tracked}
     report = first.decode()
     assert all(heading in report for heading in ("Repeated four-word", "Repeated sentence openings", "Sentences over 30 words", "Abstract-noun series", "Repeated visible heading sequences", "Technical terms used before"))

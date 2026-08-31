@@ -16,6 +16,19 @@ except ImportError:  # Direct script execution.
     from content import ROOT
 
 CONTEXT_FILES = [
+    Path("docs/baseline-gate-5i.md"),
+    Path("docs/decisions/gate-5h-owner-approval-and-draft-release.md"),
+    Path("docs/reviews/gate-5i/delivery-example-curation.md"),
+    Path("docs/reviews/gate-5i/public-copy-before-and-after.md"),
+    Path("docs/reviews/gate-5i/draft-0-1-final-readiness.md"),
+    Path("docs/reviews/gate-5i/public-output-audit.md"),
+    Path("reports/accessibility/gate-5i-keyboard-navigation.md"),
+    Path("reports/editorial/gate-5i-publication-page-diagnostic.md"),
+    Path("reports/browser-qa-gate-5i.md"),
+    Path("reports/security/gate-5i-secret-scan.md"),
+    Path("reports/release/gate-5i-external-link-audit.md"),
+    Path("reports/release/gate-5i-workflow-validation.md"),
+    Path("reports/file-by-file-summary-gate-5i.md"),
     Path(".github/workflows/current-conversations-scheduled.yml"),
     Path(".github/workflows/current-conversations-live-benchmark.yml"),
     Path("AGENTS.md"),

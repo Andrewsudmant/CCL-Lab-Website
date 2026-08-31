@@ -9,4 +9,6 @@ The Cities and Climate Learning Lab is newly established at Simon Fraser Univers
 
 [Browse verified publications and outputs →](publications/complete.qmd)
 
+[Publication metadata and sources](publications/metadata-and-sources.qmd)
+
 {{< include generated/publications-selected.qmd >}}

@@ -85,6 +85,7 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--site-dir", default="_site")
     parser.add_argument("--output", default="reports/editorial/gate-5h-public-voice-diagnostic.md")
+    parser.add_argument("--label", default="Gate 5H")
     args = parser.parse_args()
     site_dir = ROOT / args.site_dir
     pages = sorted(site_dir.rglob("*.html"))
@@ -111,7 +112,7 @@ def main() -> int:
             plain_at = text.find(item["plain_first_use"].replace("’", "'").casefold())
             if term_at >= 0 and (plain_at < 0 or term_at < plain_at): term_order.append((page, item["technical_term"]))
     freq_phrases = ["does not by itself", "not simply", "not merely", "not only", "this theme examines", "this work asks"]
-    output = ["# Gate 5H public-voice diagnostic", "", f"Rendered pages inspected: **{len(pages)}**. This deterministic report supports human editorial judgement; it is not a readability score or an automatic release gate, and it never rewrites copy.", "", "## Phrase frequencies", ""]
+    output = [f"# {args.label} public-voice diagnostic", "", f"Rendered pages inspected: **{len(pages)}**. This deterministic report supports human editorial judgement; it is not a readability score or an automatic release gate, and it never rewrites copy.", "", "## Phrase frequencies", ""]
     output += [f"- `{p}`: {all_text.casefold().count(p)}" for p in freq_phrases]
     output += [f"- `may`: {len(re.findall(r'\bmay\b', all_text, re.I))}", f"- `could`: {len(re.findall(r'\bcould\b', all_text, re.I))}", f"- `can`: {len(re.findall(r'\bcan\b', all_text, re.I))}"]
     output += ["", "## Stock phrases", ""]
@@ -130,7 +131,7 @@ def main() -> int:
     output += ["", "## Technical terms used before mapped plain first use", ""] + ([f"- `{p}`: {t}" for p, t in term_order] or ["- None on mapped pages."])
     target = ROOT / args.output; target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text("\n".join(output) + "\n", encoding="utf-8")
-    print(f"Public-voice diagnostic written to {target.relative_to(ROOT)} for {len(pages)} pages.")
+    print(f"Public-voice diagnostic written to {target} for {len(pages)} pages.")
     return 0
 
 

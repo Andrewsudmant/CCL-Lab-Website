@@ -1,7 +1,8 @@
 # Gate 5I baseline — 31 August 2026
 
-Repository: `Andrewsudmant/CCL-Lab-Website`  
-Branch: `codex/gate-5c-thematic-consistency`  
+Repository: `Andrewsudmant/CCL-Lab-Website`
+
+Branch: `codex/gate-5c-thematic-consistency`
 Starting HEAD: `125f48db6bd1168e7eb235298ddd5482231c9cee`
 
 The working tree was clean before baseline logs and review screenshots were created. `origin` remains `https://github.com/Andrewsudmant/CCL-Lab-Website.git`. Fetching origin found no later work: zero commits since Gate 5H; the branch is 33 commits ahead of `origin/main` and zero behind. All prior gate branches and commits remain intact.
